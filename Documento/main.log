@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 JAN 2015 07:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 JAN 2015 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,8 +10,8 @@ Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 Document Class: Thesis 2007/22/02 v1.0 LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -669,38 +669,72 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count132
 \LT@p@ftn=\toks31
 ))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2010/05/23 v5.0j Spanish support from the babel system
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count133
+\U@D=\dimen148
+)
+\es@datefmt=\count134
+\es@quottoks=\toks32
+\es@quotdepth=\count135
+Package babel Info: Making " an active character on input line 495.
+Package babel Info: Making . an active character on input line 588.
+Package babel Info: Making < an active character on input line 633.
+Package babel Info: Making > an active character on input line 633.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen149
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip65
 \bibsep=\skip66
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count133
+\c@NAT@ctr=\count136
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
-
-No file main.aux.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+ (./main.aux
+(./portada/portada.aux)
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ (./Capitulos/1Introduccion/1Introduccion.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
@@ -709,19 +743,19 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen148
+\scratchcounter=\count137
+\scratchdimen=\dimen150
 \scratchbox=\box35
-\nofMPsegments=\count135
-\nofMParguments=\count136
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen149
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks33
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen151
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks34
 )
-\c@lstlisting=\count140
+\c@lstlisting=\count143
 \AtBeginShipoutBox=\box36
  (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -731,7 +765,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring ON on input line 25.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -739,249 +773,213 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count141
+\c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
+
+(./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+\openout2 = `portada/portada.aux'.
+
+ (./portada/portada.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<portada/ipn.jpg, id=48, 195.73125pt x 287.0725pt>
+File: portada/ipn.jpg Graphic file (type jpg)
+ <use portada/ipn.jpg>
+Package pdftex.def Info: portada/ipn.jpg used on input line 5.
+(pdftex.def)             Requested size: 58.19716pt x 85.35826pt.
+
+<portada/escom.jpg, id=49, 226.8475pt x 200.75pt>
+File: portada/escom.jpg Graphic file (type jpg)
+ <use portada/escom.jpg>
+Package pdftex.def Info: portada/escom.jpg used on input line 7.
+(pdftex.def)             Requested size: 90.0278pt x 79.6678pt.
+
+Overfull \vbox (28.7728pt too high) detected at line 7
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+
+Overfull \hbox (33.14934pt too wide) in paragraph at lines 4--12
+ [] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 ) [1
 
 
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-------------------------------------------------------------------------------
- Declaration of Authorship
-------------------------------------------------------------------------------
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-
- []
-
-[1] [2
-
-]
-------------------------------------------------------------------------------
- Abstract Page
-------------------------------------------------------------------------------
-[3
-
-]
-------------------------------------------------------------------------------
- Acknowledgements
-------------------------------------------------------------------------------
-[4
-
-]
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./porta
+da/ipn.jpg> <./portada/escom.jpg>]
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(./main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-[5
+ [2
 
 
 ]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
+(./main.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
-[6
+ [3
 
 
 ]
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
+(./main.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
-[7
+ [4
 
 
 ]
+\openout2 = `Capitulos/1Introduccion/1Introduccion.aux'.
+
+ (./Capitulos/1Introduccion/1Introduccion.tex
+Cap\'{\i }tulo 1.
 ------------------------------------------------------------------------------
- Abbreviations
+ 1 Introducci\IeC {\'o}n
 ------------------------------------------------------------------------------
-[8
+[1
 
 
 
-]
-------------------------------------------------------------------------------
- Physical Constants
-------------------------------------------------------------------------------
-[9
+
+] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex)
+(./Capitulos/1Introduccion/Secciones/1-2SolucionPropuesta.tex [2]
+<Figuras/arquitectura.png, id=105, 333.8874pt x 249.5724pt>
+File: Figuras/arquitectura.png Graphic file (type png)
+
+<use Figuras/arquitectura.png>
+Package pdftex.def Info: Figuras/arquitectura.png used on input line 9.
+(pdftex.def)             Requested size: 333.88658pt x 249.57178pt.
+
+Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
+ [] 
+ []
+
+[3 <./Figuras/arquitectura.png>])
+(./Capitulos/1Introduccion/Secciones/1-3AlcancesYLimitaciones.tex)
+(./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
+(./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
+(./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
+<Figuras/moviles.png, id=127, 443.7378pt x 196.0926pt>
+File: Figuras/moviles.png Graphic file (type png)
+
+<use Figuras/moviles.png>
+Package pdftex.def Info: Figuras/moviles.png used on input line 23.
+(pdftex.def)             Requested size: 443.73671pt x 196.09212pt.
+
+Overfull \hbox (26.26364pt too wide) in paragraph at lines 23--25
+ [][] 
+ []
 
 
+Overfull \hbox (2.52693pt too wide) in paragraph at lines 23--25
+ [] 
+ []
 
-]
-------------------------------------------------------------------------------
- Symbols
-------------------------------------------------------------------------------
-[10
+)) [6] [7 <./Figuras/moviles.png>] (./main.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
 
-
-
-]
-------------------------------------------------------------------------------
- Dedicatory
-------------------------------------------------------------------------------
-[11
-
-] (./Chapters/Chapter1.tex
-Chapter 1.
-------------------------------------------------------------------------------
- 1 Chapter Title Here
-------------------------------------------------------------------------------
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 22.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
- [1
+Underfull \hbox (badness 3312) in paragraph at lines 9--13
+[]\OT1/ptm/m/n/12 Juan Ma-nuel Garc[]^^Pa Cam-pos.  'apps' pa-ra via-jar, Ju-ni
+o 2013.  URL
+ []
 
 
-
-] [2]
-
-LaTeX Warning: Reference `FillingFile' on page 3 undefined on input line 56.
-
-
-LaTeX Warning: Reference `FillingFile' on page 3 undefined on input line 56.
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+[][]$\OT1/pcr/m/n/12 http : / / www . lavanguardia . com / estilos-[]de-[]vida 
+/ 20130619 /
+ []
 
 
-LaTeX Warning: Reference `ThesisConventions' on page 3 undefined on input line 
-56.
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
+\OT1/pcr/m/n/12 serv / contenidos / espanol / bvinegi / productos / encuestas /
 
-[3] [4]
+ []
 
-LaTeX Warning: Reference `FillingFile' on page 5 undefined on input line 103.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+ [8
 
-
-LaTeX Warning: Reference `FillingFile' on page 5 undefined on input line 103.
-
-[5]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 135.
- [6] [7] [8]
-
-Package natbib Warning: Citation `Reference3' on page 9 undefined on input line
- 197.
-
-
-Package natbib Warning: Citation `Reference2' on page 9 undefined on input line
- 197.
-
-
-Package natbib Warning: Citation `Reference1' on page 9 undefined on input line
- 197.
-
-
-Package natbib Warning: Citation `Reference2' on page 9 undefined on input line
- 197.
-
-
-Package natbib Warning: Citation `Reference1' on page 9 undefined on input line
- 197.
-
-
-Package natbib Warning: Citation `Reference3' on page 9 undefined on input line
- 197.
-
-[9] <Figures/Electron.pdf, id=164, 398.3386pt x 284.52756pt>
-File: Figures/Electron.pdf Graphic file (type pdf)
-
-<use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf used on input line 219.
-(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
-
-
-LaTeX Warning: Reference `fig:Electron' on page 10 undefined on input line 227.
-
-
-[10 <./Figures/Electron.pdf>] [11]) (./Appendices/AppendixA.tex [12]
-Appendix A.
-------------------------------------------------------------------------------
- A Appendix Title Here
-------------------------------------------------------------------------------
-) [13
 
 ]
-------------------------------------------------------------------------------
- Bibliography
-------------------------------------------------------------------------------
-No file main.bbl.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+ (./main.aux (./portada/portada.aux)
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
-(./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A2A0B657D5CFC111F126763151DF1B78;5471.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
+(./Capitulos/1Introduccion/1Introduccion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 880E2B402871635AD5117A170D0A51DD;1609.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 13060 strings out of 493315
- 183213 string characters out of 6137904
- 252756 words of memory out of 5000000
- 16260 multiletter control sequences out of 15000+600000
- 20607 words of font info for 78 fonts, out of 8000000 for 9000
+ 13829 strings out of 493315
+ 194127 string characters out of 6137904
+ 269692 words of memory out of 5000000
+ 16987 multiletter control sequences out of 15000+600000
+ 35463 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,11n,45p,776b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (25 pages, 258915 bytes).
+ 49i,12n,45p,968b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (12 pages, 366267 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

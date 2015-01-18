@@ -146,12 +146,12 @@
         keepspaces=true}
 \lstdefinestyle{matlab} {
         language=Matlab,
-        keywordstyle=\color{blue},
+        keywordstyle=\color{black},
         commentstyle=\color[rgb]{0.13,0.55,0.13}\em,
         stringstyle=\color[rgb]{0.7,0,0} }
 \usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
    bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,
-   colorlinks,linkcolor={blue},citecolor={blue},urlcolor={red},
+   colorlinks,linkcolor={black},citecolor={black},urlcolor={red},
    pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
 \pdfstringdefDisableCommands{
    \let\\\space
@@ -323,7 +323,7 @@
 \addcontentsline{toc}{chapter}{#1}}
 \renewcommand\tableofcontents{
 \btypeout{Table of Contents}
-\addtotoc{Contents}
+\addtotoc{\'Indice general}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -341,7 +341,7 @@
 }
 \renewcommand\listoffigures{
 \btypeout{List of Figures}
-\addtotoc{List of Figures}
+\addtotoc{\'Indice de figuras}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -359,7 +359,7 @@
 }
 \renewcommand\listoftables{
 \btypeout{List of Tables}
-\addtotoc{List of Tables}
+\addtotoc{\'Indice de tablas}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn

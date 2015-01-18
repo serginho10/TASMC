@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: portada/portada.aux
+A level-1 auxiliary file: Capitulos/1Introduccion/1Introduccion.aux
+The style file: unsrtnat.bst
+Database file #1: Bibliography.bib
+Warning--entry type for "moviles" isn't style-file defined
+--line 12 of file Bibliography.bib
+Warning--entry type for "endutih" isn't style-file defined
+--line 23 of file Bibliography.bib
+Warning--entry type for "appsViajar" isn't style-file defined
+--line 32 of file Bibliography.bib
+Warning--empty year in endutih
+You've used 3 entries,
+            2481 wiz_defined-function locations,
+            568 strings with 4996 characters,
+and the built_in function-call counts, 724 in all, are:
+= -- 61
+> -- 7
+< -- 1
++ -- 8
+- -- 2
+* -- 41
+:= -- 91
+add.period$ -- 7
+call.type$ -- 3
+change.case$ -- 6
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 42
+empty$ -- 95
+format.name$ -- 3
+if$ -- 163
+int.to.chr$ -- 1
+int.to.str$ -- 4
+missing$ -- 0
+newline$ -- 21
+num.names$ -- 3
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 36
+stack$ -- 0
+substring$ -- 8
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 21
+warning$ -- 1
+while$ -- 2
+width$ -- 0
+write$ -- 38
+(There were 4 warnings)

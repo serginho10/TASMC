@@ -1,0 +1,26 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Campos(2013)]{appsVIajar}
+Juan Manuel~Garc{\'\i}a Campos.
+\newblock 'apps' para viajar, Junio 2013.
+\newblock URL
+  \url{http://www.lavanguardia.com/estilos-de-vida/20130619/54376778827/apps-para-viajar.html}.
+
+\bibitem[end()]{endutih}
+Inegi. estad{\'\i}sticas sobre disponibilidad y uso de tecnolog{\'\i}a de
+  informaci{\'o}n y comunicaciones en los hogares.
+\newblock URL
+  \url{http://www.inegi.org.mx/prod_serv/contenidos/espanol/bvinegi/productos/
+  encuestas/especiales/endutih/endutih2012.pdf}.
+
+\bibitem[mov(2014)]{moviles}
+Ipadizate, Marzo 2014.
+\newblock URL
+  \url{http://www.ipadizate.es/2014/03/12/iphone-lidera-mercado-smartphones-eeuu-85564/}.
+
+\end{thebibliography}

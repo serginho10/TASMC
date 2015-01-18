@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 JAN 2015 22:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 JAN 2015 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,14 +694,36 @@ Package babel Info: Making > an active character on input line 633.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen149
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen150
+\extrarowheight=\dimen151
+\NC@list=\toks33
+\extratabsurround=\skip65
+\backup@length=\skip66
+)
+\everycr=\toks34
+\minrowclearance=\skip67
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip65
-\bibsep=\skip66
+\bibhang=\skip68
+\bibsep=\skip69
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count136
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
  (./main.aux
 (./portada/portada.aux)
 LaTeX Info: Redefining \. on input line 24.
@@ -710,23 +732,23 @@ LaTeX Info: Redefining \% on input line 24.
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -745,30 +767,21 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count137
-\scratchdimen=\dimen150
+\scratchdimen=\dimen152
 \scratchbox=\box35
 \nofMPsegments=\count138
 \nofMParguments=\count139
-\everyMPshowfont=\toks33
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count140
-\MPscratchDim=\dimen151
+\MPscratchDim=\dimen153
 \MPnumerator=\count141
 \makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks34
+\everyMPtoPDFconversion=\toks36
 )
 \c@lstlisting=\count143
 \AtBeginShipoutBox=\box36
- (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
-Package hyperref Info: Link coloring ON on input line 25.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring ON on input line 26.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -776,16 +789,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 \openout2 = `portada/portada.aux'.
 
  (./portada/portada.tex
@@ -817,7 +830,7 @@ Overfull \vbox (28.7728pt too high) detected at line 7
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 
-Overfull \hbox (33.14934pt too wide) in paragraph at lines 4--12
+Overfull \hbox (33.1493pt too wide) in paragraph at lines 4--12
  [] 
  []
 
@@ -835,7 +848,7 @@ da/ipn.jpg> <./portada/escom.jpg>]
  Table of Contents
 ------------------------------------------------------------------------------
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
 (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -933,98 +946,156 @@ Cap\'{\i }tulo 2.
  2 Estado del Arte
 ------------------------------------------------------------------------------
 
-Overfull \hbox (1.44032pt too wide) in paragraph at lines 16--16
-[]\OT1/ptm/m/n/12 Aplicaci[]on| 
+Overfull \hbox (3.15623pt too wide) in paragraph at lines 19--19
+[]|[]\OT1/ptm/b/n/12 Aplicaci[]on[]| 
  []
 
 
-Overfull \hbox (0.78413pt too wide) in paragraph at lines 18--18
-[]\OT1/ptm/m/n/12 Precio| 
+Overfull \hbox (2.56024pt too wide) in paragraph at lines 21--21
+[]|[]\OT1/ptm/b/n/12 Precio[]| 
+ []
+
+
+Overfull \hbox (23.99986pt too wide) in paragraph at lines 25--25
+[]|\OT1/ptm/m/n/12 Crux|  
+ []
+
+
+Overfull \hbox (29.32747pt too wide) in paragraph at lines 27--27
+[]|\OT1/ptm/m/n/12 Gratis|  
+ []
+
+
+Overfull \hbox (39.99579pt too wide) in paragraph at lines 28--28
+[]|\OT1/ptm/m/n/12 Android|  
  []
 
 <Figuras/crux.png, id=153, 62.1522pt x 62.634pt>
 File: Figuras/crux.png Graphic file (type png)
  <use Figuras/crux.png>
-Package pdftex.def Info: Figuras/crux.png used on input line 25.
+Package pdftex.def Info: Figuras/crux.png used on input line 29.
 (pdftex.def)             Requested size: 71.1359pt x 71.13301pt.
 
-Underfull \hbox (badness 1057) in paragraph at lines 27--27
+Overfull \hbox (71.1359pt too wide) in paragraph at lines 29--29
+[]|[]|  
+ []
+
+
+Overfull \hbox (43.99144pt too wide) in paragraph at lines 31--31
+[]|\OT1/ptm/m/n/12 Meridian|  
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 32--32
 \OT1/ptm/m/n/12 ae-ro-puer-to. In-te-gra ba-ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]\OT1/ptm/m/n/12 iOS y An-
+Overfull \hbox (29.32747pt too wide) in paragraph at lines 33--33
+[]|\OT1/ptm/m/n/12 Gratis|  
+ []
+
+
+Overfull \hbox (18.67175pt too wide) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/12 iOS 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 34--34
+\OT1/ptm/m/n/12 y 
+ []
+
+
+Overfull \hbox (39.99579pt too wide) in paragraph at lines 34--34
+\OT1/ptm/m/n/12 Android|  
  []
 
 <Figuras/meridian.png, id=154, 64.5612pt x 64.5612pt>
 File: Figuras/meridian.png Graphic file (type png)
 
 <use Figuras/meridian.png>
-Package pdftex.def Info: Figuras/meridian.png used on input line 30.
+Package pdftex.def Info: Figuras/meridian.png used on input line 35.
 (pdftex.def)             Requested size: 71.1387pt x 71.1387pt.
 
-Overfull \hbox (1.44032pt too wide) in paragraph at lines 42--42
-[]\OT1/ptm/m/n/12 Aplicaci[]on| 
+Overfull \hbox (71.1387pt too wide) in paragraph at lines 35--35
+[]|[]|  
  []
 
 
-Overfull \hbox (0.78413pt too wide) in paragraph at lines 44--44
-[]\OT1/ptm/m/n/12 Precio| 
+Overfull \hbox (3.15623pt too wide) in paragraph at lines 48--48
+[]|[]\OT1/ptm/b/n/12 Aplicaci[]on[]| 
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 48--48
+Overfull \hbox (2.56024pt too wide) in paragraph at lines 50--50
+[]|[]\OT1/ptm/b/n/12 Precio[]| 
+ []
+
+
+Overfull \hbox (47.3156pt too wide) in paragraph at lines 54--54
+[]|\OT1/ptm/m/n/12 GateGuru|  
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 55--55
 \OT1/ptm/m/n/12 ae-ro-puer-tos ubi-ca-dos en
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 48--48
+Underfull \hbox (badness 1221) in paragraph at lines 55--55
 \OT1/ptm/m/n/12 Tri-pit y Ka-yak. Adem[]as
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 50--50
-[]\OT1/ptm/m/n/12 iOS, An-droid
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-\OT1/ptm/m/n/12 y Win-dows
+Overfull \hbox (29.32747pt too wide) in paragraph at lines 56--56
+[]|\OT1/ptm/m/n/12 Gratis|  
  []
 
 <Figuras/gateGuru.png, id=155, 67.9338pt x 67.452pt>
 File: Figuras/gateGuru.png Graphic file (type png)
 
 <use Figuras/gateGuru.png>
-Package pdftex.def Info: Figuras/gateGuru.png used on input line 51.
+Package pdftex.def Info: Figuras/gateGuru.png used on input line 58.
 (pdftex.def)             Requested size: 71.13562pt x 71.13853pt.
- <Figuras/kayak.png, id=156, 66.0066pt x 66.0066pt>
-File: Figuras/kayak.png Graphic file (type png)
 
-<use Figuras/kayak.png>
-Package pdftex.def Info: Figuras/kayak.png used on input line 56.
+Overfull \hbox (71.13562pt too wide) in paragraph at lines 58--58
+[]|[]|  
+ []
+
+
+Overfull \hbox (31.31981pt too wide) in paragraph at lines 59--59
+[]|\OT1/ptm/m/n/12 Kayak|  
+ []
+
+
+Overfull \hbox (29.32747pt too wide) in paragraph at lines 61--61
+[]|\OT1/ptm/m/n/12 Gratis|  
+ []
+
+<Figuras/kayak.png, id=156, 66.0066pt x 66.0066pt>
+File: Figuras/kayak.png Graphic file (type png)
+ <use Figuras/kayak.png>
+Package pdftex.def Info: Figuras/kayak.png used on input line 63.
 (pdftex.def)             Requested size: 71.138pt x 71.138pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]\OT1/ptm/m/n/12 $ 49
+Overfull \hbox (71.138pt too wide) in paragraph at lines 63--63
+[]|[]|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\OT1/ptm/m/n/12 Black-berry
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\OT1/ptm/m/n/12 y Win-dows
+Overfull \hbox (26.91559pt too wide) in paragraph at lines 65--65
+[]|\OT1/ptm/m/n/12 Tripit|  
  []
 
 <Figuras/tripit.png, id=157, 68.4156pt x 68.4156pt>
 File: Figuras/tripit.png Graphic file (type png)
  <use Figuras/tripit.png>
-Package pdftex.def Info: Figuras/tripit.png used on input line 62.
+Package pdftex.def Info: Figuras/tripit.png used on input line 70.
 (pdftex.def)             Requested size: 71.13278pt x 71.13278pt.
+
+Overfull \hbox (71.13278pt too wide) in paragraph at lines 70--70
+[]|[]|  
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1034,52 +1105,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./Figuras/crux.png> <./Figuras/meridian.png>]
-Underfull \hbox (badness 2980) in paragraph at lines 79--79
-[]\OT1/ptm/m/n/12 ILS (In-door Lo-ca-tion
- []
-
-
-Underfull \hbox (badness 2020) in paragraph at lines 79--79
-\OT1/ptm/m/n/12 Sys-tems) Sis-te-mas de
- []
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 79--79
-\OT1/ptm/m/n/12 Lo-ca-li-za-ci[]on en In-te-
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 81--82
+Underfull \hbox (badness 1412) in paragraph at lines 91--92
 \OT1/ptm/m/n/12 lu-cio-nes t[]ecni-cas que se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
-[]\OT1/ptm/m/n/12 Uso del cam-po
+Underfull \hbox (badness 3250) in paragraph at lines 96--97
+[]|\OT1/ptm/m/n/12 Este tra-ba-jo ex-pli-ca las
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
-\OT1/ptm/m/n/12 pa-ra lo-ca-li-zar a las
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
-\OT1/ptm/m/n/12 Juan Pa-blo Garc[]^^Pa
- []
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 86--87
-[]\OT1/ptm/m/n/12 Este tra-ba-jo ex-pli-ca las
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 86--87
+Underfull \hbox (badness 1210) in paragraph at lines 96--97
 \OT1/ptm/m/n/12 t[]ecni-cas que se em-plean
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 86--87
+Underfull \hbox (badness 2790) in paragraph at lines 96--97
 \OT1/ptm/m/n/12 res uti-li-zan-do el cam-po
  []
 
@@ -1110,38 +1151,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
  [11
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
  (./main.aux (./portada/portada.aux)
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 
 (./Capitulos/1Introduccion/1Introduccion.aux)
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6C10B776603B1E377BCD0B6CAD140824;1748.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 13876 strings out of 493315
- 195170 string characters out of 6137904
- 274457 words of memory out of 5000000
- 17014 multiletter control sequences out of 15000+600000
+ 13969 strings out of 493315
+ 196341 string characters out of 6137904
+ 279454 words of memory out of 5000000
+ 17101 multiletter control sequences out of 15000+600000
  35463 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,15n,45p,968b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,45p,968b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 536650 bytes).
+Output written on main.pdf (15 pages, 547646 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  178 compressed objects within 2 object streams

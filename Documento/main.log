@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 JAN 2015 23:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 JAN 2015 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,7 +729,9 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
  (./Capitulos/1Introduccion/1Introduccion.aux)
-(./Capitulos/2EstadoDelArte/2EstadoDelArte.aux))
+(./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
+(./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
+(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -812,13 +814,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<portada/ipn.jpg, id=52, 195.73125pt x 287.0725pt>
+<portada/ipn.jpg, id=136, 195.73125pt x 287.0725pt>
 File: portada/ipn.jpg Graphic file (type jpg)
  <use portada/ipn.jpg>
 Package pdftex.def Info: portada/ipn.jpg used on input line 5.
 (pdftex.def)             Requested size: 58.19716pt x 85.35826pt.
 
-<portada/escom.jpg, id=53, 226.8475pt x 200.75pt>
+<portada/escom.jpg, id=137, 226.8475pt x 200.75pt>
 File: portada/escom.jpg Graphic file (type jpg)
  <use portada/escom.jpg>
 Package pdftex.def Info: portada/escom.jpg used on input line 7.
@@ -854,14 +856,14 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
  [2
 
 
-]
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [3]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
@@ -872,7 +874,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [3
+ [4
 
 
 ]
@@ -886,7 +888,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [4
+ [5
 
 
 ]
@@ -904,7 +906,7 @@ Cap\'{\i }tulo 1.
 
 ] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex)
 (./Capitulos/1Introduccion/Secciones/1-2SolucionPropuesta.tex [2]
-<Figuras/arquitectura.png, id=116, 333.8874pt x 249.5724pt>
+<Figuras/arquitectura.png, id=239, 333.8874pt x 249.5724pt>
 File: Figuras/arquitectura.png Graphic file (type png)
 
 <use Figuras/arquitectura.png>
@@ -920,7 +922,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 (./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
 (./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
 (./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
-<Figuras/moviles.png, id=138, 443.7378pt x 196.0926pt>
+<Figuras/moviles.png, id=260, 443.7378pt x 196.0926pt>
 File: Figuras/moviles.png Graphic file (type png)
 
 <use Figuras/moviles.png>
@@ -970,7 +972,7 @@ Overfull \hbox (39.99579pt too wide) in paragraph at lines 28--28
 []|\OT1/ptm/m/n/12 Android|  
  []
 
-<Figuras/crux.png, id=153, 62.1522pt x 62.634pt>
+<Figuras/crux.png, id=275, 62.1522pt x 62.634pt>
 File: Figuras/crux.png Graphic file (type png)
  <use Figuras/crux.png>
 Package pdftex.def Info: Figuras/crux.png used on input line 29.
@@ -1010,7 +1012,7 @@ Overfull \hbox (39.99579pt too wide) in paragraph at lines 34--34
 \OT1/ptm/m/n/12 Android|  
  []
 
-<Figuras/meridian.png, id=154, 64.5612pt x 64.5612pt>
+<Figuras/meridian.png, id=277, 64.5612pt x 64.5612pt>
 File: Figuras/meridian.png Graphic file (type png)
 
 <use Figuras/meridian.png>
@@ -1051,7 +1053,7 @@ Overfull \hbox (29.32747pt too wide) in paragraph at lines 56--56
 []|\OT1/ptm/m/n/12 Gratis|  
  []
 
-<Figuras/gateGuru.png, id=155, 67.9338pt x 67.452pt>
+<Figuras/gateGuru.png, id=279, 67.9338pt x 67.452pt>
 File: Figuras/gateGuru.png Graphic file (type png)
 
 <use Figuras/gateGuru.png>
@@ -1072,7 +1074,7 @@ Overfull \hbox (29.32747pt too wide) in paragraph at lines 61--61
 []|\OT1/ptm/m/n/12 Gratis|  
  []
 
-<Figuras/kayak.png, id=156, 66.0066pt x 66.0066pt>
+<Figuras/kayak.png, id=281, 66.0066pt x 66.0066pt>
 File: Figuras/kayak.png Graphic file (type png)
  <use Figuras/kayak.png>
 Package pdftex.def Info: Figuras/kayak.png used on input line 63.
@@ -1087,7 +1089,7 @@ Overfull \hbox (26.91559pt too wide) in paragraph at lines 65--65
 []|\OT1/ptm/m/n/12 Tripit|  
  []
 
-<Figuras/tripit.png, id=157, 68.4156pt x 68.4156pt>
+<Figuras/tripit.png, id=283, 68.4156pt x 68.4156pt>
 File: Figuras/tripit.png Graphic file (type png)
  <use Figuras/tripit.png>
 Package pdftex.def Info: Figuras/tripit.png used on input line 70.
@@ -1128,12 +1130,106 @@ Underfull \hbox (badness 2790) in paragraph at lines 96--97
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [9 <./Figuras/gateGuru.png> <./Figuras/kayak.png> <./Figuras/tripit.png>]
-[10] (./main.bbl
+[10]
+\openout2 = `Capitulos/3MarcoTeorico/3MarcoTeorico.aux'.
+
+ (./Capitulos/3MarcoTeorico/3MarcoTeorico.tex
+Cap\'{\i }tulo 3.
+------------------------------------------------------------------------------
+ 3 Marco Te\IeC {\'o}rico
+------------------------------------------------------------------------------
+(./Capitulos/3MarcoTeorico/Secciones/3-1AplicacionMovil.tex [11
+
+
+
+])
+(./Capitulos/3MarcoTeorico/Secciones/3-2ComputoMovil.tex
+Overfull \hbox (0.87953pt too wide) in paragraph at lines 5--6
+[]\OT1/ptm/m/n/12 Este ti-po de tec-no-log[]^^Pa no so-lo re-pre-sen-ta una opo
+r-tu-ni-dad de avan-ce cient[]^^Pfi-co o compu-
+ []
+
+
+Overfull \hbox (3.59265pt too wide) in paragraph at lines 20--21
+[]\OT1/ptm/b/n/12 Comodidad: \OT1/ptm/m/n/12 Es muy con-ve-nien-te pa-ra los us
+ua-rios ope-rar en el en-torno inal[]ambri-
+ []
+
+[12]) (./Capitulos/3MarcoTeorico/Secciones/3-3ComputoUbicuo.tex
+<Figuras/ubicuo.png, id=324, 332.442pt x 249.5724pt>
+File: Figuras/ubicuo.png Graphic file (type png)
+ <use Figuras/ubicuo.png>
+Package pdftex.def Info: Figuras/ubicuo.png used on input line 9.
+(pdftex.def)             Requested size: 332.44118pt x 249.57178pt.
+
+Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
+ [] 
+ []
+
+) (./Capitulos/3MarcoTeorico/Secciones/3-4GPS.tex [13 <./Figuras/ubicuo.png>]
+[14]) (./Capitulos/3MarcoTeorico/Secciones/3-5ILS.tex [15] [16] [17] [18]
+[19] [20] <Figuras/ejPasiva.png, id=369, 213.9192pt x 253.4268pt>
+File: Figuras/ejPasiva.png Graphic file (type png)
+
+<use Figuras/ejPasiva.png>
+Package pdftex.def Info: Figuras/ejPasiva.png used on input line 72.
+(pdftex.def)             Requested size: 213.91867pt x 253.42618pt.
+
+Overfull \hbox (2.52693pt too wide) in paragraph at lines 72--74
+ [] 
+ []
+
+<Figuras/ejSigLider.png, id=371, 197.538pt x 253.9086pt>
+File: Figuras/ejSigLider.png Graphic file (type png)
+
+<use Figuras/ejSigLider.png>
+Package pdftex.def Info: Figuras/ejSigLider.png used on input line 82.
+(pdftex.def)             Requested size: 197.5375pt x 253.90797pt.
+
+Overfull \hbox (2.52693pt too wide) in paragraph at lines 82--84
+ [] 
+ []
+
+) (./Capitulos/3MarcoTeorico/Secciones/3-6Android.tex [21 <./Figuras/ejPasiva.p
+ng>] <Figuras/capasAndroid.png, id=378, 610.28pt x 533.995pt>
+File: Figuras/capasAndroid.png Graphic file (type png)
+
+<use Figuras/capasAndroid.png>
+Package pdftex.def Info: Figuras/capasAndroid.png used on input line 7.
+(pdftex.def)             Requested size: 417.47307pt x 365.30363pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+ [22 <./Figuras/ejSigLider.png>] [23 <./Figuras/capasAndroid.png>] [24])) [25]
+\openout2 = `Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux'.
+
+
+(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.tex
+Cap\'{\i }tulo 4.
+------------------------------------------------------------------------------
+ 4 Marco Metodol\IeC {\'o}gico
+------------------------------------------------------------------------------
+<Figuras/cicloDesarrollo.png, id=402, 480.8364pt x 233.673pt>
+File: Figuras/cicloDesarrollo.png Graphic file (type png)
+
+<use Figuras/cicloDesarrollo.png>
+Package pdftex.def Info: Figuras/cicloDesarrollo.png used on input line 28.
+(pdftex.def)             Requested size: 417.47307pt x 202.88739pt.
+ [26
+
+
+
+]) [27 <./Figuras/cicloDesarrollo.png>]
+[28] (./main.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 3312) in paragraph at lines 9--13
+Underfull \hbox (badness 2600) in paragraph at lines 9--13
 []\OT1/ptm/m/n/12 Juan Ma-nuel Garc[]^^Pa Cam-pos.  'apps' pa-ra via-jar, Ju-ni
 o 2013.  URL
  []
@@ -1150,42 +1246,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
 
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
- [11
+
+Underfull \hbox (badness 1577) in paragraph at lines 27--33
+[]\OT1/ptm/m/n/12 South Mo-bi-le.  Crux in-door lo-ca-tion by south mo-bi-le (u
+s) - sen-sor to-
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 27--33
+\OT1/ptm/m/n/12 ipad, Ju-lio 2012.  URL [][]$\OT1/pcr/m/n/12 https : / / sensor
+tower . com / android / us /
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 65--69
+[]\OT1/ptm/m/n/12 Cory Jans-sen.  What is a mo-bi-le ap-pli-ca-tion - de-fi-ni-
+tion from te-
+ []
+
+[29
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
+[]\OT1/ptm/m/n/12 Mariana Quin-ta-ni-lla.  ?`qu[]e son y pa-ra que sir-ven las 
+apli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
+\OT1/ptm/m/n/12 ca-cio-nes m[]ovi-les? | dosby-tes di-se[]no web blog, Ju-lio 2
+013.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
+\OT1/ptm/m/n/12 URL [][]$\OT1/pcr/m/n/12 http : / / blog . dosbytes . com . mx 
+/ 2013 / 07 / 03 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+[]\OT1/ptm/m/n/12 Future ubi-qui-tous com-pu-ting, Abril 14.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+[][]$\OT1/pcr/m/n/12 http : / / www . thethinkingblog . com / 2007 / 07 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+[]\OT1/ptm/m/n/12 Que es el gps y co-mo fun-cio-na, 2009.  URL [][]$\OT1/pcr/m/
+n/12 http : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+\OT1/pcr/m/n/12 informatica-[]hoy . com . ar / aprender-[]informatica /
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
  (./main.aux (./portada/portada.aux)
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 
 (./Capitulos/1Introduccion/1Introduccion.aux)
-(./Capitulos/2EstadoDelArte/2EstadoDelArte.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+(./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
+(./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
+(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6C10B776603B1E377BCD0B6CAD140824;1748.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
+(rerunfilecheck)             Checksum: 9E0F9F589687A68DBAA5F3402CA8F482;5952.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 13969 strings out of 493315
- 196341 string characters out of 6137904
- 279454 words of memory out of 5000000
- 17101 multiletter control sequences out of 15000+600000
+ 14192 strings out of 493315
+ 200719 string characters out of 6137904
+ 281305 words of memory out of 5000000
+ 17220 multiletter control sequences out of 15000+600000
  35463 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,45p,968b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,45p,2202b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 547646 bytes).
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on main.pdf (35 pages, 1402859 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 

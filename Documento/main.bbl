@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,5 +22,87 @@ Inegi. estad{\'\i}sticas sobre disponibilidad y uso de tecnolog{\'\i}a de
 Ipadizate, Marzo 2014.
 \newblock URL
   \url{http://www.ipadizate.es/2014/03/12/iphone-lidera-mercado-smartphones-eeuu-85564/}.
+
+\bibitem[Mobile(2012)]{crux}
+South Mobile.
+\newblock Crux indoor location by south mobile (us) - sensor tower - app
+  marketing and mobile seo keyword optimization for iphone and ipad, Julio
+  2012.
+\newblock URL
+  \url{https://sensortower.com/android/us/south-mobile/app/crux-indoor-location/com.sm.crux}.
+
+\bibitem[mer()]{meridian}
+Meridian | build a better mobile app.
+\newblock URL \url{http://meridianapps.com}.
+
+\bibitem[LLC(2009)]{gateguru}
+TripAdvisor LLC.
+\newblock Gateguru, 2009.
+\newblock URL \url{http://gateguruapp.com}.
+
+\bibitem[kay()]{kayak}
+Kayak en dispositivos m{\'o}viles - kayak.
+\newblock URL \url{http://www.kayak.es/mobile}.
+
+\bibitem[tri()]{tripit}
+Tripit - travel itinerary - trip planner.
+\newblock URL \url{https://www.tripit.com}.
+
+\bibitem[V{\'\i}tores(2005)]{ILS}
+Ra{\'u}l~S{\'a}nchez V{\'\i}tores.
+\newblock Ils (indoor location systems) sistemas de localizaci{\'o}n en
+  interiores.
+\newblock \emph{Bit}, \penalty0 (148):\penalty0 57--59, Enero 2005.
+
+\bibitem[Carlos Eric Galv{\'a}n~Tejada(2013)]{usoCampoMagnetico}
+Jorge Issac Galv{\'a}n~Tejada Carlos Eric Galv{\'a}n~Tejada, Juan Pablo
+  Garc{\'\i}a~V{\'a}zquez.
+\newblock Uso del campo magn{\'e}tico de la tierra para localizar a las
+  personas en interiores.
+\newblock \emph{DIFU100ci@}, 7\penalty0 (1):\penalty0 32--36, Mayo-Agosto 2013.
+
+\bibitem[Janssen()]{queParaApps}
+Cory Janssen.
+\newblock What is a mobile application - definition from techopedia.
+\newblock URL
+  \url{http://www.techopedia.com/definition/2953/mobile-application-mobile-app}.
+
+\bibitem[Quintanilla(2013)]{tiposApps}
+Mariana Quintanilla.
+\newblock ¿qu{\'e} son y para que sirven las aplicaciones m{\'o}viles? |
+  dosbytes dise{\~n}o web blog, Julio 2013.
+\newblock URL
+  \url{http://blog.dosbytes.com.mx/2013/07/03/que-son-y-para-que-sirven-las-aplicaciones-moviles/}.
+
+\bibitem[ubi(14)]{ubicuo}
+Future ubiquitous computing, Abril 14.
+\newblock URL
+  \url{http://www.thethinkingblog.com/2007/07/future-ubiquitous-computing.html}.
+
+\bibitem[GPS(2009)]{GPS}
+Que es el gps y como funciona, 2009.
+\newblock URL
+  \url{http://www.informatica-hoy.com.ar/aprender-informatica/Que-es-el-GPS-y-como-funciona.php}.
+
+\bibitem[B{\'a}ez()]{Android}
+Manuel B{\'a}ez.
+\newblock \emph{Introducci{\'o}n a Android}.
+\newblock Victoria L{\'o}pez y Grupo Tecnolog{\'\i}a UCM.
+
+\bibitem[en~C.~Jos{\'e} Asunci{\'o}n
+  Enr{\'\i}quez~Z{\'a}rate()]{presentacionAndroid}
+M.~en~C.~Jos{\'e} Asunci{\'o}n Enr{\'\i}quez~Z{\'a}rate.
+\newblock Introducci{\'o}n a la programaci{\'o}n android.
+\newblock Curso de Introducci{\'o}n a Android.
+
+\bibitem[Lasso(2013)]{MobileD}
+Fernando~Dur{\'a}n Lasso.
+\newblock Desarrollo de un sistema de informaci{\'o}n para el campeonato
+  ecuatoriano de f{\'u}tbol primera a para plataforma iphone, Julio 2013.
+
+\bibitem[Vique()]{desDispositivos}
+Robert~Ram{\'\i}rez Vique.
+\newblock M{\'e}todos para el desarrollo de aplicaciones m{\'o}viles.
+\newblock \emph{Universitat Oberta de Catalunya}.
 
 \end{thebibliography}

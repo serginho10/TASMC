@@ -1,0 +1,86 @@
+\section{ILS (Indoor Location Systems) Sistemas de Localización en Interiores}
+
+La problemática de la localización en interiores ha sido objeto de un intenso estudio e investigación durante los últimos años. Hasta ahora, ninguna de las soluciones propuestas ha conseguido el éxito que han alcanzado los sistemas de localización y navegación análogos empleados en exteriores, sobre todo el popular GPS. Las razones de este cierto fracaso han sido tanto técnicas como sobre todo económicas: técnicas porque la localización en interiores plantea retos tecnológicos muy superiores a los de la localización en espacios abiertos y económicas porque la mayor parte de los sistemas propuestos utilizan gran cantidad de infraestructura fija (sensores, puntos de control, estaciones base, etc.), lo que hace aumentar mucho el costo.
+
+\subsection{Clasificación de los sistemas ILS}
+
+Por una parte podemos distinguir los sistemas \textbf{basados en tags o etiquetas}, en los cuales el equipo sólo es capaz de detectar y por lo tanto localizar, a aquellos elementos que porten un dispositivo conocido como tag, y por consiguiente al elemento etiquetado.
+
+Por el contrario, los que no precisan de tags son sistemas que sí que son capaces de reconocer y detectar al elemento a seguir.
+
+La ventaja de esta clase de sistemas es que permiten la localización y seguimiento de cualquier elemento, por lo que son de aplicación universal y además son mucho más seguros. No obstante, sus prestaciones son todavía muy limitadas y no son eficaces, excepto en ambientes muy controlados.
+
+Además, están los basados en la \textbf{detección de presencia por un sensor} localizado y de ubicación fija y conocida, llamado punto de control. Una vez detectado el elemento e identificado, la localización del mismo queda acotada a las proximidades del sensor que lo ha identificado. Por consiguiente, la localización se basa en los criterios de presencia y proximidad, dependiendo la precisión del sistema del número de puntos de control desplegados.
+
+También están los sistemas basados en el \textbf{cálculo efectivo de la posición del elemento mediante técnicas de triangulación}, conociendo además otros parámetros como la medida del retardo de propagación o la fuerza de la señal recibida, la ventaja de esta clase de sistemas radica en que alcanzan una gran precisión (en algunos casos del orden de centímetros), y el principal inconveniente se encuentra en el alto costo de la infraestructura a instalar y la complejidad tecnológica.
+
+Por último, citar los equipos basados en el \textbf{análisis del escenario}, que son de mayor complejidad computacional, tratándose de sistemas que analizan determinadas propiedades del escenario en el que se pretende ubicar el elemento para inferir de ellas la posición del mismo. \cite{ILS}
+
+\subsection{Distintas soluciones técnicas}
+
+\subsubsection{Identificación por radiofrecuencia}
+
+Como su nombre indica, son propiamente sistemas de identificación, no de localización, aunque también pueden utilizarse para esta función. Aunque existen multitud de criterios para clasificar los sistemas de RFID, se distinguen dos clases fundamentales en función del tipo de tags que se empleen: pasivos (sin batería) o activos (con batería). Otros criterios de clasificación habituales son la frecuencia de trabajo, si los tags son de sólo lectura o de lectura y escritura, etc. 
+
+Aquí simplemente vamos a presentar las principales características de los tags pasivos y activos. 
+
+Un tag pasivo consiste en una unidad de procesamiento, un transmisor de RF (radiofrecuencia)
+y una antena, la cual actúa tanto para la transmisión de la información contenida en el tag (un código de identificación
+numérico) como para la alimentación del tag a través de un bucle de inducción a partir de la emisión electromagnética del lector. Cuando el tag cae bajo el radio de acción del lector, el cual emite una señal electromagnética a una determinada frecuencia, el tag carga su batería y transmite su número de identificación, normalmente a una frecuencia distinta. Las principales ventajas de esta clase de tags son su bajo coste, pequeño tamaño y gran duración. En contrapartida el alcance es muy reducido, en torno a un metro en el mejor de los casos, aunque desde hace tiempo se lleva anunciando la salida al mercado de tags pasivos en la banda de UHF (868 MHz en Europa) con alcances de 10 m ó más, pero éstos no acaban de aparecer. La localización se basa en el criterio de proximidad, y la precisión depende del número de puntos de control instalados y la correcta elección de los emplazamientos (por ejemplo, en los puntos de paso forzoso, como en las puertas). En esta clase de sistemas, el coste más elevado por unidad es el de los lectores, aunque en términos globales entre el 50 y el 70% de la inversión total corresponde a los tags. 
+
+Por otra parte están los tags activos, que se caracterizan por disponer de una batería propia que les proporciona la energía suficiente para radiar su código de identificación con mucha mayor potencia que en el caso de los tags pasivos. En consecuencia, el alcance resulta mucho mayor (en torno a los 30 m). Como contrapartida, el coste de los tags activos es mucho mayor, así como su tamaño. El ciclo de vida del tag es el de la batería, que se sitúa alrededor de los 5 años, aunque esto depende de lo intensivo que sea su uso. Los tags activos son apropiados tanto para la implementación de sistemas ILS basados en proximidad (puntos de control), como para sistemas que hagan uso de técnicas de triangulación. 
+
+\subsubsection{Infrarrojos}
+
+Fue la primera tecnología empleada para el desarrollo de sistemas de localización en interiores. Se utilizan tags que emiten radiación infrarroja en modo difuso, es decir, de forma radial, no en modo punto a punto como es habitual en los sistemas IR empleados en comunicaciones. Se trata de un sistema de detección más que de localización, ya que la posición del elemento etiquetado con el tag IR se infiere de la posición fija y conocida de los sensores que detectan al tag. 
+
+La principal limitación de esta alternativa tecnológica es que la radiación infrarroja no atraviesa las paredes, por lo que hay que instalar sensores en cada una de las habitaciones. Además, debido a que la emisión es directiva por el efecto pantalla del cuerpo del portador del tag, es conveniente instalar más de un sensor por localización para asegurar que la detección se produzca correctamente, lo cual hace aumentar mucho el coste. No obstante, con este sistema se obtiene la gran ventaja de conseguir evitar interferencias y falsas detecciones de otros sensores, como sucede en RF. 
+
+\subsubsection{Pinpoint 3D-ID de RF technologies}
+
+PinPoint es un sistema que se basa en estaciones base y tags activos de RFID propietarios de tecnología L3RF (Low range, Long life, Low cost), y requiere el despliegue de una red ad hoc (única para este propósito). 
+
+Los tags se activan al recibir desde una estación base o un controlador de celda (que controla hasta un máximo de 16 antenas), una señal de radio a la frecuencia de 2,4 GHz y responden a intervalos definidos, a la frecuencia de 5,8 GHz con señales que incluyen información de identificación del tag. Observando el retardo de la respuesta del tag en cada estación base o antena, el controlador de celda es capaz de calcular la posición del tag. 
+
+El mayor inconveniente es que cada antena del sistema tiene un área de cobertura muy limitada, las antenas son muy directivas, por lo que es necesario un gran despliegue de infraestructura para cubrir un área, siendo por tanto una solución muy costosa más orientada a naves industriales y almacenes de gran tamaño que a edificios con numerosos tabiques y habitaciones. 
+
+\subsubsection{Radar}
+
+Sistema presentado por Microsoft en marzo del 2000, que hace uso de la tecnología IEEE 802.11. Se basa en las mediciones que las estaciones base de una red WLAN (Wireless LAN) hacen de la potencia y de la relación señal a ruido de las emisiones transmitidas por los dispositivos inalámbricos que se conectan a la red. Una serie de algoritmos permiten estimar la localización de un elemento con una precisión de 3 a 4 m en el 50\% de las ocasiones. Microsoft ha desarrollado dos versiones de la herramienta, una empleando análisis del escenario y otra que emplea triangulación por distancias para el cálculo de la posición. 
+
+La ventaja de este sistema es que requiere, si lo comparamos con otros sistemas, relativamente poca infraestructura. También es interesante que se pueda apoyar sobre redes WLAN ya instaladas para otros propósitos. Como desventajas hay que señalar que sólo pueden ser localizados elementos con capacidad de conexión WLAN y que la aplicación del sistema en edificios con varias plantas, genera problemas de difícil solución debido a que las ondas de radio también pueden atravesar suelos y techos. Así pues, si las señales de un mismo tag son captadas por estaciones base instaladas en plantas distintas, y en función de la potencia con que se reciban, el sistema puede llegar a ubicar al tag en un piso que no le corresponde. Hay que señalar, por otra parte, que las tarjetas WLAN no son baratas y tienen importantes consumos de energía, por lo que difícilmente pueden acomodarse a tags de reducido peso y tamaño. 
+
+\subsubsection{Ultrasonidos}
+
+Se trata de soluciones que están también basadas en tags o etiquetas para los elementos a controlar, pero en este caso estos tags emiten o reciben ultrasonidos. El sistema más representativo es el Bat de AT\&T Laboratories. Los tags cuentan con un transceptor radio (banda de 433 MHz), una lógica de control que contiene un identificador único de 48 bits y un emisor de ultrasonidos. La infraestructura se compone de sensores de ultrasonidos, estaciones base de RF y un sistema central de gestión, formando los sensores o receptores una malla en puntos conocidos del techo. Una estación base transmite periódicamente un mensaje que contiene el identificador del tag que desea activar y al recibir el mensaje con su identidad, el tag aludido se despierta y emite un pulso de muy corta duración. Además, se resetea el reloj de los sensores del área de influencia, los cuales comienzan a contar el tiempo que transcurre hasta que reciben la señal del tag Bat. A partir de este retardo y de la velocidad de propagación del sonido en el aire, se calcula de forma inmediata la distancia al sensor. Cabe destacar que con las distancias del tag a varios sensores (mínimo tres), puede conocerse la posición del tag en 3 dimensiones. Este sistema es capaz de detectar la posición de los tags con un error máximo de 3 cm en un 95\% de las medidas. Cada estación base puede activar simultáneamente un número máximo de 3 tags, con una frecuencia de refresco de 50 veces por segundo. El tiempo de vida de la batería del tag es de 15 meses. El sistema Bat no se comercializa en la actualidad debido al alto coste de la infraestructura, que se espera poder reducir en posteriores versiones del sistema. Otro de los retos que pretenden acometer los investigadores de AT\&T es la sustitución de las comunicaciones RF entre estaciones base y tags por IR para evitar la complejidad del trabajo multifrecuencia en estaciones base próximas. En cualquier caso, se trata de una tecnología poco madura y bastante elevada en precio, encontrándose todavía lejos de ser comercializada. 
+
+\subsubsection{Visión Artificial}
+
+Estos sistemas hacen uso de la información recogida por cámaras y utilizan técnicas de procesamiento de imágenes para la identificación y seguimiento de objetos. Estos sistemas de visión empleados en identificación y localización pueden trabajar tanto con marcadores visuales (tags) como sin ellos. 
+
+\subsubsection{Zigbee}
+
+Iniciado por Philips, Honeywell, Invensys y seguido por Motorota, Mitsubishi y hasta 25 empresas para crear un sistema estándar de comunicaciones inalámbrico y bidireccional, para usarlo dentro de dispositivos de domótica, automatización de edificios (inmótica), control industrial, periféricos de PC, sensores médicos e identificación y localización. La idea de ponerle el nombre ZigBee vino de una colmena de abejas pululando alrededor de su panal y comunicándose entre ellas.
+Los miembros de esta alianza justifican el desarrollo de este estándar para cubrir el vacío que se produce por debajo del Bluetooth. Puede transmitir con un simple protocolo de 20 KB/s trabajando a una frecuencia de 2,4 GHz (banda libre ISM) u 868 MHz (Europa) o 915 MHz (EEUU), con bajo consumo (“transceiver” ZigBee dormido la mayor parte del tiempo), rangos entre 10 y 75 metros y soporte de hasta 255 nodos. 
+
+\subsubsection{Campo magnético}
+
+Los sistemas de localización basados en el campo magnético de la tierra pueden ser agrupados principalmente en dos categorías, aquellos que requieren de una fase pasiva más extensa y detallada, refiriéndose a una recolección de información meticulosa dividiendo el área en superficies pequeñas de igual tamaño y obtener para cada una de esas pequeñas superficies su lectura del campo magnético \cite{usoCampoMagnetico}, como lo podemos visualizar en la Figura \ref{fig:ejPasiva}.
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics{Figuras/ejPasiva.png}
+		\rule{35em}{0.5pt}
+	\caption[División de una casa habitación para la recolección de información en la fase pasiva]{Ejemplo de división de una casa habitación para la recolección de información en la fase pasiva}
+	\label{fig:ejPasiva}
+\end{figure}
+
+Por otro lado, se tiene el enfoque siguiendo al líder (follow the leader), en el cual la fase pasiva es mucho más sencilla, ya que solamente consta de recolectar información dentro de la habitación generando un perímetro o recorrido predefinido que en la fase activa puede ser reconocido y así obtener la localización, enfoque representado en la Figura \ref{fig:ejSigLider}.
+
+ \begin{figure}[htbp]
+	\centering
+		\includegraphics{Figuras/ejSigLider.png}
+		\rule{35em}{0.5pt}
+	\caption[Perímetro requerido en el enfoque siguiendo al líder  para reconocer una habitación]{Ejemplo de perímetro requerido en el enfoque siguiendo al líder  para reconocer una habitación}
+	\label{fig:ejSigLider}
+\end{figure}

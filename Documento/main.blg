@@ -4,54 +4,87 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada/portada.aux
 A level-1 auxiliary file: Capitulos/1Introduccion/1Introduccion.aux
 A level-1 auxiliary file: Capitulos/2EstadoDelArte/2EstadoDelArte.aux
+A level-1 auxiliary file: Capitulos/3MarcoTeorico/3MarcoTeorico.aux
+A level-1 auxiliary file: Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
+Warning--entry type for "MobileD" isn't style-file defined
+--line 19 of file Bibliography.bib
+Warning--entry type for "GPS" isn't style-file defined
+--line 44 of file Bibliography.bib
+Warning--entry type for "ubicuo" isn't style-file defined
+--line 52 of file Bibliography.bib
+Warning--entry type for "tiposApps" isn't style-file defined
+--line 62 of file Bibliography.bib
+Warning--entry type for "queParaApps" isn't style-file defined
+--line 74 of file Bibliography.bib
+Warning--entry type for "tripit" isn't style-file defined
+--line 107 of file Bibliography.bib
+Warning--entry type for "kayak" isn't style-file defined
+--line 116 of file Bibliography.bib
+Warning--entry type for "gateguru" isn't style-file defined
+--line 125 of file Bibliography.bib
+Warning--entry type for "meridian" isn't style-file defined
+--line 136 of file Bibliography.bib
+Warning--entry type for "crux" isn't style-file defined
+--line 145 of file Bibliography.bib
 Warning--entry type for "moviles" isn't style-file defined
---line 12 of file Bibliography.bib
+--line 158 of file Bibliography.bib
 Warning--entry type for "endutih" isn't style-file defined
---line 23 of file Bibliography.bib
+--line 170 of file Bibliography.bib
 Warning--entry type for "appsViajar" isn't style-file defined
---line 32 of file Bibliography.bib
+--line 180 of file Bibliography.bib
 Warning--empty year in endutih
-You've used 3 entries,
+Warning--empty year in meridian
+Warning--empty year in kayak
+Warning--empty year in tripit
+Warning--there's a number but no volume in ILS
+Warning--empty year in queParaApps
+Warning--can't use both author and editor fields in Android
+Warning--empty year in Android
+Warning--empty year in Android
+Warning--empty year in presentacionAndroid
+Warning--empty year in desDispositivos
+Warning--empty year in desDispositivos
+You've used 18 entries,
             2481 wiz_defined-function locations,
-            569 strings with 5039 characters,
-and the built_in function-call counts, 724 in all, are:
-= -- 61
-> -- 7
-< -- 1
-+ -- 8
-- -- 2
-* -- 41
-:= -- 91
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 6
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 42
-empty$ -- 95
-format.name$ -- 3
-if$ -- 163
+            649 strings with 7240 characters,
+and the built_in function-call counts, 4468 in all, are:
+= -- 382
+> -- 77
+< -- 11
++ -- 58
+- -- 22
+* -- 251
+:= -- 607
+add.period$ -- 46
+call.type$ -- 18
+change.case$ -- 35
+chr.to.int$ -- 18
+cite$ -- 37
+duplicate$ -- 269
+empty$ -- 552
+format.name$ -- 33
+if$ -- 998
 int.to.chr$ -- 1
-int.to.str$ -- 4
-missing$ -- 0
-newline$ -- 21
-num.names$ -- 3
-pop$ -- 38
+int.to.str$ -- 19
+missing$ -- 5
+newline$ -- 90
+num.names$ -- 33
+pop$ -- 212
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 18
 quote$ -- 0
-skip$ -- 36
+skip$ -- 198
 stack$ -- 0
-substring$ -- 8
-swap$ -- 8
+substring$ -- 73
+swap$ -- 44
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 21
-warning$ -- 1
-while$ -- 2
+type$ -- 123
+warning$ -- 12
+while$ -- 24
 width$ -- 0
-write$ -- 38
-(There were 4 warnings)
+write$ -- 201
+(There were 25 warnings)

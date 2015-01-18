@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada/portada.aux
 A level-1 auxiliary file: Capitulos/1Introduccion/1Introduccion.aux
+A level-1 auxiliary file: Capitulos/2EstadoDelArte/2EstadoDelArte.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
 Warning--entry type for "moviles" isn't style-file defined
@@ -14,7 +15,7 @@ Warning--entry type for "appsViajar" isn't style-file defined
 Warning--empty year in endutih
 You've used 3 entries,
             2481 wiz_defined-function locations,
-            568 strings with 4996 characters,
+            569 strings with 5039 characters,
 and the built_in function-call counts, 724 in all, are:
 = -- 61
 > -- 7

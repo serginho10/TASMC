@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 JAN 2015 16:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 JAN 2015 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -716,14 +716,26 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks34
 \minrowclearance=\skip67
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box35
+\beforetitleunit=\skip68
+\aftertitleunit=\skip69
+\ttl@plus=\dimen152
+\ttl@minus=\dimen153
+\ttl@toksa=\toks35
+\titlewidth=\dimen154
+\titlewidthlast=\dimen155
+\titlewidthfirst=\dimen156
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip68
-\bibsep=\skip69
+\bibhang=\skip70
+\bibsep=\skip71
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count136
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 31.
  (./main.aux
 (./portada/portada.aux)
 LaTeX Info: Redefining \. on input line 24.
@@ -731,26 +743,27 @@ LaTeX Info: Redefining \% on input line 24.
  (./Capitulos/1Introduccion/1Introduccion.aux)
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
 (./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
-(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux))
+(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux)
+(./Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 34.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -769,20 +782,20 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count137
-\scratchdimen=\dimen152
-\scratchbox=\box35
+\scratchdimen=\dimen157
+\scratchbox=\box36
 \nofMPsegments=\count138
 \nofMParguments=\count139
-\everyMPshowfont=\toks35
+\everyMPshowfont=\toks36
 \MPscratchCnt=\count140
-\MPscratchDim=\dimen153
+\MPscratchDim=\dimen158
 \MPnumerator=\count141
 \makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks36
+\everyMPtoPDFconversion=\toks37
 )
 \c@lstlisting=\count143
-\AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 26.
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring ON on input line 34.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -791,16 +804,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
 \openout2 = `portada/portada.aux'.
 
  (./portada/portada.tex
@@ -814,13 +827,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<portada/ipn.jpg, id=136, 195.73125pt x 287.0725pt>
+<portada/ipn.jpg, id=172, 195.73125pt x 287.0725pt>
 File: portada/ipn.jpg Graphic file (type jpg)
  <use portada/ipn.jpg>
 Package pdftex.def Info: portada/ipn.jpg used on input line 5.
 (pdftex.def)             Requested size: 58.19716pt x 85.35826pt.
 
-<portada/escom.jpg, id=137, 226.8475pt x 200.75pt>
+<portada/escom.jpg, id=173, 226.8475pt x 200.75pt>
 File: portada/escom.jpg Graphic file (type jpg)
  <use portada/escom.jpg>
 Package pdftex.def Info: portada/escom.jpg used on input line 7.
@@ -850,7 +863,7 @@ da/ipn.jpg> <./portada/escom.jpg>]
  Table of Contents
 ------------------------------------------------------------------------------
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -906,7 +919,7 @@ Cap\'{\i }tulo 1.
 
 ] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex)
 (./Capitulos/1Introduccion/Secciones/1-2SolucionPropuesta.tex [2]
-<Figuras/arquitectura.png, id=239, 333.8874pt x 249.5724pt>
+<Figuras/arquitectura.png, id=296, 333.8874pt x 249.5724pt>
 File: Figuras/arquitectura.png Graphic file (type png)
 
 <use Figuras/arquitectura.png>
@@ -922,7 +935,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 (./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
 (./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
 (./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
-<Figuras/moviles.png, id=260, 443.7378pt x 196.0926pt>
+<Figuras/moviles.png, id=318, 443.7378pt x 196.0926pt>
 File: Figuras/moviles.png Graphic file (type png)
 
 <use Figuras/moviles.png>
@@ -972,7 +985,7 @@ Overfull \hbox (39.99579pt too wide) in paragraph at lines 28--28
 []|\OT1/ptm/m/n/12 Android|  
  []
 
-<Figuras/crux.png, id=275, 62.1522pt x 62.634pt>
+<Figuras/crux.png, id=333, 62.1522pt x 62.634pt>
 File: Figuras/crux.png Graphic file (type png)
  <use Figuras/crux.png>
 Package pdftex.def Info: Figuras/crux.png used on input line 29.
@@ -1012,7 +1025,7 @@ Overfull \hbox (39.99579pt too wide) in paragraph at lines 34--34
 \OT1/ptm/m/n/12 Android|  
  []
 
-<Figuras/meridian.png, id=277, 64.5612pt x 64.5612pt>
+<Figuras/meridian.png, id=335, 64.5612pt x 64.5612pt>
 File: Figuras/meridian.png Graphic file (type png)
 
 <use Figuras/meridian.png>
@@ -1053,7 +1066,7 @@ Overfull \hbox (29.32747pt too wide) in paragraph at lines 56--56
 []|\OT1/ptm/m/n/12 Gratis|  
  []
 
-<Figuras/gateGuru.png, id=279, 67.9338pt x 67.452pt>
+<Figuras/gateGuru.png, id=337, 67.9338pt x 67.452pt>
 File: Figuras/gateGuru.png Graphic file (type png)
 
 <use Figuras/gateGuru.png>
@@ -1074,7 +1087,7 @@ Overfull \hbox (29.32747pt too wide) in paragraph at lines 61--61
 []|\OT1/ptm/m/n/12 Gratis|  
  []
 
-<Figuras/kayak.png, id=281, 66.0066pt x 66.0066pt>
+<Figuras/kayak.png, id=339, 66.0066pt x 66.0066pt>
 File: Figuras/kayak.png Graphic file (type png)
  <use Figuras/kayak.png>
 Package pdftex.def Info: Figuras/kayak.png used on input line 63.
@@ -1089,7 +1102,7 @@ Overfull \hbox (26.91559pt too wide) in paragraph at lines 65--65
 []|\OT1/ptm/m/n/12 Tripit|  
  []
 
-<Figuras/tripit.png, id=283, 68.4156pt x 68.4156pt>
+<Figuras/tripit.png, id=341, 68.4156pt x 68.4156pt>
 File: Figuras/tripit.png Graphic file (type png)
  <use Figuras/tripit.png>
 Package pdftex.def Info: Figuras/tripit.png used on input line 70.
@@ -1156,7 +1169,7 @@ ua-rios ope-rar en el en-torno inal[]ambri-
  []
 
 [12]) (./Capitulos/3MarcoTeorico/Secciones/3-3ComputoUbicuo.tex
-<Figuras/ubicuo.png, id=324, 332.442pt x 249.5724pt>
+<Figuras/ubicuo.png, id=381, 332.442pt x 249.5724pt>
 File: Figuras/ubicuo.png Graphic file (type png)
  <use Figuras/ubicuo.png>
 Package pdftex.def Info: Figuras/ubicuo.png used on input line 9.
@@ -1168,7 +1181,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-4GPS.tex [13 <./Figuras/ubicuo.png>]
 [14]) (./Capitulos/3MarcoTeorico/Secciones/3-5ILS.tex [15] [16] [17] [18]
-[19] [20] <Figuras/ejPasiva.png, id=369, 213.9192pt x 253.4268pt>
+[19] [20] <Figuras/ejPasiva.png, id=426, 213.9192pt x 253.4268pt>
 File: Figuras/ejPasiva.png Graphic file (type png)
 
 <use Figuras/ejPasiva.png>
@@ -1179,7 +1192,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 72--74
  [] 
  []
 
-<Figuras/ejSigLider.png, id=371, 197.538pt x 253.9086pt>
+<Figuras/ejSigLider.png, id=428, 197.538pt x 253.9086pt>
 File: Figuras/ejSigLider.png Graphic file (type png)
 
 <use Figuras/ejSigLider.png>
@@ -1191,12 +1204,13 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 82--84
  []
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-6Android.tex [21 <./Figuras/ejPasiva.p
-ng>] <Figuras/capasAndroid.png, id=378, 610.28pt x 533.995pt>
+ng>] <Figuras/capasAndroid.png, id=435, 610.28pt x 533.995pt>
 File: Figuras/capasAndroid.png Graphic file (type png)
 
 <use Figuras/capasAndroid.png>
 Package pdftex.def Info: Figuras/capasAndroid.png used on input line 7.
 (pdftex.def)             Requested size: 417.47307pt x 365.30363pt.
+ [22 <./Figuras/ejSigLider.png>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -1204,7 +1218,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
- [22 <./Figuras/ejSigLider.png>] [23 <./Figuras/capasAndroid.png>] [24])) [25]
+ [23 <./Figuras/capasAndroid.png>] [24])) [25]
 \openout2 = `Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux'.
 
 
@@ -1213,7 +1227,7 @@ Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Marco Metodol\IeC {\'o}gico
 ------------------------------------------------------------------------------
-<Figuras/cicloDesarrollo.png, id=402, 480.8364pt x 233.673pt>
+<Figuras/cicloDesarrollo.png, id=460, 480.8364pt x 233.673pt>
 File: Figuras/cicloDesarrollo.png Graphic file (type png)
 
 <use Figuras/cicloDesarrollo.png>
@@ -1224,9 +1238,91 @@ Package pdftex.def Info: Figuras/cicloDesarrollo.png used on input line 28.
 
 
 ]) [27 <./Figuras/cicloDesarrollo.png>]
-[28] (./main.bbl
+[28]
+\openout2 = `Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux'.
+
+ (./Capitulos/5AnalisisGeneral/5AnalisisGeneral.tex
+Cap\'{\i }tulo 5.
+------------------------------------------------------------------------------
+ 5 An\IeC {\'a}lisis General
+------------------------------------------------------------------------------
+(./Capitulos/5AnalisisGeneral/Secciones/5-1EstudioFactibilidad.tex [29
+
+
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] <Figuras/android.png, id=492, 25.5354pt x 22.1628pt>
+File: Figuras/android.png Graphic file (type png)
+
+<use Figuras/android.png>
+Package pdftex.def Info: Figuras/android.png used on input line 147.
+(pdftex.def)             Requested size: 42.6794pt x 42.68396pt.
+ <Figuras/ios.png, id=493, 36.135pt x 36.135pt>
+File: Figuras/ios.png Graphic file (type png)
+
+<use Figuras/ios.png>
+Package pdftex.def Info: Figuras/ios.png used on input line 148.
+(pdftex.def)             Requested size: 42.68135pt x 42.68135pt.
+
+Underfull \hbox (badness 1715) in paragraph at lines 151--151
+[]| \OT1/ptm/m/n/12 Win-dows, Mac OS y
+ []
+
+
+Overfull \hbox (80.69913pt too wide) in paragraph at lines 169--169
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (80.69913pt too wide) in paragraph at lines 176--177
+[]|$[]$| 
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 178--178
+[]|[]\OT1/ptm/b/n/12 Tipo de C[]odi-go de
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 183--183
+[]| \OT1/ptm/m/n/12 $ 25.00 USD. Pa-go
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 184--185
+[]| \OT1/ptm/m/n/12 $ 99.00 USD. Pa-go
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[]|[]\OT1/ptm/b/n/12 IDE (En-torno de
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31] [32 <./Figuras/android.png> <./Figuras/ios.png>]
+<Figuras/versionesAndroid.png, id=509, 333.8874pt x 167.1846pt>
+File: Figuras/versionesAndroid.png Graphic file (type png)
+
+<use Figuras/versionesAndroid.png>
+Package pdftex.def Info: Figuras/versionesAndroid.png used on input line 220.
+(pdftex.def)             Requested size: 417.47307pt x 209.04399pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRiesgos.tex [33 <./Figuras
+/versionesAndroid.png>])) [34] (./main.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Underfull \hbox (badness 2600) in paragraph at lines 9--13
@@ -1264,7 +1360,7 @@ Underfull \hbox (badness 5711) in paragraph at lines 65--69
 tion from te-
  []
 
-[29
+[35
 
 
 ]
@@ -1307,9 +1403,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--86
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
- [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+ [36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (./main.aux (./portada/portada.aux)
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -1317,21 +1413,22 @@ LaTeX Info: Redefining \% on input line 24.
 (./Capitulos/1Introduccion/1Introduccion.aux)
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
 (./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
-(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+(./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux)
+(./Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9E0F9F589687A68DBAA5F3402CA8F482;5952.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+(rerunfilecheck)             Checksum: 3F533D0A83A2B5B53A6F5C5371AAB5F5;7584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 14192 strings out of 493315
- 200719 string characters out of 6137904
- 281305 words of memory out of 5000000
- 17220 multiletter control sequences out of 15000+600000
+ 14547 strings out of 493315
+ 206025 string characters out of 6137904
+ 291509 words of memory out of 5000000
+ 17531 multiletter control sequences out of 15000+600000
  35463 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,45p,2202b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,45p,2202b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
@@ -1339,10 +1436,10 @@ ive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (35 pages, 1402859 bytes).
+Output written on main.pdf (41 pages, 1449749 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 335 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

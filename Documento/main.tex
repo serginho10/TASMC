@@ -16,6 +16,14 @@
 \usepackage[spanish]{babel}
 \usepackage{multirow}
 \usepackage{color, colortbl}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{5}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 \graphicspath{{Imagenes/}}
 
@@ -79,6 +87,7 @@
 \include{Capitulos/2EstadoDelArte/2EstadoDelArte}
 \include{Capitulos/3MarcoTeorico/3MarcoTeorico}
 \include{Capitulos/4MarcoMetodologico/4MarcoMetodologico}
+\include{Capitulos/5AnalisisGeneral/5AnalisisGeneral}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -90,7 +99,8 @@
 
 \bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
 
-\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+\bibliography{Bibliography} 
+
 \addcontentsline{toc}{chapter}{Bibliografía}
 
 \end{document}

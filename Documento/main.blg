@@ -6,34 +6,37 @@ A level-1 auxiliary file: Capitulos/1Introduccion/1Introduccion.aux
 A level-1 auxiliary file: Capitulos/2EstadoDelArte/2EstadoDelArte.aux
 A level-1 auxiliary file: Capitulos/3MarcoTeorico/3MarcoTeorico.aux
 A level-1 auxiliary file: Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux
+A level-1 auxiliary file: Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
+Warning--entry type for "devAndroid" isn't style-file defined
+--line 12 of file Bibliography.bib
 Warning--entry type for "MobileD" isn't style-file defined
---line 19 of file Bibliography.bib
+--line 25 of file Bibliography.bib
 Warning--entry type for "GPS" isn't style-file defined
---line 44 of file Bibliography.bib
+--line 50 of file Bibliography.bib
 Warning--entry type for "ubicuo" isn't style-file defined
---line 52 of file Bibliography.bib
+--line 59 of file Bibliography.bib
 Warning--entry type for "tiposApps" isn't style-file defined
---line 62 of file Bibliography.bib
+--line 69 of file Bibliography.bib
 Warning--entry type for "queParaApps" isn't style-file defined
---line 74 of file Bibliography.bib
+--line 81 of file Bibliography.bib
 Warning--entry type for "tripit" isn't style-file defined
---line 107 of file Bibliography.bib
+--line 114 of file Bibliography.bib
 Warning--entry type for "kayak" isn't style-file defined
---line 116 of file Bibliography.bib
+--line 123 of file Bibliography.bib
 Warning--entry type for "gateguru" isn't style-file defined
---line 125 of file Bibliography.bib
+--line 132 of file Bibliography.bib
 Warning--entry type for "meridian" isn't style-file defined
---line 136 of file Bibliography.bib
+--line 143 of file Bibliography.bib
 Warning--entry type for "crux" isn't style-file defined
---line 145 of file Bibliography.bib
+--line 152 of file Bibliography.bib
 Warning--entry type for "moviles" isn't style-file defined
---line 158 of file Bibliography.bib
+--line 165 of file Bibliography.bib
 Warning--entry type for "endutih" isn't style-file defined
---line 170 of file Bibliography.bib
+--line 177 of file Bibliography.bib
 Warning--entry type for "appsViajar" isn't style-file defined
---line 180 of file Bibliography.bib
+--line 187 of file Bibliography.bib
 Warning--empty year in endutih
 Warning--empty year in meridian
 Warning--empty year in kayak
@@ -46,45 +49,45 @@ Warning--empty year in Android
 Warning--empty year in presentacionAndroid
 Warning--empty year in desDispositivos
 Warning--empty year in desDispositivos
-You've used 18 entries,
+You've used 19 entries,
             2481 wiz_defined-function locations,
-            649 strings with 7240 characters,
-and the built_in function-call counts, 4468 in all, are:
-= -- 382
+            655 strings with 7387 characters,
+and the built_in function-call counts, 4685 in all, are:
+= -- 402
 > -- 77
 < -- 11
-+ -- 58
++ -- 60
 - -- 22
-* -- 251
-:= -- 607
-add.period$ -- 46
-call.type$ -- 18
-change.case$ -- 35
-chr.to.int$ -- 18
-cite$ -- 37
-duplicate$ -- 269
-empty$ -- 552
+* -- 265
+:= -- 628
+add.period$ -- 48
+call.type$ -- 19
+change.case$ -- 37
+chr.to.int$ -- 19
+cite$ -- 39
+duplicate$ -- 283
+empty$ -- 584
 format.name$ -- 33
-if$ -- 998
+if$ -- 1051
 int.to.chr$ -- 1
-int.to.str$ -- 19
+int.to.str$ -- 20
 missing$ -- 5
-newline$ -- 90
+newline$ -- 94
 num.names$ -- 33
-pop$ -- 212
+pop$ -- 225
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 19
 quote$ -- 0
-skip$ -- 198
+skip$ -- 209
 stack$ -- 0
-substring$ -- 73
-swap$ -- 44
+substring$ -- 76
+swap$ -- 47
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 123
+type$ -- 130
 warning$ -- 12
 while$ -- 24
 width$ -- 0
-write$ -- 201
-(There were 25 warnings)
+write$ -- 211
+(There were 26 warnings)

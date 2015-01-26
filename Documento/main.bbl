@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -108,5 +108,26 @@ Robert~Ram{\'\i}rez Vique.
 \bibitem[dev(2014)]{devAndroid}
 Developers android, Agosto 2014.
 \newblock URL \url{http://developer.android.com/about/dashboards/index.html}.
+
+\bibitem[sta(2005)]{starUML}
+Staruml, 2005.
+\newblock URL \url{http://staruml.io}.
+
+\bibitem[api(2013)]{apiGoogleMaps}
+El api de rutas de google - servicios web del api de google maps - google
+  developers, Enero 2013.
+\newblock URL
+  \url{https://developers.google.com/maps/documentation/directions/?hl=es}.
+
+\bibitem[api(2014)]{apiIndoorAtlas}
+Indooratlas introduces industry's first geomagnetic-based indoor mapping app
+  for ios | reuters, Abril 2014.
+\newblock URL
+  \url{http://uk.reuters.com/article/2014/04/24/idUKnMKWjD8bya+1d0+MKW20140424}.
+
+\bibitem[sal(2014)]{salarios}
+Estudios de remuneraci{\'o}n 2013 - 2014, 2014.
+\newblock URL
+  \url{http://www.pagepersonnel.com.mx/productsApp_ppmx/estudios_de_remuneracion/sp/00img/er_mexico.pdf}.
 
 \end{thebibliography}

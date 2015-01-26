@@ -12,3 +12,38 @@
 \contentsline {table}{\numberline {5.3}{\ignorespaces Espec\IeC {\'\i }ficaciones t\IeC {\'e}cnicas Galaxy S4}}{31}{table.caption.56}
 \contentsline {table}{\numberline {5.4}{\ignorespaces Comparaci\IeC {\'o}n de Sistemas Operativos M\IeC {\'o}viles}}{32}{table.caption.59}
 \contentsline {table}{\numberline {5.5}{\ignorespaces Usabilidad de las Versiones de Android}}{34}{table.caption.63}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Par\IeC {\'a}metros de Comparaci\IeC {\'o}n para el Lenguaje de Programaci\IeC {\'o}n}}{35}{table.caption.65}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Comparaci\IeC {\'o}n de Lenguajes de Programaci\IeC {\'o}n}}{36}{table.caption.66}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Sistemas Operativos del Equipo}}{36}{table.caption.68}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Par\IeC {\'a}metros de Comparaci\IeC {\'o}n para IDEs}}{37}{table.caption.70}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Comparacion IDEs Android Studio y Eclipse ADT}}{37}{table.caption.71}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Comparaci\IeC {\'o}n SGBD m\IeC {\'o}viles}}{39}{table.caption.74}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Recursos Humanos}}{40}{table.caption.78}
+\contentsline {table}{\numberline {5.13}{\ignorespaces Recursos Consumibles}}{40}{table.caption.79}
+\contentsline {table}{\numberline {5.14}{\ignorespaces Recursos Tecnol\IeC {\'o}gicos}}{40}{table.caption.80}
+\contentsline {table}{\numberline {5.15}{\ignorespaces Costo Total TASMC}}{41}{table.caption.81}
+\contentsline {table}{\numberline {5.16}{\ignorespaces FODA TASMC}}{42}{table.caption.83}
+\contentsline {table}{\numberline {5.17}{\ignorespaces Reglas de Negocio}}{43}{table.caption.86}
+\contentsline {table}{\numberline {5.18}{\ignorespaces Requerimientos B\IeC {\'a}sicos}}{47}{table.caption.88}
+\contentsline {table}{\numberline {5.19}{\ignorespaces Requerimientos Funcionales}}{48}{table.caption.90}
+\contentsline {table}{\numberline {5.20}{\ignorespaces Requerimientos No Funcionales}}{49}{table.caption.92}
+\contentsline {table}{\numberline {5.21}{\ignorespaces Clasificaci\IeC {\'o}n de Riesgos Conforme a su Probabilidad}}{49}{table.caption.94}
+\contentsline {table}{\numberline {5.22}{\ignorespaces An\IeC {\'a}lisis de Riesgos}}{51}{table.caption.95}
+\contentsline {table}{\numberline {5.23}{\ignorespaces Plan de Mitigaci\IeC {\'o}n}}{52}{table.caption.96}
+\contentsline {table}{\numberline {5.24}{\ignorespaces Plan de Contingencia}}{52}{table.caption.97}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Descripci\IeC {\'o}n del Perfil del Actor Usuario}}{56}{table.caption.107}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Descripci\IeC {\'o}n del Perfil del Actor Administrador}}{57}{table.caption.109}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Gestionar Usuario}}{58}{table.115}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Registrar Equipaje}}{59}{table.121}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Gestionar Lugar}}{60}{table.130}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Configurar Viaje}}{62}{table.140}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Consultar Hotel}}{64}{table.152}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Consultar Vuelo}}{66}{table.166}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Consultar Informaci\IeC {\'o}n AICM}}{68}{table.180}
+\contentsline {table}{\numberline {7.10}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Gestionar Equipaje}}{70}{table.187}
+\contentsline {table}{\numberline {7.11}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Consultar Itinerario de Viaje}}{71}{table.199}
+\contentsline {table}{\numberline {7.12}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Consultar Ruta casa-AICM}}{73}{table.217}
+\contentsline {table}{\numberline {7.13}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Ubicar en AICM}}{75}{table.225}
+\contentsline {table}{\numberline {7.14}{\ignorespaces Especificaci\IeC {\'o}n del Caso de Uso Consultar Informaci\IeC {\'o}n de Vuelo}}{76}{table.231}

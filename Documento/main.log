@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 JAN 2015 22:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 JAN 2015 03:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,7 +744,9 @@ LaTeX Info: Redefining \% on input line 24.
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
 (./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
 (./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux)
-(./Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux))
+(./Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux)
+(./Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.
+aux) (./Capitulos/7DisenoTASMC/7DisenoTASMC.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -827,13 +829,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<portada/ipn.jpg, id=172, 195.73125pt x 287.0725pt>
+<portada/ipn.jpg, id=349, 195.73125pt x 287.0725pt>
 File: portada/ipn.jpg Graphic file (type jpg)
  <use portada/ipn.jpg>
 Package pdftex.def Info: portada/ipn.jpg used on input line 5.
 (pdftex.def)             Requested size: 58.19716pt x 85.35826pt.
 
-<portada/escom.jpg, id=173, 226.8475pt x 200.75pt>
+<portada/escom.jpg, id=350, 226.8475pt x 200.75pt>
 File: portada/escom.jpg Graphic file (type jpg)
  <use portada/escom.jpg>
 Package pdftex.def Info: portada/escom.jpg used on input line 7.
@@ -872,39 +874,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
  [2
 
 
-])
+] [3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [3]
+ [4]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
 (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [5
+
+
+])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [4
-
-
-]
+ [6]
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
 (./main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [7
+
+
+])
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [5
-
-
-]
+ [8]
 \openout2 = `Capitulos/1Introduccion/1Introduccion.aux'.
 
  (./Capitulos/1Introduccion/1Introduccion.tex
@@ -919,7 +921,7 @@ Cap\'{\i }tulo 1.
 
 ] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex)
 (./Capitulos/1Introduccion/Secciones/1-2SolucionPropuesta.tex [2]
-<Figuras/arquitectura.png, id=296, 333.8874pt x 249.5724pt>
+<Figuras/arquitectura.png, id=658, 333.8874pt x 249.5724pt>
 File: Figuras/arquitectura.png Graphic file (type png)
 
 <use Figuras/arquitectura.png>
@@ -935,7 +937,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 (./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
 (./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
 (./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
-<Figuras/moviles.png, id=318, 443.7378pt x 196.0926pt>
+<Figuras/moviles.png, id=681, 443.7378pt x 196.0926pt>
 File: Figuras/moviles.png Graphic file (type png)
 
 <use Figuras/moviles.png>
@@ -985,7 +987,7 @@ Overfull \hbox (39.99579pt too wide) in paragraph at lines 28--28
 []|\OT1/ptm/m/n/12 Android|  
  []
 
-<Figuras/crux.png, id=333, 62.1522pt x 62.634pt>
+<Figuras/crux.png, id=696, 62.1522pt x 62.634pt>
 File: Figuras/crux.png Graphic file (type png)
  <use Figuras/crux.png>
 Package pdftex.def Info: Figuras/crux.png used on input line 29.
@@ -1025,7 +1027,7 @@ Overfull \hbox (39.99579pt too wide) in paragraph at lines 34--34
 \OT1/ptm/m/n/12 Android|  
  []
 
-<Figuras/meridian.png, id=335, 64.5612pt x 64.5612pt>
+<Figuras/meridian.png, id=698, 64.5612pt x 64.5612pt>
 File: Figuras/meridian.png Graphic file (type png)
 
 <use Figuras/meridian.png>
@@ -1066,7 +1068,7 @@ Overfull \hbox (29.32747pt too wide) in paragraph at lines 56--56
 []|\OT1/ptm/m/n/12 Gratis|  
  []
 
-<Figuras/gateGuru.png, id=337, 67.9338pt x 67.452pt>
+<Figuras/gateGuru.png, id=700, 67.9338pt x 67.452pt>
 File: Figuras/gateGuru.png Graphic file (type png)
 
 <use Figuras/gateGuru.png>
@@ -1087,7 +1089,7 @@ Overfull \hbox (29.32747pt too wide) in paragraph at lines 61--61
 []|\OT1/ptm/m/n/12 Gratis|  
  []
 
-<Figuras/kayak.png, id=339, 66.0066pt x 66.0066pt>
+<Figuras/kayak.png, id=702, 66.0066pt x 66.0066pt>
 File: Figuras/kayak.png Graphic file (type png)
  <use Figuras/kayak.png>
 Package pdftex.def Info: Figuras/kayak.png used on input line 63.
@@ -1102,7 +1104,7 @@ Overfull \hbox (26.91559pt too wide) in paragraph at lines 65--65
 []|\OT1/ptm/m/n/12 Tripit|  
  []
 
-<Figuras/tripit.png, id=341, 68.4156pt x 68.4156pt>
+<Figuras/tripit.png, id=704, 68.4156pt x 68.4156pt>
 File: Figuras/tripit.png Graphic file (type png)
  <use Figuras/tripit.png>
 Package pdftex.def Info: Figuras/tripit.png used on input line 70.
@@ -1112,14 +1114,12 @@ Overfull \hbox (71.13278pt too wide) in paragraph at lines 70--70
 []|[]|  
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [8
 
 
 
- <./Figuras/crux.png> <./Figuras/meridian.png>]
+ <./Figuras/crux.png> <./Figuras/meridian.png>] [9 <./Figuras/gateGuru.png> <./
+Figuras/kayak.png> <./Figuras/tripit.png>]
 Underfull \hbox (badness 1412) in paragraph at lines 91--92
 \OT1/ptm/m/n/12 lu-cio-nes t[]ecni-cas que se
  []
@@ -1139,11 +1139,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 96--97
 \OT1/ptm/m/n/12 res uti-li-zan-do el cam-po
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [9 <./Figuras/gateGuru.png> <./Figuras/kayak.png> <./Figuras/tripit.png>]
-[10]
+) [10]
 \openout2 = `Capitulos/3MarcoTeorico/3MarcoTeorico.aux'.
 
  (./Capitulos/3MarcoTeorico/3MarcoTeorico.tex
@@ -1169,7 +1165,7 @@ ua-rios ope-rar en el en-torno inal[]ambri-
  []
 
 [12]) (./Capitulos/3MarcoTeorico/Secciones/3-3ComputoUbicuo.tex
-<Figuras/ubicuo.png, id=381, 332.442pt x 249.5724pt>
+<Figuras/ubicuo.png, id=744, 332.442pt x 249.5724pt>
 File: Figuras/ubicuo.png Graphic file (type png)
  <use Figuras/ubicuo.png>
 Package pdftex.def Info: Figuras/ubicuo.png used on input line 9.
@@ -1181,7 +1177,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-4GPS.tex [13 <./Figuras/ubicuo.png>]
 [14]) (./Capitulos/3MarcoTeorico/Secciones/3-5ILS.tex [15] [16] [17] [18]
-[19] [20] <Figuras/ejPasiva.png, id=426, 213.9192pt x 253.4268pt>
+[19] [20] <Figuras/ejPasiva.png, id=788, 213.9192pt x 253.4268pt>
 File: Figuras/ejPasiva.png Graphic file (type png)
 
 <use Figuras/ejPasiva.png>
@@ -1192,7 +1188,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 72--74
  [] 
  []
 
-<Figuras/ejSigLider.png, id=428, 197.538pt x 253.9086pt>
+<Figuras/ejSigLider.png, id=790, 197.538pt x 253.9086pt>
 File: Figuras/ejSigLider.png Graphic file (type png)
 
 <use Figuras/ejSigLider.png>
@@ -1204,7 +1200,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 82--84
  []
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-6Android.tex [21 <./Figuras/ejPasiva.p
-ng>] <Figuras/capasAndroid.png, id=435, 610.28pt x 533.995pt>
+ng>] <Figuras/capasAndroid.png, id=798, 610.28pt x 533.995pt>
 File: Figuras/capasAndroid.png Graphic file (type png)
 
 <use Figuras/capasAndroid.png>
@@ -1227,7 +1223,7 @@ Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Marco Metodol\IeC {\'o}gico
 ------------------------------------------------------------------------------
-<Figuras/cicloDesarrollo.png, id=460, 480.8364pt x 233.673pt>
+<Figuras/cicloDesarrollo.png, id=823, 480.8364pt x 233.673pt>
 File: Figuras/cicloDesarrollo.png Graphic file (type png)
 
 <use Figuras/cicloDesarrollo.png>
@@ -1251,19 +1247,13 @@ Cap\'{\i }tulo 5.
 
 
 ]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[30] <Figuras/android.png, id=492, 25.5354pt x 22.1628pt>
+[30] <Figuras/android.png, id=855, 25.5354pt x 22.1628pt>
 File: Figuras/android.png Graphic file (type png)
 
 <use Figuras/android.png>
 Package pdftex.def Info: Figuras/android.png used on input line 147.
 (pdftex.def)             Requested size: 42.6794pt x 42.68396pt.
- <Figuras/ios.png, id=493, 36.135pt x 36.135pt>
+ <Figuras/ios.png, id=856, 36.135pt x 36.135pt>
 File: Figuras/ios.png Graphic file (type png)
 
 <use Figuras/ios.png>
@@ -1304,22 +1294,874 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--190
 []|[]\OT1/ptm/b/n/12 IDE (En-torno de
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [31] [32 <./Figuras/android.png> <./Figuras/ios.png>]
-<Figuras/versionesAndroid.png, id=509, 333.8874pt x 167.1846pt>
+<Figuras/versionesAndroid.png, id=871, 333.8874pt x 167.1846pt>
 File: Figuras/versionesAndroid.png Graphic file (type png)
 
 <use Figuras/versionesAndroid.png>
 Package pdftex.def Info: Figuras/versionesAndroid.png used on input line 220.
 (pdftex.def)             Requested size: 417.47307pt x 209.04399pt.
+ [33 <./Figuras/versionesAndroid.png>]
+Underfull \hbox (badness 1412) in paragraph at lines 289--289
+[]|\OT1/ptm/m/n/12 Es el en-fo-que em-plea-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\OT1/ptm/m/n/12 gua-je de pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\OT1/ptm/m/n/12 pue-de ge-ne-rar c[]odi-go
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 302--303
+[]|\OT1/ptm/m/n/12 Complejo (Sin ex-pe-rien-
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 302--303
+\OT1/ptm/m/n/12 cia), Me-dia (Ex-pe-rien-cia
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 302--303
+\OT1/ptm/m/n/12 en pa-ra-dig-ma o sin-ta-xis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+[]|\OT1/ptm/m/n/12 Multiparadigma:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/ptm/m/n/12 orien-ta-da a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/ptm/m/n/12 ob-je-tos, pro-gra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/ptm/m/n/12 es-truc-tu-ra-da,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]|\OT1/ptm/m/n/12 Multiparadigma:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 orien-ta-da a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 ob-je-tos, pro-gra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 es-truc-tu-ra-da,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 re-fle-xi-va y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+[]|\OT1/ptm/m/n/12 Plataformas
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 396--396
+\OT1/ptm/m/n/12 por-te desa-rro-llo pa-ra el
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 404--404
+\OT1/ptm/m/n/12 de las he-rra-mien-tas que
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 404--404
+\OT1/ptm/m/n/12 con-su-ma me-nos re-cur-sos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
+\OT1/ptm/m/n/12 f[]acil-men-te mo-di-fi-ca-ble,
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 425--425
+[]|\OT1/ptm/m/n/12 Soporte pa-ra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--425
+\OT1/ptm/m/n/12 Desa-rro-llo Ja-va
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 437--437
+[]|\OT1/ptm/m/n/12 Eficiencia de la
+ []
+
+[35] [36] [37]
+Underfull \hbox (badness 1038) in paragraph at lines 485--486
+\OT1/ptm/m/n/12 iP-ho-ne (Ap-ple iOS), Black-
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 488--488
+\OT1/ptm/m/n/12 ma-ne-ra efi-cien-te y es m[]as
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 489--490
+\OT1/ptm/m/n/12 usua-rios el ac-ce-so in-for-ma-
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 492--492
+[]|\OT1/ptm/m/n/12 SQLite es com-pa-ti-ble con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+[]|\OT1/ptm/m/n/12 Oracle es com-pa-ti-ble con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+\OT1/ptm/m/n/12 ACID, adem[]as de ma-ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+\OT1/ptm/m/n/12 jar in-te-gri-dad re-fe-ren-cial,
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 493--494
+\OT1/ptm/m/n/12 transac-cio-nes y est[]andar de
+ []
+
+[38] [39] [40]
+Underfull \hbox (badness 1067) in paragraph at lines 685--685
+[]\OT1/ptm/m/n/12 Preocupaci[]on y es-me-ro por el
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 691--691
+[]\OT1/ptm/m/n/12 No con-tar con los pla-nos del
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 698--698
+[]\OT1/ptm/m/n/12 Ampliaci[]on de mer-ca-do en el
+ []
+
+) (./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRequerimientos.tex
+[41]
+Underfull \hbox (badness 2913) in paragraph at lines 28--29
+\OT1/ptm/m/n/12 dian-te la uti-li-zan-do ae-ro-na-ves,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\OT1/ptm/m/n/12 Visualizar los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\OT1/ptm/m/n/12 vue-los de las
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\OT1/ptm/m/n/12 Recordar do-cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]|\OT1/ptm/m/n/12 Guardar ob-je-tos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\OT1/ptm/m/n/12 Informaci[]on del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]|\OT1/ptm/m/n/12 El via-je-ro de-be co-no-cer el
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 88--89
+\OT1/ptm/m/n/12 tel[]efono, di-rec-ci[]on, ma-pa, etc.
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 88--89
+\OT1/ptm/m/n/12 del ae-ro-puer-to pa-ra cual-quier
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 88--89
+\OT1/ptm/m/n/12 si-tua-ci[]on o ne-ce-si-dad que se
+ []
+
+[42] [43] [44] [45] [46]
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[]|\OT1/ptm/m/n/12 Definici[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\OT1/ptm/m/n/12 del sis-te-ma,
+ []
+
+[47]) (./Capitulos/5AnalisisGeneral/Secciones/5-3AnalisisRiesgos.tex [48]
+[49]
+Underfull \hbox (badness 2495) in paragraph at lines 105--105
+[]|[]\OT1/ptm/b/n/12 Ausencia de alg[]un in-te-gran-te del
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 120--120
+[]|[]\OT1/ptm/b/n/12 Funcionamiento inade-cua-do en la
+ []
+
+
+Underfull \hbox (badness 6461) in paragraph at lines 125--125
+[]|[]\OT1/ptm/b/n/12 Incorrecta de-fi-ni-ci[]on de la pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+)) [50] [51] [52]
+\openout2 = `Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteD
+esarrollo.aux'.
+
+
+(./Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.
+tex
+Cap\'{\i }tulo 6.
+------------------------------------------------------------------------------
+ 6 Configuraci\IeC {\'o}n del Ambiente de Desarrollo
+------------------------------------------------------------------------------
+[53
+
+
+
+] [54]) [55]
+\openout2 = `Capitulos/7DisenoTASMC/7DisenoTASMC.aux'.
+
+ (./Capitulos/7DisenoTASMC/7DisenoTASMC.tex
+Cap\'{\i }tulo 7.
+------------------------------------------------------------------------------
+ 7 Dise\IeC {\~n}o TASMC
+------------------------------------------------------------------------------
+(./Capitulos/7DisenoTASMC/Secciones/7-1Actores.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+<Figuras/actores.png, id=991, 275.0275pt x 133.49875pt>
+File: Figuras/actores.png Graphic file (type png)
+
+<use Figuras/actores.png>
+Package pdftex.def Info: Figuras/actores.png used on input line 32.
+(pdftex.def)             Requested size: 208.73653pt x 101.3236pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+) (./Capitulos/7DisenoTASMC/Secciones/7-2CasosUsoAdministrador.tex
+<Figuras/cugeneralAdministrador.png, id=992, 277.035pt x 238.0092pt>
+File: Figuras/cugeneralAdministrador.png Graphic file (type png)
+
+<use Figuras/cugeneralAdministrador.png>
+Package pdftex.def Info: Figuras/cugeneralAdministrador.png used on input line 
+7.
+(pdftex.def)             Requested size: 166.98668pt x 143.46394pt.
+ [56
+
+
+
+]
+<Figuras/cuGestionarUsuario.png, id=997, 311.7246pt x 88.6512pt>
+File: Figuras/cuGestionarUsuario.png Graphic file (type png)
+
+<use Figuras/cuGestionarUsuario.png>
+Package pdftex.def Info: Figuras/cuGestionarUsuario.png used on input line 17.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+ [57 <./Figuras/actores.png> <./Figuras/cugeneralAdministrador.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 45
+ []
+
+<Figuras/cuRegistrarEquipaje.png, id=1005, 311.7246pt x 88.6512pt>
+File: Figuras/cuRegistrarEquipaje.png Graphic file (type png)
+
+<use Figuras/cuRegistrarEquipaje.png>
+Package pdftex.def Info: Figuras/cuRegistrarEquipaje.png used on input line 61.
+
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+ [58 <./Figuras/cuGestionarUsuario.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+[59 <./Figuras/cuRegistrarEquipaje.png>]
+<Figuras/cuGestionarLugar.png, id=1026, 311.7246pt x 88.6512pt>
+File: Figuras/cuGestionarLugar.png Graphic file (type png)
+
+<use Figuras/cuGestionarLugar.png>
+Package pdftex.def Info: Figuras/cuGestionarLugar.png used on input line 117.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 145
+ []
+
+[60 <./Figuras/cuGestionarLugar.png>])
+(./Capitulos/7DisenoTASMC/Secciones/7-3CasosUsoUsuario.tex
+<Figuras/cugeneralUsuario.png, id=1034, 443.7378pt x 357.4956pt>
+File: Figuras/cugeneralUsuario.png Graphic file (type png)
+
+<use Figuras/cugeneralUsuario.png>
+Package pdftex.def Info: Figuras/cugeneralUsuario.png used on input line 7.
+(pdftex.def)             Requested size: 375.7232pt x 302.71078pt.
+
+<Figuras/cuConfigurarViaje.png, id=1035, 235.1184pt x 63.5976pt>
+File: Figuras/cuConfigurarViaje.png Graphic file (type png)
+
+<use Figuras/cuConfigurarViaje.png>
+Package pdftex.def Info: Figuras/cuConfigurarViaje.png used on input line 17.
+(pdftex.def)             Requested size: 375.7232pt x 101.63982pt.
+ [61 <./Figuras/cugeneralUsuario.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 47
+ []
+
+[62 <./Figuras/cuConfigurarViaje.png>] [63]
+<Figuras/cuConsultarHotel.png, id=1067, 249.0906pt x 88.6512pt>
+File: Figuras/cuConsultarHotel.png Graphic file (type png)
+
+<use Figuras/cuConsultarHotel.png>
+Package pdftex.def Info: Figuras/cuConsultarHotel.png used on input line 88.
+(pdftex.def)             Requested size: 375.7232pt x 133.73396pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 116
+ []
+
+[64 <./Figuras/cuConsultarHotel.png>] [65]
+<Figuras/cuConsultarVuelo.png, id=1095, 249.0906pt x 88.6512pt>
+File: Figuras/cuConsultarVuelo.png Graphic file (type png)
+
+<use Figuras/cuConsultarVuelo.png>
+Package pdftex.def Info: Figuras/cuConsultarVuelo.png used on input line 168.
+(pdftex.def)             Requested size: 375.7232pt x 133.73396pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 198
+ []
+
+[66 <./Figuras/cuConsultarVuelo.png>] [67]
+<Figuras/cuConsultarInformacionAICM.png, id=1121, 311.7246pt x 88.6512pt>
+File: Figuras/cuConsultarInformacionAICM.png Graphic file (type png)
+
+<use Figuras/cuConsultarInformacionAICM.png>
+Package pdftex.def Info: Figuras/cuConsultarInformacionAICM.png used on input l
+ine 250.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 278
+ []
+
+
+Overfull \vbox (25.25392pt too high) has occurred while \output is active []
+
+
+[68 <./Figuras/cuConsultarInformacionAICM.png>]
+<Figuras/cuGestionarEquipajeU.png, id=1130, 311.7246pt x 88.6512pt>
+File: Figuras/cuGestionarEquipajeU.png Graphic file (type png)
+
+<use Figuras/cuGestionarEquipajeU.png>
+Package pdftex.def Info: Figuras/cuGestionarEquipajeU.png used on input line 30
+4.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+ [69 <./Figuras/cuGestionarEquipajeU.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 334
+ []
+
+<Figuras/cuConsultarItinerarioViaje.png, id=1141, 311.7246pt x 88.6512pt>
+File: Figuras/cuConsultarItinerarioViaje.png Graphic file (type png)
+
+<use Figuras/cuConsultarItinerarioViaje.png>
+Package pdftex.def Info: Figuras/cuConsultarItinerarioViaje.png used on input l
+ine 357.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+ [70]
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 387
+ []
+
+[71 <./Figuras/cuConsultarItinerarioViaje.png>] [72]
+<Figuras/cuConsultarRutacasa-AICM.png, id=1183, 311.7246pt x 88.6512pt>
+File: Figuras/cuConsultarRutacasa-AICM.png Graphic file (type png)
+
+<use Figuras/cuConsultarRutacasa-AICM.png>
+Package pdftex.def Info: Figuras/cuConsultarRutacasa-AICM.png used on input lin
+e 434.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--454
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 464
+ []
+
+[73 <./Figuras/cuConsultarRutacasa-AICM.png>]
+<Figuras/cuUbicarAICM.png, id=1193, 311.7246pt x 88.6512pt>
+File: Figuras/cuUbicarAICM.png Graphic file (type png)
+
+<use Figuras/cuUbicarAICM.png>
+Package pdftex.def Info: Figuras/cuUbicarAICM.png used on input line 491.
+(pdftex.def)             Requested size: 375.7232pt x 106.85298pt.
+ [74 <./Figuras/cuUbicarAICM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 521
+ []
+
+[75]
+<Figuras/cuConsultarInformacionVuelo.png, id=1213, 328.5876pt x 88.6512pt>
+File: Figuras/cuConsultarInformacionVuelo.png Graphic file (type png)
+
+<use Figuras/cuConsultarInformacionVuelo.png>
+Package pdftex.def Info: Figuras/cuConsultarInformacionVuelo.png used on input 
+line 537.
+(pdftex.def)             Requested size: 375.7232pt x 101.37453pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--557
+[]|\OT1/ptm/b/n/12 Fecha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+[]|\OT1/ptm/b/n/12 Estatus
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 565
+ []
+
+[76 <./Figuras/cuConsultarInformacionVuelo.png>])
+(./Capitulos/7DisenoTASMC/Secciones/7-4DiagramaClases.tex
+<Figuras/diagramaClasesMovil.png, id=1229, 1006.76125pt x 1083.04625pt>
+File: Figuras/diagramaClasesMovil.png Graphic file (type png)
+
+<use Figuras/diagramaClasesMovil.png>
+Package pdftex.def Info: Figuras/diagramaClasesMovil.png used on input line 5.
+(pdftex.def)             Requested size: 417.47307pt x 449.10878pt.
+ [77])
+(./Capitulos/7DisenoTASMC/Secciones/7-5DisenoEsquemaBaseDatos.tex [78 <./Figura
+s/diagramaClasesMovil.png>]
+<Figuras/relacionalAdmin.png, id=1254, 681.54625pt x 387.4475pt>
+File: Figuras/relacionalAdmin.png Graphic file (type png)
+
+<use Figuras/relacionalAdmin.png>
+Package pdftex.def Info: Figuras/relacionalAdmin.png used on input line 8.
+(pdftex.def)             Requested size: 333.97972pt x 189.86275pt.
+
+<Figuras/relacionalMovil.png, id=1255, 866.23625pt x 636.3775pt>
+File: Figuras/relacionalMovil.png Graphic file (type png)
+
+<use Figuras/relacionalMovil.png>
+Package pdftex.def Info: Figuras/relacionalMovil.png used on input line 16.
+(pdftex.def)             Requested size: 417.47307pt x 306.69093pt.
+)
+(./Capitulos/7DisenoTASMC/Secciones/7-6DiagramaSecuencia.tex [79 <./Figuras/rel
+acionalAdmin.png> <./Figuras/relacionalMovil.png>]
+<Figuras/secGestionarUsuario.png, id=1260, 407.6028pt x 261.1356pt>
+File: Figuras/secGestionarUsuario.png Graphic file (type png)
+
+<use Figuras/secGestionarUsuario.png>
+Package pdftex.def Info: Figuras/secGestionarUsuario.png used on input line 7.
+(pdftex.def)             Requested size: 417.47307pt x 267.4625pt.
+
+<Figuras/secRegistrarEquipaje.png, id=1261, 394.1124pt x 245.718pt>
+File: Figuras/secRegistrarEquipaje.png Graphic file (type png)
+
+<use Figuras/secRegistrarEquipaje.png>
+Package pdftex.def Info: Figuras/secRegistrarEquipaje.png used on input line 15
+.
+(pdftex.def)             Requested size: 417.47307pt x 260.2911pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRiesgos.tex [33 <./Figuras
-/versionesAndroid.png>])) [34] (./main.bbl
+<Figuras/secGestionarLugar.png, id=1262, 394.1124pt x 245.718pt>
+File: Figuras/secGestionarLugar.png Graphic file (type png)
+
+<use Figuras/secGestionarLugar.png>
+Package pdftex.def Info: Figuras/secGestionarLugar.png used on input line 23.
+(pdftex.def)             Requested size: 417.47307pt x 260.2911pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConfigurarViaje.png, id=1263, 397.485pt x 257.2812pt>
+File: Figuras/secConfigurarViaje.png Graphic file (type png)
+
+<use Figuras/secConfigurarViaje.png>
+Package pdftex.def Info: Figuras/secConfigurarViaje.png used on input line 31.
+(pdftex.def)             Requested size: 417.47307pt x 270.22783pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConsultarHotel.png, id=1264, 407.121pt x 242.8272pt>
+File: Figuras/secConsultarHotel.png Graphic file (type png)
+
+<use Figuras/secConsultarHotel.png>
+Package pdftex.def Info: Figuras/secConsultarHotel.png used on input line 39.
+(pdftex.def)             Requested size: 417.47307pt x 249.01434pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConsultarVuelo.png, id=1265, 443.7378pt x 226.9278pt>
+File: Figuras/secConsultarVuelo.png Graphic file (type png)
+
+<use Figuras/secConsultarVuelo.png>
+Package pdftex.def Info: Figuras/secConsultarVuelo.png used on input line 47.
+(pdftex.def)             Requested size: 417.47307pt x 213.5026pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConsultarInformacionAICM.png, id=1266, 213.9192pt x 240.4182pt>
+File: Figuras/secConsultarInformacionAICM.png Graphic file (type png)
+
+<use Figuras/secConsultarInformacionAICM.png>
+Package pdftex.def Info: Figuras/secConsultarInformacionAICM.png used on input 
+line 55.
+(pdftex.def)             Requested size: 417.47307pt x 469.21346pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secGestionarEquipaje.png, id=1267, 335.8146pt x 327.624pt>
+File: Figuras/secGestionarEquipaje.png Graphic file (type png)
+
+<use Figuras/secGestionarEquipaje.png>
+Package pdftex.def Info: Figuras/secGestionarEquipaje.png used on input line 63
+.
+(pdftex.def)             Requested size: 417.47307pt x 407.28937pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConsultarItinerarioViaje.png, id=1268, 417.2388pt x 411.4572pt>
+File: Figuras/secConsultarItinerarioViaje.png Graphic file (type png)
+
+<use Figuras/secConsultarItinerarioViaje.png>
+Package pdftex.def Info: Figuras/secConsultarItinerarioViaje.png used on input 
+line 71.
+(pdftex.def)             Requested size: 417.47307pt x 411.70102pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConsultarRutacasa-AICM.png, id=1269, 335.8146pt x 167.6664pt>
+File: Figuras/secConsultarRutacasa-AICM.png Graphic file (type png)
+
+<use Figuras/secConsultarRutacasa-AICM.png>
+Package pdftex.def Info: Figuras/secConsultarRutacasa-AICM.png used on input li
+ne 79.
+(pdftex.def)             Requested size: 417.47307pt x 208.4363pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secUbicarAICM.png, id=1270, 227.4096pt x 204.2832pt>
+File: Figuras/secUbicarAICM.png Graphic file (type png)
+
+<use Figuras/secUbicarAICM.png>
+Package pdftex.def Info: Figuras/secUbicarAICM.png used on input line 87.
+(pdftex.def)             Requested size: 417.47307pt x 375.02219pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figuras/secConsultarInformacionVuelo.png, id=1271, 354.6048pt x 256.3176pt>
+File: Figuras/secConsultarInformacionVuelo.png Graphic file (type png)
+
+<use Figuras/secConsultarInformacionVuelo.png>
+Package pdftex.def Info: Figuras/secConsultarInformacionVuelo.png used on input
+ line 95.
+(pdftex.def)             Requested size: 417.47307pt x 301.7677pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./Capitulos/7DisenoTASMC/Secciones/7-7DiagramaDespliegue.tex
+<Figuras/diagramaDespliegue.png, id=1272, 476.0184pt x 268.3626pt>
+File: Figuras/diagramaDespliegue.png Graphic file (type png)
+
+<use Figuras/diagramaDespliegue.png>
+Package pdftex.def Info: Figuras/diagramaDespliegue.png used on input line 7.
+(pdftex.def)             Requested size: 417.47307pt x 235.36131pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[80 <./Figuras/secGestionarUsuario.png>])
+(./Capitulos/7DisenoTASMC/Secciones/7-8DisenoInterfazGraficaUsuario.tex
+[81 <./Figuras/secRegistrarEquipaje.png>])) [82 <./Figuras/secGestionarLugar.pn
+g>] [83 <./Figuras/secConfigurarViaje.png> <./Figuras/secConsultarHotel.png>]
+[84 <./Figuras/secConsultarVuelo.png>] [85 <./Figuras/secConsultarInformacionAI
+CM.png>] [86 <./Figuras/secGestionarEquipaje.png>] [87 <./Figuras/secConsultarI
+tinerarioViaje.png>] [88 <./Figuras/secConsultarRutacasa-AICM.png> <./Figuras/s
+ecUbicarAICM.png>] [89 <./Figuras/secConsultarInformacionVuelo.png> <./Figuras/
+diagramaDespliegue.png>] (./main.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -1360,7 +2202,7 @@ Underfull \hbox (badness 5711) in paragraph at lines 65--69
 tion from te-
  []
 
-[35
+[90
 
 
 ]
@@ -1402,10 +2244,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--86
 \OT1/pcr/m/n/12 informatica-[]hoy . com . ar / aprender-[]informatica /
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
- [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+
+Underfull \hbox (badness 3930) in paragraph at lines 129--132
+[]\OT1/ptm/m/n/12 Estudios de re-mu-ne-ra-ci[]on 2013 - 2014, 2014.  URL [][]$\
+OT1/pcr/m/n/12 http : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--132
+\OT1/pcr/m/n/12 pagepersonnel . com . mx / productsApp _ ppmx / estudios _ de _
+
+ []
+
+[91])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+ [92]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
  (./main.aux (./portada/portada.aux)
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -1414,21 +2268,23 @@ LaTeX Info: Redefining \% on input line 24.
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
 (./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
 (./Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux)
-(./Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+(./Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux)
+(./Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.
+aux) (./Capitulos/7DisenoTASMC/7DisenoTASMC.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3F533D0A83A2B5B53A6F5C5371AAB5F5;7584.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
+(rerunfilecheck)             Checksum: BB1A96AEF7B7BFB3AB02B656038419D5;18330.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 14547 strings out of 493315
- 206025 string characters out of 6137904
- 291509 words of memory out of 5000000
- 17531 multiletter control sequences out of 15000+600000
+ 15174 strings out of 493315
+ 219098 string characters out of 6137904
+ 305163 words of memory out of 5000000
+ 17792 multiletter control sequences out of 15000+600000
  35463 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,45p,2202b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,49p,2202b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
@@ -1436,10 +2292,10 @@ ive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (41 pages, 1449749 bytes).
+Output written on main.pdf (100 pages, 4674266 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 524 compressed objects within 6 object streams
- 126 named destinations out of 1000 (max. 500000)
- 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1497 PDF objects out of 1728 (max. 8388607)
+ 1280 compressed objects within 13 object streams
+ 417 named destinations out of 1000 (max. 500000)
+ 929 words of extra memory for PDF output out of 10000 (max. 10000000)
 

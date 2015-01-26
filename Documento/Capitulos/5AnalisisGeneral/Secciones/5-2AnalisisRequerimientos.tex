@@ -1,0 +1,377 @@
+\section{Análisis de Requerimientos}
+
+Dentro de esta etapa, a partir de las reglas de negocio y la descripción del sistema se debe considerar la obtención de los requerimientos básicos, los cuales cumplen la función de definir de manera general el sistema a desarrollar para después pasar a especificar los requerimientos funcionales que nos reflejen a detalle las funciones que el sistema debe o no efectuar.
+
+Los requerimientos no funcionales son restricciones a las funciones del sistema o bien cualidades que este debe de presentar para considerarle un sistema de calidad.
+
+\subsection{Reglas de Negocio}
+
+Las reglas de negocio especifican procesos, operaciones, normas y restricciones consideradas en el desarrollo de software dependiendo de la metodología que se emplea para resolver el problema y lograr los objetivos. Las reglas del negocio son usadas para verificar que ciertos comportamientos se cumplan y en caso de que se presente una excepción conocer las alternativas para la solución del problema.
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|c|c|p{3cm}|p{5.7cm}|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Identificador} &
+				\textcolor{blanco}{\bf Tipo} &
+				\textcolor{blanco}{\bf Nombre} &
+				\textcolor{blanco}{\bf Descripción} \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN01} &
+				Definición &
+				Viajero aéreo &
+				Persona que viaja en un avión. \\
+      		\hline 
+      			\textbf{RN02} &
+				Definición &
+				Viaje aéreo &
+				Traslado de un lugar a otro, mediante la  utilizando aeronaves, con fin lucrativo. \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN03} &
+				Definición &
+				Aerolínea &
+				Empresa o compañía dedicada al transporte aéreo. \\ 
+			\hline
+				\textbf{RN04} &
+				Definición &
+				Vuelo &
+				Trayecto que realiza un avión, haciendo o no escalas, entre el punto de origen y el destino. \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN05} &
+				Hecho &
+				Visualizar los vuelos de las aerolíneas. &
+				El viajero aéreo puede ver todos los vuelos que las aerolíneas proporcionan, sin importar que falten semanas o meses para el vuelo. \\ 
+			\hline
+				\textbf{RN06} &
+				Definición &
+				Itinerario de viaje &
+				Listado en el que se describen los lugares por los que se va a pasar. \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN07} &
+				Hecho &
+				Notificar al viajero &
+				El viajero debe ser notificado en caso de producirse algún cambio en cuanto al vuelo o el horario. \\ 
+			\hline
+				\textbf{RN08} &
+				Hecho &
+				Recordar documentos importantes &
+				Se debe apoyar al viajero en que no olvide documentos importantes para su viaje. \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN09} &
+				Hecho &
+				Puntualidad en el aeropuerto &
+				El viajero debe llegar puntual a la cita en el aeropuerto para cumplir con los procedimientos que necesita para el abordaje del avión. \\ 
+			\hline
+				\textbf{RN10} &
+				Hecho &
+				Guardar objetos importantes &
+				El viajero no debe olvidar objetos importantes para contribuir con la satisfacción total del viaje. \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN11} &
+				Hecho &
+				Hoteles en la ciudad destino &
+				Se debe informar al viajero sobre los hoteles que se encuentren en la ciudad destino.  \\ 
+			\hline
+				\textbf{RN12} &
+				Hecho &
+				Usabilidad &
+				Se debe asistir al viajero, para que pueda cumplir con un viaje satisfactorio, apoyándolo con la gestión de su viaje de una manera sencilla y comprensible.  \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RN13} &
+				Hecho &
+				Disponibilidad &
+				La información debe estar disponible idealmente todo el año.  \\ 
+			\hline
+				\textbf{RN14} &
+				Hecho &
+				Información del AICM &
+				El viajero debe conocer el teléfono, dirección, mapa, etc. del aeropuerto para cualquier situación o necesidad que se presente. \\ 
+			\hline 
+		\end{tabular}
+	\end{center}
+	\caption[Reglas de Negocio]{Reglas de Negocio} 
+	\label{tab:reglasNegocio}
+\end{table}
+
+\subsection{Requerimientos Básicos (RB)}
+
+Las características que contendrá TASMC son las siguientes:
+
+\begin{itemize}
+	\item Guardar configuración personal de cada usuario al registrarse
+	\item Búsqueda de Hoteles
+	\item Lista de Hoteles
+	\item Búsqueda de Vuelos
+	\item Lista de Vuelos
+	\item Lista de información del AICM
+	\item Lista de Objetos para viaje
+	\item Itinerario de viaje
+	\item Ruta casa-aeropuerto
+	\item Ubicación dentro del Aeropuerto
+\end{itemize}
+
+En base a las características que debe contener TASMC se han podido identificar los diferentes módulos de la aplicación que se encuentran listados a continuación:
+
+\textbf{Módulo de Registro/Configuración}
+
+\begin{itemize}
+	\item Correo electrónico.
+	\item Clase de vuelo preferida.
+	\item Cantidad preferida de estrellas en hotel. 
+\end{itemize}
+
+\textbf{Módulo de Hoteles}
+
+\begin{itemize}
+	\item Búsqueda de Hoteles.
+	\begin{itemize}
+		\item Número de Huéspedes.
+		\item Número de Habitaciones.
+		\item Fecha de entrada y salida.
+	\end{itemize}
+	\item Listado de Hoteles.
+	\item Detalle de Hoteles.
+	\item Filtros según:
+	\begin{itemize}
+		\item Estrellas: de 1 a 5.
+		\item Estrellas: de 5 a 1.
+		\item Precios de bajo a alto.
+		\item Precios de alto a bajo.
+	\end{itemize}
+\end{itemize}
+
+\textbf{Modulo de Vuelos}
+ 
+\begin{itemize}
+	\item Búsqueda de Vuelos
+	\begin{itemize}
+		 \item Número de pasajeros.
+		\item Clase (Económico, Económico Premium, Business, Primera, Todas).
+		\item Fechas (Salida y llegada).
+		\item Ciudad origen – Ciudad destino.
+	\end{itemize}
+	\item Listado de Vuelos.
+	\item Detalle de Vuelos.
+	\item Filtros según:
+	\begin{itemize}
+		\item Precios de bajo a alto.
+		\item Precios de alto a bajo.
+		\item Clase de vuelo.
+	\end{itemize}
+\end{itemize}
+
+\textbf{Información Aeropuerto AICM}
+
+\begin{itemize}
+	\item Información de Aeropuerto AICM
+	\begin{itemize}
+		 \item Sitio web AICM.
+		\item Teléfono AICM.
+		\item Ubicación.
+	\end{itemize}
+	\item Mapa del Aeropuerto.
+	\item	Servicios en el Aeropuerto.
+\end{itemize}
+
+\textbf{Lista de equipaje}
+
+\begin{itemize}
+	\item 	Lista de equipaje por tipo de vuelo.
+	\item Lista de equipaje.
+	\item Añadir nueva lista.
+	\item Añadir nuevo objeto.
+	\item Documentos importantes
+\end{itemize}
+	
+\textbf{Itinerario}
+
+\begin{itemize}
+	\item Alarma según tipo de vuelo:
+	\begin{itemize}
+		\item Nacional 3.5 Horas antes de hora de salida.
+		\item Internacional 4.5 Horas antes de hora de salida.
+	\end{itemize}
+	\item Información de vuelo
+	\begin{itemize}
+		\item Número de vuelo.
+		\item Hora de salida.
+		\item Hora de llegada.
+	\end{itemize}
+	\item Itinerario de viaje
+	\begin{itemize}
+	 \item Actividades a realizar durante el viaje.
+	\end{itemize}
+\end{itemize}
+
+\textbf{Ruta para llegar al AICM}
+
+\begin{itemize}
+	\item Visualizar una ruta para llegar al AICM.
+\end{itemize}
+
+\textbf{Ubícate}
+
+\begin{itemize}
+	\item Ubicar sala de abordaje del usuario.
+	\item Ubicar servicios del AICM.
+\end{itemize} 
+
+\textbf{Información de Vuelo}
+
+\begin{itemize}
+	\item Número de vuelo.
+	\item Estado de vuelo.
+	\item Ciudad de origen.
+	\item Ciudad destino.
+	\item Hora de salida.
+	\item Hora de llegada.
+	\item Fecha.
+	\item Terminal.
+	\item Puerta.
+\end{itemize}
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|c|p{8.4cm}|p{2.5cm}|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Identificador} &
+				\textcolor{blanco}{\bf Descripción} &
+				\textcolor{blanco}{\bf Origen} \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RB01} &
+				Módulo que permita al usuario realizar su registro a TASMC y elegir sus preferencias. &
+				Definición del sistema  \\
+      		\hline 
+      			\textbf{RB02} &
+				Módulo para realizar búsquedas de Hoteles y posteriormente generar un listado de dicha búsqueda. &
+				Definición del sistema, RN11 \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RB03} &
+				Módulo para realizar búsquedas de Vuelos y posteriormente generar un listado de dicha búsqueda. &
+				Definición del sistema, RN05 \\ 
+			\hline
+				\textbf{RB04} &
+				Módulo para visualizar la información del AICM, como sitio web, teléfono, ubicación y redes sociales. &
+				Definición del sistema, RN14 \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RB05} &
+				Módulo para la gestión de objetos, donde el usuario podrá verificar en una lista los objetos requeridos para su viaje. &
+				Definición del sistema, RN10 \\ 
+			\hline
+				\textbf{RB06} &
+				Módulo para asistir en la construcción del itinerario de viaje del usuario. &
+				Definición del sistema \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RB07} &
+				Módulo que permita visualizar rutas que tengan como destino el AICM. &
+				Definición del sistema, RN09, RN12 \\ 
+			\hline
+				\textbf{RB08} &
+				Módulo que permita visualizar en un mapa del AICM la ubicación del usuario en el momento que lo requiera. &
+				Definición del sistema, RN12 \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RB09} &
+				Módulo para visualizar la información del vuelo, como lo es, el número de vuelo, el estado de vuelo, ciudad de origen, ciudad destino, hora de salida, hora de llegada, fecha, terminal y puerta. &
+				Definición del sistema, RN07 \\ 
+			\hline 
+		\end{tabular}
+	\end{center}
+	\caption[Requerimientos Básicos]{Requerimientos Básicos} 
+	\label{tab:reqBasicos}
+\end{table}
+
+\subsection{Requerimientos Funcionales (RF)}
+
+En la siguiente tabla se muestran los requerimientos funcionales de TASMC:
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|c|p{9.4cm}|p{1.5cm}|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Identificador} &
+				\textcolor{blanco}{\bf Descripción} &
+				\textcolor{blanco}{\bf Origen} \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RF01} &
+				El sistema debe ser capaz de configurar gustos y posibilidades económicas del viajero para generar un mejor resultado en la búsqueda de vuelos y hoteles. &
+				RB01 \\
+      		\hline 
+      			\textbf{RF02} &
+				El usuario debe poder visualizar sugerencias de hoteles disponibles,  según una búsqueda que haya realizado previamente. &
+				RB02 \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RF03} &
+				El usuario debe poder visualizar sugerencias de vuelos disponibles, según una búsqueda que haya realizado previamente. &
+				RB03 \\ 
+			\hline
+				\textbf{RF04} &
+				El sistema debe ser capaz de generar una lista de objetos que debe empacar el usuario, según el tipo de viaje que se seleccione. &
+				RB05 \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RF05} &
+				El sistema debe proporcionar una lista que permita al usuario generar un itinerario de viaje. &
+				RB06 \\ 
+			\hline
+				\textbf{RF06} &
+				El sistema mostrará una sugerencia de la mejor ruta para llegar al AICM desde la posición actual del usuario. &
+				RB07 \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RF07} &
+				El sistema debe ser capaz de ubicar al usuario dentro del AICM y facilitarle la llegada a su sala de abordaje. &
+				RB08 \\ 
+			\hline
+				\textbf{RF08} &
+				El sistema deberá mostrar la información del número de vuelo, estado de vuelo, ciudades de origen y destino, 					hora de salida y llegada, fecha, terminal y puerta. &
+				RB09 \\ 
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption[Requerimientos Funcionales]{Requerimientos Funcionales} 
+	\label{tab:reqFuncionales}
+\end{table}
+
+\subsection{Requerimientos No Funcionales (RNF)}
+
+En la siguiente tabla se muestran los requerimientos no funcionales de TASMC:
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|c|p{8.4cm}|p{2.5cm}|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Identificador} &
+				\textcolor{blanco}{\bf Descripción} &
+				\textcolor{blanco}{\bf Origen} \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RNF01} &
+				Las condiciones del entorno no deben de afectar la localización del usuario. Se debe de considerar un ambiente controlado. &
+				RB08 \\
+      		\hline 
+      			\textbf{RNF02} &
+				La aplicación debe funcionar en todos los dispositivos móviles que contengan el sistema operativo Android versión 4.4 (KitKat). &
+				Definición del Sistema \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RNF03} &
+				Se debe de presentar una interfaz gráfica para poder seleccionar las distintas funciones que puede utilizar el usuario en el sistema. &
+				RN12 \\ 
+			\hline
+				\textbf{RNF04} &
+				El sistema debe enviar una respuesta con una rapidez acorde al ancho de banda y la disponibilidad de la red. &
+				Definición del Sistema \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RNF05} &
+				El sistema debe tener la posibilidad de generar ampliaciones de funcionalidad y escalabilidad. &
+				Definición del Sistema \\ 
+			\hline
+				\textbf{RNF06} &
+				Se debe dar soporte continuo al sistema. &
+				RN12 \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				\textbf{RNF07} &
+				La navegación del usuario dentro de la aplicación debe ser de fácil entendimiento y de manera intuitiva. &
+				RB12 \\ 
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption[Requerimientos No Funcionales]{Requerimientos No Funcionales} 
+	\label{tab:reqNoFuncionales}
+\end{table}

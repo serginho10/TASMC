@@ -1,0 +1,221 @@
+\section{Análisis de Riesgos}
+
+El proceso de análisis de riesgos es de utilidad para conocer y de alguna manera tratar de reducir algunas actividades, ideas o actitudes que amenazan con la completa y eficaz elaboración del proyecto.
+
+El primer paso para llevar a cabo el análisis de riesgos es identificarlos. Una manera sencilla para identificar los riesgos es incluirlos dentro de alguna de las siguientes clasificaciones: riesgos organizacionales, riesgos sobre el personal, riesgos tecnológicos, riesgos sobre cambios en los requerimientos y riesgos sobre las herramientas.
+
+Una vez identificados y clasificados los riesgos se hace una valoración de la probabilidad de ocurrencia que tiene cada uno mediante una clasificación por rangos de probabilidad como la siguiente:
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Probabilidad en \%} &
+				\textcolor{blanco}{\bf Valoración} \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				0\% - 10\% &
+				Muy bajo \\
+      		\hline 
+				10\% - 25\% &
+				Bajo \\
+			\hline \rowcolor[RGB]{224,224,224} 
+				25\% - 50\% &
+				Moderado \\ 
+			\hline
+				50\% - 75\% &
+				Alto \\ 
+			\hline \rowcolor[RGB]{224,224,224} 
+				75\% - 100\% &
+				Muy Alto \\ 
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption[Clasificación de Riesgos Conforme a su Probabilidad]{Clasificación de Riesgos Conforme a su Probabilidad} 
+	\label{tab:probabilidadRiesgos}
+\end{table}
+
+Una vez que cada riesgo tiene asignada una valoración se procede a determinar el efecto que el riesgo tendrá en caso de que se llegara a cumplir. Una manera sencilla para determinar el efecto de cada riesgo es asignar una de las siguientes clasificaciones: catastrófico, serio, tolerable e insignificante. Cada una de las clasificaciones anteriores está ordenada en forma descendente conforme a la valoración de su impacto.
+
+Cuando se han seguido todos los pasos para el proceso de análisis de riesgos el resultado es una tabla donde se muestra el nombre del riesgo, su clasificación, su valoración y su impacto. Los riesgos presentados en la tabla deben ser ordenados de manera descendente conforme a su impacto.
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|>{\columncolor[RGB]{0,102,204}}p{6.6cm}|c|c|c|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Riesgo} &
+				\textcolor{blanco}{\bf Clasificación} &
+				\textcolor{blanco}{\bf Valoración} &
+				\textcolor{blanco}{\bf Efecto} \\		
+			\hline
+				\textcolor{blanco}{\bf Mala comunicación entre los integrantes del equipo} &
+				Organizacional &
+				Alto &
+				Serio \\
+			\hline
+				\textcolor{blanco}{\bf Recursos insuficientes para concluir el proyecto} &
+				\cellcolor[RGB]{224,224,224}  Organizacional &
+				\cellcolor[RGB]{224,224,224}Alto &
+				\cellcolor[RGB]{224,224,224}Serio \\
+      		\hline 
+				\textcolor{blanco}{\bf Retraso de las actividades del proyecto} &
+				Organizacional &
+				Bajo &
+				Serio \\
+			\hline  
+				\textcolor{blanco}{\bf Falta de responsabilidad de los integrantes del equipo} &
+				\cellcolor[RGB]{224,224,224}Personal &
+				\cellcolor[RGB]{224,224,224}Bajo &
+				\cellcolor[RGB]{224,224,224}Serio \\
+			\hline
+				\textcolor{blanco}{\bf Mala distribución de actividades} &
+				Organizacional &
+				Bajo &
+				Serio \\
+			\hline 
+				\textcolor{blanco}{\bf Permiso denegado para realizar trabajos dentro del AICM} &
+				\cellcolor[RGB]{224,224,224}Tecnológico &
+				\cellcolor[RGB]{224,224,224}Moderado &
+				\cellcolor[RGB]{224,224,224}Serio \\
+			\hline
+				\textcolor{blanco}{\bf Mal control de las versiones del proyecto.} &
+				Organizacional &
+				Moderado &
+				Serio \\
+			\hline 
+				\textcolor{blanco}{\bf Baja definitiva de alguno de los integrantes del equipo.} &
+				\cellcolor[RGB]{224,224,224}Personal &
+				\cellcolor[RGB]{224,224,224}Muy Bajo &
+				\cellcolor[RGB]{224,224,224}Serio \\
+			\hline
+				\textcolor{blanco}{\bf Cambios en los requerimientos del sistema por parte de los sinodales} &
+				Requerimientos &
+				Alto &
+				Serio \\
+			\hline 
+				\textcolor{blanco}{\bf Enfermedad de alguno de los miembros del equipo.} &
+				\cellcolor[RGB]{224,224,224}Personal &
+				\cellcolor[RGB]{224,224,224}Bajo &
+				\cellcolor[RGB]{224,224,224}Tolerable \\
+			\hline
+				\textcolor{blanco}{\bf Rendimiento no competitivo del sistema} &
+				Tecnológico &
+				Alto &
+				Serio \\
+			\hline 
+				\textcolor{blanco}{\bf Ausencia de algún integrante del equipo por un periodo prolongado de tiempo} &
+				\cellcolor[RGB]{224,224,224}Personal &
+				\cellcolor[RGB]{224,224,224}Muy Alto &
+				\cellcolor[RGB]{224,224,224}Tolerable \\
+			\hline
+				\textcolor{blanco}{\bf Falta de dominio de las herramientas de desarrollo} &
+				Personal &
+				Moderado &
+				Tolerable \\
+			\hline 
+				\textcolor{blanco}{\bf Falla en los dispositivos móviles de prueba} &
+				\cellcolor[RGB]{224,224,224}Tecnológico &
+				\cellcolor[RGB]{224,224,224}Alto &
+				\cellcolor[RGB]{224,224,224}Tolerable \\
+			\hline
+				\textcolor{blanco}{\bf Funcionamiento inadecuado en la implementación de alguna tecnología después de haber sido calificada como adecuada en el Estudio de Factibilidad} &
+				Tecnológico &
+				Alto &
+				Serio \\
+			\hline 
+				\textcolor{blanco}{\bf Incorrecta definición de la problemática del proyecto} &
+				\cellcolor[RGB]{224,224,224}Organizacional &
+				\cellcolor[RGB]{224,224,224}Muy Alto &
+				\cellcolor[RGB]{224,224,224}Serio \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption[Análisis de Riesgos]{Análisis de Riesgos} 
+	\label{tab:analisisRiesgos}
+\end{table}
+
+\textbf{Identificación de Riesgos}
+\newline
+Los riesgos han sido identificados clasificados, según el foco de interés, de la siguiente manera:
+
+\begin{itemize}
+	\item Ambiente del proyecto
+	\item Inventario de activos e intangibles
+	\item Mantenimiento de software y hardware
+	\item Equipo de trabajo 
+	\item Errores de estimación de costos 
+\end{itemize}
+
+\textbf{Estrategias para la mitigación de riesgos}
+\newline
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{14.2cm}|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Estrategia de mitigación} \\
+			\hline 
+				Seguimiento semanal de los hitos definidos por cada actividad en el desarrollo del proyecto. \\
+      		\hline 
+				Continúa capacitación del personal durante las horas de trabajo. \\
+			\hline 
+				Designación de considerable tiempo para esta actividad. \\ 
+			\hline
+				Conocimiento y seguimiento de la situación laboral y personal de cada miembro del equipo. \\ 
+			\hline 
+				Realización de pruebas como actividades de capacitación de las tecnologías a usar antes de ser implementadas. \\ 
+			\hline
+				Realización de pruebas al sistema para poder evitar el mal funcionamiento de alguno de los módulos \\ 
+			\hline
+				Planificación de todas las actividades antes de comenzar con el proyecto y fijar una fecha de entrega anterior a la acordada con el cliente pues esto nos dará una holgura de tiempo \\ 
+			\hline
+				Buscar y utilizar herramientas que se adapten a todos los dispositivos \\ 
+			\hline
+				Mantener una actitud positiva para manejar  los problemas y regirse conforme a la planeación \\ 
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption[Plan de Mitigación]{Plan de Mitigación} 
+	\label{tab:planMitigacion}
+\end{table}
+
+\begin{center}
+	{\bf \underline{Observación: Todos los riesgos antes mencionados pueden presentarse en}}
+	{\bf \underline{cualquier parte del proyecto por eso  los planes de mitigación y/o contingencia}}
+	{\bf \underline{no han sido fechados.}}
+\end{center} 
+
+\textbf{Planes de contingencia}
+\newline
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{14.2cm}|}
+			\hline \rowcolor[RGB]{0,102,204} 
+				\textcolor{blanco}{\bf Planes de contingencia} \\
+			\hline 
+				Compensar el tiempo de retraso con horas de trabajo extra. \\
+      		\hline 
+				Capacitación personal para el personal incompetente en horas extra de trabajo. \\
+			\hline 
+				Dialogo en el  equipo de trabajo si existe una mala definición en la problemática del proyecto para hacer un replanteamiento de la problemática. \\ 
+			\hline
+				Distribución del trabajo entre los miembros del equipo aumentando jornadas de trabajo. \\ 
+			\hline 
+				Elección de una tecnología secundaria compatible con el proyecto. \\ 
+			\hline
+				Ocupar la holgura de tiempo y trabajar más del tiempo estipulado. \\ 
+			\hline
+				Reparar el modulo o crear uno nuevo para evitar contratiempos. \\ 
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption[Plan de Contingencia]{Plan de Contingencia} 
+	\label{tab:planContingencia}
+\end{table}
+
+\begin{center}
+	{\bf \underline{Observación: Todos los riesgos antes mencionados pueden presentarse en}}
+	{\bf \underline{cualquier parte del proyecto por eso  los planes de mitigación y/o contingencia}}
+	{\bf \underline{no han sido fechados.}}
+\end{center} 
+

@@ -7,36 +7,46 @@ A level-1 auxiliary file: Capitulos/2EstadoDelArte/2EstadoDelArte.aux
 A level-1 auxiliary file: Capitulos/3MarcoTeorico/3MarcoTeorico.aux
 A level-1 auxiliary file: Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux
 A level-1 auxiliary file: Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux
+A level-1 auxiliary file: Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.aux
+A level-1 auxiliary file: Capitulos/7DisenoTASMC/7DisenoTASMC.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Warning--entry type for "devAndroid" isn't style-file defined
+Warning--entry type for "salarios" isn't style-file defined
 --line 12 of file Bibliography.bib
+Warning--entry type for "apiIndoorAtlas" isn't style-file defined
+--line 20 of file Bibliography.bib
+Warning--entry type for "apiGoogleMaps" isn't style-file defined
+--line 29 of file Bibliography.bib
+Warning--entry type for "starUML" isn't style-file defined
+--line 38 of file Bibliography.bib
+Warning--entry type for "devAndroid" isn't style-file defined
+--line 47 of file Bibliography.bib
 Warning--entry type for "MobileD" isn't style-file defined
---line 25 of file Bibliography.bib
+--line 64 of file Bibliography.bib
 Warning--entry type for "GPS" isn't style-file defined
---line 50 of file Bibliography.bib
+--line 89 of file Bibliography.bib
 Warning--entry type for "ubicuo" isn't style-file defined
---line 59 of file Bibliography.bib
+--line 98 of file Bibliography.bib
 Warning--entry type for "tiposApps" isn't style-file defined
---line 69 of file Bibliography.bib
+--line 108 of file Bibliography.bib
 Warning--entry type for "queParaApps" isn't style-file defined
---line 81 of file Bibliography.bib
+--line 120 of file Bibliography.bib
 Warning--entry type for "tripit" isn't style-file defined
---line 114 of file Bibliography.bib
+--line 153 of file Bibliography.bib
 Warning--entry type for "kayak" isn't style-file defined
---line 123 of file Bibliography.bib
+--line 162 of file Bibliography.bib
 Warning--entry type for "gateguru" isn't style-file defined
---line 132 of file Bibliography.bib
+--line 171 of file Bibliography.bib
 Warning--entry type for "meridian" isn't style-file defined
---line 143 of file Bibliography.bib
+--line 182 of file Bibliography.bib
 Warning--entry type for "crux" isn't style-file defined
---line 152 of file Bibliography.bib
+--line 191 of file Bibliography.bib
 Warning--entry type for "moviles" isn't style-file defined
---line 165 of file Bibliography.bib
+--line 204 of file Bibliography.bib
 Warning--entry type for "endutih" isn't style-file defined
---line 177 of file Bibliography.bib
+--line 216 of file Bibliography.bib
 Warning--entry type for "appsViajar" isn't style-file defined
---line 187 of file Bibliography.bib
+--line 226 of file Bibliography.bib
 Warning--empty year in endutih
 Warning--empty year in meridian
 Warning--empty year in kayak
@@ -49,45 +59,45 @@ Warning--empty year in Android
 Warning--empty year in presentacionAndroid
 Warning--empty year in desDispositivos
 Warning--empty year in desDispositivos
-You've used 19 entries,
+You've used 23 entries,
             2481 wiz_defined-function locations,
-            655 strings with 7387 characters,
-and the built_in function-call counts, 4685 in all, are:
-= -- 402
+            673 strings with 8069 characters,
+and the built_in function-call counts, 5549 in all, are:
+= -- 482
 > -- 77
 < -- 11
-+ -- 60
++ -- 68
 - -- 22
-* -- 265
-:= -- 628
-add.period$ -- 48
-call.type$ -- 19
-change.case$ -- 37
-chr.to.int$ -- 19
-cite$ -- 39
-duplicate$ -- 283
-empty$ -- 584
+* -- 317
+:= -- 712
+add.period$ -- 56
+call.type$ -- 23
+change.case$ -- 45
+chr.to.int$ -- 23
+cite$ -- 47
+duplicate$ -- 339
+empty$ -- 712
 format.name$ -- 33
-if$ -- 1051
+if$ -- 1263
 int.to.chr$ -- 1
-int.to.str$ -- 20
+int.to.str$ -- 24
 missing$ -- 5
-newline$ -- 94
+newline$ -- 110
 num.names$ -- 33
-pop$ -- 225
+pop$ -- 277
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 23
 quote$ -- 0
-skip$ -- 209
+skip$ -- 255
 stack$ -- 0
-substring$ -- 76
-swap$ -- 47
+substring$ -- 88
+swap$ -- 57
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
+type$ -- 158
 warning$ -- 12
 while$ -- 24
 width$ -- 0
-write$ -- 211
-(There were 26 warnings)
+write$ -- 251
+(There were 30 warnings)

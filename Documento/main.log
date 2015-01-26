@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 JAN 2015 03:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 JAN 2015 05:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,17 +937,12 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 (./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
 (./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
 (./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
-<Figuras/moviles.png, id=681, 443.7378pt x 196.0926pt>
+<Figuras/moviles.png, id=681, 551.05875pt x 217.81375pt>
 File: Figuras/moviles.png Graphic file (type png)
 
 <use Figuras/moviles.png>
 Package pdftex.def Info: Figuras/moviles.png used on input line 23.
-(pdftex.def)             Requested size: 443.73671pt x 196.09212pt.
-
-Overfull \hbox (26.26364pt too wide) in paragraph at lines 23--25
- [][] 
- []
-
+(pdftex.def)             Requested size: 417.47307pt x 165.01836pt.
 
 Overfull \hbox (2.52693pt too wide) in paragraph at lines 23--25
  [] 
@@ -1165,11 +1160,11 @@ ua-rios ope-rar en el en-torno inal[]ambri-
  []
 
 [12]) (./Capitulos/3MarcoTeorico/Secciones/3-3ComputoUbicuo.tex
-<Figuras/ubicuo.png, id=744, 332.442pt x 249.5724pt>
+<Figuras/ubicuo.png, id=744, 692.5875pt x 519.9425pt>
 File: Figuras/ubicuo.png Graphic file (type png)
  <use Figuras/ubicuo.png>
 Package pdftex.def Info: Figuras/ubicuo.png used on input line 9.
-(pdftex.def)             Requested size: 332.44118pt x 249.57178pt.
+(pdftex.def)             Requested size: 333.97972pt x 250.72787pt.
 
 Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
  [] 
@@ -2274,7 +2269,7 @@ aux) (./Capitulos/7DisenoTASMC/7DisenoTASMC.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BB1A96AEF7B7BFB3AB02B656038419D5;18330.
+(rerunfilecheck)             Checksum: AFE8620EA65A1D0248058181742B34AB;18462.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
@@ -2292,7 +2287,7 @@ ive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (100 pages, 4674266 bytes).
+Output written on main.pdf (100 pages, 4523330 bytes).
 PDF statistics:
  1497 PDF objects out of 1728 (max. 8388607)
  1280 compressed objects within 13 object streams

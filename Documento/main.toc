@@ -27,7 +27,7 @@
 \contentsline {subsubsection}{\numberline {3.5.2.5}Ultrasonidos}{19}{subsubsection.39}
 \contentsline {subsubsection}{\numberline {3.5.2.6}Visi\IeC {\'o}n Artificial}{20}{subsubsection.40}
 \contentsline {subsubsection}{\numberline {3.5.2.7}Zigbee}{20}{subsubsection.41}
-\contentsline {subsubsection}{\numberline {3.5.2.8}Campo magn\IeC {\'e}tico}{21}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {3.5.2.8}Campo Magn\IeC {\'e}tico}{21}{subsubsection.42}
 \contentsline {section}{\numberline {3.6}Sistema Operativo M\IeC {\'o}vil Android}{22}{section.45}
 \contentsline {subsection}{\numberline {3.6.1}Caracter\IeC {\'\i }sticas de Android}{24}{subsection.47}
 \contentsline {chapter}{\numberline {4}Marco Metodol\IeC {\'o}gico}{26}{chapter.48}
@@ -37,51 +37,60 @@
 \contentsline {subsubsection}{\numberline {5.1.1.1}Hardware}{30}{subsubsection.53}
 \contentsline {subsubsection}{\numberline {5.1.1.2}Software}{31}{subsubsection.57}
 \contentsline {paragraph}{\numberline {5.1.1.2.1}Sistema Operativo M\IeC {\'o}vil}{31}{paragraph.58}
-\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{32}{subparagraph.60}
+\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{33}{subparagraph.60}
 \contentsline {subparagraph}{\numberline {5.1.1.2.1.2}Versiones de Android}{33}{subparagraph.61}
-\contentsline {paragraph}{\numberline {5.1.1.2.2}Lenguaje de Programaci\IeC {\'o}n}{33}{paragraph.64}
-\contentsline {paragraph}{\numberline {5.1.1.2.3}Sistema Operativo de Escritorio}{34}{paragraph.67}
-\contentsline {paragraph}{\numberline {5.1.1.2.4}Entorno de Desarrollo Integrado}{34}{paragraph.69}
-\contentsline {paragraph}{\numberline {5.1.1.2.5}Herramienta UML}{36}{paragraph.72}
+\contentsline {paragraph}{\numberline {5.1.1.2.2}Lenguaje de Programaci\IeC {\'o}n}{34}{paragraph.64}
+\contentsline {paragraph}{\numberline {5.1.1.2.3}Sistema Operativo de Escritorio}{35}{paragraph.67}
+\contentsline {paragraph}{\numberline {5.1.1.2.4}Entorno de Desarrollo Integrado}{36}{paragraph.69}
+\contentsline {paragraph}{\numberline {5.1.1.2.5}Herramienta UML}{37}{paragraph.72}
 \contentsline {paragraph}{\numberline {5.1.1.2.6}Sistema Gestor de Base de Datos}{38}{paragraph.73}
-\contentsline {paragraph}{\numberline {5.1.1.2.7}API de Rutas de Google Maps}{38}{paragraph.75}
-\contentsline {paragraph}{\numberline {5.1.1.2.8}API de IndoorAtlas}{38}{paragraph.76}
+\contentsline {paragraph}{\numberline {5.1.1.2.7}API de Rutas de Google Maps}{39}{paragraph.75}
+\contentsline {paragraph}{\numberline {5.1.1.2.8}API de IndoorAtlas}{40}{paragraph.76}
 \contentsline {subsection}{\numberline {5.1.2}Factibilidad Ec\IeC {\'o}nomica}{40}{subsection.77}
 \contentsline {subsection}{\numberline {5.1.3}Factibilidad Operativa}{41}{subsection.82}
-\contentsline {section}{\numberline {5.2}An\IeC {\'a}lisis de Requerimientos}{41}{section.84}
+\contentsline {section}{\numberline {5.2}An\IeC {\'a}lisis de Requerimientos}{42}{section.84}
 \contentsline {subsection}{\numberline {5.2.1}Reglas de Negocio}{42}{subsection.85}
-\contentsline {subsection}{\numberline {5.2.2}Requerimientos B\IeC {\'a}sicos (RB)}{42}{subsection.87}
-\contentsline {subsection}{\numberline {5.2.3}Requerimientos Funcionales (RF)}{48}{subsection.89}
-\contentsline {subsection}{\numberline {5.2.4}Requerimientos No Funcionales (RNF)}{48}{subsection.91}
-\contentsline {section}{\numberline {5.3}An\IeC {\'a}lisis de Riesgos}{48}{section.93}
-\contentsline {chapter}{\numberline {6}Configuraci\IeC {\'o}n del Ambiente de Desarrollo}{53}{chapter.98}
-\contentsline {section}{\numberline {6.1}Configuraci\IeC {\'o}n Web Service}{53}{section.99}
-\contentsline {section}{\numberline {6.2}Configuraci\IeC {\'o}n Aplicaci\IeC {\'o}n M\IeC {\'o}vil }{53}{section.100}
-\contentsline {section}{\numberline {6.3}Configuraci\IeC {\'o}n Base de Datos SQLite}{54}{section.101}
-\contentsline {section}{\numberline {6.4}Configuraci\IeC {\'o}n Google Maps API}{54}{section.102}
-\contentsline {section}{\numberline {6.5}Configuraci\IeC {\'o}n IndoorAtlas API}{54}{section.103}
-\contentsline {section}{\numberline {6.6}Configuraci\IeC {\'o}n IDE}{55}{section.104}
-\contentsline {chapter}{\numberline {7}Dise\IeC {\~n}o TASMC}{56}{chapter.105}
-\contentsline {section}{\numberline {7.1}Actores}{56}{section.106}
-\contentsline {section}{\numberline {7.2}Casos de Uso del Administrador}{57}{section.110}
-\contentsline {subsection}{\numberline {7.2.1}Diagrama de Casos de Uso General del Administrador}{57}{subsection.111}
-\contentsline {subsection}{\numberline {7.2.2}Caso de Uso Gestionar Usuario}{58}{subsection.113}
-\contentsline {subsection}{\numberline {7.2.3}Caso de Uso Registrar Equipaje}{59}{subsection.119}
-\contentsline {subsection}{\numberline {7.2.4}Caso de Uso Gestionar Lugar}{60}{subsection.128}
-\contentsline {section}{\numberline {7.3}Casos de Uso del Usuario}{61}{section.135}
-\contentsline {subsection}{\numberline {7.3.1}Diagrama de Casos de Uso General del Usuario}{61}{subsection.136}
-\contentsline {subsection}{\numberline {7.3.2}Caso de Uso Configurar Viaje}{62}{subsection.138}
-\contentsline {subsection}{\numberline {7.3.3}Caso de Uso Consultar Hotel}{64}{subsection.150}
-\contentsline {subsection}{\numberline {7.3.4}Caso de Uso Consultar Vuelo}{66}{subsection.164}
-\contentsline {subsection}{\numberline {7.3.5}Caso de Uso Consultar Informaci\IeC {\'o}n AICM}{68}{subsection.178}
-\contentsline {subsection}{\numberline {7.3.6}Caso de Uso Gestionar Equipaje}{69}{subsection.185}
-\contentsline {subsection}{\numberline {7.3.7}Caso de Uso Consultar Itinerario de Viaje}{71}{subsection.197}
-\contentsline {subsection}{\numberline {7.3.8}Caso de Uso Consultar Ruta casa-AICM}{73}{subsection.215}
-\contentsline {subsection}{\numberline {7.3.9}Caso de Uso Ubicar en AICM}{74}{subsection.223}
-\contentsline {subsection}{\numberline {7.3.10}Caso de Uso Consultar Informaci\IeC {\'o}n de Vuelo}{76}{subsection.229}
-\contentsline {section}{\numberline {7.4}Diagrama de Clases}{78}{section.247}
-\contentsline {section}{\numberline {7.5}Dise\IeC {\~n}o de Esquema de Base de Datos}{79}{section.249}
-\contentsline {section}{\numberline {7.6}Diagramas de Secuencia}{80}{section.252}
-\contentsline {section}{\numberline {7.7}Diagrama de Despliegue}{80}{section.265}
-\contentsline {section}{\numberline {7.8}Dise\IeC {\~n}o de la Interfaz Gr\IeC {\'a}fica del Usuario}{82}{section.275}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{92}{chapter*.276}
+\contentsline {subsection}{\numberline {5.2.2}Requerimientos B\IeC {\'a}sicos (RB)}{44}{subsection.87}
+\contentsline {subsection}{\numberline {5.2.3}Requerimientos Funcionales (RF)}{49}{subsection.89}
+\contentsline {subsection}{\numberline {5.2.4}Requerimientos No Funcionales (RNF)}{50}{subsection.91}
+\contentsline {section}{\numberline {5.3}An\IeC {\'a}lisis de Riesgos}{50}{section.93}
+\contentsline {chapter}{\numberline {6}Configuraci\IeC {\'o}n del Ambiente de Desarrollo}{54}{chapter.98}
+\contentsline {section}{\numberline {6.1}Configuraci\IeC {\'o}n Web Service}{54}{section.99}
+\contentsline {section}{\numberline {6.2}Configuraci\IeC {\'o}n Aplicaci\IeC {\'o}n M\IeC {\'o}vil }{54}{section.100}
+\contentsline {section}{\numberline {6.3}Configuraci\IeC {\'o}n Base de Datos SQLite}{55}{section.101}
+\contentsline {section}{\numberline {6.4}Configuraci\IeC {\'o}n Google Maps API}{55}{section.102}
+\contentsline {section}{\numberline {6.5}Configuraci\IeC {\'o}n IndoorAtlas API}{55}{section.103}
+\contentsline {section}{\numberline {6.6}Configuraci\IeC {\'o}n IDE}{56}{section.104}
+\contentsline {chapter}{\numberline {7}Dise\IeC {\~n}o TASMC}{57}{chapter.105}
+\contentsline {section}{\numberline {7.1}Actores}{57}{section.106}
+\contentsline {section}{\numberline {7.2}Casos de Uso del Administrador}{58}{section.110}
+\contentsline {subsection}{\numberline {7.2.1}Diagrama de Casos de Uso General del Administrador}{58}{subsection.111}
+\contentsline {subsection}{\numberline {7.2.2}Caso de Uso Gestionar Usuario}{59}{subsection.113}
+\contentsline {subsection}{\numberline {7.2.3}Caso de Uso Gestionar Equipaje}{60}{subsection.119}
+\contentsline {subsection}{\numberline {7.2.4}Caso de Uso Gestionar Lugar}{61}{subsection.128}
+\contentsline {section}{\numberline {7.3}Casos de Uso del Usuario}{62}{section.135}
+\contentsline {subsection}{\numberline {7.3.1}Diagrama de Casos de Uso General del Usuario}{62}{subsection.136}
+\contentsline {subsection}{\numberline {7.3.2}Caso de Uso Configurar Viaje}{63}{subsection.138}
+\contentsline {subsection}{\numberline {7.3.3}Caso de Uso Consultar Hotel}{65}{subsection.150}
+\contentsline {subsection}{\numberline {7.3.4}Caso de Uso Consultar Vuelo}{67}{subsection.164}
+\contentsline {subsection}{\numberline {7.3.5}Caso de Uso Consultar Informaci\IeC {\'o}n AICM}{69}{subsection.178}
+\contentsline {subsection}{\numberline {7.3.6}Caso de Uso Gestionar Equipaje}{70}{subsection.185}
+\contentsline {subsection}{\numberline {7.3.7}Caso de Uso Consultar Itinerario de Viaje}{72}{subsection.197}
+\contentsline {subsection}{\numberline {7.3.8}Caso de Uso Consultar Ruta casa-AICM}{74}{subsection.215}
+\contentsline {subsection}{\numberline {7.3.9}Caso de Uso Ubicar en AICM}{75}{subsection.223}
+\contentsline {subsection}{\numberline {7.3.10}Caso de Uso Consultar Informaci\IeC {\'o}n de Vuelo}{77}{subsection.229}
+\contentsline {section}{\numberline {7.4}Diagrama de Clases}{79}{section.247}
+\contentsline {section}{\numberline {7.5}Dise\IeC {\~n}o de Esquema de Base de Datos}{80}{section.249}
+\contentsline {section}{\numberline {7.6}Diagramas de Secuencia}{81}{section.252}
+\contentsline {section}{\numberline {7.7}Diagrama de Despliegue}{90}{section.265}
+\contentsline {section}{\numberline {7.8}Dise\IeC {\~n}o de la Interfaz Gr\IeC {\'a}fica del Usuario}{92}{section.275}
+\contentsline {subsection}{\numberline {7.8.1}Pantalla CU-U-01-1: Configurar viaje}{92}{subsection.276}
+\contentsline {subsection}{\numberline {7.8.2}Pantalla CU-U-02-1: Consultar Hotel}{94}{subsection.278}
+\contentsline {subsection}{\numberline {7.8.3}Pantalla CU-U-03-1: Consultar Vuelo}{96}{subsection.280}
+\contentsline {subsection}{\numberline {7.8.4}Pantalla CU-U-04-1: Consultar Informaci\IeC {\'o}n AICM}{98}{subsection.282}
+\contentsline {subsection}{\numberline {7.8.5}Pantalla CU-U-05-1: Gestionar Equipaje}{99}{subsection.284}
+\contentsline {subsection}{\numberline {7.8.6}Pantalla CU-U-06-1: Consultar Itinerario de Viaje}{101}{subsection.286}
+\contentsline {subsection}{\numberline {7.8.7}Pantalla CU-U-07-1: Consultar Ruta casa-AICM}{103}{subsection.288}
+\contentsline {subsection}{\numberline {7.8.8}Pantalla CU-U-08-1: Ubicar en AICM}{105}{subsection.290}
+\contentsline {subsection}{\numberline {7.8.9}Pantalla CU-U-09-1: Consultar Innformaci\IeC {\'o}n de Vuelo}{107}{subsection.292}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{110}{chapter*.294}

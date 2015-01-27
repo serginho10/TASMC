@@ -1,0 +1,17 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1301" measuredH="647" mockupW="304" mockupH="476">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="997" y="171" w="304" h="476" measuredW="720" measuredH="1280" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/intConsultarInformacionAICM.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Accordion" x="997" y="230" w="304" h="417" measuredW="150" measuredH="213" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>3</selectedIndex>
+        <text>P%E1gina%20Web%0ADirecci%F3n%0ATel%E9fono%0AMapa%0AServicios</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Map" x="997" y="339" w="304" h="278" measuredW="252" measuredH="222" zOrder="2" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>

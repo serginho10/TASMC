@@ -1,3 +1,4 @@
+\newpage
 \section{Análisis de Requerimientos}
 
 Dentro de esta etapa, a partir de las reglas de negocio y la descripción del sistema se debe considerar la obtención de los requerimientos básicos, los cuales cumplen la función de definir de manera general el sistema a desarrollar para después pasar a especificar los requerimientos funcionales que nos reflejen a detalle las funciones que el sistema debe o no efectuar.
@@ -11,77 +12,77 @@ Las reglas de negocio especifican procesos, operaciones, normas y restricciones 
 \begin{table}
 	\begin{center}
 		\begin{tabular}{|c|c|p{3cm}|p{5.7cm}|}
-			\hline \rowcolor[RGB]{0,102,204} 
+			\hline \rowcolor[RGB]{51,153,255} 
 				\textcolor{blanco}{\bf Identificador} &
 				\textcolor{blanco}{\bf Tipo} &
 				\textcolor{blanco}{\bf Nombre} &
 				\textcolor{blanco}{\bf Descripción} \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN01} &
 				Definición &
 				Viajero aéreo &
 				Persona que viaja en un avión. \\
-      		\hline 
+      		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RN02} &
 				Definición &
 				Viaje aéreo &
 				Traslado de un lugar a otro, mediante la  utilizando aeronaves, con fin lucrativo. \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN03} &
 				Definición &
 				Aerolínea &
 				Empresa o compañía dedicada al transporte aéreo. \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RN04} &
 				Definición &
 				Vuelo &
 				Trayecto que realiza un avión, haciendo o no escalas, entre el punto de origen y el destino. \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN05} &
 				Hecho &
 				Visualizar los vuelos de las aerolíneas. &
 				El viajero aéreo puede ver todos los vuelos que las aerolíneas proporcionan, sin importar que falten semanas o meses para el vuelo. \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RN06} &
 				Definición &
 				Itinerario de viaje &
 				Listado en el que se describen los lugares por los que se va a pasar. \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN07} &
 				Hecho &
 				Notificar al viajero &
 				El viajero debe ser notificado en caso de producirse algún cambio en cuanto al vuelo o el horario. \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RN08} &
 				Hecho &
 				Recordar documentos importantes &
 				Se debe apoyar al viajero en que no olvide documentos importantes para su viaje. \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN09} &
 				Hecho &
 				Puntualidad en el aeropuerto &
 				El viajero debe llegar puntual a la cita en el aeropuerto para cumplir con los procedimientos que necesita para el abordaje del avión. \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RN10} &
 				Hecho &
 				Guardar objetos importantes &
 				El viajero no debe olvidar objetos importantes para contribuir con la satisfacción total del viaje. \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN11} &
 				Hecho &
 				Hoteles en la ciudad destino &
 				Se debe informar al viajero sobre los hoteles que se encuentren en la ciudad destino.  \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RN12} &
 				Hecho &
 				Usabilidad &
 				Se debe asistir al viajero, para que pueda cumplir con un viaje satisfactorio, apoyándolo con la gestión de su viaje de una manera sencilla y comprensible.  \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RN13} &
 				Hecho &
 				Disponibilidad &
 				La información debe estar disponible idealmente todo el año.  \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RN14} &
 				Hecho &
 				Información del AICM &
@@ -160,7 +161,7 @@ En base a las características que debe contener TASMC se han podido identificar
 	\end{itemize}
 \end{itemize}
 
-\textbf{Información Aeropuerto AICM}
+\textbf{Información de la terminal 1 del aeropuerto AICM}
 
 \begin{itemize}
 	\item Información de Aeropuerto AICM
@@ -233,43 +234,43 @@ En base a las características que debe contener TASMC se han podido identificar
 \begin{table}
 	\begin{center}
 		\begin{tabular}{|c|p{8.4cm}|p{2.5cm}|}
-			\hline \rowcolor[RGB]{0,102,204} 
+			\hline \rowcolor[RGB]{51,153,255} 
 				\textcolor{blanco}{\bf Identificador} &
 				\textcolor{blanco}{\bf Descripción} &
 				\textcolor{blanco}{\bf Origen} \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RB01} &
 				Módulo que permita al usuario realizar su registro a TASMC y elegir sus preferencias. &
 				Definición del sistema  \\
-      		\hline 
+      		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RB02} &
 				Módulo para realizar búsquedas de Hoteles y posteriormente generar un listado de dicha búsqueda. &
 				Definición del sistema, RN11 \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RB03} &
 				Módulo para realizar búsquedas de Vuelos y posteriormente generar un listado de dicha búsqueda. &
 				Definición del sistema, RN05 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RB04} &
 				Módulo para visualizar la información del AICM, como sitio web, teléfono, ubicación y redes sociales. &
 				Definición del sistema, RN14 \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RB05} &
 				Módulo para la gestión de objetos, donde el usuario podrá verificar en una lista los objetos requeridos para su viaje. &
 				Definición del sistema, RN10 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RB06} &
 				Módulo para asistir en la construcción del itinerario de viaje del usuario. &
 				Definición del sistema \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RB07} &
 				Módulo que permita visualizar rutas que tengan como destino el AICM. &
 				Definición del sistema, RN09, RN12 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RB08} &
 				Módulo que permita visualizar en un mapa del AICM la ubicación del usuario en el momento que lo requiera. &
 				Definición del sistema, RN12 \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RB09} &
 				Módulo para visualizar la información del vuelo, como lo es, el número de vuelo, el estado de vuelo, ciudad de origen, ciudad destino, hora de salida, hora de llegada, fecha, terminal y puerta. &
 				Definición del sistema, RN07 \\ 
@@ -279,47 +280,48 @@ En base a las características que debe contener TASMC se han podido identificar
 	\caption[Requerimientos Básicos]{Requerimientos Básicos} 
 	\label{tab:reqBasicos}
 \end{table}
-
+\clearpage
+\newpage
 \subsection{Requerimientos Funcionales (RF)}
 
-En la siguiente tabla se muestran los requerimientos funcionales de TASMC:
+En la Tabla \ref{tab:reqFuncionales} se muestran los requerimientos funcionales de TASMC.
 
-\begin{table}
+\begin{table}[h]
 	\begin{center}
 		\begin{tabular}{|c|p{9.4cm}|p{1.5cm}|}
-			\hline \rowcolor[RGB]{0,102,204} 
+			\hline  \rowcolor[RGB]{51,153,255} 
 				\textcolor{blanco}{\bf Identificador} &
 				\textcolor{blanco}{\bf Descripción} &
 				\textcolor{blanco}{\bf Origen} \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RF01} &
 				El sistema debe ser capaz de configurar gustos y posibilidades económicas del viajero para generar un mejor resultado en la búsqueda de vuelos y hoteles. &
 				RB01 \\
-      		\hline 
+      		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RF02} &
 				El usuario debe poder visualizar sugerencias de hoteles disponibles,  según una búsqueda que haya realizado previamente. &
 				RB02 \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RF03} &
 				El usuario debe poder visualizar sugerencias de vuelos disponibles, según una búsqueda que haya realizado previamente. &
 				RB03 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RF04} &
 				El sistema debe ser capaz de generar una lista de objetos que debe empacar el usuario, según el tipo de viaje que se seleccione. &
 				RB05 \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RF05} &
 				El sistema debe proporcionar una lista que permita al usuario generar un itinerario de viaje. &
 				RB06 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RF06} &
 				El sistema mostrará una sugerencia de ruta para llegar al AICM desde la posición actual del usuario. &
 				RB07 \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RF07} &
 				El sistema debe ser capaz de ubicar al usuario dentro del AICM y facilitarle la llegada a su sala de abordaje. &
 				RB08 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RF08} &
 				El sistema deberá mostrar la información del número de vuelo, estado de vuelo, ciudades de origen y destino, 					hora de salida y llegada, fecha, terminal y puerta. &
 				RB09 \\ 
@@ -329,43 +331,43 @@ En la siguiente tabla se muestran los requerimientos funcionales de TASMC:
 	\caption[Requerimientos Funcionales]{Requerimientos Funcionales} 
 	\label{tab:reqFuncionales}
 \end{table}
-
+\clearpage
 \subsection{Requerimientos No Funcionales (RNF)}
 
-En la siguiente tabla se muestran los requerimientos no funcionales de TASMC:
+En la Tabla \ref{tab:reqNoFuncionales} se muestran los requerimientos no funcionales de TASMC.
 
-\begin{table}
+\begin{table}[h]
 	\begin{center}
 		\begin{tabular}{|c|p{8.4cm}|p{2.5cm}|}
-			\hline \rowcolor[RGB]{0,102,204} 
+			\hline \rowcolor[RGB]{51,153,255} 
 				\textcolor{blanco}{\bf Identificador} &
 				\textcolor{blanco}{\bf Descripción} &
 				\textcolor{blanco}{\bf Origen} \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RNF01} &
 				Las condiciones del entorno no deben de afectar la localización del usuario. Se debe de considerar un ambiente controlado. &
 				RB08 \\
-      		\hline 
+      		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RNF02} &
 				La aplicación debe funcionar en todos los dispositivos móviles que contengan el sistema operativo Android versión 4.4 (KitKat). &
 				Definición del Sistema \\
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RNF03} &
 				Se debe de presentar una interfaz gráfica para poder seleccionar las distintas funciones que puede utilizar el usuario en el sistema. &
 				RN12 \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RNF04} &
 				El sistema debe enviar una respuesta con una rapidez acorde al ancho de banda y la disponibilidad de la red. &
 				Definición del Sistema \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RNF05} &
 				El sistema debe tener la posibilidad de generar ampliaciones de funcionalidad y escalabilidad. &
 				Definición del Sistema \\ 
-			\hline
+			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RNF06} &
 				Se debe dar soporte continuo al sistema. &
 				RN12 \\ 
-			\hline \rowcolor[RGB]{224,224,224} 
+			\hline 
 				\textbf{RNF07} &
 				La navegación del usuario dentro de la aplicación debe ser de fácil entendimiento y de manera intuitiva. &
 				RB12 \\ 

@@ -1,0 +1,16 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="791" measuredH="525" mockupW="284" mockupH="499">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="507" y="26" w="284" h="499" measuredW="720" measuredH="1280" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/intUbicarAICM.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Image" x="507" y="89" w="282" h="436" measuredW="343" measuredH="664" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <crop>204%2C239%2C787%2C675</crop>
+        <rotation>90</rotation>
+        <src>./assets/mapaInterior.png</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,45 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2924" measuredH="1998" mockupW="1080" mockupH="1920">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="1844" y="78" w="1080" h="1920" measuredW="720" measuredH="1280" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/intConfiguracion.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="2192" y="488" w="396" h="-1" measuredW="162" measuredH="74" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Email</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="2192" y="732" w="396" h="-1" measuredW="331" measuredH="74" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Contrase%F1a</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="2180" y="1192" w="420" h="-1" measuredW="413" measuredH="74" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Clase%20de%20Viaje</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="2125" y="1458" w="530" h="-1" measuredW="528" measuredH="74" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Categor%EDa%20de%20Hotel</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="2119" y="970" w="-1" h="-1" measuredW="543" measuredH="68" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Gusto%20o%20Preferencia</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="2248" y="1722" w="-1" h="-1" measuredW="273" measuredH="68" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Registrar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

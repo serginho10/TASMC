@@ -1,0 +1,14 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1852" measuredH="1036" mockupW="506" mockupH="944">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="1346" y="92" w="506" h="944" measuredW="720" measuredH="1280" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/intConsultarVuelo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::DateChooser" x="1407" y="473" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20/%20%20/%20%20%20%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

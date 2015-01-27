@@ -1,0 +1,21 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1021" measuredH="506" mockupW="306" mockupH="486">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="715" y="108" w="306" h="398" measuredW="411" measuredH="267" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <crop>0%2C167%2C1000%2C833</crop>
+        <src>./assets/info.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="715" y="20" w="306" h="486" measuredW="720" measuredH="1280" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/intInformacionVuelo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="715" y="81" w="-1" h="-1" measuredW="131" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Vuelo%20468%20%28AM468%29</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

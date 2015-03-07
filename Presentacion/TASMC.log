@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  31 JAN 2015 21:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  10 FEB 2015 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,6 +1196,10 @@ File: imagenes/escom.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/escom.jpg used on input line 50.
 (pdftex.def)             Requested size: 48.22781pt x 42.67912pt.
 
+Overfull \hbox (13.141pt too wide) in paragraph at lines 50--50
+[][] 
+ []
+
 <imagenes/logo.png, id=44, 34.6896pt x 34.6896pt>
 File: imagenes/logo.png Graphic file (type png)
  <use imagenes/logo.png>
@@ -1221,21 +1225,21 @@ LaTeX Info: Redefining \% on input line 2.
 File: imagenes/nvuelo.jpg Graphic file (type jpg)
 
 <use imagenes/nvuelo.jpg>
-Package pdftex.def Info: imagenes/nvuelo.jpg used on input line 94.
+Package pdftex.def Info: imagenes/nvuelo.jpg used on input line 93.
 (pdftex.def)             Requested size: 81.82053pt x 56.9055pt.
 
 <imagenes/nhotel.jpg, id=159, 231.264pt x 154.07964pt>
 File: imagenes/nhotel.jpg Graphic file (type jpg)
 
 <use imagenes/nhotel.jpg>
-Package pdftex.def Info: imagenes/nhotel.jpg used on input line 94.
+Package pdftex.def Info: imagenes/nhotel.jpg used on input line 93.
 (pdftex.def)             Requested size: 85.41107pt x 56.9055pt.
 
 <imagenes/nitinerario.jpg, id=160, 672.5125pt x 448.67625pt>
 File: imagenes/nitinerario.jpg Graphic file (type jpg)
 
 <use imagenes/nitinerario.jpg>
-Package pdftex.def Info: imagenes/nitinerario.jpg used on input line 94.
+Package pdftex.def Info: imagenes/nitinerario.jpg used on input line 93.
 (pdftex.def)             Requested size: 85.28499pt x 56.9055pt.
  [4
 
@@ -1244,21 +1248,21 @@ Package pdftex.def Info: imagenes/nitinerario.jpg used on input line 94.
 File: imagenes/pdocumento.jpg Graphic file (type jpg)
 
 <use imagenes/pdocumento.jpg>
-Package pdftex.def Info: imagenes/pdocumento.jpg used on input line 116.
+Package pdftex.def Info: imagenes/pdocumento.jpg used on input line 115.
 (pdftex.def)             Requested size: 75.86307pt x 56.9055pt.
 
 <imagenes/pinpuntual.jpg, id=191, 301.125pt x 200.75pt>
 File: imagenes/pinpuntual.jpg Graphic file (type jpg)
 
 <use imagenes/pinpuntual.jpg>
-Package pdftex.def Info: imagenes/pinpuntual.jpg used on input line 116.
+Package pdftex.def Info: imagenes/pinpuntual.jpg used on input line 115.
 (pdftex.def)             Requested size: 85.35744pt x 56.9055pt.
 
 <imagenes/pperderse.jpg, id=192, 386.19281pt x 214.55156pt>
 File: imagenes/pperderse.jpg Graphic file (type jpg)
 
 <use imagenes/pperderse.jpg>
-Package pdftex.def Info: imagenes/pperderse.jpg used on input line 116.
+Package pdftex.def Info: imagenes/pperderse.jpg used on input line 115.
 (pdftex.def)             Requested size: 102.42899pt x 56.9055pt.
  [5
 
@@ -1267,10 +1271,10 @@ jpg>]
 <imagenes/queEs.jpg, id=220, 345.29pt x 344.28625pt>
 File: imagenes/queEs.jpg Graphic file (type jpg)
  <use imagenes/queEs.jpg>
-Package pdftex.def Info: imagenes/queEs.jpg used on input line 142.
+Package pdftex.def Info: imagenes/queEs.jpg used on input line 141.
 (pdftex.def)             Requested size: 142.67622pt x 142.26378pt.
 
-Overfull \hbox (28.8652pt too wide) in paragraph at lines 142--142
+Overfull \hbox (28.8652pt too wide) in paragraph at lines 141--141
  [] 
  []
 
@@ -1279,11 +1283,15 @@ Overfull \hbox (28.8652pt too wide) in paragraph at lines 142--142
  <./imagenes/queEs.jpg>]
 File: imagenes/queEs.jpg Graphic file (type jpg)
  <use imagenes/queEs.jpg>
-Package pdftex.def Info: imagenes/queEs.jpg used on input line 166.
+Package pdftex.def Info: imagenes/queEs.jpg used on input line 168.
 (pdftex.def)             Requested size: 142.67622pt x 142.26378pt.
 
-Overfull \hbox (28.8652pt too wide) in paragraph at lines 166--166
+Overfull \hbox (28.8652pt too wide) in paragraph at lines 168--168
  [] 
+ []
+
+
+Overfull \vbox (10.47522pt too high) detected at line 168
  []
 
 [7
@@ -1292,37 +1300,33 @@ Overfull \hbox (28.8652pt too wide) in paragraph at lines 166--166
 
 ] [9
 
-] <imagenes/mobiled.png, id=332, 480.8364pt x 233.673pt>
+] <imagenes/mobiled.png, id=335, 480.8364pt x 233.673pt>
 File: imagenes/mobiled.png Graphic file (type png)
 
 <use imagenes/mobiled.png>
-Package pdftex.def Info: imagenes/mobiled.png used on input line 197.
+Package pdftex.def Info: imagenes/mobiled.png used on input line 202.
 (pdftex.def)             Requested size: 292.73749pt x 142.26378pt.
  [10
 
  <./imagenes/mobiled.png>] [11
 
 ]
-<imagenes/computadoras.png, id=390, 357.335pt x 286.06876pt>
+<imagenes/computadoras.png, id=393, 357.335pt x 286.06876pt>
 File: imagenes/computadoras.png Graphic file (type png)
 
 <use imagenes/computadoras.png>
-Package pdftex.def Info: imagenes/computadoras.png used on input line 233.
-(pdftex.def)             Requested size: 106.62335pt x 85.35826pt.
+Package pdftex.def Info: imagenes/computadoras.png used on input line 236.
+(pdftex.def)             Requested size: 170.59737pt x 136.5733pt.
 
-Overfull \hbox (49.71785pt too wide) in paragraph at lines 233--233
- [] 
- []
-
-<imagenes/telefono.png, id=391, 394.47375pt x 218.8175pt>
+<imagenes/telefono.png, id=394, 394.47375pt x 218.8175pt>
 File: imagenes/telefono.png Graphic file (type png)
 
 <use imagenes/telefono.png>
-Package pdftex.def Info: imagenes/telefono.png used on input line 233.
-(pdftex.def)             Requested size: 153.88025pt x 85.35826pt.
+Package pdftex.def Info: imagenes/telefono.png used on input line 236.
+(pdftex.def)             Requested size: 194.91298pt x 108.12054pt.
 
-Overfull \hbox (11.61647pt too wide) in paragraph at lines 233--233
- [] 
+Overfull \hbox (91.04872pt too wide) detected at line 236
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [12
@@ -1330,134 +1334,190 @@ Overfull \hbox (11.61647pt too wide) in paragraph at lines 233--233
  <./imagenes/computadoras.png> <./imagenes/telefono.png>] [13
 
 ]
-<imagenes/rh.png, id=449, 414.54875pt x 61.22874pt>
+<imagenes/indooratlas.png, id=453, 429.605pt x 146.5475pt>
+File: imagenes/indooratlas.png Graphic file (type png)
+
+<use imagenes/indooratlas.png>
+Package pdftex.def Info: imagenes/indooratlas.png used on input line 272.
+(pdftex.def)             Requested size: 166.81764pt x 56.9055pt.
+ [14
+
+ <./imagenes/indooratlas.png>]
+<imagenes/rh.png, id=484, 414.54875pt x 61.22874pt>
 File: imagenes/rh.png Graphic file (type png)
  <use imagenes/rh.png>
-Package pdftex.def Info: imagenes/rh.png used on input line 271.
-(pdftex.def)             Requested size: 154.10806pt x 22.76228pt.
+Package pdftex.def Info: imagenes/rh.png used on input line 294.
+(pdftex.def)             Requested size: 144.47433pt x 21.33955pt.
 
-Overfull \hbox (11.84428pt too wide) in paragraph at lines 271--271
+Overfull \hbox (2.21056pt too wide) in paragraph at lines 294--294
 [][]  
  []
 
-<imagenes/rc.png, id=450, 384.43625pt x 58.2175pt>
+<imagenes/rc.png, id=485, 384.43625pt x 58.2175pt>
 File: imagenes/rc.png Graphic file (type png)
  <use imagenes/rc.png>
-Package pdftex.def Info: imagenes/rc.png used on input line 271.
-(pdftex.def)             Requested size: 187.88266pt x 28.45274pt.
+Package pdftex.def Info: imagenes/rc.png used on input line 294.
+(pdftex.def)             Requested size: 142.79059pt x 21.62393pt.
 
-Overfull \hbox (45.61888pt too wide) in paragraph at lines 271--271
+Overfull \hbox (0.52681pt too wide) in paragraph at lines 294--294
 [][]  
  []
 
-<imagenes/rt.png, id=451, 354.32375pt x 140.525pt>
+<imagenes/rt.png, id=486, 354.32375pt x 140.525pt>
 File: imagenes/rt.png Graphic file (type png)
  <use imagenes/rt.png>
-Package pdftex.def Info: imagenes/rt.png used on input line 271.
+Package pdftex.def Info: imagenes/rt.png used on input line 294.
 (pdftex.def)             Requested size: 143.4841pt x 56.9055pt.
 
-Overfull \hbox (1.22032pt too wide) in paragraph at lines 271--271
+Overfull \hbox (1.22032pt too wide) in paragraph at lines 294--294
 [][]  
  []
 
-<imagenes/ct.png, id=452, 223.83624pt x 125.46875pt>
+<imagenes/ct.png, id=487, 223.83624pt x 125.46875pt>
 File: imagenes/ct.png Graphic file (type png)
  <use imagenes/ct.png>
-Package pdftex.def Info: imagenes/ct.png used on input line 271.
-(pdftex.def)             Requested size: 126.90489pt x 71.13188pt.
+Package pdftex.def Info: imagenes/ct.png used on input line 294.
+(pdftex.def)             Requested size: 142.13443pt x 79.6678pt.
 
-[14
+[15
 
  <./imagenes/rh.png> <./imagenes/rc.png> <./imagenes/rt.png> <./imagenes/ct.png
->] [15
-
-] [16
+>] [16
 
 ] [17
 
 ] [18
 
+] [19
+
 ]
-<imagenes/arquitectura.png, id=594, 333.8874pt x 249.5724pt>
+<imagenes/arquitectura.png, id=629, 333.8874pt x 249.5724pt>
 File: imagenes/arquitectura.png Graphic file (type png)
 
 <use imagenes/arquitectura.png>
-Package pdftex.def Info: imagenes/arquitectura.png used on input line 359.
+Package pdftex.def Info: imagenes/arquitectura.png used on input line 382.
 (pdftex.def)             Requested size: 247.42943pt x 184.9429pt.
- [19
+ [20
 
  <./imagenes/arquitectura.png>]
-<imagenes/cugeneralAdministrador.jpg, id=624, 369.38pt x 317.185pt>
+<imagenes/cugeneralAdministrador.jpg, id=658, 369.38pt x 317.185pt>
 File: imagenes/cugeneralAdministrador.jpg Graphic file (type jpg)
 
 <use imagenes/cugeneralAdministrador.jpg>
 Package pdftex.def Info: imagenes/cugeneralAdministrador.jpg used on input line
- 367.
+ 390.
 (pdftex.def)             Requested size: 215.3847pt x 184.9429pt.
- [20
-
- <./imagenes/cugeneralAdministrador.jpg>] <imagenes/cugeneralUsuario.png, id=65
-2, 443.7378pt x 357.4956pt>
-File: imagenes/cugeneralUsuario.png Graphic file (type png)
-
-<use imagenes/cugeneralUsuario.png>
-Package pdftex.def Info: imagenes/cugeneralUsuario.png used on input line 375.
-(pdftex.def)             Requested size: 229.56007pt x 184.9429pt.
  [21
 
- <./imagenes/cugeneralUsuario.png>]
-<imagenes/diagramaClasesMovil.png, id=681, 1006.76125pt x 1083.04625pt>
+ <./imagenes/cugeneralAdministrador.jpg>] <imagenes/cugeneralUsuario.jpg, id=68
+6, 931.48pt x 630.355pt>
+File: imagenes/cugeneralUsuario.jpg Graphic file (type jpg)
+
+<use imagenes/cugeneralUsuario.jpg>
+Package pdftex.def Info: imagenes/cugeneralUsuario.jpg used on input line 398.
+(pdftex.def)             Requested size: 273.29182pt x 184.9429pt.
+ [22
+
+ <./imagenes/cugeneralUsuario.jpg>]
+<imagenes/diagramaClasesMovil.png, id=715, 1006.76125pt x 1083.04625pt>
 File: imagenes/diagramaClasesMovil.png Graphic file (type png)
 
 <use imagenes/diagramaClasesMovil.png>
-Package pdftex.def Info: imagenes/diagramaClasesMovil.png used on input line 38
-3.
+Package pdftex.def Info: imagenes/diagramaClasesMovil.png used on input line 40
+6.
 (pdftex.def)             Requested size: 171.91524pt x 184.9429pt.
- [22
+ [23
 
- <./imagenes/diagramaClasesMovil.png>] <imagenes/secConsultarVuelo.png, id=711,
- 443.7378pt x 226.9278pt>
-File: imagenes/secConsultarVuelo.png Graphic file (type png)
+ <./imagenes/diagramaClasesMovil.png>] <imagenes/secConsultarVuelo.jpg, id=744,
+ 707.64375pt x 401.5pt>
+File: imagenes/secConsultarVuelo.jpg Graphic file (type jpg)
 
-<use imagenes/secConsultarVuelo.png>
-Package pdftex.def Info: imagenes/secConsultarVuelo.png used on input line 391.
+<use imagenes/secConsultarVuelo.jpg>
+Package pdftex.def Info: imagenes/secConsultarVuelo.jpg used on input line 414.
 
-(pdftex.def)             Requested size: 361.6465pt x 184.9429pt.
+(pdftex.def)             Requested size: 325.97359pt x 184.9429pt.
+ [24
 
-Overfull \hbox (20.9509pt too wide) in paragraph at lines 391--391
- [] 
- []
-
-[23
-
- <./imagenes/secConsultarVuelo.png>]
-<imagenes/secGestionarEquipaje.png, id=740, 335.8146pt x 327.624pt>
+ <./imagenes/secConsultarVuelo.jpg>]
+<imagenes/secGestionarEquipaje.png, id=772, 335.8146pt x 327.624pt>
 File: imagenes/secGestionarEquipaje.png Graphic file (type png)
 
 <use imagenes/secGestionarEquipaje.png>
-Package pdftex.def Info: imagenes/secGestionarEquipaje.png used on input line 3
-98.
+Package pdftex.def Info: imagenes/secGestionarEquipaje.png used on input line 4
+21.
 (pdftex.def)             Requested size: 204.15485pt x 199.16928pt.
- [24
+ [25
 
- <./imagenes/secGestionarEquipaje.png>] <imagenes/secGestionarLugar.png, id=769
+ <./imagenes/secGestionarEquipaje.png>] <imagenes/secGestionarLugar.png, id=802
 , 394.1124pt x 245.718pt>
 File: imagenes/secGestionarLugar.png Graphic file (type png)
 
 <use imagenes/secGestionarLugar.png>
-Package pdftex.def Info: imagenes/secGestionarLugar.png used on input line 405.
+Package pdftex.def Info: imagenes/secGestionarLugar.png used on input line 428.
 
 (pdftex.def)             Requested size: 296.64798pt x 184.9429pt.
- [25
+ [26
 
  <./imagenes/secGestionarLugar.png>]
-[26
+[27
 
-<<video.mov>>] [27
-
-] [28
+<<tasmc.mp4>>] [28
 
 ]
+File: imagenes/ipn.jpg Graphic file (type jpg)
+ <use imagenes/ipn.jpg>
+Package pdftex.def Info: imagenes/ipn.jpg used on input line 493.
+(pdftex.def)             Requested size: 32.9782pt x 48.36958pt.
+File: imagenes/escom.jpg Graphic file (type jpg)
+ <use imagenes/escom.jpg>
+Package pdftex.def Info: imagenes/escom.jpg used on input line 493.
+(pdftex.def)             Requested size: 48.22781pt x 42.67912pt.
+
+Overfull \hbox (13.141pt too wide) in paragraph at lines 493--493
+[][] 
+ []
+
+
+Overfull \hbox (45.49149pt too wide) in paragraph at lines 493--493
+[]\OT1/cmss/m/n/12 Presentan  
+ []
+
+File: imagenes/logo.png Graphic file (type png)
+<use imagenes/logo.png>
+Package pdftex.def Info: imagenes/logo.png used on input line 493.
+(pdftex.def)             Requested size: 48.3719pt x 48.36958pt.
+ [29
+
+]
+<imagenes/despliegue.png, id=923, 476.0184pt x 268.3626pt>
+File: imagenes/despliegue.png Graphic file (type png)
+
+<use imagenes/despliegue.png>
+Package pdftex.def Info: imagenes/despliegue.png used on input line 500.
+(pdftex.def)             Requested size: 328.0463pt x 184.9429pt.
+ [30
+
+ <./imagenes/despliegue.png>]
+<imagenes/mr1.png, id=952, 681.54625pt x 387.4475pt>
+File: imagenes/mr1.png Graphic file (type png)
+ <use imagenes/mr1.png>
+Package pdftex.def Info: imagenes/mr1.png used on input line 507.
+(pdftex.def)             Requested size: 325.32896pt x 184.9429pt.
+
+[31
+
+ <./imagenes/mr1.png>] <imagenes/mr2.png, id=981, 866.23625pt x 636.3775pt>
+File: imagenes/mr2.png Graphic file (type png)
+
+<use imagenes/mr2.png>
+Package pdftex.def Info: imagenes/mr2.png used on input line 514.
+(pdftex.def)             Requested size: 251.744pt x 184.9429pt.
+ [32
+
+ <./imagenes/mr2.png>] (./TASMC.bbl) [33
+
+ </usr/local/texlive/2013/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf
+>]
 \tf@nav=\write6
 \openout6 = `TASMC.nav'.
 
@@ -1474,14 +1534,14 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
 (./TASMC.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
 Package rerunfilecheck Info: File `TASMC.out' has not changed.
 (rerunfilecheck)             Checksum: 237A528A85A84C78AE2AF0906B8594A2;419.
 
@@ -1489,24 +1549,26 @@ Package rerunfilecheck Info: File `TASMC.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
  ) 
 Here is how much of TeX's memory you used:
- 17322 strings out of 493315
- 319683 string characters out of 6137904
+ 17417 strings out of 493315
+ 321832 string characters out of 6137904
  438752 words of memory out of 5000000
- 20254 multiletter control sequences out of 15000+600000
- 10564 words of font info for 39 fonts, out of 8000000 for 9000
+ 20328 multiletter control sequences out of 15000+600000
+ 11027 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,17n,62p,421b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on TASMC.pdf (28 pages, 36968065 bytes).
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on TASMC.pdf (33 pages, 14636093 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 825 compressed objects within 9 object streams
- 65 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1085 PDF objects out of 1200 (max. 8388607)
+ 975 compressed objects within 10 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 307 words of extra memory for PDF output out of 10000 (max. 10000000)
 

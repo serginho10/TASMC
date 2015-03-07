@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  27 JAN 2015 10:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 FEB 2015 23:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -832,13 +832,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<portada/ipn.jpg, id=385, 195.73125pt x 287.0725pt>
+<portada/ipn.jpg, id=389, 195.73125pt x 287.0725pt>
 File: portada/ipn.jpg Graphic file (type jpg)
  <use portada/ipn.jpg>
 Package pdftex.def Info: portada/ipn.jpg used on input line 5.
 (pdftex.def)             Requested size: 58.19716pt x 85.35826pt.
 
-<portada/escom.jpg, id=386, 226.8475pt x 200.75pt>
+<portada/escom.jpg, id=390, 226.8475pt x 200.75pt>
 File: portada/escom.jpg Graphic file (type jpg)
  <use portada/escom.jpg>
 Package pdftex.def Info: portada/escom.jpg used on input line 7.
@@ -924,7 +924,7 @@ Cap\'{\i }tulo 1.
 
 ] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex)
 (./Capitulos/1Introduccion/Secciones/1-2SolucionPropuesta.tex [2]
-<Figuras/arquitectura.png, id=722, 333.8874pt x 249.5724pt>
+<Figuras/arquitectura.png, id=727, 333.8874pt x 249.5724pt>
 File: Figuras/arquitectura.png Graphic file (type png)
 
 <use Figuras/arquitectura.png>
@@ -940,7 +940,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 (./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
 (./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
 (./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
-<Figuras/moviles.png, id=744, 551.05875pt x 217.81375pt>
+<Figuras/moviles.png, id=749, 551.05875pt x 217.81375pt>
 File: Figuras/moviles.png Graphic file (type png)
 
 <use Figuras/moviles.png>
@@ -960,7 +960,7 @@ Cap\'{\i }tulo 2.
 ------------------------------------------------------------------------------
  2 Estado del Arte
 ------------------------------------------------------------------------------
-<Figuras/crux.png, id=759, 62.1522pt x 62.634pt>
+<Figuras/crux.png, id=764, 62.1522pt x 62.634pt>
 File: Figuras/crux.png Graphic file (type png)
  <use Figuras/crux.png>
 Package pdftex.def Info: Figuras/crux.png used on input line 29.
@@ -970,7 +970,7 @@ Underfull \hbox (badness 1057) in paragraph at lines 32--32
 \OT1/ptm/m/n/12 ae-ro-puer-to. In-te-gra ba-ses
  []
 
-<Figuras/meridian.png, id=761, 64.5612pt x 64.5612pt>
+<Figuras/meridian.png, id=766, 64.5612pt x 64.5612pt>
 File: Figuras/meridian.png Graphic file (type png)
 
 <use Figuras/meridian.png>
@@ -991,19 +991,19 @@ Underfull \hbox (badness 1221) in paragraph at lines 54--54
 \OT1/ptm/m/n/12 Tri-pit y Ka-yak. Adem[]as
  []
 
-<Figuras/gateGuru.png, id=763, 67.9338pt x 67.452pt>
+<Figuras/gateGuru.png, id=768, 67.9338pt x 67.452pt>
 File: Figuras/gateGuru.png Graphic file (type png)
 
 <use Figuras/gateGuru.png>
 Package pdftex.def Info: Figuras/gateGuru.png used on input line 57.
 (pdftex.def)             Requested size: 71.13562pt x 71.13853pt.
- <Figuras/kayak.png, id=765, 66.0066pt x 66.0066pt>
+ <Figuras/kayak.png, id=770, 66.0066pt x 66.0066pt>
 File: Figuras/kayak.png Graphic file (type png)
 
 <use Figuras/kayak.png>
 Package pdftex.def Info: Figuras/kayak.png used on input line 63.
 (pdftex.def)             Requested size: 71.138pt x 71.138pt.
- <Figuras/tripit.png, id=767, 68.4156pt x 68.4156pt>
+ <Figuras/tripit.png, id=772, 68.4156pt x 68.4156pt>
 File: Figuras/tripit.png Graphic file (type png)
 
 <use Figuras/tripit.png>
@@ -1071,7 +1071,7 @@ ua-rios ope-rar en el en-torno inal[]ambri-
  []
 
 [12]) (./Capitulos/3MarcoTeorico/Secciones/3-3ComputoUbicuo.tex
-<Figuras/ubicuo.png, id=808, 692.5875pt x 519.9425pt>
+<Figuras/ubicuo.png, id=813, 692.5875pt x 519.9425pt>
 File: Figuras/ubicuo.png Graphic file (type png)
  <use Figuras/ubicuo.png>
 Package pdftex.def Info: Figuras/ubicuo.png used on input line 9.
@@ -1083,7 +1083,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-4GPS.tex [13 <./Figuras/ubicuo.png>]
 [14]) (./Capitulos/3MarcoTeorico/Secciones/3-5ILS.tex [15] [16] [17] [18]
-[19] [20] <Figuras/ejPasiva.png, id=853, 213.9192pt x 253.4268pt>
+[19] [20] <Figuras/ejPasiva.png, id=858, 213.9192pt x 253.4268pt>
 File: Figuras/ejPasiva.png Graphic file (type png)
 
 <use Figuras/ejPasiva.png>
@@ -1094,7 +1094,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 72--74
  [] 
  []
 
-<Figuras/ejSigLider.png, id=855, 197.538pt x 253.9086pt>
+<Figuras/ejSigLider.png, id=860, 197.538pt x 253.9086pt>
 File: Figuras/ejSigLider.png Graphic file (type png)
 
 <use Figuras/ejSigLider.png>
@@ -1106,7 +1106,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 82--84
  []
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-6Android.tex [21 <./Figuras/ejPasiva.p
-ng>] <Figuras/capasAndroid.png, id=862, 610.28pt x 533.995pt>
+ng>] <Figuras/capasAndroid.png, id=867, 610.28pt x 533.995pt>
 File: Figuras/capasAndroid.png Graphic file (type png)
 
 <use Figuras/capasAndroid.png>
@@ -1129,7 +1129,7 @@ Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Marco Metodol\IeC {\'o}gico
 ------------------------------------------------------------------------------
-<Figuras/cicloDesarrollo.png, id=887, 480.8364pt x 233.673pt>
+<Figuras/cicloDesarrollo.png, id=892, 480.8364pt x 233.673pt>
 File: Figuras/cicloDesarrollo.png Graphic file (type png)
 
 <use Figuras/cicloDesarrollo.png>
@@ -1159,13 +1159,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] <Figuras/android.png, id=918, 25.5354pt x 22.1628pt>
+[30] <Figuras/android.png, id=923, 25.5354pt x 22.1628pt>
 File: Figuras/android.png Graphic file (type png)
 
 <use Figuras/android.png>
 Package pdftex.def Info: Figuras/android.png used on input line 143.
 (pdftex.def)             Requested size: 42.6794pt x 42.68396pt.
- <Figuras/ios.png, id=919, 36.135pt x 36.135pt>
+ <Figuras/ios.png, id=924, 36.135pt x 36.135pt>
 File: Figuras/ios.png Graphic file (type png)
 
 <use Figuras/ios.png>
@@ -1200,7 +1200,7 @@ Underfull \hbox (badness 4569) in paragraph at lines 192--193
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31] [32 <./Figuras/android.png> <./Figuras/ios.png>]
-<Figuras/versionesAndroid.png, id=934, 333.8874pt x 167.1846pt>
+<Figuras/versionesAndroid.png, id=939, 333.8874pt x 167.1846pt>
 File: Figuras/versionesAndroid.png Graphic file (type png)
 
 <use Figuras/versionesAndroid.png>
@@ -1404,19 +1404,11 @@ Underfull \hbox (badness 1796) in paragraph at lines 487--488
 \OT1/ptm/m/n/12 transac-cio-nes y est[]andar de
  []
 
-[38] [39]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40]
+[38] [39] [40] [41]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 676.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRequerimientos.tex
-[41]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 689.
+)
+(./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRequerimientos.tex [42]
 Underfull \hbox (badness 2913) in paragraph at lines 29--30
 \OT1/ptm/m/n/12 dian-te la uti-li-zan-do ae-ro-na-ves,
  []
@@ -1466,7 +1458,7 @@ Underfull \hbox (badness 4819) in paragraph at lines 89--90
 \OT1/ptm/m/n/12 si-tua-ci[]on o ne-ce-si-dad que se
  []
 
-[42] [43] [44] [45] [46]
+[43] [44] [45] [46]
 Underfull \hbox (badness 10000) in paragraph at lines 268--269
 []|\OT1/ptm/m/n/12 Definici[]on
  []
@@ -1552,7 +1544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 []|\OT1/ptm/b/n/12 Estatus
  []
 
-<Figuras/actores.png, id=1065, 275.0275pt x 133.49875pt>
+<Figuras/actores.png, id=1070, 275.0275pt x 133.49875pt>
 File: Figuras/actores.png Graphic file (type png)
 
 <use Figuras/actores.png>
@@ -1574,7 +1566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 ) (./Capitulos/7DisenoTASMC/Secciones/7-2CasosUsoAdministrador.tex
-<Figuras/cugeneralAdministrador.png, id=1066, 369.38pt x 317.185pt>
+<Figuras/cugeneralAdministrador.png, id=1071, 369.38pt x 317.185pt>
 File: Figuras/cugeneralAdministrador.png Graphic file (type png)
 
 <use Figuras/cugeneralAdministrador.png>
@@ -1586,7 +1578,7 @@ Package pdftex.def Info: Figuras/cugeneralAdministrador.png used on input line
 
 
 ]
-<Figuras/cuGestionarUsuario.png, id=1071, 311.7246pt x 88.6512pt>
+<Figuras/cuGestionarUsuario.png, id=1076, 311.7246pt x 88.6512pt>
 File: Figuras/cuGestionarUsuario.png Graphic file (type png)
 
 <use Figuras/cuGestionarUsuario.png>
@@ -1611,7 +1603,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 Underfull \vbox (badness 10000) detected at line 45
  []
 
-<Figuras/cuGestionarEquipaje.jpg, id=1077, 415.5525pt x 117.43875pt>
+<Figuras/cuGestionarEquipaje.jpg, id=1082, 415.5525pt x 117.43875pt>
 File: Figuras/cuGestionarEquipaje.jpg Graphic file (type jpg)
 
 <use Figuras/cuGestionarEquipaje.jpg>
@@ -1638,7 +1630,7 @@ Underfull \vbox (badness 10000) detected at line 89
  []
 
 [60 <./Figuras/cuGestionarEquipaje.jpg>]
-<Figuras/cuGestionarLugar.png, id=1097, 311.7246pt x 88.6512pt>
+<Figuras/cuGestionarLugar.png, id=1102, 311.7246pt x 88.6512pt>
 File: Figuras/cuGestionarLugar.png Graphic file (type png)
 
 <use Figuras/cuGestionarLugar.png>
@@ -1665,14 +1657,14 @@ Underfull \vbox (badness 10000) detected at line 145
 
 [61 <./Figuras/cuGestionarLugar.png>])
 (./Capitulos/7DisenoTASMC/Secciones/7-3CasosUsoUsuario.tex
-<Figuras/cugeneralUsuario.png, id=1105, 443.7378pt x 357.4956pt>
+<Figuras/cugeneralUsuario.png, id=1110, 443.7378pt x 357.4956pt>
 File: Figuras/cugeneralUsuario.png Graphic file (type png)
 
 <use Figuras/cugeneralUsuario.png>
 Package pdftex.def Info: Figuras/cugeneralUsuario.png used on input line 7.
 (pdftex.def)             Requested size: 375.7232pt x 302.71078pt.
 
-<Figuras/cuConfigurarViaje.png, id=1106, 235.1184pt x 63.5976pt>
+<Figuras/cuConfigurarViaje.png, id=1111, 235.1184pt x 63.5976pt>
 File: Figuras/cuConfigurarViaje.png Graphic file (type png)
 
 <use Figuras/cuConfigurarViaje.png>
@@ -1698,7 +1690,7 @@ Underfull \vbox (badness 10000) detected at line 47
  []
 
 [63 <./Figuras/cuConfigurarViaje.png>] [64]
-<Figuras/cuConsultarHotel.png, id=1139, 249.0906pt x 88.6512pt>
+<Figuras/cuConsultarHotel.png, id=1144, 249.0906pt x 88.6512pt>
 File: Figuras/cuConsultarHotel.png Graphic file (type png)
 
 <use Figuras/cuConsultarHotel.png>
@@ -1724,7 +1716,7 @@ Underfull \vbox (badness 10000) detected at line 116
  []
 
 [65 <./Figuras/cuConsultarHotel.png>] [66]
-<Figuras/cuConsultarVuelo.png, id=1167, 249.0906pt x 88.6512pt>
+<Figuras/cuConsultarVuelo.png, id=1172, 249.0906pt x 88.6512pt>
 File: Figuras/cuConsultarVuelo.png Graphic file (type png)
 
 <use Figuras/cuConsultarVuelo.png>
@@ -1750,7 +1742,7 @@ Underfull \vbox (badness 10000) detected at line 198
  []
 
 [67 <./Figuras/cuConsultarVuelo.png>] [68]
-<Figuras/cuConsultarInformacionAICM.png, id=1192, 311.7246pt x 88.6512pt>
+<Figuras/cuConsultarInformacionAICM.png, id=1197, 311.7246pt x 88.6512pt>
 File: Figuras/cuConsultarInformacionAICM.png Graphic file (type png)
 
 <use Figuras/cuConsultarInformacionAICM.png>
@@ -1781,7 +1773,7 @@ Overfull \vbox (25.25392pt too high) has occurred while \output is active []
 
 
 [69 <./Figuras/cuConsultarInformacionAICM.png>]
-<Figuras/cuGestionarEquipajeU.png, id=1201, 311.7246pt x 88.6512pt>
+<Figuras/cuGestionarEquipajeU.png, id=1206, 311.7246pt x 88.6512pt>
 File: Figuras/cuGestionarEquipajeU.png Graphic file (type png)
 
 <use Figuras/cuGestionarEquipajeU.png>
@@ -1807,7 +1799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 Underfull \vbox (badness 10000) detected at line 333
  []
 
-<Figuras/cuConsultarItinerarioViaje.png, id=1212, 311.7246pt x 88.6512pt>
+<Figuras/cuConsultarItinerarioViaje.png, id=1217, 311.7246pt x 88.6512pt>
 File: Figuras/cuConsultarItinerarioViaje.png Graphic file (type png)
 
 <use Figuras/cuConsultarItinerarioViaje.png>
@@ -1834,7 +1826,7 @@ Underfull \vbox (badness 10000) detected at line 386
  []
 
 [72 <./Figuras/cuConsultarItinerarioViaje.png>] [73]
-<Figuras/cuConsultarRutacasa-AICM.png, id=1255, 311.7246pt x 88.6512pt>
+<Figuras/cuConsultarRutacasa-AICM.png, id=1260, 311.7246pt x 88.6512pt>
 File: Figuras/cuConsultarRutacasa-AICM.png Graphic file (type png)
 
 <use Figuras/cuConsultarRutacasa-AICM.png>
@@ -1861,7 +1853,7 @@ Underfull \vbox (badness 10000) detected at line 463
  []
 
 [74 <./Figuras/cuConsultarRutacasa-AICM.png>]
-<Figuras/cuUbicarAICM.jpg, id=1265, 415.5525pt x 117.43875pt>
+<Figuras/cuUbicarAICM.jpg, id=1270, 415.5525pt x 117.43875pt>
 File: Figuras/cuUbicarAICM.jpg Graphic file (type jpg)
 
 <use Figuras/cuUbicarAICM.jpg>
@@ -1887,7 +1879,7 @@ Underfull \vbox (badness 10000) detected at line 520
  []
 
 [76]
-<Figuras/cuConsultarInformacionVuelo.png, id=1283, 328.5876pt x 88.6512pt>
+<Figuras/cuConsultarInformacionVuelo.png, id=1288, 328.5876pt x 88.6512pt>
 File: Figuras/cuConsultarInformacionVuelo.png Graphic file (type png)
 
 <use Figuras/cuConsultarInformacionVuelo.png>
@@ -1913,25 +1905,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 556--557
 Underfull \vbox (badness 10000) detected at line 564
  []
 
-[77 <./Figuras/cuConsultarInformacionVuelo.png>])
+[77 <./Figuras/cuConsultarInformacionVuelo.png>] [78])
 (./Capitulos/7DisenoTASMC/Secciones/7-4DiagramaClases.tex
-<Figuras/diagramaClasesMovil.png, id=1300, 1006.76125pt x 1083.04625pt>
+<Figuras/diagramaClasesMovil.png, id=1321, 1006.76125pt x 1083.04625pt>
 File: Figuras/diagramaClasesMovil.png Graphic file (type png)
 
 <use Figuras/diagramaClasesMovil.png>
 Package pdftex.def Info: Figuras/diagramaClasesMovil.png used on input line 5.
 (pdftex.def)             Requested size: 417.47307pt x 449.10878pt.
- [78])
+)
 (./Capitulos/7DisenoTASMC/Secciones/7-5DisenoEsquemaBaseDatos.tex [79 <./Figura
 s/diagramaClasesMovil.png>]
-<Figuras/relacionalAdmin.png, id=1324, 681.54625pt x 387.4475pt>
+<Figuras/relacionalAdmin.png, id=1329, 681.54625pt x 387.4475pt>
 File: Figuras/relacionalAdmin.png Graphic file (type png)
 
 <use Figuras/relacionalAdmin.png>
 Package pdftex.def Info: Figuras/relacionalAdmin.png used on input line 8.
 (pdftex.def)             Requested size: 333.97972pt x 189.86275pt.
 
-<Figuras/relacionalMovil.png, id=1325, 866.23625pt x 636.3775pt>
+<Figuras/relacionalMovil.png, id=1330, 866.23625pt x 636.3775pt>
 File: Figuras/relacionalMovil.png Graphic file (type png)
 
 <use Figuras/relacionalMovil.png>
@@ -1940,14 +1932,14 @@ Package pdftex.def Info: Figuras/relacionalMovil.png used on input line 16.
 )
 (./Capitulos/7DisenoTASMC/Secciones/7-6DiagramaSecuencia.tex [80 <./Figuras/rel
 acionalAdmin.png> <./Figuras/relacionalMovil.png>]
-<Figuras/secGestionarUsuario.png, id=1330, 407.6028pt x 261.1356pt>
+<Figuras/secGestionarUsuario.png, id=1335, 407.6028pt x 261.1356pt>
 File: Figuras/secGestionarUsuario.png Graphic file (type png)
 
 <use Figuras/secGestionarUsuario.png>
 Package pdftex.def Info: Figuras/secGestionarUsuario.png used on input line 7.
 (pdftex.def)             Requested size: 417.47307pt x 267.4625pt.
 
-<Figuras/secRegistrarEquipaje.png, id=1331, 394.1124pt x 245.718pt>
+<Figuras/secRegistrarEquipaje.png, id=1336, 394.1124pt x 245.718pt>
 File: Figuras/secRegistrarEquipaje.png Graphic file (type png)
 
 <use Figuras/secRegistrarEquipaje.png>
@@ -1955,35 +1947,35 @@ Package pdftex.def Info: Figuras/secRegistrarEquipaje.png used on input line 15
 .
 (pdftex.def)             Requested size: 417.47307pt x 260.2911pt.
 
-<Figuras/secGestionarLugar.png, id=1332, 394.1124pt x 245.718pt>
+<Figuras/secGestionarLugar.png, id=1337, 394.1124pt x 245.718pt>
 File: Figuras/secGestionarLugar.png Graphic file (type png)
 
 <use Figuras/secGestionarLugar.png>
 Package pdftex.def Info: Figuras/secGestionarLugar.png used on input line 23.
 (pdftex.def)             Requested size: 417.47307pt x 260.2911pt.
 
-<Figuras/secConfigurarViaje.png, id=1333, 397.485pt x 257.2812pt>
+<Figuras/secConfigurarViaje.png, id=1338, 397.485pt x 257.2812pt>
 File: Figuras/secConfigurarViaje.png Graphic file (type png)
 
 <use Figuras/secConfigurarViaje.png>
 Package pdftex.def Info: Figuras/secConfigurarViaje.png used on input line 31.
 (pdftex.def)             Requested size: 417.47307pt x 270.22783pt.
 
-<Figuras/secConsultarHotel.png, id=1334, 407.121pt x 242.8272pt>
+<Figuras/secConsultarHotel.png, id=1339, 407.121pt x 242.8272pt>
 File: Figuras/secConsultarHotel.png Graphic file (type png)
 
 <use Figuras/secConsultarHotel.png>
 Package pdftex.def Info: Figuras/secConsultarHotel.png used on input line 39.
 (pdftex.def)             Requested size: 417.47307pt x 249.01434pt.
 
-<Figuras/secConsultarVuelo.png, id=1335, 443.7378pt x 226.9278pt>
+<Figuras/secConsultarVuelo.png, id=1340, 443.7378pt x 226.9278pt>
 File: Figuras/secConsultarVuelo.png Graphic file (type png)
 
 <use Figuras/secConsultarVuelo.png>
 Package pdftex.def Info: Figuras/secConsultarVuelo.png used on input line 47.
 (pdftex.def)             Requested size: 417.47307pt x 213.5026pt.
 
-<Figuras/secConsultarInformacionAICM.png, id=1336, 213.9192pt x 240.4182pt>
+<Figuras/secConsultarInformacionAICM.png, id=1341, 213.9192pt x 240.4182pt>
 File: Figuras/secConsultarInformacionAICM.png Graphic file (type png)
 
 <use Figuras/secConsultarInformacionAICM.png>
@@ -1991,7 +1983,7 @@ Package pdftex.def Info: Figuras/secConsultarInformacionAICM.png used on input
 line 55.
 (pdftex.def)             Requested size: 417.47307pt x 469.21346pt.
 
-<Figuras/secGestionarEquipaje.png, id=1337, 335.8146pt x 327.624pt>
+<Figuras/secGestionarEquipaje.png, id=1342, 335.8146pt x 327.624pt>
 File: Figuras/secGestionarEquipaje.png Graphic file (type png)
 
 <use Figuras/secGestionarEquipaje.png>
@@ -1999,7 +1991,7 @@ Package pdftex.def Info: Figuras/secGestionarEquipaje.png used on input line 63
 .
 (pdftex.def)             Requested size: 417.47307pt x 407.28937pt.
 
-<Figuras/secConsultarItinerarioViaje.png, id=1338, 417.2388pt x 411.4572pt>
+<Figuras/secConsultarItinerarioViaje.png, id=1343, 417.2388pt x 411.4572pt>
 File: Figuras/secConsultarItinerarioViaje.png Graphic file (type png)
 
 <use Figuras/secConsultarItinerarioViaje.png>
@@ -2007,7 +1999,7 @@ Package pdftex.def Info: Figuras/secConsultarItinerarioViaje.png used on input
 line 71.
 (pdftex.def)             Requested size: 417.47307pt x 411.70102pt.
 
-<Figuras/secConsultarRutacasa-AICM.png, id=1339, 335.8146pt x 167.6664pt>
+<Figuras/secConsultarRutacasa-AICM.png, id=1344, 335.8146pt x 167.6664pt>
 File: Figuras/secConsultarRutacasa-AICM.png Graphic file (type png)
 
 <use Figuras/secConsultarRutacasa-AICM.png>
@@ -2015,14 +2007,14 @@ Package pdftex.def Info: Figuras/secConsultarRutacasa-AICM.png used on input li
 ne 79.
 (pdftex.def)             Requested size: 417.47307pt x 208.4363pt.
 
-<Figuras/secUbicarAICM.png, id=1340, 227.4096pt x 204.2832pt>
+<Figuras/secUbicarAICM.png, id=1345, 227.4096pt x 204.2832pt>
 File: Figuras/secUbicarAICM.png Graphic file (type png)
 
 <use Figuras/secUbicarAICM.png>
 Package pdftex.def Info: Figuras/secUbicarAICM.png used on input line 87.
 (pdftex.def)             Requested size: 417.47307pt x 375.02219pt.
 
-<Figuras/secConsultarInformacionVuelo.png, id=1341, 354.6048pt x 256.3176pt>
+<Figuras/secConsultarInformacionVuelo.png, id=1346, 354.6048pt x 256.3176pt>
 File: Figuras/secConsultarInformacionVuelo.png Graphic file (type png)
 
 <use Figuras/secConsultarInformacionVuelo.png>
@@ -2037,7 +2029,7 @@ ltarHotel.png>] [84 <./Figuras/secConsultarVuelo.png>] [85 <./Figuras/secConsul
 tarInformacionAICM.png>] [86 <./Figuras/secGestionarEquipaje.png>] [87 <./Figur
 as/secConsultarItinerarioViaje.png>] [88 <./Figuras/secConsultarRutacasa-AICM.p
 ng> <./Figuras/secUbicarAICM.png>] [89 <./Figuras/secConsultarInformacionVuelo.
-png>] <Figuras/diagramaDespliegue.png, id=1393, 476.0184pt x 268.3626pt>
+png>] <Figuras/diagramaDespliegue.png, id=1398, 476.0184pt x 268.3626pt>
 File: Figuras/diagramaDespliegue.png Graphic file (type png)
 
 <use Figuras/diagramaDespliegue.png>
@@ -2052,7 +2044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-<Figuras/intConfiguracion.png, id=1411, 1084.05pt x 1927.2pt>
+<Figuras/intConfiguracion.png, id=1416, 1084.05pt x 1927.2pt>
 File: Figuras/intConfiguracion.png Graphic file (type png)
 
 <use Figuras/intConfiguracion.png>
@@ -2070,7 +2062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<Figuras/intHoteles.jpg, id=1421, 722.7pt x 1284.8pt>
+<Figuras/intHoteles.jpg, id=1426, 722.7pt x 1284.8pt>
 File: Figuras/intHoteles.jpg Graphic file (type jpg)
 
 <use Figuras/intHoteles.jpg>
@@ -2088,7 +2080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-<Figuras/intConsultarVuelo.png, id=1432, 507.8975pt x 947.54pt>
+<Figuras/intConsultarVuelo.png, id=1437, 507.8975pt x 947.54pt>
 File: Figuras/intConsultarVuelo.png Graphic file (type png)
 
 <use Figuras/intConsultarVuelo.png>
@@ -2106,7 +2098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-<Figuras/intConsultarInformacionAICM.png, id=1442, 305.14pt x 477.785pt>
+<Figuras/intConsultarInformacionAICM.png, id=1447, 305.14pt x 477.785pt>
 File: Figuras/intConsultarInformacionAICM.png Graphic file (type png)
 
 <use Figuras/intConsultarInformacionAICM.png>
@@ -2125,7 +2117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
-<Figuras/intListaEquipaje.jpg, id=1448, 722.7pt x 1284.8pt>
+<Figuras/intListaEquipaje.jpg, id=1453, 722.7pt x 1284.8pt>
 File: Figuras/intListaEquipaje.jpg Graphic file (type jpg)
 
 <use Figuras/intListaEquipaje.jpg>
@@ -2143,7 +2135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-<Figuras/intItinerarioViaje.jpg, id=1458, 722.7pt x 1284.8pt>
+<Figuras/intItinerarioViaje.jpg, id=1463, 722.7pt x 1284.8pt>
 File: Figuras/intItinerarioViaje.jpg Graphic file (type jpg)
 
 <use Figuras/intItinerarioViaje.jpg>
@@ -2162,7 +2154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
-<Figuras/intRutaAICM.jpg, id=1469, 722.7pt x 1284.8pt>
+<Figuras/intRutaAICM.jpg, id=1475, 722.7pt x 1284.8pt>
 File: Figuras/intRutaAICM.jpg Graphic file (type jpg)
 
 <use Figuras/intRutaAICM.jpg>
@@ -2176,37 +2168,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--217
 [103
 
  <./Figuras/intRutaAICM.jpg>] [104]
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-<Figuras/intUbicarAICM.png, id=1480, 285.065pt x 500.87125pt>
+<Figuras/intUbicarAICM.png, id=1485, 285.065pt x 500.87125pt>
 File: Figuras/intUbicarAICM.png Graphic file (type png)
 
 <use Figuras/intUbicarAICM.png>
-Package pdftex.def Info: Figuras/intUbicarAICM.png used on input line 236.
+Package pdftex.def Info: Figuras/intUbicarAICM.png used on input line 243.
 (pdftex.def)             Requested size: 166.98668pt x 293.40208pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 [105
 
  <./Figuras/intUbicarAICM.png (PNG copy)>] [106]
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
-<Figuras/intInformacionVuelo.png, id=1490, 307.1475pt x 487.8225pt>
+<Figuras/intInformacionVuelo.png, id=1495, 307.1475pt x 487.8225pt>
 File: Figuras/intInformacionVuelo.png Graphic file (type png)
 
 <use Figuras/intInformacionVuelo.png>
-Package pdftex.def Info: Figuras/intInformacionVuelo.png used on input line 263
+Package pdftex.def Info: Figuras/intInformacionVuelo.png used on input line 270
 .
 (pdftex.def)             Requested size: 166.98668pt x 265.21413pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
  []
 
@@ -2325,7 +2317,7 @@ aux) (./Capitulos/7DisenoTASMC/7DisenoTASMC.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C3777C604DFD88095BCE3062AB91CF7B;21247.
+(rerunfilecheck)             Checksum: E4F700C58194628E49D830B1751148DF;21470.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2333,11 +2325,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
  ) 
 Here is how much of TeX's memory you used:
- 15293 strings out of 493315
- 221461 string characters out of 6137904
- 300698 words of memory out of 5000000
- 17854 multiletter control sequences out of 15000+600000
- 40259 words of font info for 83 fonts, out of 8000000 for 9000
+ 15291 strings out of 493315
+ 221440 string characters out of 6137904
+ 297697 words of memory out of 5000000
+ 17852 multiletter control sequences out of 15000+600000
+ 38674 words of font info for 81 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,16n,49p,2202b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2347,10 +2339,10 @@ ive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (118 pages, 5983159 bytes).
+Output written on main.pdf (118 pages, 5970737 bytes).
 PDF statistics:
- 1668 PDF objects out of 1728 (max. 8388607)
- 1425 compressed objects within 15 object streams
- 462 named destinations out of 1000 (max. 500000)
- 1046 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1674 PDF objects out of 1728 (max. 8388607)
+ 1431 compressed objects within 15 object streams
+ 463 named destinations out of 1000 (max. 500000)
+ 1054 words of extra memory for PDF output out of 10000 (max. 10000000)
 

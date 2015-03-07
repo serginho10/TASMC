@@ -6,4 +6,4 @@
 \beamer@subsectionintoc {1}{3}{Objetivo de TASMC}{8}{0}{1}
 \beamer@subsectionintoc {1}{4}{Mobile-D}{9}{0}{1}
 \beamer@sectionintoc {2}{An\IeC {\'a}lisis y Dise\IeC {\~n}o}{11}{0}{2}
-\beamer@sectionintoc {3}{Trabajo Futuro}{27}{0}{3}
+\beamer@sectionintoc {3}{Trabajo Futuro}{28}{0}{3}

@@ -17,7 +17,7 @@
 
 \begin{frame}
 	\begin{center}
-	\begin{minipage}[t]{0.8\textwidth}	
+	\begin{minipage}[t]{0.73\textwidth}	
 		\begin{tabular}{ccc}
 			\multirow{4}{*}{\includegraphics[height=1.7cm]{imagenes/ipn.jpg}} &
 			&
@@ -62,7 +62,6 @@
 		\begin{itemize}
 		\item Incremento de la transportación aérea.
 		\item Creciente utilización de los dispositivos móviles.
-		\item Turismo como actividad económica fundamental en México.
 		\item Adaptación a los nuevos usos de los dispositivos móviles.
 		\item Dispositivo móvil + Internet = Enriquece la experiencia viajera.
 	\end{itemize}
@@ -146,6 +145,9 @@
 	\begin{block}{}
 		Sistema asistente para el viajero de la Ciudad de México
 	\end{block}
+	\begin{block}{}
+	 	\textbf{AICM - } Aeropuerto Internacional de la Ciudad de México
+	\end{block}
 	\begin{columns} 
 		\begin{column}{5cm}
 			\begin{block}{Características} \small 
@@ -180,7 +182,7 @@
 \begin{frame}
 	\frametitle{Mobile-D}
 	\begin{block}{Objetivo}
-		Conseguir ciclos de desarrollo muy rápidos en equipos muy pequeños trabajando en un mismo espacio físico.
+		Conseguir ciclos de desarrollo muy rápidos en equipos muy pequeños trabajando en un mismo espacio físico.\cite{MobileD}
 	\end{block}
 	\begin{block} \small 
 		\begin{itemize}
@@ -193,7 +195,10 @@
 
 \begin{frame}
 	\frametitle{Ciclo de Desarrollo Mobile-D}
+	\begin{center}
+
 	\includegraphics[height=5cm]{imagenes/mobiled.png}
+		\end{center}
 \end{frame}
 
 \section{Análisis y Diseño}
@@ -219,15 +224,13 @@
 \begin{frame}
 	\frametitle{Hardware}
 	\begin{columns} 
-		\begin{column}{2cm}
+		\begin{column}{6cm}
 			\begin{center}
-				\includegraphics[height=3cm]{imagenes/computadoras.png}
+				\includegraphics[height=4.8cm]{imagenes/computadoras.png}
 			\end{center}
 		\end{column}
-		\begin{column}{5cm} 
-			\begin{center}
-				\includegraphics[height=3cm]{imagenes/telefono.png}
-			\end{center} 
+		\begin{column}{10cm} 
+				\includegraphics[height=3.8cm]{imagenes/telefono.png}
 		\end{column} 
 	\end{columns}
 \end{frame}
@@ -237,7 +240,7 @@
 	\frametitle{Software}
 		El software que se necesita consta de: 
 		\begin{itemize}
-		 	\item Sistemas operativos (Windows, Mac OS y Android)
+		 	\item Sistemas operativos (Windows, Mac OS, Linux y Android)
 		 	\item IDE (Android Studio)
 		 	\item Herramienta UML (StarUML)
 		 	\item SGBD (MySQL y SQLite)
@@ -247,16 +250,36 @@
 		\end{itemize}
 \end{frame}
 
+\begin{frame}
+	\frametitle{IndoorAtlas}
+	\begin{block}{}
+		Fue fundada en 2012 como una spin-off de la Universidad de Oulu, Finlandia. \cite{apiIndoorAtlas}
+	\end{block}
+	\begin{columns} 
+		\begin{column}{5cm}
+			\begin{itemize}
+				\item Registra variaciones magnéticas
+				\item Distintos componentes de la estructura del edificio
+				\item Genera ``huella magnética'' única en cada edificación.
+			\end{itemize}
+		\end{column}
+		\begin{column}{6cm} 
+			\begin{center}
+				\includegraphics[height=2cm]{imagenes/indooratlas.png}
+			\end{center} 
+		\end{column} 
+	\end{columns}
+\end{frame}
 
 \begin{frame}
 	\frametitle{Factibilidad Económica}
 	\begin{columns} 
 		\begin{column}{5cm}
 			\begin{block}{Recursos Humanos}
-				\includegraphics[height=0.8cm]{imagenes/rh.png}
+				\includegraphics[height=0.75cm]{imagenes/rh.png}
 			\end{block}
 			\begin{block}{Recursos Consumibles}
-				\includegraphics[height=1cm]{imagenes/rc.png}
+				\includegraphics[height=0.76cm]{imagenes/rc.png}
 			\end{block}
 		\end{column}
 		\begin{column}{5cm} 
@@ -264,7 +287,7 @@
 				\includegraphics[height=2cm]{imagenes/rt.png}
 			\end{block}
 			\begin{block}{Costo Total TASMC}
-				\includegraphics[height=2.5cm]{imagenes/ct.png}
+				\includegraphics[height=2.8cm]{imagenes/ct.png}
 			\end{block}
 		\end{column} 
 	\end{columns}
@@ -342,7 +365,7 @@
 			RNF02 & Disponible para Android 4.4\\
 			RNF03 & Interfaz gráfica acorde al funcionamiento del sistema.\\
       		RNF04 & Velocidad del sistema acorde a la disponibilidad de la red.\\
-      		RNF05 & Escalibilidad.\\
+      		RNF05 & Escalabilidad.\\
       		RNF06 & Soporte contínuo al sistema\\
       		RNF07 & Navegación de fácil entendimiento y de manera intuitiva.\\
 		\end{tabular}
@@ -370,7 +393,7 @@
 \begin{frame}
 	\frametitle{Diagrama de casos uso general del Usuario}
 	\begin{center}
-		\includegraphics[height=6.5cm]{imagenes/cugeneralUsuario.png}	
+		\includegraphics[height=6.5cm]{imagenes/cugeneralUsuario.jpg}	
 	\end{center}
 \end{frame}
 
@@ -386,7 +409,7 @@
 \begin{frame}
 	\frametitle{Diagrama de secuencia Consultar Vuelo}
 	\begin{center}
-		\includegraphics[height=6.5cm]{imagenes/secConsultarVuelo.png}	
+		\includegraphics[height=6.5cm]{imagenes/secConsultarVuelo.jpg}	
 	\end{center}
 \end{frame}
 
@@ -407,11 +430,13 @@
 \begin{frame}
 	\frametitle{Interfaz Gráfica}
 	\begin{block}{}
-	\includemovie[
+	\begin{center}
+	
+	 \includemovie[
   		poster,
-  		text=(ejemplo),
-  		autorun,
-  		repeat]{.5\linewidth}{.375\linewidth}{video.mov}
+  		text=(TASMC),
+  		autorun]{1\linewidth}{0.5\linewidth}{tasmc.mp4}
+  		\end{center}
    \end{block}
 \end{frame}
 
@@ -431,8 +456,68 @@
 
 \begin{frame}
 	\begin{center}
+	\begin{minipage}[t]{0.73\textwidth}	
+		\begin{tabular}{ccc}
+			\multirow{4}{*}{\includegraphics[height=1.7cm]{imagenes/ipn.jpg}} &
+			&
+     	 	\multirow{4}{*}{\includegraphics[height=1.5cm]{imagenes/escom.jpg}} \\
+      		& Instituto Politécnico Nacional & \\
+      		& Escuela Superior de Cómputo & \\
+      		&&\\
+		\end{tabular}
+	\end{minipage}
+	\end{center}
+	
+	\begin{center}
+		\textcolor[RGB]{0,0,204}{\Large Traveler Assistant System For Mexico City TASMC}
+	\end{center}		
+	
+	\begin{center}
 		\Large ¡Gracias por su atención!
+	\end{center}
+	
+	\begin{columns} 
+		\begin{column}{0.1cm}
+			Presentan
+		\end{column}
+		\begin{column}{6cm} 
+			Barajas Uribe Sergio
+
+			Vivanco Carmona Erick Rafael
+		\end{column} 
+	\end{columns}	
+	
+		\begin{center}
+		\includegraphics[height=1.7cm]{imagenes/logo.png}
+	\end{center}		
+\end{frame}
+
+\begin{frame}
+	\frametitle{Anexo}
+	\begin{center}
+		\includegraphics[height=6.5cm]{imagenes/despliegue.png}	
 	\end{center}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Anexo}
+	\begin{center}
+		\includegraphics[height=6.5cm]{imagenes/mr1.png}	
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Anexo}
+	\begin{center}
+		\includegraphics[height=6.5cm]{imagenes/mr2.png}	
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bibliografía}
+	\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+	\bibliography{Bibliography} 
+
+\end{frame}
+	
 \end{document}

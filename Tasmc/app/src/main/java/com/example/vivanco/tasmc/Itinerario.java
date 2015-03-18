@@ -1,0 +1,85 @@
+package com.example.vivanco.tasmc;
+
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+
+import java.util.List;
+
+
+public class Itinerario extends ActionBarActivity {
+
+    private int id;
+    private String destino;
+
+    public Itinerario(int id, String destino) {
+        this.id = id;
+        this.destino = destino;
+    }
+
+    @Override
+    public String toString() {
+        return "Itinerario{" +
+                "id=" + id +
+                ", destino='" + destino + '\'' +
+                '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView.Adapter mAdapter;
+    private List<Actividad> mActi;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_itinerario);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_it);
+        setSupportActionBar(toolbar);
+
+        //Habilita el boton para ir a la actividad principal en el Toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+          }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        //Si el id seleccionado es igual al del home regresa a la principal
+        if (id == android.R.id.home) {
+            NavUtils.navigateUpFromSameTask(this);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}

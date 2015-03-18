@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primarioObscuro">#303F9F</color>
+    <color name="primario">#3F51B5</color>
+    <color name="primarioClaro">#C5CAE9</color>
+    <color name="texto_iconos">#FFFFFF</color>
+    <color name="acentuado">#00BCD4</color>
+    <color name="primarioTexto">#212121</color>
+    <color name="secundarioTexto">#727272</color>
+    <color name="divisor">#B6B6B6</color>
+
+    <color name="primarioObscuroHotel">#C2185B</color>
+    <color name="primarioHotel">#E91E63</color>
+    <color name="primarioClaroHotel">#F8BBD0</color>
+    <color name="texto_iconosHotel">#FFFFFF</color>
+    <color name="acentuadoHotel">#FFEB3B</color>
+    <color name="primarioTextoHotel">#212121</color>
+    <color name="secundarioTextoHotel">#727272</color>
+    <color name="divisorHotel">#B6B6B6</color>
+
+    <color name="primarioObscuroVuelo">#0097A7</color>
+    <color name="primarioVuelo">#00BCD4</color>
+    <color name="primarioClaroVuelo">#B2EBF2</color>
+    <color name="texto_iconosVuelo">#FFFFFF</color>
+    <color name="acentuadoVuelo">#CDDC39</color>
+    <color name="primarioTextoVuelo">#212121</color>
+    <color name="secundarioTextoVuelo">#727272</color>
+    <color name="divisorVuelo">#B6B6B6</color>
+
+    <color name="primarioObscuroInfoA">#FBC02D</color>
+    <color name="primarioInfoA">#FFEB3B</color>
+    <color name="primarioClaroInfoA">#FFF9C4</color>
+    <color name="texto_iconosInfoA">#FFFFFF</color>
+    <color name="acentuadoInfoA">#FF9800</color>
+    <color name="primarioTextoInfoA">#212121</color>
+    <color name="secundarioTextoInfoA">#727272</color>
+    <color name="divisorInfoA">#B6B6B6</color>
+
+    <color name="primarioObscuroEquipaje">#F57C00</color>
+    <color name="primarioEquipaje">#FF9800</color>
+    <color name="primarioClaroEquipaje">#FFE0B2</color>
+    <color name="texto_iconosEquipaje">#FFFFFF</color>
+    <color name="acentuadoEquipaje">#FF5252</color>
+    <color name="primarioTextoEquipaje">#212121</color>
+    <color name="secundarioTextoEquipaje">#727272</color>
+    <color name="divisorEquipaje">#B6B6B6</color>
+
+    <color name="primarioObscuroIti">#689F38</color>
+    <color name="primarioIti">#8BC34A</color>
+    <color name="primarioClaroIti">#DCEDC8</color>
+    <color name="texto_iconosIti">#FFFFFF</color>
+    <color name="acentuadoIti">#FF5252</color>
+    <color name="primarioTextoIti">#212121</color>
+    <color name="secundarioTextoIti">#727272</color>
+    <color name="divisorIti">#B6B6B6</color>
+
+    <color name="primarioObscuroRuta">#AFB42B</color>
+    <color name="primarioRuta">#CDDC39</color>
+    <color name="primarioClaroRuta">#F0F4C3</color>
+    <color name="texto_iconosRuta">#FFFFFF</color>
+    <color name="acentuadoRuta">#00BCD4</color>
+    <color name="primarioTextoRuta">#212121</color>
+    <color name="secundarioTextoRuta">#727272</color>
+    <color name="divisorRuta">#B6B6B6</color>
+
+    <color name="primarioObscuroUbik">#7B1FA2</color>
+    <color name="primarioUbik">#9C27B0</color>
+    <color name="primarioClaroUbik">#E1BEE7</color>
+    <color name="texto_iconosUbik">#FFFFFF</color>
+    <color name="acentuadoUbik">#CDDC39</color>
+    <color name="primarioTextoUbik">#212121</color>
+    <color name="secundarioTextoUbik">#727272</color>
+    <color name="divisorUbik">#B6B6B6</color>
+
+    <color name="primarioObscuroInfoV">#D32F2F</color>
+    <color name="primarioInfoV">#F44336</color>
+    <color name="primarioClaroInfoV">#FFCDD2</color>
+    <color name="texto_iconosInfoV">#FFFFFF</color>
+    <color name="acentuadoInfoV">#FFEB3B</color>
+    <color name="primarioTextoInfoV">#212121</color>
+    <color name="secundarioTextoInfoV">#727272</color>
+    <color name="divisorInfoV">#B6B6B6</color>
+
+    <color name="primarioObscuroConf">#FBC02D</color>
+    <color name="primarioConf">#FFEB3B</color>
+    <color name="primarioClaroConf">#FFF9C4</color>
+    <color name="texto_iconosConf">#FFFFFF</color>
+    <color name="acentuadoConf">#536DFE</color>
+    <color name="primarioTextoConf">#212121</color>
+    <color name="secundarioTextoConf">#727272</color>
+    <color name="divisorConf">#B6B6B6</color>
+
+    <color name="colorControlHighLight">#B6B6B6</color>
+
+</resources>

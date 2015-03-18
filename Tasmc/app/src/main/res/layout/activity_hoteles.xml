@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivanco.tasmc.Hoteles">
+
+    <include
+        android:id="@+id/app_bar_hotel"
+        layout="@layout/app_bar_hotel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lugar"
+        android:hint="Nombre de la ciudad o lugar"
+        android:layout_below="@+id/app_bar_hotel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/lupa"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        style="@style/ButtonAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Hoteles"
+        android:id="@+id/botonHotel"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:background="@color/acentuadoHotel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView13"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/calendar"
+        android:layout_below="@+id/lugar"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView14"
+        android:src="@drawable/habitaciones"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:layout_below="@+id/imageView14"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/huespedes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:id="@+id/habitaciones"
+        android:layout_marginStart="29dp"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView14"
+        android:textColor="@color/primarioTexto"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Habitacion"
+        android:id="@+id/textView11"
+        android:layout_alignTop="@+id/habitaciones"
+        android:layout_toEndOf="@+id/habitaciones"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/primarioTexto"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:id="@+id/huespedes"
+        android:layout_alignBottom="@+id/imageView15"
+        android:layout_alignStart="@+id/habitaciones"
+        android:textColor="@color/primarioTexto"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Huésped"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/huespedes"
+        android:layout_alignStart="@+id/textView11"
+        android:textColor="@color/primarioTexto"
+        android:textSize="16dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/masHab"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_centerHorizontal="true"
+        android:text="-" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menosHab"
+        android:layout_marginStart="38dp"
+        android:layout_alignTop="@+id/masHab"
+        android:layout_toEndOf="@+id/masHab"
+        android:text="+" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/menosHues"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/masHab" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/masHues"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/menosHab" />
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuro</item>
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorAccent">@color/acentuado</item>
+    </style>
+
+    <style name="BarraPersonal" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuado</item>
+    </style>
+
+    <style name="AppTheme.BaseHotel" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroHotel</item>
+        <item name="colorPrimary">@color/primarioHotel</item>
+        <item name="colorAccent">@color/acentuadoHotel</item>
+    </style>
+
+    <style name="BarraPersonalHotel" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoHotel</item>
+    </style>
+
+    <style name="AppTheme.BaseVuelo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroVuelo</item>
+        <item name="colorPrimary">@color/primarioVuelo</item>
+        <item name="colorAccent">@color/acentuadoVuelo</item>
+    </style>
+
+    <style name="BarraPersonalVuelo" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoVuelo</item>
+    </style>
+
+    <style name="AppTheme.BaseInfoa" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroInfoA</item>
+        <item name="colorPrimary">@color/primarioInfoA</item>
+        <item name="colorAccent">@color/acentuadoInfoA</item>
+    </style>
+
+    <style name="BarraPersonalInfoa" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoInfoA</item>
+    </style>
+
+    <style name="AppTheme.BaseEqui" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroEquipaje</item>
+        <item name="colorPrimary">@color/primarioEquipaje</item>
+        <item name="colorAccent">@color/acentuadoEquipaje</item>
+    </style>
+
+    <style name="BarraPersonalEqui" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoEquipaje</item>
+    </style>
+
+    <style name="AppTheme.BaseIt" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroIti</item>
+        <item name="colorPrimary">@color/primarioIti</item>
+        <item name="colorAccent">@color/acentuadoIti</item>
+    </style>
+
+    <style name="BarraPersonalIt" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoIti</item>
+    </style>
+
+    <style name="AppTheme.BaseRut" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroRuta</item>
+        <item name="colorPrimary">@color/primarioRuta</item>
+        <item name="colorAccent">@color/acentuadoRuta</item>
+    </style>
+
+    <style name="BarraPersonalRut" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoRuta</item>
+    </style>
+
+    <style name="AppTheme.BaseUbk" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroUbik</item>
+        <item name="colorPrimary">@color/primarioUbik</item>
+        <item name="colorAccent">@color/acentuadoUbik</item>
+    </style>
+
+    <style name="BarraPersonalUbk" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoUbik</item>
+    </style>
+
+    <style name="AppTheme.BaseInfv" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primarioObscuroInfoV</item>
+        <item name="colorPrimary">@color/primarioInfoV</item>
+        <item name="colorAccent">@color/acentuadoInfoV</item>
+    </style>
+
+    <style name="BarraPersonalInfv" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/texto_iconos</item>
+        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColorSecondary">@color/acentuadoInfoV</item>
+    </style>
+
+    <style name="MyTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primarioHotel</item>
+        <item name="colorPrimaryDark">@color/primarioObscuroHotel</item>
+        <item name="colorAccent">@color/acentuadoHotel</item>
+        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+    </style>
+    <style name="ButtonAppTheme" parent="android:Widget.Material.Button">
+        <item name="android:background">@color/primarioHotel</item>
+    </style>
+
+</resources>

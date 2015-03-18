@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:colorPrimary">@color/primarioObscuro</item>
+        <item name="android:colorPrimaryDark">@color/primario</item>
+        <item name="android:colorAccent">@color/acentuado</item>
+    </style>
+
+    <style name="ButtonAppTheme" parent="android:Widget.Material.Button">
+        <item name="android:background">@color/primarioHotel</item>
+    </style>
+
+</resources>

@@ -6,4 +6,4 @@
     android:paddingTop="@dimen/app_bar_top_pading"
     android:background="@color/primario"
     app:theme="@style/BarraPersonal"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"></android.support.v7.widget.Toolbar>
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>

@@ -21,6 +21,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_appbar);
         toolbar = (Toolbar) findViewById(R.id.app_bar);
+        //toolbar.setLogo(R.drawable.avionblan); logo
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         NavigationDrawerFragment drawerFragment = (NavigationDrawerFragment)

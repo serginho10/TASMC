@@ -1,10 +1,15 @@
 package com.example.vivanco.tasmc;
 
+import java.util.List;
+
 /**
  * Created by VIVANCO on 23/01/2015.
  */
 public class Actividad {
 
+    int iconIti;
+    String viaji;
+    String acti;
     private int id;
     private String nombre;
     private String fecha;

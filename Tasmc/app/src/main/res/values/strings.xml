@@ -4,6 +4,7 @@
     <string name="app_name">TASMC</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="acerca_de">Acerca de la aplicación</string>
     <string name="agregarDesc">Agregar Descripción</string>
     <string name="next">Next</string>
     <string name="title_activity_sub">SubActivity</string>
@@ -13,12 +14,18 @@
     <string name="title_activity_hoteles">Hoteles</string>
     <string name="title_activity_vuelos">Vuelos</string>
     <string name="title_activity_info_aicm">InfoAicm</string>
-    <string name="title_activity_list_equipaje">ListEquipaje</string>
+    <string name="title_activity_list_equipaje">Lista de Equipaje</string>
     <string name="title_activity_itinerario">Itinerario</string>
-    <string name="title_activity_ruta_aicm">RutaAicm</string>
-    <string name="title_activity_ubicate">Ubicate</string>
-    <string name="title_activity_info_vuelo">InfoVuelo</string>
+    <string name="title_activity_ruta_aicm">Ruta al AICM</string>
+    <string name="title_activity_ubicate">Ubicación en AICM</string>
+    <string name="title_activity_info_vuelo">Información de Vuelo</string>
     <string name="title_activity_equipaje">Equipaje</string>
-
+    <string name="title_activity_ida">Ida</string>
+    <string name="title_activity_ida__vuelta">Ida_Vuelta</string>
+    <string-array name="tabs">
+        <item>IDA</item>
+        <item>IDA Y VUELTA</item>
+    </string-array>
+    <string name="title_activity_list_actividades">ListActividades</string>
 
 </resources>

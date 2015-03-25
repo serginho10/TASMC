@@ -107,6 +107,10 @@
             android:name=".Equipaje"
             android:label="@string/title_activity_equipaje" >
         </activity>
+        <activity
+            android:name=".ListActividades"
+            android:label="@string/title_activity_list_actividades" >
+        </activity>
     </application>
 
 </manifest>

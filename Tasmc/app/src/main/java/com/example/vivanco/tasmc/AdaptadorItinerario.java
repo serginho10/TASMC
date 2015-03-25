@@ -25,8 +25,7 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
 
         Actividad a = actList.get(position);
         holder.icon.setImageResource(a.iconIti);
-        holder.titulo.setText(a.titit);
-        holder.activi.setText(a.activ);
+        holder.activ.setText(a.acti);
         holder.viaje.setText(a.viaji);
     }
 
@@ -47,15 +46,13 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
     public static class ItinerarioViewHolder extends RecyclerView.ViewHolder {
 
         protected ImageView icon;
-        protected TextView titulo;
-        protected TextView activi;
         protected TextView viaje;
+        protected TextView activ;
 
         public ItinerarioViewHolder(View v) {
             super(v);
             icon =  (ImageView) v.findViewById(R.id.logi);
-            titulo = (TextView)  v.findViewById(R.id.titi);
-            activi = (TextView)  v.findViewById(R.id.acti);
+            activ = (TextView)  v.findViewById(R.id.acti);
             viaje = (TextView) v.findViewById(R.id.viaje);
         }
     }

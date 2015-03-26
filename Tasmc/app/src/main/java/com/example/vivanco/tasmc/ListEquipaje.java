@@ -13,17 +13,20 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
+
+import org.json.JSONException;
 
 public class ListEquipaje extends ActionBarActivity implements View.OnClickListener{
 
     ListView list;
     String[] titulos;
     String[] descripcion;
-    int[] image = {R.drawable.romantico, R.drawable.familia, R.drawable.business, R.drawable.general};
+    int[] image = {R.drawable.romantico, R.drawable.familia, R.drawable.business, R.drawable.general, R.drawable.business};
     private static final String TAG_NUEVO="nuevo equipaje";
 
     @Override
@@ -38,12 +41,25 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //Consumiendo web service tasmc
+
+        JSONParser json = new JSONParser(this);
+        try {
+            json.readAndParseJSON("Equipaje");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        while(titulos == null)
+            titulos = json.res;
+
         //Buscar forma de meter los nuevos
-        titulos = new String[]{"Romantico", "Familia", "Business", "General"};
         descripcion = new String[]{"abridor de botellas, velas y cerillos, perfume",
                 "protector solar, medicamento, comida, juguetes",
                 "pasaporte, traje, computadora",
-                "cargador de celular, efectivo, camara"};
+                "cargador de celular, efectivo, camara",
+                "mio, tuyo no, todo bien"};
+
+
 
         list = (ListView) findViewById(R.id.listEquipaje);
         AdaptadorEquipaje adaptadorEquipaje = new AdaptadorEquipaje(this, titulos, image, descripcion);
@@ -65,35 +81,48 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         //Creacion de las opciones del boton flotante
 
         ImageView iconNuevo = new ImageView(this);
-        iconNuevo.setImageResource(R.drawable.ic_action_calendar);
-        ImageView iconEliminar = new ImageView(this);
-        iconEliminar.setImageResource(R.drawable.ic_action_important);
-        ImageView iconEditar = new ImageView(this);
-        iconEditar.setImageResource(R.drawable.ic_action_new);
+        iconNuevo.setImageResource(R.drawable.ic_action_new);
+        ImageView iconFavorito = new ImageView(this);
+        iconFavorito.setImageResource(R.drawable.ic_action_important);
+        ImageView iconCalendario = new ImageView(this);
+        iconCalendario.setImageResource(R.drawable.ic_action_calendar);
         //Subopciones
         SubActionButton.Builder itemBuilder = new SubActionButton.Builder(this);
         //Background de presionado para los sub botones
         itemBuilder.setBackgroundDrawable(getResources().getDrawable(R.drawable.selector_sub_button_gray));
         SubActionButton btnNuevo = itemBuilder.setContentView(iconNuevo).build();
-        SubActionButton btnEliminar = itemBuilder.setContentView(iconEliminar).build();
-        SubActionButton btnEditar = itemBuilder.setContentView(iconEditar).build();
+        SubActionButton btnFavorito = itemBuilder.setContentView(iconFavorito).build();
+        SubActionButton btnCalendario = itemBuilder.setContentView(iconCalendario).build();
 
         //Action al presionar
+        btnNuevo.setTag(0);
+        btnFavorito.setTag(1);
+        btnCalendario.setTag(2);
         btnNuevo.setOnClickListener(this);
-        btnEliminar.setOnClickListener(this);
-        btnEditar.setOnClickListener(this);
+        btnFavorito.setOnClickListener(this);
+        btnCalendario.setOnClickListener(this);
 
         FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this)
+                .addSubActionView(btnCalendario)
+                .addSubActionView(btnFavorito)
                 .addSubActionView(btnNuevo)
-                .addSubActionView(btnEliminar)
-                .addSubActionView(btnEditar)
                 .attachTo(actionButton)
                 .build();
     }
 
     @Override
     public void onClick(View v) {
-
+        switch (Integer.parseInt(v.getTag().toString())){
+            case 0:
+                Toast.makeText(getApplicationContext(),"Nuevo",Toast.LENGTH_SHORT).show();
+                break;
+            case 1:
+                Toast.makeText(getApplicationContext(),"Favorito",Toast.LENGTH_SHORT).show();
+                break;
+            case 2:
+                Toast.makeText(getApplicationContext(),"Calendario",Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 
     class AdaptadorEquipaje extends ArrayAdapter<String> {

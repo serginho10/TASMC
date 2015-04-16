@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vivanco.tasmc" >
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,12 +27,15 @@
         android:allowBackup="true"
         android:icon="@drawable/plane"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:theme="@style/AppTheme" >
+
         <uses-library android:name="com.google.android.maps" />
 
         <activity
             android:name=".MainActivity"
-            android:icon="@drawable/plane" >
+            android:icon="@drawable/plane"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,63 +44,72 @@
         </activity>
         <activity
             android:name=".SubActivity"
-            android:label="@string/title_activity_sub" >
+            android:label="@string/title_activity_sub"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Hoteles"
-            android:label="@string/title_activity_hoteles" >
+            android:label="@string/title_activity_hoteles"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Vuelos"
-            android:label="@string/title_activity_vuelos" >
+            android:label="@string/title_activity_vuelos"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".InfoAicm"
-            android:label="@string/title_activity_info_aicm" >
+            android:label="@string/title_activity_info_aicm"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ListEquipaje"
-            android:label="@string/title_activity_list_equipaje" >
+            android:label="@string/title_activity_list_equipaje"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Itinerario"
-            android:label="@string/title_activity_itinerario" >
+            android:label="@string/title_activity_itinerario"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".RutaAicm"
-            android:label="@string/title_activity_ruta_aicm" >
+            android:label="@string/title_activity_ruta_aicm"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Ubicate"
-            android:label="@string/title_activity_ubicate" >
+            android:label="@string/title_activity_ubicate"
+            android:screenOrientation="nosensor" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".InfoVuelo"
-            android:label="@string/title_activity_info_vuelo" >
+            android:label="@string/title_activity_info_vuelo"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -105,12 +124,15 @@
 
         <activity
             android:name=".Equipaje"
-            android:label="@string/title_activity_equipaje" >
+            android:label="@string/title_activity_equipaje"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ListActividades"
-            android:label="@string/title_activity_list_actividades" >
+            android:label="@string/title_activity_list_actividades"
+            android:screenOrientation="portrait" >
         </activity>
+
     </application>
 
 </manifest>

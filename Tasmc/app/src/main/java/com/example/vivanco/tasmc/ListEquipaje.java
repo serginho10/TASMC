@@ -1,6 +1,8 @@
 package com.example.vivanco.tasmc;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -41,6 +43,18 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // Verificar si hay conexion a internet
+
+        ConnectivityManager cm = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        System.out.println(activeNetwork.toString());
+        boolean isConnected = activeNetwork.isConnectedOrConnecting();
+
+        if(isConnected)
+            Toast.makeText(getApplicationContext(),"Conectado",Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(getApplicationContext(),"No Conectado",Toast.LENGTH_SHORT).show();
         //Consumiendo web service tasmc
 
         JSONParser json = new JSONParser(this);

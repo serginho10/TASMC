@@ -2,6 +2,9 @@ package com.example.vivanco.tasmc;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,6 +20,8 @@ public class JSONParser {
     private Runnable runReadAndParseJSON;
     JSONArray objetosArray;
     String[] res;
+    int[] image;
+    Bitmap[] logo;
 
     public JSONParser(Activity a){
         activity = a;
@@ -48,9 +53,11 @@ public class JSONParser {
 
     public void parseJSON(String cadena) throws JSONException{
         res = new String[objetosArray.length()];
+        logo = new Bitmap[objetosArray.length()];
         for(int i = 0; i < objetosArray.length(); i++){
             res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
-            System.out.println(res[i]);
+            byte[] byteData = Base64.decode(objetosArray.getJSONObject(i).getString("logo"), Base64.DEFAULT);
+            logo[i] = BitmapFactory.decodeByteArray(byteData, 0, byteData.length);
         }
     }
 

@@ -7,13 +7,13 @@
     <string name="acerca_de">Acerca de la aplicación</string>
     <string name="agregarDesc">Agregar Descripción</string>
     <string name="next">Next</string>
-    <string name="title_activity_sub">SubActivity</string>
+    <string name="title_activity_sub">Acerca de</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="drawer_open">Abierto</string>
     <string name="drawer_close">Cerrado</string>
     <string name="title_activity_hoteles">Hoteles</string>
     <string name="title_activity_vuelos">Vuelos</string>
-    <string name="title_activity_info_aicm">InfoAicm</string>
+    <string name="title_activity_info_aicm">AICM</string>
     <string name="title_activity_list_equipaje">Lista de Equipaje</string>
     <string name="title_activity_itinerario">Itinerario</string>
     <string name="title_activity_ruta_aicm">Ruta al AICM</string>
@@ -27,5 +27,599 @@
         <item>IDA Y VUELTA</item>
     </string-array>
     <string name="title_activity_list_actividades">ListActividades</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_activity_list_servicios">Servicios</string>
+
+    <string-array name="categoria">
+        <item>Alimentos y bebidas</item>
+        <item>Compras</item>
+        <item>Comunicaciones</item>
+        <item>Financieros</item>
+        <item>Servicios</item>
+        <item>Transportación terrestre</item>
+        <item>Turísticos</item>
+    </string-array>
+
+    <string-array name="nombre">
+        <item>Dino</item>
+        <item>Globo</item>
+        <item>Starbucks Coffee</item>
+        <item>7 Eleven</item>
+        <item>Candy Gold</item>
+        <item>Circulo K</item>
+        <item>Comida Empaquetada</item>
+        <item>Gran Pastor</item>
+        <item>Oxxo</item>
+        <item>Satsuki</item>
+        <item>100% Natural</item>
+        <item>Apetito</item>
+        <item>Blue Sky/natural</item>
+        <item>Booster Juice</item>
+        <item>Cinnabon</item>
+        <item>Comida Rápida</item>
+        <item>Don Manolito</item>
+        <item>El Alcatraz</item>
+        <item>El Cafetin</item>
+        <item>El Fogoncito</item>
+        <item>Garabatos</item>
+        <item>Green Planet</item>
+        <item>Grupo Mexicana de Alimentos</item>
+        <item>Heladeria Wings</item>
+        <item>Hong Yung</item>
+        <item>Krispy Kreme</item>
+        <item>La Baguetelle</item>
+        <item>La Buena Tierra</item>
+        <item>Mc Donalds</item>
+        <item>Na</item>
+        <item>Paradores y Hostales</item>
+        <item>Sbarro</item>
+        <item>Subway</item>
+        <item>Sushi-itto</item>
+        <item>Tacañon</item>
+        <item>Taco Inn</item>
+        <item>Tasca Don Quino</item>
+        <item>Teriyaki San</item>
+        <item>Tortas Locas Hipocampo</item>
+        <item>Bar 21</item>
+        <item>Baron Rojo</item>
+        <item>Bistro Mosaico</item>
+        <item>Casa Avila</item>
+        <item>Cucara Macara</item>
+        <item>Flaps</item>
+        <item>Italiannis</item>
+        <item>La Pausa</item>
+        <item>La Taba</item>
+        <item>Lucky Bar 777</item>
+        <item>Medas</item>
+        <item>Taco Beef</item>
+        <item>Wings</item>
+        <item>Bolería</item>
+        <item>Aerotodo</item>
+        <item>Dufree Shops Tax y Duty Free</item>
+        <item>Dufry Mexico</item>
+        <item>Farmacia</item>
+        <item>Farmacia de Primera Clase</item>
+        <item>Farmacia Drug Store</item>
+        <item>Farmacias Abc</item>
+        <item>Farmacias Similares</item>
+        <item>Comercializadora Meruelo</item>
+        <item>Dlove</item>
+        <item>Joyeíra y Bisutería</item>
+        <item>L.a. Cano</item>
+        <item>Silver Designer</item>
+        <item>Aquí Es y Aquí También</item>
+        <item>Conaculta</item>
+        <item>Inegi</item>
+        <item>Libros, Revistas y Música</item>
+        <item>Urgens</item>
+        <item>Axa</item>
+        <item>Cafes de Hoy</item>
+        <item>Chocolate Mayordomo</item>
+        <item>Georgie Boy</item>
+        <item>Gnc</item>
+        <item>Gnp</item>
+        <item>Ing Comercial America</item>
+        <item>Zuyu</item>
+        <item>Arte En Madera</item>
+        <item>Arte Mexicano</item>
+        <item>Artesania</item>
+        <item>Artesanias</item>
+        <item>Britt Shop México</item>
+        <item>Candy</item>
+        <item>El Alebrije</item>
+        <item>Fiesta Arts y Crafts</item>
+        <item>Fundación John Langdon Down</item>
+        <item>Hijo Del Santo</item>
+        <item>Hudson News</item>
+        <item>Mexico En Piel</item>
+        <item>Operadora Aero-boutiques</item>
+        <item>Plata de Taxco</item>
+        <item>Regalos Lili</item>
+        <item>Regalos y Souvenirs</item>
+        <item>Solo por Ayudar</item>
+        <item>Tabaco y Algo Mas</item>
+        <item>Tobaccco Shop</item>
+        <item>Unicef</item>
+        <item>Burro Mx</item>
+        <item>Domit</item>
+        <item>Ferrioni</item>
+        <item>Gafas de Sol</item>
+        <item>Mex Souvenirs</item>
+        <item>Peer</item>
+        <item>Pineda Covalin</item>
+        <item>Scappino</item>
+        <item>Stanza</item>
+        <item>Sunglass Hut</item>
+        <item>The Watch Co.</item>
+        <item>Todo de Todo</item>
+        <item>Totto</item>
+        <item>Lucky Loteria</item>
+        <item>Sorteo Tec</item>
+        <item>Sorteos y Pronósticos</item>
+        <item>Torreblanca</item>
+        <item>Vinos y Licores</item>
+        <item>Aeroflash</item>
+        <item>Iusacell</item>
+        <item>Movistar</item>
+        <item>Telcel</item>
+        <item>Banamex</item>
+        <item>Banorte</item>
+        <item>Bbva Bancomer</item>
+        <item>City Bank</item>
+        <item>Hsbc</item>
+        <item>Santander</item>
+        <item>Scotia Bank Inverlat</item>
+        <item>Ixe</item>
+        <item>Santander Serfin</item>
+        <item>Aerochange</item>
+        <item>Aerogolden</item>
+        <item>Aldalet</item>
+        <item>Anderungen Advisers</item>
+        <item>Antara</item>
+        <item>Cambios Extranjeros</item>
+        <item>Centro Cambiario</item>
+        <item>Centro de Cambio</item>
+        <item>Cibanco</item>
+        <item>Coberturas Mexicanas</item>
+        <item>Comercializadora Sarjes</item>
+        <item>Comercializadora Steel y Gold</item>
+        <item>Divisas Milennium</item>
+        <item>Dolares Liverpool Casa de Cambio</item>
+        <item>Dollar Word</item>
+        <item>Eurodolar</item>
+        <item>Exe</item>
+        <item>Globo Cambio</item>
+        <item>Globo Cambio Foreign Exchange</item>
+        <item>Golden Money</item>
+        <item>Jkm</item>
+        <item>Karsten</item>
+        <item>Kashgar</item>
+        <item>Keefer</item>
+        <item>Keffler Exchange</item>
+        <item>Manack</item>
+        <item>Maxi Dolar</item>
+        <item>Maxidolar</item>
+        <item>Polar</item>
+        <item>Remau</item>
+        <item>Tamibe</item>
+        <item>Truah</item>
+        <item>Tax Back</item>
+        <item>Yvesam Retornos</item>
+        <item>AEROMEXICO</item>
+        <item>AIR CANADA</item>
+        <item>AIR FRANCE</item>
+        <item>ALASKA AIR</item>
+        <item>AMERICAN AIRLINES</item>
+        <item>AVIANCA</item>
+        <item>IBERIA</item>
+        <item>INTERJET</item>
+        <item>KLM</item>
+        <item>LUFTHANSA</item>
+        <item>TACA</item>
+        <item>UNITED AIR</item>
+        <item>VIVA AEROBUS</item>
+        <item>VOLARIS</item>
+        <item>Escaleras</item>
+        <item>Facilidades para Personas Con Capacidades Diferentes</item>
+        <item>Lockers</item>
+        <item>Migración</item>
+        <item>Módulos de Información</item>
+        <item>Pases de Abordar</item>
+        <item>Reclamo de Equipaje</item>
+        <item>Salas de Espera</item>
+        <item>Centurion Club</item>
+        <item>Hq</item>
+        <item>Televisa</item>
+        <item>Sanitarios</item>
+        <item>Aerotrén</item>
+        <item>Autobuses Del Oriente (ado)</item>
+        <item>Autobuses Estrella Roja</item>
+        <item>Autobuses la Piedad</item>
+        <item>Autobuses Pullman de Morelos</item>
+        <item>Autobuses Tmt Caminante</item>
+        <item>Estacionamiento internacional Terminal 1</item>
+        <item>Estacionamiento nacional Terminal 1</item>
+        <item>Alamo Rent A Car</item>
+        <item>Avis</item>
+        <item>Budget Car Rental</item>
+        <item>Europcar</item>
+        <item>Executive Car Rental</item>
+        <item>Fox Rent A Car</item>
+        <item>Gold Car Rent</item>
+        <item>Hertz</item>
+        <item>National Car Rental</item>
+        <item>Sictel</item>
+        <item>Sixt</item>
+        <item>Thrifty Car Rental</item>
+        <item>Excelencia</item>
+        <item>Excelencia (serv. Ordinario y Camionetas)</item>
+        <item>Nueva Imagen</item>
+        <item>Porto Taxi</item>
+        <item>Sitio 300</item>
+        <item>Yellow Cab</item>
+        <item>Club Regina</item>
+        <item>Mundo Joven</item>
+        <item>Vip</item>
+        <item>Camino Real</item>
+        <item>Hotel Courtyard By Marriott</item>
+        <item>Hotel Hilton</item>
+    </string-array>
+
+    <string-array name="giro">
+        <item>Snack bar con venta de bebidas alcoholicas por copeo, alimentos frios o calientes, refrescos, frituras, cigarros, agua embotellada y pequeños souvenirs</item>
+        <item>Cafeteria</item>
+        <item>Venta de productos amparados con la franquicia starbucks coffee</item>
+        <item>Venta de refrescos en envase cerrado, agua, cafe, jugos, cerveza, vinos y licores en botella cerrada, tarjetas telefonicas, botanas, paletas y helados, dulces varios, cigarros y puros, articulos de higiene personal, pan dulce, comida empacada sin pro</item>
+        <item>Alimentos empaquetados productos envasados y tabaqueria</item>
+        <item>Tienda de conveniencia bajo el concepto de circulo k</item>
+        <item>Venta de dulceria y tabaqueria, venta de tarjetas telefonicas y bebidas enlatadas no alcoholicas</item>
+        <item>Alimentos empaquetados productos envasados y tabaqueria</item>
+        <item>Venta de dulces varios, cigarros y puros, comida empacada sin proceso de guiso en el local, agua, jugos envasados, cafe, refrescos y cerveza en envase cerrado, frituras y botana, tarjetas telefonicas, vinos y licores en botella cerrada, bebidas prepa</item>
+        <item>Tabaqueria, dulces, artesanias y regalos; venta de cerveza, vinos y licores en botella cerrada, bebidas refrescantes en botella o lata cerrada exclusivamente de procedencia japonesa</item>
+        <item>Comida rápida</item>
+        <item>Venta de sandwiches en pan baguette e integral, croissant, chiapatas, bagel, botanas y pan dulce, amparados bajo la marca la baguetelle, bebidas: cafe preparado y en grano, jugo de naranja y refrescos.</item>
+        <item>Restaurante bar y/o bar</item>
+        <item>Venta de productos al amparo de la franquicia booster juice</item>
+        <item>Venta de alimentos amparados con la franquicia cinnabon</item>
+        <item>Venta de comida rapida</item>
+        <item>Alimentos al amparo de la franquicia don manolito, bebidas y venta de cerveza unicamente con alimentos.</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Venta de alimentos y bebidas bajo el concepto green planet</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Snack</item>
+        <item>Venta de alimentos y bebidas amparados por la franquicia krispy kreme</item>
+        <item>Comida rápida</item>
+        <item>Alimentos y bebidas bajo la franquicia la buena tierra</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Comida rápida</item>
+        <item>Venta de productos subway</item>
+        <item>Comida rápida</item>
+        <item>Venta de tacos de guisado, bistec, canasta y al pastor, tortas, licuados, refrescos, dulces, frituras empacadas, tamales, atole, esquites, pozole, sopas, gelatinas, flanes, pasteles, donas, crepaletas, aguas frescas, smoothies, quesadillas, huevos</item>
+        <item>Venta de productos amparados con la franquicia taco inn</item>
+        <item>Comida rápida</item>
+        <item>Venta de comida japonesa, arroz, sushi, sopas, yakitori, tempura, plato y tazon teriyaki, postres, caramelo, banana, maki, refrescos, cerveza, te, agua embotellada y cafe americano.</item>
+        <item>Venta de tortas y bebidas bajo la franquicia tortas locas hipocampo</item>
+        <item>Restaurante-bar</item>
+        <item>Restaurante-bar</item>
+        <item>Restaurante-bar</item>
+        <item>Restaurante-bar</item>
+        <item>Restaurante-bar</item>
+        <item>Restaurante e internet y actividades relacionadas</item>
+        <item>Venta de alimentos y bebidas</item>
+        <item>Restaurante bar y tienda (con excepcion de venta de medicamentos)</item>
+        <item>Restaurante-bar</item>
+        <item>Snack-bar</item>
+        <item>Venta por copeo de todo tipo de vinos y licores, cervezas, refrescos, alimentos frios o calientes sin proceso de guiso (excluyendo hamburguesas), sandwiches, botanas en bolsa o a granel (frituras), dulces y chocolates en barra, pan dulce, cigarros</item>
+        <item>Restaurante-bar</item>
+        <item>Restaurante-bar</item>
+        <item>Boleria</item>
+        <item>Servicio de fotocopiado, papeleria, rollos fotograficos, regalos, novedades y articulos de navegacion aerea.</item>
+        <item>Exposición y venta de mercancías extranjeras y nacionales libres de impuestos</item>
+        <item>Tiendas para la venta de productos libres de impuestos (duty free), así como venta de productos gravados (duty paid)</item>
+        <item>Farmacia y venta de artículos de belleza, expedición y venta de todo tipo de juegos y sorteos, lotería nacional, pronósticos deportivos y otros del mismo genero</item>
+        <item>Farmacia de primera clase</item>
+        <item>Farmacia y venta de artículos de belleza, expedición y venta de todo tipo de juegos y sorteos, lotería nacional, pronósticos deportivos y otros del mismo genero</item>
+        <item>Farmacia, venta de tarjetas telefonicas, botanas, refrescos y revistas</item>
+        <item>Farmacia</item>
+        <item>Joyería, cristalería, platería y accesorios</item>
+        <item>Joyería, cristalería, platería y accesorios</item>
+        <item>Venta de artesanías, joyería y platería, limitado a: venta de oro, cobre y latón</item>
+        <item>Venta de joyería fina y artículos decorativos de materiales preciosos, café en grano y molido, libros sobre arte precolombino, artefactos y artesanías de decoración bajo el concepto de l.a. cano</item>
+        <item>Venta de joyería y platería</item>
+        <item>Librería</item>
+        <item>Venta de libros, publicaciones y productos culturales</item>
+        <item>Venta de cartografia, publicaciones, medios ópticos y medios magnéticos</item>
+        <item>Venta de publicaciones, artículos fotográficos, billetes de lotería y tabaquería, limitado a: libros, revistas, periódicos, cigarros, puros, encendedores, rollos de pelicula, pilas alcalinas y de mercurio</item>
+        <item>Librería</item>
+        <item>Venta de polizas de seguro</item>
+        <item>Venta de compact disc, cassettes y videocassettes, vírgenes o grabados y accesorios relativos a estos productos.</item>
+        <item>Chocolatería y venta de chocolates en diferentes presentaciones, moles y artículos típicos de méxico, principalmente de oaxaca; con prohibicion para la venta de café</item>
+        <item>Zapateria y accesorios</item>
+        <item>Venta de complementos alimenticios al amparo de la marca general nutrition center gnc</item>
+        <item>Venta de polizas de seguros</item>
+        <item>Seguros y fianzas</item>
+        <item>Masajes (concepto de transparencia y con ropa)</item>
+        <item>Venta de artesanías mexicanas, artículos de olinala, cajas, baules, espejos y guajes de madera, articulos de papel mache (payasos, porta vasos, pajaros, frutas, muñecas), flores de papel, cobre y latón (platos, relojes, placas) acrilico y madera</item>
+        <item>Venta de artículos diversos</item>
+        <item>Venta de artesanías, souvenirs, artículos de fotografía, bolsas para viaje, tarjetas prepagadas, revistas, dulcerías, frituras, tabaquería, vinos y licores en botella cerrada, bebidas no alcoholicas, panecillos y alimentos pre-empacados</item>
+        <item>Venta de artesanías</item>
+        <item>Venta de joyería, textiles, artesanías, souvenirs y regalos, libros, revistas y periódicos, café envasado o empacado, chocolates y golosinas, bebidas incluyendo licores nacionales, tabaco, música, accesorios de viaje, con degustación de chocolate</item>
+        <item>Venta de dulces, artesanías, ceramica regional, cigarros, regalos, agua embotellada, bebidas no alcoholicas y tarjetas telefonicas siempre y cuando estas sean de todas las denominaciones.</item>
+        <item>Venta de artesanías, carritos de fricción y cuerda, muñecos de vinyl y porcelana, envoltura para regalos, carteras, monederos, portafolios y llaveros de piel fina, carritos portamaletas, maletas y bolsas de piel, ruanas y sweaters de lana</item>
+        <item>Venta de platería y artesanía, compuesta por: talavera, madera de olinala, artículos de piel, playera bordada y estampada, muñecas, juguetes de madera, llaveros, platos y relojes esmaltados, artículos de onix, gabanes y cobijas de lana y algodón</item>
+        <item>Regalos y souvenirs</item>
+        <item>Venta de ropa, accesorios, souvenirs al amparo de la marca el hijo del santo</item>
+        <item>Tiendas para la venta de productos libres de impuestos (duty free), asi como venta de productos gravados (duty paid)</item>
+        <item>Venta de artículos de piel</item>
+        <item>Venta de artículos diversos</item>
+        <item>Venta de artículos diversos</item>
+        <item>Boutique de regalos</item>
+        <item>Dulces típicos mexicanos, muñecos con excepción de los de artesania mexicana, chocolates en caja y chocolates en general</item>
+        <item>Regalos y souvenirs</item>
+        <item>Venta de artesanías, souvenirs, artículos de fotografía, bolsas para viaje, tarjetas prepagadas, revistas, dulcerías, frituras, tabaquería, vinos y licores en botella cerrada, bebidas no alcoholicas, panecillos y alimentos pre-empacados</item>
+        <item>Venta de artículos diversos</item>
+        <item>Regalos y souvenirs</item>
+        <item>Venta de zapatos y accesorios para dama, fotografías, artesanías y playeras</item>
+        <item>Venta de artículos de piel y ropa de marca domit</item>
+        <item>Ropa calzado y accesorios</item>
+        <item>Venta de gafas de sol, relojes y accesorios de vestir</item>
+        <item>Boutique de ropa</item>
+        <item>Venta de ropa</item>
+        <item>Venta de productos amparados con la marca pineda covalin</item>
+        <item>Venta de productos amparados con la marca scapino</item>
+        <item>Piel, plásticos, joyería, relojes, plumas y juguetes</item>
+        <item>Lentes y accesorios</item>
+        <item>Lentes y accesorios</item>
+        <item>Boutique de ropa y accesorios</item>
+        <item>Venta de ropa de articulos amparados por la marca totto</item>
+        <item>Venta de lotería nacional, pronósticos deportivos y similares, autorizados por la secretaria de gobernación, así como tarjetas telefónicas y de prepago</item>
+        <item>Venta de boletos sorteo tec</item>
+        <item>Lotería, pronósticos deportivos, venta de tarjetas ladatel y tarjetas telefónicas en general</item>
+        <item>Venta de todo tipo de juegos, sorteos, rifas, loterías de terceros y propias autorizados por la secretaría de gobernacion, así como tarjetas telefónicas y de prepago</item>
+        <item>Venta de vinos y licores en botella cerrada, refrescos desechables, tabaqueria, botanas, dulces, chocolates, pan empaquetado, pasteleria, paletas en envolturas individuales, tarjetas telefonicas y peliculas fotograficas.</item>
+        <item>Paquetería y mensajería</item>
+        <item>Telefonía celular</item>
+        <item>Telefonía celular</item>
+        <item>Telefonía celular</item>
+        <item>Cajeros automaticos</item>
+        <item>Cajeros automáticos</item>
+        <item>Cajeros automáticos</item>
+        <item>Cajeros automáticos</item>
+        <item>Cajeros automáticos</item>
+        <item>Cajeros automáticos</item>
+        <item>Cajeros automáticos</item>
+        <item>Sucursal bancaria</item>
+        <item>Sucursal bancaria</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Cambio de divisas</item>
+        <item>Cambio de divisas</item>
+        <item>Cambio de divisas</item>
+        <item>Cambio de divisas</item>
+        <item>Compra y venta de divisas en sus diferentes modalidades como son: efectivo, cheques, cheques de viajero y transferencias. asi como compra y venta de metales amonedados</item>
+        <item>Centro de cambio</item>
+        <item>Cambio de divisas</item>
+        <item>Casa de cambio</item>
+        <item>Casa de cambio</item>
+        <item>Centro cambiario</item>
+        <item>Casa de cambio</item>
+        <item>Centro de cambio</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Devolución de impuestos</item>
+        <item>Cambio de divisas y devolución de impuestos</item>
+        <item>Cambio de divisas y devolución de impuestos</item>
+        <item>Centro cambiario</item>
+        <item>Cambio de divisas</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Cambio de divisas</item>
+        <item>Centro cambiario</item>
+        <item>Cambio de divisas</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Centro cambiario</item>
+        <item>Devolucion de impuestos</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Aerolinea</item>
+        <item>Servicio</item>
+        <item>Servicio</item>
+        <item>Guarda de equipajes</item>
+        <item>Proceso Migratorio</item>
+        <item>Información para el pasajero</item>
+        <item>Servicio</item>
+        <item>Servicio</item>
+        <item>Zona de espera</item>
+        <item>Sala vip y servicios financieros American Express</item>
+        <item>Renta de oficinas, master, privadas, sencillas, estaciones de trabajo, sala de descanso privadas, salas de juntas, por hora, dia, mes, año (sin que la contratacion pueda exceder del plazo de vigencia convenida en el contrato)</item>
+        <item>Salon vip</item>
+        <item>Servicio</item>
+        <item>Transporte entre terminal 1 y 2</item>
+        <item>Venta de boletos para viajar en autobus, excepto con destino a queretaro, pachuca, toluca, cuernavaca y puebla, renta de autobuses para turismo nacional e internacional y de excursion, venta de paquetes turisticos (parques de diversiones, centros de diversión)</item>
+        <item>Venta de boletos para viajar en autobus</item>
+        <item>Venta de boletos para viajar en autobus</item>
+        <item>Venta de boletos para viajar en autobus</item>
+        <item>Venta de boletos para viajar en autobus</item>
+        <item>Estacionamiento Internacional</item>
+        <item>Estacionamiento Nacional</item>
+        <item>Arrendadoras de autos</item>
+        <item>Arrendadoras de autos</item>
+        <item>Arrendadoras de autos</item>
+        <item>Arrendadoras de autos</item>
+        <item>Arrendadoras de autos</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Renta de autos</item>
+        <item>Renta de autos</item>
+        <item>Renta de autos</item>
+        <item>Renta de autos sin chofer</item>
+        <item>Renta de autos bajo el concepto sixt rent a car</item>
+        <item>Renta de autos</item>
+        <item>Venta de boletos para taxi autorizado</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Venta de boletos de taxis</item>
+        <item>Agencia de viajes</item>
+        <item>Agencia de viajes y venta de seguros de viajero</item>
+        <item>Agencia de viajes</item>
+        <item>Hotel</item>
+        <item>Hotel</item>
+        <item>Hotel</item>
+    </string-array>
+
+    <string-array name="objetos">
+        <item>abrigo</item>
+        <item>aceite para masaje</item>
+        <item>aletas</item>
+        <item>almohada</item>
+        <item>almohada para el cuello</item>
+        <item>altavoces</item>
+        <item>analgésicos</item>
+        <item>anillo</item>
+        <item>antibióticos</item>
+        <item>antiácidos</item>
+        <item>aspirina</item>
+        <item>auriculares</item>
+        <item>bata</item>
+        <item>baño de burbujas</item>
+        <item>bebidas</item>
+        <item>bikini</item>
+        <item>billetes</item>
+        <item>binoculares</item>
+        <item>bolsas de basura</item>
+        <item>bolsas herméticas</item>
+        <item>botas</item>
+        <item>botella de agua</item>
+        <item>brújula</item>
+        <item>bufanda</item>
+        <item>cajas</item>
+        <item>camisas</item>
+        <item>candados para equipaje</item>
+        <item>caramelos de menta</item>
+        <item>cargador de celular</item>
+        <item>cascos</item>
+        <item>caña de pescar</item>
+        <item>cebo</item>
+        <item>cepillo</item>
+        <item>cepillo de dientes</item>
+        <item>cerveza</item>
+        <item>champaña</item>
+        <item>chanclas</item>
+        <item>chamarra</item>
+        <item>cheques de viaje</item>
+        <item>chicle</item>
+        <item>cinturón</item>
+        <item>collares</item>
+        <item>comida</item>
+        <item>condones</item>
+        <item>cortaúñas</item>
+        <item>crema depilatoria</item>
+        <item>crema hidratante</item>
+        <item>crema para afeitar</item>
+        <item>celular</item>
+        <item>desmaquillante</item>
+        <item>desodorante</item>
+        <item>dvd</item>
+        <item>efectivo</item>
+        <item>elementos para cocinar</item>
+        <item>encendedor</item>
+        <item>enjuague bucal</item>
+        <item>entradas del lugar</item>
+        <item>equipo de pesca</item>
+        <item>esquís</item>
+        <item>falda</item>
+        <item>frisbee</item>
+        <item>goggles</item>
+        <item>gel</item>
+        <item>guantes</item>
+        <item>hilo dental</item>
+        <item>historial médico</item>
+        <item>información del hotel</item>
+        <item>jabón</item>
+        <item>jamón</item>
+        <item>laptop</item>
+        <item>lencería</item>
+        <item>lentes</item>
+        <item>lentes de sol</item>
+        <item>libros</item>
+        <item>lima para uñas</item>
+        <item>llaves</item>
+        <item>loción</item>
+        <item>lubricante</item>
+        <item>lápiz</item>
+        <item>lápiz labial</item>
+        <item>lápiz de ojos</item>
+        <item>manta</item>
+        <item>maquillaje</item>
+        <item>moneda local</item>
+        <item>niñera</item>
+        <item>niños</item>
+        <item>palos de golf</item>
+        <item>pantalones</item>
+        <item>paraguas</item>
+        <item>pareo</item>
+        <item>pasaporte</item>
+        <item>pasta de dientes</item>
+        <item>pañuelo</item>
+        <item>pegamento</item>
+        <item>peine</item>
+        <item>pelota</item>
+        <item>películas</item>
+        <item>perfume</item>
+        <item>periódico</item>
+        <item>pijama</item>
+        <item>pilas</item>
+        <item>protector solar</item>
+        <item>quitapelusas</item>
+        <item>regalos</item>
+        <item>repelente de insectos</item>
+        <item>revistas</item>
+        <item>ropa</item>
+        <item>ropa deportiva</item>
+        <item>ropa interior</item>
+        <item>saco de dormir</item>
+        <item>sudadera</item>
+        <item>tacones</item>
+        <item>tampones</item>
+        <item>tangas</item>
+        <item>tarjeta de crédito</item>
+        <item>tarjeta de débito</item>
+        <item>tennis</item>
+        <item>tienda de campaña</item>
+        <item>toallitas húmedas</item>
+        <item>traje de natación</item>
+        <item>velas</item>
+        <item>vestido</item>
+        <item>vitaminas</item>
+        <item>zapatos</item>
+    </string-array>
+    <string name="title_activity_nuevo_itinerario">NuevoItinerario</string>
+    <string name="title_activity_nuevo_equipaje">NuevoEquipaje</string>
+    <string name="title_activity_configuracion">Configuracion</string>
 
 </resources>
+
+

@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivanco.tasmc.ListServicios">
+    <include
+        android:id="@+id/app_bar_infoa"
+        layout="@layout/app_bar_infa" />
+
+    <ListView
+        android:layout_below="@id/app_bar_infoa"
+        android:id="@+id/listser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>

@@ -91,5 +91,6 @@
     <color name="divisorConf">#B6B6B6</color>
 
     <color name="colorControlHighLight">#B6B6B6</color>
-
+    <drawable name="highlight_pressed">#98dff3</drawable>
+    <drawable name="highlight_focused">#b9e6f3</drawable>
 </resources>

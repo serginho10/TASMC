@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vivanco.tasmc" >
 
+    <permission
+        android:name="com.example.vivanco.tasmc.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.vivanco.tasmc.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -131,6 +138,35 @@
             android:name=".ListActividades"
             android:label="@string/title_activity_list_actividades"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Mapa"
+            android:label="@string/title_activity_mapa" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoAicm" />
+        </activity>
+        <activity
+            android:name=".ListServicios"
+            android:label="@string/title_activity_list_servicios" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoAicm" />
+        </activity>
+        <activity
+            android:name=".NuevoItinerario"
+            android:label="@string/title_activity_nuevo_itinerario" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Itinerario" />
+        </activity>
+        <activity
+            android:name=".NuevoEquipaje"
+            android:label="@string/title_activity_nuevo_equipaje" >
+        </activity>
+        <activity
+            android:name=".Configuracion"
+            android:label="@string/title_activity_configuracion" >
         </activity>
 
     </application>

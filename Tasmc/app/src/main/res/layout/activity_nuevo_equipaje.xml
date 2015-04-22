@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivanco.tasmc.NuevoEquipaje">
+
+    <include
+        android:id="@+id/app_bar_equi"
+        layout="@layout/app_bar_eq" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:id="@+id/nombre"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/app_bar_equi"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/equipaje"
+        android:hint="Obligatorio"
+        android:layout_alignTop="@+id/nombre"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/nombre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icono:"
+        android:id="@+id/icono"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/nombre"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/icono" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guarda"
+        android:src="@drawable/saveb"
+        android:layout_alignBottom="@+id/app_bar_equi"
+        android:layout_alignEnd="@+id/equipaje" />
+
+</RelativeLayout>

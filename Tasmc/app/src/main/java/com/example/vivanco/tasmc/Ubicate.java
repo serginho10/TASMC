@@ -2,6 +2,7 @@ package com.example.vivanco.tasmc;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -19,21 +20,26 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.indooratlas.android.CalibrationState;
+import com.indooratlas.android.ImagePoint;
 import com.indooratlas.android.IndoorAtlas;
 import com.indooratlas.android.IndoorAtlasException;
 import com.indooratlas.android.IndoorAtlasFactory;
@@ -46,6 +52,12 @@ import java.util.ArrayList;
 public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
 
     private ImageView imHir;
+    RelativeLayout.LayoutParams par;
+    Display pantalla;
+    double ancho;
+    double alto;
+    double factorx;
+    double factory;
 
     private static final String TAG = "MainActivity";
 
@@ -59,12 +71,12 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     private String mVenueId = "4734dee1-ea26-417b-8839-aea0f69ae9c7";
     private String mFloorId = "f54a022d-fd7a-4b94-a08c-bd675e7adcb3";
     private String mFloorPlanId = "033fa463-4449-4a08-8a5f-f56b469976e5";
-
+    ImageView main;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ubicate);
-        ImageView main = (ImageView) findViewById(R.id.main);
+        main = (ImageView) findViewById(R.id.main);
         main.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //main.setScaleType(ImageView.ScaleType.MATRIX);
         main.setImageResource(R.drawable.plantaalta);
@@ -73,10 +85,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //imHir.setScaleType(ImageView.ScaleType.MATRIX);
         imHir.setImageResource(R.drawable.agregar);
-        imHir.getLayoutParams().height = 30;
-        imHir.getLayoutParams().width = 30;
-        imHir.setX(300);
-        imHir.setY(800);
+        imHir.getLayoutParams().height = 5;
+        imHir.getLayoutParams().width = 5;
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
         setSupportActionBar(toolbar);
@@ -85,8 +95,36 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        pantalla = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        ancho = pantalla.getWidth();
+        alto = pantalla.getHeight();
+        factorx = (double) (ancho / (7111.0));
+        factory = (double) ((alto/2.285714285714286) / (1961.0));
+
+        Button b = new Button(this);
+        b.setText("Sergio Barajas");
+        b.setOnClickListener(mThisButtonListener);
+
+        RelativeLayout zv = (RelativeLayout) findViewById(R.id.zv);
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins((int)(ancho/2),(int)(alto/2),0,0);
+        zv.addView(b,lp);
+        ViewGroup.LayoutParams params = b.getLayoutParams();
+        params.height = 10;
+        params.width = 10;
+        b.setLayoutParams(params);
+
         initIndoorAtlas();
     }
+
+    private View.OnClickListener mThisButtonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(getApplicationContext(), "Hello !",
+                    Toast.LENGTH_LONG).show();
+        }
+    };
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -225,16 +263,24 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
                 .append("\n\tJ [pixel] : ").append(state.getImagePoint().getJ())
                 .append("\n\theading : ").append(state.getHeadingDegrees())
                 .append("\n\tuncertainty: ").append(state.getUncertainty())
-                .append("\n\tqueue: ").append(state.getMessagesInQueue());
+                .append("\n\tqueue: ").append(state.getMessagesInQueue())
+                .append("\n\tancho: ").append(ancho)
+                .append("\n\talto: ").append(alto);
 
         log(mSharedBuilder.toString());
-        mover(state.getImagePoint().getI(), state.getImagePoint().getJ());
+        setImagePoint(state.getImagePoint());
     }
 
-    public void mover(int x, int y){
-        Matrix m = new Matrix();
-        m.postTranslate(x,y);
-        imHir.setImageMatrix(m);
+    private void setImagePoint(final ImagePoint imgPt) {
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                ImageView imgPoint = (ImageView) findViewById(R.id.aimHir);
+                imgPoint.setX((int)Math.round(imgPt.getI()*factorx));
+                imgPoint.setY(((int)Math.round(imgPt.getJ()*factory))+540);
+            }
+        });
     }
 
     @Override
@@ -267,7 +313,6 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
 
         log("onCalibrationStatus: event: " + calibrationState.getCalibrationEvent()
                 + ", percentage: " + calibrationState.getPercentage());
-
     }
 
     @Override
@@ -287,6 +332,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     @Override
     public void onCalibrationReady() {
         log("onCalibrationReady");
+        Toast.makeText(getApplicationContext(),"Calibración Lista",Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT);
         startPositioning();
     }
 

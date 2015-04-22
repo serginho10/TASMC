@@ -103,33 +103,38 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView4"
         android:src="@drawable/mapa"
-        android:layout_below="@+id/textView5"
+        android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:textColor="@color/primarioTexto"
+    <Button
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mapa"
         android:id="@+id/textView6"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:background="@color/acentuadoInfoA"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView4"
+        android:onClick="lanzar"/>
 
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:id="@+id/imageView11"
         android:src="@drawable/compras"
-        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/textView9"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:textColor="@color/primarioTexto"
+    <Button
+        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Servicios"
         android:id="@+id/textView9"
-        android:layout_alignTop="@+id/imageView11"
-        android:layout_alignStart="@+id/textView6" />
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:background="@color/acentuadoInfoA"
+        android:onClick="lanza"/>
 
 </RelativeLayout>

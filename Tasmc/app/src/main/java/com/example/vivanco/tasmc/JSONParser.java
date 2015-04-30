@@ -10,9 +10,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by ISC_SERGIO on 25/03/15.
- */
 public class JSONParser {
     private Activity activity;
     private JSONObject jObject;

@@ -6,4 +6,5 @@
         android:icon="@drawable/share"
         android:showAsAction="always"
         android:title="Compartir" />
+
 </menu>

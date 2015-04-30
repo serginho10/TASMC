@@ -79,7 +79,7 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         main = (ImageView) findViewById(R.id.main);
         main.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //main.setScaleType(ImageView.ScaleType.MATRIX);
-        main.setImageResource(R.drawable.plantaalta);
+        main.setImageResource(R.drawable.pa);
 
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);

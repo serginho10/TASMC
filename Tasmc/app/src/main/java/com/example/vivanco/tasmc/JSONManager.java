@@ -12,9 +12,6 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * Created by ISC_SERGIO on 25/03/15.
- */
 public class JSONManager {
 
     public static JSONObject getJSONfromURL(String url) {

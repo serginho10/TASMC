@@ -6,9 +6,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class SubActivity extends ActionBarActivity {
+
+    ImageView logo;
+    TextView version;
+    TextView fecha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +26,10 @@ public class SubActivity extends ActionBarActivity {
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        logo=(ImageView)findViewById(R.id.logo);
+        version=(TextView)findViewById(R.id.version);
+        fecha=(TextView)findViewById(R.id.fecha);
+
     }
 
 

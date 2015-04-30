@@ -1,8 +1,5 @@
 package com.example.vivanco.tasmc;
 
-/**
- * Created by ISC_SERGIO on 28/03/15.
- */
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

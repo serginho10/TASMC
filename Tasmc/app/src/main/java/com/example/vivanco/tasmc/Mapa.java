@@ -1,52 +1,44 @@
 package com.example.vivanco.tasmc;
 
-import android.graphics.Matrix;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.NavUtils;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.ScaleGestureDetector;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
 public class Mapa extends ActionBarActivity {
 
-    ScaleGestureDetector sgd;
-    Matrix matrix;
-    ImageView imagen;
+    private ViewPager mPager;
+    private SlidingTabLayout mTabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_infoa);
         setSupportActionBar(toolbar);
-        imagen = (ImageView) findViewById(R.id.pa);
-        imagen.setImageResource(R.drawable.ducks);
-        matrix = new Matrix();
-        sgd=new ScaleGestureDetector(this,new ScaleListener());
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        sgd.onTouchEvent(event);
-        return super.onTouchEvent(event);
-    }
+        mPager = (ViewPager) findViewById(R.id.pager);
+        mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+        mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
+        mTabs.setViewPager(mPager);
 
-    /* opciones en el menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_mapa, menu);
-        return true;
     }
-*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -67,15 +59,49 @@ public class Mapa extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
-        @Override
-        public boolean onScale(ScaleGestureDetector detector) {
-            float SF = detector.getScaleFactor();
-            SF = Math.max(0.1f, Math.min(SF, 0.5f));
-            matrix.setScale(SF, SF);
-            imagen.setImageMatrix(matrix);
-            return true;
+    class MyPagerAdapter extends FragmentPagerAdapter {
 
+        String[] tab;
+
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+            tab = getResources().getStringArray(R.array.tab);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            Fragment fragment = null;
+            if (position == 0) {
+                fragment = new PA();
+            }
+            if (position == 1) {
+                fragment = new PB();
+            }
+            return fragment;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return tab[position];
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
         }
     }
+
+    public static class MyFragment extends Fragment {
+        public static MyFragment getInstance(int position) {
+            MyFragment fragment = new MyFragment();
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            View layout = inflater.inflate(R.layout.fragment_p, container, false);
+            return layout;
+        }
+    }
+
 }

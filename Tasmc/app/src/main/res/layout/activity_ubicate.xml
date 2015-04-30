@@ -34,12 +34,8 @@
             <ImageView
                 android:id="@+id/aimHir"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            </ImageView>
-
+                android:layout_height="wrap_content"></ImageView>
         </RelativeLayout>
-
     </com.example.vivanco.tasmc.ZoomView>
-
 
 </RelativeLayout>

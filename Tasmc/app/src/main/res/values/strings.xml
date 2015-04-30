@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="configurar">Configuración</string>
     <string name="app_name">TASMC</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -22,10 +23,22 @@
     <string name="title_activity_equipaje">Equipaje</string>
     <string name="title_activity_ida">Ida</string>
     <string name="title_activity_ida__vuelta">Ida_Vuelta</string>
+    <string name="title_activity_reconfigura">Configuración</string>
     <string-array name="tabs">
         <item>IDA</item>
         <item>IDA Y VUELTA</item>
     </string-array>
+    <string-array name="tab">
+        <item>Planta Alta</item>
+        <item>Planta Baja</item>
+    </string-array>
+    <string-array name="tabv">
+        <item>Llegadas Nacionales</item>
+        <item>Llegadas Internacionales</item>
+        <item>Salidas Nacionales</item>
+        <item>Salidas Internacionales</item>
+    </string-array>
+
     <string name="title_activity_list_actividades">ListActividades</string>
     <string name="title_activity_mapa">Mapa</string>
     <string name="title_activity_list_servicios">Servicios</string>
@@ -618,7 +631,12 @@
     </string-array>
     <string name="title_activity_nuevo_itinerario">NuevoItinerario</string>
     <string name="title_activity_nuevo_equipaje">NuevoEquipaje</string>
-    <string name="title_activity_configuracion">Configuracion</string>
+    <string name="title_activity_configuracion">TASMC</string>
+    <string name="title_activity_hoteles_disponibles">HotelesDisponibles</string>
+    <string name="title_activity_p">PA</string>
+    <string name="title_activity_pb">PB</string>
+    <string name="title_activity_vuelos_disponibles">VuelosDisponibles</string>
+    <string name="title_activity_info_mi_vuelo">InfoMiVuelo</string>
 
 </resources>
 

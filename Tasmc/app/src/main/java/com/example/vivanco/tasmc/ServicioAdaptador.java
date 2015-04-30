@@ -1,11 +1,15 @@
 package com.example.vivanco.tasmc;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * Created by VIVANCO on 14/04/2015.
@@ -16,8 +20,8 @@ public class ServicioAdaptador extends ArrayAdapter<String>{
     String[] nombreServ;
     String[] giroServ;
 
-    public ServicioAdaptador(Context context, String[] nombres, String[] giros) {
-        super(context, R.layout.elementos_list_servicios, R.id.nombre,nombres);
+    public ServicioAdaptador(Context context, String[] nombres,String[] giros) {
+        super(context,R.layout.elementos_list_servicios,R.id.nombre,nombres);
         this.context=context;
         this.nombreServ=nombres;
         this.giroServ=giros;

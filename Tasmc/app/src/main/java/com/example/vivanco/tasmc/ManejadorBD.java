@@ -1,10 +1,7 @@
 package com.example.vivanco.tasmc;
 
-/**
- * Created by VIVANCO on 17/03/2015.
- */
-
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -18,38 +15,59 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //Creacion tabla usuario
-        db.execSQL("CREATE TABLE usuario ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "email TEXT,"
-                + "categoria TEXT," + " clase TEXT)");
-
-        //Creacion tabla vuelo
-        db.execSQL("CREATE TABLE vuelo ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "categoria TEXT,"
-                + "fechaSalida TEXT," + " fechaLlegada TEXT," + "origen TEXT,"
-                + "destino INTEGER," + "estado TEXT," + "horaSalida TEXT,"
-                + "horaLlegada TEXT," + "terminal TEXT," + "puerta TEXT)");
-
-        //Creacion tabla actividad
-        db.execSQL("CREATE TABLE actividad ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT,"
-                + "fecha TEXT)");
-
-        //Creacion tabla objeto
-        db.execSQL("CREATE TABLE objeto ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT)");
+        //Creacion tabla itinerario
+        db.execSQL("CREATE TABLE itinerario ("
+                + "idItinerario INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT)");
 
         //Creacion tabla equipaje
         db.execSQL("CREATE TABLE equipaje ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT,"
-                + "categoria TEXT)");
+                + "idEquipaje INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT)");
 
-        //Creacion tabla itinerario
-        db.execSQL("CREATE TABLE itinerario ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "destino TEXT)");
-        //Creacion tabla servicio
-        db.execSQL("CREATE TABLE servicio ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT" + "giro TEXT)");
+        //Creacion tabla objeto
+        db.execSQL("CREATE TABLE objeto ("
+                + "idObjeto INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, categoria TEXT)");
+
+        //Creacion tabla actividad
+        db.execSQL("CREATE TABLE actividad ("
+                + "idActividad INTEGER,nombre TEXT,"
+                + "idItinerario INTEGER," +
+                " PRIMARY KEY(idActividad,idItinerario)," +
+                "FOREIGN KEY(idItinerario) REFERENCES itinerario(idItinerario))");
+
+        //Crea tabla Equipaje_has_Objeto
+        db.execSQL("" +
+                "CREATE TABLE Equipaje_has_Objeto(" +
+                "Equipaje_idEquipaje INTEGER," +
+                "Objeto_idObjeto INTEGER," +
+                "PRIMARY KEY(Equipaje_idEquipaje,Objeto_idObjeto)," +
+                "FOREIGN KEY(Equipaje_idEquipaje) REFERENCES equipaje(idEquipaje)," +
+                "FOREIGN KEY(Objeto_idObjeto) REFERENCES objeto(idObjeto))");
+
+        //Creacion tabla usuario
+        db.execSQL("CREATE TABLE usuario ("
+                + "idUsuario INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "email TEXT,"
+                + "catPref TEXT,"
+                + "clasePref TEXT, "
+                + "tipo TEXT,"
+                + "tipoVuelo TEXT," +
+                "Itinerario_idItinerario INTEGER," +
+                "Equipaje_idEquipaje INTEGER,"
+                + "FOREIGN KEY(Itinerario_idItinerario) REFERENCES itinerario(idItinerario),"
+                + "FOREIGN KEY(Equipaje_idEquipaje) REFERENCES equipaje(idEquipaje))");
+
+        //Creacion tabla vuelo
+        db.execSQL("CREATE TABLE vuelo ("
+                + "idVUelo INTEGER PRIMARY KEY AUTOINCREMENT, " + "clase TEXT,"
+                + "fechaSalida TEXT," + " fechaLlegada TEXT," + "origen TEXT,"
+                + "destino TEXT," + "numero TEXT," + "estado TEXT," + "horaSalida TEXT,"
+                + "horaLlegada TEXT," + "terminal INTEGER," + "puerta INTEGER," +
+                "Usuario_idUsuario INTEGER," +
+                "FOREIGN KEY(Usuario_idUsuario) REFERENCES usuario(idUsuario))");
+
+        db.execSQL("INSERT INTO equipaje VALUES ( null, 'default' )");
+
+        db.execSQL("INSERT INTO itinerario VALUES ( null, 'default' )");
     }
 
 
@@ -61,14 +79,19 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS objeto");
         db.execSQL("DROP TABLE IF EXISTS equipaje");
         db.execSQL("DROP TABLE IF EXISTS itinerario");
-        db.execSQL("DROP TABLE IF EXISTS servicio");
+        db.execSQL("DROP TABLE IF EXISTS Equipaje_has_Objeto");
         onCreate(db);
     }
 
     public void guardarUsuario(Usuario usuario) {
         db = getWritableDatabase();
+        if(existeUsuario())
+            db.execSQL("delete from usuario");
         db.execSQL("INSERT INTO usuario VALUES ( null,'" + usuario.getEmail() + "','"
-                + usuario.getCategoria() + "','" + usuario.getClase() + "')");
+                + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "','"
+                + usuario.getTipoVuelo() + "','" + usuario.getItinerario_idItinerario()
+                + "','" + usuario.getEquipaje_idEquipaje() + "')");
+
     }
 
     public void guardarVuelo(Vuelo vuelo) {
@@ -82,8 +105,8 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarActividad(Actividad actividad) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO actividad VALUES ( null,'" + actividad.getNombre() + "','"
-                + actividad.getFecha() + "')");
+        //db.execSQL("INSERT INTO actividad VALUES ( null,'" + actividad.getNombre() + "','"
+          //      + actividad.getFecha() + "')");
     }
 
 
@@ -100,7 +123,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "')");
+       // db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "')");
     }
 
     public void guardarServicio(Servicio servicio) {
@@ -119,7 +142,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public void borrarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
         //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
-        db.delete("itinerario", "id=?", new String[]{Integer.toString(itinerario.getId())});
+      //  db.delete("itinerario", "id=?", new String[]{Integer.toString(itinerario.getId())});
     }
 
     public void borrarVuelo(Vuelo vuelo) {
@@ -168,5 +191,23 @@ public class ManejadorBD extends SQLiteOpenHelper {
     */
     public void closeDatabase() {
         db.close();
+    }
+
+    public boolean existeUsuario() {
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from usuario",null);
+        if (c.moveToFirst()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public Usuario getUsuario() {
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from usuario",null);
+        c.moveToFirst();
+        return new Usuario(c.getInt(0),c.getString(1),c.getString(2),c.getString(3),c.getString(4),c.getString(5),
+                c.getInt(6),c.getInt(7));
     }
 }

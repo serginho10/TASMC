@@ -144,5 +144,21 @@
         android:layout_alignBottom="@+id/textView13"
         android:layout_alignStart="@+id/menosHab" />
 
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imageView17"
+        android:layout_below="@+id/imageView15"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/star" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoria"
+        android:layout_alignTop="@+id/imageView17"
+        android:layout_alignStart="@+id/huespedes" />
+
 
 </RelativeLayout>

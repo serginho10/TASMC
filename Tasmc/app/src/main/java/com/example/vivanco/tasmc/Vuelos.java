@@ -35,6 +35,7 @@ public class Vuelos extends ActionBarActivity {
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
+        mTabs.setDistributeEvenly(true);
         mTabs.setViewPager(mPager);
 
 

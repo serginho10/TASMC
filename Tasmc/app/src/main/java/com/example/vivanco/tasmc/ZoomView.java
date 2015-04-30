@@ -1,11 +1,5 @@
 package com.example.vivanco.tasmc;
 
-/**
- * Created by ISC_SERGIO on 14/04/15.
- */
-/**
- * Created by ISC_SERGIO on 14/04/15.
- */
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -53,7 +47,7 @@ public class ZoomView extends FrameLayout {
 
     // zooming
     float zoom = 1.0f;
-    float maxZoom = 50.0f;
+    float maxZoom = 100.0f;
     float smoothZoom = 1.0f;
     float zoomX, zoomY;
     float smoothZoomX, smoothZoomY;

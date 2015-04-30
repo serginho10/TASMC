@@ -6,6 +6,8 @@ package com.example.vivanco.tasmc;
 public class Vuelo {
     private int id;
     private String categoria;
+    private String aerolinea;
+    private String vuelo;
     private String fechaSalida;
     private String fechaLlegada;
     private String origen;
@@ -16,9 +18,11 @@ public class Vuelo {
     private String terminal;
     private String puerta;
 
-    public Vuelo(int id, String categoria, String fechaSalida, String fechaLlegada, String origen, String destino, String estado, String horaSalida, String horaLlegada, String terminal, String puerta) {
+    public Vuelo(int id, String categoria, String aerolinea, String vuelo, String fechaSalida, String fechaLlegada, String origen, String destino, String estado, String horaSalida, String horaLlegada, String terminal, String puerta) {
         this.id = id;
         this.categoria = categoria;
+        this.aerolinea = aerolinea;
+        this.vuelo = vuelo;
         this.fechaSalida = fechaSalida;
         this.fechaLlegada = fechaLlegada;
         this.origen = origen;
@@ -28,23 +32,6 @@ public class Vuelo {
         this.horaLlegada = horaLlegada;
         this.terminal = terminal;
         this.puerta = puerta;
-    }
-
-    @Override
-    public String toString() {
-        return "Vuelo{" +
-                "id=" + id +
-                ", categoria='" + categoria + '\'' +
-                ", fechaSalida='" + fechaSalida + '\'' +
-                ", fechaLlegada='" + fechaLlegada + '\'' +
-                ", origen='" + origen + '\'' +
-                ", destino='" + destino + '\'' +
-                ", estado='" + estado + '\'' +
-                ", horaSalida='" + horaSalida + '\'' +
-                ", horaLlegada='" + horaLlegada + '\'' +
-                ", terminal='" + terminal + '\'' +
-                ", puerta='" + puerta + '\'' +
-                '}';
     }
 
     public int getId() {
@@ -61,6 +48,22 @@ public class Vuelo {
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
+    }
+
+    public String getAerolinea() {
+        return aerolinea;
+    }
+
+    public void setAerolinea(String aerolinea) {
+        this.aerolinea = aerolinea;
+    }
+
+    public String getVuelo() {
+        return vuelo;
+    }
+
+    public void setVuelo(String vuelo) {
+        this.vuelo = vuelo;
     }
 
     public String getFechaSalida() {
@@ -133,5 +136,24 @@ public class Vuelo {
 
     public void setPuerta(String puerta) {
         this.puerta = puerta;
+    }
+
+    @Override
+    public String toString() {
+        return "Vuelo{" +
+                "id=" + id +
+                ", categoria='" + categoria + '\'' +
+                ", aerolinea='" + aerolinea + '\'' +
+                ", vuelo='" + vuelo + '\'' +
+                ", fechaSalida='" + fechaSalida + '\'' +
+                ", fechaLlegada='" + fechaLlegada + '\'' +
+                ", origen='" + origen + '\'' +
+                ", destino='" + destino + '\'' +
+                ", estado='" + estado + '\'' +
+                ", horaSalida='" + horaSalida + '\'' +
+                ", horaLlegada='" + horaLlegada + '\'' +
+                ", terminal='" + terminal + '\'' +
+                ", puerta='" + puerta + '\'' +
+                '}';
     }
 }

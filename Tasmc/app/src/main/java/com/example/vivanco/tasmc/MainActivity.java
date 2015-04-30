@@ -53,6 +53,9 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.navigate) {
             startActivity(new Intent(this, SubActivity.class));
         }
+        if (id == R.id.configurar){
+            startActivity(new Intent(this, Reconfigura.class));
+        }
         return super.onOptionsItemSelected(item);
     }
 }

@@ -1,12 +1,16 @@
 package com.example.vivanco.tasmc;
 
+import android.app.ListActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class Equipaje extends ActionBarActivity {
+
+public class Equipaje extends ListActivity {
 
     private int id;
     private String nombre;
@@ -51,10 +55,20 @@ public class Equipaje extends ActionBarActivity {
         this.categoria = categoria;
     }
 
+    List<RenglonCheck> rows ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipaje);
+        rows = new ArrayList<RenglonCheck>(30);
+        RenglonCheck row = null;
+        for (int i = 1; i < 31; i++)
+        {
+            row = new RenglonCheck();
+            row.setObjeto("Objeto " + i);
+            rows.add(row);
+        }
+        setListAdapter(new CustomArrayAdapter(this, rows));
     }
 
 

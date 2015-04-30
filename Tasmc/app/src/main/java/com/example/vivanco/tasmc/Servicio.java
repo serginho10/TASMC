@@ -5,20 +5,22 @@ package com.example.vivanco.tasmc;
  */
 public class Servicio {
     private int id;
+    private String categoria;
     private String nombre;
     private String giro;
 
-    public Servicio(int id, String nombre, String giro) {
+    public Servicio(int id, String categoria, String nombre, String giro) {
         this.id = id;
+        this.categoria = categoria;
         this.nombre = nombre;
         this.giro = giro;
     }
 
     @Override
-    public String
-    toString() {
+    public String toString() {
         return "Servicio{" +
                 "id=" + id +
+                ", categoria='" + categoria + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", giro='" + giro + '\'' +
                 '}';
@@ -30,6 +32,14 @@ public class Servicio {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public String getNombre() {

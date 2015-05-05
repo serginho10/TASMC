@@ -61,7 +61,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + "idVUelo INTEGER PRIMARY KEY AUTOINCREMENT, " + "clase TEXT,"
                 + "fechaSalida TEXT," + " fechaLlegada TEXT," + "origen TEXT,"
                 + "destino TEXT," + "numero TEXT," + "estado TEXT," + "horaSalida TEXT,"
-                + "horaLlegada TEXT," + "terminal INTEGER," + "puerta INTEGER," +
+                + "horaLlegada TEXT," + "terminal TEXT," + "puerta TEXT," + "escalas TEXT," + "tiempo TEXT," +
                 "Usuario_idUsuario INTEGER," +
                 "FOREIGN KEY(Usuario_idUsuario) REFERENCES usuario(idUsuario))");
 
@@ -100,7 +100,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
                 + vuelo.getOrigen() + "','" + vuelo.getDestino() + "','" + vuelo.getEstado() + "','"
                 + vuelo.getHoraSalida() + "','" + vuelo.getHoraLlegada() + "','" + vuelo.getTerminal() + "','"
-                + vuelo.getPuerta() + "')");
+                + vuelo.getPuerta() + "','" + vuelo.getEscalas() + "','"+ vuelo.getTiempo() + "')");
     }
 
     public void guardarActividad(Actividad actividad) {

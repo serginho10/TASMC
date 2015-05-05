@@ -21,7 +21,8 @@
         android:layout_alignTop="@+id/logoAir"
         android:layout_marginStart="35dp"
         android:layout_toEndOf="@+id/logoAir"
-        android:text="MEX" />
+        android:text="MEX"
+        android:textColor="@color/divisor"/>
 
     <TextView
         android:id="@+id/horaSalida"
@@ -30,7 +31,8 @@
         android:layout_alignBottom="@+id/logoAir"
         android:layout_below="@+id/origen"
         android:layout_marginLeft="65dp"
-        android:text="12:10" />
+        android:text="12:10"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,7 +50,8 @@
         android:id="@+id/vuelo"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="@color/acentuadoVuelo"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -56,7 +59,8 @@
         android:text="Total"
         android:id="@+id/total"
         android:layout_below="@+id/vuelo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/divisor"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,7 +76,8 @@
         android:text="Directo"
         android:id="@+id/escalas"
         android:layout_below="@+id/tiempo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/acentuadoVuelo"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,6 +86,16 @@
         android:id="@+id/destino"
         android:layout_alignTop="@+id/origen"
         android:layout_alignEnd="@+id/fecha"
-        android:layout_marginEnd="38dp" />
+        android:layout_marginEnd="38dp"
+        android:textColor="@color/divisor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14:11"
+        android:id="@+id/horaLlegada"
+        android:layout_alignTop="@+id/horaSalida"
+        android:layout_alignStart="@+id/destino"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

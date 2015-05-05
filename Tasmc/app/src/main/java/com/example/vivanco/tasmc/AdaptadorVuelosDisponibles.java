@@ -51,17 +51,19 @@ public class AdaptadorVuelosDisponibles extends RecyclerView.Adapter<AdaptadorVu
         holder.vuelo.setText(currentVuelo.getVuelo());
         holder.origen.setText(currentVuelo.getOrigen());
         holder.horaSalida.setText(currentVuelo.getHoraSalida());
-        holder.horaSalida.setText(currentVuelo.getHoraLlegada());
+        holder.horaLlegada.setText(currentVuelo.getHoraLlegada());
         holder.tiempo.setText(currentVuelo.getEscalas());
         holder.escalas.setText(currentVuelo.getTiempo());
+        holder.destino.setText(currentVuelo.getDestino());
+        holder.fecha.setText(currentVuelo.getFechaSalida());
 
-        holder.estrellas.setRating(currentVuelo.getEstrellas() / 20.0f);
-        String urlImagen = currentHotel.getUrlImagen();
+
+        String urlImagen = currentVuelo.getAerolinea();
         if (urlImagen != null) {
             imageLoader.get(urlImagen, new ImageLoader.ImageListener() {
                 @Override
                 public void onResponse(ImageLoader.ImageContainer response, boolean isImmediate) {
-                    holder.imagen.setImageBitmap(response.getBitmap());
+                    holder.logoAir.setImageBitmap(response.getBitmap());
                 }
 
                 @Override

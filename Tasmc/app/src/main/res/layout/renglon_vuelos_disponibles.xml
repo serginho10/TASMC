@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/logoAir"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/aeromexico" />
+
+    <TextView
+        android:id="@+id/origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logoAir"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/logoAir"
+        android:text="MEX" />
+
+    <TextView
+        android:id="@+id/horaSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logoAir"
+        android:layout_below="@+id/origen"
+        android:layout_marginLeft="65dp"
+        android:text="12:10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="viernes 22 de mayo de 2015"
+        android:id="@+id/fecha"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDA"
+        android:id="@+id/vuelo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:id="@+id/total"
+        android:layout_below="@+id/vuelo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04hs 01m"
+        android:id="@+id/tiempo"
+        android:layout_below="@+id/total"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directo"
+        android:id="@+id/escalas"
+        android:layout_below="@+id/tiempo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAS"
+        android:id="@+id/destino"
+        android:layout_alignTop="@+id/origen"
+        android:layout_alignEnd="@+id/fecha"
+        android:layout_marginEnd="38dp" />
+
+</RelativeLayout>

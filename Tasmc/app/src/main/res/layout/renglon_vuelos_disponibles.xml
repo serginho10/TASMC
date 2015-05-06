@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/principal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/principal">
+    android:orientation="vertical">
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -79,243 +79,237 @@
     </android.support.v7.widget.CardView>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vuelos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/vuelos"
-        android:layout_below="@id/card_view_precio">
+        android:layout_below="@id/card_view_precio"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="IDA"
-        android:id="@+id/ida"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#fce0280b"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/logoAiri" />
+        <TextView
+            android:id="@+id/ida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/logoAiri"
+            android:text="IDA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fce0280b" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="viernes 22 de mayo de 2015"
-        android:id="@+id/fechai"
-        android:layout_marginEnd="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/fechai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="50dp"
+            android:text="viernes 22 de mayo de 2015" />
 
-    <ImageView
-        android:layout_gravity = "center_horizontal"
-        android:layout_below="@id/ida"
-        android:layout_height = "wrap_content"
-        android:layout_width = "fill_parent"
-        android:src="#fce0280b"
-        android:id="@+id/dividerIda"
-        />
+        <ImageView
+            android:id="@+id/dividerIda"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ida"
+            android:layout_gravity="center_horizontal"
+            android:src="#fce0280b" />
 
 
-    <ImageView
-        android:id="@+id/logoAiri"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="42dp"
-        android:src="@drawable/aeromexico" />
+        <ImageView
+            android:id="@+id/logoAiri"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/aeromexico" />
 
 
-    <TextView
-        android:id="@+id/origeni"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/logoAiri"
-        android:layout_marginStart="35dp"
-        android:layout_toEndOf="@+id/logoAiri"
-        android:text="MEX"
-        android:textColor="@color/divisor"/>
+        <TextView
+            android:id="@+id/origeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logoAiri"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/logoAiri"
+            android:text="MEX"
+            android:textColor="@color/divisor" />
 
-    <TextView
-        android:id="@+id/horaSalidai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/logoAiri"
-        android:layout_below="@+id/origeni"
-        android:layout_marginLeft="65dp"
-        android:text="12:10"
-        android:textStyle="bold"/>
-
-
+        <TextView
+            android:id="@+id/horaSalidai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logoAiri"
+            android:layout_below="@+id/origeni"
+            android:layout_marginLeft="65dp"
+            android:text="12:10"
+            android:textStyle="bold" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total"
-        android:id="@+id/totali"
-        android:layout_below="@+id/dividerIda"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/divisor"
-        android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/totali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerIda"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Total"
+            android:textColor="@color/divisor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="04hs 01m"
-        android:id="@+id/tiempoi"
-        android:layout_below="@+id/totali"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/tiempoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totali"
+            android:layout_centerHorizontal="true"
+            android:text="04hs 01m" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Directo"
-        android:id="@+id/escalasi"
-        android:textColor="@color/acentuado"
-        android:layout_below="@+id/tiempoi"
-        android:layout_alignStart="@+id/escalasv" />
+        <TextView
+            android:id="@+id/escalasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/escalasv"
+            android:layout_below="@+id/tiempoi"
+            android:text="Directo"
+            android:textColor="@color/acentuado" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LAS"
-        android:id="@+id/destinoi"
-        android:textColor="@color/divisor"
-        android:layout_above="@+id/horaSalidai"
-        android:layout_alignEnd="@+id/fechai"
-        android:layout_marginEnd="27dp" />
+        <TextView
+            android:id="@+id/destinoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/horaSalidai"
+            android:layout_alignEnd="@+id/fechai"
+            android:layout_marginEnd="27dp"
+            android:text="LAS"
+            android:textColor="@color/divisor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="14:11"
-        android:id="@+id/horaLlegadai"
-        android:textStyle="bold"
-        android:layout_below="@+id/destinoi"
-        android:layout_alignStart="@+id/destinoi" />
+        <TextView
+            android:id="@+id/horaLlegadai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/destinoi"
+            android:layout_below="@+id/destinoi"
+            android:text="14:11"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:id="@+id/avioni"
-        android:src="@drawable/ic_next"
-        android:layout_above="@+id/dividerIda"
-        android:layout_alignParentStart="true"
-        android:paddingTop="@dimen/margin_top"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VUELTA"
-        android:id="@+id/vuelta"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#fc024bb4"
-        android:layout_alignTop="@+id/avionv"
-        android:layout_toEndOf="@+id/logoAiri" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="domingo 24 de mayo de 2015"
-        android:id="@+id/fechav"
-        android:layout_alignTop="@+id/vuelta"
-        android:layout_alignStart="@+id/tiempov" />
-
-    <ImageView
-        android:layout_gravity = "center_horizontal"
-        android:layout_height = "wrap_content"
-        android:layout_width = "fill_parent"
-        android:src="#fc024bb4"
-        android:id="@+id/dividerVuelta"
-        android:layout_below="@+id/avionv"
-        android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/avioni"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_above="@+id/dividerIda"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ida" />
 
 
-    <ImageView
-        android:id="@+id/logoAirv"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/aeromexico"
-        android:layout_below="@+id/totalv"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/vuelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avionv"
+            android:layout_toEndOf="@+id/logoAiri"
+            android:text="VUELTA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fc024bb4" />
+
+        <TextView
+            android:id="@+id/fechav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tiempov"
+            android:layout_alignTop="@+id/vuelta"
+            android:text="domingo 24 de mayo de 2015" />
+
+        <ImageView
+            android:id="@+id/dividerVuelta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/avionv"
+            android:layout_gravity="center_horizontal"
+            android:src="#fc024bb4" />
 
 
-    <TextView
-        android:id="@+id/origenv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MEX"
-        android:textColor="@color/divisor"
-        android:layout_alignTop="@+id/logoAirv"
-        android:layout_alignStart="@+id/origeni" />
-
-    <TextView
-        android:id="@+id/horaSalidav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/logoAirv"
-        android:layout_below="@+id/origenv"
-        android:layout_marginLeft="65dp"
-        android:text="12:10"
-        android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/logoAirv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/totalv"
+            android:src="@drawable/aeromexico" />
 
 
+        <TextView
+            android:id="@+id/origenv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/origeni"
+            android:layout_alignTop="@+id/logoAirv"
+            android:text="MEX"
+            android:textColor="@color/divisor" />
+
+        <TextView
+            android:id="@+id/horaSalidav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logoAirv"
+            android:layout_below="@+id/origenv"
+            android:layout_marginLeft="65dp"
+            android:text="12:10"
+            android:textStyle="bold" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total"
-        android:id="@+id/totalv"
-        android:layout_below="@+id/dividerVuelta"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/divisor"
-        android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/totalv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerVuelta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Total"
+            android:textColor="@color/divisor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="04hs 01m"
-        android:id="@+id/tiempov"
-        android:layout_below="@+id/totalv"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/tiempov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalv"
+            android:layout_centerHorizontal="true"
+            android:text="04hs 01m" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Directo"
-        android:id="@+id/escalasv"
-        android:layout_below="@+id/tiempov"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/acentuado"/>
+        <TextView
+            android:id="@+id/escalasv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tiempov"
+            android:layout_centerHorizontal="true"
+            android:text="Directo"
+            android:textColor="@color/acentuado" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LAS"
-        android:id="@+id/destinov"
-        android:textColor="@color/divisor"
-        android:layout_above="@+id/horaSalidav"
-        android:layout_toEndOf="@+id/tiempov"
-        android:layout_marginLeft="60dp"/>
+        <TextView
+            android:id="@+id/destinov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/horaSalidav"
+            android:layout_marginLeft="60dp"
+            android:layout_toEndOf="@+id/tiempov"
+            android:text="LAS"
+            android:textColor="@color/divisor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="14:11"
-        android:id="@+id/horaLlegadav"
-        android:textStyle="bold"
-        android:layout_alignBottom="@+id/horaSalidav"
-        android:layout_alignStart="@+id/horaLlegadai" />
+        <TextView
+            android:id="@+id/horaLlegadav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/horaSalidav"
+            android:layout_alignStart="@+id/horaLlegadai"
+            android:text="14:11"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:id="@+id/avionv"
-        android:src="@drawable/ic_abstract"
-        android:layout_below="@+id/logoAiri"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
+        <ImageView
+            android:id="@+id/avionv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/logoAiri"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/vuelta" />
 
-</RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>

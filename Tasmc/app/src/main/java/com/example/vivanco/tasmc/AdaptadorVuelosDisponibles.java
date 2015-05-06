@@ -96,15 +96,15 @@ public class AdaptadorVuelosDisponibles extends RecyclerView.Adapter<AdaptadorVu
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            logoAir = (ImageView) itemView.findViewById(R.id.logoAir);
+            logoAir = (ImageView) itemView.findViewById(R.id.logoAiri);
             vuelo = (TextView) itemView.findViewById(R.id.vuelo);
             origen = (TextView) itemView.findViewById(R.id.origen);
-            horaSalida = (TextView) itemView.findViewById(R.id.horaSalida);
-            total = (TextView) itemView.findViewById(R.id.total);
-            tiempo = (TextView) itemView.findViewById(R.id.tiempo);
-            escalas = (TextView) itemView.findViewById(R.id.escalas);
+            horaSalida = (TextView) itemView.findViewById(R.id.horaSalidai);
+            total = (TextView) itemView.findViewById(R.id.totali);
+            tiempo = (TextView) itemView.findViewById(R.id.tiempoi);
+            escalas = (TextView) itemView.findViewById(R.id.escalasi);
             destino = (TextView) itemView.findViewById(R.id.destino);
-            horaLlegada = (TextView) itemView.findViewById(R.id.horaLlegada);
+            horaLlegada = (TextView) itemView.findViewById(R.id.horaLlegadai);
             fecha = (TextView) itemView.findViewById(R.id.fecha);
 
 

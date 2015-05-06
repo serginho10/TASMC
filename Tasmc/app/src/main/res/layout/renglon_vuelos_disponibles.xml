@@ -197,10 +197,10 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:id="@+id/avioni"
-        android:src="@drawable/ida"
+        android:src="@drawable/ic_next"
         android:layout_above="@+id/dividerIda"
         android:layout_alignParentStart="true"
-        android:paddingTop=""/>
+        android:paddingTop="@dimen/margin_top"/>
 
 
     <TextView
@@ -312,7 +312,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:id="@+id/avionv"
-        android:src="@drawable/vuelta"
+        android:src="@drawable/ic_abstract"
         android:layout_below="@+id/logoAiri"
         android:layout_alignParentStart="true"
         android:layout_marginTop="32dp" />

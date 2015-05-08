@@ -16,7 +16,7 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
     Spinner habitaciones;
     Spinner categorias;
     String[] ophuesped = new String[]{"1 persona", "2 personas", "3 personas", "4 personas", "5 personas"};
-    String[] ophabita = new String[]{"1 habitación", "2 habitaciones", "3 habitaciones", "4 habitaciones", "5 habitaciones"};
+    String[] ophabita = new String[]{"1 habitacion", "2 habitaciones", "3 habitaciones", "4 habitaciones", "5 habitaciones"};
     String[] opcatego = new String[]{"1 estrella", "2 estrellas", "3 estrellas", "4 estrellas", "5 estrellas"};
 
     @Override

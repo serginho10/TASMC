@@ -61,89 +61,6 @@
         android:layout_marginTop="48dp"
         android:src="@drawable/huespedes" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="1"
-        android:id="@+id/habitaciones"
-        android:layout_marginStart="29dp"
-        android:layout_alignBottom="@+id/imageView14"
-        android:layout_toEndOf="@+id/imageView14"
-        android:textColor="@color/primarioTexto"
-        android:textSize="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Habitacion"
-        android:id="@+id/textView11"
-        android:layout_alignTop="@+id/habitaciones"
-        android:layout_toEndOf="@+id/habitaciones"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/primarioTexto"
-        android:textSize="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="1"
-        android:id="@+id/huespedes"
-        android:layout_alignBottom="@+id/imageView15"
-        android:layout_alignStart="@+id/habitaciones"
-        android:textColor="@color/primarioTexto"
-        android:textSize="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Huésped"
-        android:id="@+id/textView13"
-        android:layout_alignBottom="@+id/huespedes"
-        android:layout_alignStart="@+id/textView11"
-        android:textColor="@color/primarioTexto"
-        android:textSize="16dp" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/masHab"
-        android:layout_alignBottom="@+id/imageView14"
-        android:layout_centerHorizontal="true"
-        android:text="-" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/menosHab"
-        android:layout_marginStart="38dp"
-        android:layout_alignTop="@+id/masHab"
-        android:layout_toEndOf="@+id/masHab"
-        android:text="+" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:id="@+id/menosHues"
-        android:layout_alignBottom="@+id/textView13"
-        android:layout_alignStart="@+id/masHab" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"
-        android:id="@+id/masHues"
-        android:layout_alignBottom="@+id/textView13"
-        android:layout_alignStart="@+id/menosHab" />
-
     <ImageView
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -157,8 +74,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/categoria"
-        android:layout_alignTop="@+id/imageView17"
-        android:layout_alignStart="@+id/huespedes" />
+        android:layout_below="@+id/huespedes"
+        android:layout_toEndOf="@+id/imageView17" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/habitaciones"
+        android:layout_above="@+id/imageView15"
+        android:layout_toEndOf="@+id/imageView14" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/huespedes"
+        android:layout_above="@+id/imageView17"
+        android:layout_toEndOf="@+id/imageView14" />
 
 
 </RelativeLayout>

@@ -7,20 +7,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 
 public class Hoteles extends ActionBarActivity implements View.OnClickListener {
 
-    TextView habitaciones;
-    TextView huespedes;
-    Button masHues;
-    Button menosHues;
-    Button masHab;
-    Button menosHab;
+    Spinner huespedes;
+    Spinner habitaciones;
     Spinner categorias;
+    String[] ophuesped = new String[]{"1 persona", "2 personas", "3 personas", "4 personas", "5 personas"};
+    String[] ophabita = new String[]{"1 habitación", "2 habitaciones", "3 habitaciones", "4 habitaciones", "5 habitaciones"};
     String[] opcatego = new String[]{"1 estrella", "2 estrellas", "3 estrellas", "4 estrellas", "5 estrellas"};
 
     @Override
@@ -35,17 +31,23 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        habitaciones = (TextView) findViewById(R.id.habitaciones);
-        huespedes = (TextView) findViewById(R.id.huespedes);
-        masHab = (Button) findViewById(R.id.masHab);
-        menosHab = (Button) findViewById(R.id.menosHab);
-        masHues = (Button) findViewById(R.id.masHues);
-        menosHues = (Button) findViewById(R.id.menosHues);
+        //spinner huespedes
+        huespedes = (Spinner) findViewById(R.id.huespedes);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ophuesped);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        huespedes.setAdapter(dataAdapter);
+
+        //spinner habitaciones
+        habitaciones = (Spinner) findViewById(R.id.habitaciones);
+        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ophabita);
+        dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        habitaciones.setAdapter(dataAdapter1);
+
         //spinner hotel estrellas
         categorias = (Spinner) findViewById(R.id.categoria);
-        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcatego);
-        dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        categorias.setAdapter(dataAdapter1);
+        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcatego);
+        dataAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        categorias.setAdapter(dataAdapter2);
 
     }
 

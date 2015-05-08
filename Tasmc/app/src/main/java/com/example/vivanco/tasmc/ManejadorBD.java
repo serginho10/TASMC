@@ -58,10 +58,10 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
         //Creacion tabla vuelo
         db.execSQL("CREATE TABLE vuelo ("
-                + "idVUelo INTEGER PRIMARY KEY AUTOINCREMENT, " + "clase TEXT,"
+                + "idVUelo INTEGER PRIMARY KEY AUTOINCREMENT, " + "categoria TEXT," + "aerolinea TEXT," + "vuelo TEXT,"
                 + "fechaSalida TEXT," + " fechaLlegada TEXT," + "origen TEXT,"
-                + "destino TEXT," + "numero TEXT," + "estado TEXT," + "horaSalida TEXT,"
-                + "horaLlegada TEXT," + "terminal TEXT," + "puerta TEXT," + "escalas TEXT," + "tiempo TEXT," +
+                + "destino TEXT," + "estado TEXT," + "horaSalida TEXT,"
+                + "horaLlegada TEXT," + "terminal TEXT," + "puerta TEXT," + "escalas TEXT," + "tiempo TEXT," +  "precio TEXT,"+
                 "Usuario_idUsuario INTEGER," +
                 "FOREIGN KEY(Usuario_idUsuario) REFERENCES usuario(idUsuario))");
 
@@ -96,11 +96,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarVuelo(Vuelo vuelo) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCategoria() + "','"
-                + vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
+        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCategoria() + "','"+ vuelo.getAerolinea() + "','"
+                + vuelo.getVuelo() + "','"+ vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
                 + vuelo.getOrigen() + "','" + vuelo.getDestino() + "','" + vuelo.getEstado() + "','"
                 + vuelo.getHoraSalida() + "','" + vuelo.getHoraLlegada() + "','" + vuelo.getTerminal() + "','"
-                + vuelo.getPuerta() + "','" + vuelo.getEscalas() + "','"+ vuelo.getTiempo() + "')");
+                + vuelo.getPuerta() + "','" + vuelo.getTiempo() + "','"+ vuelo.getEscalas() + "')");
     }
 
     public void guardarActividad(Actividad actividad) {

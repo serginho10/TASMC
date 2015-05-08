@@ -19,8 +19,9 @@ public class Vuelo {
     private String puerta;
     private String tiempo;
     private String escalas;
+    private String precio;
 
-    public Vuelo(int id, String categoria, String aerolinea, String vuelo, String fechaSalida, String fechaLlegada, String origen, String destino, String estado, String horaSalida, String horaLlegada, String terminal, String puerta, String tiempo, String escalas) {
+    public Vuelo(int id, String categoria, String aerolinea, String vuelo, String fechaSalida, String fechaLlegada, String origen, String destino, String estado, String horaSalida, String horaLlegada, String terminal, String puerta, String tiempo, String escalas, String precio) {
         this.id = id;
         this.categoria = categoria;
         this.aerolinea = aerolinea;
@@ -36,6 +37,7 @@ public class Vuelo {
         this.puerta = puerta;
         this.tiempo = tiempo;
         this.escalas = escalas;
+        this.precio = precio;
     }
 
     public int getId() {
@@ -158,6 +160,14 @@ public class Vuelo {
         this.escalas = escalas;
     }
 
+    public String getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(String precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
         return "Vuelo{" +
@@ -176,6 +186,7 @@ public class Vuelo {
                 ", puerta='" + puerta + '\'' +
                 ", tiempo='" + tiempo + '\'' +
                 ", escalas='" + escalas + '\'' +
+                ", precio='" + precio + '\'' +
                 '}';
     }
 }

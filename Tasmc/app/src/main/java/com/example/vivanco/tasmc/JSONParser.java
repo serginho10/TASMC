@@ -53,8 +53,6 @@ public class JSONParser {
         logo = new Bitmap[objetosArray.length()];
         for(int i = 0; i < objetosArray.length(); i++){
             res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
-            byte[] byteData = Base64.decode(objetosArray.getJSONObject(i).getString("logo"), Base64.DEFAULT);
-            logo[i] = BitmapFactory.decodeByteArray(byteData, 0, byteData.length);
         }
     }
 

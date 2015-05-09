@@ -5,6 +5,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ManejadorBD extends SQLiteOpenHelper {
     private SQLiteDatabase db;
 
@@ -91,6 +100,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "','"
                 + usuario.getTipoVuelo() + "','" + usuario.getItinerario_idItinerario()
                 + "','" + usuario.getEquipaje_idEquipaje() + "')");
+        HttpClient httpclient = new DefaultHttpClient();
+        HttpPost httppost = new HttpPost("http://www.tasmc.16mb.com/service.php");
+        List<NameValuePair> params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("email",usuario.getEmail()));
+        params.add(new BasicNameValuePair("categoria",usuario.getCategoria()));
 
     }
 

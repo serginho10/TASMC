@@ -162,9 +162,9 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
             TextView titulo = (TextView) row.findViewById(R.id.tituloEquipaje);
             TextView objs = (TextView) row.findViewById(R.id.objetosEquipaje);
 
-            logo.setImageResource(imagenes[position]);
+            logo.setImageResource(imagenes[2]);
             titulo.setText(titleArray[position]);
-            objs.setText(desc[position]);
+            objs.setText(desc[2]);
 
             return row;
         }

@@ -6,14 +6,18 @@
         android:id="@+id/configurar"
         android:title="@string/configurar"
         android:orderInCategory="200"
-        android:icon="@drawable/ic_next"
-        android:showAsAction="ifRoom"
+       android:showAsAction="ifRoom"
         />
     <item
         android:id="@+id/navigate"
         android:title="@string/acerca_de"
         android:orderInCategory="200"
-        android:icon="@drawable/ic_next"
+        android:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/traducir"
+        android:title="@string/traducir"
+        android:orderInCategory="200"
         android:showAsAction="ifRoom"
         />
 </menu>

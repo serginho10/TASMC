@@ -33,9 +33,18 @@
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="$100"
+        android:text="100"
         android:id="@+id/precio"
         android:layout_below="@+id/nombre"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/pesos"
+        android:layout_below="@+id/nombre"
+        android:layout_toStartOf="@+id/precio" />
 
 </RelativeLayout>

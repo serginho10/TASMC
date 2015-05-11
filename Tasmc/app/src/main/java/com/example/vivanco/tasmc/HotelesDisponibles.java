@@ -34,6 +34,7 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
     private AdaptadorLocalHotel adaptadorHoteles;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private static ArrayList<Integer> removedItems;
+    private TextView textPesos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,8 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
         mSwipeRefreshLayout.setOnRefreshListener(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_hotel);
         setSupportActionBar(toolbar);
+        textPesos = (TextView) findViewById(R.id.pesos);
+
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);

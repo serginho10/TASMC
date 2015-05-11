@@ -91,5 +91,25 @@
         android:layout_above="@+id/imageView17"
         android:layout_toEndOf="@+id/imageView14" />
 
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/fechain"
+        android:hint="Fecha entrada"
+        android:layout_above="@+id/imageView14"
+        android:layout_alignStart="@+id/habitaciones" />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/fechaout"
+        android:hint="Fecha salida"
+        android:layout_alignTop="@+id/fechain"
+        android:layout_alignParentEnd="true" />
+
 
 </RelativeLayout>

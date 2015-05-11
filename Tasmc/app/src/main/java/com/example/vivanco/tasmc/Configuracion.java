@@ -1,23 +1,20 @@
 package com.example.vivanco.tasmc;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
-import android.view.Menu;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.AbsoluteLayout;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Configuracion extends ActionBarActivity {
@@ -25,14 +22,36 @@ public class Configuracion extends ActionBarActivity {
     String[] opcatego = new String[]{"1 estrella", "2 estrellas", "3 estrellas", "4 estrellas", "5 estrellas"};
     Spinner clases;
     String[] opclase = new String[]{"Económico", "Económico Premium", "Business", "Primera"};
+    TextView textEmail;
+    TextView textClase;
+    TextView textCatego;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configurar);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
+        toolbar.setLogo(R.drawable.avionblan); //logo
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
+
+        //Enviamos mensaje de bienvenida
+        Toast toast = new Toast(this);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        LayoutInflater inflater = getLayoutInflater();
+        View appeareance = inflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.mensaje));
+        toast.setView(appeareance);
+        toast.show();
+
+        //Poner texto al textview determinado
+        textEmail = (TextView) findViewById(R.id.textEmail);
+        textClase = (TextView) findViewById(R.id.textClase);
+        textCatego = (TextView) findViewById(R.id.textCatego);
+
         final ManejadorBD bd = new ManejadorBD(getApplicationContext());
-        if(bd.existeUsuario())
+        if (bd.existeUsuario())
             startActivity(new Intent(this, MainActivity.class));
 
         final EditText ETemail = (EditText) findViewById(R.id.email);
@@ -43,8 +62,8 @@ public class Configuracion extends ActionBarActivity {
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario usuario = new Usuario(1,ETemail.getText().toString(),categorias.getSelectedItem().toString(),
-                        clases.getSelectedItem().toString(),"usuario","vuelo",1,1);
+                Usuario usuario = new Usuario(1, ETemail.getText().toString(), categorias.getSelectedItem().toString(),
+                        clases.getSelectedItem().toString(), "usuario", "vuelo", 1, 1);
                 bd.guardarUsuario(usuario);
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -63,21 +82,13 @@ public class Configuracion extends ActionBarActivity {
         btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario usuario = new Usuario(1,"","",
-                        "","usuario","vuelo",1,1);
+                Usuario usuario = new Usuario(1, "", "",
+                        "", "usuario", "vuelo", 1, 1);
                 bd.guardarUsuario(usuario);
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_configuracion, menu);
-        return true;
     }
 
     @Override

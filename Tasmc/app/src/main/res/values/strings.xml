@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="configurar">Configuración</string>
+    <string name="configurar">Configuración Personal</string>
     <string name="app_name">TASMC</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -23,7 +23,7 @@
     <string name="title_activity_equipaje">Equipaje</string>
     <string name="title_activity_ida">Ida</string>
     <string name="title_activity_ida__vuelta">Ida_Vuelta</string>
-    <string name="title_activity_reconfigura">Configuración</string>
+    <string name="title_activity_reconfigura">Configuración Personal</string>
     <string-array name="tabs">
         <item>IDA</item>
         <item>IDA Y VUELTA</item>

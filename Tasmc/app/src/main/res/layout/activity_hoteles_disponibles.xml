@@ -11,6 +11,7 @@
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeHoteles"
+        android:layout_below="@+id/app_bar_hotel"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

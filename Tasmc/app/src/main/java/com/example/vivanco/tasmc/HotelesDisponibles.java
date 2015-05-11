@@ -3,6 +3,7 @@ package com.example.vivanco.tasmc;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -26,10 +27,11 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
 
     private static RecyclerView recyclerView;
     private RecyclerView listHoteles;
-    private ArrayList<Hotel> hoteles=new ArrayList<>();
+    //private ArrayList<Hotel> hoteles=new ArrayList<>();
+    private ArrayList<LocalHotel> hoteles;
     private ImageLoader imageLoader;
     private VolleySingleton volleySingleton;
-    private AdaptadorHotelesDisponibles adaptadorHoteles;
+    private AdaptadorLocalHotel adaptadorHoteles;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private static ArrayList<Integer> removedItems;
 
@@ -40,7 +42,21 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
         //Inicializamos con el adaptador de hoteles
         listHoteles = (RecyclerView) findViewById(R.id.listHoteles);
         listHoteles.setLayoutManager(new LinearLayoutManager(this));
-        adaptadorHoteles=new AdaptadorHotelesDisponibles(this);
+        listHoteles.setHasFixedSize(true);
+        listHoteles.setItemAnimator(new DefaultItemAnimator());
+        hoteles = new ArrayList<LocalHotel>();
+        for (int i = 0; i < HotelData.nombre.length; i++) {
+            hoteles.add(new LocalHotel(
+                    HotelData.id[i],
+                    HotelData.imagen[i],
+                    HotelData.nombre[i],
+                    HotelData.estrellas[i],
+                    HotelData.precio[i]
+                    ));
+        }
+        removedItems = new ArrayList<Integer>();
+
+        adaptadorHoteles=new AdaptadorLocalHotel(hoteles);
         listHoteles.setAdapter(adaptadorHoteles);
         mSwipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.swipeHoteles);
         mSwipeRefreshLayout.setOnRefreshListener(this);
@@ -117,4 +133,5 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
     public void onRefresh() {
 
     }
+
 }

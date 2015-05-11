@@ -38,7 +38,7 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
         adaptadorHoteles=new AdaptadorHotelesDisponibles(this);
         listHoteles.setAdapter(adaptadorHoteles);
         mSwipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.swipeHoteles);
-       mSwipeRefreshLayout.setOnRefreshListener(this);
+        mSwipeRefreshLayout.setOnRefreshListener(this);
 
     }
 
@@ -105,7 +105,7 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
 
     @Override
     public void onClick(View v) {
-        
+
     }
 
     @Override

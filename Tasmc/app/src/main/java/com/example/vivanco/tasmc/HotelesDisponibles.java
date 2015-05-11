@@ -5,10 +5,12 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -17,16 +19,19 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class HotelesDisponibles extends ActionBarActivity implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 
+    private static RecyclerView recyclerView;
     private RecyclerView listHoteles;
     private ArrayList<Hotel> hoteles=new ArrayList<>();
     private ImageLoader imageLoader;
     private VolleySingleton volleySingleton;
     private AdaptadorHotelesDisponibles adaptadorHoteles;
     private SwipeRefreshLayout mSwipeRefreshLayout;
+    private static ArrayList<Integer> removedItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,13 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
         listHoteles.setAdapter(adaptadorHoteles);
         mSwipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.swipeHoteles);
         mSwipeRefreshLayout.setOnRefreshListener(this);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_hotel);
+        setSupportActionBar(toolbar);
+
+        //Habilita el boton para ir a la actividad principal en el Toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        buildFAB();
 
     }
 
@@ -79,13 +91,6 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
                 .addSubActionView(btnPrecio)
                 .attachTo(actionButton)
                 .build();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_hoteles_disponibles, menu);
-        return true;
     }
 
     @Override

@@ -102,7 +102,8 @@
             android:layout_alignParentStart="true"
             android:background="@color/acentuadoVuelo"
             android:text="Buscar Vuelos"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:onClick="buscar"/>
 
         <Spinner
             android:id="@+id/pasajeros"

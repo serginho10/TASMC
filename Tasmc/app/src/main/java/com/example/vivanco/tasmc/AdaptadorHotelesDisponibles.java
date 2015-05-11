@@ -34,6 +34,7 @@ public class AdaptadorHotelesDisponibles extends RecyclerView.Adapter<AdaptadorH
         imageLoader = volleySingleton.getImageLoader();
     }
 
+
     public void setHotelList(ArrayList<Hotel> listHoteles) {
         this.listHoteles = listHoteles;
         notifyItemRangeChanged(0, listHoteles.size());

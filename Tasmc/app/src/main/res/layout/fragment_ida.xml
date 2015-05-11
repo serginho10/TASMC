@@ -10,149 +10,123 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:id="@+id/imageView5"
-            android:src="@drawable/ubicacion"
-            android:layout_below="@+id/app_bar_vuelo"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="31dp" />
+            android:layout_below="@+id/app_bar_vuelo"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/ubicacion" />
 
         <TextView
+            android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Desde"
-            android:id="@+id/textView7"
             android:layout_above="@+id/editText"
-            android:layout_alignStart="@+id/editText" />
+            android:layout_alignStart="@+id/editText"
+            android:text="Desde" />
 
         <EditText
+            android:id="@+id/editText"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:hint="Ubicacion Actual"
             android:layout_alignTop="@+id/imageView5"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Ubicacion Actual"
+            android:inputType="textPersonName" />
 
         <ImageView
+            android:id="@+id/imageView6"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:id="@+id/imageView6"
-            android:layout_below="@+id/imageView5"
+            android:layout_alignEnd="@+id/imageView5"
             android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
             android:layout_marginTop="42dp"
-            android:src="@drawable/ubicacion"
             android:layout_toStartOf="@+id/editText"
-            android:layout_alignEnd="@+id/imageView5" />
+            android:src="@drawable/ubicacion" />
 
         <TextView
+            android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A"
-            android:id="@+id/textView8"
             android:layout_above="@+id/editText2"
-            android:layout_alignStart="@+id/editText" />
+            android:layout_alignStart="@+id/editText"
+            android:text="A" />
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
             android:id="@+id/editText2"
-            android:layout_alignTop="@+id/imageView6"
-            android:layout_alignStart="@+id/textView8"
-            android:hint="San Francisco(SFO)"
-            android:layout_alignEnd="@+id/editText" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:id="@+id/imageView7"
-            android:src="@drawable/calendar"
-            android:layout_marginTop="37dp"
-            android:layout_below="@+id/editText2"
-            android:layout_alignParentStart="true" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:id="@+id/imageView8"
-            android:src="@drawable/persona"
-            android:layout_marginTop="37dp"
-            android:layout_below="@+id/imageView7"
-            android:layout_alignParentStart="true" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:id="@+id/imageView9"
-            android:layout_marginTop="37dp"
-            android:src="@drawable/money"
-            android:layout_below="@+id/imageView8"
-            android:layout_alignParentStart="true" />
-
-        <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/clase"
-            android:layout_alignTop="@+id/imageView9"
-            android:layout_alignEnd="@+id/editText2"
-            android:layout_toEndOf="@+id/textView8" />
+            android:layout_alignEnd="@+id/editText"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_alignTop="@+id/imageView6"
+            android:ems="10"
+            android:hint="San Francisco(SFO)"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/persona" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/money" />
 
         <Button
+            android:id="@+id/vuelos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buscar Vuelos"
-            android:id="@+id/vuelos"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:background="@color/acentuadoVuelo"
+            android:text="Buscar Vuelos"
             android:textColor="@android:color/white" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="1"
+        <Spinner
             android:id="@+id/pasajeros"
-            android:layout_above="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignStart="@+id/clase"
-            android:textColor="@color/primarioTexto"
-            android:textSize="16dp" />
+            android:layout_alignTop="@+id/imageView8" />
 
-        <TextView
+        <Spinner
+            android:id="@+id/clase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Pasajero"
-            android:id="@+id/textView10"
-            android:layout_above="@+id/imageView9"
-            android:layout_toEndOf="@+id/pasajeros"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/primarioTexto"
-            android:textSize="16dp" />
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignTop="@+id/imageView9" />
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/fechaida"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="-"
-            android:id="@+id/menosPas"
-            android:layout_above="@+id/imageView9"
-            android:layout_centerHorizontal="true" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:id="@+id/masPas"
-            android:layout_above="@+id/imageView9"
-            android:layout_toEndOf="@+id/menosPas"
-            android:layout_marginStart="33dp" />
+            android:layout_above="@+id/imageView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:ems="10"
+            android:hint="Fecha Ida"
+            android:inputType="date" />
 
     </RelativeLayout>
 

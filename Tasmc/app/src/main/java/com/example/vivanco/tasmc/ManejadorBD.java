@@ -61,7 +61,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + "email TEXT PRIMARY KEY,"
                 + "catPref TEXT,"
                 + "clasePref TEXT, "
-                + "tipo TEXT,"
+                + "tipo TEXT," +
                 "Itinerario_idItinerario INTEGER," +
                 "Equipaje_idEquipaje INTEGER,"
                 + "FOREIGN KEY(Itinerario_idItinerario) REFERENCES itinerario(idItinerario),"
@@ -220,7 +220,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db = getReadableDatabase();
         Cursor c = db.rawQuery("select * from usuario",null);
         c.moveToFirst();
-        return new Usuario(c.getInt(0),c.getString(1),c.getString(2),c.getString(3),c.getString(4),c.getString(5),
-                c.getInt(6),c.getInt(7));
+        return new Usuario(c.getString(0),c.getString(1),c.getString(2),c.getString(3),
+                c.getInt(4),c.getInt(5));
     }
 }

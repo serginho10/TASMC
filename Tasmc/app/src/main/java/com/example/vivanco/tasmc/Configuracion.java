@@ -62,8 +62,8 @@ public class Configuracion extends ActionBarActivity {
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario usuario = new Usuario(1, ETemail.getText().toString(), categorias.getSelectedItem().toString(),
-                        clases.getSelectedItem().toString(), "usuario", "vuelo", 1, 1);
+                Usuario usuario = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
+                        clases.getSelectedItem().toString(), "usuario", 1, 1);
                 bd.guardarUsuario(usuario);
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -82,8 +82,8 @@ public class Configuracion extends ActionBarActivity {
         btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario usuario = new Usuario(1, "", "",
-                        "", "usuario", "vuelo", 1, 1);
+                Usuario usuario = new Usuario("", "",
+                        "", "usuario", 1, 1);
                 bd.guardarUsuario(usuario);
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));

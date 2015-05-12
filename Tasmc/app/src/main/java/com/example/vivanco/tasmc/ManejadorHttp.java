@@ -45,5 +45,6 @@ public class ManejadorHttp extends AsyncTask{
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return usr;
     }
 }

@@ -33,14 +33,23 @@ public class AdaptadorLocalVuelo extends RecyclerView.Adapter<AdaptadorLocalVuel
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         LocalVuelo currentVuelo = listVuelos.get(position);
         holder.precio.setText(currentVuelo.getPrecio());
-        holder.fechai.setText(currentVuelo.getFecha());
-        holder.logoAiri.setImageResource(currentVuelo.getAerolinea());
-        holder.origeni.setText(currentVuelo.getFecha());
-        holder.horaSalidai.setText(currentVuelo.getFecha());
-        holder.destinoi.setText(currentVuelo.getFecha());
-        holder.horaLlegadai.setText(currentVuelo.getFecha());
-        holder.tiempoi.setText(currentVuelo.getFecha());
-        holder.escalasi.setText(currentVuelo.getFecha());
+        holder.fechai.setText(currentVuelo.getFechai());
+        holder.logoAiri.setImageResource(currentVuelo.getAerolineai());
+        holder.origeni.setText(currentVuelo.getOrigeni());
+        holder.horaSalidai.setText(currentVuelo.getHoraSalidai());
+        holder.destinoi.setText(currentVuelo.getDestinoi());
+        holder.horaLlegadai.setText(currentVuelo.getHoraLlegadai());
+        holder.tiempoi.setText(currentVuelo.getTiempoi());
+        holder.escalasi.setText(currentVuelo.getEscalasi());
+       //vuelta
+        holder.fechav.setText(currentVuelo.getFechav());
+        holder.logoAirv.setImageResource(currentVuelo.getAerolineav());
+        holder.origenv.setText(currentVuelo.getOrigenv());
+        holder.horaSalidav.setText(currentVuelo.getHoraSalidav());
+        holder.destinov.setText(currentVuelo.getDestinov());
+        holder.horaLlegadav.setText(currentVuelo.getHoraLlegadav());
+        holder.tiempov.setText(currentVuelo.getTiempov());
+        holder.escalasv.setText(currentVuelo.getEscalasv());
 
 
     }

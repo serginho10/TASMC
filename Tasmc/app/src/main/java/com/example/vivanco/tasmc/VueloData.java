@@ -6,7 +6,7 @@ package com.example.vivanco.tasmc;
 public class VueloData {
     //general
     static Integer[] id = {0, 1, 2};
-    static String[] precio = {"$5000", "$8900", "$3400"};
+    static String[] precio = {"5000", "8900", "3400"};
     //Ida
     static String[] fechai = {"viernes 22 de mayo de 2015", "lunes 11 de mayo de 2015", "jueves 14 de mayo de 2015"};
     static Integer[] logoAiri = {R.drawable.aeromexico, R.drawable.aeromexico, R.drawable.interjet};

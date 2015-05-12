@@ -1,5 +1,6 @@
 package com.example.vivanco.tasmc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -103,6 +104,11 @@ public class Vuelos extends ActionBarActivity {
             View layout = inflater.inflate(R.layout.ida, container, false);
             return layout;
         }
+    }
+
+    public void buscar(View view){
+        Intent intent=new Intent(this,VuelosDisponibles.class);
+        startActivity(intent);
     }
 
 }

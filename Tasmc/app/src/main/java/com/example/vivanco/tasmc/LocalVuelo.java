@@ -6,26 +6,42 @@ package com.example.vivanco.tasmc;
 public class LocalVuelo {
     private int id;
     private String precio;
-    private String fecha;
-    private int aerolinea;
-    private String origen;
-    private String destino;
-    private String horaSalida;
-    private String horaLlegada;
-    private String tiempo;
-    private String escalas;
+    private String fechai;
+    private int aerolineai;
+    private String origeni;
+    private String horaSalidai;
+    private String destinoi;
+    private String horaLlegadai;
+    private String tiempoi;
+    private String escalasi;
+    private String fechav;
+    private int aerolineav;
+    private String origenv;
+    private String horaSalidav;
+    private String destinov;
+    private String horaLlegadav;
+    private String tiempov;
+    private String escalasv;
 
-    public LocalVuelo(int id, String precio, String fecha, int aerolinea, String origen, String destino, String horaSalida, String horaLlegada, String tiempo, String escalas) {
+    public LocalVuelo(int id, String precio, String fechai, int aerolineai, String origeni, String horaSalidai, String destinoi, String horaLlegadai, String tiempoi, String escalasi, String fechav, int aerolineav, String origenv, String horaSalidav, String destinov, String horaLlegadav, String tiempov, String escalasv) {
         this.id = id;
         this.precio = precio;
-        this.fecha = fecha;
-        this.aerolinea = aerolinea;
-        this.origen = origen;
-        this.destino = destino;
-        this.horaSalida = horaSalida;
-        this.horaLlegada = horaLlegada;
-        this.tiempo = tiempo;
-        this.escalas = escalas;
+        this.fechai = fechai;
+        this.aerolineai = aerolineai;
+        this.origeni = origeni;
+        this.horaSalidai = horaSalidai;
+        this.destinoi = destinoi;
+        this.horaLlegadai = horaLlegadai;
+        this.tiempoi = tiempoi;
+        this.escalasi = escalasi;
+        this.fechav = fechav;
+        this.aerolineav = aerolineav;
+        this.origenv = origenv;
+        this.horaSalidav = horaSalidav;
+        this.destinov = destinov;
+        this.horaLlegadav = horaLlegadav;
+        this.tiempov = tiempov;
+        this.escalasv = escalasv;
     }
 
     public int getId() {
@@ -44,68 +60,132 @@ public class LocalVuelo {
         this.precio = precio;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getFechai() {
+        return fechai;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setFechai(String fechai) {
+        this.fechai = fechai;
     }
 
-    public int getAerolinea() {
-        return aerolinea;
+    public int getAerolineai() {
+        return aerolineai;
     }
 
-    public void setAerolinea(int aerolinea) {
-        this.aerolinea = aerolinea;
+    public void setAerolineai(int aerolineai) {
+        this.aerolineai = aerolineai;
     }
 
-    public String getOrigen() {
-        return origen;
+    public String getOrigeni() {
+        return origeni;
     }
 
-    public void setOrigen(String origen) {
-        this.origen = origen;
+    public void setOrigeni(String origeni) {
+        this.origeni = origeni;
     }
 
-    public String getDestino() {
-        return destino;
+    public String getHoraSalidai() {
+        return horaSalidai;
     }
 
-    public void setDestino(String destino) {
-        this.destino = destino;
+    public void setHoraSalidai(String horaSalidai) {
+        this.horaSalidai = horaSalidai;
     }
 
-    public String getHoraSalida() {
-        return horaSalida;
+    public String getDestinoi() {
+        return destinoi;
     }
 
-    public void setHoraSalida(String horaSalida) {
-        this.horaSalida = horaSalida;
+    public void setDestinoi(String destinoi) {
+        this.destinoi = destinoi;
     }
 
-    public String getHoraLlegada() {
-        return horaLlegada;
+    public String getHoraLlegadai() {
+        return horaLlegadai;
     }
 
-    public void setHoraLlegada(String horaLlegada) {
-        this.horaLlegada = horaLlegada;
+    public void setHoraLlegadai(String horaLlegadai) {
+        this.horaLlegadai = horaLlegadai;
     }
 
-    public String getTiempo() {
-        return tiempo;
+    public String getTiempoi() {
+        return tiempoi;
     }
 
-    public void setTiempo(String tiempo) {
-        this.tiempo = tiempo;
+    public void setTiempoi(String tiempoi) {
+        this.tiempoi = tiempoi;
     }
 
-    public String getEscalas() {
-        return escalas;
+    public String getEscalasi() {
+        return escalasi;
     }
 
-    public void setEscalas(String escalas) {
-        this.escalas = escalas;
+    public void setEscalasi(String escalasi) {
+        this.escalasi = escalasi;
+    }
+
+    public String getFechav() {
+        return fechav;
+    }
+
+    public void setFechav(String fechav) {
+        this.fechav = fechav;
+    }
+
+    public int getAerolineav() {
+        return aerolineav;
+    }
+
+    public void setAerolineav(int aerolineav) {
+        this.aerolineav = aerolineav;
+    }
+
+    public String getOrigenv() {
+        return origenv;
+    }
+
+    public void setOrigenv(String origenv) {
+        this.origenv = origenv;
+    }
+
+    public String getHoraSalidav() {
+        return horaSalidav;
+    }
+
+    public void setHoraSalidav(String horaSalidav) {
+        this.horaSalidav = horaSalidav;
+    }
+
+    public String getDestinov() {
+        return destinov;
+    }
+
+    public void setDestinov(String destinov) {
+        this.destinov = destinov;
+    }
+
+    public String getHoraLlegadav() {
+        return horaLlegadav;
+    }
+
+    public void setHoraLlegadav(String horaLlegadav) {
+        this.horaLlegadav = horaLlegadav;
+    }
+
+    public String getTiempov() {
+        return tiempov;
+    }
+
+    public void setTiempov(String tiempov) {
+        this.tiempov = tiempov;
+    }
+
+    public String getEscalasv() {
+        return escalasv;
+    }
+
+    public void setEscalasv(String escalasv) {
+        this.escalasv = escalasv;
     }
 
     @Override
@@ -113,15 +193,22 @@ public class LocalVuelo {
         return "LocalVuelo{" +
                 "id=" + id +
                 ", precio='" + precio + '\'' +
-                ", fecha='" + fecha + '\'' +
-                ", aerolinea=" + aerolinea +
-                ", origen='" + origen + '\'' +
-                ", destino='" + destino + '\'' +
-                ", horaSalida='" + horaSalida + '\'' +
-                ", horaLlegada='" + horaLlegada + '\'' +
-                ", tiempo='" + tiempo + '\'' +
-                ", escalas='" + escalas + '\'' +
+                ", fechai='" + fechai + '\'' +
+                ", aerolineai=" + aerolineai +
+                ", origeni='" + origeni + '\'' +
+                ", horaSalidai='" + horaSalidai + '\'' +
+                ", destinoi='" + destinoi + '\'' +
+                ", horaLlegadai='" + horaLlegadai + '\'' +
+                ", tiempoi='" + tiempoi + '\'' +
+                ", escalasi='" + escalasi + '\'' +
+                ", fechav='" + fechav + '\'' +
+                ", aerolineav=" + aerolineav +
+                ", origenv='" + origenv + '\'' +
+                ", horaSalidav='" + horaSalidav + '\'' +
+                ", destinov='" + destinov + '\'' +
+                ", horaLlegadav='" + horaLlegadav + '\'' +
+                ", tiempov='" + tiempov + '\'' +
+                ", escalasv='" + escalasv + '\'' +
                 '}';
     }
 }
-

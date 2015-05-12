@@ -1,6 +1,6 @@
 package com.example.vivanco.tasmc;
 
-import android.content.Intent;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,13 +9,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 public class Ida_Vuelta extends Fragment {
     Spinner clases;
     String[] opclase = new String[]{"Económico", "Económico Premium", "Business", "Primera"};
     Spinner pasajeros;
-    String[] opasa = new String[]{"1 Pasajero", "2 Pasajeros", "3 Pasajeros", "4 Pasajeros","5 Pasajeros"};
+    String[] opasa = new String[]{"1 Pasajero", "2 Pasajeros", "3 Pasajeros", "4 Pasajeros", "5 Pasajeros"};
 
 
     public Ida_Vuelta() {

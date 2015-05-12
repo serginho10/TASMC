@@ -7,12 +7,10 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
@@ -20,7 +18,6 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class HotelesDisponibles extends ActionBarActivity implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
@@ -53,13 +50,13 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
                     HotelData.nombre[i],
                     HotelData.estrellas[i],
                     HotelData.precio[i]
-                    ));
+            ));
         }
         removedItems = new ArrayList<Integer>();
 
-        adaptadorHoteles=new AdaptadorLocalHotel(hoteles);
+        adaptadorHoteles = new AdaptadorLocalHotel(hoteles);
         listHoteles.setAdapter(adaptadorHoteles);
-        mSwipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.swipeHoteles);
+        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeHoteles);
         mSwipeRefreshLayout.setOnRefreshListener(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_hotel);
         setSupportActionBar(toolbar);

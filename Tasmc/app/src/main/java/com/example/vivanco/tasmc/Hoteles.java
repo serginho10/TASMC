@@ -107,8 +107,8 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
 
     }
 
-    public void buscar(View view){
-        Intent intent=new Intent(this,HotelesDisponibles.class);
+    public void buscar(View view) {
+        Intent intent = new Intent(this, HotelesDisponibles.class);
         startActivity(intent);
     }
 }

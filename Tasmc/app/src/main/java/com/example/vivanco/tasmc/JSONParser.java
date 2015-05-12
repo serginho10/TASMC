@@ -2,6 +2,7 @@ package com.example.vivanco.tasmc;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
@@ -11,17 +12,21 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class JSONParser {
+    private ManejadorBD bd;
     private Activity activity;
     private JSONObject jObject;
     private ProgressDialog progressDialog = null;
     private Runnable runReadAndParseJSON;
     JSONArray objetosArray;
     String[] res;
+    String[] objetos;
+    String[] relacion;
     int[] image;
     Bitmap[] logo;
 
-    public JSONParser(Activity a){
+    public JSONParser(Activity a, Context context){
         activity = a;
+        bd = new ManejadorBD(context);
     }
 
     public void readAndParseJSON(String cadena) throws JSONException {
@@ -44,15 +49,30 @@ public class JSONParser {
         if(jObject != null) {
             objetosArray = jObject.getJSONArray(cadena);
             parseJSON(cadena);
+            objetosArray = jObject.getJSONArray("Objeto");
+            parseJSON(cadena);
+            objetosArray = jObject.getJSONArray("Equipaje_has_Objeto");
+            parseJSON(cadena);
         }
         activity.runOnUiThread(returnRes);
     }
 
     public void parseJSON(String cadena) throws JSONException{
-        res = new String[objetosArray.length()];
-        logo = new Bitmap[objetosArray.length()];
-        for(int i = 0; i < objetosArray.length(); i++){
-            res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
+        if(cadena.compareTo("Equipaje") == 0) {
+            res = new String[objetosArray.length()];
+            for (int i = 0; i < objetosArray.length(); i++) {
+                res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
+            }
+        }else if(cadena.compareTo("Objeto") == 0){
+            objetos = new String[objetosArray.length()];
+            for (int i = 0; i < objetosArray.length(); i++) {
+                res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
+            }
+        }else if(cadena.compareTo("Equipaje_has_Objeto") == 0){
+            relacion = new String[objetosArray.length()];
+            for (int i = 0; i < objetosArray.length(); i++) {
+                res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
+            }
         }
     }
 

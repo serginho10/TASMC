@@ -28,7 +28,7 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
     ListView list;
     String[] titulos;
     String[] descripcion;
-    int[] image = {R.drawable.romantico, R.drawable.familia, R.drawable.business, R.drawable.general, R.drawable.business};
+    int[] image = {R.drawable.business};
     private static final String TAG_NUEVO="nuevo equipaje";
 
     @Override
@@ -57,23 +57,15 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(),"No Conectado",Toast.LENGTH_SHORT).show();
         //Consumiendo web service tasmc
 
-        JSONParser json = new JSONParser(this);
+        JSONParser json = new JSONParser(this,getApplicationContext());
         try {
             json.readAndParseJSON("Equipaje");
+            titulos = json.res;
+            descripcion = json.objetos;
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        while(titulos == null)
-            titulos = json.res;
-
-        //Buscar forma de meter los nuevos
-        descripcion = new String[]{"abridor de botellas, velas y cerillos, perfume",
-                "protector solar, medicamento, comida, juguetes",
-                "pasaporte, traje, computadora",
-                "cargador de celular, efectivo, camara",
-                "mio, tuyo no, todo bien"};
-
-
 
         list = (ListView) findViewById(R.id.listEquipaje);
         AdaptadorEquipaje adaptadorEquipaje = new AdaptadorEquipaje(this, titulos, image, descripcion);
@@ -162,9 +154,9 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
             TextView titulo = (TextView) row.findViewById(R.id.tituloEquipaje);
             TextView objs = (TextView) row.findViewById(R.id.objetosEquipaje);
 
-            logo.setImageResource(imagenes[2]);
+            logo.setImageResource(imagenes[0]);
             titulo.setText(titleArray[position]);
-            objs.setText(desc[2]);
+            objs.setText(desc[position]);
 
             return row;
         }

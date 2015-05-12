@@ -22,12 +22,12 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:text="Desde" />
+            android:layout_above="@+id/origeniv"
+            android:layout_alignStart="@+id/origeniv"
+            android:text="Origen" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/origeniv"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imageView5"
@@ -44,22 +44,22 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView5"
             android:layout_marginTop="42dp"
-            android:layout_toStartOf="@+id/editText"
+            android:layout_toStartOf="@+id/origeniv"
             android:src="@drawable/ubicacion" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/editText2"
-            android:layout_alignStart="@+id/editText"
-            android:text="A" />
+            android:layout_above="@+id/destinoiv"
+            android:layout_alignStart="@+id/origeniv"
+            android:text="Destino" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/destinoiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/editText"
+            android:layout_alignEnd="@+id/origeniv"
             android:layout_alignStart="@+id/textView8"
             android:layout_alignTop="@+id/imageView6"
             android:ems="10"
@@ -71,7 +71,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/editText2"
+            android:layout_below="@+id/destinoiv"
             android:layout_marginTop="37dp"
             android:src="@drawable/calendar" />
 
@@ -102,42 +102,41 @@
             android:layout_alignParentStart="true"
             android:background="@color/acentuadoVuelo"
             android:text="Buscar Vuelos"
-            android:textColor="@android:color/white"
-            android:onClick="buscar"/>
+            android:textColor="@android:color/white" />
 
         <Spinner
-            android:id="@+id/pasajeros"
+            android:id="@+id/pasajerosiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/clase"
+            android:layout_alignStart="@+id/claseiv"
             android:layout_alignTop="@+id/imageView8" />
 
         <Spinner
-            android:id="@+id/clase"
+            android:id="@+id/claseiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText2"
+            android:layout_alignStart="@+id/destinoiv"
             android:layout_alignTop="@+id/imageView9" />
 
         <EditText
+            android:id="@+id/fechaI"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/fechaI"
-            android:hint="Fecha Ida"
             android:layout_above="@+id/imageView8"
-            android:layout_alignStart="@+id/editText2" />
+            android:layout_alignStart="@+id/destinoiv"
+            android:ems="10"
+            android:hint="Fecha Ida"
+            android:inputType="date" />
 
         <EditText
+            android:id="@+id/fechaV"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/fechaV"
-            android:hint="Fecha Vuelta"
             android:layout_alignBottom="@+id/fechaI"
-            android:layout_alignEnd="@+id/editText2" />
+            android:layout_alignEnd="@+id/destinoiv"
+            android:ems="10"
+            android:hint="Fecha Vuelta"
+            android:inputType="date" />
 
     </RelativeLayout>
 

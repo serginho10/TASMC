@@ -21,6 +21,7 @@ public class Vuelos extends ActionBarActivity {
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,8 +107,8 @@ public class Vuelos extends ActionBarActivity {
         }
     }
 
-    public void buscar(View view){
-        Intent intent=new Intent(this,VuelosDisponibles.class);
+    public void buscar(View view) {
+        Intent intent = new Intent(this, VuelosDisponibles.class);
         startActivity(intent);
     }
 

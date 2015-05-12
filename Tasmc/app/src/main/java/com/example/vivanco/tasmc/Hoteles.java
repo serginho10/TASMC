@@ -21,6 +21,9 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
     String[] ophuesped = new String[]{"1 persona", "2 personas", "3 personas", "4 personas", "5 personas"};
     String[] ophabita = new String[]{"1 habitacion", "2 habitaciones", "3 habitaciones", "4 habitaciones", "5 habitaciones"};
     String[] opcatego = new String[]{"1 estrella", "2 estrellas", "3 estrellas", "4 estrellas", "5 estrellas"};
+    EditText lugar;
+    EditText fechain;
+    EditText fechaout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,10 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
         setContentView(R.layout.activity_hoteles);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_hotel);
         setSupportActionBar(toolbar);
+
+        lugar = (EditText) findViewById(R.id.lugar);
+        fechain = (EditText) findViewById(R.id.fechain);
+        fechaout = (EditText) findViewById(R.id.fechaout);
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
 
@@ -56,8 +63,6 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
 
     public void onStart() {
         super.onStart();
-        EditText fechain = (EditText) findViewById(R.id.fechain);
-        EditText fechaout = (EditText) findViewById(R.id.fechaout);
 
         fechain.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -109,6 +114,13 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
 
     public void buscar(View view) {
         Intent intent = new Intent(this, HotelesDisponibles.class);
+        //Obtenemos los valores para pasarlos a la siguiente actividad
+        intent.putExtra("lugar", lugar.getText().toString());
+        intent.putExtra("checkin", fechain.getText().toString());
+        intent.putExtra("checkout", fechaout.getText().toString());
+        intent.putExtra("habitaciones", habitaciones.getSelectedItem().toString());
+        intent.putExtra("huespedes", huespedes.getSelectedItem().toString());
+        intent.putExtra("estrellas", categorias.getSelectedItem().toString());
         startActivity(intent);
     }
 }

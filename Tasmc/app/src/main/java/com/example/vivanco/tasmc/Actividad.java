@@ -1,7 +1,5 @@
 package com.example.vivanco.tasmc;
 
-import java.util.Date;
-
 /**
  * Created by VIVANCO on 23/01/2015.
  */

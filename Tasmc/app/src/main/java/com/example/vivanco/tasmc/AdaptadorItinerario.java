@@ -1,20 +1,13 @@
 package com.example.vivanco.tasmc;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.ImageLoader;
-
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * Created by VIVANCO on 12/01/2015.
@@ -25,9 +18,10 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
 
 
     public AdaptadorItinerario(ArrayList<Actividad> datosItinerarios) {
-        this.listItinerarios=datosItinerarios;
+        this.listItinerarios = datosItinerarios;
 
     }
+
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.renglon_cardview_itinerario, parent, false);

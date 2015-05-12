@@ -82,8 +82,6 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
 
         //Creacion de las opciones del boton flotante
 
-        ImageView iconNuevo = new ImageView(this);
-        iconNuevo.setImageResource(R.drawable.ic_action_calendar);
         ImageView iconEstrellas = new ImageView(this);
         iconEstrellas.setImageResource(R.drawable.ic_action_important);
         ImageView iconPrecio = new ImageView(this);
@@ -92,17 +90,14 @@ public class HotelesDisponibles extends ActionBarActivity implements View.OnClic
         SubActionButton.Builder itemBuilder = new SubActionButton.Builder(this);
         //Background de presionado para los sub botones
         itemBuilder.setBackgroundDrawable(getResources().getDrawable(R.drawable.selector_sub_button_gray));
-        SubActionButton btnNuevo = itemBuilder.setContentView(iconNuevo).build();
         SubActionButton btnEstrellas = itemBuilder.setContentView(iconEstrellas).build();
         SubActionButton btnPrecio = itemBuilder.setContentView(iconPrecio).build();
 
         //Action al presionar
-        btnNuevo.setOnClickListener(this);
         btnEstrellas.setOnClickListener(this);
         btnPrecio.setOnClickListener(this);
 
         FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this)
-                .addSubActionView(btnNuevo)
                 .addSubActionView(btnEstrellas)
                 .addSubActionView(btnPrecio)
                 .attachTo(actionButton)

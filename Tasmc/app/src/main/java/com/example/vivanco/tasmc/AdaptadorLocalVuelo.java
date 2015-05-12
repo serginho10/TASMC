@@ -41,7 +41,7 @@ public class AdaptadorLocalVuelo extends RecyclerView.Adapter<AdaptadorLocalVuel
         holder.horaLlegadai.setText(currentVuelo.getHoraLlegadai());
         holder.tiempoi.setText(currentVuelo.getTiempoi());
         holder.escalasi.setText(currentVuelo.getEscalasi());
-       //vuelta
+        //vuelta
         holder.fechav.setText(currentVuelo.getFechav());
         holder.logoAirv.setImageResource(currentVuelo.getAerolineav());
         holder.origenv.setText(currentVuelo.getOrigenv());

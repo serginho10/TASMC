@@ -5,11 +5,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,12 +58,10 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
         //Creacion tabla usuario
         db.execSQL("CREATE TABLE usuario ("
-                + "idUsuario INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + "email TEXT,"
+                + "email TEXT PRIMARY KEY,"
                 + "catPref TEXT,"
                 + "clasePref TEXT, "
                 + "tipo TEXT,"
-                + "tipoVuelo TEXT," +
                 "Itinerario_idItinerario INTEGER," +
                 "Equipaje_idEquipaje INTEGER,"
                 + "FOREIGN KEY(Itinerario_idItinerario) REFERENCES itinerario(idItinerario),"
@@ -96,16 +98,13 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db = getWritableDatabase();
         if(existeUsuario())
             db.execSQL("delete from usuario");
-        db.execSQL("INSERT INTO usuario VALUES ( null,'" + usuario.getEmail() + "','"
-                + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "','"
-                + usuario.getTipoVuelo() + "','" + usuario.getItinerario_idItinerario()
-                + "','" + usuario.getEquipaje_idEquipaje() + "')");
-        HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://www.tasmc.16mb.com/service.php");
-        List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("email",usuario.getEmail()));
-        params.add(new BasicNameValuePair("categoria",usuario.getCategoria()));
-
+        db.execSQL("INSERT INTO usuario VALUES ('" + usuario.getEmail() + "','"
+                + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "',"
+                + usuario.getItinerario_idItinerario()
+                + "," + usuario.getEquipaje_idEquipaje() + ")");
+        Object[] objeto = new Object[1];
+        objeto[0] = usuario;
+        new ManejadorHttp().execute(objeto);
     }
 
     public void guardarVuelo(Vuelo vuelo) {

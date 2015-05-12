@@ -102,9 +102,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "',"
                 + usuario.getItinerario_idItinerario()
                 + "," + usuario.getEquipaje_idEquipaje() + ")");
-        Object[] objeto = new Object[1];
-        objeto[0] = usuario;
-        new ManejadorHttp().execute(objeto);
+        if(usuario.getEmail() != "") {
+            Object[] objeto = new Object[1];
+            objeto[0] = usuario;
+            new ManejadorHttp().execute(objeto);
+        }
     }
 
     public void guardarVuelo(Vuelo vuelo) {

@@ -148,7 +148,7 @@
         </activity>
         <activity
             android:name=".Configuracion"
-            android:label="@string/title_activity_configuracion">
+            android:label="@string/title_activity_configuracion" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -183,6 +183,13 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".InfoVuelo" />
+        </activity>
+        <activity
+            android:name=".UbicatePB"
+            android:label="@string/title_activity_ubicate_pb" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 

@@ -696,6 +696,10 @@
     <string name="vuelta">Arrival</string>
     <string name="fechav">Sunday May 24, 2015</string>
     <string name="mensaje_toast">Welcome TASMC: Configure your personal settings about flights and hotels.</string>
+    <string name="compartir">Share</string>
+    <string name="pa">First Floor</string>
+    <string name="pb">Second Floor</string>
+
 
     <string-array name="habitaciones">
         <item>1 room</item>

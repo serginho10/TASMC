@@ -60,6 +60,7 @@ public class LlegadaInternacional extends Fragment {
             current.setVuelo(vuelos[i]);
             current.setHora(horas[i]);
             current.setEstado(estados[i]);
+            current.setSala(salas[i]);
             current.setTerminal(terminales[i]);
 
             datos.add(current);

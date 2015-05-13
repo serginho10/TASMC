@@ -50,7 +50,7 @@ import com.indooratlas.android.ServiceState;
 import java.util.ArrayList;
 
 
-public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
+public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener {
 
     private ImageView imHir;
     RelativeLayout.LayoutParams par;
@@ -76,11 +76,11 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ubicate);
+        setContentView(R.layout.activity_ubicate_pb);
         main = (ImageView) findViewById(R.id.main);
         main.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //main.setScaleType(ImageView.ScaleType.MATRIX);
-        main.setImageResource(R.drawable.pa);
+        main.setImageResource(R.drawable.pb);
 
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
@@ -142,7 +142,7 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_ubicate, menu);
+        getMenuInflater().inflate(R.menu.menu_ubicate_pb, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -153,8 +153,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if (id == R.id.pb){
-            startActivity(new Intent(this, UbicatePB.class));
+        if (id == R.id.pa){
+            startActivity(new Intent(this, Ubicate.class));
         }
         //Si el id seleccionado es igual al del home regresa a la principal
         if (id == android.R.id.home) {
@@ -319,7 +319,7 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     @Override
     public void onCalibrationReady() {
         log("onCalibrationReady");
-        Toast.makeText(getApplicationContext(),"CalibraciÃ³n Lista",Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"Calibración Lista",Toast.LENGTH_SHORT);
         Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT);
         startPositioning();
     }

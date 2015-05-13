@@ -5,6 +5,6 @@
         android:id="@+id/share"
         android:icon="@drawable/share"
         android:showAsAction="always"
-        android:title="Compartir" />
+        android:title="@string/compartir" />
 
 </menu>

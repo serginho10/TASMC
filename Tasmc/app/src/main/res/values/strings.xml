@@ -19,20 +19,24 @@
     <string name="title_activity_list_equipaje">Lista de Equipaje</string>
     <string name="title_activity_itinerario">Itinerario</string>
     <string name="title_activity_ruta_aicm">Ruta al AICM</string>
-    <string name="title_activity_ubicate">Ubicación en AICM</string>
+    <string name="title_activity_ubicate">Planta Alta AICM</string>
     <string name="title_activity_info_vuelo">Información de Vuelo</string>
     <string name="title_activity_equipaje">Equipaje</string>
     <string name="title_activity_ida">Ida</string>
     <string name="title_activity_ida__vuelta">Ida_Vuelta</string>
     <string name="title_activity_reconfigura">Configuración Personal</string>
+    <string name="title_activity_ubicate_pb">Planta Baja AICM</string>
+
     <string-array name="tabs">
         <item>IDA</item>
         <item>IDA Y VUELTA</item>
     </string-array>
+
     <string-array name="tab">
         <item>Planta Alta</item>
         <item>Planta Baja</item>
     </string-array>
+
     <string-array name="tabv">
         <item>Llegadas Nacionales</item>
         <item>Llegadas Internacionales</item>
@@ -696,6 +700,9 @@
     <string name="vuelta">VUELTA</string>
     <string name="fechav">domingo 24 de mayo de 2015</string>
     <string name="mensaje_toast">Bienvenido a TASMC: Aqui podra realizar una configuración personal de categoria de hotel y clase de vuelo que más le agrade.</string>
+    <string name="compartir">Compartir</string>
+    <string name="pa">Planta Alta</string>
+    <string name="pb">Planta Baja</string>
 
     <string-array name="habitaciones">
         <item>1 habitacion</item>

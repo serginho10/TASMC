@@ -9,20 +9,21 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
-import java.util.ArrayList;
 
-
-public class InfoVuelo extends ActionBarActivity {
+public class InfoVuelo extends ActionBarActivity implements View.OnClickListener {
 
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
+    private EditText vuelo;
+    private Button buscar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,10 @@ public class InfoVuelo extends ActionBarActivity {
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
         mTabs.setDistributeEvenly(true);
         mTabs.setViewPager(mPager);
+        vuelo = (EditText) findViewById(R.id.vuelo);
+        buscar = (Button) findViewById(R.id.buscar);
+        buscar.setOnClickListener(this);
+
     }
 
 
@@ -60,6 +65,13 @@ public class InfoVuelo extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(this, InfoMiVuelo.class);
+        intent.putExtra("vuelo", vuelo.getText().toString());
+        startActivity(intent);
     }
 
     class MyPagerAdapter extends FragmentPagerAdapter {
@@ -114,9 +126,4 @@ public class InfoVuelo extends ActionBarActivity {
         }
     }
 
-    //Funcion para buscar por numero de vuelo
-    public void buscar() {
-
-
-    }
 }

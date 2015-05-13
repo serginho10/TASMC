@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/origeniv"
             android:layout_alignStart="@+id/origeniv"
-            android:text="Origen" />
+            android:text="@string/origen" />
 
         <EditText
             android:id="@+id/origeniv"
@@ -33,7 +33,7 @@
             android:layout_alignTop="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:hint="Ubicacion Actual"
+            android:hint="@string/hint_origen"
             android:inputType="textPersonName" />
 
         <ImageView
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/destinoiv"
             android:layout_alignStart="@+id/origeniv"
-            android:text="Destino" />
+            android:text="@string/destino" />
 
         <EditText
             android:id="@+id/destinoiv"
@@ -63,7 +63,7 @@
             android:layout_alignStart="@+id/textView8"
             android:layout_alignTop="@+id/imageView6"
             android:ems="10"
-            android:hint="San Francisco(SFO)"
+            android:hint="@string/hint_destino"
             android:inputType="textPersonName" />
 
         <ImageView
@@ -101,7 +101,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
             android:background="@color/acentuadoVuelo"
-            android:text="Buscar Vuelos"
+            android:text="@string/buscar_vuelos"
             android:textColor="@android:color/white" />
 
         <Spinner
@@ -125,7 +125,7 @@
             android:layout_above="@+id/imageView8"
             android:layout_alignStart="@+id/destinoiv"
             android:ems="10"
-            android:hint="Fecha Ida"
+            android:hint="@string/hint_fecha_ida"
             android:inputType="date" />
 
         <EditText
@@ -135,7 +135,7 @@
             android:layout_alignBottom="@+id/fechaI"
             android:layout_alignEnd="@+id/destinoiv"
             android:ems="10"
-            android:hint="Fecha Vuelta"
+            android:hint="@string/hint_fecha_vuelta"
             android:inputType="date" />
 
     </RelativeLayout>

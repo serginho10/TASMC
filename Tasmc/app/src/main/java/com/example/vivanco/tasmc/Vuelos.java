@@ -102,7 +102,7 @@ public class Vuelos extends ActionBarActivity {
 
         @Override
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            View layout = inflater.inflate(R.layout.ida, container, false);
+            View layout = inflater.inflate(R.layout.fragment_ida, container, false);
             return layout;
         }
     }

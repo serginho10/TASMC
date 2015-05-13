@@ -21,9 +21,9 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/imageView12"
                 android:layout_width="350dp"
                 android:layout_height="350dp"
-                android:id="@+id/imageView12"
                 android:layout_gravity="center"
                 android:src="@drawable/logo" />
 

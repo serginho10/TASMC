@@ -13,7 +13,7 @@
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-       card_view:cardBackgroundColor="@color/acentuadoVuelo"
+        card_view:cardBackgroundColor="@color/acentuadoVuelo"
         card_view:cardCornerRadius="10dp">
 
         <RelativeLayout
@@ -21,13 +21,14 @@
             android:layout_height="match_parent"
             android:background="@color/acentuadoVuelo"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tarifa"
                 android:layout_width="272dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:padding="2dp"
-                android:text="Tarifa por adulto"
+                android:text="@string/tarifa_por_adulto"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#fff"
                 android:textIsSelectable="false"
@@ -37,36 +38,36 @@
                 android:id="@+id/cargos"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/pesos"
                 android:gravity="center_vertical"
                 android:padding="2dp"
-                android:text="A incluir tasas y cargos"
+                android:text="@string/cargos"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#fff"
-                android:textSize="10sp"
-                android:layout_below="@+id/pesos"
-                android:layout_alignParentStart="true" />
+                android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/pesos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tarifa"
                 android:text="$"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/pesos"
                 android:textColor="#fff"
-                android:textSize="20sp"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/tarifa" />
+                android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/precio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="2000"
-                android:id="@+id/precio"
-                android:textColor="#fff"
-                android:textSize="20sp"
                 android:layout_above="@+id/cargos"
-                android:layout_toEndOf="@+id/pesos" />
+                android:layout_toEndOf="@+id/pesos"
+                android:text="2000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -84,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/logoAiri"
-            android:text="IDA"
+            android:text="@string/ida"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#fce0280b" />
 
@@ -95,7 +96,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="50dp"
-            android:text="viernes 22 de mayo de 2015" />
+            android:text="@string/fechai" />
 
         <ImageView
             android:id="@+id/dividerIda"
@@ -120,20 +121,20 @@
             android:id="@+id/origeni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MEX"
-            android:textColor="@color/divisor"
             android:layout_above="@+id/tiempoi"
-            android:layout_toEndOf="@+id/ida" />
+            android:layout_toEndOf="@+id/ida"
+            android:text="MEX"
+            android:textColor="@color/divisor" />
 
         <TextView
             android:id="@+id/horaSalidai"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
+            android:layout_above="@+id/avionv"
             android:layout_below="@+id/origeni"
             android:layout_marginLeft="65dp"
             android:text="12:10"
-            android:textStyle="bold"
-            android:layout_above="@+id/avionv" />
+            android:textStyle="bold" />
 
 
         <TextView
@@ -143,7 +144,7 @@
             android:layout_below="@+id/dividerIda"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Total"
+            android:text="@string/total"
             android:textColor="@color/divisor" />
 
         <TextView
@@ -160,26 +161,26 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/escalasv"
             android:layout_below="@+id/tiempoi"
-            android:text="Directo"
+            android:text="@string/escalas"
             android:textColor="@color/acentuado" />
 
         <TextView
             android:id="@+id/destinoi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LAS"
-            android:textColor="@color/divisor"
             android:layout_above="@+id/tiempoi"
-            android:layout_alignStart="@+id/destinov" />
+            android:layout_alignStart="@+id/destinov"
+            android:text="LAS"
+            android:textColor="@color/divisor" />
 
         <TextView
             android:id="@+id/horaLlegadai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="14:11"
-            android:textStyle="bold"
+            android:layout_alignStart="@+id/destinoi"
             android:layout_alignTop="@+id/horaSalidai"
-            android:layout_alignStart="@+id/destinoi" />
+            android:text="14:11"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/avioni"
@@ -196,7 +197,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/avionv"
             android:layout_toEndOf="@+id/logoAiri"
-            android:text="VUELTA"
+            android:text="@string/vuelta"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#fc024bb4" />
 
@@ -206,7 +207,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/tiempov"
             android:layout_alignTop="@+id/vuelta"
-            android:text="domingo 24 de mayo de 2015" />
+            android:text="@string/fechav" />
 
         <ImageView
             android:id="@+id/dividerVuelta"
@@ -222,30 +223,30 @@
             android:id="@+id/logoAirv"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/aeromexico"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/avionv"
             android:layout_marginTop="22dp"
-            android:layout_alignParentStart="true" />
+            android:src="@drawable/aeromexico" />
 
 
         <TextView
             android:id="@+id/origenv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MEX"
-            android:textColor="@color/divisor"
+            android:layout_alignStart="@+id/origeni"
             android:layout_alignTop="@+id/totalv"
-            android:layout_alignStart="@+id/origeni" />
+            android:text="MEX"
+            android:textColor="@color/divisor" />
 
         <TextView
             android:id="@+id/horaSalidav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tiempov"
             android:layout_below="@+id/origenv"
             android:layout_marginLeft="65dp"
             android:text="12:10"
-            android:textStyle="bold"
-            android:layout_alignBottom="@+id/tiempov" />
+            android:textStyle="bold" />
 
 
         <TextView
@@ -255,7 +256,7 @@
             android:layout_below="@+id/dividerVuelta"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Total"
+            android:text="@string/total"
             android:textColor="@color/divisor" />
 
         <TextView
@@ -272,7 +273,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tiempov"
             android:layout_centerHorizontal="true"
-            android:text="Directo"
+            android:text="@string/escalas"
             android:textColor="@color/acentuado" />
 
         <TextView

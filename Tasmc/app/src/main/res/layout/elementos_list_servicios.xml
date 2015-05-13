@@ -2,21 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Nombre"
-        android:id="@+id/nombre"
-        android:layout_below="@+id/categoria"
-        android:layout_alignParentStart="true" />
 
     <TextView
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Giro"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/categoria"
+        android:text="@string/nombre_servicio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
         android:id="@+id/giro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/nombre"
-        android:layout_alignParentStart="true" />
+        android:text="@string/giro"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 </RelativeLayout>

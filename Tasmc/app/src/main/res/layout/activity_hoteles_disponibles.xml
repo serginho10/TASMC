@@ -11,15 +11,15 @@
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeHoteles"
-        android:layout_below="@+id/app_bar_hotel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_hotel">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/listHoteles"
-            android:layout_below="@id/app_bar_hotel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar_hotel" />
 
     </android.support.v4.widget.SwipeRefreshLayout>
 

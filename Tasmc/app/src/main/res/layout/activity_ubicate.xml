@@ -1,22 +1,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vivanco.tasmc.Ubicate"
-    android:id="@+id/m">
+    tools:context="com.example.vivanco.tasmc.Ubicate">
 
     <include
         android:id="@+id/app_bar_ubk"
         layout="@layout/app_bar_ubk" />
 
     <com.example.vivanco.tasmc.ZoomView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/zoomView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/rlBottomTitle"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/app_bar_ubk">
+        android:layout_below="@+id/app_bar_ubk"
+        android:layout_centerHorizontal="true">
 
         <RelativeLayout
             android:id="@+id/zv"

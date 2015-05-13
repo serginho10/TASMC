@@ -78,7 +78,6 @@ public class Configuracion extends ActionBarActivity {
         categorias.setAdapter(dataAdapter1);
 
         Button btnContinuar = (Button) findViewById(R.id.btnContinuar);
-        btnContinuar.setText("Continuar sin configurar");
         btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

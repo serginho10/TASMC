@@ -17,7 +17,7 @@
         android:layout_below="@+id/textEmail"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="tasmc@hotmail.com"
+        android:hint="@string/hint_correo"
         android:inputType="textEmailAddress" />
 
     <Spinner
@@ -46,7 +46,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="10dp"
         android:background="@color/acentuado"
-        android:text="Listo"
+        android:text="@string/listo"
         android:textColor="#ffff" />
 
     <Button
@@ -57,7 +57,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:background="@color/acentuado"
-        android:text="Continuar sin configurar"
+        android:text="@string/continuar_sin_configurar"
         android:textColor="#ffff" />
 
     <TextView
@@ -67,7 +67,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/email"
         android:layout_marginTop="32dp"
-        android:text="Categoria Preferida:" />
+        android:text="@string/categoria_preferida" />
 
     <TextView
         android:id="@+id/textClase"
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/categoria"
         android:layout_marginTop="32dp"
-        android:text="Clase Preferida:" />
+        android:text="@string/clase_preferida" />
 
     <TextView
         android:id="@+id/textEmail"
@@ -84,6 +84,6 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/app_bar"
         android:layout_marginTop="20dp"
-        android:text="Email:" />
+        android:text="@string/email" />
 
 </RelativeLayout>

@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Versión 1.0"
+        android:text="@string/version"
         android:id="@+id/version"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true" />
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Creada el 1 jun 2015"
+        android:text="@string/fecha_creacion"
         android:id="@+id/fecha"
         android:layout_below="@+id/version"
         android:layout_centerHorizontal="true" />

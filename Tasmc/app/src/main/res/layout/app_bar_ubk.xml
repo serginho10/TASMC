@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="@dimen/app_bar_top_pading"
     android:background="@color/primarioUbik"
-    app:theme="@style/BarraPersonalUbk"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-</android.support.v7.widget.Toolbar>
+    android:paddingTop="@dimen/app_bar_top_pading"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/BarraPersonalUbk"></android.support.v7.widget.Toolbar>

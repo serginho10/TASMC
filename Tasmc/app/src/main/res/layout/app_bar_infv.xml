@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="@dimen/app_bar_top_pading"
     android:background="@color/primarioInfoV"
-    app:theme="@style/BarraPersonalInfv"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
-</android.support.v7.widget.Toolbar>
+    android:paddingTop="@dimen/app_bar_top_pading"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    app:theme="@style/BarraPersonalInfv"></android.support.v7.widget.Toolbar>

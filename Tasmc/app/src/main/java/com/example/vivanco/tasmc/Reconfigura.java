@@ -33,18 +33,14 @@ public class Reconfigura extends ActionBarActivity {
 
         //Poner texto al textview determinado
         textEmail = (TextView) findViewById(R.id.textEmail);
-        textEmail.setText("Email:");
         textClase = (TextView) findViewById(R.id.textClase);
-        textClase.setText("Clase preferida:");
         textCatego = (TextView) findViewById(R.id.textCatego);
-        textEmail.setText("Categoria preferida:");
 
 
         final EditText ETemail = (EditText) findViewById(R.id.email);
         clases = (Spinner) findViewById(R.id.clase);
         categorias = (Spinner) findViewById(R.id.categoria);
         Button btnListo = (Button) findViewById(R.id.listo);
-        btnListo.setText("Guardar");
 
         Usuario usuario;
 

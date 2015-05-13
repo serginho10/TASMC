@@ -18,9 +18,6 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
     Spinner huespedes;
     Spinner habitaciones;
     Spinner categorias;
-    String[] ophuesped = new String[]{"1 persona", "2 personas", "3 personas", "4 personas", "5 personas"};
-    String[] ophabita = new String[]{"1 habitacion", "2 habitaciones", "3 habitaciones", "4 habitaciones", "5 habitaciones"};
-    String[] opcatego = new String[]{"1 estrella", "2 estrellas", "3 estrellas", "4 estrellas", "5 estrellas"};
     EditText lugar;
     EditText fechain;
     EditText fechaout;
@@ -43,19 +40,19 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
 
         //spinner huespedes
         huespedes = (Spinner) findViewById(R.id.huespedes);
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ophuesped);
+        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.personas, android.R.layout.simple_spinner_item);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         huespedes.setAdapter(dataAdapter);
 
         //spinner habitaciones
         habitaciones = (Spinner) findViewById(R.id.habitaciones);
-        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ophabita);
+        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(this, R.array.habitaciones, android.R.layout.simple_spinner_item);
         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         habitaciones.setAdapter(dataAdapter1);
 
         //spinner hotel estrellas
         categorias = (Spinner) findViewById(R.id.categoria);
-        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcatego);
+        ArrayAdapter dataAdapter2 = ArrayAdapter.createFromResource(this, R.array.estrellas, android.R.layout.simple_spinner_item);
         dataAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorias.setAdapter(dataAdapter2);
 

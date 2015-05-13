@@ -19,9 +19,7 @@ import android.widget.Toast;
 
 public class Configuracion extends ActionBarActivity {
     Spinner categorias;
-    String[] opcatego = new String[]{"1 estrella", "2 estrellas", "3 estrellas", "4 estrellas", "5 estrellas"};
     Spinner clases;
-    String[] opclase = new String[]{"Económico", "Económico Premium", "Business", "Primera"};
     TextView textEmail;
     TextView textClase;
     TextView textCatego;
@@ -69,11 +67,11 @@ public class Configuracion extends ActionBarActivity {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opclase);
+        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.estrellas, android.R.layout.simple_spinner_item);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         clases.setAdapter(dataAdapter);
         //spinner hotel estrellas
-        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcatego);
+        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);
         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorias.setAdapter(dataAdapter1);
 

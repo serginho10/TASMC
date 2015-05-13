@@ -53,7 +53,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MyViewHolder> {
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            titulo = (TextView) itemView.findViewById(R.id.listText);
+            titulo = (TextView) itemView.findViewById(R.id.titulo);
             icon = (ImageView) itemView.findViewById(R.id.listIcon);
             //icon.setOnClickListener(this); solo con el icono reacciona al click
             itemView.setOnClickListener(this);

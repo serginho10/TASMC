@@ -7,7 +7,6 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -77,11 +76,11 @@ public class VuelosDisponibles extends ActionBarActivity implements View.OnClick
                     VueloData.horaLlegadav[i],
                     VueloData.tiempov[i],
                     VueloData.escalasv[i]
-                    ));
+            ));
         }
-        adaptadorVuelosDisponibles=new AdaptadorLocalVuelo(vuelos);
+        adaptadorVuelosDisponibles = new AdaptadorLocalVuelo(vuelos);
         listVuelos.setAdapter(adaptadorVuelosDisponibles);
-        mSwipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.swipeVuelos);
+        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeVuelos);
         mSwipeRefreshLayout.setOnRefreshListener(this);
         buildFAB();
         pesos = (TextView) findViewById(R.id.pesos);
@@ -130,13 +129,6 @@ public class VuelosDisponibles extends ActionBarActivity implements View.OnClick
                 .addSubActionView(btnPrecio)
                 .attachTo(actionButton)
                 .build();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_vuelos_disponibles, menu);
-        return true;
     }
 
     @Override

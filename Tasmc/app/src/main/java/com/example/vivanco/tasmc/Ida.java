@@ -13,9 +13,7 @@ import android.widget.Spinner;
 
 public class Ida extends Fragment {
     Spinner clases;
-    String[] opclase = new String[]{"Económico", "Económico Premium", "Business", "Primera"};
     Spinner pasajeros;
-    String[] opasa = new String[]{"1 Pasajero", "2 Pasajeros", "3 Pasajeros", "4 Pasajeros", "5 Pasajeros"};
     EditText origeni;
     EditText destinoi;
 
@@ -29,12 +27,12 @@ public class Ida extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_ida, container, false);
         clases = (Spinner) rootView.findViewById(R.id.clasei);
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, opclase);
+        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.clases,android.R.layout.simple_spinner_item);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         clases.setAdapter(dataAdapter);
 
         pasajeros = (Spinner) rootView.findViewById(R.id.pasajerosi);
-        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, opasa);
+        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(getActivity(), R.array.pasajeros,android.R.layout.simple_spinner_item);
         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         pasajeros.setAdapter(dataAdapter1);
         final EditText fechaida = (EditText) rootView.findViewById(R.id.fechaida);

@@ -120,7 +120,7 @@
 
         <EditText
             android:id="@+id/fechaida"
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView7"
             android:layout_alignStart="@+id/destinoi"

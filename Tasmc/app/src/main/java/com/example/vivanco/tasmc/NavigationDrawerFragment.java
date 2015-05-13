@@ -3,6 +3,7 @@ package com.example.vivanco.tasmc;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -60,12 +61,14 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     //metodo para añadir la informacion
-    public static List<Informacion> getDatos() {
+    public List<Informacion> getDatos() {
         List<Informacion> datos = new ArrayList<>();
         int[] iconos = {R.drawable.hoteln, R.drawable.avion, R.drawable.infoaicmn, R.drawable.equipajen,
                 R.drawable.itinerarion, R.drawable.rutan, R.drawable.ubiktn, R.drawable.infovuelon};
-        String[] titulos = {"Hoteles", "Vuelos", "Info AICM", "Lista de Equipaje", "Itinerario de Viaje", "Ruta al AICM",
-                "Ubicate", "Info de Vuelo"};
+        String[] titulos;
+        //Recuperamos los string-array
+        Resources res=getResources();
+        titulos=res.getStringArray(R.array.titulos);
         for (int i = 0; i < titulos.length && i < iconos.length; i++) {
             Informacion current = new Informacion();
             current.iconId = iconos[i];

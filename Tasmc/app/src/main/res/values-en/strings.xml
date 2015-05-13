@@ -18,12 +18,14 @@
     <string name="title_activity_list_equipaje">Luggage List</string>
     <string name="title_activity_itinerario">Itinerary</string>
     <string name="title_activity_ruta_aicm">Path to AICM</string>
-    <string name="title_activity_ubicate">AICM location</string>
+    <string name="title_activity_ubicate">Second Floor</string>
     <string name="title_activity_info_vuelo">Flight Information</string>
     <string name="title_activity_equipaje">Luggage</string>
     <string name="title_activity_ida">Ida</string>
     <string name="title_activity_ida__vuelta">Ida_Vuelta</string>
     <string name="title_activity_reconfigura">Personal Settings</string>
+    <string name="title_activity_ubicate_pb">First Floor AICM</string>
+
     <string-array name="tabs">
         <item>DEPARTURE</item>
         <item>DEPARTURE/ARRIVAL</item>

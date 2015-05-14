@@ -634,14 +634,14 @@
         <item>vitaminas</item>
         <item>zapatos</item>
     </string-array>
-    <string name="title_activity_nuevo_itinerario">NuevoItinerario</string>
-    <string name="title_activity_nuevo_equipaje">NuevoEquipaje</string>
+    <string name="title_activity_nuevo_itinerario">Nuevo Itinerario</string>
+    <string name="title_activity_nuevo_equipaje">Nuevo Equipaje</string>
     <string name="title_activity_configuracion">TASMC</string>
-    <string name="title_activity_hoteles_disponibles">HotelesDisponibles</string>
+    <string name="title_activity_hoteles_disponibles">Hoteles Disponibles</string>
     <string name="title_activity_p">PA</string>
     <string name="title_activity_pb">PB</string>
-    <string name="title_activity_vuelos_disponibles">VuelosDisponibles</string>
-    <string name="title_activity_info_mi_vuelo">InfoMiVuelo</string>
+    <string name="title_activity_vuelos_disponibles">Vuelos Disponibles</string>
+    <string name="title_activity_info_mi_vuelo">Info Mi Vuelo</string>
     <string name="continuar_sin_configurar">Continuar sin configurar</string>
     <string name="categoria_preferida">Categoria Preferida:</string>
     <string name="clase_preferida">Clase Preferida:</string>

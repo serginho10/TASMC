@@ -1,23 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
         android:id="@+id/configurar"
-        android:title="@string/configurar"
         android:orderInCategory="200"
-       android:showAsAction="ifRoom"
-        />
+        android:showAsAction="ifRoom"
+        android:title="@string/configurar" />
     <item
         android:id="@+id/navigate"
-        android:title="@string/acerca_de"
         android:orderInCategory="200"
         android:showAsAction="ifRoom"
-        />
-    <item
-        android:id="@+id/traducir"
-        android:title="@string/traducir"
-        android:orderInCategory="200"
-        android:showAsAction="ifRoom"
-        />
+        android:title="@string/acerca_de" />
 </menu>

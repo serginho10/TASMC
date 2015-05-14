@@ -1,6 +1,7 @@
 package com.example.vivanco.tasmc;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -89,51 +90,19 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
                 .setBackgroundDrawable(R.drawable.selector_button_red)
                 .build();
 
-        //Creacion de las opciones del boton flotante
 
-        ImageView iconNuevo = new ImageView(this);
-        iconNuevo.setImageResource(R.drawable.ic_action_new);
-        ImageView iconFavorito = new ImageView(this);
-        iconFavorito.setImageResource(R.drawable.ic_action_important);
-        ImageView iconCalendario = new ImageView(this);
-        iconCalendario.setImageResource(R.drawable.ic_action_calendar);
-        //Subopciones
-        SubActionButton.Builder itemBuilder = new SubActionButton.Builder(this);
-        //Background de presionado para los sub botones
-        itemBuilder.setBackgroundDrawable(getResources().getDrawable(R.drawable.selector_sub_button_gray));
-        SubActionButton btnNuevo = itemBuilder.setContentView(iconNuevo).build();
-        SubActionButton btnFavorito = itemBuilder.setContentView(iconFavorito).build();
-        SubActionButton btnCalendario = itemBuilder.setContentView(iconCalendario).build();
-
-        //Action al presionar
-        btnNuevo.setTag(0);
-        btnFavorito.setTag(1);
-        btnCalendario.setTag(2);
-        btnNuevo.setOnClickListener(this);
-        btnFavorito.setOnClickListener(this);
-        btnCalendario.setOnClickListener(this);
 
         FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this)
-                .addSubActionView(btnCalendario)
-                .addSubActionView(btnFavorito)
-                .addSubActionView(btnNuevo)
                 .attachTo(actionButton)
                 .build();
+        actionButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (Integer.parseInt(v.getTag().toString())){
-            case 0:
-                Toast.makeText(getApplicationContext(),"Nuevo",Toast.LENGTH_SHORT).show();
-                break;
-            case 1:
-                Toast.makeText(getApplicationContext(),"Favorito",Toast.LENGTH_SHORT).show();
-                break;
-            case 2:
-                Toast.makeText(getApplicationContext(),"Calendario",Toast.LENGTH_SHORT).show();
-                break;
-        }
+        Intent intent = new Intent(this, NuevoEquipaje.class);
+        startActivity(intent);
+
     }
 
     class AdaptadorEquipaje extends ArrayAdapter<String> {

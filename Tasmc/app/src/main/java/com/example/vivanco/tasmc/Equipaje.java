@@ -13,12 +13,10 @@ public class Equipaje extends ListActivity {
 
     private int id;
     private String nombre;
-    private String categoria;
 
-    public Equipaje(int id, String nombre, String categoria) {
+    public Equipaje(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
-        this.categoria = categoria;
     }
 
     @Override
@@ -26,7 +24,6 @@ public class Equipaje extends ListActivity {
         return "Equipaje{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", categoria='" + categoria + '\'' +
                 '}';
     }
 
@@ -44,14 +41,6 @@ public class Equipaje extends ListActivity {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
     }
 
     List<RenglonCheck> rows;

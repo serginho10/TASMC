@@ -127,13 +127,13 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarObjeto(Objeto objeto) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO objeto VALUES ( null,'" + objeto.getNombre() + "')");
+        db.execSQL("INSERT INTO objeto VALUES ( "+objeto.getId()+",'" + objeto.getNombre() + "','"
+                + objeto.getCategoria() + "')");
     }
 
     public void guardarEquipaje(Equipaje equipaje) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO equipaje VALUES ( null,'" + equipaje.getNombre() + "','"
-                + equipaje.getCategoria() + "')");
+        db.execSQL("INSERT INTO equipaje VALUES ( "+equipaje.getId()+",'" + equipaje.getNombre() + "')");
     }
 
     public void guardarItinerario(Itinerario itinerario) {
@@ -224,5 +224,10 @@ public class ManejadorBD extends SQLiteOpenHelper {
         c.moveToFirst();
         return new Usuario(c.getString(0),c.getString(1),c.getString(2),c.getString(3),
                 c.getInt(4),c.getInt(5));
+    }
+
+    public void guardarEquipajeHasObjeto(EquipajeHasObjeto obj){
+        db = getWritableDatabase();
+        db.execSQL("INSERT INTO Equipaje_has_Objeto VALUES ( "+obj.getEquipaje_idEquipaje()+"," + obj.getObjeto_idObjeto() + ")");
     }
 }

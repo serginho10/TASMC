@@ -59,20 +59,18 @@ public class JSONParser {
 
     public void parseJSON(String cadena) throws JSONException{
         if(cadena.compareTo("Equipaje") == 0) {
-            res = new String[objetosArray.length()];
-            for (int i = 0; i < objetosArray.length(); i++) {
-                res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
-            }
+            for (int i = 0; i < objetosArray.length(); i++)
+                bd.guardarEquipaje(new Equipaje(objetosArray.getJSONObject(i).getInt("idEquipaje"),
+                        objetosArray.getJSONObject(i).getString("nombre")));
         }else if(cadena.compareTo("Objeto") == 0){
-            objetos = new String[objetosArray.length()];
-            for (int i = 0; i < objetosArray.length(); i++) {
-                res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
-            }
+            for (int i = 0; i < objetosArray.length(); i++)
+                bd.guardarObjeto(new Objeto(objetosArray.getJSONObject(i).getInt("idObjeto"),
+                        objetosArray.getJSONObject(i).getString("nombre"),
+                        objetosArray.getJSONObject(i).getString("categoria")));
         }else if(cadena.compareTo("Equipaje_has_Objeto") == 0){
-            relacion = new String[objetosArray.length()];
-            for (int i = 0; i < objetosArray.length(); i++) {
-                res[i] = (objetosArray.getJSONObject(i).getString("nombre"));
-            }
+            for (int i = 0; i < objetosArray.length(); i++)
+                bd.guardarEquipajeHasObjeto(new EquipajeHasObjeto(objetosArray.getJSONObject(i).getInt("Equipaje_idEquipaje"),
+                        objetosArray.getJSONObject(i).getInt("Objeto_idObjeto")));
         }
     }
 

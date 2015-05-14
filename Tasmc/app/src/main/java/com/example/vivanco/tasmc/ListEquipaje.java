@@ -23,19 +23,24 @@ import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import org.json.JSONException;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+
 public class ListEquipaje extends ActionBarActivity implements View.OnClickListener{
 
     ListView list;
     String[] titulos;
-    String[] descripcion;
+    Map<String,String> descripcion;
     int[] image = {R.drawable.business};
     private static final String TAG_NUEVO="nuevo equipaje";
+    ManejadorBD bd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_equipaje);
-
+        bd = new ManejadorBD(getApplicationContext());
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_equi);
         setSupportActionBar(toolbar);
 
@@ -60,8 +65,8 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         JSONParser json = new JSONParser(this,getApplicationContext());
         try {
             json.readAndParseJSON("Equipaje");
-            titulos = json.res;
-            descripcion = json.objetos;
+            titulos = bd.obtenerNombresEquipajes();
+            descripcion = bd.obtenerObjetosDEquipaje();
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -136,9 +141,9 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         Context context;
         int[] imagenes;
         String[] titleArray;
-        String[] desc;
+        Map<String,String> desc;
 
-        AdaptadorEquipaje(Context c, String[] titulos, int[] imgs, String[] descr) {
+        AdaptadorEquipaje(Context c, String[] titulos, int[] imgs, Map<String,String> descr) {
             super(c, R.layout.renglon_equipaje, R.id.tituloEquipaje, titulos);
             this.context = c;
             this.imagenes = imgs;
@@ -153,10 +158,16 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
             ImageView logo = (ImageView) row.findViewById(R.id.logoEquipaje);
             TextView titulo = (TextView) row.findViewById(R.id.tituloEquipaje);
             TextView objs = (TextView) row.findViewById(R.id.objetosEquipaje);
-
+            String objetos = "";
+            Iterator it = desc.keySet().iterator();
+            while(it.hasNext()){
+                String key = (String) it.next();
+                if(key.compareTo(titleArray[position]) == 0)
+                    objetos = desc.get(key)+" ";
+            }
             logo.setImageResource(imagenes[0]);
             titulo.setText(titleArray[position]);
-            objs.setText(desc[position]);
+            objs.setText(objetos);
 
             return row;
         }

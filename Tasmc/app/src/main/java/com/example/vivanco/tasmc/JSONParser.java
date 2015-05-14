@@ -36,7 +36,9 @@ public class JSONParser {
             public void run() {
                 try{
                     readJSON(cad);
-                }catch(Exception e){}
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
             }
         };
         Thread thread = new Thread(null, runReadAndParseJSON, "bgReadJSONObjetos");
@@ -50,24 +52,27 @@ public class JSONParser {
             objetosArray = jObject.getJSONArray(cadena);
             parseJSON(cadena);
             objetosArray = jObject.getJSONArray("Objeto");
-            parseJSON(cadena);
+            parseJSON("Objeto");
             objetosArray = jObject.getJSONArray("Equipaje_has_Objeto");
-            parseJSON(cadena);
+            parseJSON("Equipaje_has_Objeto");
         }
         activity.runOnUiThread(returnRes);
     }
 
     public void parseJSON(String cadena) throws JSONException{
         if(cadena.compareTo("Equipaje") == 0) {
-            for (int i = 0; i < objetosArray.length(); i++)
-                bd.guardarEquipaje(new Equipaje(objetosArray.getJSONObject(i).getInt("idEquipaje"),
-                        objetosArray.getJSONObject(i).getString("nombre")));
+            bd.borrarTodoEquipaje();
+            for (int i = 0; i < objetosArray.length(); i++) {
+                bd.guardarEquipajeX(objetosArray.getJSONObject(i).getInt("idEquipaje"),objetosArray.getJSONObject(i).getString("nombre"));
+            }
         }else if(cadena.compareTo("Objeto") == 0){
+            bd.borrarTodoObjeto();
             for (int i = 0; i < objetosArray.length(); i++)
                 bd.guardarObjeto(new Objeto(objetosArray.getJSONObject(i).getInt("idObjeto"),
                         objetosArray.getJSONObject(i).getString("nombre"),
                         objetosArray.getJSONObject(i).getString("categoria")));
         }else if(cadena.compareTo("Equipaje_has_Objeto") == 0){
+            bd.borrarTodoEquipajeHasObjeto();
             for (int i = 0; i < objetosArray.length(); i++)
                 bd.guardarEquipajeHasObjeto(new EquipajeHasObjeto(objetosArray.getJSONObject(i).getInt("Equipaje_idEquipaje"),
                         objetosArray.getJSONObject(i).getInt("Objeto_idObjeto")));

@@ -319,7 +319,7 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
     @Override
     public void onCalibrationReady() {
         log("onCalibrationReady");
-        Toast.makeText(getApplicationContext(),"Calibración Lista",Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"Calibracin Lista",Toast.LENGTH_SHORT);
         Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT);
         startPositioning();
     }

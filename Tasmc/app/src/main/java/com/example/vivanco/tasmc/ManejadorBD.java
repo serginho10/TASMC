@@ -16,7 +16,9 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ManejadorBD extends SQLiteOpenHelper {
     private SQLiteDatabase db;
@@ -127,13 +129,18 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarObjeto(Objeto objeto) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO objeto VALUES ( "+objeto.getId()+",'" + objeto.getNombre() + "','"
+        db.execSQL("INSERT INTO objeto VALUES ( " + objeto.getId() + ",'" + objeto.getNombre() + "','"
                 + objeto.getCategoria() + "')");
     }
 
     public void guardarEquipaje(Equipaje equipaje) {
         db = getWritableDatabase();
         db.execSQL("INSERT INTO equipaje VALUES ( "+equipaje.getId()+",'" + equipaje.getNombre() + "')");
+    }
+
+    public void guardarEquipajeX(int id, String nombre) {
+        db = getWritableDatabase();
+        db.execSQL("INSERT INTO equipaje VALUES ( " + id + ",'" + nombre + "')");
     }
 
     public void guardarItinerario(Itinerario itinerario) {
@@ -228,6 +235,51 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarEquipajeHasObjeto(EquipajeHasObjeto obj){
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO Equipaje_has_Objeto VALUES ( "+obj.getEquipaje_idEquipaje()+"," + obj.getObjeto_idObjeto() + ")");
+        db.execSQL("INSERT INTO Equipaje_has_Objeto VALUES ( " + obj.getEquipaje_idEquipaje() + "," + obj.getObjeto_idObjeto() + ")");
+    }
+
+    public String[] obtenerNombresEquipajes() {
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from equipaje",null);
+        String[] nombres = new String[c.getCount()-1];
+        int i = 0;
+        while(c.moveToNext()){
+            if((c.getString(1)).compareTo("default") != 0) {
+                nombres[i] = c.getString(1);
+                i++;
+            }
+        }
+        return nombres;
+    }
+
+    public Map<String, String> obtenerObjetosDEquipaje(){
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select e.nombre,o.nombre from equipaje as e, objeto as o, equipaje_has_objeto as h" +
+                " where e.idequipaje=h.equipaje_idequipaje and o.idobjeto=h.objeto_idobjeto and idequipaje != 1", null);
+        Map<String, String> objetos = new HashMap<String,String>();
+        while(c.moveToNext()){
+            if((c.getString(0)).compareTo("default") != 0) {
+                if(objetos.get(c.getString(0)) == null)
+                    objetos.put(c.getString(0),c.getString(1));
+                else
+                    objetos.put(c.getString(0),objetos.get(c.getString(0)) + ", " + c.getString(1));
+            }
+        }
+        return objetos;
+    }
+
+    public void borrarTodoEquipaje() {
+        db = getWritableDatabase();
+        db.execSQL("delete from equipaje");
+    }
+
+    public void borrarTodoObjeto() {
+        db = getWritableDatabase();
+        db.execSQL("delete from objeto");
+    }
+
+    public void borrarTodoEquipajeHasObjeto() {
+        db = getWritableDatabase();
+        db.execSQL("delete from equipaje_has_objeto");
     }
 }

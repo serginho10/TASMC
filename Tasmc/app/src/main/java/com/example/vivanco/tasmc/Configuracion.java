@@ -29,6 +29,12 @@ public class Configuracion extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configurar);
 
+        final ManejadorBD bd = new ManejadorBD(getApplicationContext());
+        if (bd.existeUsuario()) {
+            finish();
+            startActivity(new Intent(this, MainActivity.class));
+        }
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         toolbar.setLogo(R.drawable.avionblan); //logo
         setSupportActionBar(toolbar);
@@ -47,10 +53,6 @@ public class Configuracion extends ActionBarActivity {
         textEmail = (TextView) findViewById(R.id.textEmail);
         textClase = (TextView) findViewById(R.id.textClase);
         textCatego = (TextView) findViewById(R.id.textCatego);
-
-        final ManejadorBD bd = new ManejadorBD(getApplicationContext());
-        if (bd.existeUsuario())
-            startActivity(new Intent(this, MainActivity.class));
 
         final EditText ETemail = (EditText) findViewById(R.id.email);
         clases = (Spinner) findViewById(R.id.clase);

@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/app_bar_equi"
-        android:layout_marginTop="26dp"
         android:text="@string/nombre" />
 
     <EditText
@@ -22,32 +21,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/nombre"
-        android:layout_toEndOf="@+id/nombre"
-        android:hint="@string/hint_obligatorio" />
-
-    <TextView
-        android:id="@+id/icono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/nombre"
-        android:layout_marginTop="45dp"
-        android:text="@string/icono" />
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_obligatorio" />
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/icono" />
+        android:layout_below="@+id/equipaje" />
 
-    <ImageView
-        android:id="@+id/guarda"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/app_bar_equi"
-        android:layout_alignEnd="@+id/equipaje"
-        android:src="@drawable/saveb" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/acentuadoEquipaje"
+        android:text="@string/listo" />
 
 </RelativeLayout>

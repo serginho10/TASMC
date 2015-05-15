@@ -2,6 +2,8 @@ package com.example.vivanco.tasmc;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -14,7 +16,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -31,7 +35,55 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
     private static final String TAG_BORRA = "BORRA";
     private static final String TAG_EDITA = "EDITA";
     private Context context;
+    private int idItinerario;
+    private String destino;
+    private String actividades;
+    private TextView viaje;
+    private TextView actividad;
 
+
+    public Itinerario(int idItinerario, String destino, String actividades) {
+        this.idItinerario = idItinerario;
+        this.destino = destino;
+        this.actividades = actividades;
+    }
+
+    public String getActividades() {
+        return actividades;
+    }
+
+    public void setActividades(String actividades) {
+        this.actividades = actividades;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    public int getIdItinerario() {
+        return idItinerario;
+    }
+
+    public void setIdItinerario(int idItinerario) {
+        this.idItinerario = idItinerario;
+    }
+
+    @Override
+    public String toString() {
+        return "Itinerario{" +
+                "idItinerario=" + idItinerario +
+                ", destino='" + destino + '\'' +
+                ", actividades='" + actividades + '\'' +
+                '}';
+    }
+
+    public Itinerario(){
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +96,15 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        viaje=(TextView)findViewById(R.id.viaje);
+        actividad=(TextView)findViewById(R.id.actividades);
         //Inicializamos con el adaptador de hoteles
         listItinerarios = (RecyclerView) findViewById(R.id.listItinerarios);
         listItinerarios.setLayoutManager(new LinearLayoutManager(this));
         listItinerarios.setHasFixedSize(true);
         listItinerarios.setItemAnimator(new DefaultItemAnimator());
         itinerarios = new ArrayList<Actividad>();
+
         for (int i = 0; i < MyData.viajes.length; i++) {
             itinerarios.add(new Actividad(
                     MyData.id[i],
@@ -59,10 +114,37 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
             ));
         }
 
-        removedItems = new ArrayList<Integer>();
-
         adaptadorIti = new AdaptadorItinerario(itinerarios);
         listItinerarios.setAdapter(adaptadorIti);
+
+        SwipeableRecyclerViewTouchListener swipeTouchListener =
+                new SwipeableRecyclerViewTouchListener(listItinerarios,
+                        new SwipeableRecyclerViewTouchListener.SwipeListener() {
+                            @Override
+                            public boolean canSwipe(int position) {
+                                return true;
+                            }
+
+                            @Override
+                            public void onDismissedBySwipeLeft(RecyclerView recyclerView, int[] reverseSortedPositions) {
+                                for (int position : reverseSortedPositions) {
+                                    itinerarios.remove(position);
+                                    adaptadorIti.notifyItemRemoved(position);
+                                }
+                                adaptadorIti.notifyDataSetChanged();
+                            }
+
+                            @Override
+                            public void onDismissedBySwipeRight(RecyclerView recyclerView, int[] reverseSortedPositions) {
+                                for (int position : reverseSortedPositions) {
+                                    itinerarios.remove(position);
+                                    adaptadorIti.notifyItemRemoved(position);
+                                }
+                                adaptadorIti.notifyDataSetChanged();
+                            }
+                        });
+
+        listItinerarios.addOnItemTouchListener(swipeTouchListener);
         buildFAB();
 
     }
@@ -116,32 +198,6 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         //removeItem(v);
     }
 
-    private void removeItem(View v) {
-        int selectedItemPosition = recyclerView.getChildPosition(v);
-        RecyclerView.ViewHolder viewHolder = recyclerView.findViewHolderForPosition(selectedItemPosition);
-        TextView textViewName = (TextView) viewHolder.itemView.findViewById(R.id.viaje);
-        String selectedName = (String) textViewName.getText();
-        int selectedItemId = -1;
-        for (int i = 0; i < MyData.viajes.length; i++) {
-            if (selectedName.equals(MyData.viajes[i])) {
-                selectedItemId = MyData.id[i];
-            }
-        }
-        removedItems.add(selectedItemId);
-        itinerarios.remove(selectedItemPosition);
-        adaptadorIti.notifyItemRemoved(selectedItemPosition);
-    }
-
-    private void addRemovedItemToList() {
-        int addItemAtListPosition = 3;
-        itinerarios.add(addItemAtListPosition, new Actividad(
-                MyData.id[removedItems.get(0)],
-                MyData.imagen[removedItems.get(0)],
-                MyData.viajes[removedItems.get(0)],
-                MyData.actividades[removedItems.get(0)]));
-        adaptadorIti.notifyItemInserted(addItemAtListPosition);
-        removedItems.remove(0);
-    }
 
     //Funcion para guardar itinerario
     public void save() {
@@ -153,9 +209,5 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
     }
 
-    //Funcion para contraseña de itinerario
-    public void lock() {
-
-    }
 
 }

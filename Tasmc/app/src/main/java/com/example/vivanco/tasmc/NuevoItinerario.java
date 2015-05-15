@@ -1,19 +1,23 @@
 package com.example.vivanco.tasmc;
 
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class NuevoItinerario extends ActionBarActivity {
-
-    ImageView save;
-    ImageView borra;
-    ImageView lock;
+    private EditText destino;
+    private EditText actividades;
+    private Button guardar;
+    private ManejadorBD db;
+    private Itinerario itinerario = null;
 
 
     @Override
@@ -26,13 +30,23 @@ public class NuevoItinerario extends ActionBarActivity {
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
-        save=(ImageView)findViewById(R.id.save);
-        save.setImageResource(R.drawable.saveb);
-        borra=(ImageView)findViewById(R.id.borra);
-        borra.setImageResource(R.drawable.borrab);
-        lock=(ImageView)findViewById(R.id.lock);
-        lock.setImageResource(R.drawable.lockb);
 
+        destino = (EditText) findViewById(R.id.destino);
+        actividades = (EditText) findViewById(R.id.actividades);
+        guardar = (Button) findViewById(R.id.guardar);
+        guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                db = new ManejadorBD(v.getContext());
+                itinerario = new Itinerario(0, destino.getText().toString(), actividades.getText().toString());
+                db.guardarItinerario(itinerario);
+
+                Toast.makeText(v.getContext(), "Itinerario guardado correctamente",
+                        Toast.LENGTH_LONG).show();
+                db.closeDatabase();
+                finish();
+            }
+        });
 
     }
 

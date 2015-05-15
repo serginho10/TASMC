@@ -1,23 +1,12 @@
 package com.example.vivanco.tasmc;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ManejadorBD extends SQLiteOpenHelper {
@@ -32,7 +21,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //Creacion tabla itinerario
         db.execSQL("CREATE TABLE itinerario ("
-                + "idItinerario INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT)");
+                + "idItinerario INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT," + "actividades TEXT)");
 
         //Creacion tabla equipaje
         db.execSQL("CREATE TABLE equipaje ("
@@ -74,7 +63,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + "idVUelo INTEGER PRIMARY KEY AUTOINCREMENT, " + "categoria TEXT," + "aerolinea TEXT," + "vuelo TEXT,"
                 + "fechaSalida TEXT," + " fechaLlegada TEXT," + "origen TEXT,"
                 + "destino TEXT," + "estado TEXT," + "horaSalida TEXT,"
-                + "horaLlegada TEXT," + "terminal TEXT," + "puerta TEXT," + "escalas TEXT," + "tiempo TEXT," +  "precio TEXT,"+
+                + "horaLlegada TEXT," + "terminal TEXT," + "puerta TEXT," + "escalas TEXT," + "tiempo TEXT," + "precio TEXT," +
                 "Usuario_idUsuario INTEGER," +
                 "FOREIGN KEY(Usuario_idUsuario) REFERENCES usuario(idUsuario))");
 
@@ -98,13 +87,13 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarUsuario(Usuario usuario) {
         db = getWritableDatabase();
-        if(existeUsuario())
+        if (existeUsuario())
             db.execSQL("delete from usuario");
         db.execSQL("INSERT INTO usuario VALUES ('" + usuario.getEmail() + "','"
                 + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "',"
                 + usuario.getItinerario_idItinerario()
                 + "," + usuario.getEquipaje_idEquipaje() + ")");
-        if(usuario.getEmail() != "") {
+        if (usuario.getEmail() != "") {
             Object[] objeto = new Object[1];
             objeto[0] = usuario;
             new ManejadorHttp().execute(objeto);
@@ -113,17 +102,17 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarVuelo(Vuelo vuelo) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCategoria() + "','"+ vuelo.getAerolinea() + "','"
-                + vuelo.getVuelo() + "','"+ vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
+        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCategoria() + "','" + vuelo.getAerolinea() + "','"
+                + vuelo.getVuelo() + "','" + vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
                 + vuelo.getOrigen() + "','" + vuelo.getDestino() + "','" + vuelo.getEstado() + "','"
                 + vuelo.getHoraSalida() + "','" + vuelo.getHoraLlegada() + "','" + vuelo.getTerminal() + "','"
-                + vuelo.getPuerta() + "','" + vuelo.getTiempo() + "','"+ vuelo.getEscalas() + "')");
+                + vuelo.getPuerta() + "','" + vuelo.getTiempo() + "','" + vuelo.getEscalas() + "')");
     }
 
     public void guardarActividad(Actividad actividad) {
         db = getWritableDatabase();
         //db.execSQL("INSERT INTO actividad VALUES ( null,'" + actividad.getNombre() + "','"
-          //      + actividad.getFecha() + "')");
+        //      + actividad.getFecha() + "')");
     }
 
 
@@ -135,7 +124,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarEquipaje(Equipaje equipaje) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO equipaje VALUES ( "+equipaje.getId()+",'" + equipaje.getNombre() + "')");
+        db.execSQL("INSERT INTO equipaje VALUES ( " + equipaje.getId() + ",'" + equipaje.getNombre() + "')");
     }
 
     public void guardarEquipajeX(int id, String nombre) {
@@ -145,7 +134,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
-       // db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "')");
+        db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "," + itinerario.getActividades() + "')");
     }
 
     public void guardarServicio(Servicio servicio) {
@@ -163,8 +152,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void borrarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
-        //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
-      //  db.delete("itinerario", "id=?", new String[]{Integer.toString(itinerario.getId())});
+        db.delete("itinerario", "id=?", new String[]{Integer.toString(itinerario.getIdItinerario())});
     }
 
     public void borrarVuelo(Vuelo vuelo) {
@@ -192,59 +180,49 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.delete("servicio", "id=?", new String[]{Integer.toString(servicio.getId())});
     }
 
-    /*
-        public List<Hotel> consultaHotel() {
-            String[] campos = {"id", "nombre", "categoria", "precio", "zona",
-                    "ocupabilidad", "telefono"};
-            List<Hotel> resultado = new ArrayList<Hotel>();
-            db = getReadableDatabase();
-            //db.query(nombreTabla,columnas,selection,selectionArgs,groupBy,having,orderBy)
-            Cursor cursor = db.query("hotel", campos, null, null, null, null, "id");
-            while (cursor.moveToNext()) {
-                Hotel hotel = new Hotel(cursor.getInt(0),
-                        cursor.getString(1), cursor.getString(2),
-                        cursor.getString(3), cursor.getString(4),
-                        cursor.getString(5), cursor.getString(6));
-                resultado.add(hotel);
-            }
-            cursor.close();
-            return resultado;
-        }
-    */
+    public void actualizarItinerario(Itinerario itinerario) {
+        db = getWritableDatabase();
+        ContentValues actualizarItinerario = new ContentValues();
+        //actualizar.put(llave,valor);
+        actualizarItinerario.put("destino", itinerario.getDestino());
+        actualizarItinerario.put("actividades", itinerario.getActividades());
+
+    }
+
     public void closeDatabase() {
         db.close();
     }
 
     public boolean existeUsuario() {
         db = getReadableDatabase();
-        Cursor c = db.rawQuery("select * from usuario",null);
-        if (c.moveToFirst()){
+        Cursor c = db.rawQuery("select * from usuario", null);
+        if (c.moveToFirst()) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
 
     public Usuario getUsuario() {
         db = getReadableDatabase();
-        Cursor c = db.rawQuery("select * from usuario",null);
+        Cursor c = db.rawQuery("select * from usuario", null);
         c.moveToFirst();
-        return new Usuario(c.getString(0),c.getString(1),c.getString(2),c.getString(3),
-                c.getInt(4),c.getInt(5));
+        return new Usuario(c.getString(0), c.getString(1), c.getString(2), c.getString(3),
+                c.getInt(4), c.getInt(5));
     }
 
-    public void guardarEquipajeHasObjeto(EquipajeHasObjeto obj){
+    public void guardarEquipajeHasObjeto(EquipajeHasObjeto obj) {
         db = getWritableDatabase();
         db.execSQL("INSERT INTO Equipaje_has_Objeto VALUES ( " + obj.getEquipaje_idEquipaje() + "," + obj.getObjeto_idObjeto() + ")");
     }
 
     public String[] obtenerNombresEquipajes() {
         db = getReadableDatabase();
-        Cursor c = db.rawQuery("select * from equipaje",null);
-        String[] nombres = new String[c.getCount()-1];
+        Cursor c = db.rawQuery("select * from equipaje", null);
+        String[] nombres = new String[c.getCount() - 1];
         int i = 0;
-        while(c.moveToNext()){
-            if((c.getString(1)).compareTo("default") != 0) {
+        while (c.moveToNext()) {
+            if ((c.getString(1)).compareTo("default") != 0) {
                 nombres[i] = c.getString(1);
                 i++;
             }
@@ -252,17 +230,17 @@ public class ManejadorBD extends SQLiteOpenHelper {
         return nombres;
     }
 
-    public Map<String, String> obtenerObjetosDEquipaje(){
+    public Map<String, String> obtenerObjetosDEquipaje() {
         db = getReadableDatabase();
         Cursor c = db.rawQuery("select e.nombre,o.nombre from equipaje as e, objeto as o, equipaje_has_objeto as h" +
                 " where e.idequipaje=h.equipaje_idequipaje and o.idobjeto=h.objeto_idobjeto and idequipaje != 1", null);
-        Map<String, String> objetos = new HashMap<String,String>();
-        while(c.moveToNext()){
-            if((c.getString(0)).compareTo("default") != 0) {
-                if(objetos.get(c.getString(0)) == null)
-                    objetos.put(c.getString(0),c.getString(1));
+        Map<String, String> objetos = new HashMap<String, String>();
+        while (c.moveToNext()) {
+            if ((c.getString(0)).compareTo("default") != 0) {
+                if (objetos.get(c.getString(0)) == null)
+                    objetos.put(c.getString(0), c.getString(1));
                 else
-                    objetos.put(c.getString(0),objetos.get(c.getString(0)) + ", " + c.getString(1));
+                    objetos.put(c.getString(0), objetos.get(c.getString(0)) + ", " + c.getString(1));
             }
         }
         return objetos;

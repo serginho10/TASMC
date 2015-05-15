@@ -1,13 +1,17 @@
 package com.example.vivanco.tasmc;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.widget.Toast;
+
 /**
  * Created by VIVANCO on 23/04/2015.
  */
 
 public class MyData {
-    static Integer[] id = {0, 1, 2, 3, 4};
-    static Integer[] imagen = {R.drawable.ducks, R.drawable.lsu, R.drawable.alabama,R.drawable.auburn, R.drawable.avion};
-    static String[] viajes = {"Las Vegas", "Acapulco", "Cancun", "Monterrey", "Madrid"};
-    static String[] actividades = {"Alcohol", "Cerveza", "Vino", "Cabrito", "Serrano"};
+    static Integer[] id = {0, 1, 2, 3};
+    static Integer[] imagen = {R.drawable.ducks, R.drawable.lsu, R.drawable.alabama,R.drawable.auburn};
+    static String[] viajes = {"Las Vegas", "Acapulco", "Cancun", "Monterrey"};
+    static String[] actividades = {"Alcohol", "Cerveza", "Vino", "Cabrito"};
 
 }

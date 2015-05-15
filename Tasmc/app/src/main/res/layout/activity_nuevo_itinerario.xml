@@ -9,7 +9,7 @@
         layout="@layout/app_bar_itin" />
 
     <EditText
-        android:id="@+id/titulo"
+        android:id="@+id/destino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/app_bar_itin"
@@ -17,37 +17,9 @@
         android:layout_alignParentStart="true"
         android:hint="@string/hint_titulo"
         android:textColorHint="#fce7e7e7"
-        android:textSize="28sp" />
-
-    <ImageView
-        android:id="@+id/borra"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_above="@+id/titulo"
-        android:layout_marginStart="57dp"
-        android:layout_toEndOf="@+id/save"
-        android:onClick="borra"
-        android:src="@drawable/borrab" />
-
-    <ImageView
-        android:id="@+id/save"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_above="@+id/titulo"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="76dp"
-        android:onClick="save"
-        android:src="@drawable/saveb" />
-
-    <ImageView
-        android:id="@+id/lock"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_alignTop="@+id/borra"
-        android:layout_marginStart="57dp"
-        android:layout_toEndOf="@+id/borra"
-        android:onClick="lock"
-        android:src="@drawable/lockb" />
+        android:textSize="28sp"
+        android:textColor="#fce7e7e7"
+        android:inputType="textPersonName"/>
 
     <EditText
         android:id="@+id/actividades"
@@ -55,9 +27,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/titulo"
+        android:layout_below="@+id/destino"
         android:hint="@string/hint_actividades"
         android:scrollbars="vertical" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:id="@+id/guardar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" 
+        android:background="@color/acentuadoIti"
+        android:textColor="#fff"/>
 
 
 </RelativeLayout>

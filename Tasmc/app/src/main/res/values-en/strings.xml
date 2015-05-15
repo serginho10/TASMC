@@ -669,7 +669,7 @@
     <string name="nombre">Name:</string>
     <string name="hint_obligatorio">Mandatory</string>
     <string name="icono">Icon:</string>
-    <string name="hint_titulo">Enter a title</string>
+    <string name="hint_titulo">Enter a place</string>
     <string name="hint_actividades">Enter activities</string>
     <string name="ir_Aicm">Go AICM</string>
     <string name="version">Version 1.0</string>
@@ -701,6 +701,8 @@
     <string name="compartir">Share</string>
     <string name="pa">First Floor</string>
     <string name="pb">Second Floor</string>
+    <string name="objeto">Object</string>
+    <string name="guardar">Save</string>
 
 
     <string-array name="habitaciones">

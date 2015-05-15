@@ -671,7 +671,7 @@
     <string name="nombre">Nombre:</string>
     <string name="hint_obligatorio">Obligatorio</string>
     <string name="icono">Icono:</string>
-    <string name="hint_titulo">Introducir un título</string>
+    <string name="hint_titulo">Introducir un destino</string>
     <string name="hint_actividades">Añadir actividades</string>
     <string name="ir_Aicm">Ir a AICM</string>
     <string name="version">Versión 1.0</string>
@@ -704,6 +704,7 @@
     <string name="pa">Planta Alta</string>
     <string name="pb">Planta Baja</string>
     <string name="objeto">Objeto</string>
+    <string name="guardar">Guardar</string>
 
     <string-array name="habitaciones">
         <item>1 habitacion</item>

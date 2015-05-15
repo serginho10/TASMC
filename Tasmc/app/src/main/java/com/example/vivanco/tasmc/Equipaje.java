@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -49,14 +48,6 @@ public class Equipaje extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipaje);
-        rows = new ArrayList<RenglonCheck>(30);
-        RenglonCheck row = null;
-        for (int i = 1; i < 31; i++) {
-            row = new RenglonCheck();
-            row.setObjeto("Objeto " + i);
-            rows.add(row);
-        }
-        setListAdapter(new CustomArrayAdapter(this, rows));
     }
 
 

@@ -703,6 +703,7 @@
     <string name="compartir">Compartir</string>
     <string name="pa">Planta Alta</string>
     <string name="pb">Planta Baja</string>
+    <string name="objeto">Objeto</string>
 
     <string-array name="habitaciones">
         <item>1 habitacion</item>

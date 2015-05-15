@@ -139,6 +139,9 @@
         <activity
             android:name=".NuevoEquipaje"
             android:label="@string/title_activity_nuevo_equipaje" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ListEquipaje" />
         <activity
             android:name=".Reconfigura"
             android:label="@string/title_activity_reconfigura" >

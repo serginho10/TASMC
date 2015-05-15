@@ -4,21 +4,22 @@
     android:background="@drawable/listview_selector"
     android:descendantFocusability="blocksDescendants">
 
-    <com.example.vivanco.tasmc.DontPressWhenPressParentCheckBox
+
+    <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true" />
 
-
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox"
-        android:layout_toRightOf="@+id/checkBox"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/checkBox"
+        android:text="@string/objeto"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/primarioTexto" />
 
 </RelativeLayout>

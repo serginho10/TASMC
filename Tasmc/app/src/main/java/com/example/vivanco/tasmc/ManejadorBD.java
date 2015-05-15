@@ -20,8 +20,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //Creacion tabla itinerario
-        db.execSQL("CREATE TABLE itinerario ("
-                + "idItinerario INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT," + "actividades TEXT)");
+        //db.execSQL("CREATE TABLE itinerario (idItinerario INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT," + "actividades TEXT)");
 
         //Creacion tabla equipaje
         db.execSQL("CREATE TABLE equipaje ("
@@ -32,12 +31,12 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + "idObjeto INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, categoria TEXT)");
 
         //Creacion tabla actividad
-        db.execSQL("CREATE TABLE actividad ("
+        /*db.execSQL("CREATE TABLE actividad ("
                 + "idActividad INTEGER,nombre TEXT,"
                 + "idItinerario INTEGER," +
                 " PRIMARY KEY(idActividad,idItinerario)," +
                 "FOREIGN KEY(idItinerario) REFERENCES itinerario(idItinerario))");
-
+*/
         //Crea tabla Equipaje_has_Objeto
         db.execSQL("" +
                 "CREATE TABLE Equipaje_has_Objeto(" +
@@ -69,7 +68,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
         db.execSQL("INSERT INTO equipaje VALUES ( null, 'default' )");
 
-        db.execSQL("INSERT INTO itinerario VALUES ( null, 'default' )");
+        //db.execSQL("INSERT INTO itinerario VALUES ( null, 'default' )");
     }
 
 

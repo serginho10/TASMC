@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -76,6 +78,13 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         list = (ListView) findViewById(R.id.listEquipaje);
         AdaptadorEquipaje adaptadorEquipaje = new AdaptadorEquipaje(this, titulos, image, descripcion);
         list.setAdapter(adaptadorEquipaje);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(),list.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+            }
+        });
 
         buildFAB();
     }

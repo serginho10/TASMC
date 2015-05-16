@@ -23,7 +23,7 @@
         android:drawablePadding="5dp"
         android:gravity="center_vertical"
         android:text="@string/hello_world"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/checkBox1"

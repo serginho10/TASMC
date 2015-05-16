@@ -62,6 +62,7 @@ public class EquipajeSeleccionado extends ActionBarActivity {
         while(it.hasNext()){
             String key = (String) it.next();
             grupos.append(j, gru.get(key));
+            j++;
         }
     }
 }

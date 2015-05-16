@@ -2,6 +2,7 @@ package com.example.vivanco.tasmc;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.SparseArray;
 import android.widget.ExpandableListView;
 
@@ -15,6 +16,14 @@ public class EquipajeSeleccionado extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listaseleccionada);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_equi);
+        setSupportActionBar(toolbar);
+
+        //Habilita el boton para ir a la actividad principal en el Toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         createData();
         ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
         ListaExpandibleAdapter adapter = new ListaExpandibleAdapter(this,

@@ -65,15 +65,8 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(),"No Conectado",Toast.LENGTH_SHORT).show();
         //Consumiendo web service tasmc
 
-        JSONParser json = new JSONParser(this,getApplicationContext());
-        try {
-            json.readAndParseJSON("Equipaje");
-            titulos = bd.obtenerNombresEquipajes();
-            descripcion = bd.obtenerObjetosDEquipaje();
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        titulos = bd.obtenerNombresEquipajes();
+        descripcion = bd.obtenerObjetosDEquipaje();
 
         list = (ListView) findViewById(R.id.listEquipaje);
         AdaptadorEquipaje adaptadorEquipaje = new AdaptadorEquipaje(this, titulos, image, descripcion);

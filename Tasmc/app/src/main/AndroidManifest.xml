@@ -76,6 +76,13 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
+            android:name=".EquipajeSeleccionado"
+            android:label="@string/title_activity_list_equipaje" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListEquipaje" />
+        </activity>
+        <activity
             android:name=".Itinerario"
             android:label="@string/title_activity_itinerario" >
             <meta-data

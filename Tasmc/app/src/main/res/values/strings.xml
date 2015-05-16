@@ -17,6 +17,7 @@
     <string name="title_activity_vuelos">Vuelos</string>
     <string name="title_activity_info_aicm">AICM</string>
     <string name="title_activity_list_equipaje">Lista de Equipaje</string>
+    <string name="title_activity_list_equipaje_seleccionado">Equipaje</string>
     <string name="title_activity_itinerario">Itinerario</string>
     <string name="title_activity_ruta_aicm">Ruta al AICM</string>
     <string name="title_activity_ubicate">Planta Alta AICM</string>

@@ -82,7 +82,7 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),list.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(),EquipajeSeleccionado.class));
             }
         });
 

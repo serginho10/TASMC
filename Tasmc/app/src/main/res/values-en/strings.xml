@@ -16,6 +16,7 @@
     <string name="title_activity_vuelos">Flights</string>
     <string name="title_activity_info_aicm">AICM</string>
     <string name="title_activity_list_equipaje">Luggage List</string>
+    <string name="title_activity_list_equipaje_seleccionado">Luggage</string>
     <string name="title_activity_itinerario">Itinerary</string>
     <string name="title_activity_ruta_aicm">Path to AICM</string>
     <string name="title_activity_ubicate">Second Floor</string>

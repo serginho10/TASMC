@@ -1,12 +1,15 @@
 package com.example.vivanco.tasmc;
 
 import android.app.Activity;
+import android.content.Context;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.CheckBox;
 import android.widget.CheckedTextView;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,9 +20,11 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
     private final SparseArray<Grupo> groups;
     public LayoutInflater inflater;
     public Activity activity;
+    Context context;
 
-    public ListaExpandibleAdapter(Activity act, SparseArray<Grupo> groups) {
+    public ListaExpandibleAdapter(Activity act, SparseArray<Grupo> groups, Context context) {
         activity = act;
+        this.context = context;
         this.groups = groups;
         inflater = act.getLayoutInflater();
     }
@@ -38,12 +43,19 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, final int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
         final String children = (String) getChild(groupPosition, childPosition);
-        TextView text = null;
+        CheckBox cb = null;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.filadetalle, null);
         }
-        text = (TextView) convertView.findViewById(R.id.textView1);
-        text.setText(children);
+        cb = (CheckBox) convertView.findViewById(R.id.checkBox1);
+        cb.setText(children);
+        cb.setTextSize(18);
+        cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                
+            }
+        });
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

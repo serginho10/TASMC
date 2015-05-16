@@ -38,7 +38,7 @@ public class EquipajeSeleccionado extends ActionBarActivity {
         obtieneDatos(equipaje);
         ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
         ListaExpandibleAdapter adapter = new ListaExpandibleAdapter(this,
-                grupos);
+                grupos,getApplicationContext());
         listView.setAdapter(adapter);
     }
 

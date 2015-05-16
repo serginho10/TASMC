@@ -75,7 +75,9 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(getApplicationContext(),EquipajeSeleccionado.class));
+                Intent i = new Intent(getApplicationContext(),EquipajeSeleccionado.class);
+                i.putExtra("equipaje",list.getItemAtPosition(position).toString());
+                startActivity(i);
             }
         });
 

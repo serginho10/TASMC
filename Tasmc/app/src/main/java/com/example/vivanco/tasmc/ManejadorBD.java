@@ -229,6 +229,22 @@ public class ManejadorBD extends SQLiteOpenHelper {
         return nombres;
     }
 
+    public Objeto[] obtenerObjetosDe(String equipaje) {
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select o.idObjeto,o.nombre,o.categoria " +
+                "from equipaje as e, objeto as o, equipaje_has_objeto as h " +
+                "where e.idequipaje = h.equipaje_idequipaje " +
+                "and o.idobjeto = h.objeto_idobjeto " +
+                "and e.nombre=?",new String[]{equipaje});
+        Objeto[] obj = new Objeto[c.getCount()];
+        int i = 0;
+        while (c.moveToNext()) {
+            obj[i] = new Objeto(c.getInt(0),c.getString(1),c.getString(2));
+            i++;
+        }
+        return obj;
+    }
+
     public Map<String, String> obtenerObjetosDEquipaje() {
         db = getReadableDatabase();
         Cursor c = db.rawQuery("select e.nombre,o.nombre from equipaje as e, objeto as o, equipaje_has_objeto as h" +

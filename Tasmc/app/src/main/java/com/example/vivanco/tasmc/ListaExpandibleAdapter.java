@@ -2,6 +2,7 @@ package com.example.vivanco.tasmc;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,11 @@ import android.widget.CheckedTextView;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 /**
  * Created by ISC_SERGIO on 15/05/15.
@@ -53,17 +59,52 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
         cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                
+                grabar(buttonView.getText().toString());
+                String[] archivos = context.fileList();
+
+                if (existe(archivos, "notas.txt"))
+                    try {
+                        InputStreamReader archivo = new InputStreamReader(context.openFileInput("notas.txt"));
+                        BufferedReader br = new BufferedReader(archivo);
+                        String linea = br.readLine();
+                        String todo = "";
+                        while (linea != null) {
+                            todo = todo + linea + "\n";
+                            linea = br.readLine();
+                        }
+                        br.close();
+                        archivo.close();
+                        System.out.println(todo);
+                    } catch (IOException e) {
+                    }
             }
         });
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, children,
-                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(activity, children,Toast.LENGTH_SHORT).show();
             }
         });
         return convertView;
+    }
+
+    public void grabar(String objeto) {
+        try {
+            OutputStreamWriter archivo = new OutputStreamWriter(context.openFileOutput(
+                    "notas.txt", Activity.MODE_PRIVATE));
+            archivo.write(objeto);
+            archivo.flush();
+            archivo.close();
+        } catch (IOException e) {
+        }
+        Toast.makeText(context, "Los datos fueron grabados",Toast.LENGTH_SHORT).show();
+    }
+
+    private boolean existe(String[] archivos, String archbusca) {
+        for (int f = 0; f < archivos.length; f++)
+            if (archbusca.equals(archivos[f]))
+                return true;
+        return false;
     }
 
     @Override

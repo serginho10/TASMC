@@ -2,8 +2,6 @@ package com.example.vivanco.tasmc;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -36,32 +34,18 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
     private static final String TAG_EDITA = "EDITA";
     private Context context;
     private int idItinerario;
+    private int imagen;
     private String destino;
     private String actividades;
     private TextView viaje;
     private TextView actividad;
+    private ManejadorBD db;
 
-
-    public Itinerario(int idItinerario, String destino, String actividades) {
+    public Itinerario(int idItinerario, int imagen, String destino, String actividades) {
         this.idItinerario = idItinerario;
+        this.imagen = imagen;
         this.destino = destino;
         this.actividades = actividades;
-    }
-
-    public String getActividades() {
-        return actividades;
-    }
-
-    public void setActividades(String actividades) {
-        this.actividades = actividades;
-    }
-
-    public String getDestino() {
-        return destino;
-    }
-
-    public void setDestino(String destino) {
-        this.destino = destino;
     }
 
     public int getIdItinerario() {
@@ -72,16 +56,41 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         this.idItinerario = idItinerario;
     }
 
+    public int getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    public String getActividades() {
+        return actividades;
+    }
+
+    public void setActividades(String actividades) {
+        this.actividades = actividades;
+    }
+
     @Override
     public String toString() {
         return "Itinerario{" +
                 "idItinerario=" + idItinerario +
+                ", imagen=" + imagen +
                 ", destino='" + destino + '\'' +
                 ", actividades='" + actividades + '\'' +
                 '}';
     }
 
-    public Itinerario(){
+    public Itinerario() {
 
     }
 
@@ -96,19 +105,20 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        viaje=(TextView)findViewById(R.id.viaje);
-        actividad=(TextView)findViewById(R.id.actividades);
+        viaje = (TextView) findViewById(R.id.viaje);
+        actividad = (TextView) findViewById(R.id.actividades);
         //Inicializamos con el adaptador de hoteles
         listItinerarios = (RecyclerView) findViewById(R.id.listItinerarios);
         listItinerarios.setLayoutManager(new LinearLayoutManager(this));
         listItinerarios.setHasFixedSize(true);
         listItinerarios.setItemAnimator(new DefaultItemAnimator());
+
         itinerarios = new ArrayList<Actividad>();
 
         for (int i = 0; i < MyData.viajes.length; i++) {
             itinerarios.add(new Actividad(
                     MyData.id[i],
-                    MyData.imagen[i],
+                    MyData.imagen,
                     MyData.viajes[i],
                     MyData.actividades[i]
             ));
@@ -116,6 +126,7 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
         adaptadorIti = new AdaptadorItinerario(itinerarios);
         listItinerarios.setAdapter(adaptadorIti);
+        //listItinerarios.setAdapter(new AdaptadorItinerario(db.getAllData(), R.layout.renglon_cardview_itinerario));
 
         SwipeableRecyclerViewTouchListener swipeTouchListener =
                 new SwipeableRecyclerViewTouchListener(listItinerarios,
@@ -130,7 +141,10 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                                 for (int position : reverseSortedPositions) {
                                     itinerarios.remove(position);
                                     adaptadorIti.notifyItemRemoved(position);
+
                                 }
+                                Toast.makeText(getApplicationContext(), "Itinerario eliminado correctamente",
+                                        Toast.LENGTH_LONG).show();
                                 adaptadorIti.notifyDataSetChanged();
                             }
 
@@ -139,8 +153,10 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                                 for (int position : reverseSortedPositions) {
                                     itinerarios.remove(position);
                                     adaptadorIti.notifyItemRemoved(position);
+
                                 }
-                                adaptadorIti.notifyDataSetChanged();
+                                Toast.makeText(getApplicationContext(), "Itinerario eliminado correctamente",
+                                        Toast.LENGTH_LONG).show();  adaptadorIti.notifyDataSetChanged();
                             }
                         });
 
@@ -197,17 +213,5 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         //context.startActivity(new Intent(context, NuevoItinerario.class));
         //removeItem(v);
     }
-
-
-    //Funcion para guardar itinerario
-    public void save() {
-
-    }
-
-    //Funcion para borrar itinerario
-    public void borra() {
-
-    }
-
 
 }

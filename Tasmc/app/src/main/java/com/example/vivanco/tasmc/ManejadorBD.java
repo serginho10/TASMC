@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +21,8 @@ public class ManejadorBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //Creacion tabla itinerario
-        //db.execSQL("CREATE TABLE itinerario (idItinerario INTEGER PRIMARY KEY AUTOINCREMENT, " + "nombre TEXT," + "actividades TEXT)");
+        db.execSQL("CREATE TABLE itinerario (idItinerario INTEGER PRIMARY KEY AUTOINCREMENT," + "imagen INTEGER,"
+                + "destino TEXT," + "actividades TEXT)");
 
         //Creacion tabla equipaje
         db.execSQL("CREATE TABLE equipaje ("
@@ -133,7 +135,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "," + itinerario.getActividades() + "')");
+        db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getImagen() + "," + itinerario.getDestino() + "," + itinerario.getActividades() + "')");
     }
 
     public void guardarServicio(Servicio servicio) {
@@ -235,11 +237,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 "from equipaje as e, objeto as o, equipaje_has_objeto as h " +
                 "where e.idequipaje = h.equipaje_idequipaje " +
                 "and o.idobjeto = h.objeto_idobjeto " +
-                "and e.nombre=?",new String[]{equipaje});
+                "and e.nombre=?", new String[]{equipaje});
         Objeto[] obj = new Objeto[c.getCount()];
         int i = 0;
         while (c.moveToNext()) {
-            obj[i] = new Objeto(c.getInt(0),c.getString(1),c.getString(2));
+            obj[i] = new Objeto(c.getInt(0), c.getString(1), c.getString(2));
             i++;
         }
         return obj;
@@ -274,5 +276,21 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public void borrarTodoEquipajeHasObjeto() {
         db = getWritableDatabase();
         db.execSQL("delete from equipaje_has_objeto");
+    }
+
+    public ArrayList<Actividad> getAllData() {
+        ArrayList<Actividad> list = new ArrayList<>();
+        String[] campos = {"id", "imagen", "destino", "actividades"};
+        db = getReadableDatabase();
+
+        Cursor cursor = db.query("itinerario", campos, null, null, null, null, "id");
+
+        while (cursor.moveToNext()) {
+            Actividad actividad = new Actividad(cursor.getInt(0),
+                    cursor.getInt(1), cursor.getString(2), cursor.getString(3));
+            list.add(actividad);
+        }
+
+        return list;
     }
 }

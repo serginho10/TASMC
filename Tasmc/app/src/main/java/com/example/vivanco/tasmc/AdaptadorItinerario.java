@@ -15,10 +15,12 @@ import java.util.ArrayList;
 public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerario.MyViewHolder> {
     //Lista de itinerarios
     private ArrayList<Actividad> listItinerarios;
+    private int itemLayout;
 
 
     public AdaptadorItinerario(ArrayList<Actividad> datosItinerarios) {
         this.listItinerarios = datosItinerarios;
+        //this.itemLayout=itemLayout;
 
     }
 

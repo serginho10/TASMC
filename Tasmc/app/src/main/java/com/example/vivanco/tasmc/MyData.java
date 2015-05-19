@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MyData {
     static Integer[] id = {0, 1, 2, 3};
-    static Integer[] imagen = {R.drawable.ducks, R.drawable.lsu, R.drawable.alabama,R.drawable.auburn};
+    static Integer imagen=R.drawable.viaje;
     static String[] viajes = {"Las Vegas", "Acapulco", "Cancun", "Monterrey"};
     static String[] actividades = {"Alcohol", "Cerveza", "Vino", "Cabrito"};
 

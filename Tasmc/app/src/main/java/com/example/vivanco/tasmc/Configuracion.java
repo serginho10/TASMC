@@ -41,13 +41,13 @@ public class Configuracion extends ActionBarActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
 
         //Enviamos mensaje de bienvenida
-        Toast toast = new Toast(this);
+      /*  Toast toast = new Toast(this);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         LayoutInflater inflater = getLayoutInflater();
         View appeareance = inflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.mensaje));
         toast.setView(appeareance);
-        toast.show();
+        toast.show();*/
 
         //Poner texto al textview determinado
         textEmail = (TextView) findViewById(R.id.textEmail);

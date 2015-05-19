@@ -18,6 +18,17 @@ public class NuevoItinerario extends ActionBarActivity {
     private Button guardar;
     private ManejadorBD db;
     private Itinerario itinerario = null;
+    int[] imageIDs = {
+            R.drawable.viaje,
+            R.drawable.viaje1,
+            R.drawable.viaje2,
+            R.drawable.viaje3,
+            R.drawable.viaje4,
+            R.drawable.viaje5,
+            R.drawable.viaje6,
+            R.drawable.viaje7
+    };
+    int nextImageIndex = 0;
 
 
     @Override
@@ -38,7 +49,10 @@ public class NuevoItinerario extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 db = new ManejadorBD(v.getContext());
-                itinerario = new Itinerario(0, destino.getText().toString(), actividades.getText().toString());
+                int imageId = imageIDs[nextImageIndex];
+                nextImageIndex = (nextImageIndex + 1) % imageIDs.length;
+
+                itinerario = new Itinerario(0, nextImageIndex, destino.getText().toString(), actividades.getText().toString());
                 db.guardarItinerario(itinerario);
 
                 Toast.makeText(v.getContext(), "Itinerario guardado correctamente",

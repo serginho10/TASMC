@@ -9,6 +9,24 @@ public class Objeto {
     private String nombre;
     private String categoria;
 
+    public boolean isChecked() {
+        return checked;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
+    }
+
+    public Objeto(int id, String nombre, String categoria, boolean checked) {
+
+        this.id = id;
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.checked = checked;
+    }
+
+    boolean checked;
+
     @Override
     public String toString() {
         return "Objeto{" +

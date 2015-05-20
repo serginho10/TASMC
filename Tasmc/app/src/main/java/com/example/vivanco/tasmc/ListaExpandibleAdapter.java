@@ -45,20 +45,37 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
         return 0;
     }
 
+    static class ViewHolder {
+        protected TextView text;
+        protected CheckBox checkbox;
+    }
+
     @Override
     public View getChildView(int groupPosition, final int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
+        ViewHolder viewHolder = null;
         final String children = (String) getChild(groupPosition, childPosition);
-        CheckBox cb = null;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.filadetalle, null);
         }
-        cb = (CheckBox) convertView.findViewById(R.id.checkBox1);
+        final CheckBox cb = (CheckBox) convertView.findViewById(R.id.checkBox1);
         cb.setText(children);
         cb.setTextSize(18);
+        cb.setTag(0, new Objeto(1, children, groups.get(groupPosition).getString(), false));
         cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (cb.isChecked()) {
+                    Objeto obj = (Objeto) cb.getTag(0);
+                    obj.setChecked(true);
+                    cb.setTag(0, obj);
+                } else {
+                    Objeto obj = (Objeto) cb.getTag(0);
+                    obj.setChecked(false);
+                    cb.setTag(0, obj);
+                }
+/*
                 grabar(buttonView.getText().toString());
                 String[] archivos = context.fileList();
 
@@ -76,7 +93,7 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
                         archivo.close();
                         System.out.println(todo);
                     } catch (IOException e) {
-                    }
+                    }*/
             }
         });
         convertView.setOnClickListener(new View.OnClickListener() {

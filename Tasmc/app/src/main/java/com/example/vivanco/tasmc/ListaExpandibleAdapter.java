@@ -61,19 +61,19 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
         final CheckBox cb = (CheckBox) convertView.findViewById(R.id.checkBox1);
         cb.setText(children);
         cb.setTextSize(18);
-        cb.setTag(0, new Objeto(1, children, groups.get(groupPosition).getString(), false));
+        cb.setTag(new Objeto(1, children, groups.get(groupPosition).getString(), false));
         cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-                if (cb.isChecked()) {
-                    Objeto obj = (Objeto) cb.getTag(0);
+                if (isChecked) {
+                    Objeto obj = (Objeto) buttonView.getTag();
                     obj.setChecked(true);
-                    cb.setTag(0, obj);
+                    buttonView.setTag(obj);
                 } else {
-                    Objeto obj = (Objeto) cb.getTag(0);
+                    Objeto obj = (Objeto) buttonView.getTag();
                     obj.setChecked(false);
-                    cb.setTag(0, obj);
+                    buttonView.setTag(obj);
                 }
 /*
                 grabar(buttonView.getText().toString());

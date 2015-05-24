@@ -16,6 +16,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONException;
+
 
 public class Configuracion extends ActionBarActivity {
     Spinner categorias;
@@ -28,6 +30,13 @@ public class Configuracion extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configurar);
+
+        JSONParser json = new JSONParser(this,getApplicationContext());
+        try {
+            json.readAndParseJSON("Equipaje");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         Toast toast = new Toast(this);
         toast.setDuration(Toast.LENGTH_LONG);

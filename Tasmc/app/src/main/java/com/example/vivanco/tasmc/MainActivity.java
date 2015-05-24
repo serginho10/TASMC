@@ -31,13 +31,6 @@ public class MainActivity extends ActionBarActivity {
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         drawerFragment.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), toolbar);
 
-        JSONParser json = new JSONParser(this,getApplicationContext());
-        try {
-            json.readAndParseJSON("Equipaje");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
     }
 
 

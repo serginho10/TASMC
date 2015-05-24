@@ -2,6 +2,7 @@ package com.example.vivanco.tasmc;
 
 import java.util.Comparator;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.CheckedTextView;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,6 +25,7 @@ import java.util.Map;
 public class EquipajeSeleccionado extends ActionBarActivity {
     ArrayList<Grupo> grupos = new ArrayList<Grupo>();
     ManejadorBD bd;
+    String equipaje;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +42,13 @@ public class EquipajeSeleccionado extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Bundle bundle = getIntent().getExtras();
-        String equipaje = bundle.getString("equipaje");
+        equipaje = bundle.getString("equipaje");
 
         obtieneDatos(equipaje);
         final ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
         ListaExpandibleAdapter adapter = new ListaExpandibleAdapter(this,
                 grupos,listView);
+        adapter.setEquipaje(equipaje);
         listView.setAdapter(adapter);
         listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
@@ -58,9 +62,16 @@ public class EquipajeSeleccionado extends ActionBarActivity {
                     if(sub != null){
                         Grupo grupo = grupos.get(groupPosition);
                         if(checkbox.isChecked()){
+                            SharedPreferences settings = getSharedPreferences(equipaje, 0);
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean(checkbox.getText().toString(), true);
+                            editor.commit();
                             grupo.seleccion.add(checkbox.getText().toString());
                             Collections.sort(grupo.seleccion, new CustomComparator());
                         }else{
+                            SharedPreferences settings = getSharedPreferences(equipaje, 0);
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.remove(checkbox.getText().toString()).commit();
                             grupo.seleccion.remove(checkbox.getText().toString());
                         }
                         sub.setText(grupo.seleccion.toString());

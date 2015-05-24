@@ -2,6 +2,7 @@ package com.example.vivanco.tasmc;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -20,6 +21,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * Created by ISC_SERGIO on 15/05/15.
@@ -29,15 +32,20 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
     private ArrayList<Grupo> mParent;
     private ExpandableListView accordion;
     public int lastExpandedGroupPosition;
-
+    String equipaje;
+    Context context;
 
     public ListaExpandibleAdapter(Context context, ArrayList<Grupo> parent, ExpandableListView accordion) {
+        this.context = context;
         mParent = parent;
         inflater = LayoutInflater.from(context);
         this.accordion = accordion;
 
     }
 
+    public void setEquipaje(String equipaje){
+        this.equipaje = equipaje;
+    }
 
     @Override
     //counts the number of group/parent items so the list knows how many times calls getGroupView() method
@@ -114,15 +122,21 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
             view = inflater.inflate(R.layout.filagrupo, viewGroup,false);
         }
 
-
         CheckedTextView textView = (CheckedTextView) view.findViewById(R.id.list_item_text_child);
 
         //"i" is the position of the parent/group in the list and
         //"i1" is the position of the child
         textView.setText(mParent.get(i).objetos.get(i1).getNombre());
-
+        SharedPreferences settings = context.getSharedPreferences(equipaje, 0);
+        /*Map<String, ?> all = settings.getAll();
+        Iterator it = all.keySet().iterator();
+        while(it.hasNext()){
+            String key = (String) it.next();
+            System.out.println(key);
+        }*/
+        boolean objeto = settings.getBoolean(mParent.get(i).objetos.get(i1).getNombre(), false);
         // set checked if parent category selection contains child category
-        if(mParent.get(i).seleccion.contains(textView.getText().toString())) {
+        if(mParent.get(i).seleccion.contains(textView.getText().toString()) || objeto) {
             textView.setChecked(true);
         }
         else {

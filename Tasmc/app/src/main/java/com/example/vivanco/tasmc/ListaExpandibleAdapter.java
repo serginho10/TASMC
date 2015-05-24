@@ -32,7 +32,7 @@ public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
     private ArrayList<Grupo> mParent;
     private ExpandableListView accordion;
     public int lastExpandedGroupPosition;
-    String equipaje;
+    String equipaje = "";
     Context context;
 
     public ListaExpandibleAdapter(Context context, ArrayList<Grupo> parent, ExpandableListView accordion) {

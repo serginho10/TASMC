@@ -26,14 +26,13 @@
         android:layout_marginTop="12dp"
         android:hint="@string/hint_obligatorio" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/listObjetos"
+    <ExpandableListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/button"
-        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/equipaje"
-        android:background="@color/primary_material_light"/>
+        android:layout_above="@+id/button">
+    </ExpandableListView>
 
     <Button
         android:id="@+id/button"

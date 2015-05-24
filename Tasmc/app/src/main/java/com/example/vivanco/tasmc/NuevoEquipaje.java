@@ -1,5 +1,6 @@
 package com.example.vivanco.tasmc;
 
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -7,15 +8,22 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckedTextView;
+import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 
 public class NuevoEquipaje extends ActionBarActivity {
-
-    private RecyclerView listObjetos;
-    private ArrayList<RenglonCheck> objetos;
-    private AdaptadorNuevoEquipaje adaptadorNuevoEquipaje;
+    ArrayList<Grupo> grupos = new ArrayList<Grupo>();
+    ManejadorBD bd;
 
 
     @Override
@@ -29,13 +37,72 @@ public class NuevoEquipaje extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        listObjetos = (RecyclerView) findViewById(R.id.listObjetos);
-        AdaptadorNuevoEquipaje adaptadorNuevoEquipaje = new AdaptadorNuevoEquipaje(this, getDatos());
-        listObjetos.setAdapter(adaptadorNuevoEquipaje);
-        listObjetos.setLayoutManager(new LinearLayoutManager(this));
+        bd = new ManejadorBD(getApplicationContext());
+
+        obtieneDatos();
+        final ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
+        ListaExpandibleAdapter adapter = new ListaExpandibleAdapter(this,
+                grupos,listView);
+        listView.setAdapter(adapter);
+        listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                CheckedTextView checkbox = (CheckedTextView) v.findViewById(R.id.list_item_text_child);
+                checkbox.toggle();
+
+                View parentView = listView.findViewWithTag(grupos.get(groupPosition).nombre);
+                if (parentView != null) {
+                    TextView sub = (TextView) parentView.findViewById(R.id.list_item_text_subscriptions);
+                    if (sub != null) {
+                        Grupo grupo = grupos.get(groupPosition);
+                        if (checkbox.isChecked()) {
+                            grupo.seleccion.add(checkbox.getText().toString());
+                            Collections.sort(grupo.seleccion, new CustomComparator());
+                        } else {
+                            grupo.seleccion.remove(checkbox.getText().toString());
+                        }
+                        sub.setText(grupo.seleccion.toString());
+                    }
+                }
+                return true;
+            }
+        });
 
     }
 
+    public class CustomComparator implements Comparator<String> {
+        @Override
+        public int compare(String o1, String o2) {
+            return o1.compareTo(o2);
+        }
+    }
+
+    public void obtieneDatos() {
+        Objeto[] obj = bd.obtenerObjetos();
+        Map<String,Grupo> gru = new HashMap<String,Grupo>();
+        Grupo group;
+        for (int j = 0; j < obj.length; j++) {
+            System.out.println(obj[j].getCategoria()+" ++++++++++++++++++");
+            Grupo g = gru.get(obj[j].getCategoria());
+            if(g == null){
+                group = new Grupo(obj[j].getCategoria());
+                group.objetos.add(obj[j]);
+                group.nombre = obj[j].getCategoria();
+                gru.put(obj[j].getCategoria(),group);
+            }else{
+                g.objetos.add(obj[j]);
+                g.nombre = obj[j].getCategoria();
+                gru.put(obj[j].getCategoria(),g);
+            }
+        }
+        int j = 0;
+        Iterator it = gru.keySet().iterator();
+        while(it.hasNext()){
+            String key = (String) it.next();
+            grupos.add(gru.get(key));
+            j++;
+        }
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -52,18 +119,4 @@ public class NuevoEquipaje extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //metodo para anadir la informacion
-    public ArrayList<RenglonCheck> getDatos() {
-        ArrayList<RenglonCheck> datos = new ArrayList<>();
-        String[] objetos;
-        //Recuperamos los string-array
-        Resources res = getResources();
-        objetos = res.getStringArray(R.array.objetos);
-        for (int i = 0; i < objetos.length; i++) {
-            RenglonCheck current = new RenglonCheck();
-            current.setObjeto(objetos[i]);
-            datos.add(current);
-        }
-        return datos;
-    }
 }

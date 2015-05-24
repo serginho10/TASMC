@@ -49,7 +49,10 @@ public class Configuracion extends ActionBarActivity {
         if (bd.existeUsuario()) {
             finish();
             startActivity(new Intent(this, MainActivity.class));
-        }else toast.show();
+        }else{
+            toast.show();
+            toast.show();
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         toolbar.setLogo(R.drawable.avionblan); //logo

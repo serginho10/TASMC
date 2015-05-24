@@ -706,6 +706,7 @@
     <string name="pb">Planta Baja</string>
     <string name="objeto">Objeto</string>
     <string name="guardar">Guardar</string>
+    <string name="title_activity_inicio">TASMC</string>
 
     <string-array name="habitaciones">
         <item>1 habitacion</item>

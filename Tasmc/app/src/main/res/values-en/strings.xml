@@ -704,6 +704,7 @@
     <string name="pb">Second Floor</string>
     <string name="objeto">Object</string>
     <string name="guardar">Save</string>
+    <string name="title_activity_inicio">TASMC</string>
 
 
     <string-array name="habitaciones">

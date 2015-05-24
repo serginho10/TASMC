@@ -3,6 +3,7 @@ package com.example.vivanco.tasmc;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
@@ -44,6 +45,7 @@ public class JSONParser {
         Thread thread = new Thread(null, runReadAndParseJSON, "bgReadJSONObjetos");
         thread.start();
         progressDialog = ProgressDialog.show(activity, "Descargando información", "Por favor espere",true);
+        while(thread.isAlive()){}
     }
 
     public void readJSON(String cadena) throws JSONException{

@@ -1,5 +1,6 @@
 package com.example.vivanco.tasmc;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -9,13 +10,17 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckedTextView;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -65,6 +70,28 @@ public class NuevoEquipaje extends ActionBarActivity {
                     }
                 }
                 return true;
+            }
+        });
+
+        final EditText etNombreEquipaje = (EditText) findViewById(R.id.etNuevoEquipaje);
+        Button btnGuardar = (Button) findViewById(R.id.btnGuardarEquipaje);
+        btnGuardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String nombreEquipaje = etNombreEquipaje.getText().toString();
+                if(nombreEquipaje.length() != 0) {
+                    java.util.Date fecha = new Date();
+                    String id = fecha.getDay() +""+fecha.getMonth()+""+fecha.getHours()+""+fecha.getMinutes();
+                    bd.guardarEquipaje(new Equipaje(Integer.parseInt(id), nombreEquipaje));
+                    for(int i = 0; i < grupos.size();i++){
+                        ArrayList<String> sel = grupos.get(i).seleccion;
+                        for(int j = 0; j < sel.size();j++){
+                            bd.guardarEquipajeHasObjeto(new EquipajeHasObjeto(Integer.parseInt(id),bd.getIdObjeto(sel.get(j))));
+                        }
+                    }
+                    finish();
+                    startActivity(new Intent(getApplicationContext(), ListEquipaje.class));
+                }else etNombreEquipaje.setError( "Debes ingresar un nombre de Equipaje" );
             }
         });
 

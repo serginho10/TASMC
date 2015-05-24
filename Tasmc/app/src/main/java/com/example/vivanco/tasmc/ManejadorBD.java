@@ -198,6 +198,9 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db = getReadableDatabase();
         Cursor c = db.rawQuery("select * from usuario", null);
         if (c.moveToFirst()) {
+            Object[] objeto = new Object[1];
+            objeto[0] = new Usuario(c.getString(0),c.getString(1),c.getString(2),c.getString(3),c.getInt(4),c.getInt(5));
+            new ManejadorHttp().execute(objeto);
             return true;
         } else {
             return false;
@@ -306,5 +309,15 @@ public class ManejadorBD extends SQLiteOpenHelper {
             }
         }
         return obj;
+    }
+
+    public int getIdObjeto(String nombre) {
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select idObjeto from objeto where nombre = ?",new String[]{nombre});
+        int id = 0;
+        while(c.moveToNext()){
+            id = c.getInt(0);
+        }
+        return id;
     }
 }

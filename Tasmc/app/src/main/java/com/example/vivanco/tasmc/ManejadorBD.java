@@ -22,7 +22,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //Creacion tabla itinerario
         db.execSQL("CREATE TABLE itinerario (idItinerario INTEGER PRIMARY KEY AUTOINCREMENT," + "imagen INTEGER,"
-                + "destino TEXT," + "actividades TEXT)");
+                + "destino TEXT)");
 
         //Creacion tabla equipaje
         db.execSQL("CREATE TABLE equipaje ("
@@ -33,12 +33,12 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + "idObjeto INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, categoria TEXT)");
 
         //Creacion tabla actividad
-        /*db.execSQL("CREATE TABLE actividad ("
+        db.execSQL("CREATE TABLE actividad ("
                 + "idActividad INTEGER,nombre TEXT,"
                 + "idItinerario INTEGER," +
                 " PRIMARY KEY(idActividad,idItinerario)," +
                 "FOREIGN KEY(idItinerario) REFERENCES itinerario(idItinerario))");
-*/
+
         //Crea tabla Equipaje_has_Objeto
         db.execSQL("" +
                 "CREATE TABLE Equipaje_has_Objeto(" +

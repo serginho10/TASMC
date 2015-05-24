@@ -11,6 +11,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 import android.widget.CompoundButton;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,161 +19,139 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 
 /**
  * Created by ISC_SERGIO on 15/05/15.
  */
 public class ListaExpandibleAdapter extends BaseExpandableListAdapter {
-    private final SparseArray<Grupo> groups;
-    public LayoutInflater inflater;
-    public Activity activity;
-    Context context;
+    private LayoutInflater inflater;
+    private ArrayList<Grupo> mParent;
+    private ExpandableListView accordion;
+    public int lastExpandedGroupPosition;
 
-    public ListaExpandibleAdapter(Activity act, SparseArray<Grupo> groups, Context context) {
-        activity = act;
-        this.context = context;
-        this.groups = groups;
-        inflater = act.getLayoutInflater();
+
+    public ListaExpandibleAdapter(Context context, ArrayList<Grupo> parent, ExpandableListView accordion) {
+        mParent = parent;
+        inflater = LayoutInflater.from(context);
+        this.accordion = accordion;
+
     }
+
 
     @Override
-    public Object getChild(int groupPosition, int childPosition) {
-        return groups.get(groupPosition).children.get(childPosition);
-    }
-
-    @Override
-    public long getChildId(int groupPosition, int childPosition) {
-        return 0;
-    }
-
-    static class ViewHolder {
-        protected TextView text;
-        protected CheckBox checkbox;
-    }
-
-    @Override
-    public View getChildView(int groupPosition, final int childPosition,
-                             boolean isLastChild, View convertView, ViewGroup parent) {
-        ViewHolder viewHolder = null;
-        final String children = (String) getChild(groupPosition, childPosition);
-        if (convertView == null) {
-            convertView = inflater.inflate(R.layout.filadetalle, null);
-        }
-        final CheckBox cb = (CheckBox) convertView.findViewById(R.id.checkBox1);
-        cb.setText(children);
-        cb.setTextSize(18);
-        cb.setTag(new Objeto(1, children, groups.get(groupPosition).getString(), false));
-        cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if (isChecked) {
-                    Objeto obj = (Objeto) buttonView.getTag();
-                    obj.setChecked(true);
-                    buttonView.setTag(obj);
-                } else {
-                    Objeto obj = (Objeto) buttonView.getTag();
-                    obj.setChecked(false);
-                    buttonView.setTag(obj);
-                }
-/*
-                grabar(buttonView.getText().toString());
-                String[] archivos = context.fileList();
-
-                if (existe(archivos, "notas.txt"))
-                    try {
-                        InputStreamReader archivo = new InputStreamReader(context.openFileInput("notas.txt"));
-                        BufferedReader br = new BufferedReader(archivo);
-                        String linea = br.readLine();
-                        String todo = "";
-                        while (linea != null) {
-                            todo = todo + linea + "\n";
-                            linea = br.readLine();
-                        }
-                        br.close();
-                        archivo.close();
-                        System.out.println(todo);
-                    } catch (IOException e) {
-                    }*/
-            }
-        });
-        convertView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Toast.makeText(activity, children,Toast.LENGTH_SHORT).show();
-            }
-        });
-        return convertView;
-    }
-
-    public void grabar(String objeto) {
-        try {
-            OutputStreamWriter archivo = new OutputStreamWriter(context.openFileOutput(
-                    "notas.txt", Activity.MODE_PRIVATE));
-            archivo.write(objeto);
-            archivo.flush();
-            archivo.close();
-        } catch (IOException e) {
-        }
-        Toast.makeText(context, "Los datos fueron grabados",Toast.LENGTH_SHORT).show();
-    }
-
-    private boolean existe(String[] archivos, String archbusca) {
-        for (int f = 0; f < archivos.length; f++)
-            if (archbusca.equals(archivos[f]))
-                return true;
-        return false;
-    }
-
-    @Override
-    public int getChildrenCount(int groupPosition) {
-        return groups.get(groupPosition).children.size();
-    }
-
-    @Override
-    public Object getGroup(int groupPosition) {
-        return groups.get(groupPosition);
-    }
-
-    @Override
+    //counts the number of group/parent items so the list knows how many times calls getGroupView() method
     public int getGroupCount() {
-        return groups.size();
+        return mParent.size();
     }
 
     @Override
-    public void onGroupCollapsed(int groupPosition) {
-        super.onGroupCollapsed(groupPosition);
+    //counts the number of children items so the list knows how many times calls getChildView() method
+    public int getChildrenCount(int i) {
+        return mParent.get(i).objetos.size();
     }
 
     @Override
-    public void onGroupExpanded(int groupPosition) {
-        super.onGroupExpanded(groupPosition);
+    //gets the title of each parent/group
+    public Object getGroup(int i) {
+        return mParent.get(i).nombre;
     }
 
     @Override
-    public long getGroupId(int groupPosition) {
-        return 0;
+    //gets the name of each item
+    public Object getChild(int i, int i1) {
+        return mParent.get(i).objetos.get(i1);
     }
 
     @Override
-    public View getGroupView(int groupPosition, boolean isExpanded,
-                             View convertView, ViewGroup parent) {
-        if (convertView == null) {
-            convertView = inflater.inflate(R.layout.filagrupo, null);
-        }
-        Grupo group = (Grupo) getGroup(groupPosition);
-        ((CheckedTextView) convertView).setText(group.string);
-        ((CheckedTextView) convertView).setChecked(isExpanded);
-        return convertView;
+    public long getGroupId(int i) {
+        return i;
+    }
+
+    @Override
+    public long getChildId(int i, int i1) {
+        return i1;
     }
 
     @Override
     public boolean hasStableIds() {
-        return false;
+        return true;
     }
 
     @Override
-    public boolean isChildSelectable(int groupPosition, int childPosition) {
-        return false;
+    //in this method you must set the text to see the parent/group on the list
+    public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
+
+        if (view == null) {
+            view = inflater.inflate(R.layout.filadetalle, viewGroup,false);
+        }
+        // set category name as tag so view can be found view later
+        view.setTag(getGroup(i).toString());
+
+        TextView textView = (TextView) view.findViewById(R.id.list_item_text_view);
+
+        //"i" is the position of the parent/group in the list
+        textView.setText(getGroup(i).toString());
+
+        TextView sub = (TextView) view.findViewById(R.id.list_item_text_subscriptions);
+
+        if(mParent.get(i).seleccion.size()>0) {
+            sub.setText(mParent.get(i).seleccion.toString());
+        }
+        else {
+            sub.setText("");
+        }
+
+        //return the entire view
+        return view;
+    }
+
+
+    @Override
+    //in this method you must set the text to see the children on the list
+    public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
+        if (view == null) {
+            view = inflater.inflate(R.layout.filagrupo, viewGroup,false);
+        }
+
+
+        CheckedTextView textView = (CheckedTextView) view.findViewById(R.id.list_item_text_child);
+
+        //"i" is the position of the parent/group in the list and
+        //"i1" is the position of the child
+        textView.setText(mParent.get(i).objetos.get(i1).getNombre());
+
+        // set checked if parent category selection contains child category
+        if(mParent.get(i).seleccion.contains(textView.getText().toString())) {
+            textView.setChecked(true);
+        }
+        else {
+            textView.setChecked(false);
+        }
+
+        //return the entire view
+        return view;
+    }
+
+    @Override
+    public boolean isChildSelectable(int i, int i1) {
+        return true;
+    }
+
+    @Override
+    /**
+     * automatically collapse last expanded group
+     * @see http://stackoverflow.com/questions/4314777/programmatically-collapse-a-group-in-expandablelistview
+     */
+    public void onGroupExpanded(int groupPosition) {
+
+        if(groupPosition != lastExpandedGroupPosition){
+            accordion.collapseGroup(lastExpandedGroupPosition);
+        }
+
+        super.onGroupExpanded(groupPosition);
+
+        lastExpandedGroupPosition = groupPosition;
+
     }
 }

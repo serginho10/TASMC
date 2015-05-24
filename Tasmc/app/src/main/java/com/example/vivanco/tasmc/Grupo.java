@@ -7,14 +7,21 @@ import java.util.List;
  * Created by ISC_SERGIO on 15/05/15.
  */
 public class Grupo {
-    public String string;
-    public final List<String> children = new ArrayList<String>();
+    public ArrayList<Objeto> objetos;
+    public ArrayList<String> seleccion;
+    public String nombre;
 
-    public Grupo(String string) {
-        this.string = string;
+    public Grupo() {
+        objetos = new ArrayList<Objeto>();
+        seleccion = new ArrayList<String>();
     }
 
-    public String getString() {
-        return string;
+    public Grupo(String nombre){
+        this();
+        this.nombre = nombre;
+    }
+
+    public String toString(){
+        return this.nombre;
     }
 }

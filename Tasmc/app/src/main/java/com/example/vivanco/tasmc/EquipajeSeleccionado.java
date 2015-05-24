@@ -1,12 +1,18 @@
 package com.example.vivanco.tasmc;
 
+import java.util.Comparator;
+
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.SparseArray;
+import android.view.View;
+import android.widget.CheckedTextView;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -15,7 +21,7 @@ import java.util.Map;
  * Created by ISC_SERGIO on 15/05/15.
  */
 public class EquipajeSeleccionado extends ActionBarActivity {
-    SparseArray<Grupo> grupos = new SparseArray<Grupo>();
+    ArrayList<Grupo> grupos = new ArrayList<Grupo>();
     ManejadorBD bd;
 
     @Override
@@ -36,10 +42,40 @@ public class EquipajeSeleccionado extends ActionBarActivity {
         String equipaje = bundle.getString("equipaje");
 
         obtieneDatos(equipaje);
-        ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
+        final ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
         ListaExpandibleAdapter adapter = new ListaExpandibleAdapter(this,
-                grupos,getApplicationContext());
+                grupos,listView);
         listView.setAdapter(adapter);
+        listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                CheckedTextView checkbox = (CheckedTextView) v.findViewById(R.id.list_item_text_child);
+                checkbox.toggle();
+
+                View parentView = listView.findViewWithTag(grupos.get(groupPosition).nombre);
+                if(parentView != null){
+                    TextView sub = (TextView) parentView.findViewById(R.id.list_item_text_subscriptions);
+                    if(sub != null){
+                        Grupo grupo = grupos.get(groupPosition);
+                        if(checkbox.isChecked()){
+                            grupo.seleccion.add(checkbox.getText().toString());
+                            Collections.sort(grupo.seleccion, new CustomComparator());
+                        }else{
+                            grupo.seleccion.remove(checkbox.getText().toString());
+                        }
+                        sub.setText(grupo.seleccion.toString());
+                    }
+                }
+                return true;
+            }
+        });
+    }
+
+    public class CustomComparator implements Comparator<String> {
+        @Override
+        public int compare(String o1, String o2) {
+            return o1.compareTo(o2);
+        }
     }
 
     public void obtieneDatos(String equipaje) {
@@ -50,10 +86,12 @@ public class EquipajeSeleccionado extends ActionBarActivity {
             Grupo g = gru.get(obj[j].getCategoria());
             if(g == null){
                 group = new Grupo(obj[j].getCategoria());
-                group.children.add(obj[j].getNombre());
+                group.objetos.add(obj[j]);
+                group.nombre = obj[j].getCategoria();
                 gru.put(obj[j].getCategoria(),group);
             }else{
-                g.children.add(obj[j].getNombre());
+                g.objetos.add(obj[j]);
+                g.nombre = obj[j].getCategoria();
                 gru.put(obj[j].getCategoria(),g);
             }
         }
@@ -61,7 +99,7 @@ public class EquipajeSeleccionado extends ActionBarActivity {
         Iterator it = gru.keySet().iterator();
         while(it.hasNext()){
             String key = (String) it.next();
-            grupos.append(j, gru.get(key));
+            grupos.add(gru.get(key));
             j++;
         }
     }

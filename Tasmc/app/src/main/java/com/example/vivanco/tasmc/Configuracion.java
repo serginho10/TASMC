@@ -29,25 +29,23 @@ public class Configuracion extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configurar);
 
-        final ManejadorBD bd = new ManejadorBD(getApplicationContext());
-        if (bd.existeUsuario()) {
-            finish();
-            startActivity(new Intent(this, MainActivity.class));
-        }
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
-        toolbar.setLogo(R.drawable.avionblan); //logo
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
-
-        //Enviamos mensaje de bienvenida
-      /*  Toast toast = new Toast(this);
+        Toast toast = new Toast(this);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         LayoutInflater inflater = getLayoutInflater();
         View appeareance = inflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.mensaje));
         toast.setView(appeareance);
-        toast.show();*/
+
+        final ManejadorBD bd = new ManejadorBD(getApplicationContext());
+        if (bd.existeUsuario()) {
+            finish();
+            startActivity(new Intent(this, MainActivity.class));
+        }else toast.show();
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
+        toolbar.setLogo(R.drawable.avionblan); //logo
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
 
         //Poner texto al textview determinado
         textEmail = (TextView) findViewById(R.id.textEmail);

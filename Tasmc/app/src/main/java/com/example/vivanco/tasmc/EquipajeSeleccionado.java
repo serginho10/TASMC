@@ -10,6 +10,7 @@ import android.util.SparseArray;
 import android.view.View;
 import android.widget.CheckedTextView;
 import android.widget.ExpandableListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,9 +42,11 @@ public class EquipajeSeleccionado extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+
         Bundle bundle = getIntent().getExtras();
         equipaje = bundle.getString("equipaje");
-
+        setTitle(equipaje);
         obtieneDatos(equipaje);
         final ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
         ListaExpandibleAdapter adapter = new ListaExpandibleAdapter(this,

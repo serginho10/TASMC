@@ -647,7 +647,7 @@
     <string name="categoria_preferida">Categoria Preferida:</string>
     <string name="clase_preferida">Clase Preferida:</string>
     <string name="email">Email:</string>
-    <string name="listo">Listo</string>
+    <string name="listo">Guardar</string>
     <string name="editar">Editar</string>
     <string name="añadir">Añadir</string>
     <string name="fecha_entrada">Fecha entrada</string>

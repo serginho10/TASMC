@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class ManejadorBD extends SQLiteOpenHelper {
@@ -21,7 +22,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //Creacion tabla itinerario
-        db.execSQL("CREATE TABLE itinerario (idItinerario INTEGER PRIMARY KEY AUTOINCREMENT," + "imagen INTEGER,"
+        db.execSQL("CREATE TABLE itinerario (idItinerario INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + "destino TEXT)");
 
         //Creacion tabla equipaje
@@ -135,7 +136,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getImagen() + "," + itinerario.getDestino() + "," + itinerario.getActividades() + "')");
+        db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "')");
     }
 
     public void guardarServicio(Servicio servicio) {
@@ -168,11 +169,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.delete("objeto", "id=?", new String[]{Integer.toString(objeto.getId())});
     }
 
-    public void borrarActividad(Actividad actividad) {
+    /*public void borrarActividad(Actividad actividad) {
         db = getWritableDatabase();
         //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
         db.delete("actividad", "id=?", new String[]{Integer.toString(actividad.getId())});
-    }
+    }*/
 
 
     public void borrarServicio(Servicio servicio) {
@@ -181,14 +182,14 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.delete("servicio", "id=?", new String[]{Integer.toString(servicio.getId())});
     }
 
-    public void actualizarItinerario(Itinerario itinerario) {
+    /*public void actualizarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
         ContentValues actualizarItinerario = new ContentValues();
         //actualizar.put(llave,valor);
         actualizarItinerario.put("destino", itinerario.getDestino());
         actualizarItinerario.put("actividades", itinerario.getActividades());
 
-    }
+    }*/
 
     public void closeDatabase() {
         db.close();
@@ -281,7 +282,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.execSQL("delete from equipaje_has_objeto");
     }
 
-    public ArrayList<Actividad> getAllData() {
+    /*public ArrayList<Actividad> getAllData() {
         ArrayList<Actividad> list = new ArrayList<>();
         String[] campos = {"id", "imagen", "destino", "actividades"};
         db = getReadableDatabase();
@@ -295,7 +296,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
         }
 
         return list;
-    }
+    }*/
 
     public Objeto[] obtenerObjetos() {
         db = getReadableDatabase();
@@ -319,5 +320,31 @@ public class ManejadorBD extends SQLiteOpenHelper {
             id = c.getInt(0);
         }
         return id;
+    }
+
+    public ArrayList<Itinerario> obtenerItinerarios() {
+        ArrayList<Itinerario> it = new ArrayList<Itinerario>();
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from itinerario",null);
+        Map<Integer,String> itinerarios = new HashMap<Integer,String>();
+        while(c.moveToNext()){
+            itinerarios.put(c.getInt(0),c.getString(1));
+        }
+        Iterator ite = itinerarios.keySet().iterator();
+        while(ite.hasNext()){
+            int key = (int) ite.next();
+            it.add(new Itinerario(key,itinerarios.get(key),obtenerActividadesDe(key)));
+        }
+        return it;
+    }
+
+    private ArrayList<Actividad> obtenerActividadesDe(int idItinerario) {
+        ArrayList<Actividad> act = new ArrayList<Actividad>();
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from actividad where idItinerario = ?",new String[]{idItinerario+""});
+        while(c.moveToNext()){
+            act.add(new Actividad(c.getInt(0),c.getString(1),c.getInt(2)));
+        }
+        return act;
     }
 }

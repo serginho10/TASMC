@@ -62,7 +62,7 @@ public class AdaptadorSalidasInternacionales extends RecyclerView.Adapter<Adapta
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            destino = (TextView) itemView.findViewById(R.id.destino);
+            destino = (TextView) itemView.findViewById(R.id.etDestino);
             aerolinea = (TextView) itemView.findViewById(R.id.aerolinea);
             vuelo = (TextView) itemView.findViewById(R.id.vuelo);
             hora = (TextView) itemView.findViewById(R.id.hora);

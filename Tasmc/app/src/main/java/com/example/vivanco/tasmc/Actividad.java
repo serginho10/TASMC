@@ -5,57 +5,46 @@ package com.example.vivanco.tasmc;
  */
 public class Actividad {
 
-    private int id;
-    private int imagen;
-    private String viaje;
-    private String actividades;
+    private int idActividad;
+    private String nombre;
+    private int itinerario;
 
-    public Actividad(int id, int imagen, String viaje, String actividades) {
-        this.id = id;
-        this.imagen = imagen;
-        this.viaje = viaje;
-        this.actividades = actividades;
+    public Actividad(int idActividad, String nombre, int itinerario) {
+        this.idActividad = idActividad;
+        this.nombre = nombre;
+        this.itinerario = itinerario;
     }
 
-    public int getId() {
-        return id;
+    public int getIdActividad() {
+        return idActividad;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdActividad(int idActividad) {
+        this.idActividad = idActividad;
     }
 
-    public int getImagen() {
-        return imagen;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setImagen(int imagen) {
-        this.imagen = imagen;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getViaje() {
-        return viaje;
+    public int getItinerario() {
+        return itinerario;
     }
 
-    public void setViaje(String viaje) {
-        this.viaje = viaje;
-    }
-
-    public String getActividades() {
-        return actividades;
-    }
-
-    public void setActividades(String actividades) {
-        this.actividades = actividades;
+    public void setItinerario(int itinerario) {
+        this.itinerario = itinerario;
     }
 
     @Override
     public String toString() {
         return "Actividad{" +
-                "id=" + id +
-                ", imagen=" + imagen +
-                ", viaje='" + viaje + '\'' +
-                ", actividades='" + actividades + '\'' +
+                "idActividad=" + idActividad +
+                ", nombre='" + nombre + '\'' +
+                ", itinerario=" + itinerario +
                 '}';
     }
 }

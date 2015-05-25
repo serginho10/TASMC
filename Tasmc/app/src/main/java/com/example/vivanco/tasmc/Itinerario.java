@@ -26,27 +26,29 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
     private static RecyclerView recyclerView;
     private RecyclerView listItinerarios;
-    private ArrayList<Actividad> itinerarios;
+    private ArrayList<Itinerario> itinerarios;
     private AdaptadorItinerario adaptadorIti;
     private static ArrayList<Integer> removedItems;
     private static final String TAG_NUEVO = "NUEVO";
     private static final String TAG_BORRA = "BORRA";
     private static final String TAG_EDITA = "EDITA";
     private Context context;
-    private int idItinerario;
-    private int imagen;
-    private String destino;
-    private String actividades;
-    private TextView viaje;
-    private TextView actividad;
     private ManejadorBD db;
 
-    public Itinerario(int idItinerario, int imagen, String destino, String actividades) {
+    private int idItinerario;
+    private String destino;
+    private ArrayList<Actividad> actividades;
+
+    private TextView viaje;
+    private TextView actividad;
+
+    public Itinerario(int idItinerario, String destino, ArrayList<Actividad> actividades) {
         this.idItinerario = idItinerario;
-        this.imagen = imagen;
         this.destino = destino;
         this.actividades = actividades;
     }
+
+    public Itinerario(){}
 
     public int getIdItinerario() {
         return idItinerario;
@@ -54,14 +56,6 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
     public void setIdItinerario(int idItinerario) {
         this.idItinerario = idItinerario;
-    }
-
-    public int getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(int imagen) {
-        this.imagen = imagen;
     }
 
     public String getDestino() {
@@ -72,11 +66,11 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         this.destino = destino;
     }
 
-    public String getActividades() {
+    public ArrayList<Actividad> getActividades() {
         return actividades;
     }
 
-    public void setActividades(String actividades) {
+    public void setActividades(ArrayList<Actividad> actividades) {
         this.actividades = actividades;
     }
 
@@ -84,14 +78,9 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
     public String toString() {
         return "Itinerario{" +
                 "idItinerario=" + idItinerario +
-                ", imagen=" + imagen +
                 ", destino='" + destino + '\'' +
-                ", actividades='" + actividades + '\'' +
+                ", actividades=" + actividades +
                 '}';
-    }
-
-    public Itinerario() {
-
     }
 
     @Override
@@ -105,25 +94,18 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        db = new ManejadorBD(this);
+
         viaje = (TextView) findViewById(R.id.viaje);
-        actividad = (TextView) findViewById(R.id.actividades);
-        //Inicializamos con el adaptador de hoteles
+        actividad = (TextView) findViewById(R.id.etActividad);
+
         listItinerarios = (RecyclerView) findViewById(R.id.listItinerarios);
         listItinerarios.setLayoutManager(new LinearLayoutManager(this));
         listItinerarios.setHasFixedSize(true);
         listItinerarios.setItemAnimator(new DefaultItemAnimator());
 
-        itinerarios = new ArrayList<Actividad>();
-
-        for (int i = 0; i < MyData.viajes.length; i++) {
-            itinerarios.add(new Actividad(
-                    MyData.id[i],
-                    MyData.imagen,
-                    MyData.viajes[i],
-                    MyData.actividades[i]
-            ));
-        }
-
+        itinerarios = db.obtenerItinerarios();
         adaptadorIti = new AdaptadorItinerario(itinerarios);
         listItinerarios.setAdapter(adaptadorIti);
         //listItinerarios.setAdapter(new AdaptadorItinerario(db.getAllData(), R.layout.renglon_cardview_itinerario));
@@ -214,4 +196,14 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         //removeItem(v);
     }
 
+    public String toStringActividades() {
+        String act = "";
+        for(int i = 0; i < actividades.size(); i++){
+            if(i == (actividades.size()-1))
+                act += actividades.get(i).getNombre()+". ";
+            else
+                act += actividades.get(i).getNombre()+", ";
+        }
+        return act;
+    }
 }

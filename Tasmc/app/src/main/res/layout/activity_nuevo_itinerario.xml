@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context="com.example.vivanco.tasmc.NuevoItinerario">
 
@@ -9,7 +9,7 @@
         layout="@layout/app_bar_itin" />
 
     <EditText
-        android:id="@+id/destino"
+        android:id="@+id/etDestino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/app_bar_itin"
@@ -22,25 +22,42 @@
         android:inputType="textPersonName"/>
 
     <EditText
-        android:id="@+id/actividades"
+        android:id="@+id/etActividad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/destino"
+        android:layout_below="@+id/etDestino"
         android:hint="@string/hint_actividades"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:layout_toStartOf="@+id/btnAgregaActividad" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/guardar"
-        android:id="@+id/guardar"
+        android:id="@+id/btnGuardaItinerario"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" 
         android:background="@color/acentuadoIti"
         android:textColor="#fff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/btnAgregaActividad"
+        android:layout_alignBottom="@+id/etActividad"
+        android:layout_alignParentEnd="true"
+        android:longClickable="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvActividades"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etActividad"
+        android:layout_above="@+id/btnGuardaItinerario" />
 
 
 </RelativeLayout>

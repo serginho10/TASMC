@@ -14,14 +14,12 @@ import java.util.ArrayList;
  */
 public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerario.MyViewHolder> {
     //Lista de itinerarios
-    private ArrayList<Actividad> listItinerarios;
+    private ArrayList<Itinerario> listItinerario;
     private int itemLayout;
 
-
-    public AdaptadorItinerario(ArrayList<Actividad> datosItinerarios) {
-        this.listItinerarios = datosItinerarios;
+    public AdaptadorItinerario(ArrayList<Itinerario> datosItinerarios) {
+        this.listItinerario = datosItinerarios;
         //this.itemLayout=itemLayout;
-
     }
 
     @Override
@@ -33,15 +31,15 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        Actividad currentItinerario = listItinerarios.get(position);
-        holder.imagen.setImageResource(currentItinerario.getImagen());
-        holder.viaje.setText(currentItinerario.getViaje());
-        holder.actividades.setText(currentItinerario.getActividades());
+        Itinerario currentItinerario = listItinerario.get(position);
+        holder.imagen.setImageResource(R.drawable.iconoitinerario);
+        holder.viaje.setText(currentItinerario.getDestino());
+        holder.actividades.setText(currentItinerario.toStringActividades());
     }
 
     @Override
     public int getItemCount() {
-        return listItinerarios.size();
+        return listItinerario.size();
     }
 
     static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -54,12 +52,10 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
             super(itemView);
             imagen = (ImageView) itemView.findViewById(R.id.imagen);
             viaje = (TextView) itemView.findViewById(R.id.viaje);
-            actividades = (TextView) itemView.findViewById(R.id.actividades);
-
+            actividades = (TextView) itemView.findViewById(R.id.etActividad);
 
             //icon.setOnClickListener(this); solo con el icono reacciona al click
             itemView.setOnClickListener(this);
-
         }
 
         @Override

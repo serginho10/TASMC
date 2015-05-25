@@ -56,7 +56,7 @@
                         android:textSize="24sp" />
 
                     <TextView
-                        android:id="@+id/actividades"
+                        android:id="@+id/etActividad"
                         android:layout_width="268dp"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"

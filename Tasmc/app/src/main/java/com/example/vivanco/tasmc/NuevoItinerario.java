@@ -7,29 +7,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class NuevoItinerario extends ActionBarActivity {
-    private EditText destino;
-    private EditText actividades;
-    private Button guardar;
-    private ManejadorBD db;
-    private Itinerario itinerario = null;
-    int[] imageIDs = {
-            R.drawable.viaje,
-            R.drawable.viaje1,
-            R.drawable.viaje2,
-            R.drawable.viaje3,
-            R.drawable.viaje4,
-            R.drawable.viaje5,
-            R.drawable.viaje6,
-            R.drawable.viaje7
-    };
-    int nextImageIndex = 0;
-
+    List<String> actividades = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,26 +31,31 @@ public class NuevoItinerario extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
 
-        destino = (EditText) findViewById(R.id.destino);
-        actividades = (EditText) findViewById(R.id.actividades);
-        guardar = (Button) findViewById(R.id.guardar);
-        guardar.setOnClickListener(new View.OnClickListener() {
+        EditText destino = (EditText) findViewById(R.id.etDestino);
+        final EditText nuevaActividad = (EditText) findViewById(R.id.etActividad);
+        Button btnAgregar = (Button) findViewById(R.id.btnAgregaActividad);
+        Button btnGuardar = (Button) findViewById(R.id.btnGuardaItinerario);
+        final ListView lvActividades = (ListView) findViewById(R.id.lvActividades);
+
+        btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db = new ManejadorBD(v.getContext());
-                int imageId = imageIDs[nextImageIndex];
-                nextImageIndex = (nextImageIndex + 1) % imageIDs.length;
-
-                itinerario = new Itinerario(0, nextImageIndex, destino.getText().toString(), actividades.getText().toString());
-                db.guardarItinerario(itinerario);
-
-                Toast.makeText(v.getContext(), "Itinerario guardado correctamente",
-                        Toast.LENGTH_LONG).show();
-                db.closeDatabase();
-                finish();
+                if(nuevaActividad.getText().length() == 0)
+                    nuevaActividad.setError("Debes escribir la actividad.");
+                else{
+                    actividades.add(nuevaActividad.getText().toString());
+                    ArrayAdapter<String> adaptador = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,actividades);
+                    lvActividades.setAdapter(adaptador);
+                }
             }
         });
 
+        btnGuardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
 

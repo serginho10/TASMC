@@ -74,6 +74,7 @@ public class Configuracion extends ActionBarActivity {
             public void onClick(View v) {
                 Usuario usuario = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
                         clases.getSelectedItem().toString(), "usuario", 1, 1);
+                System.out.println(categorias.getSelectedItem().toString()+" ************* "+clases.getSelectedItem().toString());
                 bd.guardarUsuario(usuario);
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));

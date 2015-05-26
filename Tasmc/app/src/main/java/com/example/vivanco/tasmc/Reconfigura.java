@@ -42,11 +42,11 @@ public class Reconfigura extends ActionBarActivity {
 
         Usuario usuario;
 
-        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.estrellas, android.R.layout.simple_spinner_item);
+        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         clases.setAdapter(dataAdapter);
         //spinner hotel estrellas
-        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);
+        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(this, R.array.estrellas, android.R.layout.simple_spinner_item);
         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorias.setAdapter(dataAdapter1);
 
@@ -74,6 +74,7 @@ public class Reconfigura extends ActionBarActivity {
                 clases.setSelection(2);
             else if (clase.compareTo("Primera") == 0)
                 clases.setSelection(3);
+            System.out.println(categoria+" ************** "+clase);
         }
 
 

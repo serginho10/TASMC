@@ -105,6 +105,8 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         listItinerarios.setHasFixedSize(true);
         listItinerarios.setItemAnimator(new DefaultItemAnimator());
 
+        final ManejadorBD bd = new ManejadorBD(getApplicationContext());
+
         itinerarios = db.obtenerItinerarios();
         adaptadorIti = new AdaptadorItinerario(itinerarios);
         listItinerarios.setAdapter(adaptadorIti);
@@ -121,6 +123,7 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                             @Override
                             public void onDismissedBySwipeLeft(RecyclerView recyclerView, int[] reverseSortedPositions) {
                                 for (int position : reverseSortedPositions) {
+                                    bd.borrarItinerario(itinerarios.get(position));
                                     itinerarios.remove(position);
                                     adaptadorIti.notifyItemRemoved(position);
 
@@ -133,12 +136,14 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                             @Override
                             public void onDismissedBySwipeRight(RecyclerView recyclerView, int[] reverseSortedPositions) {
                                 for (int position : reverseSortedPositions) {
+                                    bd.borrarItinerario(itinerarios.get(position));
                                     itinerarios.remove(position);
                                     adaptadorIti.notifyItemRemoved(position);
 
                                 }
                                 Toast.makeText(getApplicationContext(), "Itinerario eliminado correctamente",
-                                        Toast.LENGTH_LONG).show();  adaptadorIti.notifyDataSetChanged();
+                                        Toast.LENGTH_LONG).show();
+                                adaptadorIti.notifyDataSetChanged();
                             }
                         });
 

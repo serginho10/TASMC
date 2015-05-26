@@ -162,7 +162,8 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void borrarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
-        db.delete("itinerario", "id=?", new String[]{Integer.toString(itinerario.getIdItinerario())});
+        db.delete("itinerario", "idItinerario=?", new String[]{Integer.toString(itinerario.getIdItinerario())});
+        db.delete("actividad", "idItinerario=?", new String[]{Integer.toString(itinerario.getIdItinerario())});
     }
 
     public void borrarVuelo(Vuelo vuelo) {
@@ -333,7 +334,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public ArrayList<Itinerario> obtenerItinerarios() {
         ArrayList<Itinerario> it = new ArrayList<Itinerario>();
         db = getReadableDatabase();
-        Cursor c = db.rawQuery("select * from itinerario",null);
+        Cursor c = db.rawQuery("select * from itinerario order by destino",null);
         Map<Integer,String> itinerarios = new HashMap<Integer,String>();
         while(c.moveToNext()){
             itinerarios.put(c.getInt(0),c.getString(1));

@@ -190,6 +190,7 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
+        finish();
         Intent intent = new Intent(this, NuevoItinerario.class);
         startActivity(intent);
         //context.startActivity(new Intent(context, NuevoItinerario.class));

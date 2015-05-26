@@ -113,8 +113,8 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
     public void guardarActividad(Actividad actividad) {
         db = getWritableDatabase();
-        //db.execSQL("INSERT INTO actividad VALUES ( null,'" + actividad.getNombre() + "','"
-        //      + actividad.getFecha() + "')");
+        db.execSQL("INSERT INTO actividad VALUES ( null,'" + actividad.getNombre() + "','"
+              + actividad.getItinerario() + "')");
     }
 
 
@@ -137,6 +137,14 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public void guardarItinerario(Itinerario itinerario) {
         db = getWritableDatabase();
         db.execSQL("INSERT INTO itinerario VALUES ( null,'" + itinerario.getDestino() + "')");
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select idItinerario from itinerario where destino = ?",new String[] {itinerario.getDestino()});
+        c.moveToFirst();
+        for(int i = 0;i < itinerario.getActividades().size();i++){
+            Actividad act = itinerario.getActividades().get(i);
+            act.setItinerario(c.getInt(0));
+            guardarActividad(itinerario.getActividades().get(i));
+        }
     }
 
     public void guardarServicio(Servicio servicio) {

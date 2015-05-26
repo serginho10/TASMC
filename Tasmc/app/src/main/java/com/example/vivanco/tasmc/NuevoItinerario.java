@@ -1,5 +1,6 @@
 package com.example.vivanco.tasmc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -29,9 +30,9 @@ public class NuevoItinerario extends ActionBarActivity {
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);//quitamos texto de toolbar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        EditText destino = (EditText) findViewById(R.id.etDestino);
+        final EditText destino = (EditText) findViewById(R.id.etDestino);
         final EditText nuevaActividad = (EditText) findViewById(R.id.etActividad);
         Button btnAgregar = (Button) findViewById(R.id.btnAgregaActividad);
         Button btnGuardar = (Button) findViewById(R.id.btnGuardaItinerario);
@@ -44,8 +45,9 @@ public class NuevoItinerario extends ActionBarActivity {
                     nuevaActividad.setError("Debes escribir la actividad.");
                 else{
                     actividades.add(nuevaActividad.getText().toString());
-                    ArrayAdapter<String> adaptador = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,actividades);
+                    ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(),(ArrayList<String>)actividades);
                     lvActividades.setAdapter(adaptador);
+                    nuevaActividad.setText("");
                 }
             }
         });
@@ -53,7 +55,18 @@ public class NuevoItinerario extends ActionBarActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if(destino.getText().length() == 0)
+                    destino.setError("Debes escribir tu destino..");
+                else{
+                    ManejadorBD bd = new ManejadorBD(getApplicationContext());
+                    ArrayList<Actividad> act = new ArrayList<Actividad>();
+                    for(int i = 0;i < actividades.size();i++){
+                        act.add(new Actividad(i+1,actividades.get(i),5));
+                    }
+                    bd.guardarItinerario(new Itinerario(5,destino.getText().toString(),act));
+                    finish();
+                    startActivity(new Intent(getApplicationContext(),Itinerario.class));
+                }
             }
         });
     }

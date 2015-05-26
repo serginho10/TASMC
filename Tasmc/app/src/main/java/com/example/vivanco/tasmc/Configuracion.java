@@ -80,11 +80,11 @@ public class Configuracion extends ActionBarActivity {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
-        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.estrellas, android.R.layout.simple_spinner_item);
+        ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         clases.setAdapter(dataAdapter);
         //spinner hotel estrellas
-        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);
+        ArrayAdapter dataAdapter1 = ArrayAdapter.createFromResource(this, R.array.estrellas, android.R.layout.simple_spinner_item);
         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorias.setAdapter(dataAdapter1);
 

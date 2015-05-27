@@ -95,7 +95,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
                 + usuario.getCategoria() + "','" + usuario.getClase() + "','" + usuario.getTipo() + "',"
                 + usuario.getItinerario_idItinerario()
                 + "," + usuario.getEquipaje_idEquipaje() + ")");
-        if (usuario.getEmail() != "") {
+        if (usuario.getEmail().length() != 0) {
             Object[] objeto = new Object[1];
             objeto[0] = usuario;
             new ManejadorHttp().execute(objeto);
@@ -191,14 +191,10 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.delete("servicio", "id=?", new String[]{Integer.toString(servicio.getId())});
     }
 
-    /*public void actualizarItinerario(Itinerario itinerario) {
-        db = getWritableDatabase();
-        ContentValues actualizarItinerario = new ContentValues();
-        //actualizar.put(llave,valor);
-        actualizarItinerario.put("destino", itinerario.getDestino());
-        actualizarItinerario.put("actividades", itinerario.getActividades());
-
-    }*/
+    public void actualizarItinerario(Itinerario itinerario) {
+        borrarItinerario(itinerario);
+        guardarItinerario(itinerario);
+    }
 
     public void closeDatabase() {
         db.close();
@@ -208,9 +204,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db = getReadableDatabase();
         Cursor c = db.rawQuery("select * from usuario", null);
         if (c.moveToFirst()) {
-            Object[] objeto = new Object[1];
-            objeto[0] = new Usuario(c.getString(0),c.getString(1),c.getString(2),c.getString(3),c.getInt(4),c.getInt(5));
-            new ManejadorHttp().execute(objeto);
+            if(c.getString(1).length() != 0) {
+                Object[] objeto = new Object[1];
+                objeto[0] = new Usuario(c.getString(0), c.getString(1), c.getString(2), c.getString(3), c.getInt(4), c.getInt(5));
+                new ManejadorHttp().execute(objeto);
+            }
             return true;
         } else {
             return false;
@@ -350,7 +348,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     private ArrayList<Actividad> obtenerActividadesDe(int idItinerario) {
         ArrayList<Actividad> act = new ArrayList<Actividad>();
         db = getReadableDatabase();
-        Cursor c = db.rawQuery("select * from actividad where idItinerario = ?",new String[]{idItinerario+""});
+        Cursor c = db.rawQuery("select * from actividad where idItinerario = ?", new String[]{idItinerario + ""});
         while(c.moveToNext()){
             act.add(new Actividad(c.getInt(0),c.getString(1),c.getInt(2)));
         }

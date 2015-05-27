@@ -81,14 +81,15 @@ public class Reconfigura extends ActionBarActivity {
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println(ETemail.getText().toString() + "*******************");
-                System.out.println(categorias.getSelectedItem().toString() + "*******************");
-                System.out.println(clases.getSelectedItem().toString() + "*******************");
-                Usuario user = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
-                        clases.getSelectedItem().toString(), "usuario", 1, 1);
-                bd.guardarUsuario(user);
-                finish();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                if(ETemail.getText().length() == 0){
+                    ETemail.setError("Debes ingresar un email");
+                }else {
+                    Usuario user = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
+                            clases.getSelectedItem().toString(), "usuario", 1, 1);
+                    bd.guardarUsuario(user);
+                    finish();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }
             }
         });
 

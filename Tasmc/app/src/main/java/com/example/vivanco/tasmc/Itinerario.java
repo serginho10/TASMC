@@ -1,6 +1,8 @@
 package com.example.vivanco.tasmc;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -19,28 +21,14 @@ import android.widget.Toast;
 import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
 public class Itinerario extends ActionBarActivity implements View.OnClickListener {
-
-    private static RecyclerView recyclerView;
-    private RecyclerView listItinerarios;
-    private ArrayList<Itinerario> itinerarios;
-    private AdaptadorItinerario adaptadorIti;
-    private static ArrayList<Integer> removedItems;
-    private static final String TAG_NUEVO = "NUEVO";
-    private static final String TAG_BORRA = "BORRA";
-    private static final String TAG_EDITA = "EDITA";
-    private Context context;
-    private ManejadorBD db;
-
     private int idItinerario;
     private String destino;
     private ArrayList<Actividad> actividades;
-
-    private TextView viaje;
-    private TextView actividad;
 
     public Itinerario(int idItinerario, String destino, ArrayList<Actividad> actividades) {
         this.idItinerario = idItinerario;
@@ -88,6 +76,16 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_itinerario);
 
+        RecyclerView recyclerView;
+        RecyclerView listItinerarios;
+        final ArrayList<Itinerario> itinerarios;
+        final AdaptadorItinerario adaptadorIti;
+        ArrayList<Integer> removedItems;
+        final String TAG_NUEVO = "NUEVO";
+        final String TAG_BORRA = "BORRA";
+        final String TAG_EDITA = "EDITA";
+        ManejadorBD db;
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_it);
         setSupportActionBar(toolbar);
 
@@ -97,15 +95,14 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
         db = new ManejadorBD(this);
 
-        viaje = (TextView) findViewById(R.id.viaje);
-        actividad = (TextView) findViewById(R.id.etActividad);
-
         listItinerarios = (RecyclerView) findViewById(R.id.listItinerarios);
         listItinerarios.setLayoutManager(new LinearLayoutManager(this));
         listItinerarios.setHasFixedSize(true);
         listItinerarios.setItemAnimator(new DefaultItemAnimator());
 
         final ManejadorBD bd = new ManejadorBD(getApplicationContext());
+
+        final Context context=this;
 
         itinerarios = db.obtenerItinerarios();
         adaptadorIti = new AdaptadorItinerario(itinerarios);
@@ -121,29 +118,46 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                             }
 
                             @Override
-                            public void onDismissedBySwipeLeft(RecyclerView recyclerView, int[] reverseSortedPositions) {
-                                for (int position : reverseSortedPositions) {
-                                    bd.borrarItinerario(itinerarios.get(position));
-                                    itinerarios.remove(position);
-                                    adaptadorIti.notifyItemRemoved(position);
+                            public void onDismissedBySwipeLeft(RecyclerView recyclerView, final int[] reverseSortedPositions) {
+                                final int[] rev = reverseSortedPositions;
+                                new AlertDialog.Builder(context)
+                                        .setIcon(android.R.drawable.ic_dialog_alert)
+                                        .setTitle("Eliminando Itinerario")
+                                        .setMessage("¿Estás seguro de eliminar el itinerario?")
+                                        .setPositiveButton("Si", new DialogInterface.OnClickListener()
+                                        {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                for (int position : rev) {
+                                                    bd.borrarItinerario(itinerarios.get(position));
+                                                    itinerarios.remove(position);
+                                                    adaptadorIti.notifyItemRemoved(position);
+                                                }
+                                                Toast.makeText(getApplicationContext(), "Itinerario eliminado correctamente",
+                                                        Toast.LENGTH_LONG).show();
+                                                adaptadorIti.notifyDataSetChanged();
+                                            }
 
-                                }
-                                Toast.makeText(getApplicationContext(), "Itinerario eliminado correctamente",
-                                        Toast.LENGTH_LONG).show();
-                                adaptadorIti.notifyDataSetChanged();
+                                        })
+                                        .setNegativeButton("No", null)
+                                        .show();
                             }
 
                             @Override
                             public void onDismissedBySwipeRight(RecyclerView recyclerView, int[] reverseSortedPositions) {
                                 for (int position : reverseSortedPositions) {
-                                    bd.borrarItinerario(itinerarios.get(position));
-                                    itinerarios.remove(position);
-                                    adaptadorIti.notifyItemRemoved(position);
-
+                                    Itinerario iti = itinerarios.get(position);
+                                    Intent intent = new Intent(getApplicationContext(),NuevoItinerario.class);
+                                    intent.putExtra("destino", iti.getDestino());
+                                    intent.putExtra("id",iti.getIdItinerario());
+                                    ArrayList<String> acts = new ArrayList<String>();
+                                    for(int i = 0; i < iti.getActividades().size();i++){
+                                        acts.add(iti.getActividades().get(i).getNombre());
+                                    }
+                                    intent.putStringArrayListExtra("actividades",acts);
+                                    finish();
+                                    startActivity(intent);
                                 }
-                                Toast.makeText(getApplicationContext(), "Itinerario eliminado correctamente",
-                                        Toast.LENGTH_LONG).show();
-                                adaptadorIti.notifyDataSetChanged();
                             }
                         });
 

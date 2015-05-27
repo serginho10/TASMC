@@ -72,12 +72,14 @@ public class Configuracion extends ActionBarActivity {
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario usuario = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
-                        clases.getSelectedItem().toString(), "usuario", 1, 1);
-                System.out.println(categorias.getSelectedItem().toString()+" ************* "+clases.getSelectedItem().toString());
-                bd.guardarUsuario(usuario);
-                finish();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                if(ETemail.getText().length() != 0) {
+                    Usuario usuario = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
+                            clases.getSelectedItem().toString(), "usuario", 1, 1);
+                    System.out.println(categorias.getSelectedItem().toString() + " ************* " + clases.getSelectedItem().toString());
+                    bd.guardarUsuario(usuario);
+                    finish();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }else ETemail.setError("Debes ingresar un email.");
             }
         });
         ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);

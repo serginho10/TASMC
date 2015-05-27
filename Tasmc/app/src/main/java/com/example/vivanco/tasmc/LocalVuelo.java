@@ -44,6 +44,7 @@ public class LocalVuelo {
         this.escalasv = escalasv;
     }
 
+
     public int getId() {
         return id;
     }

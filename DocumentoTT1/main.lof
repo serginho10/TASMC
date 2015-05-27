@@ -1,4 +1,3 @@
-\select@language {spanish}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama de Arquitectura de TASMC}}{3}{figure.caption.12}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Mercado de los S.O. M\IeC {\'o}viles}}{7}{figure.caption.19}
@@ -54,3 +53,34 @@
 \contentsline {figure}{\numberline {7.38}{\ignorespaces Pantalla Ruta AICM}}{103}{figure.caption.290}
 \contentsline {figure}{\numberline {7.39}{\ignorespaces Pantalla Ubicar en AICM}}{105}{figure.caption.292}
 \contentsline {figure}{\numberline {7.40}{\ignorespaces Pantalla Informaci\IeC {\'o}n del Vuelo}}{107}{figure.caption.294}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Vista principal de TASMC}}{110}{figure.caption.300}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Men\IeC {\'u} de TASMC}}{111}{figure.caption.301}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Configuraci\IeC {\'o}n inicial de TASMC}}{112}{figure.caption.303}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Buscar Hoteles Disponibles}}{113}{figure.caption.305}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Hoteles Disponibles}}{114}{figure.caption.307}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Filtro para Hoteles}}{115}{figure.caption.308}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Buscar Vuelos de Ida}}{117}{figure.caption.310}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Buscar Vuelo Redondo}}{118}{figure.caption.311}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Vuelos Disponibles}}{120}{figure.caption.313}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Filtro para Vuelos}}{121}{figure.caption.314}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Informaci\IeC {\'o}n del AICM}}{122}{figure.caption.316}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Mapa Planta Alta Terminal 1}}{123}{figure.caption.318}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Mapa Planta Baja Terminal 1}}{124}{figure.caption.319}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Servicios Terminal 1}}{125}{figure.caption.321}
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Listas de Equipaje}}{126}{figure.caption.323}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Nuevo Equipaje}}{127}{figure.caption.325}
+\contentsline {figure}{\numberline {8.17}{\ignorespaces Itinerario de viaje}}{128}{figure.caption.327}
+\contentsline {figure}{\numberline {8.18}{\ignorespaces Nuevo Itinerario de viaje}}{129}{figure.caption.329}
+\contentsline {figure}{\numberline {8.19}{\ignorespaces Localizaci\IeC {\'o}n AICM}}{130}{figure.caption.331}
+\contentsline {figure}{\numberline {8.20}{\ignorespaces Localizaci\IeC {\'o}n Terminal 1}}{131}{figure.caption.332}
+\contentsline {figure}{\numberline {8.21}{\ignorespaces Localizaci\IeC {\'o}n Terminal 2}}{132}{figure.caption.333}
+\contentsline {figure}{\numberline {8.22}{\ignorespaces Ubicaci\IeC {\'o}n Actual}}{133}{figure.caption.334}
+\contentsline {figure}{\numberline {8.23}{\ignorespaces Ruta al AICM}}{134}{figure.caption.335}
+\contentsline {figure}{\numberline {8.24}{\ignorespaces Localizaci\IeC {\'o}n en Planta Alta Terminal 1}}{135}{figure.caption.337}
+\contentsline {figure}{\numberline {8.25}{\ignorespaces Localizaci\IeC {\'o}n en Planta Baja Terminal 1}}{136}{figure.caption.338}
+\contentsline {figure}{\numberline {8.26}{\ignorespaces Informaci\IeC {\'o}n de Llegadas Nacionales e Internacionales}}{137}{figure.caption.340}
+\contentsline {figure}{\numberline {8.27}{\ignorespaces Informaci\IeC {\'o}n de Salidas Nacionales e Internacionales}}{138}{figure.caption.341}
+\contentsline {figure}{\numberline {8.28}{\ignorespaces Informaci\IeC {\'o}n de vuelo}}{139}{figure.caption.343}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

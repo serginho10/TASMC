@@ -53,7 +53,7 @@ public class Ida extends Fragment {
         View.OnClickListener listnr = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), VuelosDisponibles.class);
+                Intent intent = new Intent(getActivity(), VuelosDisponiblesIda.class);
                 intent.putExtra("origeni", origeni.getText().toString());
                 intent.putExtra("destinoi", destinoi.getText().toString());
                 intent.putExtra("fechaida", fechaida.getText().toString());

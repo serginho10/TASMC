@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_precio"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        card_view:cardBackgroundColor="@color/acentuadoVuelo"
+        card_view:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/acentuadoVuelo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tarifa"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/tarifa_por_adulto"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:textIsSelectable="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cargos"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/pesos"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/cargos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/pesos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tarifa"
+                android:text="$"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cargos"
+                android:layout_toEndOf="@+id/pesos"
+                android:text="2000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vuelos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_view_precio"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/logoAiri"
+            android:text="@string/ida"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fce0280b" />
+
+        <TextView
+            android:id="@+id/fechai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="50dp"
+            android:text="@string/fechai" />
+
+        <ImageView
+            android:id="@+id/dividerIda"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ida"
+            android:layout_gravity="center_horizontal"
+            android:src="#fce0280b" />
+
+
+        <ImageView
+            android:id="@+id/logoAiri"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/aeromexico" />
+
+
+        <TextView
+            android:id="@+id/origeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tiempoi"
+            android:layout_toEndOf="@+id/ida"
+            android:text="MEX"
+            android:textColor="@color/divisor" />
+
+        <TextView
+            android:id="@+id/horaSalidai"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_above="@+id/avionv"
+            android:layout_below="@+id/origeni"
+            android:layout_marginLeft="65dp"
+            android:text="12:10"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/totali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerIda"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/total"
+            android:textColor="@color/divisor" />
+
+        <TextView
+            android:id="@+id/tiempoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totali"
+            android:layout_centerHorizontal="true"
+            android:text="04hs 01m" />
+
+        <TextView
+            android:id="@+id/escalasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/escalas"
+            android:textColor="@color/acentuado"
+            android:layout_below="@+id/tiempoi"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/destinoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAS"
+            android:textColor="@color/divisor"
+            android:layout_alignTop="@+id/totali"
+            android:layout_alignEnd="@+id/fechai"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/horaLlegadai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:11"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/horaSalidai"
+            android:layout_alignStart="@+id/destinoi" />
+
+        <ImageView
+            android:id="@+id/avioni"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_above="@+id/dividerIda"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ida" />
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

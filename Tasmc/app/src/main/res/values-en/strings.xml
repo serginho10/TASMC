@@ -19,13 +19,15 @@
     <string name="title_activity_list_equipaje_seleccionado">Luggage</string>
     <string name="title_activity_itinerario">Itinerary</string>
     <string name="title_activity_ruta_aicm">Path to AICM</string>
-    <string name="title_activity_ubicate">Second Floor</string>
+    <string name="title_activity_ubicate">First Floor</string>
     <string name="title_activity_info_vuelo">Flight Information</string>
     <string name="title_activity_equipaje">Luggage</string>
     <string name="title_activity_ida">Ida</string>
     <string name="title_activity_ida__vuelta">Ida_Vuelta</string>
     <string name="title_activity_reconfigura">Personal Settings</string>
     <string name="title_activity_ubicate_pb">First Floor AICM</string>
+    <string name="title_activity_vuelos_disponibles_ida">Available Flights</string>
+
 
     <string-array name="tabs">
         <item>DEPARTURE</item>
@@ -701,7 +703,7 @@
     <string name="mensaje_toast">Welcome TASMC: Configure your personal settings about flights and hotels.</string>
     <string name="compartir">Share</string>
     <string name="pa">First Floor</string>
-    <string name="pb">Second Floor</string>
+    <string name="pb">Ground Floor</string>
     <string name="objeto">Object</string>
     <string name="guardar">Save</string>
     <string name="title_activity_inicio">TASMC</string>

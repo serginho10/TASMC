@@ -11,17 +11,14 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 
@@ -36,7 +33,8 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
         this.actividades = actividades;
     }
 
-    public Itinerario(){}
+    public Itinerario() {
+    }
 
     public int getIdItinerario() {
         return idItinerario;
@@ -102,7 +100,7 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
         final ManejadorBD bd = new ManejadorBD(getApplicationContext());
 
-        final Context context=this;
+        final Context context = this;
 
         itinerarios = db.obtenerItinerarios();
         adaptadorIti = new AdaptadorItinerario(itinerarios);
@@ -124,8 +122,7 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                                         .setIcon(android.R.drawable.ic_dialog_alert)
                                         .setTitle("Eliminando Itinerario")
                                         .setMessage("¿Estás seguro de eliminar el itinerario?")
-                                        .setPositiveButton("Si", new DialogInterface.OnClickListener()
-                                        {
+                                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
                                                 for (int position : rev) {
@@ -147,14 +144,14 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
                             public void onDismissedBySwipeRight(RecyclerView recyclerView, int[] reverseSortedPositions) {
                                 for (int position : reverseSortedPositions) {
                                     Itinerario iti = itinerarios.get(position);
-                                    Intent intent = new Intent(getApplicationContext(),NuevoItinerario.class);
+                                    Intent intent = new Intent(getApplicationContext(), NuevoItinerario.class);
                                     intent.putExtra("destino", iti.getDestino());
-                                    intent.putExtra("id",iti.getIdItinerario());
+                                    intent.putExtra("id", iti.getIdItinerario());
                                     ArrayList<String> acts = new ArrayList<String>();
-                                    for(int i = 0; i < iti.getActividades().size();i++){
+                                    for (int i = 0; i < iti.getActividades().size(); i++) {
                                         acts.add(iti.getActividades().get(i).getNombre());
                                     }
-                                    intent.putStringArrayListExtra("actividades",acts);
+                                    intent.putStringArrayListExtra("actividades", acts);
                                     finish();
                                     startActivity(intent);
                                 }
@@ -181,12 +178,6 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.menu_itinerario, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -218,11 +209,11 @@ public class Itinerario extends ActionBarActivity implements View.OnClickListene
 
     public String toStringActividades() {
         String act = "";
-        for(int i = 0; i < actividades.size(); i++){
-            if(i == (actividades.size()-1))
-                act += actividades.get(i).getNombre()+". ";
+        for (int i = 0; i < actividades.size(); i++) {
+            if (i == (actividades.size() - 1))
+                act += actividades.get(i).getNombre() + ". ";
             else
-                act += actividades.get(i).getNombre()+", ";
+                act += actividades.get(i).getNombre() + ", ";
         }
         return act;
     }

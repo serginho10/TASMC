@@ -5,19 +5,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +34,8 @@ public class NuevoItinerario extends ActionBarActivity {
 
         final Context context = this;
         boolean extras = false;
-        final int id = getIntent().getIntExtra("id",0);
-        if(id != 0)
+        final int id = getIntent().getIntExtra("id", 0);
+        if (id != 0)
             extras = true;
 
         final EditText destino = (EditText) findViewById(R.id.etDestino);
@@ -48,11 +44,11 @@ public class NuevoItinerario extends ActionBarActivity {
         final Button btnGuardar = (Button) findViewById(R.id.btnGuardaItinerario);
         final ListView lvActividades = (ListView) findViewById(R.id.lvActividades);
 
-        if(extras){
+        if (extras) {
             destino.setText(getIntent().getStringExtra("destino"));
             btnGuardar.setEnabled(false);
             actividades = getIntent().getStringArrayListExtra("actividades");
-            ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(),(ArrayList<String>)actividades);
+            ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(), (ArrayList<String>) actividades);
             lvActividades.setAdapter(adaptador);
         }
 
@@ -86,7 +82,7 @@ public class NuevoItinerario extends ActionBarActivity {
                         btnGuardar.setEnabled(true);
                     }
                     actividades.add(nuevaActividad.getText().toString());
-                    ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(),(ArrayList<String>)actividades);
+                    ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(), (ArrayList<String>) actividades);
                     lvActividades.setAdapter(adaptador);
                     nuevaActividad.setText("");
                 }
@@ -96,18 +92,18 @@ public class NuevoItinerario extends ActionBarActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(destino.getText().length() == 0)
+                if (destino.getText().length() == 0)
                     destino.setError("Debes escribir tu destino..");
-                else{
+                else {
                     ManejadorBD bd = new ManejadorBD(getApplicationContext());
                     ArrayList<Actividad> act = new ArrayList<Actividad>();
-                    for(int i = 0;i < actividades.size();i++){
-                        act.add(new Actividad(i+1,actividades.get(i),5));
+                    for (int i = 0; i < actividades.size(); i++) {
+                        act.add(new Actividad(i + 1, actividades.get(i), 5));
                     }
-                    if(finalExtras){
-                        bd.actualizarItinerario(new Itinerario(id,destino.getText().toString(),act));
-                    }else{
-                        bd.guardarItinerario(new Itinerario(5,destino.getText().toString(),act));
+                    if (finalExtras) {
+                        bd.actualizarItinerario(new Itinerario(id, destino.getText().toString(), act));
+                    } else {
+                        bd.guardarItinerario(new Itinerario(5, destino.getText().toString(), act));
                     }
                     finish();
                     startActivity(new Intent(getApplicationContext(), Itinerario.class));
@@ -115,20 +111,19 @@ public class NuevoItinerario extends ActionBarActivity {
             }
         });
 
-        SwipeListViewTouchListener touchListener =new SwipeListViewTouchListener(lvActividades,new SwipeListViewTouchListener.OnSwipeCallback() {
+        SwipeListViewTouchListener touchListener = new SwipeListViewTouchListener(lvActividades, new SwipeListViewTouchListener.OnSwipeCallback() {
             @Override
-            public void onSwipeLeft(ListView listView, int [] reverseSortedPositions) {
+            public void onSwipeLeft(ListView listView, int[] reverseSortedPositions) {
                 final int[] rev = reverseSortedPositions;
                 new AlertDialog.Builder(context)
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .setTitle("Eliminando Actividad")
                         .setMessage("¿Estás seguro de eliminar la actividad?")
-                        .setPositiveButton("Si", new DialogInterface.OnClickListener()
-                        {
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 actividades.remove(rev[0]);
-                                ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(),(ArrayList<String>)actividades);
+                                ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(), (ArrayList<String>) actividades);
                                 lvActividades.setAdapter(adaptador);
                                 btnGuardar.setEnabled(true);
                             }
@@ -137,19 +132,19 @@ public class NuevoItinerario extends ActionBarActivity {
                         .setNegativeButton("No", null)
                         .show();
             }
+
             @Override
-            public void onSwipeRight(ListView listView, int [] reverseSortedPositions) {
+            public void onSwipeRight(ListView listView, int[] reverseSortedPositions) {
                 final int[] rev = reverseSortedPositions;
                 new AlertDialog.Builder(context)
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .setTitle("Eliminando Actividad")
                         .setMessage("¿Estás seguro de eliminar la actividad?")
-                        .setPositiveButton("Si", new DialogInterface.OnClickListener()
-                        {
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 actividades.remove(rev[0]);
-                                ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(),(ArrayList<String>)actividades);
+                                ActividadItinerarioAdaptador adaptador = new ActividadItinerarioAdaptador(getApplicationContext(), (ArrayList<String>) actividades);
                                 lvActividades.setAdapter(adaptador);
                                 btnGuardar.setEnabled(true);
                             }
@@ -158,19 +153,12 @@ public class NuevoItinerario extends ActionBarActivity {
                         .setNegativeButton("No", null)
                         .show();
             }
-        },true, false);
+        }, true, false);
 
         lvActividades.setOnTouchListener(touchListener);
         lvActividades.setOnScrollListener(touchListener.makeScrollListener());
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_nuevo_itinerario, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -186,7 +174,7 @@ public class NuevoItinerario extends ActionBarActivity {
         //Si el id seleccionado es igual al del home regresa a la principal
         if (id == android.R.id.home) {
             finish();
-            startActivity(new Intent(getApplicationContext(),Itinerario.class));
+            startActivity(new Intent(getApplicationContext(), Itinerario.class));
         }
 
 

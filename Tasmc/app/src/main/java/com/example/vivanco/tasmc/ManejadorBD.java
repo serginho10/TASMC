@@ -354,4 +354,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
         }
         return act;
     }
+
+    public String getCategoriaUsuario() {
+        db = getReadableDatabase();
+        Cursor c = db.rawQuery("select catPref from usuario",null);
+        c.moveToFirst();
+        return c.getString(0);
+    }
 }

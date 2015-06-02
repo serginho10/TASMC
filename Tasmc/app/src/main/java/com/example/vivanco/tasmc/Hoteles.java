@@ -42,12 +42,25 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         huespedes.setAdapter(dataAdapter);
 
+        ManejadorBD bd = new ManejadorBD(getApplicationContext());
+        String catUsuario = bd.getCategoriaUsuario();
+
         //spinner hotel estrellas
         array = getResources().getStringArray(R.array.estrellas);
         categorias = (Spinner) findViewById(R.id.categoria);
         ArrayAdapter dataAdapter2 = new ArrayAdapter(this, R.layout.spinner_text_layout ,array);
         dataAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorias.setAdapter(dataAdapter2);
+        if (catUsuario.compareTo("1 estrella") == 0)
+            categorias.setSelection(0);
+        else if (catUsuario.compareTo("2 estrellas") == 0)
+            categorias.setSelection(1);
+        else if (catUsuario.compareTo("3 estrellas") == 0)
+            categorias.setSelection(2);
+        else if (catUsuario.compareTo("4 estrellas") == 0)
+            categorias.setSelection(3);
+        else if (catUsuario.compareTo("5 estrellas") == 0)
+            categorias.setSelection(4);
 
     }
 

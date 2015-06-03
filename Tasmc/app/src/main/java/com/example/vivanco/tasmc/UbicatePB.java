@@ -86,8 +86,8 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //imHir.setScaleType(ImageView.ScaleType.MATRIX);
         imHir.setImageResource(R.drawable.agregar);
-        imHir.getLayoutParams().height = 5;
-        imHir.getLayoutParams().width = 5;
+        imHir.getLayoutParams().height = 15;
+        imHir.getLayoutParams().width = 15;
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
         setSupportActionBar(toolbar);
@@ -154,6 +154,7 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
         int id = item.getItemId();
 
         if (id == R.id.pa){
+            finish();
             startActivity(new Intent(this, Ubicate.class));
         }
         //Si el id seleccionado es igual al del home regresa a la principal

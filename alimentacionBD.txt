@@ -124,3 +124,35 @@ idAerolinea | nombre                   | pais         |
 |          26 | VIVA AEROBUS             | MEXICO       |
 |          27 | VOLARIS                  | MEXICO       |
 +-------------+--------------------------+--------------+
+
+<?php jObject = JSONManager.getJSONfromURL("http://tasmc.16mb.com/service.php?cadena=Hotel&ciudad="+
+                        cadena+"&personas="+objetos[0]+"&categoria="+objetos[1]);
+	date_default_timezone_set('America/Mexico_City');
+	include_once('BD.php');
+
+	if(isset($_GET['cadena'])){
+		$cadena = $_GET["cadena"];
+		if($cadena == "Hotel")
+			getJSONHotel();
+	}
+
+	function getJSONHotel(){
+		$hotel['Hotel'] = array();
+		$habitaciones['Habitacion'] = array();
+		$bd = new BD("mysql.hostinger.mx","u797691413_root","Burroblanc0","u797691413_traso");
+		$result = $bd->consulta("select * from Hotel where categoria=".$_GET['categoria']);
+		while($row = $result->fetch_assoc()){
+			array_push($hotel['Hotel'], array('idHotel' => $row['idHotel'], 'nombre' => $row['nombre'], 'categoria' => $row['categoria'], 'web' => $row['web'], 'telefono' => $row['telefono'], 'ciudad' => $_GET['ciudad'], 'habitaciones' => $row['habitaciones']));
+		}
+		$result = $bd->consulta("select * from Habitacion where personas=".$_GET['personas']);
+		while($row = $result->fetch_assoc()){
+			array_push($habitaciones['Habitacion'], array('idHabitacion' => $row['idHabitacion'], 'tipo' => $row['tipo'], 'personas' => $row['personas'], 'precio' => $row['precio'], 'idHotel' => $row['Hotel_idHotel']));
+		}
+		$bd->cerrarConexion();
+		$json = array_merge($hotel,$habitaciones);
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+?>
+
+— actualizar app admin.

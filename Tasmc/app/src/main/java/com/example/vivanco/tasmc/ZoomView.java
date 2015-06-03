@@ -47,7 +47,7 @@ public class ZoomView extends FrameLayout {
 
     // zooming
     float zoom = 1.0f;
-    float maxZoom = 100.0f;
+    float maxZoom = 50.0f;
     float smoothZoom = 1.0f;
     float zoomX, zoomY;
     float smoothZoomX, smoothZoomY;

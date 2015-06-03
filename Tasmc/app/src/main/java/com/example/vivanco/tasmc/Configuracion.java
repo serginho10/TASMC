@@ -33,7 +33,7 @@ public class Configuracion extends ActionBarActivity {
 
         JSONParser json = new JSONParser(this,getApplicationContext());
         try {
-            json.readAndParseJSON("Equipaje");
+            json.readAndParseJSON("E",null,null);
         } catch (JSONException e) {
             e.printStackTrace();
         }

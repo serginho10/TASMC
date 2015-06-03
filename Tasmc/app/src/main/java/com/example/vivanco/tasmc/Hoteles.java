@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import org.json.JSONException;
+
 
 public class Hoteles extends ActionBarActivity implements View.OnClickListener {
 
@@ -89,11 +91,20 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
     }
 
     public void buscar(View view) {
-        Intent intent = new Intent(this, HotelesDisponibles.class);
-        //Obtenemos los valores para pasarlos a la siguiente actividad
-        intent.putExtra("lugar", lugar.getText().toString());
-        intent.putExtra("huespedes", huespedes.getSelectedItem().toString());
-        intent.putExtra("estrellas", categorias.getSelectedItem().toString());
-        startActivity(intent);
+        if(lugar.getText().length() == 0){
+            lugar.setError("Debes ingresar la ciudad que visitarás");
+        }else{
+            JSONParser json = new JSONParser(this,getApplicationContext());
+            try {
+                json.readAndParseJSON("H",lugar.getText().toString().toUpperCase(), new Object[]{huespedes.getSelectedItem().toString(),
+                                                                                                categorias.getSelectedItem().toString()});
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            while(json.thread.isAlive()){}
+            for(int i = 0; i<json.hoteles.size(); i++){
+                System.out.println(json.hoteles.get(i).toString());
+            }
+        }
     }
 }

@@ -86,8 +86,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //imHir.setScaleType(ImageView.ScaleType.MATRIX);
         imHir.setImageResource(R.drawable.agregar);
-        imHir.getLayoutParams().height = 5;
-        imHir.getLayoutParams().width = 5;
+        imHir.getLayoutParams().height = 15;
+        imHir.getLayoutParams().width = 15;
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
         setSupportActionBar(toolbar);
@@ -99,8 +99,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         pantalla = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         ancho = pantalla.getWidth();
         alto = pantalla.getHeight();
-        factorx = (double) (ancho / (7111.0));
-        factory = (double) ((alto/2.285714285714286) / (1961.0));
+        factorx = (double) (alto / (7111.0));
+        factory = (double) ((ancho/2.285714285714286) / (1961.0));
 
         Button b = new Button(this);
         b.setText("Sergio Barajas");
@@ -154,6 +154,7 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         int id = item.getItemId();
 
         if (id == R.id.pb){
+            finish();
             startActivity(new Intent(this, UbicatePB.class));
         }
         //Si el id seleccionado es igual al del home regresa a la principal
@@ -300,6 +301,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
 
         log("onCalibrationStatus: event: " + calibrationState.getCalibrationEvent()
                 + ", percentage: " + calibrationState.getPercentage());
+        Toast.makeText(getApplicationContext(), calibrationState.getPercentage()+"", Toast.LENGTH_SHORT);
+
     }
 
     @Override

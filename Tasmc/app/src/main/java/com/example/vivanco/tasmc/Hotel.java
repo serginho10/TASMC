@@ -1,49 +1,49 @@
 package com.example.vivanco.tasmc;
 
-/**
- * Created by VIVANCO on 22/04/2015.
- */
+import java.util.ArrayList;
+
 public class Hotel {
 
-    private long id;
-    private String urlImagen;
+    private long idHotel;
     private String nombre;
-    private String precio;
-    private int estrellas;
+    private int categoria;
+    private String web;
+    private String telefono;
+    private int noHabitaciones;
+    private String ciudad;
+    private ArrayList<Habitacion> habitaciones;
 
     @Override
     public String toString() {
         return "Hotel{" +
-                "id=" + id +
-                ", urlImagen='" + urlImagen + '\'' +
+                "idHotel=" + idHotel +
                 ", nombre='" + nombre + '\'' +
-                ", precio='" + precio + '\'' +
-                ", estrellas=" + estrellas +
+                ", categoria=" + categoria +
+                ", web='" + web + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", noHabitaciones=" + noHabitaciones +
+                ", ciudad='" + ciudad + '\'' +
+                ", habitaciones=" + habitaciones +
                 '}';
     }
 
-    public Hotel(long id, String urlImagen, String nombre, String precio, int estrellas) {
-        this.id = id;
-        this.urlImagen = urlImagen;
+    public Hotel(long id,String nombre, int categoria, String web, String telefono, int noHabitaciones, String ciudad, ArrayList<Habitacion> habitaciones) {
+        this.idHotel = id;
         this.nombre = nombre;
-        this.precio = precio;
-        this.estrellas = estrellas;
+        this.categoria = categoria;
+        this.web = web;
+        this.telefono = telefono;
+        this.noHabitaciones = noHabitaciones;
+        this.ciudad = ciudad;
+        this.habitaciones = habitaciones;
     }
 
-    public long getId() {
-        return id;
+    public long getId(){
+        return idHotel;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getUrlImagen() {
-        return urlImagen;
-    }
-
-    public void setUrlImagen(String urlImagen) {
-        this.urlImagen = urlImagen;
+    public void setId(long id){
+        this.idHotel = id;
     }
 
     public String getNombre() {
@@ -54,19 +54,51 @@ public class Hotel {
         this.nombre = nombre;
     }
 
-    public String getPrecio() {
-        return precio;
+    public int getCategoria() {
+        return categoria;
     }
 
-    public void setPrecio(String precio) {
-        this.precio = precio;
+    public void setCategoria(int categoria) {
+        this.categoria = categoria;
     }
 
-    public int getEstrellas() {
-        return estrellas;
+    public String getWeb() {
+        return web;
     }
 
-    public void setEstrellas(int estrellas) {
-        this.estrellas = estrellas;
+    public void setWeb(String web) {
+        this.web = web;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public int getNoHabitaciones() {
+        return noHabitaciones;
+    }
+
+    public void setNoHabitaciones(int noHabitaciones) {
+        this.noHabitaciones = noHabitaciones;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public ArrayList<Habitacion> getHabitaciones() {
+        return habitaciones;
+    }
+
+    public void setHabitaciones(ArrayList<Habitacion> habitaciones) {
+        this.habitaciones = habitaciones;
     }
 }

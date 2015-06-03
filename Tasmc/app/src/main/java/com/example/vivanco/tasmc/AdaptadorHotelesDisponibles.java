@@ -49,10 +49,10 @@ public class AdaptadorHotelesDisponibles extends RecyclerView.Adapter<AdaptadorH
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Hotel currentHotel = listHoteles.get(position);
         holder.nombre.setText(currentHotel.getNombre());
-        holder.precio.setText(currentHotel.getPrecio());
-        holder.estrellas.setRating(currentHotel.getEstrellas() / 20.0f);
-        String urlImagen = currentHotel.getUrlImagen();
-        if (urlImagen != null) {
+        //holder.precio.setText(currentHotel.getPrecio());
+        //holder.estrellas.setRating(currentHotel.getEstrellas() / 20.0f);
+        //String urlImagen = currentHotel.getUrlImagen();
+        /*if (urlImagen != null) {
             imageLoader.get(urlImagen, new ImageLoader.ImageListener() {
                 @Override
                 public void onResponse(ImageLoader.ImageContainer response, boolean isImmediate) {
@@ -64,7 +64,7 @@ public class AdaptadorHotelesDisponibles extends RecyclerView.Adapter<AdaptadorH
 
                 }
             });
-        }
+        }*/
 
 
     }

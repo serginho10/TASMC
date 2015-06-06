@@ -155,4 +155,3 @@ idAerolinea | nombre                   | pais         |
 	}
 ?>
 
-— actualizar app admin.

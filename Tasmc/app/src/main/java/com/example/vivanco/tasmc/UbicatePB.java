@@ -70,8 +70,8 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
     private String mApiSecret = "0InsCBvum&n5Fotggjfhq&&xJcus%jPqmD9P0WynlApqhpzuv5!mOX2qQMzAK3mkS(X3EtPP%bONtGzX1QTnTRUZpnK&(4G3wf8nzrP&tq!kt4x0!yWZ25hUfMbmyuwZ";
 
     private String mVenueId = "4734dee1-ea26-417b-8839-aea0f69ae9c7";
-    private String mFloorId = "f54a022d-fd7a-4b94-a08c-bd675e7adcb3";
-    private String mFloorPlanId = "033fa463-4449-4a08-8a5f-f56b469976e5";
+    private String mFloorId = "8bb4e7e8-0fab-425d-9253-1b09598bae2d";
+    private String mFloorPlanId = "1bec59fd-f41f-48cf-95e3-107d5db72dae";
     ImageView main;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +84,7 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
 
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        //imHir.setScaleType(ImageView.ScaleType.MATRIX);
+        imHir.setScaleType(ImageView.ScaleType.FIT_XY);
         imHir.setImageResource(R.drawable.agregar);
         imHir.getLayoutParams().height = 15;
         imHir.getLayoutParams().width = 15;
@@ -99,8 +99,8 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
         pantalla = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         ancho = pantalla.getWidth();
         alto = pantalla.getHeight();
-        factorx = (double) (ancho / (7111.0));
-        factory = (double) ((alto/2.285714285714286) / (1961.0));
+        factorx = (double) (alto / 7111.0);
+        factory = (double) (ancho / 1961.0);
 
         Button b = new Button(this);
         b.setText("Sergio Barajas");
@@ -253,7 +253,9 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
                 .append("\n\tuncertainty: ").append(state.getUncertainty())
                 .append("\n\tqueue: ").append(state.getMessagesInQueue())
                 .append("\n\tancho: ").append(ancho)
-                .append("\n\talto: ").append(alto);
+                .append("\n\talto: ").append(alto)
+                .append("\n\tx: ").append((int)Math.round(state.getImagePoint().getJ()*factorx))
+                .append("\n\ty: ").append((int) Math.round(state.getImagePoint().getI() * factory));
 
         log(mSharedBuilder.toString());
         setImagePoint(state.getImagePoint());
@@ -265,8 +267,8 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
             @Override
             public void run() {
                 ImageView imgPoint = (ImageView) findViewById(R.id.aimHir);
-                imgPoint.setX((int)Math.round(imgPt.getI()*factorx));
-                imgPoint.setY(((int)Math.round(imgPt.getJ()*factory))+540);
+                imgPoint.setX((int) Math.round(imgPt.getJ() * factorx));
+                imgPoint.setY((int) Math.round(imgPt.getI() * factory));
             }
         });
     }

@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.vivanco.tasmc.Ubicate">
 
-    <include
-        android:id="@+id/app_bar_ubk"
-        layout="@layout/app_bar_ubk" />
+
 
     <com.example.vivanco.tasmc.ZoomView
         xmlns:android="http://schemas.android.com/apk/res/android"

@@ -79,28 +79,28 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         setContentView(R.layout.activity_ubicate);
         main = (ImageView) findViewById(R.id.main);
         main.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        //main.setScaleType(ImageView.ScaleType.MATRIX);
+        main.setScaleType(ImageView.ScaleType.FIT_XY);
         main.setImageResource(R.drawable.pa);
 
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        //imHir.setScaleType(ImageView.ScaleType.MATRIX);
+        imHir.setScaleType(ImageView.ScaleType.FIT_XY);
         imHir.setImageResource(R.drawable.agregar);
         imHir.getLayoutParams().height = 15;
         imHir.getLayoutParams().width = 15;
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
-        setSupportActionBar(toolbar);
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
+        setSupportActionBar(toolbar);*/
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        // 1080
         pantalla = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         ancho = pantalla.getWidth();
         alto = pantalla.getHeight();
-        factorx = (double) (alto / (7111.0));
-        factory = (double) ((ancho/2.285714285714286) / (1961.0));
+        factorx = (double) (alto / 7111.0);
+        factory = (double) (ancho /1961.0);
 
         Button b = new Button(this);
         b.setText("Sergio Barajas");
@@ -253,7 +253,11 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
                 .append("\n\tuncertainty: ").append(state.getUncertainty())
                 .append("\n\tqueue: ").append(state.getMessagesInQueue())
                 .append("\n\tancho: ").append(ancho)
-                .append("\n\talto: ").append(alto);
+                .append("\n\talto: ").append(alto)
+                .append("\n\tfactorx: ").append(factorx)
+                .append("\n\tfactory: ").append(factory)
+                .append("\n\ty: ").append((int)Math.round(state.getImagePoint().getI() * factorx))
+                .append("\n\tx: ").append((int) Math.round(state.getImagePoint().getJ() * factory));
 
         log(mSharedBuilder.toString());
         setImagePoint(state.getImagePoint());
@@ -265,8 +269,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
             @Override
             public void run() {
                 ImageView imgPoint = (ImageView) findViewById(R.id.aimHir);
-                imgPoint.setX((int)Math.round(imgPt.getI()*factorx));
-                imgPoint.setY(((int)Math.round(imgPt.getJ()*factory))+540);
+                imgPoint.setX((int)Math.round(imgPt.getJ()*factory));
+                imgPoint.setY((int)Math.round(imgPt.getI()*factorx));
             }
         });
     }

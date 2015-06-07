@@ -16,6 +16,31 @@ También están los sistemas basados en el \textbf{cálculo efectivo de la posic
 
 Por último, citar los equipos basados en el \textbf{análisis del escenario}, que son de mayor complejidad computacional, tratándose de sistemas que analizan determinadas propiedades del escenario en el que se pretende ubicar el elemento para inferir de ellas la posición del mismo. \cite{ILS}
 
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|p{3.8cm}|p{10.2cm}|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Sistema ILS} &
+				\textcolor{blanco}{\bf Funcionamiento} \\
+			\hline 
+				Tags o Etiquetas &
+				Los tags detectan y localizan, pero no dan un seguimiento del objeto detectado. \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Sensores de Presencia &
+				Se localizan en ``puntos de control'', cuando detectan una presencia le dan seguimiento dependiendo del alcance de los sensores. Si se sobrepasa el alcance de los sensores, entonces el siguiente sensor mas cercano estará listo para continuar con el seguimiento. \\
+			\hline 
+				Triangulación &
+				Si pensamos en precisión, entonces la triangulación es la mas efectiva, ya que funciona con una metodología muy similar al GPS. El problema con este tipo de sistemas es que tiene un alto costo debido a la infraestructura a instalar. \\
+			\hline \rowcolor[RGB]{240,248,255}
+      			Análisis del Escenario &
+				Este tipo de sistemas analizan propiedades del escenario para que con éstas se infiera la posición de un elemento. En esta clasificación entra el sistema que vamos a utilizar ya que, a diferencia de los anteriores, no necesita de infraestructura a instalar para funcionar. En \hyperlink{APIIndoorAtlas}{[API IndoorAtlas]} se explica el funcionamiento de dicho sistema. \\ 
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Comparación de Sistemas ILS]{Comparación de Sistemas ILS} 
+	\label{tab:comparacionILS}
+\end{table}
+
 \subsection{Distintas soluciones técnicas}
 
 \subsubsection{Identificación por radiofrecuencia}

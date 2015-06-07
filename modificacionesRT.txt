@@ -1,0 +1,53 @@
+Objetivos especificos
+- visualizar un directorio de aerolíneas a través de un listado con teléfono y página Web.
+- Localizar los servicios disponibles dentro del AICM.
+- Visualizar información de la ruta del vuelo.
+
+pag 2
+-localiza espacios o servicios en un area predeterminada estos puntos se mostraran con etiquetas dentro del plano arquitectónico.
+- seguimiento de vuelos a través de mapas.
+
+portada
+- ubicación de los servicios dentro del aeropuerto.
+- indicando puerta de salida y banda de equipaje. Así como el seguimiento de vuelos a través de localización en mapas por longitud y latitud desde su origen hasta la llegada del vuelo a su destino.
+
+pag 46
+- información de vuelo
+- alarma según tipo de vuelo
+
+pag 47
+- redes sociales
+
+pag 72
+- precondicion
+- postcondicion
+
+pag 79
+- proposito
+- resumen
+- trayectoria principal 
+
+pag 81
+- precondicion
+- resumen
+
+pag 82
+- trayectoria alternativa A
+- trayectoria alternativa C
+
+pag 88
+- amadeus
+
+pag 89
+-diagrama
+
+pag 94
+- diagrama
+
+IMPORTANTE
+-diagramas secuencia web app tasmc
+
+REVISAR DIAGRAMAS
+
+
+

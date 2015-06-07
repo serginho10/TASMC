@@ -1,0 +1,65 @@
+\section{Navegación y Gestos}
+Como ya se explicó anteriormente la aplicación móvil consta de ocho vistas principales, para poder visualizar cada una de estas, 
+es necesario abrir el menú principal de la aplicación deslizando el dedo de izquierda a derecha o presionando el botón en la 
+esquina superior izquierda. Para lograr esto se ha utilizado el patrón de diseño conocido como "Navigation Drawer" y haciendo uso
+del componente Actionbar para obtener una fácil navegación asi como utilizar los patrones del material de diseño de Google para 
+ofrecer un diseño agradable al usuario.
+
+La Navegación dentro de la aplicación móvil esta basada en cinco gestos sobre la pantalla del dispositivo móvil, a continuación 
+se describe cada uno de estos y se menciona en que vistas se utilizan y cuales son las operaciones que nos permiten realizar.
+
+\subsection{Clic Simple}
+Este gesto es el más simple y utilizado dentro de la aplicación, consiste únicamente en seleccionar la opción a la que se desea 
+acceder mediante un clic simple sobre dicha opción o botón. Posterior a esto se realizara la opción correspondiente a la opción 
+seleccionada. Dentro de la aplicación, este gesto es utilizado en: 
+
+\begin{itemize}
+ \item Acceso a los distintos módulos dentro del menú principal de TASMC.
+ \item Selección de los distintos valores en los formularios de búsqueda de Hoteles y Vuelos, así como el envío de datos por medio 
+ de su respectivo botón de búsqueda.
+ \item Clic sobre el botón de acción para el despliegue de filtros de Hoteles y Vuelos.
+ \item Clic sobre el botón de acción para hacer llamado a una nueva actividad como es la generación de un nuevo itinerario o equipaje.
+ \item Clic sobre botones para mostrar la información referente a mapa y servicios dentro del AICM.
+ \item Acceso a la edición de listas de equipaje e itinerarios de viaje.
+ \item Puntualizar origen y destino mediante marcadores para generar la ruta al AICM.
+\end{itemize}
+
+\subsection{Desplazar}
+Este gesto consiste en desplazarse por la pantalla de arriba hacia abajo y viceversa. 
+Dejando pulsada la pantalla movemos el dedo arriba o abajo. Este gesto es utilizado principalmente en las vistas que contienen 
+listas como son:
+
+\begin{itemize}
+ \item La lista del menú principal.
+ \item Lista de Hoteles Disponibles.
+ \item Lista de Equipaje y objetos.
+ \item Lista de Itinerarios de Viaje.
+ \item Lista de Llegadas y Salidas Nacionales e Internacionales.
+\end{itemize}
+
+\subsection{Deslizar}
+Este gesto consiste en mantener oprimida la pantalla del dispositivo y deslizar el dedo a lo ancho de la pantalla para intercambiar 
+la vista que se esté presentando. Su uso primordial es:
+
+\begin{itemize}
+ \item Intercambiar las vistas para la búsqueda de vuelos; ida y redondo.
+ \item Intercambio de mapas de Planta Alta y Planta Baja.
+ \item Navegación entre las vistas de Salidas y Llegadas.
+ \item Deslizar el menú principal.
+\end{itemize}
+
+\subsection{Pellizcar}
+Es la típica acción que hacemos juntando o separando dos dedos para, por ejemplo, hacer zoom en una imagen. Este gesto es utilizado en:
+\begin{itemize}
+ \item El zoom de mapas del AICM.
+ \item El zoom del mapa de la ruta hacia el AICM.
+\end{itemize}
+
+\subsection{Arrastrar}
+Por último, este gesto consiste en mantener oprimida el área de selección y deslizar el dedo hacia arriba o hacia un lado para tener 
+acceso a la información o funcionalidades correspondientes. 
+\begin{itemize}
+ \item Este gesto se utiliza en las vistas de Hoteles y Vuelos Disponibles para actualizar la información.
+ \item Es aplicado en la lista de itinerarios, dejando presionado un itinerario y desplazandoló hacia la derecha el itinerario es 
+ eliminado de la base de datos.
+\end{itemize}

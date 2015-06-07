@@ -1,0 +1,25 @@
+\section{GPS}
+
+\newcommand{\grad}{\hspace{-2mm}$\phantom{a}^{\circ}$}
+
+GPS es la abreviatura de Global Positioning System ó Sistema de Posicionamiento Global en español. Es un sistema de radionavegación basado en satélites desarrollado y controlado por el Departamento de Defensa de Estados Unidos de América que permite a cualquier usuario saber su localización, velocidad y altura, las 24 horas del día, bajo cualquier condición atmosférica y en cualquier punto del globo terrestre. 
+
+Después de la segunda guerra mundial, el Departamento de Defensa de Estados Unidos de América se empeñó en encontrar una solución para el problema del posicionamiento preciso y absoluto. Pasaron varios proyectos y experiencias durante los siguientes 25 años, incluyendo Loran, Transit, etc. Todos permitían determinar la posición pero eran limitados en precisión o funcionalidad. En el comienzo de la década de 70, un nuevo proyecto fue propuesto, el GPS. 
+
+El GPS tiene tres componentes: el espacial, el de control y el de usuario.
+
+El componente espacial está constituido por una constelación de 24 satélites en órbita terrestre aproximadamente a 20200 km, distribuidos en 6 planos orbitales. Estos planos están separados entre sí por aproximadamente 60\grad  en longitud y tienen inclinaciones próximas a los 55\grad  en relación al plano ecuatorial terrestre. Fue concebido de manera que existan como mínimo 4 satélites visibles por encima del horizonte en cualquier punto de la superficie y en cualquier altura.
+
+El componente de control está constituido por 5 estaciones de rastreo distribuidas a lo largo del globo y una estación de control principal (MCS- Master Control Station). Este componente rastrea los satélites, actualiza sus posiciones orbitales y calibra y sincroniza sus relojes. Otra función importante es determinar las órbitas de cada satélite y prever su trayectoria durante las 24 horas siguientes. Esta información es enviada a cada satélite para después ser transmitida por este, informando al receptor local donde es posible encontrar el satélite. 
+
+El componente del usuario incluye todos aquellos que usan un receptor GPS para recibir y convertir la señal GPS en posición, velocidad y tiempo. Incluye además todos los elementos necesarios en este proceso, como las antenas y el software de procesamiento. 
+
+\subsection{Funcionamiento GPS}
+
+Los fundamentos básicos del GPS se basan en la determinación de la distancia entre un punto: el receptor, a otros de referencia: los satélites. Sabiendo la distancia que nos separa de 3 puntos podemos determinar nuestra posición relativa a esos mismos 3 puntos a través de la intersección de 3 circunferencias cuyos radios son las distancias medidas entre el receptor y los satélites. En la realidad, son necesarios como mínimo 4 satélites para determinar nuestra posición correctamente. 
+
+Cada satélite transmite una señal que es recibida por el receptor, éste, por su parte mide el tiempo que las señales tardan a llegar hasta él. Multiplicando el tiempo medido por la velocidad de la señal (la velocidad de la luz), obtenemos la distancia receptor-satélite, (Distancia = Velocidad X Tiempo).
+
+Sin embargo el posicionamiento satelital no es así de simple. Obtener la medición precisa de la distancia no es tarea fácil.
+
+La distancia puede ser determinada a través de los códigos modulados en la onda enviada por el satélite  (códigos C/A y P), o por el análisis de la onda portadora. Estos códigos son complicados. El receptor fue preparado de modo que solamente descifre esos códigos y ninguno más, de este modo él está inmune a interferencias generadas por fuentes naturales o intencionales. Esta es una de las razones para la complejidad de los códigos.  \cite{GPS}

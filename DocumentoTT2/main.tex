@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reporte Técnico Trabajo Terminal II                          
+% Traveler Assistant System For Mexico City (TASMC)
+%													   
+% Autores:
+% Erick Rafael Vivanco Carmona 
+% Sergio Barajas Uribe
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	Paquetes y configuración
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, oneside]{Thesis}
+\usepackage{times}
+\usepackage[spanish]{babel}
+\usepackage{multirow}
+\usepackage{color, colortbl}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{5}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subparagraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\graphicspath{{Imagenes/}}
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} 
+\hypersetup{urlcolor=black, colorlinks=true} 
+\title{\ttitle} % Defines the thesis title - don't touch this
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages	
+
+\setstretch{1.3} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	Portada
+%----------------------------------------------------------------------------------------
+
+\include{portada/portada}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy}
+
+\lhead{\emph{Índice general}} 
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{Índice de figuras}} 
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{Índice de tablas}} 
+\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	Contenido
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+\include{Capitulos/1Introduccion/1Introduccion}
+\include{Capitulos/2EstadoDelArte/2EstadoDelArte}
+\include{Capitulos/3MarcoTeorico/3MarcoTeorico}
+\include{Capitulos/4MarcoMetodologico/4MarcoMetodologico}
+\include{Capitulos/5AnalisisGeneral/5AnalisisGeneral}
+\include{Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo}
+\include{Capitulos/7DisenoTASMC/7DisenoTASMC}
+\include{Capitulos/8Desarrollo/8Desarrollo}
+\include{Capitulos/9Pruebas/9Pruebas}
+\include{Capitulos/10TrabajoFuturo/10TrabajoFuturo}
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+
+\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{Bibliography} 
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+\end{document}

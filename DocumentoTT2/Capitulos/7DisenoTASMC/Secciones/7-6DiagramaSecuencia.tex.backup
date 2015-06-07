@@ -1,0 +1,99 @@
+\section{Diagramas de Secuencia}
+
+Los diagramas de secuencia es una manera de describir más detalladamente los pasos y procesos a ejecutar para poder cubrir con los puntos de funcionalidad de cada caso de uso. 
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/GestionarUsuario.jpg}
+		\rule{30em}{1pt}
+	\caption[Diagrama de Secuencia Gestionar Usuario]{Diagrama de Secuencia Gestionar Usuario}
+	\label{fig:secGestionarUsuario}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/secRegistrarEquipaje.png}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Gestionar Equipaje]{Diagrama de Secuencia Gestionar Equipaje}
+	\label{fig:secRegistrarEquipaje}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/GestionarServicio.jpg}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Gestionar Servicio]{Diagrama de Secuencia Gestionar Servicio}
+	\label{fig:secGestionarLugar}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/secConfigurarViaje.png}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Configurar Viaje]{Diagrama de Secuencia Configurar Viaje}
+	\label{fig:secConfigurarViaje}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/ConsultaHoteles.jpg}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Consultar Hotel]{Diagrama de Secuencia Consultar Hotel}
+	\label{fig:secConsultarHotel}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/ConsultaVuelos.jpg}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Consultar Vuelo]{Diagrama de Secuencia Consultar Vuelo}
+	\label{fig:secConsultarVuelo}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/ConsultarAICM.jpg}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Consultar Información AICM]{Diagrama de Secuencia Consultar Información AICM}
+	\label{fig:secConsultarInformacionAICM}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/secGestionarEquipaje.png}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Gestionar Equipaje]{Diagrama de Secuencia Gestionar Equipaje}
+	\label{fig:secGestionarEquipaje}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/ConsultarItinerario.jpg}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Consultar Itinerario de Viaje]{Diagrama de Secuencia Consultar Itinerario de Viaje}
+	\label{fig:secConsultarItinerarioViaje}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/secConsultarRutacasa-AICM.png}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Consultar Ruta casa-AICM]{Diagrama de Secuencia Consultar Ruta casa-AICM}
+	\label{fig:secConsultarRutacasa-AICM}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/secUbicarAICM.png}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Ubicar en AICM]{Diagrama de Secuencia Ubicar en AICM}
+	\label{fig:secUbicarAICM}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/secConsultarInformacionVuelo.png}
+		\rule{30em}{0.5pt}
+	\caption[Diagrama de Secuencia Consultar Información de Vuelo]{Diagrama de Secuencia Consultar Información de Vuelo}
+	\label{fig:secConsultarInformacionVuelo}
+\end{figure}

@@ -1,0 +1,719 @@
+\section{Estudio de Factibilidad}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+El estudio de factibilidad sirve para estimar los recursos necesarios para el desarrollo del proyecto, el éxito de la implementación está determinado por el grado de factibilidad que se presente en tres aspectos a evaluar: técnico, económico y operativo.
+
+\subsection{Factibilidad Técnica}
+
+La factibilidad técnica consiste en realizar una evaluación de la tecnología con la que cuenta el equipo de trabajo, en éste estudio se muestra la información recolectada sobre los componentes técnicos con los que se cuenta y la posibilidad de hacer uso de los mismos en el desarrollo e implementación del sistema propuesto y de ser necesario, los requisitos tecnológicos que deben ser adquiridos para el desarrollo y puesta en marcha del sistema. 
+
+De acuerdo a los requisitos del sistema se evaluaron sus componentes bajo dos enfoques: hardware y software. 
+
+\subsubsection{Hardware}
+
+Respecto al hardware, se requieren equipos de cómputo para: desarrollar la aplicación móvil, alojar la aplicación Web de administración y tener el servicio Web funcionando. También es necesario un teléfono inteligente que cuente con los sensores necesarios para la localización en interiores. 
+
+El equipo de trabajo cuenta con las computadoras personales para el desarrollo de la aplicación móvil, las cuales se detallan en la Tabla \ref{tab:hardware}.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline \rowcolor[RGB]{51,153,255}
+			\textcolor{blanco}{\bf Recurso} &
+				\textcolor{blanco}{\bf Características} \\
+			\hline 
+			\multirow{1}{2.8cm}{Laptop Lenovo} &
+				{\parbox{0.5\textwidth}{
+					\begin{itemize}
+                			\item Procesador Intel Core i3 2.2 GHz
+		               	\item 4 GB memoria RAM DDR3
+                			\item 520 GB de disco duro
+                			\item Sistema Operativo Windows 7 de 64 bits
+           			\end{itemize} }} \\
+      		\hline \rowcolor[RGB]{240,248,255} 
+      		\multirow{1}{2.8cm}{MacBook Pro} &
+      				{\parbox{0.5\textwidth}{
+					\begin{itemize}
+                			\item Procesador Intel Core i7 2.3 GHz
+		               	\item 8 GB memoria RAM
+                			\item 250 GB de almacenamiento en flash
+                			\item Sistema Operativo OS X 10.10.1
+           			\end{itemize} }} \\
+      		\hline 
+		\end{tabular}
+	\end{center}
+	\caption[Recursos de Hardware del Equipo]{Recursos de Hardware del Equipo} 
+	\label{tab:hardware}
+\end{table}
+
+Debido a la naturaleza del sistema a desarrollar, se requiere de ciertos dispositivos móviles con las características necesarias para poder implementar y elaborar las pruebas necesarias a la aplicación móvil. En la Tabla \ref{tab:reqMin} se enlistan las características mínimas requeridas en dichos dispositivos móviles para el correcto funcionamiento de la aplicación.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|>{\columncolor[RGB]{51,153,255}}l|l|}
+			\hline  
+			\textcolor{blanco}{\bf Sistema Operativo} &
+		     	\hspace{0.5cm}Android 4.3 o superior \\
+			\hline 
+			\textcolor{blanco}{\bf Procesador} &
+				\hspace{0.5cm}1.3 GHz \\
+      		\hline 
+      		\textcolor{blanco}{\bf Memoria RAM} &
+				\hspace{0.5cm}1 GB \\
+      		\hline 
+      		\textcolor{blanco}{\bf Sensores} &
+				{\parbox{0.5\textwidth}{
+					\begin{itemize}
+                			\item Magnetómetro (Brújula)
+		               	\item Acelerómetro
+		               	\item Giroscopio
+           			\end{itemize} }} \\
+			\hline 
+		\end{tabular}
+	\end{center}
+	\caption[Requerimientos Mínimos del Dispositivo Móvil]{Requerimientos Mínimos del Dispositivo Móvil} 
+	\label{tab:reqMin}
+\end{table}
+
+Se cuenta con un dispositivo que cumple con los requerimientos mínimos, éste dispositivo cuenta con el sistema operativo Android y será utilizado para realizar las actividades correspondientes durante las etapas de producción, estabilización y pruebas. En la Tabla \ref{tab:movilesPos} se describen algunas especificaciones técnicas del dispositivo.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|>{\columncolor[RGB]{51,153,255}}l|l|}
+			\hline  
+			\textcolor{blanco}{\bf Modelo} &
+				\hspace{0.5cm}Samsung Galaxy S4\\
+			\hline
+			\textcolor{blanco}{\bf Sistema Operativo} &
+				\hspace{0.5cm}Android 4.4.2 KitKat \\
+      		\hline 
+      		\textcolor{blanco}{\bf Pantalla} &
+				\hspace{0.5cm}5 pulgadas \\
+      		\hline
+      		\textcolor{blanco}{\bf Resolución de Pantalla} &
+				\hspace{0.5cm}1,920 x 1,080 pixeles (441 ppp) \\
+      		\hline 
+      		\textcolor{blanco}{\bf Procesador} &
+				\hspace{0.5cm}Qualcomm Snapdragon 600 1.9 GHz \\
+      		\hline 
+			\textcolor{blanco}{\bf Memoria RAM} &
+				\hspace{0.5cm}2 GB \\
+      		\hline 
+      		\textcolor{blanco}{\bf Conectividad} &
+				\hspace{0.5cm}3G \\
+      		\hline 
+      		\textcolor{blanco}{\bf Sensores} &
+				{\parbox{0.5\textwidth}{
+					\begin{itemize}
+                			\item Magnetómetro (Brújula)
+		               	\item Acelerómetro
+		               	\item Giroscopio
+           			\end{itemize} }} \\
+			\hline 
+		\end{tabular}
+	\end{center}
+	\caption[Específicaciones Técnicas Galaxy S4]{Específicaciones Técnicas Galaxy S4} 
+	\label{tab:movilesPos}
+\end{table}
+
+\subsubsection{Software}
+
+El software que se necesita consta de sistemas operativos, tanto de escritorio como móvil; entorno de desarrollo integrado (IDE, sigla en ingles de Integrated Development Environment), una herramienta UML, un sistema gestor de base de datos (SGBD) y se utilizarán algunas APIs.
+
+\paragraph{Sistema Operativo Móvil}
+
+\label{SOM}
+
+En la Tabla \ref{tab:comSOM} se muestran los diferentes sistemas operativos móviles que nos sirven para desarrollar la aplicación móvil.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|>{\columncolor[RGB]{51,153,255}}p{4cm}|>{\columncolor[RGB]{153,255,153}}p{4.5cm}|p{4.5cm}|}
+			\hline  
+			\textcolor{blanco}{\bf Sistema Operativo} &
+				{\centering Android} &
+				{\centering iOS} \\
+			\hline
+			\textcolor{blanco}{\bf Desarrollador} &
+				{\centering Google} &
+				{\centering Apple Inc.} \\
+      		\hline 
+      		\textcolor{blanco}{\bf Imagen \newline Representativa} &
+				{\centering \includegraphics[width=15mm, height=15mm]{Figuras/android.png}} &
+				{\centering \includegraphics[width=15mm, height=15mm]{Figuras/ios.png}} \\
+      		\hline
+      		\textcolor{blanco}{\bf Plataforma de \newline Desarrollo} &
+				{\centering Windows, Mac OS y Linux.} &
+				{\centering Mac OS} \\
+      		\hline 
+      		\textcolor{blanco}{\bf Variedad de \newline Dispositivos} &
+				{\centering Muy Alta} &
+				{\centering Baja} \\
+      		\hline 
+			\textcolor{blanco}{\bf Número de \newline Aplicaciones \newline Disponibles} &
+				{\centering 1.3 millones} &
+				{\centering 1.2 millones} \\
+      		\hline  
+      		\textcolor{blanco}{\bf Arquitectura} &
+				{\parbox{0.5\textwidth}{
+					\begin{itemize}
+                			\item Kernel de Linux
+		               	\item Librerías
+		               	\item Android Runtime
+		               	\item Framework de Apps
+           			\end{itemize} }} &
+				{\parbox{0.5\textwidth}{
+					\begin{itemize}
+                			\item Core OS
+		               	\item Core Services
+		               	\item Media
+		               	\item Cocoa Touch
+           			\end{itemize} }} \\
+			\hline 
+			\textcolor{blanco}{\bf Tipo de Código de Desarrollo} &
+				{\centering Abierto} &
+				{\centering Cerrado} \\
+      		\hline  
+      		\textcolor{blanco}{\bf Costo de Licencia \newline para Desarrollo} &
+				{\centering \$ 25.00 USD. Pago Único}  &
+				{\centering \$ 99.00 USD. Pago Anual} \\
+      		\hline  
+      		\textcolor{blanco}{\bf Proceso de validación de aplicaciones} &
+				{\centering Bastante flexible de 5 a 30  minutos} &
+				{\centering Muy estricto de 1 semana en  promedio} \\
+      		\hline  
+      		\textcolor{blanco}{\bf IDE (Entorno de Desarrollo Integrado)} &
+				{\centering ADT y Android Studio} &
+				{\centering Xcode} \\
+      		\hline  
+      		\textcolor{blanco}{\bf Lenguajes de \newline Programación} &
+				{\centering C, C++ y Java.} &
+				{\centering Objective-C, C, C++ y Swift.} \\
+      		\hline  
+      		\textcolor{blanco}{\bf Uso en el mercado} &
+				{\centering 78.4 \% del mercado} &
+				{\centering 15.6 \% del mercado} \\
+      		\hline  
+		\end{tabular}
+	\end{center}
+	\caption[Comparación de Sistemas Operativos Móviles]{Comparación de Sistemas Operativos Móviles} 
+	\label{tab:comSOM}
+\end{table}
+
+Como podemos observar en la Tabla \ref{tab:comSOM}, con Android tenemos más opciones en la plataforma de desarrollo, lo cual se adecua de buena forma con los equipos que contamos. La presencia en el mercado y el costo de licencia para desarrollo, hacen que nos decidamos por Android como sistema operativo móvil para desarrollar TASMC.
+
+\subparagraph{Android}
+
+Android permite programar en un entorno de trabajo (framework) de Java, aplicaciones sobre una maquina virtual Dalvik (una variación de la máquina virtual de Java con compilación en tiempo de ejecución). Además, a diferencia de otros sistemas operativos, Android es de código libre lo que permite mayores ventajas para el desarrollo de nuevas aplicaciones, o incluso, modificar el propio sistema operativo. Aunado a esto, en los últimos años Android se ha posicionado como el líder mundial dentro de las plataformas para dispositivos móviles disponibles en el mercado. \cite{Android}
+
+\subparagraph{Versiones de Android}
+
+Una vez que se ha justificado la elección de Android como el sistema operativo al cual estará orientado nuestro sistema, debemos establecer que versión de dicho sistema operativo es la indicada para que la aplicación móvil se desempeñe satisfactoriamente. De acuerdo a los datos ofrecidos en la página oficial de Android, la versión con mayor presencia en el mercado hasta el mes de Agosto de 2014 es la 4.3 Jelly Bean pero no cumple con los requerimientos que necesita el sistema para funcionar por lo que se opto por el segundo de mayor presencia y la cual es la versión más reciente 4.4 KitKat, dicha versión ofrece las funcionalidades y compatibilidad requeridas por nuestro sistema. En la Figura \ref{fig:versionesFigura} y la Tabla \ref{tab:versionesTabla} se muestran las estadísticas referentes a la presencia en el mercado de cada una de las versiones de Android.
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1\textwidth]{Figuras/versionesAndroid.png}
+		\rule{30em}{0.5pt}
+	\caption[Gráfica de Usabilidad de las Versiones de Android]{Gráfica de Usabilidad de las Versiones de Android (Agosto 2014) \cite{devAndroid}}
+	\label{fig:versionesFigura}
+\end{figure}
+
+\begin{table} 
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Versión} &
+				\textcolor{blanco}{\bf Nombre} &
+				\textcolor{blanco}{\bf API} &
+				\textcolor{blanco}{\bf Presencia en el Mercado} \\
+			\hline  
+				2.2 &
+				Froyo &
+				8 &
+				0.7\% \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			2.3.3 - 2.3.7 &
+				Gingerbread &
+				10 &
+				13.6\% \\
+      		\hline 
+      			4.0.3 - 4.0.4 &
+				Ice Cream Sandwich &
+				15 &
+				10.6\% \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			4.1.x &
+				Jelly Bean &
+				16 &
+				26.5\% \\
+      		\hline 
+      			4.2.x &
+				Jelly Bean &
+				17 &
+				19.8\% \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			4.3 &
+				Jelly Bean &
+				18 &
+				7.9\% \\
+      		\hline 
+      			4.4 &
+				KitKat &
+				19 &
+				20.9\% \\
+      		\hline 
+		\end{tabular}
+	\end{center}
+	\caption[Usabilidad de las Versiones de Android]{Usabilidad de las Versiones de Android \cite{devAndroid}} 
+	\label{tab:versionesTabla}
+\end{table}
+
+\paragraph{Lenguaje de Programación}
+
+La fila correspondiente a lenguajes de programación en la Tabla \ref{tab:comSOM} nos muestra C, C++ y Java como los mas utilizados para Android. En la Tabla \ref{tab:paramLengu} se muestran los parámetros de los lenguajes de programación que aparecen en la Tabla \ref{tab:lenguProgra}, esto con el fin de elegir el lenguaje de programación que se utilizará en este proyecto. 
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|c|p{4.5cm}|p{4.5cm}|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Parámetro} &
+				\textcolor{blanco}{\bf Descripción} &
+				\textcolor{blanco}{\bf Escala de Medición} \\
+			\hline 
+				Paradigma &
+				Enfoque empleado para modelado de un sistema según la naturaleza y filosofía de un lenguaje de programación. &
+				Orientado a Objetos, Estructurado, Funcional, Reflexivo, Orientado a eventos. \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Plataformas Compatibles &
+				Plataforma donde el lenguaje de programación puede generar código objeto. &
+				Android, iOS y Windows Phone. \\
+      		\hline 
+      			Curva de Aprendizaje &
+				Se refiere al tiempo que lleva al equipo de desarrollo dominio y transición. &
+				Corta, Media, Larga. \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Complejidad &
+				Es la medición relativa sobre la experiencia de trabajo con el paradigma y el lenguaje de programación que lo implementa. &
+				Complejo (Sin experiencia), Media (Experiencia en paradigma o sintaxis del lenguaje), Fácil (Experiencia en paradigma y sintaxis del lenguaje). \\
+      		\hline 
+      			Documentación &
+				Muestra la cantidad de información existente. &
+				Abundante, Media, Escasa. \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Parámetros de Comparación para el Lenguaje de Programación]{Parámetros de Comparación para el Lenguaje de Programación} 
+	\label{tab:paramLengu}
+\end{table}
+
+\begin{table} 
+	\begin{center}
+		\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Parámetros} &
+				\textcolor{blanco}{\bf C++} &
+				\textcolor{blanco}{\bf Java} &
+				\textcolor{blanco}{\bf C} \\
+			\hline 
+				Paradigma &
+				Multiparadigma: programación orientada a objetos, programación genérica, programación estructurada, programación funcional y metaprogramación. &
+				Multiparadigma: programación orientada a objetos, programación genérica, programación estructurada, programación reflexiva y programación concurrente. & 
+				Programación \newline estructurada \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Plataformas Compatibles &
+				Multiplataforma &
+				Multiplataforma &
+				Multiplataforma \\
+      		\hline 
+      			Curva de \newline Aprendizaje &
+				Media &
+				Corta &
+				Media \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Complejidad &
+				Media &
+				Fácil &
+				Media \\
+      		\hline 
+      			Documentación &
+				Abundante &
+				Abundante &
+				Abundante \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Comparación de Lenguajes de Programación]{Comparación de Lenguajes de Programación} 
+	\label{tab:lenguProgra}
+\end{table}
+\newpage
+En términos de paradigma excluimos al lenguaje C ya que se requiere de programación orientada a objetos. En lo que respecta a la complejidad para el equipo de desarrollor, se muestra que Java es menos complejo que C++, por lo tanto, el lenguaje de programación que se utilizará para TASMC es Java.
+
+\paragraph{Sistema Operativo de Escritorio}
+
+Los sistemas operativos con los que cuenta el equipo de desarrollo se pueden observar en la Tabla \ref{tab:SOE}.
+
+\begin{table}[h] 
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Computadora} &
+				\textcolor{blanco}{\bf Sistema Operativo} \\
+			\hline 
+				Laptop Lenovo &
+				Windows 7 \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			MacBook Pro &
+				OS X Yosemite 10.10.1 \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Sistemas Operativos del Equipo]{Sistemas Operativos del Equipo} 
+	\label{tab:SOE}
+\end{table}
+
+Debido a que se eligió Android como sistema operativo móvil, visualizando la Tabla \ref{tab:comSOM}, encontramos que las plataformas en donde se puede desarrollar para Android son: Windows, Mac OS y Linux. Por lo tanto, las computadoras que tiene el equipo nos permiten desarrollar TASMC.
+
+\paragraph{Entorno de Desarrollo Integrado}
+
+Un Entorno de desarrollo integrado o IDE como se le conoce comúnmente, es una herramienta de software que permite unificar el control sobre el desarrollo de un sistema, se compone de una gran cantidad de módulos que ayudan a configurar opciones y corregir problemáticas presentes en la sintaxis o lógica del código, permiten el uso de plantillas para agilizar el desarrollo. Debido a la complejidad de los sistemas computacionales actuales, el IDE ha logrado convertirse también en una pieza clave para alcanzar la meta de desarrollo gracias a las ventajas que brinda contra los tiempos de desarrollo.
+
+Dadas las características requeridas por las herramientas establecidas en anterioridad se priorizara que el IDE cumpla con los parámetros de la Tabla \ref{tab:paramIDEs}.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|p{4.2cm}|p{4.5cm}|p{4.5cm}|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Parámetros} &
+				\textcolor{blanco}{\bf Descripción} &
+				\textcolor{blanco}{\bf Escala de Medición} \\
+			\hline 
+				Soporte para Desarrollo Java (Android) &
+				Es preciso que el IDE soporte desarrollo para el lenguaje JAVA y resguarde compatibilidad con el JDK en sus versiones 1.6 y 1.7 además de ser compatible con el ambiente de trabajo para desarrollar aplicaciones Android. &
+				Con soporte, sin soporte \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Soporte para Conectividad SQLite &
+				Se debe tener una configuración transparente para la comunicación con SQLite, supervisada mediante el IDE. &
+				Con soporte, sin soporte. \\
+      		\hline 
+      			Consumo de Recursos &
+				El IDE debe ser congruente con el consumo de recurso, entiéndase como la exigencia de que sea una de las herramientas que consuma menos recursos para el desarrollo. &
+				Alta, Media. \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Eficiencia de la configuración  &
+				El IDE debe realizar una configuración confiable y fácilmente modificable, para realizar pruebas antes de la puesta a punto. &
+				Alta, Media, Baja. \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Parámetros de Comparación para IDEs]{Parámetros de Comparación para IDEs} 
+	\label{tab:paramIDEs}
+\end{table}
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Parámetros} &
+				\textcolor{blanco}{\bf Android Studio} &
+				\textcolor{blanco}{\bf Eclipse ADT} \\
+			\hline 
+				Soporte para Desarrollo Java (Android) &
+				Con soporte &
+				Con soporte \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Soporte para Conectividad SQLite &
+				Con soporte &
+				Con soporte \\
+      		\hline 
+      			Consumo de Recursos &
+				Medio &
+				Alto \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Eficiencia de la Configuración &
+				Alta &
+				Media \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Comparacion IDEs Android Studio y Eclipse ADT]{Comparacion IDEs Android Studio y Eclipse ADT} 
+	\label{tab:comIDEs}
+\end{table}
+
+Como se puede observar Android Studio y Eclipse ADT son IDEs muy semejantes, la principal diferencia entre ambos es que Android Studio esta recibiendo más soporte que el mismo Eclipse ADT hoy en día. Debido a que Android Studio consume menos recursos y, además, el sistema de construcción que utiliza es Gradle, se utilizará éste IDE para el desarrollo de TASMC.
+
+\paragraph{Herramienta UML}
+
+StartUML es una de las herramientas open source para un desarrollo rápido, flexible, extensible basado en los estándares UML (Unified Modeling Lenguage) y MDA (Model Driven Arquitecture), esta herramienta corre sobre sistemas operativos Windows y Mac OS. StarUML ofrece un amplio grupo de diagramas de UML 2.0, entre los cuales están: Diagramas de casos de uso, diagrama de clases, diagrama de secuencia, diagrama de comunicación, diagrama de máquina de estado, diagrama de actividad, diagrama de componentes, diagrama de despliegue, diagrama de estructura compuesta (UML 2.0). Al igual que soporta varios lenguajes entre los cuales se encuentra Java, C++, C\# (generador de código y de ingeniería inversa). \cite{starUML}
+
+Debido a que StarUML es gratuita, se apega a los estándares UML y se puede utilizar tanto en Windows como Mac OS, utilizaremos StarUML como herramienta UML para nuestro proyecto.
+\newpage
+\paragraph{Sistema Gestor de Base de Datos}
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|p{3cm}|p{5.1cm}|p{5.1cm}|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Parámetro} &
+				\textcolor{blanco}{\bf SQLite} &
+				\textcolor{blanco}{\bf Oracle Lite} \\
+			\hline 
+				Paradigma &
+				Relacional &
+				Relacional \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Costo de Licencia &
+				SQLite es de dominio público, y por tanto, no tiene costo y se puede redistribuir libremente. &
+				\$ 180 USD por licencia \\
+      		\hline 
+      			Interfaces &
+				Cuenta con diferentes interfaces del API para trabajar con C++, PHP, Perl, Python, etc. &
+				Interfaz GUI y SQL. \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Tamaño &
+				SQLite tiene una pequeña memoria y una única biblioteca es necesaria para acceder a bases de datos, esto lo hace ideal para aplicaciones de bases de datos incorporadas. El tamaño máximo de una base de datos es de 2 TB. &
+				 La carga sobre el dispositivo móvil es mínima ya que los datos y aplicaciones se almacenan en servidores móviles los cuales a su vez se comunican con un repositorio propio de Oracle. \\
+      		\hline 
+      		Portabilidad &
+      		Se ejecuta en muchas plataformas y sus bases de datos pueden ser fácilmente portadas sin ninguna configuración o administración. &
+      		Se ejecuta en múltiples plataformas, incluyendo Android, iPhone (Apple iOS), Blackberry, Symbian OS, Windows de 32 bits, Windows Mobile, Linux y otras plataformas de dispositivos móviles. \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      		Rendimiento &
+      		SQLite realiza operaciones de manera eficiente y es más rápido que MySQL y PostgreSQL. &
+      		Ofrece un rendimiento fuera de la caja, permitiendo a los usuarios el acceso información de forma rápida y eficiente. Multiprocesador y la memoria caché dinámica dimensionamiento garantizar arriba rendimiento para las bases de datos más grandes y un mayor número de usuarios conectados. \\ 
+      		\hline 
+      		Estabilidad &
+      		SQLite es compatible con ACID, reunión de los cuatro criterios de Atomicidad, Consistencia, Aislamiento y Durabilidad. &
+      		Oracle es compatible con ACID, además de manejar integridad referencial, transacciones y  estándar de codificación Unicode. \\
+      		\hline
+    		\end{tabular}
+	\end{center}
+	\caption[Comparación SGBD móviles]{Comparación SGBD móviles} 
+	\label{tab:comSGBD}
+\end{table}
+\newpage
+El gestor de base de datos es el software que se ocupa del almacenamiento, modificación y extracción de la información procedente de una base de datos. Representa una interfaz de comunicación entre la entrada de información y los registros almacenados en repositorios. Además forma parte medular para la implementación de todo sistema que almacena información en bases de datos. En la Tabla \ref{tab:comSGBD} se encuentran los SGBD, para móviles, que se pueden utilizar para el desarrollo de TASMC.
+
+En términos de consumo de recursos, rendimiento y costo se eligió utilizar SQLite como gestor de base de datos, dado que para la implementación del sistema se pensó en utilizar un SGBD capaz de reaccionar ágilmente ante la concurrencia de solicitudes al tiempo que consume bajos recursos, además de que no es necesario una base de datos tan robusta.
+
+\paragraph{API de Rutas de Google Maps}
+
+El API de rutas de Google es un servicio que utiliza una solicitud HTTP para calcular rutas para llegar de una ubicación a otra. Puedes buscar rutas de varios métodos de transporte, como en transporte público, en coche, a pie o en bicicleta. Las rutas pueden especificar los orígenes, los destinos y los hitos como cadenas de texto (por ejemplo, ``Chicago, IL'' o ``Darwin, NT, Australia'') o como coordenadas de latitud/longitud. El API de rutas puede devolver rutas segmentadas mediante una serie de hitos.
+
+Por lo general, este servicio está diseñado para calcular rutas a partir de direcciones estáticas (conocidas previamente) para la ubicación del contenido de la aplicación en un mapa. Sin embargo, este servicio no está diseñado para responder en tiempo real a la información introducida por el usuario.
+
+El cálculo de indicaciones es un proceso que consume mucho tiempo y muchos recursos. Siempre que sea posible, se debe realiza un cálculo previo de las direcciones conocidas (mediante el servicio descrito) y almacena los resultados en una memoria caché. \cite{apiGoogleMaps}
+\newpage
+\paragraph{API de IndoorAtlas}
+
+El API de Indooratlas nos ayudará a realizar la localización en interiores sin necesidad de utilizar infraestructura de hardware externo. \cite{apiIndoorAtlas}
+
+Lo que Indooratlas nos ofrece:
+
+\begin{itemize}
+	\item 2 metros de precisión en la localización.
+	\item	Ahorro de recursos si lo comparamos con otra técnica para la localización en interiores.
+	\item Una solución multiplataforma para iOS y Android.
+\end{itemize}
+
+\paragraph{Servicios Web Amadeus}
+ 
+Amadeus Web Services esta creado sobre una arquitectura de sistema abierto ampliable y en formato XML, con eso nos garantiza que siempre está a la vanguardia de la tecnología. Sirve como punto de acceso único a todo el contenido sobre vuelos y hoteles.
+  
+\textbf{Ventajas:}
+\begin{itemize}
+	\item Es totalmente independiente de la plataforma, lo que permite la interoperabilidad entre las aplicaciones de software que funcionan en plataformas y sistemas operativos diferentes.
+	\item Es independiente del lenguaje y del entorno de trabajo de la aplicación.
+	\item 	Documentación extensa.
+	\item Fiable y robusta, con el tiempo de inactividad de servidores más bajo del mercado.
+	\item Apoyo del equipo de certificación y soporte de Amadeus.
+\end{itemize}
+
+\subsection{Factibilidad Ecónomica}
+
+El estudio de factibilidad económica permite analizar los costos y beneficios económicos que se obtendrán con el desarrollo del proyecto, sin importar que la implementación de nuestro sistema sea un prototipo sin fines lucrativos. 
+\vspace{2cm}
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Recurso} &
+				\textcolor{blanco}{\bf Cantidad} &
+				\textcolor{blanco}{\bf Meses} &
+				\textcolor{blanco}{\bf Salario Mensual} &
+				\textcolor{blanco}{\bf Total} \\
+			\hline 
+				Líder de proyecto &
+				1 &
+				8 &
+				\$ 35,000.00 &
+				\$ 280,000.00 \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Desarrollador &
+				2 &
+				8 &
+				\$ 23,000.00 &
+				\$ 368,000.00 \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Recursos Humanos]{Recursos Humanos \cite{salarios}} 
+	\label{tab:recursosHumanos}
+\end{table}
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Recurso} &
+				\textcolor{blanco}{\bf Cantidad} &
+				\textcolor{blanco}{\bf Precio Unitario} &
+				\textcolor{blanco}{\bf Total} \\
+			\hline
+				Impresiones y fotocopias &
+				5,000 &
+				\$ 0.50 &
+				\$ 2,500.00  \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Gastos varios &
+				&
+				&
+				\$ 500.00 \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Recursos Consumibles]{Recursos Consumibles} 
+	\label{tab:recursosConsumibles}
+\end{table}
+
+\begin{table}[h] 
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Recurso} &
+				\textcolor{blanco}{\bf Cantidad} &
+				\textcolor{blanco}{\bf Costo} &
+				\textcolor{blanco}{\bf Total} \\
+			\hline 
+				Laptop Lenovo &
+				1 &
+				\$ 9,000.00 &
+				\$ 9,000.00  \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			MacBook Pro &
+				1 &
+				\$ 19,000.00&
+				\$ 19,000.00 \\
+			\hline 
+				Samsung Galaxy S4 &
+				1 &
+				\$ 7,000.00 &
+				\$ 7,000.00  \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Google Maps Services &
+				1 &
+				\$ 0 &
+				\$ 0 \\
+			\hline
+				IndoorAtlas Services &
+				1 &
+				\$ 0 &
+				\$ 0 \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Web Service Vuelos &
+				1 &
+				\$ 0 &
+				\$ 0 \\
+			\hline
+				Servidor TASMC &
+				1 &
+				\$ 4,000.00 &
+				\$ 4,000.00 \\	
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Recursos Tecnológicos]{Recursos Tecnológicos} 
+	\label{tab:recursosTecnologicos}
+\end{table}
+
+\begin{table} 
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline \rowcolor[RGB]{51,153,255} 
+			\textcolor{blanco}{\bf Recurso} &
+				\textcolor{blanco}{\bf Total} \\
+			\hline 
+				Recursos Humano &
+				\$ 648,000.00  \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Recursos Consumibles &
+				\$ 3,000.00  \\
+			\hline 
+				Recursos Tecnológicos &
+				\$ 39,000.00  \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Subtotal &
+				\$ 690,000.00  \\
+			\hline  
+				Imprevistos (10 \%) &
+				\$ 70,000.00  \\
+      		\hline \rowcolor[RGB]{240,248,255}
+      			Total &
+				\$ 760,000.00 \\
+      		\hline 
+    		\end{tabular}
+	\end{center}
+	\caption[Costo Total TASMC]{Costo Total TASMC} 
+	\label{tab:costoTasmc}
+\end{table}
+\vspace{3cm}
+\newpage
+\subsection{Factibilidad Operativa}
+
+El estudio de factibilidad operativa nos ayuda a determinar si el proyecto puede ser implementado y completado para lograr sus objetivos. Puede ser visto desde dos puntos: recursos humanos para la implementación del proyecto y recursos necesarios para la puesta en marcha del proyecto. 
+
+\textbf{Recursos humanos para la implementación del proyecto}
+
+El equipo de trabajo cuenta con los conocimientos necesarios para el desarrollo del proyecto, mediante las tecnologías seleccionadas. Por lo que es factible que el proyecto sea implementado. 
+
+\textbf{Recursos necesarios para la puesta en marcha del proyecto}
+
+El proyecto se quedará como un prototipo, por lo que no se necesitan recursos extras para una implantación y puesta en marcha del sistema dentro de una empresa, aunque el proyecto puede ser extendido o mejorado para su implantación.
+
+En la Tabla \ref{tab:fodaTASMC} se muestra el FODA de TASMC:
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|p{6.8cm}|p{6.8cm}|}
+			\hline  
+				\textbf{\small Fortalezas:} & \textbf{\small Debilidades:} \\
+				{\parbox{0.45\textwidth}{
+					\begin{itemize}
+                			\item \small Ser un sistema único de gestión integral de viajes.
+						\item \small Creación de un sistema totalmente personalizado y a la medida.
+						\item \small Preocupación y esmero por el buen diseño estético y  funcional de la aplicación.
+           			\end{itemize} }} &
+				{\parbox{0.45\textwidth}{
+					\begin{itemize}
+                			\item \small Poca publicidad de la aplicación.
+						\item \small No contar con los planos del AICM.
+						\item \small Menor disponibilidad de recursos. 
+           			\end{itemize} }}	\\
+			\hline 
+			\textbf{\small Oportunidades:} & \textbf{\small Amenazas:} \\
+				{\parbox{0.45\textwidth}{
+					\begin{itemize}
+                			\item \small Ampliación de mercado en el desarrollo de aplicaciones móviles.
+						\item \small Alta intensidad en el uso de aplicaciones móviles.
+           			\end{itemize} }} &
+				{\parbox{0.45\textwidth}{
+					\begin{itemize}
+                			\item \small Compañías transnacionales que se dedican al desarrollo de aplicaciones móviles. 
+						\item \small Posible existencia de aplicaciones similares que cuenten con mejor infraestructura de operación. 
+           			\end{itemize} }}	\\
+			\hline 
+		\end{tabular}
+	\end{center}
+	\caption[FODA TASMC]{FODA TASMC} 
+	\label{tab:fodaTASMC}
+\end{table}

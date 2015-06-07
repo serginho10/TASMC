@@ -1,0 +1,86 @@
+% Capitulo 6
+
+\chapter{Configuración del Ambiente de Desarrollo} % Main chapter title
+
+\label{ConfiguracionAmbienteDesarrollo} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Capítulo 6 \emph{Configuración del Ambiente de Desarrollo}} % This is for the header on each page - perhaps a shortened title
+
+Esta tarea consiste en configurar los ambientes tanto físicos como técnicos para el proyecto. Esta tarea involucra a los desarrolladores de software en el ambiente técnico de desarrollo, además se realizan pruebas de concepto sin necesariamente implementar un requerimiento.
+
+\section{Configuración Web Service}
+
+\begin{itemize}
+	\item \textbf{Nombre aplicación: } TASMC.
+	\item \textbf{Tipo de Proyecto: } PHP Application.
+	\item \textbf{Framework: } nusoap.php
+\end{itemize}
+
+\section{Configuración Aplicación Móvil }
+
+\begin{itemize}
+	\item \textbf{Nombre aplicación: } TASMC.
+	\item \textbf{Tipo de Proyecto: } Blank Activity.
+	\item \textbf{SDK Mínimo Requerido: } API 19 – Android 4.4 (KitKat).
+	\item \textbf{Configuraciones: } habilitado Automatic Reference Counting (ARC), aplicación universal.
+\end{itemize}
+
+\section{Configuración Base de Datos SQLite}
+
+\begin{itemize}
+	\item \textbf{Nombre base de datos: } tasmc.
+	\item \textbf{Importaciones: }
+	\begin{itemize}
+		\item android.database.Cursor para recuperación de datos.
+		\item android.database.sqlite.SQLiteDatabase para manejo de SQLite dentro de la aplicación.
+	\end{itemize}
+\end{itemize}
+
+\section{Configuración Google Maps API}
+
+\begin{itemize}
+	\item Instalar el SDK de Android. 
+	\item Descargar y configurar el SDK Google Play services, que incluye la API de Google Maps para Android. 
+	\item Obtener una clave de API. Dar de alta el proyecto en la consola de las API de Google, y obtener un certificado de firma para la aplicación. 
+	\item Añadir los ajustes necesarios en el manifiesto de la aplicación. 
+	\item Añadir un mapa de la aplicación. 
+\end{itemize}
+
+\section{Configuración IndoorAtlas API}
+
+\begin{itemize}
+	\item Obtener una clave de API y la contraseña.
+	\item Dar de alta una edificación, niveles y plantas.
+	\item Añadir los IDs correspondientes a la edificación y  sus plantas.
+\end{itemize}
+
+\section{Configuración IDE}
+
+\begin{itemize}
+	\item Obtención de herramientas del SDK de Android
+	\begin{itemize}
+		\item Android SDK Tools
+		\item Android SDK Plataform-tools
+		\item Android SDK Build-tools
+	\end{itemize}
+	\item Obtención de API 19 (Android 4.4)
+	\begin{itemize}
+		\item SDK Plataform
+		\item Samples for SDK
+		\item ARM EABI v7 a System Image
+		\item Intel x86 Atom System Image
+		\item Google APIs (x86 System Image)	
+		\item Google APIs (ARM Sytem Image)
+		\item Glass Development Kit Preview
+		\item Sources for Android SDK
+	\end{itemize}
+	\item Obtención de Google Services
+	\begin{itemize}
+		\item Google Play Services
+		\item Google Repository
+		\item Google USB Driver
+		\item Google Web Driver
+		\item Google Repository
+		\item Google Play Licensing Library
+	\end{itemize}
+\end{itemize}

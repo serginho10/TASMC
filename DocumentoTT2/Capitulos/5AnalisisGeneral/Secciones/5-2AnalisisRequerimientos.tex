@@ -3,7 +3,7 @@
 
 Dentro de esta etapa, a partir de las reglas de negocio y la descripción del sistema se debe considerar la obtención de los requerimientos básicos, los cuales cumplen la función de definir de manera general el sistema a desarrollar para después pasar a especificar los requerimientos funcionales que nos reflejen a detalle las funciones que el sistema debe o no efectuar.
 
-Los requerimientos no funcionales son restricciones a las funciones del sistema o bien cualidades que este debe de presentar para considerarle un sistema de calidad.
+Los requerimientos no funcionales son restricciones a las funciones del sistema o bien cualidades que éste debe de presentar para considerarle un sistema de calidad.
 
 \subsection{Reglas de Negocio}
 
@@ -26,7 +26,7 @@ Las reglas de negocio especifican procesos, operaciones, normas y restricciones 
       			\textbf{RN02} &
 				Definición &
 				Viaje aéreo &
-				Traslado de un lugar a otro, mediante la  utilizando aeronaves, con fin lucrativo. \\
+				Traslado de un lugar a otro, mediante la utilización de aeronaves, con fin lucrativo. \\
 			\hline 
 				\textbf{RN03} &
 				Definición &
@@ -119,7 +119,7 @@ En base a las características que debe contener TASMC se han podido identificar
 \begin{itemize}
 	\item Correo electrónico.
 	\item Clase de vuelo preferida.
-	\item Cantidad preferida de estrellas en hotel. 
+	\item Categoría preferida de hotel. 
 \end{itemize}
 
 \textbf{Módulo de Hoteles}
@@ -127,39 +127,25 @@ En base a las características que debe contener TASMC se han podido identificar
 \begin{itemize}
 	\item Búsqueda de Hoteles.
 	\begin{itemize}
+		\item Ciudad destino del viaje.
 		\item Número de Huéspedes.
-		\item Número de Habitaciones.
-		\item Fecha de entrada y salida.
+		\item Categoría del Hotel.
 	\end{itemize}
 	\item Listado de Hoteles.
 	\item Detalle de Hoteles.
-	\item Filtros según:
-	\begin{itemize}
-		\item Estrellas: de 1 a 5.
-		\item Estrellas: de 5 a 1.
-		\item Precios de bajo a alto.
-		\item Precios de alto a bajo.
-	\end{itemize}
 \end{itemize}
 
-\textbf{Modulo de Vuelos}
+\textbf{Módulo de Vuelos}
  
 \begin{itemize}
 	\item Búsqueda de Vuelos
 	\begin{itemize}
-		 \item Número de pasajeros.
 		\item Clase (Económico, Económico Premium, Business, Primera, Todas).
 		\item Fechas (Salida y llegada).
 		\item Ciudad origen – Ciudad destino.
 	\end{itemize}
 	\item Listado de Vuelos.
 	\item Detalle de Vuelos.
-	\item Filtros según:
-	\begin{itemize}
-		\item Precios de bajo a alto.
-		\item Precios de alto a bajo.
-		\item Clase de vuelo.
-	\end{itemize}
 \end{itemize}
 
 \textbf{Información de la terminal 1 del aeropuerto AICM}
@@ -232,19 +218,19 @@ En base a las características que debe contener TASMC se han podido identificar
       		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RB02} &
 				Módulo para realizar búsquedas de Hoteles y posteriormente generar un listado de dicha búsqueda. &
-				Definición del sistema, RN11 \\
+				Definición del sistema, RN11 [Tabla \ref{tab:reglasNegocio}] \\
 			\hline 
 				\textbf{RB03} &
 				Módulo para realizar búsquedas de Vuelos y posteriormente generar un listado de dicha búsqueda. &
-				Definición del sistema, RN05 \\ 
+				Definición del sistema, RN05 [Tabla \ref{tab:reglasNegocio}] \\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RB04} &
 				Módulo para visualizar la información del AICM, como sitio web, teléfono, ubicación, lista de servicios y mapa. &
-				Definición del sistema, RN14 \\ 
+				Definición del sistema, RN14 [Tabla \ref{tab:reglasNegocio}]\\ 
 			\hline 
 				\textbf{RB05} &
 				Módulo para la gestión de objetos, donde el usuario podrá verificar en una lista los objetos requeridos para su viaje. &
-				Definición del sistema, RN10 \\ 
+				Definición del sistema, RN10 [Tabla \ref{tab:reglasNegocio}]\\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RB06} &
 				Módulo para asistir en la construcción del itinerario de viaje del usuario. &
@@ -252,15 +238,15 @@ En base a las características que debe contener TASMC se han podido identificar
 			\hline 
 				\textbf{RB07} &
 				Módulo que permita visualizar rutas que tengan como destino el AICM. &
-				Definición del sistema, RN09, RN12 \\ 
+				Definición del sistema, RN09, RN12 [Tabla \ref{tab:reglasNegocio}] \\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RB08} &
 				Módulo que permita visualizar en un mapa del AICM la ubicación del usuario en el momento que lo requiera. &
-				Definición del sistema, RN12 \\ 
+				Definición del sistema, RN12 [Tabla \ref{tab:reglasNegocio}] \\ 
 			\hline 
 				\textbf{RB09} &
 				Módulo para visualizar la información del vuelo, como lo es, el número de vuelo, el estado de vuelo, ciudad destino, hora de salida, terminal y sala. &
-				Definición del sistema, RN07 \\ 
+				Definición del sistema, RN07 [Tabla \ref{tab:reglasNegocio}] \\ 
 			\hline 
 		\end{tabular}
 	\end{center}
@@ -283,35 +269,35 @@ En la Tabla \ref{tab:reqFuncionales} se muestran los requerimientos funcionales 
 			\hline 
 				\textbf{RF01} &
 				El sistema debe ser capaz de configurar gustos y posibilidades económicas del viajero para generar un mejor resultado en la búsqueda de vuelos y hoteles. &
-				RB01 \\
+				RB01 [Tabla \ref{tab:reqBasicos}] \\
       		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RF02} &
 				El usuario debe poder visualizar sugerencias de hoteles disponibles,  según una búsqueda que haya realizado previamente. &
-				RB02 \\
+				RB02 [Tabla \ref{tab:reqBasicos}] \\
 			\hline 
 				\textbf{RF03} &
 				El usuario debe poder visualizar sugerencias de vuelos disponibles, según una búsqueda que haya realizado previamente. &
-				RB03 \\ 
+				RB03 [Tabla \ref{tab:reqBasicos}] \\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RF04} &
 				El sistema debe ser capaz de generar una lista de objetos que debe empacar el usuario, según el tipo de viaje que se seleccione. &
-				RB05 \\ 
+				RB05 [Tabla \ref{tab:reqBasicos}] \\ 
 			\hline 
 				\textbf{RF05} &
 				El sistema debe proporcionar una lista que permita al usuario generar un itinerario de viaje. &
-				RB06 \\ 
+				RB06 [Tabla \ref{tab:reqBasicos}] \\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RF06} &
 				El sistema mostrará una sugerencia de ruta para llegar al AICM desde la posición actual del usuario. &
-				RB07 \\ 
+				RB07 [Tabla \ref{tab:reqBasicos}] \\ 
 			\hline 
 				\textbf{RF07} &
 				El sistema debe ser capaz de ubicar al usuario dentro del AICM. &
-				RB08 \\ 
+				RB08 [Tabla \ref{tab:reqBasicos}] \\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RF08} &
 				El sistema deberá mostrar la información del número de vuelo, el estado de vuelo, ciudad destino, hora de salida, terminal y sala. &
-				RB09 \\ 
+				RB09 [Tabla \ref{tab:reqBasicos}] \\ 
 			\hline
 		\end{tabular}
 	\end{center}
@@ -333,7 +319,7 @@ En la Tabla \ref{tab:reqNoFuncionales} se muestran los requerimientos no funcion
 			\hline 
 				\textbf{RNF01} &
 				Las condiciones del entorno no deben de afectar la localización del usuario. Se debe de considerar un ambiente controlado. &
-				RB08 \\
+				RB08 [Tabla \ref{tab:reqBasicos}]\\
       		\hline \rowcolor[RGB]{240,248,255}
       			\textbf{RNF02} &
 				La aplicación debe funcionar en todos los dispositivos móviles que contengan el sistema operativo Android versión 4.4 (KitKat). &
@@ -341,7 +327,7 @@ En la Tabla \ref{tab:reqNoFuncionales} se muestran los requerimientos no funcion
 			\hline 
 				\textbf{RNF03} &
 				Se debe de presentar una interfaz gráfica para poder seleccionar las distintas funciones que puede utilizar el usuario en el sistema. &
-				RN12 \\ 
+				RN12 [Tabla \ref{tab:reglasNegocio}] \\ 
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RNF04} &
 				El sistema debe enviar una respuesta con una rapidez acorde al ancho de banda y la disponibilidad de la red. &
@@ -353,11 +339,11 @@ En la Tabla \ref{tab:reqNoFuncionales} se muestran los requerimientos no funcion
 			\hline \rowcolor[RGB]{240,248,255}
 				\textbf{RNF06} &
 				Se debe dar soporte continuo al sistema. &
-				RN12 \\ 
+				RN12 [Tabla \ref{tab:reglasNegocio}]\\ 
 			\hline 
 				\textbf{RNF07} &
 				La navegación del usuario dentro de la aplicación debe ser de fácil entendimiento y de manera intuitiva. &
-				RB12 \\ 
+				RB12 [Tabla \ref{tab:reqBasicos}]\\ 
 			\hline
 		\end{tabular}
 	\end{center}

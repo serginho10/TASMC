@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {5.1.1.1}Hardware}{30}{subsubsection.55}
 \contentsline {subsubsection}{\numberline {5.1.1.2}Software}{31}{subsubsection.59}
 \contentsline {paragraph}{\numberline {5.1.1.2.1}Sistema Operativo M\IeC {\'o}vil}{31}{paragraph.60}
-\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{33}{subparagraph.62}
+\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{32}{subparagraph.62}
 \contentsline {subparagraph}{\numberline {5.1.1.2.1.2}Versiones de Android}{33}{subparagraph.63}
 \contentsline {paragraph}{\numberline {5.1.1.2.2}Lenguaje de Programaci\IeC {\'o}n}{34}{paragraph.66}
 \contentsline {paragraph}{\numberline {5.1.1.2.3}Sistema Operativo de Escritorio}{35}{paragraph.69}
@@ -61,7 +61,7 @@
 \contentsline {section}{\numberline {6.3}Configuraci\IeC {\'o}n Base de Datos SQLite}{55}{section.104}
 \contentsline {section}{\numberline {6.4}Configuraci\IeC {\'o}n Google Maps API}{55}{section.105}
 \contentsline {section}{\numberline {6.5}Configuraci\IeC {\'o}n IndoorAtlas API}{55}{section.106}
-\contentsline {section}{\numberline {6.6}Configuraci\IeC {\'o}n IDE}{56}{section.107}
+\contentsline {section}{\numberline {6.6}Configuraci\IeC {\'o}n IDE}{55}{section.107}
 \contentsline {chapter}{\numberline {7}Dise\IeC {\~n}o TASMC}{57}{chapter.108}
 \contentsline {section}{\numberline {7.1}Actores}{57}{section.109}
 \contentsline {section}{\numberline {7.2}Casos de Uso del Administrador}{59}{section.113}

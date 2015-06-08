@@ -4,7 +4,7 @@
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=0.4\textwidth]{Figuras/general.jpg}
+		\includegraphics[width=0.8\textwidth]{Figuras/general.jpg}
 		\rule{30em}{0.5pt}
 	\caption[Diagrama de Casos de Uso General del Administrador]{Diagrama de Casos de Uso General del Administrador}
 	\label{fig:cuGeneralAdministrador}
@@ -76,15 +76,15 @@
 	\hline
 		{Precondición}&\multicolumn{3}{p{11.2cm}|}{El administrador se autentifica en el sistema.}\\
 	\hline
-		{Postcondición}&\multicolumn{3}{p{11.2cm}|}{Registrar objetos para equipaje.}\\
+		{Postcondición}&\multicolumn{3}{p{11.2cm}|}{Crear nuevos objetos, registrar objetos para equipaje, registrar nuevo equipaje y/o eliminar algún equipaje existente.}\\
 	\hline
-		{Autor}&{Vivanco Carmona Erick Rafael}&{\textbf{Fecha} 09/01/15}&{\textbf{Versión} 2.0}\\
+		{Autor}&{Barajas Uribe Sergio}&{\textbf{Fecha} 08/06/15}&{\textbf{Versión} 3.0}\\
 			\hline
-		{Evaluador}&{Barajas Uribe Sergio}&{\textbf{Fecha} 15/01/15}&{\textbf{Estatus} Aprobado}\\
+		{Evaluador}&{Barajas Uribe Sergio}&{\textbf{Fecha} 08/06/15}&{\textbf{Estatus} Aprobado}\\
 	\hline
-		{Propósito}&\multicolumn{3}{p{11.2cm}|}{Registrar objetos útiles para un equipaje de viaje.}\\
+		{Propósito}&\multicolumn{3}{p{11.2cm}|}{Gestionar los equipajes predefinidos en la aplicación móvil.}\\
 	\hline
-		{Resumen}&\multicolumn{3}{p{11.2cm}|}{El administrador registra y elimina objetos que puedan ser útiles para el usuario al momento de generar un equipaje para su viaje.}\\	
+		{Resumen}&\multicolumn{3}{p{11.2cm}|}{El administrador registra y/o crea objetos que puedan ser útiles para el usuario al momento de generar un equipaje para su viaje. Asimismo, crea y/o elimina listas de equipaje. }\\	
 	\hline
 	\caption[Especificación del Caso de Uso Gestionar Equipaje]{Especificación del Caso de Uso Gestionar Equipaje}
     	\label{tab:cuGestionarEquipaje}
@@ -93,10 +93,9 @@
 \begin{flushleft}
 	\textbf{Trayectoria Principal}\\
 	\begin{enumerate}
-		\item El administrador solicita registrar equipaje.
-		\item El administrador registra objetos. \hyperlink{TrayectoriaA_CU-A-02}{[Trayectoria A]}.
-		\item Los objetos quedan disponibles para futuras listas de equipaje que el usuario desee crear.
-		\item El administrador elimina objetos.
+		\item El administrador ingresa a la sección ``Gestionar Equipaje'' de la web app TASMC.
+		\item El sistema muestra las listas de equipaje disponibles. \hyperlink{TrayectoriaA_CU-A-02}{[Trayectoria A]} \hyperlink{TrayectoriaB_CU-A-02}{[Trayectoria B]} \hyperlink{TrayectoriaC_CU-A-02}{[Trayectoria C]}
+		\item El sistema mantiene guardadas las modificaciones hechas en la sección ``Gestionar Equipaje''.
 	\end{enumerate}
 \end{flushleft}
 ----Fin del caso de uso
@@ -104,10 +103,35 @@
 \begin{flushleft}
 	\hypertarget{TrayectoriaA_CU-A-02}{}
 	\textbf{Trayectoria Alternativa A}\\
-	\textbf{Condición:} El administrador ha registrado un objeto. \\
+	\textbf{Condición:} El administrador ha seleccionado [Nuevo Equipaje]. \\
 	\begin{enumerate}
-		\item El objeto ha sido creado y se notifica al administrador. 
-		\item Volver a 2.
+		\item El sistema muestra un cuadro de texto para ingresar el nombre del nuevo equipaje. 
+		\item El administrador ingresa el nombre del nuevo equipaje y oprime el botón [Aceptar].
+		\item El sistema guarda el nuevo equipaje.
+		\item Volver al paso 2 de la trayectoria principal.
+	\end{enumerate}
+\end{flushleft}
+----Fin de Trayectoria
+
+\begin{flushleft}
+	\hypertarget{TrayectoriaB_CU-A-02}{}
+	\textbf{Trayectoria Alternativa B}\\
+	\textbf{Condición:} El administrador oprime el botón [Editar]. \\
+	\begin{enumerate}
+		\item El sistema muestra la pantalla con los objetos guardados en la lista de equipaje y los disponibles para ingresar en la lista, así como la opción de crear un nuevo objeto. 
+		\item El sistema guarda los cambios.
+		\item Volver al paso 2 de la trayectoria principal.
+	\end{enumerate}
+\end{flushleft}
+----Fin de Trayectoria
+
+\begin{flushleft}
+	\hypertarget{TrayectoriaC_CU-A-02}{}
+	\textbf{Trayectoria Alternativa C}\\
+	\textbf{Condición:} El administrador oprime el botón [Eliminar]. \\
+	\begin{enumerate}
+		\item El sistema elimina la lista de equipaje seleccionada.
+		\item Volver al paso 2 de la trayectoria principal.
 	\end{enumerate}
 \end{flushleft}
 ----Fin de Trayectoria

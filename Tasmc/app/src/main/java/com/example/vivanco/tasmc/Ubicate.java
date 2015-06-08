@@ -93,8 +93,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         setSupportActionBar(toolbar);*/
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // 1080
         pantalla = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         ancho = pantalla.getWidth();

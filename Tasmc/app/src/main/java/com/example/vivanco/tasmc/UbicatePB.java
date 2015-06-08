@@ -79,7 +79,7 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
         setContentView(R.layout.activity_ubicate_pb);
         main = (ImageView) findViewById(R.id.main);
         main.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        //main.setScaleType(ImageView.ScaleType.MATRIX);
+        main.setScaleType(ImageView.ScaleType.FIT_XY);
         main.setImageResource(R.drawable.pb);
 
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
@@ -89,18 +89,18 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
         imHir.getLayoutParams().height = 15;
         imHir.getLayoutParams().width = 15;
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
         setSupportActionBar(toolbar);
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
         pantalla = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         ancho = pantalla.getWidth();
         alto = pantalla.getHeight();
-        factorx = (double) (alto / 7111.0);
-        factory = (double) (ancho / 1961.0);
+        factorx = (double) (alto / 4844.0);
+        factory = (double) (ancho / 1309.0);
 
         Button b = new Button(this);
         b.setText("Sergio Barajas");

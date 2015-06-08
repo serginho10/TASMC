@@ -10,7 +10,7 @@ Android es un sistema operativo y una plataforma software, basado en Linux, que 
 	\label{fig:capasAndroid}
 \end{figure}
 
-En la Figura \ref{fig:capasAndroid} se distinguen claramente cada una de las capas: la que forma parte del propio Kernel de Linux, donde Android puede acceder a diferentes controladores, las librerías creadas para el desarrollo de aplicaciones Android, la siguiente capa que organiza los diferentes administradores de recursos, y por último, la capa de las aplicaciones a las que tiene acceso.
+En la Figura \ref{fig:capasAndroid} se distinguen claramente cada una de las capas: la que forma parte del propio Kernel de Linux, donde Android puede acceder a diferentes controladores, las librerías creadas para el desarrollo de aplicaciones Android, la siguiente capa que organiza los diferentes administradores de recursos y, por último, la capa de las aplicaciones a las que tiene acceso.
 
 \begin{itemize}
 	\item \textbf{Arquitectura basada en componentes}
@@ -20,7 +20,10 @@ En la Figura \ref{fig:capasAndroid} se distinguen claramente cada una de las cap
 	\item \textbf{Filosofía de dispositivo siempre conectado a Internet}
 	\begin{itemize}
 		\item Servicios incorporados basados en Web.
-		\item Localización basada tanta en GPS como en redes, bases de datos con SQL, navegadora, multimedia.
+		\item Localización basada tanto en GPS como en redes. 
+		\item Bases de datos con SQL. 
+		\item Navegador. 
+		\item Multimedia.
 	\end{itemize}
 	\item \textbf{Aceptable nivel de seguridad}
 	\begin{itemize}
@@ -31,20 +34,20 @@ En la Figura \ref{fig:capasAndroid} se distinguen claramente cada una de las cap
 	\begin{itemize}
 		\item Gráficos en 3 dimensiones basados en OpenGL.
 		\item Gráficos vectoriales suavizados.
-		\item Animaciones inspiradas en Flash.
-		\item Incorpora codecs estándar más comunes de audio y vídeo, incluyendo H.264 (AVC), MP3, AAC, etc.
+		\item Animaciones inspiradas en flash.
+		\item Incorpora códecs estándar más comunes de audio y vídeo, incluyendo H.264 (AVC), MP3, AAC, etc.
 	\end{itemize}
 \end{itemize}
 
 \subsection{Características de Android}
 
 \begin{itemize}
-	\item \textbf{Acceso a Hardware, incluyendo Cámara, GPS y Sensores: }Android incluye API’s que permite simplificar el desarrollo sin importar el hardware sobre el que se está trabajando. Esto asegura que no necesitamos crear implementaciones específicas para distintos dispositivos, así que podemos crear aplicaciones que deben trabajar según lo esperado en cualquier dispositivo que tenga una versión compatible de Android.
+	\item \textbf{Acceso a Hardware, incluyendo Cámara, GPS y Sensores: }Android incluye API’s que permiten simplificar el desarrollo sin importar el hardware sobre el que se está trabajando. Esto asegura que no necesitamos crear implementaciones específicas para distintos dispositivos, así que podemos crear aplicaciones que deben trabajar según lo esperado en cualquier dispositivo que tenga una versión compatible de Android.
 	\item \textbf{Transferencia de Datos con Wi-Fi, BlueTooth y NFC: } Android ofrece soporte muy completo para transferir datos entre dispositivos, incluyendo Bluetooth, Wi-Fi y Android Beam. Estas tecnologías permiten compartir datos entre dispositivos, dependiendo del hardware disponible en el dispositivo utilizado.
 	\item \textbf{Mapas y Geolocalización: }El manejo de mapas embebido con el que cuenta Android permite crear aplicaciones que de manera programática pueden manipular los mapas de Google Maps. Además, la integración de un GPS y los servicios de localización de Google para determinar la ubicación actual del dispositivo, permite combinar posicionamiento con mapas.
 	\item \textbf{Servicios en Segundo Plano (Background Services): }Android soporta aplicaciones y servicios diseñados para ser ejecutados en segundo plano, mientras nuestra aplicación no está activa, debido a que solamente una aplicación puede estar visible a la vez. 
 	\item \textbf{Base de Datos SQLite: }El almacenamiento y la recuperación de información de manera rápida y eficiente es básica para dispositivos con capacidad limitada. Android utiliza SQLite para cumplir con este objetivo. Las aplicaciones móviles pueden aprovechar esta base de datos relacional para almacenar y recuperar información de manera segura y eficiente.
 	\item \textbf{Compartición de Datos y Comunicación entre Aplicaciones: }Android incluye técnicas para compartir información entre las distintas aplicaciones, tales como: Intents y Content Providers.
-	\item \textbf{ Soporte para gráficos 2D y 3D: }Android provee librerías gráficas para dibujos 2D y 3D con OpenGL. Además, Android provee soporte para imágenes, video, audio, incluyendo video en formato mpeg4.
+	\item \textbf{ Soporte para gráficos 2D y 3D: }Android provee librerías gráficas para dibujos 2D y 3D con OpenGL. Además, Android provee soporte para imágenes, video, audio e incluyendo video en formato mpeg4.
 	\item \textbf{Optimización de Memoria y Administración de Procesos: }Android utiliza su propia maquina virtual para la administración de la memoria. Android asegura que una aplicación responda en un tiempo determinado, de lo contrario la detiene y la puede eliminar en caso de ser necesario, con el objetivo de liberar recursos. De esta manera Android controla el ciclo de vida de las aplicaciones en un ambiente enfocado en hacer más eficiente el uso de memoria de los dispositivos. \cite{presentacionAndroid}
 \end{itemize}

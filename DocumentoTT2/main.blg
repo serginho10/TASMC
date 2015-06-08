@@ -1,7 +1,9 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: portada/caratula.aux
 A level-1 auxiliary file: portada/portada.aux
+A level-1 auxiliary file: portada/advertencia.aux
 A level-1 auxiliary file: Capitulos/1Introduccion/1Introduccion.aux
 A level-1 auxiliary file: Capitulos/2EstadoDelArte/2EstadoDelArte.aux
 A level-1 auxiliary file: Capitulos/3MarcoTeorico/3MarcoTeorico.aux
@@ -9,6 +11,9 @@ A level-1 auxiliary file: Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux
 A level-1 auxiliary file: Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux
 A level-1 auxiliary file: Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.aux
 A level-1 auxiliary file: Capitulos/7DisenoTASMC/7DisenoTASMC.aux
+A level-1 auxiliary file: Capitulos/8Desarrollo/8Desarrollo.aux
+A level-1 auxiliary file: Capitulos/9Pruebas/9Pruebas.aux
+A level-1 auxiliary file: Capitulos/10TrabajoFuturo/10TrabajoFuturo.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
 Warning--entry type for "salarios" isn't style-file defined
@@ -47,6 +52,8 @@ Warning--entry type for "endutih" isn't style-file defined
 --line 216 of file Bibliography.bib
 Warning--entry type for "appsViajar" isn't style-file defined
 --line 226 of file Bibliography.bib
+Warning--entry type for "celularDespertador" isn't style-file defined
+--line 240 of file Bibliography.bib
 Warning--empty year in endutih
 Warning--empty year in meridian
 Warning--empty year in kayak
@@ -59,45 +66,45 @@ Warning--empty year in Android
 Warning--empty year in presentacionAndroid
 Warning--empty year in desDispositivos
 Warning--empty year in desDispositivos
-You've used 23 entries,
+You've used 24 entries,
             2481 wiz_defined-function locations,
-            673 strings with 8069 characters,
-and the built_in function-call counts, 5549 in all, are:
-= -- 482
+            683 strings with 8413 characters,
+and the built_in function-call counts, 5766 in all, are:
+= -- 502
 > -- 77
 < -- 11
-+ -- 68
++ -- 70
 - -- 22
-* -- 317
-:= -- 712
-add.period$ -- 56
-call.type$ -- 23
-change.case$ -- 45
-chr.to.int$ -- 23
-cite$ -- 47
-duplicate$ -- 339
-empty$ -- 712
+* -- 331
+:= -- 733
+add.period$ -- 58
+call.type$ -- 24
+change.case$ -- 47
+chr.to.int$ -- 24
+cite$ -- 49
+duplicate$ -- 353
+empty$ -- 744
 format.name$ -- 33
-if$ -- 1263
+if$ -- 1316
 int.to.chr$ -- 1
-int.to.str$ -- 24
+int.to.str$ -- 25
 missing$ -- 5
-newline$ -- 110
+newline$ -- 114
 num.names$ -- 33
-pop$ -- 277
+pop$ -- 290
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 24
 quote$ -- 0
-skip$ -- 255
+skip$ -- 266
 stack$ -- 0
-substring$ -- 88
-swap$ -- 57
+substring$ -- 91
+swap$ -- 60
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
+type$ -- 165
 warning$ -- 12
 while$ -- 24
 width$ -- 0
-write$ -- 251
-(There were 30 warnings)
+write$ -- 261
+(There were 31 warnings)

@@ -1,9 +1,15 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[cel(2015)]{celularDespertador}
+Estudio de consumo de medios y dispositivos entre internautas mexicanos | iab
+  mexico, Marzo 2015.
+\newblock URL
+  \url{http://www.iabmexico.com/consumo-medios-y-dispositivos-mexicanos}.
 
 \bibitem[Campos(2013)]{appsVIajar}
 Juan Manuel~Garc{\'\i}a Campos.

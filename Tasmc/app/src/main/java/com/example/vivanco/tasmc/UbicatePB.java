@@ -267,8 +267,8 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
             @Override
             public void run() {
                 ImageView imgPoint = (ImageView) findViewById(R.id.aimHir);
-                imgPoint.setX((int) Math.round(imgPt.getJ() * factorx));
-                imgPoint.setY((int) Math.round(imgPt.getI() * factory));
+                imgPoint.setX((int) ancho - (int) Math.round(imgPt.getJ() * factory));
+                imgPoint.setY((int) Math.round(imgPt.getI() * factorx));
             }
         });
     }

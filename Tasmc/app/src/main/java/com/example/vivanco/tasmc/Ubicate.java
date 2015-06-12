@@ -85,9 +85,11 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         imHir.setScaleType(ImageView.ScaleType.FIT_XY);
-        imHir.setImageResource(R.drawable.agregar);
-        imHir.getLayoutParams().height = 15;
-        imHir.getLayoutParams().width = 15;
+        imHir.setImageResource(R.drawable.punto);
+        imHir.getLayoutParams().height = 20;
+        imHir.getLayoutParams().width = 20;
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
         setSupportActionBar(toolbar);*/
@@ -305,7 +307,7 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
 
         log("onCalibrationStatus: event: " + calibrationState.getCalibrationEvent()
                 + ", percentage: " + calibrationState.getPercentage());
-        Toast.makeText(getApplicationContext(), calibrationState.getPercentage()+"", Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(), calibrationState.getPercentage()+"", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -326,8 +328,8 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     @Override
     public void onCalibrationReady() {
         log("onCalibrationReady");
-        Toast.makeText(getApplicationContext(),"Calibración Lista",Toast.LENGTH_SHORT);
-        Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"Calibración Lista",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT).show();
         startPositioning();
     }
 

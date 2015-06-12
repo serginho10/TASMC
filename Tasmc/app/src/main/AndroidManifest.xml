@@ -197,7 +197,8 @@
         </activity>
         <activity
             android:name=".UbicatePB"
-            android:label="@string/title_activity_ubicate_pb" >
+            android:label="@string/title_activity_ubicate_pb"
+            android:screenOrientation="nosensor" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

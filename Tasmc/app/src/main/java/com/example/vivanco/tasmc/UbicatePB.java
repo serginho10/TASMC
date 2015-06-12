@@ -82,12 +82,14 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
         main.setScaleType(ImageView.ScaleType.FIT_XY);
         main.setImageResource(R.drawable.pb);
 
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         ImageView imHir = (ImageView) findViewById(R.id.aimHir);
         imHir.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         imHir.setScaleType(ImageView.ScaleType.FIT_XY);
-        imHir.setImageResource(R.drawable.agregar);
-        imHir.getLayoutParams().height = 15;
-        imHir.getLayoutParams().width = 15;
+        imHir.setImageResource(R.drawable.punto);
+        imHir.getLayoutParams().height = 20;
+        imHir.getLayoutParams().width = 20;
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_ubk);
         setSupportActionBar(toolbar);
@@ -322,8 +324,8 @@ public class UbicatePB extends ActionBarActivity implements IndoorAtlasListener 
     @Override
     public void onCalibrationReady() {
         log("onCalibrationReady");
-        Toast.makeText(getApplicationContext(),"Calibracin Lista",Toast.LENGTH_SHORT);
-        Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"Calibracin Lista",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT).show();
         startPositioning();
     }
 

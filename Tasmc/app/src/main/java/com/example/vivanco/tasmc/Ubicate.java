@@ -46,6 +46,7 @@ import com.indooratlas.android.IndoorAtlasException;
 import com.indooratlas.android.IndoorAtlasFactory;
 import com.indooratlas.android.IndoorAtlasListener;
 import com.indooratlas.android.ServiceState;
+import com.lylc.widget.circularprogressbar.CircularProgressBar;
 
 import java.util.ArrayList;
 
@@ -59,6 +60,7 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     double alto;
     double factorx;
     double factory;
+    CircularProgressBar c1;
 
     private static final String TAG = "MainActivity";
 
@@ -112,11 +114,15 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT);
         lp.setMargins((int)(ancho/2),(int)(alto/2),0,0);
-        zv.addView(b,lp);
-        ViewGroup.LayoutParams params = b.getLayoutParams();
+        //zv.addView(b,lp);
+        /*ViewGroup.LayoutParams params = b.getLayoutParams();
         params.height = 10;
         params.width = 10;
         b.setLayoutParams(params);
+
+        params.height = 200;
+        params.width = 200;
+        b.setLayoutParams(params);*/
 
         initIndoorAtlas();
     }
@@ -188,6 +194,13 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
                     mVenueId,
                     mFloorId,
                     mFloorPlanId));
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    c1 = (CircularProgressBar) findViewById(R.id.circularprogressbar2);
+                    c1.setVisibility(View.INVISIBLE);
+                }
+            });
             try {
                 mIndoorAtlas.startPositioning(mVenueId, mFloorId, mFloorPlanId);
                 mIsPositioning = true;
@@ -303,12 +316,21 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     }
 
     @Override
-    public void onCalibrationStatus(CalibrationState calibrationState) {
+    public void onCalibrationStatus(final CalibrationState calibrationState) {
 
         log("onCalibrationStatus: event: " + calibrationState.getCalibrationEvent()
                 + ", percentage: " + calibrationState.getPercentage());
-        Toast.makeText(getApplicationContext(), calibrationState.getPercentage()+"", Toast.LENGTH_SHORT).show();
-
+        //Toast.makeText(getApplicationContext(), calibrationState.getPercentage()+"", Toast.LENGTH_SHORT).show();
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                c1 = (CircularProgressBar) findViewById(R.id.circularprogressbar2);
+                c1.setVisibility(View.VISIBLE);
+                c1.setTitle(String.format("%.2f", calibrationState.getPercentage() * 100) + " %");
+                c1.setSubTitle("CALIBRANDO");
+                c1.setProgress((int) calibrationState.getPercentage()*100);
+            }
+        });
     }
 
     @Override
@@ -329,6 +351,15 @@ public class Ubicate extends ActionBarActivity implements IndoorAtlasListener {
     public void onCalibrationReady() {
         log("onCalibrationReady");
         Toast.makeText(getApplicationContext(),"Calibración Lista",Toast.LENGTH_SHORT).show();
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                c1 = (CircularProgressBar) findViewById(R.id.circularprogressbar2);
+                c1.setTitle("100 %");
+            }
+        });
+
         Toast.makeText(getApplicationContext(),"Iniciando Posicionamiento",Toast.LENGTH_SHORT).show();
         startPositioning();
     }

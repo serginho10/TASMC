@@ -1,7 +1,5 @@
 package com.example.vivanco.tasmc;
 
-import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -15,7 +13,7 @@ import android.widget.Spinner;
 import org.json.JSONException;
 
 
-public class Hoteles extends ActionBarActivity implements View.OnClickListener {
+public class Hoteles extends ActionBarActivity {
 
     Spinner huespedes;
     Spinner categorias;
@@ -63,7 +61,6 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
             categorias.setSelection(3);
         else if (catUsuario.compareTo("5 estrellas") == 0)
             categorias.setSelection(4);
-
     }
 
     @Override
@@ -83,11 +80,6 @@ public class Hoteles extends ActionBarActivity implements View.OnClickListener {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     public void buscar(View view) {

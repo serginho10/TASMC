@@ -23,6 +23,7 @@ public class JSONParser {
     JSONArray objetosArray;
     ArrayList<Hotel> hoteles;
     Thread thread;
+    ArrayList<Vuelo> vuelos;
 
     public JSONParser(Activity a, Context context){
         activity = a;

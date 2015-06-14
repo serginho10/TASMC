@@ -101,7 +101,7 @@ public class Vuelos extends ActionBarActivity implements View.OnClickListener{
             origen.setError("Debes ingresar tu ciudad de origen.");
         }else if(destino.getText().length() == 0){
             destino.setError("Debes ingresar tu ciudad de destino.");
-        }else if(fecha.toString().length() == 0){
+        }else if(fecha.getText().length() == 0){
             fecha.setError("Debes ingresar la fecha de tu vuelo.");
         }else{
             JSONParser json = new JSONParser(this,getApplicationContext());

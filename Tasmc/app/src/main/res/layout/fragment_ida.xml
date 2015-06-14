@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/app_bar_vuelo"
         android:layout_marginTop="31dp"
-        android:src="@drawable/ubicacion" />
+        android:src="@drawable/ciudadorigen" />
 
     <TextView
         android:id="@+id/textView7"
@@ -45,7 +45,7 @@
         android:layout_below="@+id/imageView5"
         android:layout_marginTop="42dp"
         android:layout_toStartOf="@+id/etCiudadOrigen"
-        android:src="@drawable/ubicacion" />
+        android:src="@drawable/ciudaddestino" />
 
     <TextView
         android:id="@+id/textView8"
@@ -75,14 +75,14 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/etCiudadDestino"
         android:layout_marginTop="37dp"
-        android:src="@drawable/calendar" />
+        android:src="@drawable/calendario" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="35dp"
-        android:src="@drawable/money"
+        android:src="@drawable/dinero"
         android:layout_below="@+id/imageView7"
         android:layout_alignParentStart="true" />
 
@@ -106,7 +106,7 @@
         android:layout_alignTop="@+id/imageView9" />
 
     <EditText
-        android:id="@+id/fechaida"
+        android:id="@+id/etFecha"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView7"
@@ -114,6 +114,7 @@
         android:ems="10"
         android:hint="@string/hint_fecha_ida"
         android:inputType="date"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:layout_alignEnd="@+id/etCiudadDestino" />
 
 </RelativeLayout>

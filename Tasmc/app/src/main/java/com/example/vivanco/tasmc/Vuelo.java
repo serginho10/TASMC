@@ -1,59 +1,84 @@
 package com.example.vivanco.tasmc;
 
-/**
- * Created by VIVANCO on 17/03/2015.
- */
 public class Vuelo {
-    private int id;
-    private String categoria;
+    private long idVuelo;
+    private String numero;
+    private String salida;
+    private String llegada;
+    private String estado;
+    private String sala;
+    private String terminal;
     private String aerolinea;
-    private String vuelo;
-    private String fechaSalida;
-    private String fechaLlegada;
     private String origen;
     private String destino;
-    private String estado;
-    private String horaSalida;
-    private String horaLlegada;
-    private String terminal;
-    private String puerta;
-    private String tiempo;
-    private String escalas;
-    private String precio;
 
-    public Vuelo(int id, String categoria, String aerolinea, String vuelo, String fechaSalida, String fechaLlegada, String origen, String destino, String estado, String horaSalida, String horaLlegada, String terminal, String puerta, String tiempo, String escalas, String precio) {
-        this.id = id;
-        this.categoria = categoria;
+    public Vuelo(long idVuelo, String numero, String salida, String llegada, String estado, String sala, String terminal, String aerolinea, String origen, String destino) {
+        this.idVuelo = idVuelo;
+        this.numero = numero;
+        this.salida = salida;
+        this.llegada = llegada;
+        this.estado = estado;
+        this.sala = sala;
+        this.terminal = terminal;
         this.aerolinea = aerolinea;
-        this.vuelo = vuelo;
-        this.fechaSalida = fechaSalida;
-        this.fechaLlegada = fechaLlegada;
         this.origen = origen;
         this.destino = destino;
+    }
+
+    public long getIdVuelo() {
+        return idVuelo;
+    }
+
+    public void setIdVuelo(long idVuelo) {
+        this.idVuelo = idVuelo;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getSalida() {
+        return salida;
+    }
+
+    public void setSalida(String salida) {
+        this.salida = salida;
+    }
+
+    public String getLlegada() {
+        return llegada;
+    }
+
+    public void setLlegada(String llegada) {
+        this.llegada = llegada;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
         this.estado = estado;
-        this.horaSalida = horaSalida;
-        this.horaLlegada = horaLlegada;
+    }
+
+    public String getSala() {
+        return sala;
+    }
+
+    public void setSala(String sala) {
+        this.sala = sala;
+    }
+
+    public String getTerminal() {
+        return terminal;
+    }
+
+    public void setTerminal(String terminal) {
         this.terminal = terminal;
-        this.puerta = puerta;
-        this.tiempo = tiempo;
-        this.escalas = escalas;
-        this.precio = precio;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
     }
 
     public String getAerolinea() {
@@ -62,30 +87,6 @@ public class Vuelo {
 
     public void setAerolinea(String aerolinea) {
         this.aerolinea = aerolinea;
-    }
-
-    public String getVuelo() {
-        return vuelo;
-    }
-
-    public void setVuelo(String vuelo) {
-        this.vuelo = vuelo;
-    }
-
-    public String getFechaSalida() {
-        return fechaSalida;
-    }
-
-    public void setFechaSalida(String fechaSalida) {
-        this.fechaSalida = fechaSalida;
-    }
-
-    public String getFechaLlegada() {
-        return fechaLlegada;
-    }
-
-    public void setFechaLlegada(String fechaLlegada) {
-        this.fechaLlegada = fechaLlegada;
     }
 
     public String getOrigen() {
@@ -104,89 +105,19 @@ public class Vuelo {
         this.destino = destino;
     }
 
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getHoraSalida() {
-        return horaSalida;
-    }
-
-    public void setHoraSalida(String horaSalida) {
-        this.horaSalida = horaSalida;
-    }
-
-    public String getHoraLlegada() {
-        return horaLlegada;
-    }
-
-    public void setHoraLlegada(String horaLlegada) {
-        this.horaLlegada = horaLlegada;
-    }
-
-    public String getTerminal() {
-        return terminal;
-    }
-
-    public void setTerminal(String terminal) {
-        this.terminal = terminal;
-    }
-
-    public String getPuerta() {
-        return puerta;
-    }
-
-    public void setPuerta(String puerta) {
-        this.puerta = puerta;
-    }
-
-    public String getTiempo() {
-        return tiempo;
-    }
-
-    public void setTiempo(String tiempo) {
-        this.tiempo = tiempo;
-    }
-
-    public String getEscalas() {
-        return escalas;
-    }
-
-    public void setEscalas(String escalas) {
-        this.escalas = escalas;
-    }
-
-    public String getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(String precio) {
-        this.precio = precio;
-    }
-
     @Override
     public String toString() {
         return "Vuelo{" +
-                "id=" + id +
-                ", categoria='" + categoria + '\'' +
+                "idVuelo=" + idVuelo +
+                ", numero='" + numero + '\'' +
+                ", salida='" + salida + '\'' +
+                ", llegada='" + llegada + '\'' +
+                ", estado='" + estado + '\'' +
+                ", sala='" + sala + '\'' +
+                ", terminal='" + terminal + '\'' +
                 ", aerolinea='" + aerolinea + '\'' +
-                ", vuelo='" + vuelo + '\'' +
-                ", fechaSalida='" + fechaSalida + '\'' +
-                ", fechaLlegada='" + fechaLlegada + '\'' +
                 ", origen='" + origen + '\'' +
                 ", destino='" + destino + '\'' +
-                ", estado='" + estado + '\'' +
-                ", horaSalida='" + horaSalida + '\'' +
-                ", horaLlegada='" + horaLlegada + '\'' +
-                ", terminal='" + terminal + '\'' +
-                ", puerta='" + puerta + '\'' +
-                ", tiempo='" + tiempo + '\'' +
-                ", escalas='" + escalas + '\'' +
-                ", precio='" + precio + '\'' +
                 '}';
     }
 }

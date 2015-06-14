@@ -106,7 +106,9 @@ public class Vuelos extends ActionBarActivity implements View.OnClickListener{
         }else{
             JSONParser json = new JSONParser(this,getApplicationContext());
             try{
-                json.readAndParseJSON("V","",new Object[]{});
+                json.readAndParseJSON("V","",new Object[]{origen.getText().toString().toUpperCase(),
+                        destino.getText().toString().toUpperCase(),
+                        fecha.getText().toString(), clase.getSelectedItem().toString().toUpperCase()});
             }catch (JSONException e){
                 e.printStackTrace();
             }

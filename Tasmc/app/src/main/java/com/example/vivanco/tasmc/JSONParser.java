@@ -73,6 +73,25 @@ public class JSONParser {
                     parseJSON("Hotel");
                 }
                 break;
+            case "V":
+                String u = "http://traso.besaba.com/service.php?cadena=Vuelo&ciudadOrigen="+objetos[0].toString()+
+                        "&ciudadDestino="+objetos[1].toString()+"&fecha="+objetos[2].toString()+"&clase="+objetos[3].toString();
+                System.out.println(u);
+                jObject = JSONManager.getJSONfromURL(u);
+                if(jObject != null){
+                    objetosArray = jObject.getJSONArray("Vuelo");
+                    parseJSON("Vuelo");
+                }
+                break;
+            case "I":
+                String uerrele = "http://traso.besaba.com/service.php?cadena=info";
+                System.out.println(uerrele);
+                jObject = JSONManager.getJSONfromURL(uerrele);
+                if(jObject != null){
+                    objetosArray = jObject.getJSONArray("Vuelo");
+                    parseJSON("info");
+                }
+                break;
         }
         activity.runOnUiThread(returnRes);
     }
@@ -119,6 +138,31 @@ public class JSONParser {
                     }
                 }
                 hoteles.get(i).setHabitaciones(habHotel);
+            }
+        }else if(cadena.compareTo("Vuelo") == 0){
+            vuelos = new ArrayList<Vuelo>();
+            for(int i = 0; i > objetosArray.length(); i++){
+                vuelos.add(new Vuelo(objetosArray.getJSONObject(i).getLong("idVuelo"),
+                        objetosArray.getJSONObject(i).getString("numero"),
+                        objetosArray.getJSONObject(i).getString("salida"),
+                        objetosArray.getJSONObject(i).getString("llegada"),null,null,null,
+                        objetosArray.getJSONObject(i).getString("aerolinea"),
+                        objetosArray.getJSONObject(i).getString("origen"),
+                        objetosArray.getJSONObject(i).getString("destino")));
+            }
+        }else if(cadena.compareTo("info") == 0){
+            vuelos = new ArrayList<Vuelo>();
+            for(int i = 0; i > objetosArray.length(); i++){
+                vuelos.add(new Vuelo(objetosArray.getJSONObject(i).getLong("idVuelo"),
+                        objetosArray.getJSONObject(i).getString("numero"),
+                        objetosArray.getJSONObject(i).getString("salida"),
+                        objetosArray.getJSONObject(i).getString("llegada"),
+                        objetosArray.getJSONObject(i).getString("estado"),
+                        objetosArray.getJSONObject(i).getString("sala"),
+                        objetosArray.getJSONObject(i).getString("terminal"),
+                        objetosArray.getJSONObject(i).getString("aerolinea"),
+                        objetosArray.getJSONObject(i).getString("origen"),
+                        objetosArray.getJSONObject(i).getString("destino")));
             }
         }
     }

@@ -27,23 +27,19 @@ import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class ListEquipaje extends ActionBarActivity implements View.OnClickListener{
-
+public class ListHoteles extends ActionBarActivity implements View.OnClickListener{
     ListView list;
-    String[] titulos;
-    Map<String,String> descripcion;
-    int[] image = {R.drawable.business};
-    private static final String TAG_NUEVO="nuevo equipaje";
-    ManejadorBD bd;
+    int[] image = {R.drawable.hotel1,R.drawable.hotel2,R.drawable.hotel3,R.drawable.hotel4,R.drawable.hotel5};
+    Map<String,Integer> estrellas = new HashMap<String,Integer>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_equipaje);
-        bd = new ManejadorBD(getApplicationContext());
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_equi);
         setSupportActionBar(toolbar);
 
@@ -51,8 +47,26 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        titulos = bd.obtenerNombresEquipajes();
-        descripcion = bd.obtenerObjetosDEquipaje();
+        Bundle bundle = getIntent().getExtras();
+        String lugar = bundle.getString("lugar");
+        String huespedes = bundle.getString("huespedes");
+        String categorias = bundle.getString("categorias");
+
+        final JSONParser json = new JSONParser(this,getApplicationContext());
+        try {
+            json.readAndParseJSON("H",lugar, new Object[]{huespedes,categorias});
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        while(json.thread.isAlive()){}
+        final String[] titulos = new String[json.hoteles.size()];
+        final Map<String,String> descripcion = new HashMap<String,String>();
+        for(int i = 0; i<json.hoteles.size(); i++){
+            titulos[i] = json.hoteles.get(i).getNombre();
+            descripcion.put(json.hoteles.get(i).getNombre(),"Teléfono: "+json.hoteles.get(i).getTelefono());
+            estrellas.put(json.hoteles.get(i).getNombre(),json.hoteles.get(i).getCategoria());
+            System.out.println(json.hoteles.get(i).toString());
+        }
 
         list = (ListView) findViewById(R.id.listEquipaje);
         AdaptadorEquipaje adaptadorEquipaje = new AdaptadorEquipaje(this, titulos, image, descripcion);
@@ -61,34 +75,31 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getApplicationContext(),EquipajeSeleccionado.class);
-                i.putExtra("equipaje",list.getItemAtPosition(position).toString());
+                Intent i = new Intent(getApplicationContext(), HotelSeleccionado.class);
+                i.putExtra("hotel", list.getItemAtPosition(position).toString());
+                for (int j = 0; j < json.hoteles.size(); j++) {
+                    if(json.hoteles.get(j).getNombre().compareTo(list.getItemAtPosition(position).toString()) == 0){
+                        i.putExtra("categoria", json.hoteles.get(j).getCategoria());
+                        i.putExtra("web", json.hoteles.get(j).getWeb());
+                        i.putExtra("telefono", json.hoteles.get(j).getTelefono());
+                        i.putExtra("nohabitaciones", json.hoteles.get(j).getNoHabitaciones());
+                        i.putExtra("ciudad", json.hoteles.get(j).getCiudad());
+                        i.putExtra("habitaciones", json.hoteles.get(j).getHabitaciones().size());
+                        ArrayList<Habitacion> habitaciones = json.hoteles.get(j).getHabitaciones();
+                        for(int k = 0; k < habitaciones.size(); k++){
+                            i.putExtra("tipohabitacion"+(k+1), habitaciones.get(k).getTipo());
+                            i.putExtra("personashabitacion"+(k+1), habitaciones.get(k).getPersonas());
+                            i.putExtra("preciohabitacion"+(k+1), habitaciones.get(k).getPrecio());
+                        }
+                        j = json.hoteles.size();
+                    }
+                }
                 startActivity(i);
             }
         });
-
-        buildFAB();
     }
 
-    private void buildFAB() {
-        ImageView imageView = new ImageView(this);
-        imageView.setImageResource(R.drawable.ic_action_new);
-
-        //Creacion del boton flotante
-        FloatingActionButton actionButton = new FloatingActionButton.Builder(this)
-                .setContentView(imageView)
-                .setBackgroundDrawable(R.drawable.selector_button_red)
-                .build();
-
-
-
-        FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this)
-                .attachTo(actionButton)
-                .build();
-        actionButton.setOnClickListener(this);
-    }
-
-    @Override
+        @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, NuevoEquipaje.class);
         startActivity(intent);
@@ -124,12 +135,16 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
                 if(key.compareTo(titleArray[position]) == 0)
                     objetos = desc.get(key)+" ";
             }
-            logo.setImageResource(imagenes[0]);
+            logo.setImageResource(imagenes[obtenerImagen(titleArray[position])-1]);
             titulo.setText(titleArray[position]);
             objs.setText(objetos);
 
             return row;
         }
+    }
+
+    public int obtenerImagen(String titulo){
+        return estrellas.get(titulo);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.vivanco.tasmc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -86,17 +87,11 @@ public class Hoteles extends ActionBarActivity {
         if(lugar.getText().length() == 0){
             lugar.setError("Debes ingresar la ciudad que visitarás");
         }else{
-            JSONParser json = new JSONParser(this,getApplicationContext());
-            try {
-                json.readAndParseJSON("H",lugar.getText().toString().toUpperCase(), new Object[]{huespedes.getSelectedItem().toString(),
-                                                                                                categorias.getSelectedItem().toString()});
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            while(json.thread.isAlive()){}
-            for(int i = 0; i<json.hoteles.size(); i++){
-                System.out.println(json.hoteles.get(i).toString());
-            }
+            Intent intent = new Intent(this, ListHoteles.class);
+            intent.putExtra("lugar",lugar.getText().toString().toUpperCase());
+            intent.putExtra("huespedes",huespedes.getSelectedItem().toString());
+            intent.putExtra("categorias",categorias.getSelectedItem().toString());
+            startActivity(intent);
         }
     }
 }

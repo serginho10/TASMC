@@ -76,6 +76,20 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
+            android:name=".ListHoteles"
+            android:label="@string/title_activity_list_hoteles" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Hoteles" />
+        </activity>
+        <activity
+            android:name=".HotelSeleccionado"
+            android:label="@string/title_activity_list_hoteles" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListHoteles" />
+        </activity>
+        <activity
             android:name=".EquipajeSeleccionado"
             android:label="@string/title_activity_list_equipaje" >
             <meta-data

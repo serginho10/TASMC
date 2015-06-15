@@ -38,7 +38,7 @@ public class NuevoItinerario extends ActionBarActivity {
         if (id != 0)
             extras = true;
 
-        final EditText destino = (EditText) findViewById(R.id.etDestino);
+        final EditText destino = (EditText) findViewById(R.id.tvDestino);
         final EditText nuevaActividad = (EditText) findViewById(R.id.etActividad);
         Button btnAgregar = (Button) findViewById(R.id.btnAgregaActividad);
         final Button btnGuardar = (Button) findViewById(R.id.btnGuardaItinerario);

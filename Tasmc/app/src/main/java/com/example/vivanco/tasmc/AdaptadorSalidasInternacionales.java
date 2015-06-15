@@ -62,13 +62,13 @@ public class AdaptadorSalidasInternacionales extends RecyclerView.Adapter<Adapta
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            destino = (TextView) itemView.findViewById(R.id.etDestino);
-            aerolinea = (TextView) itemView.findViewById(R.id.aerolinea);
-            vuelo = (TextView) itemView.findViewById(R.id.vuelo);
-            hora = (TextView) itemView.findViewById(R.id.hora);
-            estado = (TextView) itemView.findViewById(R.id.estado);
-            sala = (TextView) itemView.findViewById(R.id.sala);
-            terminal = (TextView) itemView.findViewById(R.id.terminal);
+            destino = (TextView) itemView.findViewById(R.id.tvDestino);
+            aerolinea = (TextView) itemView.findViewById(R.id.tvAerolinea);
+            vuelo = (TextView) itemView.findViewById(R.id.tvNumero);
+            hora = (TextView) itemView.findViewById(R.id.tvSalida);
+            estado = (TextView) itemView.findViewById(R.id.tvEstado);
+            sala = (TextView) itemView.findViewById(R.id.tvSala);
+            terminal = (TextView) itemView.findViewById(R.id.tvTerminal);
 
             //icon.setOnClickListener(this); solo con el icono reacciona al click
             itemView.setOnClickListener(this);

@@ -8,14 +8,23 @@
         android:id="@+id/app_bar_infv"
         layout="@layout/app_bar_infv" />
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_infv"
+        android:text="@string/origen"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/app_bar_infv"
         android:text="@string/destino"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView14"
@@ -23,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView12"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:text="@string/aerolinea"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -33,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView14"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:text="@string/vuelo"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -43,19 +52,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView15"
-        android:layout_marginTop="35dp"
-        android:text="@string/hora"
+        android:layout_marginTop="15dp"
+        android:text="@string/salida"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView16"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="70dp"
         android:text="@string/estado"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView18"
@@ -63,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView17"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:text="@string/sala"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -73,66 +82,75 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView18"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:text="@string/terminal"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/etDestino"
+        android:id="@+id/tvOrigen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView12"
-        android:layout_alignStart="@+id/aerolinea"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/tvDestino"
         android:text="Cancun"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/aerolinea"
+        android:id="@+id/tvDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/tvAerolinea"
+        android:text="Cancun"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvAerolinea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView15"
-        android:layout_alignStart="@+id/vuelo"
+        android:layout_alignStart="@+id/tvNumero"
         android:text="Interjet"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/vuelo"
+        android:id="@+id/tvNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView16"
-        android:layout_alignStart="@+id/hora"
+        android:layout_alignStart="@+id/tvSalida"
         android:text="AIJ1807"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/hora"
+        android:id="@+id/tvSalida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView17"
-        android:layout_alignStart="@+id/estado"
+        android:layout_alignStart="@+id/tvEstado"
         android:text="13:40"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/estado"
+        android:id="@+id/tvEstado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView18"
-        android:layout_alignStart="@+id/sala"
+        android:layout_alignStart="@+id/tvSala"
         android:text="Demorado"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/sala"
+        android:id="@+id/tvSala"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView18"
-        android:layout_alignStart="@+id/terminal"
+        android:layout_alignStart="@+id/tvTerminal"
         android:text="B"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/terminal"
+        android:id="@+id/tvTerminal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView19"
@@ -140,5 +158,23 @@
         android:layout_toEndOf="@+id/textView19"
         android:text="T1"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/llegada"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvLlegada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13:40"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignStart="@+id/tvSalida" />
 
 </RelativeLayout>

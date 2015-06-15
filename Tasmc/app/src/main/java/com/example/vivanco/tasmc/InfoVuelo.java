@@ -88,7 +88,7 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
         mTabs.setDistributeEvenly(true);
         mTabs.setViewPager(mPager);
-        vuelo = (EditText) findViewById(R.id.vuelo);
+        vuelo = (EditText) findViewById(R.id.tvNumero);
         buscar = (Button) findViewById(R.id.buscar);
         buscar.setOnClickListener(this);
     }
@@ -129,9 +129,32 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, InfoMiVuelo.class);
-        intent.putExtra("vuelo", vuelo.getText().toString());
-        startActivity(intent);
+        if(vuelo.getText().toString().length() == 0){
+            vuelo.setError("Debes ingresar el número de tu vuelo.");
+        }else{
+            Intent intent = new Intent(this, InfoMiVuelo.class);
+            intent.putExtra("vuelo",buscaVuelo(vuelo.getText().toString()));
+            startActivity(intent);
+        }
+    }
+
+    public String[] buscaVuelo(String vuelo){
+        String[] datos = new String[9];
+        for(int i = 0; i<vuelos.size(); i++){
+            if(vuelos.get(i).getNumero().compareTo(vuelo.toUpperCase()) == 0){
+                datos[0] = vuelos.get(i).getAerolinea();
+                datos[1] = vuelos.get(i).getOrigen();
+                datos[2] = vuelos.get(i).getDestino();
+                datos[3] = vuelos.get(i).getEstado();
+                datos[4] = vuelos.get(i).getLlegada();
+                datos[5] = vuelos.get(i).getSalida();
+                datos[6] = vuelos.get(i).getSala();
+                datos[7] = vuelos.get(i).getNumero();
+                datos[8] = vuelos.get(i).getTerminal();
+                i = vuelos.size();
+            }
+        }
+        return datos;
     }
 
     class MyPagerAdapter extends FragmentPagerAdapter {

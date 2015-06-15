@@ -758,6 +758,8 @@
         <item>Info de Vuelo</item>
     </string-array>
     <string name="title_activity_vuelos_disponibles_ida">Vuelos Disponibles Ida</string>
+    <string name="llegada">Llegada</string>
+    <string name="salida">Salida</string>
 
 </resources>
 

@@ -141,7 +141,7 @@ public class JSONParser {
             }
         }else if(cadena.compareTo("Vuelo") == 0){
             vuelos = new ArrayList<Vuelo>();
-            for(int i = 0; i > objetosArray.length(); i++){
+            for(int i = 0; i < objetosArray.length(); i++){
                 vuelos.add(new Vuelo(objetosArray.getJSONObject(i).getLong("idVuelo"),
                         objetosArray.getJSONObject(i).getString("numero"),
                         objetosArray.getJSONObject(i).getString("salida"),
@@ -152,7 +152,7 @@ public class JSONParser {
             }
         }else if(cadena.compareTo("info") == 0){
             vuelos = new ArrayList<Vuelo>();
-            for(int i = 0; i > objetosArray.length(); i++){
+            for(int i = 0; i < objetosArray.length(); i++){
                 vuelos.add(new Vuelo(objetosArray.getJSONObject(i).getLong("idVuelo"),
                         objetosArray.getJSONObject(i).getString("numero"),
                         objetosArray.getJSONObject(i).getString("salida"),
@@ -164,6 +164,7 @@ public class JSONParser {
                         objetosArray.getJSONObject(i).getString("origen"),
                         objetosArray.getJSONObject(i).getString("destino")));
             }
+            System.out.println(vuelos.size());
         }
     }
 

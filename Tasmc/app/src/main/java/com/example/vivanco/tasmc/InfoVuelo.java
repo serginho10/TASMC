@@ -29,10 +29,10 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
     private EditText vuelo;
     private Button buscar;
     ArrayList<Vuelo> vuelos;
-    ArrayList<Vuelo> llegNacionales;
-    ArrayList<Vuelo> llegInternacionales;
-    ArrayList<Vuelo> salNacionales;
-    ArrayList<Vuelo> salInternacionales;
+    ArrayList<Vuelo> llegNacionales = new ArrayList<Vuelo>();
+    ArrayList<Vuelo> llegInternacionales = new ArrayList<Vuelo>();
+    ArrayList<Vuelo> salNacionales = new ArrayList<Vuelo>();
+    ArrayList<Vuelo> salInternacionales = new ArrayList<Vuelo>();
     String[] inter = {"AMSTERDAN","ATLANTA","BUENOS AIRES","BOGOTA","CARACAS","CHARLOTTE","CHICAGO",
             "DALLAS","DETROIT","FRANKFURT","GIG","LOS ANGELES","LA HABANA","LAS VEGAS","LIMA",
             "LONDRES","MADRID","MC ALLEN","MIAMI","MONTREAL","MUNICH","NEW YORK","NEWARK","ORANGE",
@@ -76,6 +76,12 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
                 }
             }
         }
+
+        System.out.println(vuelos.size());
+        System.out.println(salInternacionales.size());
+        System.out.println(salNacionales.size());
+        System.out.println(llegInternacionales.size());
+        System.out.println(llegNacionales.size());
 
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));

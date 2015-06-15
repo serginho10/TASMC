@@ -16,10 +16,10 @@ import java.util.List;
 public class AdaptadorLlegadasInternacionales extends RecyclerView.Adapter<AdaptadorLlegadasInternacionales.MyViewHolder> {
 
     private LayoutInflater inflater;
-    List<Llegadas> listLlegadas = Collections.emptyList();
+    List<Vuelo> listLlegadas = Collections.emptyList();
     private Context context;
 
-    public AdaptadorLlegadasInternacionales(Context context, List<Llegadas> listLlegadas) {
+    public AdaptadorLlegadasInternacionales(Context context, List<Vuelo> listLlegadas) {
         this.context = context;
         inflater = LayoutInflater.from(context);
         this.listLlegadas = listLlegadas;
@@ -34,11 +34,11 @@ public class AdaptadorLlegadasInternacionales extends RecyclerView.Adapter<Adapt
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Llegadas currentLlegada = listLlegadas.get(position);
+        Vuelo currentLlegada = listLlegadas.get(position);
         holder.origen.setText(currentLlegada.getOrigen());
         holder.aerolinea.setText(currentLlegada.getAerolinea());
-        holder.vuelo.setText(currentLlegada.getVuelo());
-        holder.hora.setText(currentLlegada.getHora());
+        holder.vuelo.setText(currentLlegada.getNumero());
+        holder.hora.setText(currentLlegada.getLlegada());
         holder.estado.setText(currentLlegada.getEstado());
         holder.sala.setText(currentLlegada.getSala());
         holder.terminal.setText(currentLlegada.getTerminal());

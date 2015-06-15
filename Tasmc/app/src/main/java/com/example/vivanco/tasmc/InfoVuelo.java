@@ -17,6 +17,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import org.json.JSONException;
+
+import java.util.ArrayList;
+
 
 public class InfoVuelo extends ActionBarActivity implements View.OnClickListener {
 
@@ -24,6 +28,17 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
     private SlidingTabLayout mTabs;
     private EditText vuelo;
     private Button buscar;
+    ArrayList<Vuelo> vuelos;
+    ArrayList<Vuelo> llegNacionales;
+    ArrayList<Vuelo> llegInternacionales;
+    ArrayList<Vuelo> salNacionales;
+    ArrayList<Vuelo> salInternacionales;
+    String[] inter = {"AMSTERDAN","ATLANTA","BUENOS AIRES","BOGOTA","CARACAS","CHARLOTTE","CHICAGO",
+            "DALLAS","DETROIT","FRANKFURT","GIG","LOS ANGELES","LA HABANA","LAS VEGAS","LIMA",
+            "LONDRES","MADRID","MC ALLEN","MIAMI","MONTREAL","MUNICH","NEW YORK","NEWARK","ORANGE",
+            "ORLANDO","PANAMA","PARIS","PHOENIX","QUITO","SAN ANTONIO","SAN FRANCISCO","SAN JOSE",
+            "SAN SALVADOR","SACRAMENTO","SALT LAKE","SAN DIEGO","SAN PEDRO","SANTIAGO","SAO PAULO",
+            "TOKIO","TORONTO","VANCOUVER"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +51,32 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        JSONParser json = new JSONParser(this,getApplicationContext());
+        try{
+            json.readAndParseJSON("I","",new Object[]{});
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
+        while (json.thread.isAlive()){}
+        vuelos = json.vuelos;
+        for (int i = 0; i < json.vuelos.size(); i++){
+            Vuelo act = json.vuelos.get(i);
+            if(isSalidaAICM(act)){
+                if(isInter(act.getOrigen()) || isInter(act.getDestino())){
+                    salInternacionales.add(act);
+                }else{
+                    salNacionales.add(act);
+                }
+            }else{
+                if(isInter(act.getOrigen()) || isInter(act.getDestino())){
+                    llegInternacionales.add(act);
+                }else{
+                    llegNacionales.add(act);
+                }
+            }
+        }
+
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
@@ -44,9 +85,22 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
         vuelo = (EditText) findViewById(R.id.vuelo);
         buscar = (Button) findViewById(R.id.buscar);
         buscar.setOnClickListener(this);
-
     }
 
+    public boolean isInter(String pais){
+        for (int i = 0; i<inter.length; i++){
+            if(inter[i].compareTo(pais) == 0){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isSalidaAICM(Vuelo v){
+        if(v.getOrigen().compareTo("MEXICO") == 0){
+            return true;
+        }else return false;
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

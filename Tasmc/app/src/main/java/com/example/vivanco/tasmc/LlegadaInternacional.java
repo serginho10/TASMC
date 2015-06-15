@@ -33,39 +33,11 @@ public class LlegadaInternacional extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_llegada_internacional, container, false);
         listInter = (RecyclerView) rootView.findViewById(R.id.listLlegadasInter);
-        adaptadorLlegadasInternacionales = new AdaptadorLlegadasInternacionales(getActivity(), getDatos());
+        InfoVuelo actividad = (InfoVuelo) getActivity();
+        adaptadorLlegadasInternacionales = new AdaptadorLlegadasInternacionales(getActivity(), actividad.llegInternacionales);
         listInter.setAdapter(adaptadorLlegadasInternacionales);
         listInter.setLayoutManager(new LinearLayoutManager(getActivity()));
         return rootView;
-    }
-
-
-    //metodo para añadir la informacion
-    public static List<Llegadas> getDatos() {
-        List<Llegadas> datos = new ArrayList<>();
-        String[] origenes = {"Miami", "Las Vegas", "New York", "Houston"};
-        String[] aerolineas = {"Interjet", "Volaris", "Aeromexico", "Interjet"};
-        String[] vuelos = {"AIJ3455", "VOI9584", "AMX4593", "AIJ4343"};
-        String[] horas = {"10:00", "9:45", "8:15", "7:15"};
-        String[] estados = {"Despego", "Despego", "Despego", "Despego"};
-        String[] salas = {"21", "34", "56", "29"};
-        String[] terminales = {"T1", "T1", "T2", "T1"};
-
-
-        for (int i = 0; i < origenes.length && i < aerolineas.length && i < vuelos.length && i < horas.length
-                && i < estados.length && i < salas.length && i < terminales.length; i++) {
-            Llegadas current = new Llegadas();
-            current.setOrigen(origenes[i]);
-            current.setAerolinea(aerolineas[i]);
-            current.setVuelo(vuelos[i]);
-            current.setHora(horas[i]);
-            current.setEstado(estados[i]);
-            current.setSala(salas[i]);
-            current.setTerminal(terminales[i]);
-
-            datos.add(current);
-        }
-        return datos;
     }
 
 }

@@ -102,14 +102,14 @@ public class ManejadorBD extends SQLiteOpenHelper {
         }
     }
 
-    public void guardarVuelo(Vuelo vuelo) {
+   /* public void guardarVuelo(Vuelo vuelo) {
         db = getWritableDatabase();
-        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCategoria() + "','" + vuelo.getAerolinea() + "','"
+        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCl() + "','" + vuelo.getAerolinea() + "','"
                 + vuelo.getVuelo() + "','" + vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
                 + vuelo.getOrigen() + "','" + vuelo.getDestino() + "','" + vuelo.getEstado() + "','"
                 + vuelo.getHoraSalida() + "','" + vuelo.getHoraLlegada() + "','" + vuelo.getTerminal() + "','"
                 + vuelo.getPuerta() + "','" + vuelo.getTiempo() + "','" + vuelo.getEscalas() + "')");
-    }
+    }*/
 
     public void guardarActividad(Actividad actividad) {
         db = getWritableDatabase();
@@ -166,11 +166,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.delete("actividad", "idItinerario=?", new String[]{Integer.toString(itinerario.getIdItinerario())});
     }
 
-    public void borrarVuelo(Vuelo vuelo) {
+    /*public void borrarVuelo(Vuelo vuelo) {
         db = getWritableDatabase();
         //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
-        db.delete("vuelo", "id=?", new String[]{Integer.toString(vuelo.getId())});
-    }
+        db.delete("vuelo", "id=?", new String[]{Integer.toString(vuelo.getIdVuelo())});
+    }*/
 
     public void borrarObjeto(Objeto objeto) {
         db = getWritableDatabase();

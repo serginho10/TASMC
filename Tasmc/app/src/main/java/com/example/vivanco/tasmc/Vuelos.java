@@ -1,6 +1,7 @@
 package com.example.vivanco.tasmc;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -103,19 +104,13 @@ public class Vuelos extends ActionBarActivity implements View.OnClickListener{
             destino.setError("Debes ingresar tu ciudad de destino.");
         }else if(fecha.getText().length() == 0){
             fecha.setError("Debes ingresar la fecha de tu vuelo.");
-        }else{
-            JSONParser json = new JSONParser(this,getApplicationContext());
-            try{
-                json.readAndParseJSON("V","",new Object[]{origen.getText().toString().toUpperCase(),
-                        destino.getText().toString().toUpperCase(),
-                        fecha.getText().toString(), clase.getSelectedItem().toString().toUpperCase()});
-            }catch (JSONException e){
-                e.printStackTrace();
-            }
-            while (json.thread.isAlive()){}
-            for (int i = 0; i < json.vuelos.size(); i++){
-                System.out.println(json.vuelos.get(i).toString());
-            }
+        }else {
+            Intent intent = new Intent(this, ListVuelosBuscados.class);
+            intent.putExtra("origen", origen.getText().toString().toUpperCase());
+            intent.putExtra("destino", destino.getText().toString().toUpperCase());
+            intent.putExtra("fecha", fecha.getText().toString());
+            intent.putExtra("clase", clase.getSelectedItem().toString().toUpperCase());
+            startActivity(intent);
         }
     }
 

@@ -1,14 +1,10 @@
 package com.example.vivanco.tasmc;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 
 public class InfoMiVuelo extends ActionBarActivity {
@@ -35,7 +31,7 @@ public class InfoMiVuelo extends ActionBarActivity {
         TextView tvSala = (TextView) findViewById(R.id.tvSala);
         TextView tvTerminal = (TextView) findViewById(R.id.tvTerminal);
         TextView tvAerolinea = (TextView) findViewById(R.id.tvAerolinea);
-        TextView tvEstado = (TextView) findViewById(R.id.tvEstado);
+        TextView tvEstado = (TextView) findViewById(R.id.tvLlegada);
 
         tvAerolinea.setText(datos[0]);
         tvOrigen.setText(datos[1]);

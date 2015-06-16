@@ -2,28 +2,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:focusable="false">
+    android:orientation="vertical">
 
     <TextView
+        android:layout_marginTop="15dp"
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/origen"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView13"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView12"
+        android:text="@string/destino"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:textColor="#ff000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView13"
         android:layout_marginTop="5dp"
         android:text="@string/aerolinea"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textView15"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -34,55 +48,47 @@
 
     <TextView
         android:id="@+id/textView16"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView15"
         android:layout_marginTop="5dp"
-        android:text="@string/hora"
+        android:text="@string/salida"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textView17"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView16"
         android:layout_marginTop="5dp"
-        android:text="@string/estado"
+        android:text="@string/llegada"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tvOrigen"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView17"
-        android:layout_marginTop="5dp"
-        android:text="@string/sala"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView18"
-        android:layout_marginTop="5dp"
-        android:text="@string/terminal"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/origen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="Monterrey"
         android:layout_alignBottom="@+id/textView12"
-        android:layout_marginStart="50dp"
-        android:layout_toEndOf="@+id/textView12"
-        android:text="Las Vegas" />
+        android:layout_alignStart="@+id/tvDestino" />
+
+    <TextView
+        android:id="@+id/tvDestino"
+        android:textColor="#ff000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monterrey"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/tvAerolinea" />
 
     <TextView
         android:id="@+id/tvAerolinea"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView14"
@@ -92,6 +98,7 @@
 
     <TextView
         android:id="@+id/tvNumero"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView15"
@@ -101,52 +108,20 @@
 
     <TextView
         android:id="@+id/tvSalida"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView16"
-        android:layout_marginStart="60dp"
-        android:layout_toEndOf="@+id/textView16"
-        android:text="13:40" />
+        android:text="13:40"
+        android:layout_above="@+id/textView17"
+        android:layout_alignStart="@+id/tvNumero" />
 
     <TextView
         android:id="@+id/tvLlegada"
+        android:textColor="#ff000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/estado_mio"
         android:layout_alignBottom="@+id/textView17"
-        android:layout_marginStart="40dp"
-        android:layout_toEndOf="@+id/textView17"
-        android:text="@string/estado_mio" />
-
-    <TextView
-        android:id="@+id/tvSala"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView18"
-        android:layout_marginStart="60dp"
-        android:layout_toEndOf="@+id/textView18"
-        android:text="B" />
-
-    <TextView
-        android:id="@+id/tvTerminal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView19"
-        android:layout_marginStart="30dp"
-        android:layout_toEndOf="@+id/textView19"
-        android:text="T1" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_below="@+id/textView19"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView10"
         android:layout_alignStart="@+id/tvSalida" />
+
 </RelativeLayout>

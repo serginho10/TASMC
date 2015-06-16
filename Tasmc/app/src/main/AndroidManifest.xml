@@ -63,10 +63,20 @@
         <activity
             android:name=".Vuelos"
             android:label="@string/title_activity_vuelos"
+            android:launchMode="singleTop"
             android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListVuelosBuscados"
+            android:label="@string/title_activity_vuelos"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Vuelos" />
         </activity>
         <activity
             android:name=".InfoAicm"

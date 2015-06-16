@@ -66,7 +66,7 @@ public class AdaptadorSalidasInternacionales extends RecyclerView.Adapter<Adapta
             aerolinea = (TextView) itemView.findViewById(R.id.tvAerolinea);
             vuelo = (TextView) itemView.findViewById(R.id.tvNumero);
             hora = (TextView) itemView.findViewById(R.id.tvSalida);
-            estado = (TextView) itemView.findViewById(R.id.tvEstado);
+            estado = (TextView) itemView.findViewById(R.id.tvLlegada);
             sala = (TextView) itemView.findViewById(R.id.tvSala);
             terminal = (TextView) itemView.findViewById(R.id.tvTerminal);
 

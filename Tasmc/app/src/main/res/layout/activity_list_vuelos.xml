@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_bar_vuelo"
+        layout="@layout/app_bar_vuelo" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listVuelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_vuelo" />
+
+</RelativeLayout>

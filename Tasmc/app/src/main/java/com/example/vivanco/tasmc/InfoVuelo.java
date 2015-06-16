@@ -196,17 +196,4 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
         }
     }
 
-    public static class MyFragment extends Fragment {
-        public static MyFragment getInstance(int position) {
-            MyFragment fragment = new MyFragment();
-            return fragment;
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            View layout = inflater.inflate(R.layout.fragment_llegada_nacional, container, false);
-            return layout;
-        }
-    }
-
 }

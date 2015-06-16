@@ -127,12 +127,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView17"
-        android:layout_alignStart="@+id/tvEstado"
+        android:layout_alignStart="@+id/tvLlegada"
         android:text="13:40"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/tvEstado"
+        android:id="@+id/tvLlegada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView18"

@@ -38,74 +38,88 @@
 
         <activity
             android:name=".MainActivity"
-            android:icon="@drawable/plane" >
+            android:icon="@drawable/plane"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor">
         </activity>
         <activity
             android:name=".SubActivity"
-            android:label="@string/title_activity_sub" >
+            android:label="@string/title_activity_sub"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Hoteles"
-            android:label="@string/title_activity_hoteles" >
+            android:label="@string/title_activity_hoteles"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Vuelos"
-            android:label="@string/title_activity_vuelos" >
+            android:label="@string/title_activity_vuelos"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".InfoAicm"
-            android:label="@string/title_activity_info_aicm" >
+            android:label="@string/title_activity_info_aicm"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ListEquipaje"
-            android:label="@string/title_activity_list_equipaje" >
+            android:label="@string/title_activity_list_equipaje"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ListHoteles"
-            android:label="@string/title_activity_list_hoteles" >
+            android:label="@string/title_activity_list_hoteles"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Hoteles" />
         </activity>
         <activity
             android:name=".HotelSeleccionado"
-            android:label="@string/title_activity_list_hoteles" >
+            android:label="@string/title_activity_list_hoteles"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListHoteles" />
         </activity>
         <activity
             android:name=".EquipajeSeleccionado"
-            android:label="@string/title_activity_list_equipaje" >
+            android:label="@string/title_activity_list_equipaje"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListEquipaje" />
         </activity>
         <activity
             android:name=".Itinerario"
-            android:label="@string/title_activity_itinerario" >
+            android:label="@string/title_activity_itinerario"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".RutaAicm"
-            android:label="@string/title_activity_ruta_aicm" >
+            android:label="@string/title_activity_ruta_aicm"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -120,7 +134,8 @@
         </activity>
         <activity
             android:name=".InfoVuelo"
-            android:label="@string/title_activity_info_vuelo" >
+            android:label="@string/title_activity_info_vuelo"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -138,42 +153,48 @@
             android:label="@string/title_activity_equipaje" />
         <activity
             android:name=".Mapa"
-            android:label="@string/title_activity_mapa" >
+            android:label="@string/title_activity_mapa"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".InfoAicm" />
         </activity>
         <activity
             android:name=".ListServicios"
-            android:label="@string/title_activity_list_servicios" >
+            android:label="@string/title_activity_list_servicios"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".InfoAicm" />
         </activity>
         <activity
             android:name=".NuevoItinerario"
-            android:label="" >
+            android:label=""
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Itinerario" />
         </activity>
         <activity
             android:name=".NuevoEquipaje"
-            android:label="@string/title_activity_nuevo_equipaje" >
+            android:label="@string/title_activity_nuevo_equipaje"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ListEquipaje" />
         </activity>
         <activity
             android:name=".Reconfigura"
-            android:label="@string/title_activity_reconfigura" >
+            android:label="@string/title_activity_reconfigura"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Configuracion"
-            android:label="@string/title_activity_configuracion" >
+            android:label="@string/title_activity_configuracion"
+            android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -182,29 +203,34 @@
         </activity>
         <activity
             android:name=".HotelesDisponibles"
-            android:label="@string/title_activity_hoteles_disponibles" >
+            android:label="@string/title_activity_hoteles_disponibles"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Hoteles" />
         </activity>
         <activity
             android:name=".PA"
-            android:label="@string/title_activity_p" >
+            android:label="@string/title_activity_p"
+            android:screenOrientation="nosensor">
         </activity>
         <activity
             android:name=".PB"
-            android:label="@string/title_activity_pb" >
+            android:label="@string/title_activity_pb"
+            android:screenOrientation="nosensor">
         </activity>
         <activity
             android:name=".VuelosDisponibles"
-            android:label="@string/title_activity_vuelos_disponibles" >
+            android:label="@string/title_activity_vuelos_disponibles"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Vuelos" />
         </activity>
         <activity
             android:name=".InfoMiVuelo"
-            android:label="@string/title_activity_info_mi_vuelo" >
+            android:label="@string/title_activity_info_mi_vuelo"
+            android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".InfoVuelo" />
@@ -219,7 +245,8 @@
         </activity>
         <activity
             android:name=".VuelosDisponiblesIda"
-            android:label="@string/title_activity_vuelos_disponibles_ida" >
+            android:label="@string/title_activity_vuelos_disponibles_ida"
+            android:screenOrientation="nosensor">
         </activity>
     </application>
 

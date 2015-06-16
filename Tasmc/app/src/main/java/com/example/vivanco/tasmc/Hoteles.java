@@ -90,7 +90,7 @@ public class Hoteles extends ActionBarActivity {
             Intent intent = new Intent(this, ListHoteles.class);
             intent.putExtra("lugar",lugar.getText().toString().toUpperCase());
             intent.putExtra("huespedes",huespedes.getSelectedItem().toString());
-            intent.putExtra("categorias",categorias.getSelectedItem().toString());
+            intent.putExtra("categorias", categorias.getSelectedItem().toString());
             startActivity(intent);
         }
     }

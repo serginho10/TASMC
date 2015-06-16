@@ -762,10 +762,11 @@
     <string name="salida">Salida</string>
     <string name="title_activity_list_hoteles">Hoteles</string>
     <string name="categoria">Categoría:</string>
-    <string name="web">Sitio Web:</string>
+    <string name="web">Sitio Web</string>
     <string name="nohabitaciones">No. Habitaciones:</string>
-    <string name="habitaciones">Habitaciones:</string>
-    <string name="ciudad">Ciudad:</string>>
+    <string name="habitaciones">Habitaciones</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="llamar">Llamar</string>
 
 </resources>
 

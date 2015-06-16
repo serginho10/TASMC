@@ -711,10 +711,11 @@
     <string name="salida">Leave</string>
     <string name="title_activity_list_hoteles">Hotels</string>
     <string name="categoria">Category:</string>
-    <string name="web">Website:</string>
+    <string name="web">Website</string>
     <string name="nohabitaciones">No. Rooms:</string>
-    <string name="habitaciones">Rooms:</string>
-    <string name="ciudad">City:</string>>
+    <string name="habitaciones">Rooms</string>
+    <string name="ciudad">City:</string>
+    <string name="llamar">Call</string>
 
 
     <string-array name="habitaciones">

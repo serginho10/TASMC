@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Patterns;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -72,14 +73,14 @@ public class Configuracion extends ActionBarActivity {
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ETemail.getText().length() != 0) {
+                if(ETemail.getText().length() != 0 && Patterns.EMAIL_ADDRESS.matcher(ETemail.getText()).matches()) {
                     Usuario usuario = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
                             clases.getSelectedItem().toString(), "usuario", 1, 1);
                     System.out.println(categorias.getSelectedItem().toString() + " ************* " + clases.getSelectedItem().toString());
                     bd.guardarUsuario(usuario);
                     finish();
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                }else ETemail.setError("Debes ingresar un email.");
+                }else ETemail.setError("Debes ingresar un email válido.");
             }
         });
         ArrayAdapter dataAdapter = ArrayAdapter.createFromResource(this, R.array.clases, android.R.layout.simple_spinner_item);

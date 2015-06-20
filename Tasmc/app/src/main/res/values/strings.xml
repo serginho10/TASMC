@@ -651,7 +651,7 @@
     <string name="editar">Editar</string>
     <string name="añadir">Añadir</string>
     <string name="fecha_entrada">Fecha entrada</string>
-    <string name="nombre_ciudad">Nombre de la ciudad o lugar</string>
+    <string name="nombre_ciudad">Nombre de la ciudad</string>
     <string name="fecha_salida">Fecha salida</string>
     <string name="hint_correo">tasmc@hotmail.com</string>
     <string name="buscar_hoteles">Buscar Hoteles</string>
@@ -768,6 +768,8 @@
     <string name="ciudad">Ciudad:</string>
     <string name="llamar">Llamar</string>
     <string name="def_costo">Costo no definido</string>
+    <string name="mensaje_toastnohotel">No hay información de la ciudad buscada.</string>
+    <string name="mensaje_toastnovuelo">No hay información del vuelo buscado.</string>
 
 </resources>
 

@@ -21,9 +21,9 @@ public class JSONParser {
     private ProgressDialog progressDialog = null;
     private Runnable runReadAndParseJSON;
     JSONArray objetosArray;
-    ArrayList<Hotel> hoteles;
+    ArrayList<Hotel> hoteles = new ArrayList<Hotel>();
     Thread thread;
-    ArrayList<Vuelo> vuelos;
+    ArrayList<Vuelo> vuelos = new ArrayList<Vuelo>();
 
     public JSONParser(Activity a, Context context){
         activity = a;
@@ -112,7 +112,6 @@ public class JSONParser {
                         objetosArray.getJSONObject(i).getInt("Objeto_idObjeto")));
         }else if(cadena.compareTo("Hotel") == 0){
             ArrayList<Habitacion> habitaciones = new ArrayList<Habitacion>();
-            hoteles = new ArrayList<Hotel>();
             for (int i = 0; i < objetosArray.length(); i++)
                 hoteles.add(new Hotel(objetosArray.getJSONObject(i).getLong("idHotel"),
                         objetosArray.getJSONObject(i).getString("nombre"),
@@ -140,7 +139,6 @@ public class JSONParser {
                 hoteles.get(i).setHabitaciones(habHotel);
             }
         }else if(cadena.compareTo("Vuelo") == 0){
-            vuelos = new ArrayList<Vuelo>();
             for(int i = 0; i < objetosArray.length(); i++){
                 vuelos.add(new Vuelo(objetosArray.getJSONObject(i).getLong("idVuelo"),
                         objetosArray.getJSONObject(i).getString("numero"),
@@ -151,7 +149,6 @@ public class JSONParser {
                         objetosArray.getJSONObject(i).getString("destino")));
             }
         }else if(cadena.compareTo("info") == 0){
-            vuelos = new ArrayList<Vuelo>();
             for(int i = 0; i < objetosArray.length(); i++){
                 vuelos.add(new Vuelo(objetosArray.getJSONObject(i).getLong("idVuelo"),
                         objetosArray.getJSONObject(i).getString("numero"),

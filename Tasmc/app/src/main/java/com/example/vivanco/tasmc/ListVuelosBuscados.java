@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -63,10 +64,20 @@ public class ListVuelosBuscados extends ActionBarActivity{
             e.printStackTrace();
         }
         while (json.thread.isAlive()){}
-        for (int i = 0; i < json.vuelos.size(); i++){
-            System.out.println(json.vuelos.get(i).toString());
+        if(json.vuelos.size() != 0)
+            for (int i = 0; i < json.vuelos.size(); i++){
+                System.out.println(json.vuelos.get(i).toString());
+            }
+        else{
+            Toast toast = new Toast(this);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            LayoutInflater inflater = getLayoutInflater();
+            View appeareance = inflater.inflate(R.layout.toast_layout_no_vuelo, (ViewGroup) findViewById(R.id.mensajeNoVuelo));
+            toast.setView(appeareance);
+            toast.show();
+            NavUtils.navigateUpFromSameTask(this);
         }
-
         list = (RecyclerView) findViewById(R.id.listVuelo);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         list.setLayoutManager(layoutManager);

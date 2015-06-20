@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 
@@ -53,13 +55,23 @@ public class ListHoteles extends ActionBarActivity implements View.OnClickListen
         while(json.thread.isAlive()){}
         final String[] titulos = new String[json.hoteles.size()];
         final Map<String,String> descripcion = new HashMap<String,String>();
-        for(int i = 0; i<json.hoteles.size(); i++){
-            titulos[i] = json.hoteles.get(i).getNombre();
-            descripcion.put(json.hoteles.get(i).getNombre(),"Teléfono: "+json.hoteles.get(i).getTelefono());
-            estrellas.put(json.hoteles.get(i).getNombre(),json.hoteles.get(i).getCategoria());
-            System.out.println(json.hoteles.get(i).toString());
+        if(json.hoteles.size() != 0)
+            for(int i = 0; i<json.hoteles.size(); i++){
+                titulos[i] = json.hoteles.get(i).getNombre();
+                descripcion.put(json.hoteles.get(i).getNombre(),"Teléfono: "+json.hoteles.get(i).getTelefono());
+                estrellas.put(json.hoteles.get(i).getNombre(),json.hoteles.get(i).getCategoria());
+                System.out.println(json.hoteles.get(i).toString());
+            }
+        else{
+            Toast toast = new Toast(this);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            LayoutInflater inflater = getLayoutInflater();
+            View appeareance = inflater.inflate(R.layout.toast_layout_no_hotel, (ViewGroup) findViewById(R.id.mensajeNoHotel));
+            toast.setView(appeareance);
+            toast.show();
+            NavUtils.navigateUpFromSameTask(this);
         }
-
         list = (ListView) findViewById(R.id.listEquipaje);
         AdaptadorHoteles adaptadorHoteles = new AdaptadorHoteles(this, titulos, image, descripcion);
         list.setAdapter(adaptadorHoteles);

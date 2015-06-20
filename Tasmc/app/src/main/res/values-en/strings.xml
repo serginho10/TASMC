@@ -717,6 +717,8 @@
     <string name="habitaciones">Rooms</string>
     <string name="ciudad">City:</string>
     <string name="llamar">Call</string>
+    <string name="mensaje_toastnohotel">No information of the searched city.</string>
+    <string name="mensaje_toastnovuelo">No information of the searched flight.</string>
 
 
     <string-array name="habitaciones">

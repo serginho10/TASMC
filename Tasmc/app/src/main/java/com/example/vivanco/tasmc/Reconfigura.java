@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -81,8 +82,8 @@ public class Reconfigura extends ActionBarActivity {
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ETemail.getText().length() == 0){
-                    ETemail.setError("Debes ingresar un email");
+                if(ETemail.getText().length() == 0 || !Patterns.EMAIL_ADDRESS.matcher(ETemail.getText()).matches()){
+                    ETemail.setError("Debes ingresar un email válido");
                 }else {
                     Usuario user = new Usuario(ETemail.getText().toString(), categorias.getSelectedItem().toString(),
                             clases.getSelectedItem().toString(), "usuario", 1, 1);

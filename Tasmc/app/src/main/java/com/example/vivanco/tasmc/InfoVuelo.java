@@ -10,12 +10,14 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONException;
 
@@ -132,9 +134,20 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
         if(vuelo.getText().toString().length() == 0){
             vuelo.setError("Debes ingresar el número de tu vuelo.");
         }else{
-            Intent intent = new Intent(this, InfoMiVuelo.class);
-            intent.putExtra("vuelo",buscaVuelo(vuelo.getText().toString().toUpperCase()));
-            startActivity(intent);
+            String[] datos = buscaVuelo(vuelo.getText().toString().toUpperCase());
+            if(datos[0] != null){
+                Intent intent = new Intent(this, InfoMiVuelo.class);
+                intent.putExtra("vuelo",datos);
+                startActivity(intent);
+            }else{
+                Toast toast = new Toast(this);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                LayoutInflater inflater = getLayoutInflater();
+                View appeareance = inflater.inflate(R.layout.toast_layout_no_vuelo, (ViewGroup) findViewById(R.id.mensajeNoVuelo));
+                toast.setView(appeareance);
+                toast.show();
+            }
         }
     }
 

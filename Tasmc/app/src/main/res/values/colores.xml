@@ -5,6 +5,7 @@
     <color name="primarioClaro">#C5CAE9</color>
     <color name="texto_iconos">#FFFFFF</color>
     <color name="acentuado">#00BCD4</color>
+    <color name="alerta">#ff000000</color>
     <color name="primarioTexto">#212121</color>
     <color name="secundarioTexto">#727272</color>
     <color name="divisor">#B6B6B6</color>

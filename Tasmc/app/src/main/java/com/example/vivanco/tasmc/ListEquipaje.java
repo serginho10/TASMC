@@ -82,7 +82,6 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        finish();
         Intent intent = new Intent(this, NuevoEquipaje.class);
         startActivity(intent);
 

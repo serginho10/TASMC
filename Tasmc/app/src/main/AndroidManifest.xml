@@ -89,6 +89,7 @@
         <activity
             android:name=".ListEquipaje"
             android:label="@string/title_activity_list_equipaje"
+            android:launchMode="singleTop"
             android:screenOrientation="nosensor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

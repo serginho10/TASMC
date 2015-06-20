@@ -133,7 +133,7 @@ public class InfoVuelo extends ActionBarActivity implements View.OnClickListener
             vuelo.setError("Debes ingresar el número de tu vuelo.");
         }else{
             Intent intent = new Intent(this, InfoMiVuelo.class);
-            intent.putExtra("vuelo",buscaVuelo(vuelo.getText().toString()));
+            intent.putExtra("vuelo",buscaVuelo(vuelo.getText().toString().toUpperCase()));
             startActivity(intent);
         }
     }

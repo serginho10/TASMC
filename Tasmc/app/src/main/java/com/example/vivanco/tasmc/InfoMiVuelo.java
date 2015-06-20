@@ -31,7 +31,7 @@ public class InfoMiVuelo extends ActionBarActivity {
         TextView tvSala = (TextView) findViewById(R.id.tvSala);
         TextView tvTerminal = (TextView) findViewById(R.id.tvTerminal);
         TextView tvAerolinea = (TextView) findViewById(R.id.tvAerolinea);
-        TextView tvEstado = (TextView) findViewById(R.id.tvLlegada);
+        TextView tvEstado = (TextView) findViewById(R.id.tvEstado);
 
         tvAerolinea.setText(datos[0]);
         tvOrigen.setText(datos[1]);

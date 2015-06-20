@@ -33,7 +33,7 @@ public class HotelSeleccionado extends ActionBarActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_hotel);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_infv);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_hotel);
         setSupportActionBar(toolbar);
 
         //Habilita el boton para ir a la actividad principal en el Toolbar

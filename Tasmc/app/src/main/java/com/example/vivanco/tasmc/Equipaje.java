@@ -42,7 +42,6 @@ public class Equipaje extends ListActivity {
         this.nombre = nombre;
     }
 
-    List<RenglonCheck> rows;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

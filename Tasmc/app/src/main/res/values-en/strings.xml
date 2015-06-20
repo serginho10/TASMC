@@ -27,6 +27,7 @@
     <string name="title_activity_reconfigura">Personal Settings</string>
     <string name="title_activity_ubicate_pb">First Floor AICM</string>
     <string name="title_activity_vuelos_disponibles_ida">Available Flights</string>
+    <string name="def_costo">Cost not defined</string>
 
 
     <string-array name="tabs">
@@ -767,6 +768,7 @@
         <item>Location at AICM</item>
         <item>Flight Info</item>
     </string-array>
+
 
 </resources>
 

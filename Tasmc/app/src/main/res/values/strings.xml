@@ -767,6 +767,7 @@
     <string name="habitaciones">Habitaciones</string>
     <string name="ciudad">Ciudad:</string>
     <string name="llamar">Llamar</string>
+    <string name="def_costo">Costo no definido</string>
 
 </resources>
 

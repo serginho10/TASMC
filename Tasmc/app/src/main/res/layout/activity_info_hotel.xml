@@ -1,67 +1,78 @@
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="false">
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.vivanco.tasmc.HotelSeleccionado"
-    android:id="@+id/infoHotelLayout">
 
-    <include
-        android:id="@+id/app_bar_infv"
-        layout="@layout/app_bar_infv" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/infoHotelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.vivanco.tasmc.HotelSeleccionado">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Medium Text"
-        android:id="@+id/tvCiudad"
-        android:layout_below="@+id/app_bar_infv"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true" />
+        <include
+            android:id="@+id/app_bar_hotel"
+            layout="@layout/app_bar_hotel" />
 
-    <TextView
-        android:id="@+id/tvCategoria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_marginTop="15dp"
-        android:text="hola"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvCiudad" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/app_bar_hotel"
+            android:background="@drawable/aria"></RelativeLayout>
 
-    <TextView
-        android:id="@+id/tvWeb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/web"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_alignTop="@+id/tvTelefono"
-        android:layout_toStartOf="@+id/tvCiudad" />
+        <TextView
+            android:id="@+id/tvCiudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar_hotel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
 
-    <TextView
-        android:layout_marginTop="15dp"
-        android:id="@+id/tvTelefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/llamar"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_below="@+id/tvCategoria"
-        android:layout_toEndOf="@+id/tvCiudad" />
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCiudad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="hola"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/habitaciones"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvTelefono" />
+        <TextView
+            android:id="@+id/tvWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvTelefono"
+            android:layout_toStartOf="@+id/tvCiudad"
+            android:text="@string/web"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCategoria"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/tvCiudad"
+            android:text="@string/llamar"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTelefono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/habitaciones"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
 </ScrollView>

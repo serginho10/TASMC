@@ -80,7 +80,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/ida"
+            android:id="@+id/tvNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -89,20 +89,12 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#fce0280b" />
 
-        <TextView
-            android:id="@+id/fechai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="50dp"
-            android:text="@string/fechai" />
-
         <ImageView
             android:id="@+id/dividerIda"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ida"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvNumero"
             android:layout_gravity="center_horizontal"
             android:src="#fce0280b" />
 
@@ -112,29 +104,18 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="42dp"
+            android:layout_below="@+id/tvOrigen"
             android:src="@drawable/aeromexico" />
 
 
         <TextView
-            android:id="@+id/origeni"
+            android:id="@+id/tvOrigen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/tiempoi"
-            android:layout_toEndOf="@+id/ida"
+            android:layout_alignTop="@+id/totali"
+            android:layout_toEndOf="@+id/tvNumero"
             android:text="MEX"
             android:textColor="@color/divisor" />
-
-        <TextView
-            android:id="@+id/horaSalidai"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_above="@+id/avionv"
-            android:layout_below="@+id/origeni"
-            android:layout_marginLeft="65dp"
-            android:text="12:10"
-            android:textStyle="bold" />
 
 
         <TextView
@@ -144,41 +125,33 @@
             android:layout_below="@+id/dividerIda"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="@string/total"
+            android:text="@string/aerolinea"
             android:textColor="@color/divisor" />
 
         <TextView
-            android:id="@+id/tiempoi"
+            android:id="@+id/tvAerolinea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/totali"
             android:layout_below="@+id/totali"
-            android:layout_centerHorizontal="true"
             android:text="04hs 01m" />
 
         <TextView
-            android:id="@+id/escalasi"
+            android:id="@+id/tvDestino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/escalasv"
-            android:layout_below="@+id/tiempoi"
-            android:text="@string/escalas"
-            android:textColor="@color/acentuado" />
-
-        <TextView
-            android:id="@+id/destinoi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/tiempoi"
-            android:layout_alignStart="@+id/destinov"
+            android:layout_above="@+id/logoAiri"
+            android:layout_marginStart="69dp"
+            android:layout_toEndOf="@+id/totali"
             android:text="LAS"
             android:textColor="@color/divisor" />
 
         <TextView
-            android:id="@+id/horaLlegadai"
+            android:id="@+id/tvLlegada"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/destinoi"
-            android:layout_alignTop="@+id/horaSalidai"
+            android:layout_alignStart="@+id/tvDestino"
+            android:layout_alignTop="@+id/tvSalida"
             android:text="14:11"
             android:textStyle="bold" />
 
@@ -190,119 +163,13 @@
             android:layout_alignParentStart="true"
             android:src="@drawable/ida" />
 
-
         <TextView
-            android:id="@+id/vuelta"
+            android:id="@+id/tvSalida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/avionv"
-            android:layout_toEndOf="@+id/logoAiri"
-            android:text="@string/vuelta"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#fc024bb4" />
-
-        <TextView
-            android:id="@+id/fechav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/tiempov"
-            android:layout_alignTop="@+id/vuelta"
-            android:text="@string/fechav" />
-
-        <ImageView
-            android:id="@+id/dividerVuelta"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/avionv"
-            android:layout_gravity="center_horizontal"
-            android:src="#fc024bb4" />
-
-
-        <ImageView
-            android:id="@+id/logoAirv"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/avionv"
-            android:layout_marginTop="22dp"
-            android:src="@drawable/aeromexico" />
-
-
-        <TextView
-            android:id="@+id/origenv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/origeni"
-            android:layout_alignTop="@+id/totalv"
-            android:text="MEX"
-            android:textColor="@color/divisor" />
-
-        <TextView
-            android:id="@+id/horaSalidav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/tiempov"
-            android:layout_below="@+id/origenv"
-            android:layout_marginLeft="65dp"
-            android:text="12:10"
+            android:layout_alignStart="@+id/tvOrigen"
+            android:layout_alignTop="@+id/logoAiri"
+            android:text="12:00"
             android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/totalv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/dividerVuelta"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="@string/total"
-            android:textColor="@color/divisor" />
-
-        <TextView
-            android:id="@+id/tiempov"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/totalv"
-            android:layout_centerHorizontal="true"
-            android:text="04hs 01m" />
-
-        <TextView
-            android:id="@+id/escalasv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tiempov"
-            android:layout_centerHorizontal="true"
-            android:text="@string/escalas"
-            android:textColor="@color/acentuado" />
-
-        <TextView
-            android:id="@+id/destinov"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/horaSalidav"
-            android:layout_marginLeft="60dp"
-            android:layout_toEndOf="@+id/tiempov"
-            android:text="LAS"
-            android:textColor="@color/divisor" />
-
-        <TextView
-            android:id="@+id/horaLlegadav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/horaSalidav"
-            android:layout_alignStart="@+id/horaLlegadai"
-            android:text="14:11"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/avionv"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/logoAiri"
-            android:layout_marginTop="32dp"
-            android:src="@drawable/vuelta" />
-
     </RelativeLayout>
 </RelativeLayout>

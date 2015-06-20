@@ -213,14 +213,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HotelesDisponibles"
-            android:label="@string/title_activity_hoteles_disponibles"
-            android:screenOrientation="nosensor">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Hoteles" />
-        </activity>
-        <activity
             android:name=".PA"
             android:label="@string/title_activity_p"
             android:screenOrientation="nosensor">

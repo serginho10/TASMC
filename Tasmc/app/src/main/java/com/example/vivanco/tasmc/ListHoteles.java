@@ -2,8 +2,6 @@ package com.example.vivanco.tasmc;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
@@ -12,17 +10,11 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
-import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import org.json.JSONException;
 
@@ -39,8 +31,8 @@ public class ListHoteles extends ActionBarActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_equipaje);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_equi);
+        setContentView(R.layout.activity_list_hoteles);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_hotel);
         setSupportActionBar(toolbar);
 
         //Habilita el boton para ir a la actividad principal en el Toolbar
@@ -69,8 +61,8 @@ public class ListHoteles extends ActionBarActivity implements View.OnClickListen
         }
 
         list = (ListView) findViewById(R.id.listEquipaje);
-        AdaptadorEquipaje adaptadorEquipaje = new AdaptadorEquipaje(this, titulos, image, descripcion);
-        list.setAdapter(adaptadorEquipaje);
+        AdaptadorHoteles adaptadorHoteles = new AdaptadorHoteles(this, titulos, image, descripcion);
+        list.setAdapter(adaptadorHoteles);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -106,15 +98,15 @@ public class ListHoteles extends ActionBarActivity implements View.OnClickListen
 
     }
 
-    class AdaptadorEquipaje extends ArrayAdapter<String> {
+    class AdaptadorHoteles extends ArrayAdapter<String> {
 
         Context context;
         int[] imagenes;
         String[] titleArray;
         Map<String,String> desc;
 
-        AdaptadorEquipaje(Context c, String[] titulos, int[] imgs, Map<String,String> descr) {
-            super(c, R.layout.renglon_equipaje, R.id.tituloEquipaje, titulos);
+        AdaptadorHoteles(Context c, String[] titulos, int[] imgs, Map<String,String> descr) {
+            super(c, R.layout.renglon_hoteles, R.id.tituloEquipaje, titulos);
             this.context = c;
             this.imagenes = imgs;
             this.titleArray = titulos;
@@ -124,7 +116,7 @@ public class ListHoteles extends ActionBarActivity implements View.OnClickListen
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View row = inflater.inflate(R.layout.renglon_equipaje, parent, false);
+            View row = inflater.inflate(R.layout.renglon_hoteles, parent, false);
             ImageView logo = (ImageView) row.findViewById(R.id.logoEquipaje);
             TextView titulo = (TextView) row.findViewById(R.id.tituloEquipaje);
             TextView objs = (TextView) row.findViewById(R.id.objetosEquipaje);

@@ -1,7 +1,6 @@
-\select@language {spanish}
-\contentsline {chapter}{\'Indice general}{\es@scroman {iv}}{dummy.4}
-\contentsline {chapter}{\'Indice de figuras}{\es@scroman {viii}}{dummy.6}
-\contentsline {chapter}{\'Indice de tablas}{\es@scroman {xi}}{dummy.8}
+\contentsline {chapter}{\'Indice general}{iv}{dummy.4}
+\contentsline {chapter}{\'Indice de figuras}{viii}{dummy.6}
+\contentsline {chapter}{\'Indice de tablas}{xi}{dummy.8}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.10}
 \contentsline {section}{\numberline {1.1}Problem\IeC {\'a}tica}{2}{section.11}
 \contentsline {section}{\numberline {1.2}Soluci\IeC {\'o}n Propuesta}{3}{section.12}
@@ -25,7 +24,7 @@
 \contentsline {subsubsection}{\numberline {3.5.2.3}Pinpoint 3D-ID de RF technologies}{18}{subsubsection.39}
 \contentsline {subsubsection}{\numberline {3.5.2.4}Radar}{18}{subsubsection.40}
 \contentsline {subsubsection}{\numberline {3.5.2.5}Ultrasonidos}{19}{subsubsection.41}
-\contentsline {subsubsection}{\numberline {3.5.2.6}Visi\IeC {\'o}n Artificial}{20}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {3.5.2.6}Visi\IeC {\'o}n Artificial}{19}{subsubsection.42}
 \contentsline {subsubsection}{\numberline {3.5.2.7}Zigbee}{20}{subsubsection.43}
 \contentsline {subsubsection}{\numberline {3.5.2.8}Campo Magn\IeC {\'e}tico}{20}{subsubsection.44}
 \contentsline {section}{\numberline {3.6}Sistema Operativo M\IeC {\'o}vil Android}{22}{section.47}
@@ -37,7 +36,7 @@
 \contentsline {subsubsection}{\numberline {5.1.1.1}Hardware}{30}{subsubsection.55}
 \contentsline {subsubsection}{\numberline {5.1.1.2}Software}{31}{subsubsection.59}
 \contentsline {paragraph}{\numberline {5.1.1.2.1}Sistema Operativo M\IeC {\'o}vil}{31}{paragraph.60}
-\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{32}{subparagraph.62}
+\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{33}{subparagraph.62}
 \contentsline {subparagraph}{\numberline {5.1.1.2.1.2}Versiones de Android}{33}{subparagraph.63}
 \contentsline {paragraph}{\numberline {5.1.1.2.2}Lenguaje de Programaci\IeC {\'o}n}{34}{paragraph.66}
 \contentsline {paragraph}{\numberline {5.1.1.2.3}Sistema Operativo de Escritorio}{35}{paragraph.69}
@@ -75,81 +74,81 @@
 \contentsline {subsection}{\numberline {7.3.3}Caso de Uso Configurar Viaje}{67}{subsection.154}
 \contentsline {subsection}{\numberline {7.3.4}Caso de Uso Consultar Hotel}{69}{subsection.166}
 \contentsline {subsection}{\numberline {7.3.5}Caso de Uso Consultar Vuelo}{71}{subsection.179}
-\contentsline {subsection}{\numberline {7.3.6}Caso de Uso Consultar Informaci\IeC {\'o}n AICM}{74}{subsection.193}
-\contentsline {subsection}{\numberline {7.3.7}Caso de Uso Gestionar Equipaje}{76}{subsection.200}
-\contentsline {subsection}{\numberline {7.3.8}Caso de Uso Consultar Itinerario de Viaje}{78}{subsection.212}
-\contentsline {subsection}{\numberline {7.3.9}Caso de Uso Consultar Ruta casa-AICM}{80}{subsection.223}
-\contentsline {subsection}{\numberline {7.3.10}Caso de Uso Ubicar en AICM}{82}{subsection.231}
-\contentsline {subsection}{\numberline {7.3.11}Caso de Uso Consultar Informaci\IeC {\'o}n de Vuelo}{84}{subsection.237}
-\contentsline {section}{\numberline {7.4}Diagrama de Clases}{86}{section.252}
-\contentsline {section}{\numberline {7.5}Dise\IeC {\~n}o de Esquema de Base de Datos}{87}{section.254}
-\contentsline {section}{\numberline {7.6}Diagramas de Secuencia}{89}{section.258}
-\contentsline {section}{\numberline {7.7}Diagrama de Despliegue}{99}{section.271}
-\contentsline {section}{\numberline {7.8}Dise\IeC {\~n}o de la Interfaz Gr\IeC {\'a}fica del Usuario}{101}{section.281}
-\contentsline {subsection}{\numberline {7.8.1}Pantalla CU-U-01-1: Configurar viaje}{101}{subsection.282}
-\contentsline {subsection}{\numberline {7.8.2}Pantalla CU-U-02-1: Consultar Hotel}{103}{subsection.284}
-\contentsline {subsection}{\numberline {7.8.3}Pantalla CU-U-03-1: Consultar Vuelo}{105}{subsection.286}
-\contentsline {subsection}{\numberline {7.8.4}Pantalla CU-U-04-1: Consultar Informaci\IeC {\'o}n AICM}{107}{subsection.288}
-\contentsline {subsection}{\numberline {7.8.5}Pantalla CU-U-05-1: Gestionar Equipaje}{108}{subsection.290}
-\contentsline {subsection}{\numberline {7.8.6}Pantalla CU-U-06-1: Consultar Itinerario de Viaje}{110}{subsection.292}
-\contentsline {subsection}{\numberline {7.8.7}Pantalla CU-U-07-1: Consultar Ruta casa-AICM}{112}{subsection.294}
-\contentsline {subsection}{\numberline {7.8.8}Pantalla CU-U-08-1: Ubicar en AICM}{114}{subsection.296}
-\contentsline {subsection}{\numberline {7.8.9}Pantalla CU-U-09-1: Consultar Informaci\IeC {\'o}n de Vuelo}{116}{subsection.298}
-\contentsline {chapter}{\numberline {8}Desarrollo e Implementaci\IeC {\'o}n del Sistema}{117}{chapter.300}
-\contentsline {section}{\numberline {8.1}Introducci\IeC {\'o}n}{117}{section.301}
-\contentsline {section}{\numberline {8.2}Aplicaci\IeC {\'o}n Web (Servidor)}{117}{section.302}
-\contentsline {subsection}{\numberline {8.2.1}Generalidades}{118}{subsection.303}
-\contentsline {subsection}{\numberline {8.2.2}Funcionalidades}{118}{subsection.304}
-\contentsline {subsubsection}{\numberline {8.2.2.1}Iniciar Sesi\IeC {\'o}n}{118}{subsubsection.305}
-\contentsline {subsubsection}{\numberline {8.2.2.2}Gestionar Usuario}{120}{subsubsection.309}
-\contentsline {subsubsection}{\numberline {8.2.2.3}Gestionar Equipaje}{121}{subsubsection.312}
-\contentsline {subsubsection}{\numberline {8.2.2.4}Gestionar Servicio}{123}{subsubsection.317}
-\contentsline {subsubsection}{\numberline {8.2.2.5}Cerrar Sesi\IeC {\'o}n}{123}{subsubsection.320}
-\contentsline {section}{\numberline {8.3}Servicio Web TRASO}{125}{section.322}
-\contentsline {subsection}{\numberline {8.3.1}Generalidades}{125}{subsection.323}
-\contentsline {section}{\numberline {8.4}Aplicaci\IeC {\'o}n M\IeC {\'o}vil (Cliente)}{126}{section.324}
-\contentsline {subsection}{\numberline {8.4.1}Navegaci\IeC {\'o}n}{126}{subsection.325}
-\contentsline {subsection}{\numberline {8.4.2}M\IeC {\'o}dulo Configuraci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{129}{subsection.328}
-\contentsline {subsection}{\numberline {8.4.3}M\IeC {\'o}dulo Hoteles}{130}{subsection.330}
-\contentsline {subsubsection}{\numberline {8.4.3.1}M\IeC {\'o}dulo Hoteles Disponibles}{131}{subsubsection.332}
-\contentsline {subsection}{\numberline {8.4.4}M\IeC {\'o}dulo Vuelos}{133}{subsection.335}
-\contentsline {subsubsection}{\numberline {8.4.4.1}M\IeC {\'o}dulo Vuelos Disponibles}{136}{subsubsection.338}
-\contentsline {subsection}{\numberline {8.4.5}M\IeC {\'o}dulo Informaci\IeC {\'o}n del AICM}{139}{subsection.341}
-\contentsline {subsubsection}{\numberline {8.4.5.1}M\IeC {\'o}dulo Mapa del AICM}{140}{subsubsection.343}
-\contentsline {subsubsection}{\numberline {8.4.5.2}M\IeC {\'o}dulo Servicios del AICM}{142}{subsubsection.346}
-\contentsline {subsection}{\numberline {8.4.6}M\IeC {\'o}dulo Lista de Equipaje}{143}{subsection.348}
-\contentsline {subsubsection}{\numberline {8.4.6.1}M\IeC {\'o}dulo Nuevo Equipaje}{144}{subsubsection.350}
-\contentsline {subsection}{\numberline {8.4.7}M\IeC {\'o}dulo Itinerario de viaje}{145}{subsection.352}
-\contentsline {subsubsection}{\numberline {8.4.7.1}M\IeC {\'o}dulo Nuevo Itinerario de viaje}{146}{subsubsection.354}
-\contentsline {subsection}{\numberline {8.4.8}M\IeC {\'o}dulo Ruta al AICM}{147}{subsection.356}
-\contentsline {subsection}{\numberline {8.4.9}M\IeC {\'o}dulo Localizaci\IeC {\'o}n dentro del AICM}{152}{subsection.362}
-\contentsline {subsection}{\numberline {8.4.10}M\IeC {\'o}dulo Informaci\IeC {\'o}n de vuelo}{154}{subsection.365}
-\contentsline {subsubsection}{\numberline {8.4.10.1}M\IeC {\'o}dulo Informaci\IeC {\'o}n de mi vuelo}{156}{subsubsection.368}
-\contentsline {section}{\numberline {8.5}Navegaci\IeC {\'o}n y Gestos}{157}{section.370}
-\contentsline {subsection}{\numberline {8.5.1}Clic Simple}{157}{subsection.371}
-\contentsline {subsection}{\numberline {8.5.2}Desplazar}{158}{subsection.372}
-\contentsline {subsection}{\numberline {8.5.3}Deslizar}{158}{subsection.373}
-\contentsline {subsection}{\numberline {8.5.4}Pellizcar}{158}{subsection.374}
-\contentsline {subsection}{\numberline {8.5.5}Arrastrar}{159}{subsection.375}
-\contentsline {chapter}{\numberline {9}Pruebas}{160}{chapter.376}
-\contentsline {section}{\numberline {9.1}Pruebas de Casos de Uso principales}{160}{section.377}
-\contentsline {subsection}{\numberline {9.1.1}Configuraci\IeC {\'o}n Personal}{160}{subsection.378}
-\contentsline {subsection}{\numberline {9.1.2}Hoteles}{162}{subsection.380}
-\contentsline {subsection}{\numberline {9.1.3}Vuelos}{163}{subsection.382}
-\contentsline {subsection}{\numberline {9.1.4}Info AICM}{164}{subsection.384}
-\contentsline {subsection}{\numberline {9.1.5}Lista de Equipaje}{165}{subsection.386}
-\contentsline {subsection}{\numberline {9.1.6}Itinerario de viaje}{166}{subsection.388}
-\contentsline {subsection}{\numberline {9.1.7}Ruta al AICM}{167}{subsection.390}
-\contentsline {subsection}{\numberline {9.1.8}Ub\IeC {\'\i }cate}{168}{subsection.392}
-\contentsline {subsection}{\numberline {9.1.9}Info Vuelo}{169}{subsection.394}
-\contentsline {section}{\numberline {9.2}Pruebas Aplicaci\IeC {\'o}n m\IeC {\'o}vil TASMC}{169}{section.396}
-\contentsline {subsection}{\numberline {9.2.1}Obtenci\IeC {\'o}n de rutas}{169}{subsection.397}
-\contentsline {subsection}{\numberline {9.2.2}Actualizaci\IeC {\'o}n de informaci\IeC {\'o}n de hoteles disponibles}{172}{subsection.400}
-\contentsline {subsection}{\numberline {9.2.3}Actualizaci\IeC {\'o}n de informaci\IeC {\'o}n de vuelos disponibles}{173}{subsection.402}
-\contentsline {subsection}{\numberline {9.2.4}Pruebas de trayectorias para la localizaci\IeC {\'o}n dentro del AICM}{175}{subsection.405}
-\contentsline {subsection}{\numberline {9.2.5}Trayectoria redundante}{175}{subsection.406}
-\contentsline {subsection}{\numberline {9.2.6}Trayectoria zigzag}{176}{subsection.408}
-\contentsline {subsection}{\numberline {9.2.7}Trayectoria medio backbone}{177}{subsection.410}
-\contentsline {subsection}{\numberline {9.2.8}Trayectoria backbone}{178}{subsection.412}
-\contentsline {chapter}{\numberline {10}Trabajo a Futuro}{182}{chapter.416}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{185}{chapter*.417}
+\contentsline {subsection}{\numberline {7.3.6}Caso de Uso Consultar Informaci\IeC {\'o}n AICM}{73}{subsection.191}
+\contentsline {subsection}{\numberline {7.3.7}Caso de Uso Gestionar Equipaje}{75}{subsection.198}
+\contentsline {subsection}{\numberline {7.3.8}Caso de Uso Consultar Itinerario de Viaje}{77}{subsection.210}
+\contentsline {subsection}{\numberline {7.3.9}Caso de Uso Consultar Ruta casa-AICM}{79}{subsection.221}
+\contentsline {subsection}{\numberline {7.3.10}Caso de Uso Ubicar en AICM}{81}{subsection.229}
+\contentsline {subsection}{\numberline {7.3.11}Caso de Uso Consultar Informaci\IeC {\'o}n de Vuelo}{83}{subsection.235}
+\contentsline {section}{\numberline {7.4}Diagrama de Clases}{85}{section.250}
+\contentsline {section}{\numberline {7.5}Dise\IeC {\~n}o de Esquema de Base de Datos}{86}{section.252}
+\contentsline {section}{\numberline {7.6}Diagramas de Secuencia}{88}{section.256}
+\contentsline {section}{\numberline {7.7}Diagrama de Despliegue}{98}{section.269}
+\contentsline {section}{\numberline {7.8}Dise\IeC {\~n}o de la Interfaz Gr\IeC {\'a}fica del Usuario}{100}{section.279}
+\contentsline {subsection}{\numberline {7.8.1}Pantalla CU-U-01-1: Configurar viaje}{100}{subsection.280}
+\contentsline {subsection}{\numberline {7.8.2}Pantalla CU-U-02-1: Consultar Hotel}{102}{subsection.282}
+\contentsline {subsection}{\numberline {7.8.3}Pantalla CU-U-03-1: Consultar Vuelo}{104}{subsection.284}
+\contentsline {subsection}{\numberline {7.8.4}Pantalla CU-U-04-1: Consultar Informaci\IeC {\'o}n AICM}{106}{subsection.286}
+\contentsline {subsection}{\numberline {7.8.5}Pantalla CU-U-05-1: Gestionar Equipaje}{107}{subsection.288}
+\contentsline {subsection}{\numberline {7.8.6}Pantalla CU-U-06-1: Consultar Itinerario de Viaje}{109}{subsection.290}
+\contentsline {subsection}{\numberline {7.8.7}Pantalla CU-U-07-1: Consultar Ruta casa-AICM}{111}{subsection.292}
+\contentsline {subsection}{\numberline {7.8.8}Pantalla CU-U-08-1: Ubicar en AICM}{113}{subsection.294}
+\contentsline {subsection}{\numberline {7.8.9}Pantalla CU-U-09-1: Consultar Informaci\IeC {\'o}n de Vuelo}{115}{subsection.296}
+\contentsline {chapter}{\numberline {8}Desarrollo e Implementaci\IeC {\'o}n del Sistema}{116}{chapter.298}
+\contentsline {section}{\numberline {8.1}Introducci\IeC {\'o}n}{116}{section.299}
+\contentsline {section}{\numberline {8.2}Aplicaci\IeC {\'o}n Web (Servidor)}{116}{section.300}
+\contentsline {subsection}{\numberline {8.2.1}Generalidades}{117}{subsection.301}
+\contentsline {subsection}{\numberline {8.2.2}Funcionalidades}{117}{subsection.302}
+\contentsline {subsubsection}{\numberline {8.2.2.1}Iniciar Sesi\IeC {\'o}n}{117}{subsubsection.303}
+\contentsline {subsubsection}{\numberline {8.2.2.2}Gestionar Usuario}{119}{subsubsection.307}
+\contentsline {subsubsection}{\numberline {8.2.2.3}Gestionar Equipaje}{120}{subsubsection.310}
+\contentsline {subsubsection}{\numberline {8.2.2.4}Gestionar Servicio}{122}{subsubsection.315}
+\contentsline {subsubsection}{\numberline {8.2.2.5}Cerrar Sesi\IeC {\'o}n}{123}{subsubsection.318}
+\contentsline {section}{\numberline {8.3}Servicio Web TRASO}{124}{section.320}
+\contentsline {subsection}{\numberline {8.3.1}Generalidades}{124}{subsection.321}
+\contentsline {section}{\numberline {8.4}Aplicaci\IeC {\'o}n M\IeC {\'o}vil (Cliente)}{125}{section.322}
+\contentsline {subsection}{\numberline {8.4.1}Navegaci\IeC {\'o}n}{125}{subsection.323}
+\contentsline {subsection}{\numberline {8.4.2}M\IeC {\'o}dulo Configuraci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{128}{subsection.326}
+\contentsline {subsection}{\numberline {8.4.3}M\IeC {\'o}dulo Hoteles}{129}{subsection.328}
+\contentsline {subsubsection}{\numberline {8.4.3.1}M\IeC {\'o}dulo Hoteles Disponibles}{130}{subsubsection.330}
+\contentsline {subsubsection}{\numberline {8.4.3.2}M\IeC {\'o}dulo Detalle Hotel}{131}{subsubsection.332}
+\contentsline {subsection}{\numberline {8.4.4}M\IeC {\'o}dulo Vuelos}{132}{subsection.334}
+\contentsline {subsubsection}{\numberline {8.4.4.1}M\IeC {\'o}dulo Vuelos Disponibles}{133}{subsubsection.336}
+\contentsline {subsection}{\numberline {8.4.5}M\IeC {\'o}dulo Informaci\IeC {\'o}n del AICM}{134}{subsection.338}
+\contentsline {subsubsection}{\numberline {8.4.5.1}M\IeC {\'o}dulo Mapa del AICM}{135}{subsubsection.340}
+\contentsline {subsubsection}{\numberline {8.4.5.2}M\IeC {\'o}dulo Servicios del AICM}{137}{subsubsection.343}
+\contentsline {subsection}{\numberline {8.4.6}M\IeC {\'o}dulo Lista de Equipaje}{138}{subsection.345}
+\contentsline {subsubsection}{\numberline {8.4.6.1}M\IeC {\'o}dulo Nuevo Equipaje}{139}{subsubsection.347}
+\contentsline {subsection}{\numberline {8.4.7}M\IeC {\'o}dulo Itinerario de viaje}{140}{subsection.349}
+\contentsline {subsubsection}{\numberline {8.4.7.1}M\IeC {\'o}dulo Nuevo Itinerario de viaje}{141}{subsubsection.351}
+\contentsline {subsection}{\numberline {8.4.8}M\IeC {\'o}dulo Ruta al AICM}{142}{subsection.353}
+\contentsline {subsection}{\numberline {8.4.9}M\IeC {\'o}dulo Localizaci\IeC {\'o}n dentro del AICM}{147}{subsection.359}
+\contentsline {subsection}{\numberline {8.4.10}M\IeC {\'o}dulo Informaci\IeC {\'o}n de vuelo}{149}{subsection.362}
+\contentsline {subsubsection}{\numberline {8.4.10.1}M\IeC {\'o}dulo Informaci\IeC {\'o}n de mi vuelo}{151}{subsubsection.365}
+\contentsline {section}{\numberline {8.5}Navegaci\IeC {\'o}n y Gestos}{152}{section.367}
+\contentsline {subsection}{\numberline {8.5.1}Clic Simple}{152}{subsection.368}
+\contentsline {subsection}{\numberline {8.5.2}Desplazar}{153}{subsection.369}
+\contentsline {subsection}{\numberline {8.5.3}Deslizar}{153}{subsection.370}
+\contentsline {subsection}{\numberline {8.5.4}Pellizcar}{153}{subsection.371}
+\contentsline {subsection}{\numberline {8.5.5}Arrastrar}{154}{subsection.372}
+\contentsline {chapter}{\numberline {9}Pruebas}{155}{chapter.373}
+\contentsline {section}{\numberline {9.1}Pruebas de Casos de Uso principales}{155}{section.374}
+\contentsline {subsection}{\numberline {9.1.1}Configuraci\IeC {\'o}n Personal}{156}{subsection.375}
+\contentsline {subsection}{\numberline {9.1.2}Hoteles}{156}{subsection.377}
+\contentsline {subsection}{\numberline {9.1.3}Vuelos}{157}{subsection.379}
+\contentsline {subsection}{\numberline {9.1.4}Info AICM}{157}{subsection.381}
+\contentsline {subsection}{\numberline {9.1.5}Lista de Equipaje}{158}{subsection.383}
+\contentsline {subsection}{\numberline {9.1.6}Itinerario de viaje}{159}{subsection.385}
+\contentsline {subsection}{\numberline {9.1.7}Ruta al AICM}{159}{subsection.387}
+\contentsline {subsection}{\numberline {9.1.8}Ub\IeC {\'\i }cate}{160}{subsection.389}
+\contentsline {subsection}{\numberline {9.1.9}Info Vuelo}{160}{subsection.391}
+\contentsline {section}{\numberline {9.2}Pruebas Aplicaci\IeC {\'o}n m\IeC {\'o}vil TASMC}{161}{section.393}
+\contentsline {subsection}{\numberline {9.2.1}Obtenci\IeC {\'o}n de rutas}{161}{subsection.394}
+\contentsline {subsection}{\numberline {9.2.2}Pruebas de trayectorias para la localizaci\IeC {\'o}n dentro del AICM}{163}{subsection.397}
+\contentsline {subsection}{\numberline {9.2.3}Trayectoria redundante}{163}{subsection.398}
+\contentsline {subsection}{\numberline {9.2.4}Trayectoria zigzag}{164}{subsection.400}
+\contentsline {subsection}{\numberline {9.2.5}Trayectoria medio backbone}{165}{subsection.402}
+\contentsline {subsection}{\numberline {9.2.6}Trayectoria backbone}{166}{subsection.404}
+\contentsline {subsection}{\numberline {9.2.7}Concurrencia}{170}{subsection.408}
+\contentsline {chapter}{\numberline {10}Trabajo a Futuro}{172}{chapter.410}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{175}{chapter*.411}

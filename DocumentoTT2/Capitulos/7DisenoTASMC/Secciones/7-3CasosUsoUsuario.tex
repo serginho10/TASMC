@@ -253,8 +253,6 @@
 		\item Se despliega un formulario para realizar la búsqueda según: origen, destino y clase (Económico, Económico Premium, Business, Primera).
 		\item El usuario selecciona los parámetros de interés. \hyperlink{TrayectoriaB_CU-U-04}{[Trayectoria B]}.
 		\item Se  muestra un listado de vuelos disponibles con las características requeridas. \hyperlink{TrayectoriaC_CU-U-04}{[Trayectoria C]}.
-		\item El usuario puede realizar un filtrado de la lista por: clase o precios de bajo a alto o precios de alto a bajo.
-		\item	El usuario puede visualizar la información detallada de cada vuelo.
 	\end{enumerate}
 \end{flushleft}
 ----Fin del caso de uso
@@ -512,7 +510,8 @@
 	\textbf{Trayectoria Principal}\\
 	\begin{enumerate}
 		\item El usuario solicita generar una nueva ruta hacia el AICM. \hyperlink{TrayectoriaA_CU-U-08}{[Trayectoria A]}.
-		\item Se obtiene la ubicación actual del usuario y se genera la ruta hacia el AICM.
+		\item Se obtiene la ubicación actual del usuario.
+		 item Se pone el primer marcador a la ubicación actual y un segundo en la ubicación destino posteriormente se genera la ruta hacia el AICM
 		\item El usuario tiene a su disposición la ruta sugerida por el sistema para llegar desde su ubicación actual hacia el AICM.
 	\end{enumerate}
 \end{flushleft}
@@ -558,7 +557,7 @@
 	\hline
 		{Propósito}&\multicolumn{3}{p{11.2cm}|}{Obtener la ubicación del usuario dentro del AICM mediante el magnetómetro integrado en el dispositivo móvil. }\\
 	\hline
-		{Resumen}&\multicolumn{3}{p{11.2cm}|}{El usuario solicita explorar el AICM, el sistema despliega la sala de abordaje que el usuario haya proporcionado y visualiza los servicios en el interior del AICM.}\\	
+		{Resumen}&\multicolumn{3}{p{11.2cm}|}{El usuario solicita explorar el AICM, el sistema despliega el mapa del AICM-T1 para facilitar la localización dentro del mismo.}\\	
 	\hline
 		{Comentarios}&\multicolumn{3}{p{11.2cm}|}{El sistema deberá estar entrenado, de lo contrario, la ubicación será ineficiente.}\\
 	\hline

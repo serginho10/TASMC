@@ -54,8 +54,6 @@ Al ingresar al módulo de hoteles se mostrara una vista que contiene un formular
 
 \begin{itemize}
 \item Nombre de la ciudad o lugar destino.
-\item Fecha de entrada y salida del hotel.
-\item Número de habitaciones requeridas.
 \item Número de huéspedes.
 \item Número de estrellas del hotel.
 \end{itemize}
@@ -73,64 +71,50 @@ Al ingresar al módulo de hoteles se mostrara una vista que contiene un formular
 Al realizar la búsqueda de hotel en la vista de Hoteles se mostrará la información 
 referente dependiendo de las características que se hayan ingresado y la disponibilidad que exista, como es:
 \begin{itemize}
-\item Nombre de la ciudad o lugar destino.
 \item Nombre del hotel.
-\item Precio del hotel.
-\item Número de estrellas.
+\item Teléfono.
+\item Número de estrellas representado por medio de una imagen.
 \end{itemize}
-
 \begin{figure}[h]
 	\centering
-		\includegraphics[width=0.5\textwidth]{Figuras/hotelesdisponibles.png}
+		\includegraphics[width=0.5\textwidth]{Figuras/hdisponible.png}
 		\rule{30em}{0.5pt}
 	\caption[Hoteles Disponibles]{Hoteles Disponibles}
 	\label{fig:hotelesDisponibles}
 \end{figure}
 
-Dicha información podrá ser filtrada por número de estrellas y precio.
+\clearpage
+
+\subsubsection{Módulo Detalle Hotel}
+Finalmente se podrá obtener la información completa del hotel seleccionado en la lista de hoteles disponibles. Además se mostrará un 
+listado de las distintas habitaciones que ofrece el hotel así como teléfono y página web.
 
 \begin{figure}[h]
 	\centering
-		\includegraphics[width=0.5\textwidth]{Figuras/filtrohoteles.png}
+		\includegraphics[width=0.5\textwidth]{Figuras/detalle.png}
 		\rule{30em}{0.5pt}
-	\caption[Filtro para Hoteles]{Filtro para Hoteles}
-	\label{fig:filtroHoteles}
+	\caption[Hoteles Disponibles]{Hoteles Disponibles}
+	\label{fig:hotelesDisponibles}
 \end{figure}
+
 \clearpage
 
 \subsection{Módulo Vuelos}
-El módulo de vuelos esta divido por dos vistas, las cuales son:
-
-\begin{itemize}
-\item Ida.
-\item Ida y vuelta.
-\end{itemize}
-
-Las cuales a su vez contienen un formulario donde se podrán ingresar los parámetros de vuelos, 
-de los cuales se requiere obtener información, los valores que deben ser ingresados son:
+Este módulo de vuelos mostrará una vista que contiene un formulario el cual servirá para realizar una búsqueda de vuelos, según los parámetros ingresados como son:
 
 \begin{itemize}
 \item Origen.
 \item Destino.
-\item Fecha de Ida y Fecha de ida y vuelta para la vista de Ida e Ida y vuelta respectivamente.
-\item Número de pasajeros.
+\item Fecha de Ida.
 \item Clase de vuelo.
 \end{itemize}
 
 \begin{figure}[h]
 	\centering
-		\includegraphics[width=0.5\textwidth]{Figuras/idavuelos.png}
+		\includegraphics[width=0.5\textwidth]{Figuras/buscav.png}
 		\rule{30em}{0.5pt}
-	\caption[Buscar Vuelos de Ida]{Buscar Vuelos de Ida}
-	\label{fig:vuelosIda}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-		\includegraphics[width=0.5\textwidth]{Figuras/idavueltavuelos.png}
-		\rule{30em}{0.5pt}
-	\caption[Buscar Vuelo Redondo]{Buscar Vuelo Redondo}
-	\label{fig:vueloRedondo}
+	\caption[Buscar Vuelos]{Buscar Vuelos}
+	\label{fig:vuelos}
 \end{figure}
 \clearpage
 
@@ -138,29 +122,18 @@ de los cuales se requiere obtener información, los valores que deben ser ingres
 Al realizar la búsqueda de vuelo en la vista de Vuelos se mostrará la información referente dependiendo de las características que se hayan ingresado y la disponibilidad que exista, 
 como es:
 \begin{itemize}
-\item Precio de vuelo.
-\item Fecha de Ida y vuelta.
-\item Hora de salida y llegada, así como el origen y destino tanto del vuelo de ida como el de vuelta.
-\item Tiempo total de viaje.
-\item Número de escalas.
+\item Número de vuelo.
+\item Hora de salida y llegada.
+\item Origen y destino.
+\item Aerolínea.
 \end{itemize}
 
 \begin{figure}[h]
 	\centering
-		\includegraphics[width=0.5\textwidth]{Figuras/vuelosdisponibles.png}
+		\includegraphics[width=0.5\textwidth]{Figuras/vdisponibles.png}
 		\rule{30em}{0.5pt}
 	\caption[Vuelos Disponibles]{Vuelos Disponibles}
 	\label{fig:vuelosDisponibles}
-\end{figure}
-
-Dicha información podrá ser filtrada por fechas y precio.
-
-\begin{figure}[h]
-	\centering
-		\includegraphics[width=0.5\textwidth]{Figuras/filtrovuelos.png}
-		\rule{30em}{0.5pt}
-	\caption[Filtro para Vuelos]{Filtro para Vuelos}
-	\label{fig:filtroVuelos}
 \end{figure}
 \clearpage
 

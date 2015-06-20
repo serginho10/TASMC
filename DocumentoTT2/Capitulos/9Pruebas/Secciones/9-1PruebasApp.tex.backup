@@ -14,6 +14,8 @@ La aplicación móvil se compone de nueve vistas principales:
 
 A su vez cada módulo puede desplegar información diversa en otras vistas o en su caso a partir opciones adicionales sobre un menú 
 secundario.
+\clearpage
+
 \subsection{Configuración Personal}
 
 \definecolor{blanco}{RGB}{255,255,255}
@@ -47,7 +49,7 @@ secundario.
       		\hline 
 		\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo de Configuración Personal} 
+	\caption[Pruebas del módulo de Configuración Personal]{Pruebas del módulo de Configuración Personal} 
 	\label{tab:pruebasConfiguracion}
 \end{table}
 \clearpage
@@ -72,13 +74,13 @@ secundario.
 				\multicolumn{1}{m{1.5cm}|}{\centering \includegraphics[width=8mm, height=8mm]{Figuras/palomita.png}} \\
       		\hline \rowcolor[RGB]{240,248,255} 
 				\multicolumn{1}{|m{1.8cm}|}{\centering CU-U-02} &
-				\multicolumn{1}{m{4.5cm}|}{\centering Clic normal en filtrado por precio} &
-				\multicolumn{1}{m{5.5cm}|}{\centering Se organiza la información de hoteles de menor a mayor precio.} &
+				\multicolumn{1}{m{4.5cm}|}{\centering Clic normal en detalle de hotel} &
+				\multicolumn{1}{m{5.5cm}|}{\centering Muestra la información completa del hotel.} &
 				\multicolumn{1}{m{1.5cm}|}{\centering \includegraphics[width=8mm, height=8mm]{Figuras/palomita.png}} \\
 		\hline 
 				\multicolumn{1}{|m{1.8cm}|}{\centering CU-U-02} &
-				\multicolumn{1}{m{4.5cm}|}{\centering Clic normal en filtrado por número de estrellas} &
-				\multicolumn{1}{m{5.5cm}|}{\centering Se organiza la información de hoteles de menor a mayor número de estrellas.} &
+				\multicolumn{1}{m{4.5cm}|}{\centering Clic normal en llamar hotel} &
+				\multicolumn{1}{m{5.5cm}|}{\centering Activa el servicio de llamada hacia el número propio del hotel.} &
 				\multicolumn{1}{m{1.5cm}|}{\centering \includegraphics[width=8mm, height=8mm]{Figuras/palomita.png}} \\
       		\hline \rowcolor[RGB]{240,248,255} 
 				\multicolumn{1}{|m{1.8cm}|}{\centering CU-U-02} &
@@ -90,7 +92,7 @@ secundario.
       		        
 		\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo de Hoteles} 
+	\caption[Pruebas del módulo de Hoteles]{Pruebas del módulo de Hoteles} 
 	\label{tab:pruebasHoteles}
 \end{table}
 \clearpage
@@ -138,7 +140,7 @@ secundario.
       		        \hline 
     		\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo de Vuelos} 
+	\caption[Pruebas del módulo de Vuelos]{Pruebas del módulo de Vuelos} 
 	\label{tab:pruebasVuelos}
 \end{table}
 
@@ -176,7 +178,7 @@ secundario.
       		        \hline 
     		\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo de Info AICM} 
+	\caption[Pruebas del módulo de Info AICM]{Pruebas del módulo de Info AICM} 
 	\label{tab:pruebasInfoAICM}
 \end{table}
 
@@ -223,7 +225,7 @@ secundario.
 		      		              		        
     		\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo Lista de Equipaje} 
+	\caption[Pruebas del módulo Lista de Equipaje]{Pruebas del módulo Lista de Equipaje} 
 	\label{tab:pruebasEquipaje}
 \end{table}
 
@@ -269,7 +271,7 @@ secundario.
 		      		              		        
     		\end{tabular}
     	\end{center}
-	\caption[Pruebas del módulo de Itinerario} 
+	\caption[Pruebas del módulo de Itinerario]{Pruebas del módulo de Itinerario} 
 	\label{tab:pruebasItinerario}
 \end{table}
 
@@ -302,7 +304,7 @@ secundario.
 		\hline 
     	\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo Ruta al AICM} 
+	\caption[Pruebas del módulo Ruta al AICM]{Pruebas del módulo Ruta al AICM} 
 	\label{tab:pruebasRuta}
 \end{table}
 
@@ -329,7 +331,7 @@ secundario.
       		\hline 
     	\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo Ubicate} 
+	\caption[Pruebas del módulo Ubicate]{Pruebas del módulo Ubicate} 
 	\label{tab:pruebasUbicate}
 \end{table}
 
@@ -363,7 +365,7 @@ secundario.
 		\hline 
     	\end{tabular}
 	\end{center}
-	\caption[Pruebas del módulo Info Vuelo} 
+	\caption[Pruebas del módulo Info Vuelo]{Pruebas del módulo Info Vuelo} 
 	\label{tab:pruebasInfoVuelo}
 \end{table}
 
@@ -430,8 +432,8 @@ realizando una nueva petición JSON al servicio externo que brinda está informa
 \clearpage
 
 \subsection{Pruebas de trayectorias para la localización dentro del AICM}
-Para probar el módulo de ubicate se realizaron pruebas bajo el siguiente procedimiento:
-1. Se trazaron distintos tipos de trayectorias como son:
+Para probar el módulo de ubicate se realizaron un trazado de distintos tipos de trayectorias donde se analizó cual fue la mejor 
+opción en cuestión de exactitud. 
 
 \subsection{Trayectoria redundante}
 Se trazo una trayectoria redundante con la finalidad de tener un camino que fuera de ida y vuelta. Los resultados que se obtuvieron 
@@ -511,5 +513,6 @@ mismas donde la respuesta a la ubicación en interiores iba a perder capacidad.
 Finalmente se realizaron mediciones de los valores de espectros magnéticos,los cuales son guardados en cada trayectoria trazada, 
 de igual manera se encontro que dichos valores iban a ser variables dependiendo del flujo de personas, ya que ellos pueden acarrear 
 distintos objetos que pueden generar variaciones al espectro magnético, de esta manera el rendimiento final que se pudó obtener utilizando 
-esta API es del ochenta porciento.
+esta API es del ochenta porciento. Es por esto que se planteá como trabajo a futuro poder montar una nueva infraestructura de sensores 
+que permitan obtener una mejor respuesta.
 

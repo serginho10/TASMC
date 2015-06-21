@@ -55,7 +55,7 @@ public class RutaAicm extends ActionBarActivity implements GoogleMap.OnMapClickL
         markerPoints = new ArrayList<LatLng>();
         mapa = ((MapFragment) getFragmentManager()
                 .findFragmentById(R.id.map)).getMap();
-        mapa.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+
         mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(AICM, 15));
         mapa.setMyLocationEnabled(true);
         mapa.getUiSettings().setZoomControlsEnabled(false);

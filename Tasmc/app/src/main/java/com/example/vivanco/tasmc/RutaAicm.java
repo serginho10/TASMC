@@ -1,14 +1,18 @@
 package com.example.vivanco.tasmc;
 
 import android.graphics.Color;
+import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -26,6 +30,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -41,6 +46,13 @@ public class RutaAicm extends ActionBarActivity implements GoogleMap.OnMapClickL
     ArrayList<LatLng> markerPoints;
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_ruta_aicm, menu);
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ruta_aicm);
@@ -51,6 +63,7 @@ public class RutaAicm extends ActionBarActivity implements GoogleMap.OnMapClickL
         //Habilita el boton para ir a la actividad principal en el Toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         // Initializing
         markerPoints = new ArrayList<LatLng>();
         mapa = ((MapFragment) getFragmentManager()
@@ -297,9 +310,36 @@ public class RutaAicm extends ActionBarActivity implements GoogleMap.OnMapClickL
 
                 // Adding all the points in the route to LineOptions
                 lineOptions.addAll(points);
-                lineOptions.width(5);
+                lineOptions.width(10);
                 lineOptions.color(Color.RED);
             }
+
+            float distanciaTotal=0, tiempoTotal=0;
+
+            ArrayList<LatLng> puntos = (ArrayList<LatLng>) lineOptions.getPoints();
+            double latAct=0.0, lonAct=0.0, latAnt=0.0, lonAnt=0.0;
+            for(int i = 0; i < puntos.size(); i++){
+                if(i == 0){
+                    latAnt = puntos.get(i).latitude;
+                    lonAnt = puntos.get(i).longitude;
+                }else{
+                    latAct = puntos.get(i).latitude;
+                    lonAct = puntos.get(i).longitude;
+                    float[] res = new float[1];
+                    Location.distanceBetween(latAnt, lonAnt, latAct, lonAct, res);
+                    float distancia = res[0];
+                    float tiempo = (distancia/40000)*60;
+                    distanciaTotal += distancia;
+                    tiempoTotal += tiempo;
+                    latAnt = latAct;
+                    lonAnt = lonAct;
+                }
+            }
+
+
+            TextView tvTiempo = (TextView) findViewById(R.id.tvTiempo);
+            tvTiempo.setText(Math.round((distanciaTotal/1000.0)*100.0)/100.0+" km en "+Math.round(tiempoTotal)+" min");
+            tvTiempo.setVisibility(View.VISIBLE);
 
             // Drawing polyline in the Google Map for the i-th route
             mapa.addPolyline(lineOptions);
@@ -320,6 +360,15 @@ public class RutaAicm extends ActionBarActivity implements GoogleMap.OnMapClickL
         //Si el id seleccionado es igual al del home regresa a la principal
         if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
+        }
+        if(id == R.id.vista){
+            if(item.getTitle().toString().compareTo(getString(R.string.satelite)) == 0){
+                mapa.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                item.setTitle(getString(R.string.relieve));
+            }else{
+                mapa.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                item.setTitle(getString(R.string.satelite));
+            }
         }
 
         return super.onOptionsItemSelected(item);

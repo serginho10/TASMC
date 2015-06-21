@@ -770,6 +770,8 @@
     <string name="def_costo">Costo no definido</string>
     <string name="mensaje_toastnohotel">No hay información de la ciudad buscada.</string>
     <string name="mensaje_toastnovuelo">No hay información del vuelo buscado.</string>
+    <string name="satelite">Satélite</string>
+    <string name="relieve">Relieve</string>
 
 </resources>
 

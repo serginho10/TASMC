@@ -83,7 +83,7 @@
 
     <style name="BarraPersonalRut" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textColorPrimary">@color/texto_iconos</item>
-        <item name="android:textColor">@color/primarioTexto</item>
+        <item name="android:textColor">@color/texto_iconos</item>
         <item name="android:textColorSecondary">@color/acentuadoRuta</item>
     </style>
 

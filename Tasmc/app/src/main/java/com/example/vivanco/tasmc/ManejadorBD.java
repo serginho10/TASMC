@@ -308,7 +308,7 @@ public class ManejadorBD extends SQLiteOpenHelper {
     public Objeto[] obtenerObjetos() {
         db = getReadableDatabase();
         Cursor c = db.rawQuery("select * from objeto order by nombre", null);
-        Objeto[] obj = new Objeto[c.getCount()-1];
+        Objeto[] obj = new Objeto[c.getCount()];
         int i = 0;
         while (c.moveToNext()) {
             if ((c.getString(1)).compareTo("default") != 0) {

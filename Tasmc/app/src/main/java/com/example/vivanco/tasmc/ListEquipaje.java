@@ -84,7 +84,7 @@ public class ListEquipaje extends ActionBarActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent intent = new Intent(this, NuevoEquipaje.class);
         startActivity(intent);
-
+        finish();
     }
 
     class AdaptadorEquipaje extends ArrayAdapter<String> {

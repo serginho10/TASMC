@@ -82,7 +82,7 @@ public class NuevoEquipaje extends ActionBarActivity {
                 String nombreEquipaje = etNombreEquipaje.getText().toString();
                 if(nombreEquipaje.length() != 0) {
                     java.util.Date fecha = new Date();
-                    String id = fecha.getDay() +""+fecha.getMonth()+""+fecha.getHours()+""+fecha.getMinutes();
+                    String id = fecha.getDay() +""+fecha.getMonth()+""+fecha.getMinutes()+""+fecha.getSeconds();
                     bd.guardarEquipaje(new Equipaje(Integer.parseInt(id), nombreEquipaje));
                     for(int i = 0; i < grupos.size();i++){
                         ArrayList<String> sel = grupos.get(i).seleccion;
@@ -90,8 +90,8 @@ public class NuevoEquipaje extends ActionBarActivity {
                             bd.guardarEquipajeHasObjeto(new EquipajeHasObjeto(Integer.parseInt(id),bd.getIdObjeto(sel.get(j))));
                         }
                     }
-                    finish();
                     startActivity(new Intent(getApplicationContext(), ListEquipaje.class));
+                    finish();
                 }else etNombreEquipaje.setError( "Debes ingresar un nombre de Equipaje" );
             }
         });

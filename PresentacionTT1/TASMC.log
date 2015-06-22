@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 APR 2015 19:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 JUN 2015 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,58 +1184,27 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<imagenes/ipn.jpg, id=42, 195.73125pt x 287.0725pt>
+File: imagenes/ipn.jpg Graphic file (type jpg)
+ <use imagenes/ipn.jpg>
+Package pdftex.def Info: imagenes/ipn.jpg used on input line 50.
+(pdftex.def)             Requested size: 32.9782pt x 48.36958pt.
 
-LaTeX Warning: File `imagenes/ipn.jpg' not found on input line 50.
+<imagenes/escom.jpg, id=43, 226.8475pt x 200.75pt>
+File: imagenes/escom.jpg Graphic file (type jpg)
+ <use imagenes/escom.jpg>
+Package pdftex.def Info: imagenes/escom.jpg used on input line 50.
+(pdftex.def)             Requested size: 48.22781pt x 42.67912pt.
 
-
-! Package pdftex.def Error: File `imagenes/ipn.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{frame}
-                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/escom.jpg' not found on input line 50.
-
-
-! Package pdftex.def Error: File `imagenes/escom.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{frame}
-                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (22.98265pt too wide) in paragraph at lines 50--50
+Overfull \hbox (13.141pt too wide) in paragraph at lines 50--50
 [][] 
  []
 
-
-LaTeX Warning: File `imagenes/logo.png' not found on input line 50.
-
-
-! Package pdftex.def Error: File `imagenes/logo.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{frame}
-                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imagenes/logo.png, id=44, 34.6896pt x 34.6896pt>
+File: imagenes/logo.png Graphic file (type png)
+ <use imagenes/logo.png>
+Package pdftex.def Info: imagenes/logo.png used on input line 50.
+(pdftex.def)             Requested size: 48.3719pt x 48.36958pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
@@ -1243,159 +1212,81 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./TASMC.toc
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+nes/ipn.jpg> <./imagenes/escom.jpg> <./imagenes/logo.png>] (./TASMC.toc
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-) [2
+)
+[2
 
 ] [3
 
-]
+] <imagenes/nvuelo.jpg, id=158, 721.69624pt x 501.875pt>
+File: imagenes/nvuelo.jpg Graphic file (type jpg)
 
-LaTeX Warning: File `imagenes/nvuelo.jpg' not found on input line 93.
+<use imagenes/nvuelo.jpg>
+Package pdftex.def Info: imagenes/nvuelo.jpg used on input line 93.
+(pdftex.def)             Requested size: 81.82053pt x 56.9055pt.
 
+<imagenes/nhotel.jpg, id=159, 231.264pt x 154.07964pt>
+File: imagenes/nhotel.jpg Graphic file (type jpg)
 
-! Package pdftex.def Error: File `imagenes/nvuelo.jpg' not found.
+<use imagenes/nhotel.jpg>
+Package pdftex.def Info: imagenes/nhotel.jpg used on input line 93.
+(pdftex.def)             Requested size: 85.41107pt x 56.9055pt.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 \end{frame}
-                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imagenes/nitinerario.jpg, id=160, 672.5125pt x 448.67625pt>
+File: imagenes/nitinerario.jpg Graphic file (type jpg)
 
+<use imagenes/nitinerario.jpg>
+Package pdftex.def Info: imagenes/nitinerario.jpg used on input line 93.
+(pdftex.def)             Requested size: 85.28499pt x 56.9055pt.
+ [4
 
-LaTeX Warning: File `imagenes/nhotel.jpg' not found on input line 93.
+ <./imagenes/nvuelo.jpg> <./imagenes/nhotel.jpg> <./imagenes/nitinerario.jpg>]
+<imagenes/pdocumento.jpg, id=190, 1405.25pt x 1053.9375pt>
+File: imagenes/pdocumento.jpg Graphic file (type jpg)
 
+<use imagenes/pdocumento.jpg>
+Package pdftex.def Info: imagenes/pdocumento.jpg used on input line 115.
+(pdftex.def)             Requested size: 75.86307pt x 56.9055pt.
 
-! Package pdftex.def Error: File `imagenes/nhotel.jpg' not found.
+<imagenes/pinpuntual.jpg, id=191, 301.125pt x 200.75pt>
+File: imagenes/pinpuntual.jpg Graphic file (type jpg)
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 \end{frame}
-                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use imagenes/pinpuntual.jpg>
+Package pdftex.def Info: imagenes/pinpuntual.jpg used on input line 115.
+(pdftex.def)             Requested size: 85.35744pt x 56.9055pt.
 
+<imagenes/pperderse.jpg, id=192, 386.19281pt x 214.55156pt>
+File: imagenes/pperderse.jpg Graphic file (type jpg)
 
-LaTeX Warning: File `imagenes/nitinerario.jpg' not found on input line 93.
+<use imagenes/pperderse.jpg>
+Package pdftex.def Info: imagenes/pperderse.jpg used on input line 115.
+(pdftex.def)             Requested size: 102.42899pt x 56.9055pt.
+ [5
 
+ <./imagenes/pdocumento.jpg> <./imagenes/pinpuntual.jpg> <./imagenes/pperderse.
+jpg>]
+<imagenes/queEs.jpg, id=220, 345.29pt x 344.28625pt>
+File: imagenes/queEs.jpg Graphic file (type jpg)
+ <use imagenes/queEs.jpg>
+Package pdftex.def Info: imagenes/queEs.jpg used on input line 141.
+(pdftex.def)             Requested size: 142.67622pt x 142.26378pt.
 
-! Package pdftex.def Error: File `imagenes/nitinerario.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 \end{frame}
-                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4
-
-]
-
-LaTeX Warning: File `imagenes/pdocumento.jpg' not found on input line 115.
-
-
-! Package pdftex.def Error: File `imagenes/pdocumento.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/pinpuntual.jpg' not found on input line 115.
-
-
-! Package pdftex.def Error: File `imagenes/pinpuntual.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/pperderse.jpg' not found on input line 115.
-
-
-! Package pdftex.def Error: File `imagenes/pperderse.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[5
-
-]
-
-LaTeX Warning: File `imagenes/queEs.jpg' not found on input line 141.
-
-
-! Package pdftex.def Error: File `imagenes/queEs.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (28.46059pt too wide) in paragraph at lines 141--141
+Overfull \hbox (28.8652pt too wide) in paragraph at lines 141--141
  [] 
  []
 
 [6
 
-]
+ <./imagenes/queEs.jpg>]
+File: imagenes/queEs.jpg Graphic file (type jpg)
+ <use imagenes/queEs.jpg>
+Package pdftex.def Info: imagenes/queEs.jpg used on input line 168.
+(pdftex.def)             Requested size: 142.67622pt x 142.26378pt.
 
-LaTeX Warning: File `imagenes/queEs.jpg' not found on input line 168.
-
-
-! Package pdftex.def Error: File `imagenes/queEs.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.168 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (28.46059pt too wide) in paragraph at lines 168--168
+Overfull \hbox (28.8652pt too wide) in paragraph at lines 168--168
  [] 
  []
 
@@ -1409,60 +1300,30 @@ Overfull \vbox (10.47522pt too high) detected at line 168
 
 ] [9
 
-]
+] <imagenes/mobiled.png, id=335, 480.8364pt x 233.673pt>
+File: imagenes/mobiled.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/mobiled.png' not found on input line 202.
+<use imagenes/mobiled.png>
+Package pdftex.def Info: imagenes/mobiled.png used on input line 202.
+(pdftex.def)             Requested size: 292.73749pt x 142.26378pt.
+ [10
 
-
-! Package pdftex.def Error: File `imagenes/mobiled.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[10
-
-] [11
+ <./imagenes/mobiled.png>] [11
 
 ]
+<imagenes/computadoras.png, id=393, 357.335pt x 286.06876pt>
+File: imagenes/computadoras.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/computadoras.png' not found on input line 236.
+<use imagenes/computadoras.png>
+Package pdftex.def Info: imagenes/computadoras.png used on input line 236.
+(pdftex.def)             Requested size: 170.59737pt x 136.5733pt.
 
+<imagenes/telefono.png, id=394, 394.47375pt x 218.8175pt>
+File: imagenes/telefono.png Graphic file (type png)
 
-! Package pdftex.def Error: File `imagenes/computadoras.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/telefono.png' not found on input line 236.
-
-
-! Package pdftex.def Error: File `imagenes/telefono.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<use imagenes/telefono.png>
+Package pdftex.def Info: imagenes/telefono.png used on input line 236.
+(pdftex.def)             Requested size: 194.91298pt x 108.12054pt.
 
 Overfull \hbox (91.04872pt too wide) detected at line 236
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
@@ -1470,95 +1331,58 @@ Overfull \hbox (91.04872pt too wide) detected at line 236
 
 [12
 
-] [13
+ <./imagenes/computadoras.png> <./imagenes/telefono.png>] [13
 
 ]
+<imagenes/indooratlas.png, id=453, 429.605pt x 146.5475pt>
+File: imagenes/indooratlas.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/indooratlas.png' not found on input line 272.
+<use imagenes/indooratlas.png>
+Package pdftex.def Info: imagenes/indooratlas.png used on input line 272.
+(pdftex.def)             Requested size: 166.81764pt x 56.9055pt.
+ [14
 
+ <./imagenes/indooratlas.png>]
+<imagenes/rh.png, id=484, 414.54875pt x 61.22874pt>
+File: imagenes/rh.png Graphic file (type png)
+ <use imagenes/rh.png>
+Package pdftex.def Info: imagenes/rh.png used on input line 294.
+(pdftex.def)             Requested size: 144.47433pt x 21.33955pt.
 
-! Package pdftex.def Error: File `imagenes/indooratlas.png' not found.
+Overfull \hbox (2.21056pt too wide) in paragraph at lines 294--294
+[][]  
+ []
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.272 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imagenes/rc.png, id=485, 384.43625pt x 58.2175pt>
+File: imagenes/rc.png Graphic file (type png)
+ <use imagenes/rc.png>
+Package pdftex.def Info: imagenes/rc.png used on input line 294.
+(pdftex.def)             Requested size: 142.79059pt x 21.62393pt.
 
-[14
+Overfull \hbox (0.52681pt too wide) in paragraph at lines 294--294
+[][]  
+ []
 
-]
+<imagenes/rt.png, id=486, 354.32375pt x 140.525pt>
+File: imagenes/rt.png Graphic file (type png)
+ <use imagenes/rt.png>
+Package pdftex.def Info: imagenes/rt.png used on input line 294.
+(pdftex.def)             Requested size: 143.4841pt x 56.9055pt.
 
-LaTeX Warning: File `imagenes/rh.png' not found on input line 294.
+Overfull \hbox (1.22032pt too wide) in paragraph at lines 294--294
+[][]  
+ []
 
-
-! Package pdftex.def Error: File `imagenes/rh.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/rc.png' not found on input line 294.
-
-
-! Package pdftex.def Error: File `imagenes/rc.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/rt.png' not found on input line 294.
-
-
-! Package pdftex.def Error: File `imagenes/rt.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/ct.png' not found on input line 294.
-
-
-! Package pdftex.def Error: File `imagenes/ct.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imagenes/ct.png, id=487, 223.83624pt x 125.46875pt>
+File: imagenes/ct.png Graphic file (type png)
+ <use imagenes/ct.png>
+Package pdftex.def Info: imagenes/ct.png used on input line 294.
+(pdftex.def)             Requested size: 142.13443pt x 79.6678pt.
 
 [15
 
-] [16
+ <./imagenes/rh.png> <./imagenes/rc.png> <./imagenes/rt.png> <./imagenes/ct.png
+>] [16
 
 ] [17
 
@@ -1567,185 +1391,89 @@ If that doesn't work, type  X <return>  to quit.
 ] [19
 
 ]
+<imagenes/arquitectura.png, id=629, 333.8874pt x 249.5724pt>
+File: imagenes/arquitectura.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/arquitectura.png' not found on input line 382.
+<use imagenes/arquitectura.png>
+Package pdftex.def Info: imagenes/arquitectura.png used on input line 382.
+(pdftex.def)             Requested size: 247.42943pt x 184.9429pt.
+ [20
 
+ <./imagenes/arquitectura.png>]
+<imagenes/cugeneralAdministrador.jpg, id=658, 369.38pt x 317.185pt>
+File: imagenes/cugeneralAdministrador.jpg Graphic file (type jpg)
 
-! Package pdftex.def Error: File `imagenes/arquitectura.png' not found.
+<use imagenes/cugeneralAdministrador.jpg>
+Package pdftex.def Info: imagenes/cugeneralAdministrador.jpg used on input line
+ 390.
+(pdftex.def)             Requested size: 215.3847pt x 184.9429pt.
+ [21
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.382 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ <./imagenes/cugeneralAdministrador.jpg>] <imagenes/cugeneralUsuario.jpg, id=68
+6, 931.48pt x 630.355pt>
+File: imagenes/cugeneralUsuario.jpg Graphic file (type jpg)
 
-[20
+<use imagenes/cugeneralUsuario.jpg>
+Package pdftex.def Info: imagenes/cugeneralUsuario.jpg used on input line 398.
+(pdftex.def)             Requested size: 273.29182pt x 184.9429pt.
+ [22
 
-]
+ <./imagenes/cugeneralUsuario.jpg>]
+<imagenes/diagramaClasesMovil.png, id=715, 1006.76125pt x 1083.04625pt>
+File: imagenes/diagramaClasesMovil.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/cugeneralAdministrador.jpg' not found on input li
-ne 390.
+<use imagenes/diagramaClasesMovil.png>
+Package pdftex.def Info: imagenes/diagramaClasesMovil.png used on input line 40
+6.
+(pdftex.def)             Requested size: 171.91524pt x 184.9429pt.
+ [23
 
+ <./imagenes/diagramaClasesMovil.png>] <imagenes/secConsultarVuelo.jpg, id=744,
+ 707.64375pt x 401.5pt>
+File: imagenes/secConsultarVuelo.jpg Graphic file (type jpg)
 
-! Package pdftex.def Error: File `imagenes/cugeneralAdministrador.jpg' not foun
-d.
+<use imagenes/secConsultarVuelo.jpg>
+Package pdftex.def Info: imagenes/secConsultarVuelo.jpg used on input line 414.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.390 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+(pdftex.def)             Requested size: 325.97359pt x 184.9429pt.
+ [24
 
-[21
+ <./imagenes/secConsultarVuelo.jpg>]
+<imagenes/secGestionarEquipaje.png, id=772, 335.8146pt x 327.624pt>
+File: imagenes/secGestionarEquipaje.png Graphic file (type png)
 
-]
+<use imagenes/secGestionarEquipaje.png>
+Package pdftex.def Info: imagenes/secGestionarEquipaje.png used on input line 4
+21.
+(pdftex.def)             Requested size: 204.15485pt x 199.16928pt.
+ [25
 
-LaTeX Warning: File `imagenes/cugeneralUsuario.jpg' not found on input line 398
-.
+ <./imagenes/secGestionarEquipaje.png>] <imagenes/secGestionarLugar.png, id=802
+, 394.1124pt x 245.718pt>
+File: imagenes/secGestionarLugar.png Graphic file (type png)
 
+<use imagenes/secGestionarLugar.png>
+Package pdftex.def Info: imagenes/secGestionarLugar.png used on input line 428.
 
-! Package pdftex.def Error: File `imagenes/cugeneralUsuario.jpg' not found.
+(pdftex.def)             Requested size: 296.64798pt x 184.9429pt.
+ [26
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.398 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[22
-
-]
-
-LaTeX Warning: File `imagenes/diagramaClasesMovil.png' not found on input line 
-406.
-
-
-! Package pdftex.def Error: File `imagenes/diagramaClasesMovil.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.406 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[23
-
-]
-
-LaTeX Warning: File `imagenes/secConsultarVuelo.jpg' not found on input line 41
-4.
-
-
-! Package pdftex.def Error: File `imagenes/secConsultarVuelo.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.414 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[24
-
-]
-
-LaTeX Warning: File `imagenes/secGestionarEquipaje.png' not found on input line
- 421.
-
-
-! Package pdftex.def Error: File `imagenes/secGestionarEquipaje.png' not found.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.421 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[25
-
-]
-
-LaTeX Warning: File `imagenes/secGestionarLugar.png' not found on input line 42
-8.
-
-
-! Package pdftex.def Error: File `imagenes/secGestionarLugar.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.428 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[26
-
-] [27
+ <./imagenes/secGestionarLugar.png>]
+[27
 
 <<tasmc.mp4>>] [28
 
 ]
+File: imagenes/ipn.jpg Graphic file (type jpg)
+ <use imagenes/ipn.jpg>
+Package pdftex.def Info: imagenes/ipn.jpg used on input line 493.
+(pdftex.def)             Requested size: 32.9782pt x 48.36958pt.
+File: imagenes/escom.jpg Graphic file (type jpg)
+ <use imagenes/escom.jpg>
+Package pdftex.def Info: imagenes/escom.jpg used on input line 493.
+(pdftex.def)             Requested size: 48.22781pt x 42.67912pt.
 
-LaTeX Warning: File `imagenes/ipn.jpg' not found on input line 493.
-
-
-! Package pdftex.def Error: File `imagenes/ipn.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.493 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `imagenes/escom.jpg' not found on input line 493.
-
-
-! Package pdftex.def Error: File `imagenes/escom.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.493 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (22.98265pt too wide) in paragraph at lines 493--493
+Overfull \hbox (13.141pt too wide) in paragraph at lines 493--493
 [][] 
  []
 
@@ -1754,82 +1482,39 @@ Overfull \hbox (45.49149pt too wide) in paragraph at lines 493--493
 []\OT1/cmss/m/n/12 Presentan  
  []
 
-
-LaTeX Warning: File `imagenes/logo.png' not found on input line 493.
-
-
-! Package pdftex.def Error: File `imagenes/logo.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.493 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[29
+File: imagenes/logo.png Graphic file (type png)
+<use imagenes/logo.png>
+Package pdftex.def Info: imagenes/logo.png used on input line 493.
+(pdftex.def)             Requested size: 48.3719pt x 48.36958pt.
+ [29
 
 ]
+<imagenes/despliegue.png, id=923, 476.0184pt x 268.3626pt>
+File: imagenes/despliegue.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/despliegue.png' not found on input line 500.
+<use imagenes/despliegue.png>
+Package pdftex.def Info: imagenes/despliegue.png used on input line 500.
+(pdftex.def)             Requested size: 328.0463pt x 184.9429pt.
+ [30
 
-
-! Package pdftex.def Error: File `imagenes/despliegue.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.500 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[30
-
-]
-
-LaTeX Warning: File `imagenes/mr1.png' not found on input line 507.
-
-
-! Package pdftex.def Error: File `imagenes/mr1.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.507 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ <./imagenes/despliegue.png>]
+<imagenes/mr1.png, id=952, 681.54625pt x 387.4475pt>
+File: imagenes/mr1.png Graphic file (type png)
+ <use imagenes/mr1.png>
+Package pdftex.def Info: imagenes/mr1.png used on input line 507.
+(pdftex.def)             Requested size: 325.32896pt x 184.9429pt.
 
 [31
 
-]
+ <./imagenes/mr1.png>] <imagenes/mr2.png, id=981, 866.23625pt x 636.3775pt>
+File: imagenes/mr2.png Graphic file (type png)
 
-LaTeX Warning: File `imagenes/mr2.png' not found on input line 514.
+<use imagenes/mr2.png>
+Package pdftex.def Info: imagenes/mr2.png used on input line 514.
+(pdftex.def)             Requested size: 251.744pt x 184.9429pt.
+ [32
 
-
-! Package pdftex.def Error: File `imagenes/mr2.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.514 \end{frame}
-                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[32
-
-] (./TASMC.bbl) [33
+ <./imagenes/mr2.png>] (./TASMC.bbl) [33
 
  </usr/local/texlive/2013/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf
 >]
@@ -1849,6 +1534,11 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
+
+Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(movie15)                @@ Rerun to get object references right! @@
+(movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
 (./TASMC.aux
@@ -1867,10 +1557,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
  ) 
 Here is how much of TeX's memory you used:
- 17305 strings out of 493315
- 318716 string characters out of 6137904
- 439752 words of memory out of 5000000
- 20216 multiletter control sequences out of 15000+600000
+ 17417 strings out of 493315
+ 321832 string characters out of 6137904
+ 438752 words of memory out of 5000000
+ 20328 multiletter control sequences out of 15000+600000
  11027 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,17n,62p,421b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1880,10 +1570,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on TASMC.pdf (33 pages, 11916418 bytes).
+Output written on TASMC.pdf (33 pages, 14636698 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 974 compressed objects within 10 object streams
+ 1085 PDF objects out of 1200 (max. 8388607)
+ 975 compressed objects within 10 object streams
  77 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 307 words of extra memory for PDF output out of 10000 (max. 10000000)
 

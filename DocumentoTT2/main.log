@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.3)  17 JUN 2015 16:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  22 JUN 2015 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./Thesis.cls
 Document Class: Thesis 2007/22/02 v1.0 LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -26,28 +26,28 @@ File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/vmargin/vmargin.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/vmargin/vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 \PaperWidth=\dimen103
 \PaperHeight=\dimen104
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -197,7 +197,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -228,7 +228,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -252,7 +252,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -263,24 +263,24 @@ Now handling font encoding U ...
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen105
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -321,24 +321,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amscd.sty
 Package: amscd 1999/11/29 v2.0
 \athelp@=\toks21
 \minaw@=\dimen114
 \bigaw@=\dimen115
 \minCDarrowwidth=\dimen116
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -350,20 +350,20 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip57
 \dth@everypar=\toks27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
 \c@example=\count100
 \c@theorem=\count101
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks28
 )
@@ -377,27 +377,27 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 )
 \c@ContinuedFloat=\count102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count103
@@ -405,28 +405,28 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen124
 \Gin@req@width=\dimen125
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -435,11 +435,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -453,11 +453,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen126
 \lightrulewidth=\dimen127
@@ -477,10 +477,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen138
 )
-(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count108
@@ -489,7 +489,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box28
 \rot@mess@toks=\toks29
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count109
 \lst@gtempboxa=\box29
 \lst@token=\toks30
@@ -502,43 +502,44 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \lst@newlines=\count113
 \lst@lineno=\count114
 \lst@maxwidth=\dimen142
- (./lstpatch.sty
-
-***
-*** This is a patch for listings 1.3, but you're using
-*** version 1.5b.
-***
-*** Patch file not loaded.
-***
-
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-\c@lstnumber=\count115
-\lst@skipnumbers=\count116
-\lst@framebox=\box30
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2013/08/26 1.5b listings configuration
-))
-Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
 (./lstpatch.sty
 
 ***
 *** This is a patch for listings 1.3, but you're using
-*** version 1.5b.
+*** version 1.4.
+***
+*** Patch file not loaded.
+***
+
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count115
+\lst@skipnumbers=\count116
+\lst@framebox=\box30
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(./lstpatch.sty
+
+***
+*** This is a patch for listings 1.3, but you're using
+*** version 1.4.
 ***
  *** Patch file not loaded.
 ***
 
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -568,24 +569,24 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen143
 \Hy@linkcounter=\count117
 \Hy@pagecounter=\count118
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count119
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
@@ -596,7 +597,7 @@ Package hyperref Info: Option `hypertexnames' set `false' on input line 4319.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
 Package hyperref Info: Option `unicode' set `true' on input line 4319.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -611,9 +612,9 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count120
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen144
@@ -636,12 +637,12 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count125
 \c@bookmark@seq@number=\count126
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -650,7 +651,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \c@dummy=\count127
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip61
 \LTright=\skip62
@@ -668,87 +669,78 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count132
 \LT@p@ftn=\toks31
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
 
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2010/05/23 v5.0j Spanish support from the babel system
 
-! Package babel Error: Unknown option `spanish'. Either you misspelled it
-(babel)                or the language definition file spanish.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296 \ProcessOptions*
-                      
-Valid options are: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
-
-! Package babel Error: You haven't specified a language option.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.329 ...ry to proceed from here, type x to quit.}
-                                                  
-You need to specify a language, either as a global option
-or as an optional argument to the \usepackage command;
-You shouldn't try to proceed from here, type x to quit.
-
-) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen148
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count133
+\U@D=\dimen148
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+\es@datefmt=\count134
+\es@quottoks=\toks32
+\es@quotdepth=\count135
+Package babel Info: Making " an active character on input line 495.
+Package babel Info: Making . an active character on input line 588.
+Package babel Info: Making < an active character on input line 633.
+Package babel Info: Making > an active character on input line 633.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen149
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen149
-\extrarowheight=\dimen150
-\NC@list=\toks32
+\col@sep=\dimen150
+\extrarowheight=\dimen151
+\NC@list=\toks33
 \extratabsurround=\skip65
 \backup@length=\skip66
 )
-\everycr=\toks33
+\everycr=\toks34
 \minrowclearance=\skip67
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box35
 \beforetitleunit=\skip68
 \aftertitleunit=\skip69
-\ttl@plus=\dimen151
-\ttl@minus=\dimen152
-\ttl@toksa=\toks34
-\titlewidth=\dimen153
-\titlewidthlast=\dimen154
-\titlewidthfirst=\dimen155
+\ttl@plus=\dimen152
+\ttl@minus=\dimen153
+\ttl@toksa=\toks35
+\titlewidth=\dimen154
+\titlewidthlast=\dimen155
+\titlewidthfirst=\dimen156
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip70
 \bibsep=\skip71
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count133
+\c@NAT@ctr=\count136
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 35.
  (./main.aux
-(./portada/caratula.aux) (./portada/portada.aux) (./portada/advertencia.aux)
+(./portada/caratula.aux)
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ (./portada/portada.aux) (./portada/advertencia.aux)
 (./Capitulos/1Introduccion/1Introduccion.aux)
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
 (./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
@@ -767,7 +759,8 @@ LaTeX Warning: Label `fig:moduloUsuarios' multiply defined.
 LaTeX Warning: Label `fig:hotelesDisponibles' multiply defined.
 
 ) (./Capitulos/9Pruebas/9Pruebas.aux)
-(./Capitulos/10TrabajoFuturo/10TrabajoFuturo.aux))
+(./Capitulos/10Conclusiones/10Conclusiones.aux)
+(./Capitulos/11TrabajoFuturo/11TrabajoFuturo.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -788,7 +781,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 38.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -796,36 +789,36 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen156
+\scratchcounter=\count137
+\scratchdimen=\dimen157
 \scratchbox=\box36
-\nofMPsegments=\count135
-\nofMParguments=\count136
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen157
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks36
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen158
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks37
 )
-\c@lstlisting=\count140
+\c@lstlisting=\count143
 \AtBeginShipoutBox=\box37
 Package hyperref Info: Link coloring ON on input line 38.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count141
+\c@section@level=\count144
 )
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
@@ -835,22 +828,24 @@ LaTeX Info: Redefining \nameref on input line 38.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 \openout2 = `portada/caratula.aux'.
 
  (./portada/caratula.tex
-<portada/ipnC.jpg, id=619, 180.675pt x 286.06876pt>
+<portada/ipnC.jpg, id=627, 180.675pt x 286.06876pt>
 File: portada/ipnC.jpg Graphic file (type jpg)
  <use portada/ipnC.jpg>
 Package pdftex.def Info: portada/ipnC.jpg used on input line 5.
 (pdftex.def)             Requested size: 53.91068pt x 85.35826pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <18> not available
@@ -862,7 +857,7 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 3--14
 []$[]$ $[]$ 
  []
 
-<portada/escomC.jpg, id=620, 217.81375pt x 151.56625pt>
+<portada/escomC.jpg, id=628, 217.81375pt x 151.56625pt>
 File: portada/escomC.jpg Graphic file (type jpg)
 
 <use portada/escomC.jpg>
@@ -891,18 +886,18 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 15--68
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./portada/ipnC.jpg> <./por
-tada/escomC.jpg>]
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./porta
+da/ipnC.jpg> <./portada/escomC.jpg>]
 \openout2 = `portada/portada.aux'.
 
  (./portada/portada.tex
-<portada/ipn.jpg, id=628, 195.73125pt x 287.0725pt>
+<portada/ipn.jpg, id=636, 195.73125pt x 287.0725pt>
 File: portada/ipn.jpg Graphic file (type jpg)
  <use portada/ipn.jpg>
 Package pdftex.def Info: portada/ipn.jpg used on input line 5.
 (pdftex.def)             Requested size: 58.19716pt x 85.35826pt.
 
-<portada/escom.jpg, id=629, 226.8475pt x 200.75pt>
+<portada/escom.jpg, id=637, 226.8475pt x 200.75pt>
 File: portada/escom.jpg Graphic file (type jpg)
  <use portada/escom.jpg>
 Package pdftex.def Info: portada/escom.jpg used on input line 7.
@@ -929,7 +924,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 \openout2 = `portada/advertencia.aux'.
 
  (./portada/advertencia.tex
-<Figuras/advertencia.png, id=638, 531.9875pt x 331.2375pt>
+<Figuras/advertencia.png, id=646, 531.9875pt x 331.2375pt>
 File: Figuras/advertencia.png Graphic file (type png)
 
 <use Figuras/advertencia.png>
@@ -944,7 +939,12 @@ Package pdftex.def Info: Figuras/advertencia.png used on input line 6.
 ------------------------------------------------------------------------------
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
-(./main.toc [4
+(./main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 2.
+ [4
 
 
 ] [5] [6])
@@ -955,7 +955,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-(./main.lof [8
+(./main.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [8
 
 
 ] [9])
@@ -966,7 +969,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
-(./main.lot [11
+(./main.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [11
 
 
 ])
@@ -977,7 +983,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 \openout2 = `Capitulos/1Introduccion/1Introduccion.aux'.
 
  (./Capitulos/1Introduccion/1Introduccion.tex
-Chapter 1.
+Cap\'{\i }tulo 1.
 ------------------------------------------------------------------------------
  1 Introducci\IeC {\'o}n
 ------------------------------------------------------------------------------
@@ -986,17 +992,9 @@ Chapter 1.
 
 
 
-] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
-)
+] (./Capitulos/1Introduccion/Secciones/1-1Problematica.tex)
 (./Capitulos/1Introduccion/Secciones/1-2SolucionPropuesta.tex [2]
-<Figuras/arquitectura.png, id=1158, 333.8874pt x 249.5724pt>
+<Figuras/arquitectura.png, id=1168, 333.8874pt x 249.5724pt>
 File: Figuras/arquitectura.png Graphic file (type png)
 
 <use Figuras/arquitectura.png>
@@ -1012,7 +1010,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 (./Capitulos/1Introduccion/Secciones/1-4ObjetivoGeneral.tex)
 (./Capitulos/1Introduccion/Secciones/1-5ObjetivosEspecificos.tex [4])
 (./Capitulos/1Introduccion/Secciones/1-6Justificacion.tex [5]
-<Figuras/moviles.png, id=1179, 551.05875pt x 217.81375pt>
+<Figuras/moviles.png, id=1189, 551.05875pt x 217.81375pt>
 File: Figuras/moviles.png Graphic file (type png)
 
 <use Figuras/moviles.png>
@@ -1027,22 +1025,21 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 23--25
 \openout2 = `Capitulos/2EstadoDelArte/2EstadoDelArte.aux'.
 
  (./Capitulos/2EstadoDelArte/2EstadoDelArte.tex
-Chapter 2.
+Cap\'{\i }tulo 2.
 ------------------------------------------------------------------------------
  2 Estado del Arte
 ------------------------------------------------------------------------------
-
-Underfull \hbox (badness 2189) in paragraph at lines 26--26
-\OT1/ptm/m/n/12 ramien-tas para po-ten-ciar
- []
-
-<Figuras/crux.png, id=1189, 62.1522pt x 62.634pt>
+<Figuras/crux.png, id=1200, 62.1522pt x 62.634pt>
 File: Figuras/crux.png Graphic file (type png)
  <use Figuras/crux.png>
 Package pdftex.def Info: Figuras/crux.png used on input line 29.
 (pdftex.def)             Requested size: 71.1359pt x 71.13301pt.
 
-<Figuras/meridian.png, id=1191, 64.5612pt x 64.5612pt>
+Underfull \hbox (badness 1057) in paragraph at lines 32--32
+\OT1/ptm/m/n/12 ae-ro-puer-to. In-te-gra ba-ses
+ []
+
+<Figuras/meridian.png, id=1202, 64.5612pt x 64.5612pt>
 File: Figuras/meridian.png Graphic file (type png)
 
 <use Figuras/meridian.png>
@@ -1055,88 +1052,30 @@ Overfull \hbox (2.03505pt too wide) in paragraph at lines 17--38
 
 
 Underfull \hbox (badness 3758) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 aerop-uer-tos ubi-ca-dos en
+\OT1/ptm/m/n/12 ae-ro-puer-tos ubi-ca-dos en
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 da a cono-cer el es-tado
+Underfull \hbox (badness 1221) in paragraph at lines 54--54
+\OT1/ptm/m/n/12 Tri-pit y Ka-yak. Adem[]as
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 itinerar-ios conect[]andose
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 con Tripit y Kayak.
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 Adem[]as de obtener ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 pas, in-for-maci[]on so-bre
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 54--54
-\OT1/ptm/m/n/12 el clima y alquil-eres de
- []
-
-<Figuras/gateGuru.png, id=1193, 67.9338pt x 67.452pt>
+<Figuras/gateGuru.png, id=1204, 67.9338pt x 67.452pt>
 File: Figuras/gateGuru.png Graphic file (type png)
 
 <use Figuras/gateGuru.png>
 Package pdftex.def Info: Figuras/gateGuru.png used on input line 57.
 (pdftex.def)             Requested size: 71.13562pt x 71.13853pt.
-
-Underfull \hbox (badness 4391) in paragraph at lines 60--60
-\OT1/ptm/m/n/12 ahora ha pasado a ser
- []
-
-
-Underfull \hbox (badness 5533) in paragraph at lines 60--60
-\OT1/ptm/m/n/12 tambi[]en una apli-caci[]on.
- []
-
-
-Underfull \hbox (badness 7777) in paragraph at lines 60--60
-\OT1/ptm/m/n/12 Con Kayak se pueden
- []
-
-
-Underfull \hbox (badness 5924) in paragraph at lines 60--60
-\OT1/ptm/m/n/12 hote-les y alquil-eres de
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 60--60
-\OT1/ptm/m/n/12 tar-i-fas de equipa-jes; ac-
- []
-
-<Figuras/kayak.png, id=1195, 66.0066pt x 66.0066pt>
+ <Figuras/kayak.png, id=1206, 66.0066pt x 66.0066pt>
 File: Figuras/kayak.png Graphic file (type png)
- <use Figuras/kayak.png>
+
+<use Figuras/kayak.png>
 Package pdftex.def Info: Figuras/kayak.png used on input line 63.
 (pdftex.def)             Requested size: 71.138pt x 71.138pt.
-
-Underfull \hbox (badness 2617) in paragraph at lines 66--66
-\OT1/ptm/m/n/12 el tel[]efono o la tableta
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 66--66
-\OT1/ptm/m/n/12 en conexi[]on di-recta con
- []
-
-<Figuras/tripit.png, id=1197, 68.4156pt x 68.4156pt>
+ <Figuras/tripit.png, id=1208, 68.4156pt x 68.4156pt>
 File: Figuras/tripit.png Graphic file (type png)
- <use Figuras/tripit.png>
+
+<use Figuras/tripit.png>
 Package pdftex.def Info: Figuras/tripit.png used on input line 69.
 (pdftex.def)             Requested size: 71.13278pt x 71.13278pt.
 
@@ -1152,23 +1091,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./Figuras/crux.png> <./Figuras/meridian.png>]
-Underfull \hbox (badness 3138) in paragraph at lines 90--90
-\OT1/ptm/m/n/12 clasi-fi-caci[]on de los sis-
+Underfull \hbox (badness 1412) in paragraph at lines 90--90
+\OT1/ptm/m/n/12 lu-cio-nes t[]ecni-cas que se
  []
 
 
 Underfull \hbox (badness 3250) in paragraph at lines 96--96
-[]|\OT1/ptm/m/n/12 Este tra-bajo ex-plica las
+[]|\OT1/ptm/m/n/12 Este tra-ba-jo ex-pli-ca las
  []
 
 
 Underfull \hbox (badness 1210) in paragraph at lines 96--96
-\OT1/ptm/m/n/12 t[]ecnicas que se em-plean
+\OT1/ptm/m/n/12 t[]ecni-cas que se em-plean
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 96--96
-\OT1/ptm/m/n/12 para lo-calizar en in-te-ri-
+Underfull \hbox (badness 2790) in paragraph at lines 96--96
+\OT1/ptm/m/n/12 res uti-li-zan-do el cam-po
  []
 
 
@@ -1179,40 +1118,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \openout2 = `Capitulos/3MarcoTeorico/3MarcoTeorico.aux'.
 
  (./Capitulos/3MarcoTeorico/3MarcoTeorico.tex
-Chapter 3.
+Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Marco Te\IeC {\'o}rico
 ------------------------------------------------------------------------------
-(./Capitulos/3MarcoTeorico/Secciones/3-1AplicacionMovil.tex
-Overfull \hbox (3.50569pt too wide) in paragraph at lines 10--11
-[]\OT1/ptm/b/n/12 Nativas: \OT1/ptm/m/n/12 Dise[]nadas para ex-clu-si-va-mente 
-cor-rer en un sis-tema op-er-a-tivo es-pec[]^^Pfico. 
- []
-
-[10
+(./Capitulos/3MarcoTeorico/Secciones/3-1AplicacionMovil.tex [10
 
 
 
-]) (./Capitulos/3MarcoTeorico/Secciones/3-2ComputoMovil.tex
-Overfull \hbox (10.20277pt too wide) in paragraph at lines 3--4
-\OT1/ptm/m/n/12 Se tiene la necesi-dad de reem-plazar los ca-bles de conexi[]on
- por una tec-nolog[]^^Pa inal[]ambrica. 
+])
+(./Capitulos/3MarcoTeorico/Secciones/3-2ComputoMovil.tex
+Overfull \hbox (0.87953pt too wide) in paragraph at lines 5--6
+[]\OT1/ptm/m/n/12 Este ti-po de tec-no-log[]^^Pa no so-lo re-pre-sen-ta una opo
+r-tu-ni-dad de avan-ce cient[]^^Pfi-co o compu-
  []
 
 
-Overfull \hbox (6.63763pt too wide) in paragraph at lines 19--20
-[]\OT1/ptm/b/n/12 Ubicuidad: \OT1/ptm/m/n/12 Se re-fiere al atrib-uto de es-tar
- disponible en cualquier lu-gar en cualquier
- []
-
-
-Overfull \hbox (15.00241pt too wide) in paragraph at lines 20--21
-[]\OT1/ptm/b/n/12 Comodidad: \OT1/ptm/m/n/12 Es muy con-ve-niente para los usua
-r-ios op-erar en el en-torno inal[]ambrico,
+Overfull \hbox (3.59265pt too wide) in paragraph at lines 20--21
+[]\OT1/ptm/b/n/12 Comodidad: \OT1/ptm/m/n/12 Es muy con-ve-nien-te pa-ra los us
+ua-rios ope-rar en el en-torno inal[]ambri-
  []
 
 [11]) (./Capitulos/3MarcoTeorico/Secciones/3-3ComputoUbicuo.tex
-<Figuras/ubicuo.png, id=1238, 692.5875pt x 519.9425pt>
+<Figuras/ubicuo.png, id=1249, 692.5875pt x 519.9425pt>
 File: Figuras/ubicuo.png Graphic file (type png)
 
 <use Figuras/ubicuo.png>
@@ -1225,12 +1153,6 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 9--11
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-4GPS.tex [12 <./Figuras/ubicuo.png>]
 [13]) (./Capitulos/3MarcoTeorico/Secciones/3-5ILS.tex [14]
-Overfull \hbox (14.48611pt too wide) in paragraph at lines 17--18
-\OT1/ptm/m/n/12 com-ple-ji-dad com-puta-cional, trat[]andose de sis-temas que a
-nal-izan de-ter-mi-nadas propiedades
- []
-
-
 Overfull \hbox (6.06548pt too wide) in paragraph at lines 21--39
  [] 
  []
@@ -1239,7 +1161,7 @@ Overfull \hbox (6.06548pt too wide) in paragraph at lines 21--39
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [15] [16] [17] [18] [19]
-<Figuras/ejPasiva.png, id=1285, 213.9192pt x 253.4268pt>
+<Figuras/ejPasiva.png, id=1296, 213.9192pt x 253.4268pt>
 File: Figuras/ejPasiva.png Graphic file (type png)
 
 <use Figuras/ejPasiva.png>
@@ -1250,7 +1172,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 97--99
  [] 
  []
 
-<Figuras/ejSigLider.png, id=1287, 197.538pt x 253.9086pt>
+<Figuras/ejSigLider.png, id=1298, 197.538pt x 253.9086pt>
 File: Figuras/ejSigLider.png Graphic file (type png)
 
 <use Figuras/ejSigLider.png>
@@ -1263,22 +1185,30 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 107--109
 
 ) (./Capitulos/3MarcoTeorico/Secciones/3-6Android.tex [20] [21 <./Figuras/ejPas
 iva.png> <./Figuras/ejSigLider.png>]
-<Figuras/capasAndroid.png, id=1299, 610.28pt x 533.995pt>
+<Figuras/capasAndroid.png, id=1310, 610.28pt x 533.995pt>
 File: Figuras/capasAndroid.png Graphic file (type png)
 
 <use Figuras/capasAndroid.png>
 Package pdftex.def Info: Figuras/capasAndroid.png used on input line 7.
 (pdftex.def)             Requested size: 417.47307pt x 365.30363pt.
- [22 <./Figuras/capasAndroid.png>] [23] [24]))
+ [22 <./Figuras/capasAndroid.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+ [23] [24]))
 [25]
 \openout2 = `Capitulos/4MarcoMetodologico/4MarcoMetodologico.aux'.
 
  (./Capitulos/4MarcoMetodologico/4MarcoMetodologico.tex
-Chapter 4.
+Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Marco Metodol\IeC {\'o}gico
 ------------------------------------------------------------------------------
-<Figuras/cicloDesarrollo.png, id=1322, 480.8364pt x 233.673pt>
+<Figuras/cicloDesarrollo.png, id=1335, 480.8364pt x 233.673pt>
 File: Figuras/cicloDesarrollo.png Graphic file (type png)
 
 <use Figuras/cicloDesarrollo.png>
@@ -1293,7 +1223,7 @@ Package pdftex.def Info: Figuras/cicloDesarrollo.png used on input line 28.
 \openout2 = `Capitulos/5AnalisisGeneral/5AnalisisGeneral.aux'.
 
  (./Capitulos/5AnalisisGeneral/5AnalisisGeneral.tex
-Chapter 5.
+Cap\'{\i }tulo 5.
 ------------------------------------------------------------------------------
  5 An\IeC {\'a}lisis General
 ------------------------------------------------------------------------------
@@ -1308,23 +1238,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] <Figuras/android.png, id=1352, 25.5354pt x 22.1628pt>
+[30] <Figuras/android.png, id=1365, 25.5354pt x 22.1628pt>
 File: Figuras/android.png Graphic file (type png)
 
 <use Figuras/android.png>
 Package pdftex.def Info: Figuras/android.png used on input line 143.
 (pdftex.def)             Requested size: 42.6794pt x 42.68396pt.
- <Figuras/ios.png, id=1353, 36.135pt x 36.135pt>
+ <Figuras/ios.png, id=1366, 36.135pt x 36.135pt>
 File: Figuras/ios.png Graphic file (type png)
 
 <use Figuras/ios.png>
 Package pdftex.def Info: Figuras/ios.png used on input line 144.
 (pdftex.def)             Requested size: 42.68135pt x 42.68135pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
-[]|\OT1/ptm/m/n/12 Windows, Mac OS y
- []
-
 
 Overfull \hbox (80.69913pt too wide) in paragraph at lines 165--165
 []|$[]$| 
@@ -1336,6 +1261,16 @@ Overfull \hbox (80.69913pt too wide) in paragraph at lines 172--173
  []
 
 
+Underfull \hbox (badness 5331) in paragraph at lines 174--174
+[]|[]\OT1/ptm/b/n/12 Tipo de C[]odi-go de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|[]\OT1/ptm/b/n/12 IDE (En-torno de
+ []
+
+
 Underfull \hbox (badness 4569) in paragraph at lines 192--193
 []|\OT1/ptm/m/n/12 Objective-C, C, C++ y
  []
@@ -1344,7 +1279,7 @@ Underfull \hbox (badness 4569) in paragraph at lines 192--193
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31] [32 <./Figuras/android.png> <./Figuras/ios.png>]
-<Figuras/versionesAndroid.png, id=1369, 333.8874pt x 167.1846pt>
+<Figuras/versionesAndroid.png, id=1382, 333.8874pt x 167.1846pt>
 File: Figuras/versionesAndroid.png Graphic file (type png)
 
 <use Figuras/versionesAndroid.png>
@@ -1352,47 +1287,37 @@ Package pdftex.def Info: Figuras/versionesAndroid.png used on input line 216.
 (pdftex.def)             Requested size: 417.47307pt x 209.04399pt.
  [33 <./Figuras/versionesAndroid.png>]
 Underfull \hbox (badness 5970) in paragraph at lines 285--285
-[]|\OT1/ptm/m/n/12 Enfoque em-pleado para
+[]|\OT1/ptm/m/n/12 Enfoque em-plea-do pa-ra
  []
 
 
 Underfull \hbox (badness 1205) in paragraph at lines 285--285
-\OT1/ptm/m/n/12 mod-e-lado de un sis-tema
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-\OT1/ptm/m/n/12 seg[]un la nat-u-raleza y
+\OT1/ptm/m/n/12 mo-de-la-do de un sis-te-ma
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 289--289
-[]|\OT1/ptm/m/n/12 Plataforma donde el
+\OT1/ptm/m/n/12 gua-je de pro-gra-ma-ci[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 289--289
-\OT1/ptm/m/n/12 puede generar c[]odigo
+\OT1/ptm/m/n/12 pue-de ge-ne-rar c[]odi-go
  []
 
 
 Underfull \hbox (badness 1867) in paragraph at lines 298--299
-[]|\OT1/ptm/m/n/12 Complejo (Sin ex-pe-ri-en-
+[]|\OT1/ptm/m/n/12 Complejo (Sin ex-pe-rien-
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 298--299
-\OT1/ptm/m/n/12 cia), Me-dia (Ex-pe-ri-en-cia
+Underfull \hbox (badness 1596) in paragraph at lines 298--299
+\OT1/ptm/m/n/12 cia), Me-dia (Ex-pe-rien-cia
  []
 
 
 Underfull \hbox (badness 1888) in paragraph at lines 298--299
-\OT1/ptm/m/n/12 en paradigma o sin-taxis
- []
-
-
-Underfull \hbox (badness 5345) in paragraph at lines 302--303
-[]|\OT1/ptm/m/n/12 Abundante, Me-dia, Es-
+\OT1/ptm/m/n/12 en pa-ra-dig-ma o sin-ta-xis
  []
 
 
@@ -1402,42 +1327,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--320
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 pro-gra-maci[]on
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 ori-en-tada a
+\OT1/ptm/m/n/12 orien-ta-da a
  []
 
 
-Underfull \hbox (badness 7221) in paragraph at lines 320--320
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 \OT1/ptm/m/n/12 ob-je-tos, pro-gra-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 pro-gra-maci[]on
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 es-truc-turada,
+\OT1/ptm/m/n/12 es-truc-tu-ra-da,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 pro-gra-maci[]on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 fun-cional y
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-\OT1/ptm/m/n/12 metapro-gra-
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
@@ -1447,42 +1362,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--321
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 pro-gra-maci[]on
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 ori-en-tada a
+\OT1/ptm/m/n/12 orien-ta-da a
  []
 
 
-Underfull \hbox (badness 7221) in paragraph at lines 321--321
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 \OT1/ptm/m/n/12 ob-je-tos, pro-gra-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 pro-gra-maci[]on
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 es-truc-turada,
+\OT1/ptm/m/n/12 es-truc-tu-ra-da,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 pro-gra-maci[]on
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 re-flex-iva y
+\OT1/ptm/m/n/12 re-fle-xi-va y
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--321
-\OT1/ptm/m/n/12 pro-gra-maci[]on
+\OT1/ptm/m/n/12 pro-gra-ma-ci[]on
  []
 
 
@@ -1492,42 +1407,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--324
 
 [34] [35]
 Underfull \hbox (badness 3158) in paragraph at lines 392--392
-\OT1/ptm/m/n/12 porte de-sar-rollo para el
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 392--392
-\OT1/ptm/m/n/12 con el am-bi-ente de tra-
- []
-
-
-Underfull \hbox (badness 4416) in paragraph at lines 396--396
-\OT1/ptm/m/n/12 su-per-visada me-di-ante el
+\OT1/ptm/m/n/12 por-te desa-rro-llo pa-ra el
  []
 
 
 Underfull \hbox (badness 2165) in paragraph at lines 400--400
-\OT1/ptm/m/n/12 de las her-ramien-tas que
+\OT1/ptm/m/n/12 de las he-rra-mien-tas que
  []
 
 
 Underfull \hbox (badness 1122) in paragraph at lines 400--400
-\OT1/ptm/m/n/12 con-suma menos re-cur-sos
+\OT1/ptm/m/n/12 con-su-ma me-nos re-cur-sos
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 404--404
-\OT1/ptm/m/n/12 f[]acilmente mod-i-fi-ca-ble,
+\OT1/ptm/m/n/12 f[]acil-men-te mo-di-fi-ca-ble,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--425
-[]|\OT1/ptm/m/n/12 Soporte para
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+[]|\OT1/ptm/m/n/12 Soporte pa-ra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--425
-\OT1/ptm/m/n/12 Conec-tivi-dad
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\OT1/ptm/m/n/12 Desa-rro-llo Ja-va
  []
 
 
@@ -1539,123 +1444,50 @@ Underfull \hbox (badness 3148) in paragraph at lines 433--433
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36] [37]
-Underfull \hbox (badness 1019) in paragraph at lines 470--470
-[]|\OT1/ptm/m/n/12 Cuenta con difer-entes in-ter-
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 474--474
-[]|\OT1/ptm/m/n/12 SQLite tiene una peque[]na
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 474--474
-\OT1/ptm/m/n/12 memo-ria y una []unica bib-
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 474--474
-\OT1/ptm/m/n/12 de bases de datos in-cor-po-
- []
-
-
-Underfull \hbox (badness 2635) in paragraph at lines 478--478
-\OT1/ptm/m/n/12 mas y sus bases de datos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
-[]|\OT1/ptm/m/n/12 Se eje-cuta en m[]ultiples
- []
-
-
-Underfull \hbox (badness 1838) in paragraph at lines 479--480
-\OT1/ptm/m/n/12 droid, iPhone (Ap-ple iOS),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
-\OT1/ptm/m/n/12 Black-berry, Sym-bian OS,
- []
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 479--480
-\OT1/ptm/m/n/12 Win-dows de 32 bits, Win-
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 479--480
-\OT1/ptm/m/n/12 platafor-mas de dis-pos-i-tivos
+Underfull \hbox (badness 1038) in paragraph at lines 479--480
+\OT1/ptm/m/n/12 iP-ho-ne (Ap-ple iOS), Black-
  []
 
 
 Underfull \hbox (badness 2772) in paragraph at lines 482--482
-\OT1/ptm/m/n/12 man-era efi-ciente y es m[]as
+\OT1/ptm/m/n/12 ma-ne-ra efi-cien-te y es m[]as
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 483--484
-\OT1/ptm/m/n/12 usuar-ios el ac-ceso a in-for-
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 483--484
-\OT1/ptm/m/n/12 maci[]on de forma r[]apida y
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
-\OT1/ptm/m/n/12 efi-ciente, mul-ti-proce-sador,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
-\OT1/ptm/m/n/12 memo-ria cach[]e din[]amica,
+Underfull \hbox (badness 2990) in paragraph at lines 483--484
+\OT1/ptm/m/n/12 mien-to, ga-ran-ti-zar un buen
  []
 
 
 Underfull \hbox (badness 5696) in paragraph at lines 486--486
-[]|\OT1/ptm/m/n/12 SQLite es com-pat-i-ble con
+[]|\OT1/ptm/m/n/12 SQLite es com-pa-ti-ble con
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 487--488
-[]|\OT1/ptm/m/n/12 Oracle es com-pat-i-ble con
+[]|\OT1/ptm/m/n/12 Oracle es com-pa-ti-ble con
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 487--488
-\OT1/ptm/m/n/12 ACID, adem[]as de mane-
+\OT1/ptm/m/n/12 ACID, adem[]as de ma-ne-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 487--488
-\OT1/ptm/m/n/12 jar in-te-gri-dad ref-er-en-cial,
+\OT1/ptm/m/n/12 jar in-te-gri-dad re-fe-ren-cial,
  []
 
 
 Underfull \hbox (badness 1796) in paragraph at lines 487--488
-\OT1/ptm/m/n/12 transac-ciones y est[]andar de
+\OT1/ptm/m/n/12 transac-cio-nes y est[]andar de
  []
 
-[38] [39]
-Overfull \hbox (1.41823pt too wide) in paragraph at lines 535--564
-\OT1/ptm/m/n/12 El es-tu-dio de factibil-i-dad econ[]omica per-mite analizar lo
-s cos-tos y ben-efi-cios econ[]omicos
- []
-
-[40] [41]
+[38] [39] [40] [41]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 690.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 696.
-
-Underfull \hbox (badness 3579) in paragraph at lines 714--714
-\OT1/ptm/m/n/10.95 ded-i-can al de-sar-rollo de apli-ca-
- []
-
-) (./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRequerimientos.tex
-[42]
+)
+(./Capitulos/5AnalisisGeneral/Secciones/5-2AnalisisRequerimientos.tex [42]
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\OT1/ptm/m/n/12 Visualizar los
  []
@@ -1666,38 +1498,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 53--53
-[]|\OT1/ptm/m/n/12 Notificar al vi-a-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]|\OT1/ptm/m/n/12 Recordar doc-u-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-\OT1/ptm/m/n/12 men-tos im-por-
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 59--60
-[]|\OT1/ptm/m/n/12 Se debe apo-yar al vi-a-jero en
+[]|\OT1/ptm/m/n/12 Recordar do-cu-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--68
 []|\OT1/ptm/m/n/12 Guardar ob-je-tos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-[]|\OT1/ptm/m/n/12 La in-for-maci[]on debe es-tar
- []
-
-
-Underfull \hbox (badness 5475) in paragraph at lines 84--85
-\OT1/ptm/m/n/12 disponible ideal-mente todo el
  []
 
 
@@ -1707,49 +1514,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
-[]|\OT1/ptm/m/n/12 El vi-a-jero debe cono-cer el
+[]|\OT1/ptm/m/n/12 El via-je-ro de-be co-no-cer el
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 89--90
-\OT1/ptm/m/n/12 tel[]efono, di-recci[]on, mapa, etc.
+Underfull \hbox (badness 3229) in paragraph at lines 89--90
+\OT1/ptm/m/n/12 tel[]efono, di-rec-ci[]on, ma-pa, etc.
  []
 
 
 Underfull \hbox (badness 6658) in paragraph at lines 89--90
-\OT1/ptm/m/n/12 del aerop-uerto para cualquier
+\OT1/ptm/m/n/12 del ae-ro-puer-to pa-ra cual-quier
  []
 
 
 Underfull \hbox (badness 4819) in paragraph at lines 89--90
-\OT1/ptm/m/n/12 situaci[]on o necesi-dad que se
+\OT1/ptm/m/n/12 si-tua-ci[]on o ne-ce-si-dad que se
  []
-
-
-LaTeX Warning: Float too large for page by 10.52658pt on input line 95.
 
 [43] [44] [45] [46]
-Underfull \hbox (badness 1097) in paragraph at lines 232--232
-[]|\OT1/ptm/m/n/12 M[]odulo para la gesti[]on de ob-je-tos, donde el
- []
-
-
-Underfull \hbox (badness 4242) in paragraph at lines 236--236
-[]|\OT1/ptm/m/n/12 M[]odulo para asi-s-tir en la con-strucci[]on del
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 241--242
 []|\OT1/ptm/m/n/12 Definici[]on
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 241--242
-\OT1/ptm/m/n/12 del sis-tema,
+\OT1/ptm/m/n/12 del sis-te-ma,
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 241--242
+Underfull \hbox (badness 8094) in paragraph at lines 241--242
 \OT1/ptm/m/n/12 RN09, RN12
  []
 
@@ -1760,7 +1554,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 272--273
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1770,7 +1564,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1780,7 +1574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 280--281
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1790,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1800,7 +1594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 288--289
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1810,7 +1604,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1820,7 +1614,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 296--297
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 
@@ -1830,34 +1624,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 300--301
-\OT1/ptm/m/n/12 [Tabla
+\OT1/ptm/m/n/12 [Ta-bla
  []
 
 [49
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 322--323
-[]|\OT1/ptm/m/n/12 RB08 [Tabla
- []
-
-
-Underfull \hbox (badness 2237) in paragraph at lines 329--329
-\OT1/ptm/m/n/12 poder se-lec-cionar las dis-tin-tas fun-ciones que
+[]|\OT1/ptm/m/n/12 RB08 [Ta-bla
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 330--331
-[]|\OT1/ptm/m/n/12 RN12 [Tabla
+[]|\OT1/ptm/m/n/12 RN12 [Ta-bla
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 342--343
-[]|\OT1/ptm/m/n/12 RN12 [Tabla
+[]|\OT1/ptm/m/n/12 RN12 [Ta-bla
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 346--347
-[]|\OT1/ptm/m/n/12 RB12 [Tabla
+[]|\OT1/ptm/m/n/12 RB12 [Ta-bla
  []
 
 ) (./Capitulos/5AnalisisGeneral/Secciones/5-3AnalisisRiesgos.tex
@@ -1867,38 +1656,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [50
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]|[]\OT1/ptm/b/n/12 Retraso de las ac-tivi-dades del
- []
-
-
-Underfull \hbox (badness 2735) in paragraph at lines 80--80
-[]|[]\OT1/ptm/b/n/12 Mal con-trol de las ver-siones del
- []
-
-
 Underfull \hbox (badness 2495) in paragraph at lines 105--105
-[]|[]\OT1/ptm/b/n/12 Ausencia de alg[]un in-te-grante del
+[]|[]\OT1/ptm/b/n/12 Ausencia de alg[]un in-te-gran-te del
  []
 
 
 Underfull \hbox (badness 2326) in paragraph at lines 120--120
-[]|[]\OT1/ptm/b/n/12 Funcionamiento in-ade-cuado en la
+[]|[]\OT1/ptm/b/n/12 Funcionamiento inade-cua-do en la
  []
 
 
-Underfull \hbox (badness 3895) in paragraph at lines 120--120
-\OT1/ptm/b/n/12 de-spu[]es de haber sido cal-i-fi-cada
- []
-
-
-Underfull \hbox (badness 2080) in paragraph at lines 120--120
-\OT1/ptm/b/n/12 como ade-cuada en el Es-tu-dio de
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 125--125
-[]|[]\OT1/ptm/b/n/12 Incorrecta definici[]on de la prob-
+Underfull \hbox (badness 6461) in paragraph at lines 125--125
+[]|[]\OT1/ptm/b/n/12 Incorrecta de-fi-ni-ci[]on de la pro-
  []
 
 
@@ -1923,7 +1692,7 @@ esarrollo.aux'.
 
 (./Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.
 tex
-Chapter 6.
+Cap\'{\i }tulo 6.
 ------------------------------------------------------------------------------
  6 Configuraci\IeC {\'o}n del Ambiente de Desarrollo
 ------------------------------------------------------------------------------
@@ -1935,12 +1704,12 @@ Chapter 6.
 \openout2 = `Capitulos/7DisenoTASMC/7DisenoTASMC.aux'.
 
  (./Capitulos/7DisenoTASMC/7DisenoTASMC.tex
-Chapter 7.
+Cap\'{\i }tulo 7.
 ------------------------------------------------------------------------------
  7 Dise\IeC {\~n}o TASMC
 ------------------------------------------------------------------------------
 (./Capitulos/7DisenoTASMC/Secciones/7-1Actores.tex
-<Figuras/actores.png, id=1517, 275.0275pt x 133.49875pt>
+<Figuras/actores.png, id=1532, 275.0275pt x 133.49875pt>
 File: Figuras/actores.png Graphic file (type png)
 
 <use Figuras/actores.png>
@@ -1966,12 +1735,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 30--30
-[]|\OT1/ptm/m/n/12 Al ser el ac-tor prin-ci-pal, la fun-cional-i-dad de la apli
--caci[]on
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 51--51
 []|\OT1/ptm/b/n/12 Fecha
  []
@@ -1989,13 +1752,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 [58
 
 ]) (./Capitulos/7DisenoTASMC/Secciones/7-2CasosUsoAdministrador.tex
-<Figuras/general.jpg, id=1527, 369.38pt x 317.185pt>
+<Figuras/general.jpg, id=1542, 369.38pt x 317.185pt>
 File: Figuras/general.jpg Graphic file (type jpg)
  <use Figuras/general.jpg>
 Package pdftex.def Info: Figuras/general.jpg used on input line 7.
 (pdftex.def)             Requested size: 333.97972pt x 286.78996pt.
 
-<Figuras/cuGestionarUsuario.png, id=1528, 311.7246pt x 88.6512pt>
+<Figuras/cuGestionarUsuario.png, id=1543, 311.7246pt x 88.6512pt>
 File: Figuras/cuGestionarUsuario.png Graphic file (type png)
 
 <use Figuras/cuGestionarUsuario.png>
@@ -2024,7 +1787,7 @@ Underfull \vbox (badness 10000) detected at line 46
 
 [60
 
-] <Figuras/cuGestionarEquipaje.jpg, id=1541, 415.5525pt x 117.43875pt>
+] <Figuras/cuGestionarEquipaje.jpg, id=1556, 415.5525pt x 117.43875pt>
 File: Figuras/cuGestionarEquipaje.jpg Graphic file (type jpg)
 
 <use Figuras/cuGestionarEquipaje.jpg>
@@ -2053,7 +1816,7 @@ Underfull \vbox (badness 10000) detected at line 91
 [61
 
  <./Figuras/cuGestionarEquipaje.jpg>] [62]
-<Figuras/GestionarServicio.jpg, id=1569, 415.5525pt x 117.43875pt>
+<Figuras/GestionarServicio.jpg, id=1584, 415.5525pt x 117.43875pt>
 File: Figuras/GestionarServicio.jpg Graphic file (type jpg)
 
 <use Figuras/GestionarServicio.jpg>
@@ -2082,7 +1845,7 @@ Underfull \vbox (badness 10000) detected at line 172
 
  <./Figuras/GestionarServicio.jpg>])
 (./Capitulos/7DisenoTASMC/Secciones/7-3CasosUsoUsuario.tex
-<Figuras/cugeneralUsuario.jpg, id=1578, 1031.855pt x 767.86874pt>
+<Figuras/cugeneralUsuario.jpg, id=1593, 1031.855pt x 767.86874pt>
 File: Figuras/cugeneralUsuario.jpg Graphic file (type jpg)
 
 <use Figuras/cugeneralUsuario.jpg>
@@ -2091,7 +1854,7 @@ Package pdftex.def Info: Figuras/cugeneralUsuario.jpg used on input line 7.
  [64
 
  <./Figuras/cugeneralUsuario.jpg>]
-<Figuras/cuActualizarDatos.jpg, id=1583, 446.66875pt x 156.585pt>
+<Figuras/cuActualizarDatos.jpg, id=1598, 446.66875pt x 156.585pt>
 File: Figuras/cuActualizarDatos.jpg Graphic file (type jpg)
 
 <use Figuras/cuActualizarDatos.jpg>
@@ -2119,7 +1882,7 @@ Underfull \vbox (badness 10000) detected at line 48
 [65
 
  <./Figuras/cuActualizarDatos.jpg>] [66]
-<Figuras/cuConfigurarViaje.png, id=1596, 235.1184pt x 63.5976pt>
+<Figuras/cuConfigurarViaje.png, id=1611, 235.1184pt x 63.5976pt>
 File: Figuras/cuConfigurarViaje.png Graphic file (type png)
 
 <use Figuras/cuConfigurarViaje.png>
@@ -2145,7 +1908,7 @@ Underfull \vbox (badness 10000) detected at line 96
  []
 
 [67 <./Figuras/cuConfigurarViaje.png>] [68]
-<Figuras/cuConsultarHotel.png, id=1620, 249.0906pt x 88.6512pt>
+<Figuras/cuConsultarHotel.png, id=1636, 249.0906pt x 88.6512pt>
 File: Figuras/cuConsultarHotel.png Graphic file (type png)
 
 <use Figuras/cuConsultarHotel.png>
@@ -2171,7 +1934,7 @@ Underfull \vbox (badness 10000) detected at line 165
  []
 
 [69 <./Figuras/cuConsultarHotel.png>] [70]
-<Figuras/cuConsultarVuelo.png, id=1646, 249.0906pt x 88.6512pt>
+<Figuras/cuConsultarVuelo.png, id=1662, 249.0906pt x 88.6512pt>
 File: Figuras/cuConsultarVuelo.png Graphic file (type png)
 
 <use Figuras/cuConsultarVuelo.png>
@@ -2197,7 +1960,7 @@ Underfull \vbox (badness 10000) detected at line 247
  []
 
 [71 <./Figuras/cuConsultarVuelo.png>] [72]
-<Figuras/cuConsultarInformacionAICM.png, id=1671, 311.7246pt x 88.6512pt>
+<Figuras/cuConsultarInformacionAICM.png, id=1687, 311.7246pt x 88.6512pt>
 File: Figuras/cuConsultarInformacionAICM.png Graphic file (type png)
 
 <use Figuras/cuConsultarInformacionAICM.png>
@@ -2226,7 +1989,7 @@ Underfull \vbox (badness 10000) detected at line 325
 [73
 
  <./Figuras/cuConsultarInformacionAICM.png>] [74]
-<Figuras/cuGestionarEquipajeU.png, id=1688, 311.7246pt x 88.6512pt>
+<Figuras/cuGestionarEquipajeU.png, id=1704, 311.7246pt x 88.6512pt>
 File: Figuras/cuGestionarEquipajeU.png Graphic file (type png)
 
 <use Figuras/cuGestionarEquipajeU.png>
@@ -2255,7 +2018,7 @@ Underfull \vbox (badness 10000) detected at line 381
 [75
 
  <./Figuras/cuGestionarEquipajeU.png>] [76]
-<Figuras/cuConsultarItinerarioViaje.png, id=1707, 311.7246pt x 88.6512pt>
+<Figuras/cuConsultarItinerarioViaje.png, id=1723, 311.7246pt x 88.6512pt>
 File: Figuras/cuConsultarItinerarioViaje.png Graphic file (type png)
 
 <use Figuras/cuConsultarItinerarioViaje.png>
@@ -2284,7 +2047,7 @@ Underfull \vbox (badness 10000) detected at line 436
 [77
 
  <./Figuras/cuConsultarItinerarioViaje.png>] [78]
-<Figuras/cuConsultarRutacasa-AICM.png, id=1728, 311.7246pt x 88.6512pt>
+<Figuras/cuConsultarRutacasa-AICM.png, id=1745, 311.7246pt x 88.6512pt>
 File: Figuras/cuConsultarRutacasa-AICM.png Graphic file (type png)
 
 <use Figuras/cuConsultarRutacasa-AICM.png>
@@ -2315,7 +2078,7 @@ Underfull \vbox (badness 10000) detected at line 506
  <./Figuras/cuConsultarRutacasa-AICM.png>] [80
 
 ]
-<Figuras/cuUbicarAICM.jpg, id=1746, 415.5525pt x 117.43875pt>
+<Figuras/cuUbicarAICM.jpg, id=1763, 415.5525pt x 117.43875pt>
 File: Figuras/cuUbicarAICM.jpg Graphic file (type jpg)
 
 <use Figuras/cuUbicarAICM.jpg>
@@ -2345,7 +2108,7 @@ Underfull \vbox (badness 10000) detected at line 566
  <./Figuras/cuUbicarAICM.jpg>] [82
 
 ]
-<Figuras/cuConsultarInformacionVuelo.png, id=1758, 328.5876pt x 88.6512pt>
+<Figuras/cuConsultarInformacionVuelo.png, id=1775, 328.5876pt x 88.6512pt>
 File: Figuras/cuConsultarInformacionVuelo.png Graphic file (type png)
 
 <use Figuras/cuConsultarInformacionVuelo.png>
@@ -2375,7 +2138,7 @@ Underfull \vbox (badness 10000) detected at line 613
 
  <./Figuras/cuConsultarInformacionVuelo.png>] [84])
 (./Capitulos/7DisenoTASMC/Secciones/7-4DiagramaClases.tex
-<Figuras/diagramaClasesMovil.png, id=1786, 1006.76125pt x 1083.04625pt>
+<Figuras/diagramaClasesMovil.png, id=1803, 1006.76125pt x 1083.04625pt>
 File: Figuras/diagramaClasesMovil.png Graphic file (type png)
 
 <use Figuras/diagramaClasesMovil.png>
@@ -2384,21 +2147,21 @@ Package pdftex.def Info: Figuras/diagramaClasesMovil.png used on input line 5.
 )
 (./Capitulos/7DisenoTASMC/Secciones/7-5DisenoEsquemaBaseDatos.tex [85 <./Figura
 s/diagramaClasesMovil.png>]
-<Figuras/relacionalAdmin.png, id=1795, 682.55pt x 379.4175pt>
+<Figuras/relacionalAdmin.png, id=1812, 682.55pt x 379.4175pt>
 File: Figuras/relacionalAdmin.png Graphic file (type png)
 
 <use Figuras/relacionalAdmin.png>
 Package pdftex.def Info: Figuras/relacionalAdmin.png used on input line 8.
 (pdftex.def)             Requested size: 333.97972pt x 185.65567pt.
 
-<Figuras/relacionalMovil.png, id=1796, 781.92125pt x 542.025pt>
+<Figuras/relacionalMovil.png, id=1813, 781.92125pt x 542.025pt>
 File: Figuras/relacionalMovil.png Graphic file (type png)
 
 <use Figuras/relacionalMovil.png>
 Package pdftex.def Info: Figuras/relacionalMovil.png used on input line 16.
 (pdftex.def)             Requested size: 417.47307pt x 289.38916pt.
 
-<Figuras/relacionalTRASO.png, id=1798, 737.75626pt x 442.65375pt>
+<Figuras/relacionalTRASO.png, id=1815, 737.75626pt x 442.65375pt>
 File: Figuras/relacionalTRASO.png Graphic file (type png)
 
 <use Figuras/relacionalTRASO.png>
@@ -2407,14 +2170,14 @@ Package pdftex.def Info: Figuras/relacionalTRASO.png used on input line 26.
  [86 <./Figuras/relacionalAdmin.png> <./Figuras/relacionalMovil.png>] [87 <./Fi
 guras/relacionalTRASO.png>])
 (./Capitulos/7DisenoTASMC/Secciones/7-6DiagramaSecuencia.tex
-<Figuras/GestionarUsuario.jpg, id=1807, 636.3775pt x 394.47375pt>
+<Figuras/GestionarUsuario.jpg, id=1824, 636.3775pt x 394.47375pt>
 File: Figuras/GestionarUsuario.jpg Graphic file (type jpg)
 
 <use Figuras/GestionarUsuario.jpg>
 Package pdftex.def Info: Figuras/GestionarUsuario.jpg used on input line 7.
 (pdftex.def)             Requested size: 417.47307pt x 258.77644pt.
 
-<Figuras/secGestionarEquipaje.png, id=1808, 335.8146pt x 327.624pt>
+<Figuras/secGestionarEquipaje.png, id=1825, 335.8146pt x 327.624pt>
 File: Figuras/secGestionarEquipaje.png Graphic file (type png)
 
 <use Figuras/secGestionarEquipaje.png>
@@ -2422,35 +2185,35 @@ Package pdftex.def Info: Figuras/secGestionarEquipaje.png used on input line 15
 .
 (pdftex.def)             Requested size: 417.47307pt x 407.28937pt.
 
-<Figuras/servicio.jpg, id=1809, 612.2875pt x 381.425pt>
+<Figuras/servicio.jpg, id=1826, 612.2875pt x 381.425pt>
 File: Figuras/servicio.jpg Graphic file (type jpg)
 
 <use Figuras/servicio.jpg>
 Package pdftex.def Info: Figuras/servicio.jpg used on input line 23.
 (pdftex.def)             Requested size: 417.47307pt x 260.06396pt.
 
-<Figuras/secConfigurarViaje.png, id=1810, 397.485pt x 257.2812pt>
+<Figuras/secConfigurarViaje.png, id=1827, 397.485pt x 257.2812pt>
 File: Figuras/secConfigurarViaje.png Graphic file (type png)
 
 <use Figuras/secConfigurarViaje.png>
 Package pdftex.def Info: Figuras/secConfigurarViaje.png used on input line 31.
 (pdftex.def)             Requested size: 417.47307pt x 270.22783pt.
 
-<Figuras/ConsultaHoteles.jpg, id=1811, 743.77875pt x 421.575pt>
+<Figuras/ConsultaHoteles.jpg, id=1828, 743.77875pt x 421.575pt>
 File: Figuras/ConsultaHoteles.jpg Graphic file (type jpg)
 
 <use Figuras/ConsultaHoteles.jpg>
 Package pdftex.def Info: Figuras/ConsultaHoteles.jpg used on input line 39.
 (pdftex.def)             Requested size: 417.47307pt x 236.62717pt.
 
-<Figuras/ConsultaVuelos.jpg, id=1812, 707.64375pt x 401.5pt>
+<Figuras/ConsultaVuelos.jpg, id=1829, 707.64375pt x 401.5pt>
 File: Figuras/ConsultaVuelos.jpg Graphic file (type jpg)
 
 <use Figuras/ConsultaVuelos.jpg>
 Package pdftex.def Info: Figuras/ConsultaVuelos.jpg used on input line 47.
 (pdftex.def)             Requested size: 417.47307pt x 236.86456pt.
 
-<Figuras/ConsultarAICM.jpg, id=1813, 330.23375pt x 414.54875pt>
+<Figuras/ConsultarAICM.jpg, id=1830, 330.23375pt x 414.54875pt>
 File: Figuras/ConsultarAICM.jpg Graphic file (type jpg)
 
 <use Figuras/ConsultarAICM.jpg>
@@ -2462,7 +2225,7 @@ Package pdftex.def Info: Figuras/secGestionarEquipaje.png used on input line 63
 .
 (pdftex.def)             Requested size: 417.47307pt x 407.28937pt.
 
-<Figuras/ConsultarItinerario.jpg, id=1814, 596.2275pt x 489.83pt>
+<Figuras/ConsultarItinerario.jpg, id=1831, 596.2275pt x 489.83pt>
 File: Figuras/ConsultarItinerario.jpg Graphic file (type jpg)
 
 <use Figuras/ConsultarItinerario.jpg>
@@ -2470,20 +2233,20 @@ Package pdftex.def Info: Figuras/ConsultarItinerario.jpg used on input line 71.
 
 (pdftex.def)             Requested size: 417.47307pt x 342.97581pt.
 
-<Figuras/ruta.jpg, id=1815, 570.13pt x 467.7475pt>
+<Figuras/ruta.jpg, id=1832, 570.13pt x 467.7475pt>
 File: Figuras/ruta.jpg Graphic file (type jpg)
  <use Figuras/ruta.jpg>
 Package pdftex.def Info: Figuras/ruta.jpg used on input line 79.
 (pdftex.def)             Requested size: 417.47307pt x 342.502pt.
 
-<Figuras/secUbicarAICM.png, id=1816, 227.4096pt x 204.2832pt>
+<Figuras/secUbicarAICM.png, id=1833, 227.4096pt x 204.2832pt>
 File: Figuras/secUbicarAICM.png Graphic file (type png)
 
 <use Figuras/secUbicarAICM.png>
 Package pdftex.def Info: Figuras/secUbicarAICM.png used on input line 87.
 (pdftex.def)             Requested size: 417.47307pt x 375.02219pt.
 
-<Figuras/Infovuelo.jpg, id=1817, 395.4775pt x 361.35pt>
+<Figuras/Infovuelo.jpg, id=1834, 395.4775pt x 361.35pt>
 File: Figuras/Infovuelo.jpg Graphic file (type jpg)
 
 <use Figuras/Infovuelo.jpg>
@@ -2498,12 +2261,7 @@ onsultaHoteles.jpg> <./Figuras/ConsultaVuelos.jpg>] [92 <./Figuras/ConsultarAIC
 M.jpg>]
 [93] [94 <./Figuras/ConsultarItinerario.jpg>] [95 <./Figuras/ruta.jpg>]
 [96 <./Figuras/secUbicarAICM.png>] [97 <./Figuras/Infovuelo.jpg>]
-Overfull \hbox (1.29797pt too wide) in paragraph at lines 4--5
-\OT1/ptm/m/n/12 A con-tin-uaci[]on se de-scribe la topolog[]^^Pa del sis-tema m
-e-di-ante un di-a-grama de de-spliegue,
- []
-
-<Figuras/diagramaDespliegue.png, id=1863, 476.0184pt x 268.3626pt>
+<Figuras/diagramaDespliegue.png, id=1881, 476.0184pt x 268.3626pt>
 File: Figuras/diagramaDespliegue.png Graphic file (type png)
 
 <use Figuras/diagramaDespliegue.png>
@@ -2518,7 +2276,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-<Figuras/intConfiguracion.png, id=1881, 1084.05pt x 1927.2pt>
+<Figuras/intConfiguracion.png, id=1899, 1084.05pt x 1927.2pt>
 File: Figuras/intConfiguracion.png Graphic file (type png)
 
 <use Figuras/intConfiguracion.png>
@@ -2536,7 +2294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<Figuras/intHoteles.jpg, id=1891, 722.7pt x 1284.8pt>
+<Figuras/intHoteles.jpg, id=1909, 722.7pt x 1284.8pt>
 File: Figuras/intHoteles.jpg Graphic file (type jpg)
 
 <use Figuras/intHoteles.jpg>
@@ -2554,7 +2312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-<Figuras/intConsultarVuelo.png, id=1902, 507.8975pt x 947.54pt>
+<Figuras/intConsultarVuelo.png, id=1920, 507.8975pt x 947.54pt>
 File: Figuras/intConsultarVuelo.png Graphic file (type png)
 
 <use Figuras/intConsultarVuelo.png>
@@ -2572,7 +2330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-<Figuras/intConsultarInformacionAICM.png, id=1912, 305.14pt x 477.785pt>
+<Figuras/intConsultarInformacionAICM.png, id=1930, 305.14pt x 477.785pt>
 File: Figuras/intConsultarInformacionAICM.png Graphic file (type png)
 
 <use Figuras/intConsultarInformacionAICM.png>
@@ -2591,7 +2349,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
-<Figuras/intListaEquipaje.jpg, id=1918, 722.7pt x 1284.8pt>
+<Figuras/intListaEquipaje.jpg, id=1936, 722.7pt x 1284.8pt>
 File: Figuras/intListaEquipaje.jpg Graphic file (type jpg)
 
 <use Figuras/intListaEquipaje.jpg>
@@ -2609,7 +2367,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-<Figuras/intItinerarioViaje.jpg, id=1928, 722.7pt x 1284.8pt>
+<Figuras/intItinerarioViaje.jpg, id=1946, 722.7pt x 1284.8pt>
 File: Figuras/intItinerarioViaje.jpg Graphic file (type jpg)
 
 <use Figuras/intItinerarioViaje.jpg>
@@ -2628,7 +2386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
-<Figuras/intRutaAICM.jpg, id=1939, 722.7pt x 1284.8pt>
+<Figuras/intRutaAICM.jpg, id=1958, 722.7pt x 1284.8pt>
 File: Figuras/intRutaAICM.jpg Graphic file (type jpg)
 
 <use Figuras/intRutaAICM.jpg>
@@ -2646,7 +2404,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-<Figuras/intUbicarAICM.png, id=1949, 285.065pt x 500.87125pt>
+<Figuras/intUbicarAICM.png, id=1968, 285.065pt x 500.87125pt>
 File: Figuras/intUbicarAICM.png Graphic file (type png)
 
 <use Figuras/intUbicarAICM.png>
@@ -2664,7 +2422,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
-<Figuras/intInformacionVuelo.png, id=1959, 307.1475pt x 487.8225pt>
+<Figuras/intInformacionVuelo.png, id=1978, 307.1475pt x 487.8225pt>
 File: Figuras/intInformacionVuelo.png Graphic file (type png)
 
 <use Figuras/intInformacionVuelo.png>
@@ -2683,22 +2441,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
 
 (./Capitulos/8Desarrollo/8Desarrollo.tex
-Chapter 8.
+Cap\'{\i }tulo 8.
 ------------------------------------------------------------------------------
  8 Desarrollo e Implementaci\IeC {\'o}n del Sistema
 ------------------------------------------------------------------------------
 (./Capitulos/8Desarrollo/Secciones/8-1Introduccion.tex)
 (./Capitulos/8Desarrollo/Secciones/8-2AplicacionWeb.tex
 Overfull \hbox (10.56198pt too wide) in paragraph at lines 3--7
-\OT1/ptm/m/n/12 El sis-tema del Ad-min-istrador tiene como fi-nal-i-dad el pode
-r ges-tionar los usuar-ios,servicios
+[]\OT1/ptm/m/n/12 El sis-te-ma del Ad-mi-nis-tra-dor tie-ne co-mo fi-na-li-dad 
+el po-der ges-tio-nar los usua-rios,servicios
  []
 
 [116
 
 
 
-] <Figuras/principalTASMC.png, id=1970, 1371.1225pt x 770.88pt>
+] <Figuras/principalTASMC.png, id=1989, 1371.1225pt x 770.88pt>
 File: Figuras/principalTASMC.png Graphic file (type png)
 
 <use Figuras/principalTASMC.png>
@@ -2710,7 +2468,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 27--29
  []
 
 [117 <./Figuras/principalTASMC.png>]
-<Figuras/index.png, id=1975, 1371.1225pt x 770.88pt>
+<Figuras/index.png, id=1994, 1371.1225pt x 770.88pt>
 File: Figuras/index.png Graphic file (type png)
  <use Figuras/index.png>
 Package pdftex.def Info: Figuras/index.png used on input line 36.
@@ -2720,7 +2478,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 36--38
  [] 
  []
 
-<Figuras/indexhome.png, id=1976, 1371.1225pt x 770.88pt>
+<Figuras/indexhome.png, id=1995, 1371.1225pt x 770.88pt>
 File: Figuras/indexhome.png Graphic file (type png)
 
 <use Figuras/indexhome.png>
@@ -2734,7 +2492,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 43--45
 [118
 
  <./Figuras/index.png> <./Figuras/indexhome.png>]
-<Figuras/indexUsuario.png, id=1981, 1371.1225pt x 770.88pt>
+<Figuras/indexUsuario.png, id=2000, 1371.1225pt x 770.88pt>
 File: Figuras/indexUsuario.png Graphic file (type png)
 
 <use Figuras/indexUsuario.png>
@@ -2745,7 +2503,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 55--57
  [] 
  []
 
-<Figuras/usuarios.png, id=1982, 1371.1225pt x 770.88pt>
+<Figuras/usuarios.png, id=2001, 1371.1225pt x 770.88pt>
 File: Figuras/usuarios.png Graphic file (type png)
 
 <use Figuras/usuarios.png>
@@ -2759,7 +2517,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 62--64
 [119
 
  <./Figuras/indexUsuario.png> <./Figuras/usuarios.png>]
-<Figuras/indexEquipaje.png, id=1987, 1371.1225pt x 770.88pt>
+<Figuras/indexEquipaje.png, id=2006, 1371.1225pt x 770.88pt>
 File: Figuras/indexEquipaje.png Graphic file (type png)
 
 <use Figuras/indexEquipaje.png>
@@ -2770,7 +2528,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 75--77
  [] 
  []
 
-<Figuras/equipajes.png, id=1988, 1371.1225pt x 770.88pt>
+<Figuras/equipajes.png, id=2007, 1371.1225pt x 770.88pt>
 File: Figuras/equipajes.png Graphic file (type png)
 
 <use Figuras/equipajes.png>
@@ -2781,13 +2539,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 82--84
  [] 
  []
 
-
-Overfull \hbox (0.73409pt too wide) in paragraph at lines 70--87
-\OT1/ptm/m/n/12 es-tar[]an re-fle-jadas den-tro de la apli-caci[]on m[]ovil per
-o las lis-tas creadas propias del usuario
- []
-
-<Figuras/nuevoequipajewb.png, id=1989, 1371.1225pt x 770.88pt>
+<Figuras/nuevoequipajewb.png, id=2008, 1371.1225pt x 770.88pt>
 File: Figuras/nuevoequipajewb.png Graphic file (type png)
 
 <use Figuras/nuevoequipajewb.png>
@@ -2801,7 +2553,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 90--92
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/objetosEquipaje.png, id=1990, 1371.1225pt x 770.88pt>
+<Figuras/objetosEquipaje.png, id=2009, 1371.1225pt x 770.88pt>
 File: Figuras/objetosEquipaje.png Graphic file (type png)
 
 <use Figuras/objetosEquipaje.png>
@@ -2819,7 +2571,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  <./Figuras/indexEquipaje.png> <./Figuras/equipajes.png>] [121 <./Figuras/nuevo
 equipajewb.png> <./Figuras/objetosEquipaje.png>]
-<Figuras/indexServicio.png, id=2000, 1371.1225pt x 770.88pt>
+<Figuras/indexServicio.png, id=2019, 1371.1225pt x 770.88pt>
 File: Figuras/indexServicio.png Graphic file (type png)
 
 <use Figuras/indexServicio.png>
@@ -2833,7 +2585,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 118--120
 [122
 
  <./Figuras/indexServicio.png>]
-<Figuras/servicioswb.png, id=2005, 1371.1225pt x 770.88pt>
+<Figuras/servicioswb.png, id=2024, 1371.1225pt x 770.88pt>
 File: Figuras/servicioswb.png Graphic file (type png)
 
 <use Figuras/servicioswb.png>
@@ -2844,7 +2596,7 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 127--129
  [] 
  []
 
-<Figuras/indexCerrarSesion.png, id=2006, 1371.1225pt x 770.88pt>
+<Figuras/indexCerrarSesion.png, id=2025, 1371.1225pt x 770.88pt>
 File: Figuras/indexCerrarSesion.png Graphic file (type png)
 
 <use Figuras/indexCerrarSesion.png>
@@ -2857,16 +2609,11 @@ Overfull \hbox (2.52693pt too wide) in paragraph at lines 137--139
 
 [123
 
- <./Figuras/servicioswb.png> <./Figuras/indexCerrarSesion.png>]
-Overfull \hbox (5.19943pt too wide) in paragraph at lines 146--147
-\OT1/ptm/m/n/12 Se cre[]o un ser-vi-cio web para a[]nadir las fun-cional-i-dade
-s de b[]usqueda de hote-les, b[]usqueda
- []
+ <./Figuras/servicioswb.png> <./Figuras/indexCerrarSesion.png>] [124
 
-[124
-
-]) (./Capitulos/8Desarrollo/Secciones/8-3AplicacionMovil.tex
-<Figuras/main.png, id=2016, 1084.05pt x 1927.2pt>
+])
+(./Capitulos/8Desarrollo/Secciones/8-3AplicacionMovil.tex
+<Figuras/main.png, id=2035, 1084.05pt x 1927.2pt>
 File: Figuras/main.png Graphic file (type png)
  <use Figuras/main.png>
 Package pdftex.def Info: Figuras/main.png used on input line 24.
@@ -2875,7 +2622,7 @@ Package pdftex.def Info: Figuras/main.png used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figuras/menu.png, id=2017, 1084.05pt x 1927.2pt>
+<Figuras/menu.png, id=2036, 1084.05pt x 1927.2pt>
 File: Figuras/menu.png Graphic file (type png)
  <use Figuras/menu.png>
 Package pdftex.def Info: Figuras/menu.png used on input line 32.
@@ -2887,7 +2634,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [125
 
 ] [126 <./Figuras/main.png>] [127 <./Figuras/menu.png>]
-<Figuras/configuracion.png, id=2031, 1084.05pt x 1927.2pt>
+<Figuras/configuracion.png, id=2050, 1084.05pt x 1927.2pt>
 File: Figuras/configuracion.png Graphic file (type png)
 
 <use Figuras/configuracion.png>
@@ -2896,7 +2643,7 @@ Package pdftex.def Info: Figuras/configuracion.png used on input line 45.
  [128
 
  <./Figuras/configuracion.png>]
-<Figuras/hoteles.jpg, id=2036, 667.49374pt x 1186.4325pt>
+<Figuras/hoteles.jpg, id=2055, 667.49374pt x 1186.4325pt>
 File: Figuras/hoteles.jpg Graphic file (type jpg)
 
 <use Figuras/hoteles.jpg>
@@ -2905,7 +2652,7 @@ Package pdftex.def Info: Figuras/hoteles.jpg used on input line 63.
  [129
 
  <./Figuras/hoteles.jpg>]
-<Figuras/hdisponible.png, id=2041, 1084.05pt x 1927.2pt>
+<Figuras/hdisponible.png, id=2061, 1084.05pt x 1927.2pt>
 File: Figuras/hdisponible.png Graphic file (type png)
 
 <use Figuras/hdisponible.png>
@@ -2914,7 +2661,7 @@ Package pdftex.def Info: Figuras/hdisponible.png used on input line 80.
  [130
 
  <./Figuras/hdisponible.png>]
-<Figuras/detalle.png, id=2046, 1084.05pt x 1927.2pt>
+<Figuras/detalle.png, id=2066, 1084.05pt x 1927.2pt>
 File: Figuras/detalle.png Graphic file (type png)
  <use Figuras/detalle.png>
 Package pdftex.def Info: Figuras/detalle.png used on input line 94.
@@ -2923,7 +2670,7 @@ Package pdftex.def Info: Figuras/detalle.png used on input line 94.
 [131
 
  <./Figuras/detalle.png>]
-<Figuras/buscav.png, id=2051, 1084.05pt x 1927.2pt>
+<Figuras/buscav.png, id=2071, 1084.05pt x 1927.2pt>
 File: Figuras/buscav.png Graphic file (type png)
  <use Figuras/buscav.png>
 Package pdftex.def Info: Figuras/buscav.png used on input line 114.
@@ -2932,7 +2679,7 @@ Package pdftex.def Info: Figuras/buscav.png used on input line 114.
 [132
 
  <./Figuras/buscav.png>]
-<Figuras/vdisponibles.png, id=2056, 1084.05pt x 1927.2pt>
+<Figuras/vdisponibles.png, id=2076, 1084.05pt x 1927.2pt>
 File: Figuras/vdisponibles.png Graphic file (type png)
 
 <use Figuras/vdisponibles.png>
@@ -2941,7 +2688,7 @@ Package pdftex.def Info: Figuras/vdisponibles.png used on input line 133.
  [133
 
  <./Figuras/vdisponibles.png>]
-<Figuras/infoaicm.png, id=2062, 1084.05pt x 1927.2pt>
+<Figuras/infoaicm.png, id=2082, 1084.05pt x 1927.2pt>
 File: Figuras/infoaicm.png Graphic file (type png)
 
 <use Figuras/infoaicm.png>
@@ -2950,13 +2697,13 @@ Package pdftex.def Info: Figuras/infoaicm.png used on input line 145.
  [134
 
  <./Figuras/infoaicm.png>]
-<Figuras/mapapa.png, id=2067, 1084.05pt x 1927.2pt>
+<Figuras/mapapa.png, id=2087, 1084.05pt x 1927.2pt>
 File: Figuras/mapapa.png Graphic file (type png)
  <use Figuras/mapapa.png>
 Package pdftex.def Info: Figuras/mapapa.png used on input line 157.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
 
-<Figuras/mapapb.png, id=2068, 1084.05pt x 1927.2pt>
+<Figuras/mapapb.png, id=2088, 1084.05pt x 1927.2pt>
 File: Figuras/mapapb.png Graphic file (type png)
  <use Figuras/mapapb.png>
 Package pdftex.def Info: Figuras/mapapb.png used on input line 165.
@@ -2968,7 +2715,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [135
 
  <./Figuras/mapapa.png>] [136 <./Figuras/mapapb.png>]
-<Figuras/servicios.png, id=2077, 1084.05pt x 1927.2pt>
+<Figuras/servicios.png, id=2097, 1084.05pt x 1927.2pt>
 File: Figuras/servicios.png Graphic file (type png)
 
 <use Figuras/servicios.png>
@@ -2977,7 +2724,7 @@ Package pdftex.def Info: Figuras/servicios.png used on input line 177.
  [137
 
  <./Figuras/servicios.png>]
-<Figuras/equipaje.png, id=2082, 1084.05pt x 1927.2pt>
+<Figuras/equipaje.png, id=2102, 1084.05pt x 1927.2pt>
 File: Figuras/equipaje.png Graphic file (type png)
 
 <use Figuras/equipaje.png>
@@ -2986,7 +2733,7 @@ Package pdftex.def Info: Figuras/equipaje.png used on input line 190.
  [138
 
  <./Figuras/equipaje.png>]
-<Figuras/nuevoequipaje.jpg, id=2087, 667.49374pt x 1186.4325pt>
+<Figuras/nuevoequipaje.jpg, id=2107, 667.49374pt x 1186.4325pt>
 File: Figuras/nuevoequipaje.jpg Graphic file (type jpg)
 
 <use Figuras/nuevoequipaje.jpg>
@@ -2995,7 +2742,7 @@ Package pdftex.def Info: Figuras/nuevoequipaje.jpg used on input line 203.
  [139
 
  <./Figuras/nuevoequipaje.jpg>]
-<Figuras/itinerario.jpg, id=2093, 667.49374pt x 1186.4325pt>
+<Figuras/itinerario.jpg, id=2113, 667.49374pt x 1186.4325pt>
 File: Figuras/itinerario.jpg Graphic file (type jpg)
 
 <use Figuras/itinerario.jpg>
@@ -3004,7 +2751,7 @@ Package pdftex.def Info: Figuras/itinerario.jpg used on input line 216.
  [140
 
  <./Figuras/itinerario.jpg>]
-<Figuras/nuevoiti.png, id=2098, 1084.05pt x 1927.2pt>
+<Figuras/nuevoiti.png, id=2118, 1084.05pt x 1927.2pt>
 File: Figuras/nuevoiti.png Graphic file (type png)
 
 <use Figuras/nuevoiti.png>
@@ -3013,13 +2760,13 @@ Package pdftex.def Info: Figuras/nuevoiti.png used on input line 228.
  [141
 
  <./Figuras/nuevoiti.png>]
-<Figuras/locaicm.png, id=2103, 1084.05pt x 1927.2pt>
+<Figuras/locaicm.png, id=2123, 1084.05pt x 1927.2pt>
 File: Figuras/locaicm.png Graphic file (type png)
  <use Figuras/locaicm.png>
 Package pdftex.def Info: Figuras/locaicm.png used on input line 244.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
 
-<Figuras/loct1.png, id=2104, 1084.05pt x 1927.2pt>
+<Figuras/loct1.png, id=2124, 1084.05pt x 1927.2pt>
 File: Figuras/loct1.png Graphic file (type png)
  <use Figuras/loct1.png>
 Package pdftex.def Info: Figuras/loct1.png used on input line 252.
@@ -3028,7 +2775,7 @@ Package pdftex.def Info: Figuras/loct1.png used on input line 252.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figuras/loct2.png, id=2105, 1084.05pt x 1927.2pt>
+<Figuras/loct2.png, id=2125, 1084.05pt x 1927.2pt>
 File: Figuras/loct2.png Graphic file (type png)
  <use Figuras/loct2.png>
 Package pdftex.def Info: Figuras/loct2.png used on input line 260.
@@ -3037,7 +2784,7 @@ Package pdftex.def Info: Figuras/loct2.png used on input line 260.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figuras/locmia.png, id=2106, 1084.05pt x 1927.2pt>
+<Figuras/locmia.png, id=2126, 1084.05pt x 1927.2pt>
 File: Figuras/locmia.png Graphic file (type png)
  <use Figuras/locmia.png>
 Package pdftex.def Info: Figuras/locmia.png used on input line 268.
@@ -3046,7 +2793,7 @@ Package pdftex.def Info: Figuras/locmia.png used on input line 268.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figuras/ruta.png, id=2107, 1084.05pt x 1927.2pt>
+<Figuras/ruta.png, id=2127, 1084.05pt x 1927.2pt>
 File: Figuras/ruta.png Graphic file (type png)
  <use Figuras/ruta.png>
 Package pdftex.def Info: Figuras/ruta.png used on input line 276.
@@ -3059,14 +2806,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  <./Figuras/locaicm.png>] [143 <./Figuras/loct1.png>] [144 <./Figuras/loct2.png
 >] [145 <./Figuras/locmia.png>] [146 <./Figuras/ruta.png>]
-<Figuras/ubikpa.jpg, id=2129, 667.49374pt x 1186.4325pt>
+<Figuras/ubikpa.jpg, id=2149, 667.49374pt x 1186.4325pt>
 File: Figuras/ubikpa.jpg Graphic file (type jpg)
 
 <use Figuras/ubikpa.jpg>
 Package pdftex.def Info: Figuras/ubikpa.jpg used on input line 289.
 (pdftex.def)             Requested size: 208.73653pt x 371.0127pt.
 
-<Figuras/ubikpb.jpg, id=2130, 667.49374pt x 1186.4325pt>
+<Figuras/ubikpb.jpg, id=2150, 667.49374pt x 1186.4325pt>
 File: Figuras/ubikpb.jpg Graphic file (type jpg)
 
 <use Figuras/ubikpb.jpg>
@@ -3079,14 +2826,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [147
 
  <./Figuras/ubikpa.jpg>] [148 <./Figuras/ubikpb.jpg>]
-<Figuras/llegadas.png, id=2139, 1084.05pt x 1927.2pt>
+<Figuras/llegadas.png, id=2159, 1084.05pt x 1927.2pt>
 File: Figuras/llegadas.png Graphic file (type png)
 
 <use Figuras/llegadas.png>
 Package pdftex.def Info: Figuras/llegadas.png used on input line 310.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
 
-<Figuras/salidas.png, id=2140, 1084.05pt x 1927.2pt>
+<Figuras/salidas.png, id=2160, 1084.05pt x 1927.2pt>
 File: Figuras/salidas.png Graphic file (type png)
  <use Figuras/salidas.png>
 Package pdftex.def Info: Figuras/salidas.png used on input line 318.
@@ -3098,12 +2845,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [149
 
  <./Figuras/llegadas.png>] [150 <./Figuras/salidas.png>]
-Overfull \hbox (2.73904pt too wide) in paragraph at lines 326--327
-\OT1/ptm/m/n/12 Esta vista mostrar[]a in-for-maci[]on ref-er-ente al n[]umero d
-e vuelo que in-gre-sado en el m[]odulo
- []
-
-<Figuras/mivuelo.png, id=2149, 1084.05pt x 1927.2pt>
+<Figuras/mivuelo.png, id=2169, 1084.05pt x 1927.2pt>
 File: Figuras/mivuelo.png Graphic file (type png)
  <use Figuras/mivuelo.png>
 Package pdftex.def Info: Figuras/mivuelo.png used on input line 330.
@@ -3119,7 +2861,7 @@ Package pdftex.def Info: Figuras/mivuelo.png used on input line 330.
 \openout2 = `Capitulos/9Pruebas/9Pruebas.aux'.
 
  (./Capitulos/9Pruebas/9Pruebas.tex
-Chapter 9.
+Cap\'{\i }tulo 9.
 ------------------------------------------------------------------------------
  9 Pruebas
 ------------------------------------------------------------------------------
@@ -3130,7 +2872,7 @@ Chapter 9.
 ]
 Package color Info: Redefining color blanco on input line 21.
 
-<Figuras/palomita.png, id=2171, 2105.8675pt x 2409.0pt>
+<Figuras/palomita.png, id=2192, 2105.8675pt x 2409.0pt>
 File: Figuras/palomita.png Graphic file (type png)
 
 <use Figuras/palomita.png>
@@ -3300,7 +3042,7 @@ Overfull \hbox (10.94861pt too wide) in paragraph at lines 316--337
 
 [160
 
-] <Figuras/escenariot1.png, id=2194, 1084.05pt x 1927.2pt>
+] <Figuras/escenariot1.png, id=2215, 1084.05pt x 1927.2pt>
 File: Figuras/escenariot1.png Graphic file (type png)
 
 <use Figuras/escenariot1.png>
@@ -3309,7 +3051,7 @@ Package pdftex.def Info: Figuras/escenariot1.png used on input line 354.
  [161
 
  <./Figuras/escenariot1.png>]
-<Figuras/escenariot2.png, id=2199, 1084.05pt x 1927.2pt>
+<Figuras/escenariot2.png, id=2220, 1084.05pt x 1927.2pt>
 File: Figuras/escenariot2.png Graphic file (type png)
 
 <use Figuras/escenariot2.png>
@@ -3318,7 +3060,12 @@ Package pdftex.def Info: Figuras/escenariot2.png used on input line 363.
  [162
 
  <./Figuras/escenariot2.png>]
-<Figuras/redundante.png, id=2204, 1084.05pt x 1927.2pt>
+Overfull \hbox (0.36798pt too wide) in paragraph at lines 370--370
+ |[]\OT1/ptm/b/n/14.4 Pruebas de tra-yec-to-rias pa-ra la lo-ca-li-za-ci[]on de
+n-tro del AICM| 
+ []
+
+<Figuras/redundante.png, id=2225, 1084.05pt x 1927.2pt>
 File: Figuras/redundante.png Graphic file (type png)
 
 <use Figuras/redundante.png>
@@ -3327,7 +3074,7 @@ Package pdftex.def Info: Figuras/redundante.png used on input line 380.
  [163
 
  <./Figuras/redundante.png>]
-<Figuras/zigzag.png, id=2210, 1084.05pt x 1927.2pt>
+<Figuras/zigzag.png, id=2231, 1084.05pt x 1927.2pt>
 File: Figuras/zigzag.png Graphic file (type png)
  <use Figuras/zigzag.png>
 Package pdftex.def Info: Figuras/zigzag.png used on input line 392.
@@ -3336,124 +3083,120 @@ Package pdftex.def Info: Figuras/zigzag.png used on input line 392.
 [164
 
  <./Figuras/zigzag.png>]
-<Figuras/medioback.png, id=2215, 1084.05pt x 1927.2pt>
+<Figuras/medioback.png, id=2236, 1084.05pt x 1927.2pt>
 File: Figuras/medioback.png Graphic file (type png)
 
 <use Figuras/medioback.png>
-Package pdftex.def Info: Figuras/medioback.png used on input line 405.
+Package pdftex.def Info: Figuras/medioback.png used on input line 404.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
  [165
 
  <./Figuras/medioback.png>]
-<Figuras/backbone.png, id=2220, 1084.05pt x 1927.2pt>
+<Figuras/backbone.png, id=2241, 1084.05pt x 1927.2pt>
 File: Figuras/backbone.png Graphic file (type png)
 
 <use Figuras/backbone.png>
-Package pdftex.def Info: Figuras/backbone.png used on input line 418.
+Package pdftex.def Info: Figuras/backbone.png used on input line 416.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
  [166
 
  <./Figuras/backbone.png>]
-<Figuras/inter.png, id=2225, 1084.05pt x 1927.2pt>
+<Figuras/inter.png, id=2246, 1084.05pt x 1927.2pt>
 File: Figuras/inter.png Graphic file (type png)
  <use Figuras/inter.png>
-Package pdftex.def Info: Figuras/inter.png used on input line 427.
+Package pdftex.def Info: Figuras/inter.png used on input line 425.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
 
 [167
 
  <./Figuras/inter.png>]
-<Figuras/monarca.png, id=2230, 1084.05pt x 1927.2pt>
+<Figuras/monarca.png, id=2251, 1084.05pt x 1927.2pt>
 File: Figuras/monarca.png Graphic file (type png)
  <use Figuras/monarca.png>
-Package pdftex.def Info: Figuras/monarca.png used on input line 437.
+Package pdftex.def Info: Figuras/monarca.png used on input line 435.
 (pdftex.def)             Requested size: 208.73653pt x 371.08272pt.
 
 [168
 
- <./Figuras/monarca.png>] [169
-
-]
-Package color Info: Redefining color blanco on input line 473.
+ <./Figuras/monarca.png>]
+Package color Info: Redefining color blanco on input line 459.
 File: Figuras/palomita.png Graphic file (type png)
  <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 485.
+Package pdftex.def Info: Figuras/palomita.png used on input line 471.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
 
 <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 489.
+Package pdftex.def Info: Figuras/palomita.png used on input line 475.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
  <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 493.
+Package pdftex.def Info: Figuras/palomita.png used on input line 479.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
 
 <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 497.
+Package pdftex.def Info: Figuras/palomita.png used on input line 483.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
  <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 501.
+Package pdftex.def Info: Figuras/palomita.png used on input line 487.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
 
 <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 505.
+Package pdftex.def Info: Figuras/palomita.png used on input line 491.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
  <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 509.
+Package pdftex.def Info: Figuras/palomita.png used on input line 495.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
 
 <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 513.
+Package pdftex.def Info: Figuras/palomita.png used on input line 499.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 File: Figuras/palomita.png Graphic file (type png)
  <use Figuras/palomita.png>
-Package pdftex.def Info: Figuras/palomita.png used on input line 517.
+Package pdftex.def Info: Figuras/palomita.png used on input line 503.
 (pdftex.def)             Requested size: 22.75009pt x 22.7534pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Capitulos/9Pruebas/Secciones/9-2PruebasWebApp.tex)) [170
+) (./Capitulos/9Pruebas/Secciones/9-2PruebasWebApp.tex)) [169
 
-] [171]
-\openout2 = `Capitulos/10TrabajoFuturo/10TrabajoFuturo.aux'.
+] [170]
+\openout2 = `Capitulos/10Conclusiones/10Conclusiones.aux'.
 
 
-(./Capitulos/10TrabajoFuturo/10TrabajoFuturo.tex
-Chapter 10.
-------------------------------------------------------------------------------
- 10 Trabajo a Futuro
-------------------------------------------------------------------------------
-) [172
+(./Capitulos/10Conclusiones/10Conclusiones.tex) [171
+
+
+
+]
+\openout2 = `Capitulos/11TrabajoFuturo/11TrabajoFuturo.aux'.
+
+
+(./Capitulos/11TrabajoFuturo/11TrabajoFuturo.tex) [172
 
 
 
 ] (./main.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1158) in paragraph at lines 9--13
-[]\OT1/ptm/m/n/12 Estudio de con-sumo de medios y dis-pos-i-tivos en-tre in-ter
--nau-tas mex-i-canos
+Underfull \hbox (badness 2818) in paragraph at lines 9--13
+[]\OT1/ptm/m/n/12 Estudio de con-su-mo de me-dios y dis-po-si-ti-vos en-tre in-
+ter-nau-tas me-xi-ca-
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 9--13
-\OT1/ptm/m/n/12 | iab mex-ico, Marzo 2015.  URL [][]$\OT1/pcr/m/n/12 http : / /
- www . iabmexico . com /
- []
-
-
-Underfull \hbox (badness 2460) in paragraph at lines 15--19
-[]\OT1/ptm/m/n/12 Juan Manuel Garc[]^^Pa Cam-pos.  'apps' para vi-a-jar, Ju-nio
- 2013.  URL
+Underfull \hbox (badness 2600) in paragraph at lines 15--19
+[]\OT1/ptm/m/n/12 Juan Ma-nuel Garc[]^^Pa Cam-pos.  'apps' pa-ra via-jar, Ju-ni
+o 2013.  URL
  []
 
 
@@ -3469,41 +3212,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--26
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 33--39
-\OT1/ptm/m/n/12 - app mar-ket-ing and mo-bile seo key-word op-ti-miza-tion for 
-iphone and
+Underfull \hbox (badness 1577) in paragraph at lines 33--39
+[]\OT1/ptm/m/n/12 South Mo-bi-le.  Crux in-door lo-ca-tion by south mo-bi-le (u
+s) - sen-sor to-
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 33--39
-\OT1/ptm/m/n/12 ipad, Julio 2012.  URL [][]$\OT1/pcr/m/n/12 https : / / sensort
-ower . com / android / us /
+Underfull \hbox (badness 1622) in paragraph at lines 33--39
+\OT1/ptm/m/n/12 ipad, Ju-lio 2012.  URL [][]$\OT1/pcr/m/n/12 https : / / sensor
+tower . com / android / us /
  []
 
 [173
 
 
 ]
-Underfull \hbox (badness 2875) in paragraph at lines 71--75
-[]\OT1/ptm/m/n/12 Cory Janssen.  What is a mo-bile ap-pli-ca-tion - def-i-ni-ti
-on from techo-
- []
-
-
-Underfull \hbox (badness 5578) in paragraph at lines 71--75
-\OT1/ptm/m/n/12 pe-dia.  URL [][]$\OT1/pcr/m/n/12 http : / / www . techopedia .
- com / definition / 2953 /
+Underfull \hbox (badness 5711) in paragraph at lines 71--75
+[]\OT1/ptm/m/n/12 Cory Jans-sen.  What is a mo-bi-le ap-pli-ca-tion - de-fi-ni-
+tion from te-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--82
-[]\OT1/ptm/m/n/12 Mariana Quin-tanilla.  ?`qu[]e son y para que sir-ven las apl
-i-ca-
+[]\OT1/ptm/m/n/12 Mariana Quin-ta-ni-lla.  ?`qu[]e son y pa-ra que sir-ven las 
+apli-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--82
-\OT1/ptm/m/n/12 ciones m[]oviles? | dos-bytes dise[]no web blog, Julio 2013.
+\OT1/ptm/m/n/12 ca-cio-nes m[]ovi-les? | dosby-tes di-se[]no web blog, Ju-lio 2
+013.
  []
 
 
@@ -3514,7 +3252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--82
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--87
-[]\OT1/ptm/m/n/12 Future ubiq-ui-tous com-put-ing, Abril 14.  URL
+[]\OT1/ptm/m/n/12 Future ubi-qui-tous com-pu-ting, Abril 14.  URL
  []
 
 
@@ -3524,8 +3262,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--92
-[]\OT1/ptm/m/n/12 Que es el gps y como fun-ciona, 2009.  URL [][]$\OT1/pcr/m/n/
-12 http : / / www .
+[]\OT1/ptm/m/n/12 Que es el gps y co-mo fun-cio-na, 2009.  URL [][]$\OT1/pcr/m/
+n/12 http : / / www .
  []
 
 
@@ -3534,9 +3272,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--92
  []
 
 [174]
-Underfull \hbox (badness 3657) in paragraph at lines 135--138
-[]\OT1/ptm/m/n/12 Estudios de re-mu-neraci[]on 2013 - 2014, 2014.  URL [][]$\OT
-1/pcr/m/n/12 http : / / www .
+Underfull \hbox (badness 3930) in paragraph at lines 135--138
+[]\OT1/ptm/m/n/12 Estudios de re-mu-ne-ra-ci[]on 2013 - 2014, 2014.  URL [][]$\
+OT1/pcr/m/n/12 http : / / www .
  []
 
 
@@ -3546,10 +3284,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--138
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
  [175]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
- (./main.aux (./portada/caratula.aux) (./portada/portada.aux)
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+ (./main.aux (./portada/caratula.aux)
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ (./portada/portada.aux)
 (./portada/advertencia.aux) (./Capitulos/1Introduccion/1Introduccion.aux)
 (./Capitulos/2EstadoDelArte/2EstadoDelArte.aux)
 (./Capitulos/3MarcoTeorico/3MarcoTeorico.aux)
@@ -3558,34 +3299,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 (./Capitulos/6ConfiguracionAmbienteDesarrollo/6ConfiguracionAmbienteDesarrollo.
 aux) (./Capitulos/7DisenoTASMC/7DisenoTASMC.aux)
 (./Capitulos/8Desarrollo/8Desarrollo.aux) (./Capitulos/9Pruebas/9Pruebas.aux)
-(./Capitulos/10TrabajoFuturo/10TrabajoFuturo.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B99F456B7B8643C7847846881FBF703A;33108.
+(./Capitulos/10Conclusiones/10Conclusiones.aux)
+(./Capitulos/11TrabajoFuturo/11TrabajoFuturo.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 54595AD8BE731D005E76C7F38622A74E;33204
+(rerunfilecheck)             After:  150F0A35328CE1FA3D2D6C39969E90E1;33265.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 15338 strings out of 495032
- 225318 string characters out of 6181719
- 285548 words of memory out of 5000000
- 17366 multiletter control sequences out of 15000+600000
- 43973 words of font info for 90 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 49i,16n,49p,2202b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (187 pages, 65536915 bytes).
+ 15947 strings out of 493315
+ 234118 string characters out of 6137904
+ 304657 words of memory out of 5000000
+ 18200 multiletter control sequences out of 15000+600000
+ 48791 words of font info for 95 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 49i,16n,49p,2202b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on main.pdf (187 pages, 65248911 bytes).
 PDF statistics:
- 2464 PDF objects out of 2487 (max. 8388607)
- 652 named destinations out of 1000 (max. 500000)
- 1773 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2492 PDF objects out of 2984 (max. 8388607)
+ 2131 compressed objects within 22 object streams
+ 653 named destinations out of 1000 (max. 500000)
+ 1781 words of extra memory for PDF output out of 10000 (max. 10000000)
 

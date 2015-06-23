@@ -1,3 +1,4 @@
+\select@language {spanish}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama de Arquitectura de TASMC}}{3}{figure.caption.13}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Mercado de los S.O. M\IeC {\'o}viles}}{6}{figure.caption.20}
@@ -103,4 +104,3 @@
 \contentsline {figure}{\numberline {9.6}{\ignorespaces Prueba trayectoria backbone}}{166}{figure.caption.405}
 \contentsline {figure}{\numberline {9.7}{\ignorespaces Prueba trayectoria dentro de salas de \IeC {\'u}ltima espera}}{167}{figure.caption.406}
 \contentsline {figure}{\numberline {9.8}{\ignorespaces Prueba trayectoria pasillo monarca}}{168}{figure.caption.407}
-\addvspace {10\p@ }

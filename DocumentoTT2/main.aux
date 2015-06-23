@@ -16,12 +16,20 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\catcode `"\active 
+\catcode `<\active 
+\catcode `>\active 
+\@nameuse{es@quoting}
 \@input{portada/caratula.aux}
+\select@language{spanish}
+\@writefile{toc}{\select@language{spanish}}
+\@writefile{lof}{\select@language{spanish}}
+\@writefile{lot}{\select@language{spanish}}
 \@input{portada/portada.aux}
 \@input{portada/advertencia.aux}
-\@writefile{toc}{\contentsline {chapter}{\'Indice general}{iv}{dummy.4}}
-\@writefile{toc}{\contentsline {chapter}{\'Indice de figuras}{viii}{dummy.6}}
-\@writefile{toc}{\contentsline {chapter}{\'Indice de tablas}{xi}{dummy.8}}
+\@writefile{toc}{\contentsline {chapter}{\'Indice general}{\es@scroman  {iv}}{dummy.4}}
+\@writefile{toc}{\contentsline {chapter}{\'Indice de figuras}{\es@scroman  {viii}}{dummy.6}}
+\@writefile{toc}{\contentsline {chapter}{\'Indice de tablas}{\es@scroman  {xi}}{dummy.8}}
 \@input{Capitulos/1Introduccion/1Introduccion.aux}
 \@input{Capitulos/2EstadoDelArte/2EstadoDelArte.aux}
 \@input{Capitulos/3MarcoTeorico/3MarcoTeorico.aux}
@@ -31,7 +39,8 @@
 \@input{Capitulos/7DisenoTASMC/7DisenoTASMC.aux}
 \@input{Capitulos/8Desarrollo/8Desarrollo.aux}
 \@input{Capitulos/9Pruebas/9Pruebas.aux}
-\@input{Capitulos/10TrabajoFuturo/10TrabajoFuturo.aux}
+\@input{Capitulos/10Conclusiones/10Conclusiones.aux}
+\@input{Capitulos/11TrabajoFuturo/11TrabajoFuturo.aux}
 \bibstyle{unsrtnat}
 \bibdata{Bibliography}
 \bibcite{celularDespertador}{{1}{2015}{{cel}}{{}}}
@@ -45,7 +54,7 @@
 \bibcite{tripit}{{9}{}{{tri}}{{}}}
 \bibcite{ILS}{{10}{2005}{{V{\'\i }tores}}{{}}}
 \bibcite{usoCampoMagnetico}{{11}{2013}{{Carlos Eric Galv{\'a}n~Tejada}}{{}}}
-\newlabel{Bibliography}{{10}{173}{Trabajo a Futuro}{chapter.410}{}}
+\newlabel{Bibliography}{{9.2.7}{173}{Trabajo a Futuro}{chapter*.411}{}}
 \bibcite{queParaApps}{{12}{}{{Janssen}}{{}}}
 \bibcite{tiposApps}{{13}{2013}{{Quintanilla}}{{}}}
 \bibcite{ubicuo}{{14}{14}{{ubi}}{{}}}
@@ -59,4 +68,4 @@
 \bibcite{apiGoogleMaps}{{22}{2013}{{api}}{{}}}
 \bibcite{apiIndoorAtlas}{{23}{2014}{{api}}{{}}}
 \bibcite{salarios}{{24}{2014}{{sal}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{175}{chapter*.411}}
+\@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{175}{chapter*.412}}

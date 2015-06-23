@@ -1,21 +1,22 @@
 package com.example.vivanco.tasmc;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by VIVANCO on 12/01/2015.
- */
 public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerario.MyViewHolder> {
     //Lista de itinerarios
     private ArrayList<Itinerario> listItinerario;
     private int itemLayout;
+    OnItemClickListener mItemClickListener;
 
     public AdaptadorItinerario(ArrayList<Itinerario> datosItinerarios) {
         this.listItinerario = datosItinerarios;
@@ -42,7 +43,15 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
         return listItinerario.size();
     }
 
-    static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public interface OnItemClickListener {
+        public void onItemClick(View view , int position);
+    }
+
+    public void SetOnItemClickListener(final OnItemClickListener mItemClickListener) {
+        this.mItemClickListener = mItemClickListener;
+    }
+
+    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private ImageView imagen;
         private TextView viaje;
@@ -60,13 +69,8 @@ public class AdaptadorItinerario extends RecyclerView.Adapter<AdaptadorItinerari
 
         @Override
         public void onClick(View v) {
-
-            //Toast.makeText(context, "hola"+getPosition(),Toast.LENGTH_LONG); usa get position
-            switch (getPosition() + 1) {
-/*                case 1:
-                    context.startActivity(new Intent(context, Hoteles.class));
-                    break;*/
-
+            if (mItemClickListener != null) {
+                mItemClickListener.onItemClick(v, getPosition());
             }
         }
     }

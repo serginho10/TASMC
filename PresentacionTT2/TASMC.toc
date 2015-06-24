@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{\IeC {\textquestiondown }Por qu\IeC {\'e} TASMC?}{2}{0}{1}
+\beamer@sectionintoc {2}{\IeC {\textquestiondown }Qu\IeC {\'e} es TASMC?}{5}{0}{2}
+\beamer@sectionintoc {3}{Objetivo de TASMC}{7}{0}{3}
+\beamer@sectionintoc {4}{Presentaci\IeC {\'o}n de TASMC}{9}{0}{4}
+\beamer@sectionintoc {5}{Trabajo Futuro}{10}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{11}{0}{6}

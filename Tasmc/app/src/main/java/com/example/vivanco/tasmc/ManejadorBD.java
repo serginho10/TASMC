@@ -71,7 +71,6 @@ public class ManejadorBD extends SQLiteOpenHelper {
 
         db.execSQL("INSERT INTO equipaje VALUES ( null, 'default' )");
 
-        //db.execSQL("INSERT INTO itinerario VALUES ( null, 'default' )");
     }
 
 
@@ -101,15 +100,6 @@ public class ManejadorBD extends SQLiteOpenHelper {
             new ManejadorHttp().execute(objeto);
         }
     }
-
-   /* public void guardarVuelo(Vuelo vuelo) {
-        db = getWritableDatabase();
-        db.execSQL("INSERT INTO vuelo VALUES ( null,'" + vuelo.getCl() + "','" + vuelo.getAerolinea() + "','"
-                + vuelo.getVuelo() + "','" + vuelo.getFechaSalida() + "','" + vuelo.getFechaLlegada() + "','"
-                + vuelo.getOrigen() + "','" + vuelo.getDestino() + "','" + vuelo.getEstado() + "','"
-                + vuelo.getHoraSalida() + "','" + vuelo.getHoraLlegada() + "','" + vuelo.getTerminal() + "','"
-                + vuelo.getPuerta() + "','" + vuelo.getTiempo() + "','" + vuelo.getEscalas() + "')");
-    }*/
 
     public void guardarActividad(Actividad actividad) {
         db = getWritableDatabase();
@@ -166,23 +156,11 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db.delete("actividad", "idItinerario=?", new String[]{Integer.toString(itinerario.getIdItinerario())});
     }
 
-    /*public void borrarVuelo(Vuelo vuelo) {
-        db = getWritableDatabase();
-        //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
-        db.delete("vuelo", "id=?", new String[]{Integer.toString(vuelo.getIdVuelo())});
-    }*/
-
     public void borrarObjeto(Objeto objeto) {
         db = getWritableDatabase();
         //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
         db.delete("objeto", "id=?", new String[]{Integer.toString(objeto.getId())});
     }
-
-    /*public void borrarActividad(Actividad actividad) {
-        db = getWritableDatabase();
-        //db.delete(nombreTabla,valores,clausulaWhere,argumentosWhere);
-        db.delete("actividad", "id=?", new String[]{Integer.toString(actividad.getId())});
-    }*/
 
 
     public void borrarServicio(Servicio servicio) {
@@ -288,22 +266,6 @@ public class ManejadorBD extends SQLiteOpenHelper {
         db = getWritableDatabase();
         db.execSQL("delete from equipaje_has_objeto");
     }
-
-    /*public ArrayList<Actividad> getAllData() {
-        ArrayList<Actividad> list = new ArrayList<>();
-        String[] campos = {"id", "imagen", "destino", "actividades"};
-        db = getReadableDatabase();
-
-        Cursor cursor = db.query("itinerario", campos, null, null, null, null, "id");
-
-        while (cursor.moveToNext()) {
-            Actividad actividad = new Actividad(cursor.getInt(0),
-                    cursor.getInt(1), cursor.getString(2), cursor.getString(3));
-            list.add(actividad);
-        }
-
-        return list;
-    }*/
 
     public Objeto[] obtenerObjetos() {
         db = getReadableDatabase();

@@ -1,6 +1,7 @@
-\contentsline {chapter}{\'Indice general}{iv}{dummy.4}
-\contentsline {chapter}{\'Indice de figuras}{viii}{dummy.6}
-\contentsline {chapter}{\'Indice de tablas}{xi}{dummy.8}
+\select@language {spanish}
+\contentsline {chapter}{\'Indice general}{\es@scroman {iv}}{dummy.4}
+\contentsline {chapter}{\'Indice de figuras}{\es@scroman {viii}}{dummy.6}
+\contentsline {chapter}{\'Indice de tablas}{\es@scroman {xi}}{dummy.8}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.10}
 \contentsline {section}{\numberline {1.1}Problem\IeC {\'a}tica}{2}{section.11}
 \contentsline {section}{\numberline {1.2}Soluci\IeC {\'o}n Propuesta}{3}{section.12}
@@ -24,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {3.5.2.3}Pinpoint 3D-ID de RF technologies}{18}{subsubsection.39}
 \contentsline {subsubsection}{\numberline {3.5.2.4}Radar}{18}{subsubsection.40}
 \contentsline {subsubsection}{\numberline {3.5.2.5}Ultrasonidos}{19}{subsubsection.41}
-\contentsline {subsubsection}{\numberline {3.5.2.6}Visi\IeC {\'o}n Artificial}{19}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {3.5.2.6}Visi\IeC {\'o}n Artificial}{20}{subsubsection.42}
 \contentsline {subsubsection}{\numberline {3.5.2.7}Zigbee}{20}{subsubsection.43}
 \contentsline {subsubsection}{\numberline {3.5.2.8}Campo Magn\IeC {\'e}tico}{20}{subsubsection.44}
 \contentsline {section}{\numberline {3.6}Sistema Operativo M\IeC {\'o}vil Android}{22}{section.47}
@@ -36,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {5.1.1.1}Hardware}{30}{subsubsection.55}
 \contentsline {subsubsection}{\numberline {5.1.1.2}Software}{31}{subsubsection.59}
 \contentsline {paragraph}{\numberline {5.1.1.2.1}Sistema Operativo M\IeC {\'o}vil}{31}{paragraph.60}
-\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{33}{subparagraph.62}
+\contentsline {subparagraph}{\numberline {5.1.1.2.1.1}Android}{32}{subparagraph.62}
 \contentsline {subparagraph}{\numberline {5.1.1.2.1.2}Versiones de Android}{33}{subparagraph.63}
 \contentsline {paragraph}{\numberline {5.1.1.2.2}Lenguaje de Programaci\IeC {\'o}n}{34}{paragraph.66}
 \contentsline {paragraph}{\numberline {5.1.1.2.3}Sistema Operativo de Escritorio}{35}{paragraph.69}

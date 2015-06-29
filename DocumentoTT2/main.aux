@@ -16,12 +16,20 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\catcode `"\active 
+\catcode `<\active 
+\catcode `>\active 
+\@nameuse{es@quoting}
 \@input{portada/caratula.aux}
+\select@language{spanish}
+\@writefile{toc}{\select@language{spanish}}
+\@writefile{lof}{\select@language{spanish}}
+\@writefile{lot}{\select@language{spanish}}
 \@input{portada/portada.aux}
 \@input{portada/advertencia.aux}
-\@writefile{toc}{\contentsline {chapter}{\'Indice general}{iv}{dummy.4}}
-\@writefile{toc}{\contentsline {chapter}{\'Indice de figuras}{viii}{dummy.6}}
-\@writefile{toc}{\contentsline {chapter}{\'Indice de tablas}{xi}{dummy.8}}
+\@writefile{toc}{\contentsline {chapter}{\'Indice general}{\es@scroman  {iv}}{dummy.4}}
+\@writefile{toc}{\contentsline {chapter}{\'Indice de figuras}{\es@scroman  {viii}}{dummy.6}}
+\@writefile{toc}{\contentsline {chapter}{\'Indice de tablas}{\es@scroman  {xi}}{dummy.8}}
 \@input{Capitulos/1Introduccion/1Introduccion.aux}
 \@input{Capitulos/2EstadoDelArte/2EstadoDelArte.aux}
 \@input{Capitulos/3MarcoTeorico/3MarcoTeorico.aux}
